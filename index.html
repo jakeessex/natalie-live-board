@@ -100,7 +100,7 @@ main{padding:14px}
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="Password"/>
 <p class="err" id="err"></p>
 <button type="button" id="go">Open board</button>
-<p class="ver">Board v11 · 7 Sep 2026</p>
+<p class="ver">Board v12 · 7 Sep 2026</p>
 </div></div>
 <div id="app">
 <header>
@@ -116,6 +116,7 @@ main{padding:14px}
   <p class="pep" id="pep">Numbers don’t book themselves, Nat.</p>
   <div class="tabs" id="tabs">
     <button type="button" id="tab-tocall" data-tab="tocall" class="on">To call</button>
+    <button type="button" id="tab-replying" data-tab="replying">Replying</button>
     <button type="button" id="tab-hot" data-tab="hot">Hotpicks</button>
     <button type="button" id="tab-called" data-tab="called">Called</button>
     <button type="button" id="tab-booked" data-tab="booked">Booked</button>
@@ -390,6 +391,14 @@ main{padding:14px}
     return !!(v.phone && String(v.phone).replace(/\D/g, "").length >= 10);
   }
 
+  function isReplying(v) {
+    if (heat(v) === "booked" || heat(v) === "skip") return false;
+    if (v.hasThread) return true;
+    if (heat(v) === "quoted" || heat(v) === "price") return true;
+    var replied = String(v.replied || "").toLowerCase();
+    return replied.indexOf("yes") === 0;
+  }
+
   function inTab(v) {
     var rec = notes()[v.id] || {};
     if (tab === "all") return true;
@@ -397,7 +406,8 @@ main{padding:14px}
     if (tab === "booked") return heat(v) === "booked";
     if (tab === "called") return !!rec.called;
     if (tab === "hot") return (heat(v) === "quoted" || heat(v) === "price") && hasPhone(v);
-    if (tab === "tocall") return hasPhone(v) && heat(v) !== "booked" && heat(v) !== "skip" && !rec.called;
+    if (tab === "replying") return isReplying(v);
+    if (tab === "tocall") return hasPhone(v) && heat(v) !== "booked" && heat(v) !== "skip" && !rec.called && !isReplying(v);
     return true;
   }
 
@@ -432,8 +442,8 @@ main{padding:14px}
       if (tab === "chasing") return db - da;
       return da - db;
     });
-    var groups = ["tocall","hot","called","booked","nophone","all"];
-    var labels = {tocall:"To call",hot:"Hotpicks",called:"Called",booked:"Booked",nophone:"No phone",all:"All"};
+    var groups = ["tocall","replying","hot","called","booked","nophone","all"];
+    var labels = {tocall:"To call",replying:"Replying",hot:"Hotpicks",called:"Called",booked:"Booked",nophone:"No phone",all:"All"};
     var i;
     for (i = 0; i < groups.length; i++) {
       var g = groups[i];
@@ -446,7 +456,8 @@ main{padding:14px}
         if (g === "booked") return heat(v) === "booked";
         if (g === "called") return !!rec.called;
         if (g === "hot") return (heat(v) === "quoted" || heat(v) === "price") && hasPhone(v);
-        return hasPhone(v) && heat(v) !== "booked" && heat(v) !== "skip" && !rec.called;
+        if (g === "replying") return isReplying(v);
+        return hasPhone(v) && heat(v) !== "booked" && heat(v) !== "skip" && !rec.called && !isReplying(v);
       }).length;
       btn.textContent = labels[g] + " " + n;
       btn.className = tab === g ? "on" : "";
