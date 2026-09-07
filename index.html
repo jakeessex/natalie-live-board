@@ -34,8 +34,8 @@ input[type=password],input[type=search],input[type=datetime-local],textarea{
 header{position:sticky;top:0;z-index:5;background:rgba(11,11,12,.96);border-bottom:1px solid var(--line);padding:12px 14px 10px}
 .headrow{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
 header h1{font-size:20px}
-.tabs{display:flex;gap:8px;margin-top:12px}
-.tabs button{flex:1;height:44px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--muted);font-weight:650;font-size:14px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tabs button{flex:1 1 calc(25% - 8px);min-width:70px;height:40px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--muted);font-weight:650;font-size:12px}
 .tabs button.on{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
 main{padding:14px}
 .count{color:var(--subtle);font-size:13px;margin:0 0 10px}
@@ -80,7 +80,7 @@ main{padding:14px}
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="Password"/>
 <p class="err" id="err"></p>
 <button type="button" id="go">Open board</button>
-<p class="ver">Board v6 · 7 Sep 2026</p>
+<p class="ver">Board v7 · 7 Sep 2026</p>
 </div></div>
 <div id="app">
 <header>
@@ -93,10 +93,15 @@ main{padding:14px}
     <button class="lock" id="lock" type="button">Lock</button>
   </div>
   <input id="q" type="search" placeholder="Search venue, town, email" style="margin-top:12px"/>
-  <div class="tabs">
-    <button type="button" id="tab-call" class="on">Call</button>
-    <button type="button" id="tab-booked">Booked</button>
-    <button type="button" id="tab-all">All</button>
+  <div class="tabs" id="tabs">
+    <button type="button" id="tab-hot" data-tab="hot" class="on">Hot</button>
+    <button type="button" id="tab-booked" data-tab="booked">Booked</button>
+    <button type="button" id="tab-cons" data-tab="cons">Cons</button>
+    <button type="button" id="tab-rbl" data-tab="rbl">RBL</button>
+    <button type="button" id="tab-social" data-tab="social">Social</button>
+    <button type="button" id="tab-pubs" data-tab="pubs">Pubs</button>
+    <button type="button" id="tab-other" data-tab="other">Other</button>
+    <button type="button" id="tab-skip" data-tab="skip">Skip</button>
   </div>
 </header>
 <main>
@@ -114,7 +119,7 @@ main{padding:14px}
   var NOTES_PUSH = "https://dweet.cc/dweet/for/jem-natalie-live-nbj-2026";
   var NOTES_PULL = "https://dweet.cc/get/latest/dweet/for/jem-natalie-live-nbj-2026";
   var NOTES_FALLBACK = "call-notes.json";
-  var tab = "call";
+  var tab = "hot";
   var q = "";
   var openId = null;
   var VENUES = [];
@@ -261,10 +266,23 @@ main{padding:14px}
     return v.badge || "open";
   }
 
+  function venueGroup(v) {
+    var badge = v.badge || "";
+    var name = String(v.name || "").toLowerCase();
+    var blob = name + " " + String(v.town || "").toLowerCase();
+    if (badge === "bounce" || badge === "declined" || badge === "retract-agency" || badge === "skip-do-not-email") return "skip";
+    if (v.tab === "booked" || badge === "booked" || badge === "locked") return "booked";
+    if (badge === "quoted" || badge === "replied-interested" || badge === "fully-booked-on-file" || v.hasThread) return "hot";
+    if (blob.indexOf("rbl") !== -1 || blob.indexOf("legion") !== -1 || blob.indexOf("rafa") !== -1 || blob.indexOf("ex services") !== -1 || blob.indexOf("naval and military") !== -1) return "rbl";
+    if (name.indexOf("cons") !== -1 || blob.indexOf("conservative") !== -1) return "cons";
+    if (blob.indexOf("social") !== -1 || blob.indexOf("working men") !== -1 || blob.indexOf("wmc") !== -1 || blob.indexOf("usc") !== -1 || blob.indexOf("club") !== -1) return "social";
+    if (blob.indexOf("hotel") !== -1 || blob.indexOf("spa") !== -1 || blob.indexOf("arms") !== -1 || blob.indexOf("tavern") !== -1 || blob.indexOf("inn") !== -1 || blob.indexOf("pub") !== -1 || blob.indexOf("bar") !== -1 || blob.indexOf("jolly") !== -1 || blob.indexOf("plough") !== -1 || blob.indexOf("tavern") !== -1) return "pubs";
+    return "other";
+  }
+
   function inTab(v) {
     if (tab === "all") return true;
-    if (tab === "booked") return v.tab === "booked" || v.badge === "booked";
-    return v.tab !== "booked" && v.badge !== "booked";
+    return venueGroup(v) === tab;
   }
 
   function matches(v) {
@@ -291,15 +309,18 @@ main{padding:14px}
   function renderList() {
     var store = notes();
     var rows = VENUES.filter(function (v) { return inTab(v) && matches(v); });
-    var callN = VENUES.filter(function (v) { return v.tab !== "booked" && v.badge !== "booked"; }).length;
-    var bookedN = VENUES.filter(function (v) { return v.tab === "booked" || v.badge === "booked"; }).length;
-    document.getElementById("tab-call").textContent = "Call " + callN;
-    document.getElementById("tab-booked").textContent = "Booked " + bookedN;
-    document.getElementById("tab-all").textContent = "All " + VENUES.length;
-    document.getElementById("tab-call").className = tab === "call" ? "on" : "";
-    document.getElementById("tab-booked").className = tab === "booked" ? "on" : "";
-    document.getElementById("tab-all").className = tab === "all" ? "on" : "";
-    document.getElementById("count").textContent = rows.length + " venues";
+    var groups = ["hot","booked","cons","rbl","social","pubs","other","skip"];
+    var labels = {hot:"Hot",booked:"Booked",cons:"Cons",rbl:"RBL",social:"Social",pubs:"Pubs",other:"Other",skip:"Skip"};
+    var i;
+    for (i = 0; i < groups.length; i++) {
+      var g = groups[i];
+      var btn = document.getElementById("tab-" + g);
+      if (!btn) continue;
+      var n = VENUES.filter(function (v) { return venueGroup(v) === g; }).length;
+      btn.textContent = labels[g] + " " + n;
+      btn.className = tab === g ? "on" : "";
+    }
+    document.getElementById("count").textContent = rows.length + " venues · " + (labels[tab] || tab);
     document.getElementById("list").innerHTML = rows.map(function (v) {
       var n = store[v.id] || {};
       var b = badge(v);
@@ -471,9 +492,12 @@ main{padding:14px}
     q = e.target.value;
     renderList();
   });
-  document.getElementById("tab-call").onclick = function () { tab = "call"; renderList(); };
-  document.getElementById("tab-booked").onclick = function () { tab = "booked"; renderList(); };
-  document.getElementById("tab-all").onclick = function () { tab = "all"; renderList(); };
+  document.getElementById("tabs").addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-tab]");
+    if (!btn) return;
+    tab = btn.getAttribute("data-tab");
+    renderList();
+  });
   document.getElementById("lock").onclick = function () {
     try { sessionStorage.removeItem("natalie-ok"); } catch (e) {}
     location.reload();
