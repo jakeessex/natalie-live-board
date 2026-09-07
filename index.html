@@ -113,9 +113,18 @@ main{padding:14px}
     <button class="lock" id="lock" type="button">Lock</button>
   </div>
   <input id="q" type="search" placeholder="Search venue, town, email" style="margin-top:12px"/>
-  <div class="tabs" id="tabs">
-    <button type="button" id="tab-hot" data-tab="hot" class="on">Hot</button>
+  <p class="pep" id="pep">Numbers don’t book themselves, Nat.</p>
+  <div class="tabs" id="tabs-main">
+    <button type="button" id="tab-call" data-tab="call" class="on">Call</button>
     <button type="button" id="tab-booked" data-tab="booked">Booked</button>
+    <button type="button" id="tab-all" data-tab="all">All</button>
+  </div>
+  <div class="heat" id="tabs-heat">
+    <button type="button" id="tab-quoted" data-tab="quoted">Quoted</button>
+    <button type="button" id="tab-price" data-tab="price">Price asked</button>
+    <button type="button" id="tab-chasing" data-tab="chasing">Chasing</button>
+  </div>
+  <div class="tabs" id="tabs">
     <button type="button" id="tab-cons" data-tab="cons">Cons</button>
     <button type="button" id="tab-rbl" data-tab="rbl">RBL</button>
     <button type="button" id="tab-social" data-tab="social">Social</button>
@@ -139,7 +148,7 @@ main{padding:14px}
   var NOTES_PUSH = "https://dweet.cc/dweet/for/jem-natalie-live-nbj-2026";
   var NOTES_PULL = "https://dweet.cc/get/latest/dweet/for/jem-natalie-live-nbj-2026";
   var NOTES_FALLBACK = "call-notes.json";
-  var tab = "quoted";
+  var tab = "call";
   var q = "";
   var openId = null;
   var VENUES = [];
@@ -389,6 +398,7 @@ main{padding:14px}
 
   function inTab(v) {
     if (tab === "all") return true;
+    if (tab === "call") return heat(v) !== "booked" && heat(v) !== "skip";
     if (tab === "quoted" || tab === "price" || tab === "chasing" || tab === "booked") return heat(v) === tab;
     return venueGroup(v) === tab;
   }
@@ -424,14 +434,16 @@ main{padding:14px}
       if (tab === "chasing") return db - da;
       return da - db;
     });
-    var groups = ["quoted","price","chasing","booked","cons","rbl","social","pubs","other","skip"];
-    var labels = {quoted:"Quoted",price:"Price asked",chasing:"Chasing",booked:"Booked",cons:"Cons",rbl:"RBL",social:"Social",pubs:"Pubs",other:"Other",skip:"Skip"};
+    var groups = ["call","booked","all","quoted","price","chasing","cons","rbl","social","pubs","other","skip"];
+    var labels = {call:"Call",booked:"Booked",all:"All",quoted:"Quoted",price:"Price asked",chasing:"Chasing",cons:"Cons",rbl:"RBL",social:"Social",pubs:"Pubs",other:"Other",skip:"Skip"};
     var i;
     for (i = 0; i < groups.length; i++) {
       var g = groups[i];
       var btn = document.getElementById("tab-" + g);
       if (!btn) continue;
       var n = VENUES.filter(function (v) {
+        if (g === "all") return true;
+        if (g === "call") return heat(v) !== "booked" && heat(v) !== "skip";
         if (g === "quoted" || g === "price" || g === "chasing" || g === "booked") return heat(v) === g;
         return venueGroup(v) === g;
       }).length;
@@ -527,7 +539,7 @@ main{padding:14px}
       (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
       "</header>" +
       '<div class="panel" style="margin-top:14px">' +
-        (v.phone ? '<a class="callbtn" href="tel:' + esc(v.phone) + '">Call ' + esc(v.phone) + "</a>" : '<p class="need">No public number on file</p>') +
+        (v.phone ? '<a class="callbtn" href="' + telHref(v.phone) + '">Call ' + esc(prettyPhone(v.phone)) + "</a>" : '<p class="need">No public number on file</p>') +
         (v.email ? '<p class="email">' + esc(v.email) + "</p>" : "") +
         '<p class="meta">Status · ' + esc(badge(v)) + "</p>" +
         (v.replied ? '<p class="replied">Replied · ' + esc(v.replied) + "</p>" : "") +
@@ -629,12 +641,15 @@ main{padding:14px}
     q = e.target.value;
     renderList();
   });
-  document.getElementById("tabs").addEventListener("click", function (e) {
+  document.getElementById("tabs").addEventListener("click", onTab);
+  document.getElementById("tabs-main").addEventListener("click", onTab);
+  document.getElementById("tabs-heat").addEventListener("click", onTab);
+  function onTab(e) {
     var btn = e.target.closest("[data-tab]");
     if (!btn) return;
     tab = btn.getAttribute("data-tab");
     renderList();
-  });
+  }
   document.getElementById("lock").onclick = function () {
     try { sessionStorage.removeItem("natalie-ok"); } catch (e) {}
     location.reload();
