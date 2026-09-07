@@ -77,7 +77,7 @@ main{padding:14px}
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="Password"/>
 <p class="err" id="err"></p>
 <button type="button" id="go">Open board</button>
-<p class="ver">Board v4 · 7 Sep 2026</p>
+<p class="ver">Board v5 · 7 Sep 2026</p>
 </div></div>
 <div id="app">
 <header>
@@ -108,7 +108,8 @@ main{padding:14px}
 (function () {
   var PASS = "natbooksjake";
   var NOTEKEY = "natalie-live-board-notes-v3";
-  var NOTES_URL = "https://kvdb.io/TM793dG8ajJ2MKKbdk6R5Z/notes";
+  var NOTES_PUSH = "https://dweet.cc/dweet/for/jem-natalie-live-nbj-2026";
+  var NOTES_PULL = "https://dweet.cc/get/latest/dweet/for/jem-natalie-live-nbj-2026";
   var NOTES_FALLBACK = "call-notes.json";
   var tab = "call";
   var q = "";
@@ -184,24 +185,38 @@ main{padding:14px}
   }
 
   function pullRemote() {
-    return fetch(NOTES_URL + "?t=" + Date.now(), { cache: "no-store" })
+    return fetch(NOTES_PULL + "?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) {
-        if (!r.ok) throw new Error("kv");
+        if (!r.ok) throw new Error("pull");
         return r.json();
       })
-      .catch(function () {
-        return fetch(NOTES_FALLBACK + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
-          if (!r.ok) throw new Error("file");
-          return r.json();
-        });
-      })
       .then(function (data) {
-        var incoming = (data && data.notes) ? data.notes : (data || {});
+        var content = data && data.with && data.with[0] && data.with[0].content;
+        var raw = content && content.notes;
+        var incoming = {};
+        if (typeof raw === "string") {
+          try { incoming = JSON.parse(raw); } catch (e) { incoming = {}; }
+        } else if (raw && typeof raw === "object") {
+          incoming = raw;
+        }
         var merged = mergeStores(notes(), incoming);
         writeLocal(merged);
         sharedOk = true;
         stamp();
         return merged;
+      })
+      .catch(function () {
+        return fetch(NOTES_FALLBACK + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
+          if (!r.ok) throw new Error("file");
+          return r.json();
+        }).then(function (data) {
+          var incoming = (data && data.notes) ? data.notes : (data || {});
+          var merged = mergeStores(notes(), incoming);
+          writeLocal(merged);
+          sharedOk = false;
+          stamp();
+          return merged;
+        });
       })
       .catch(function () {
         sharedOk = false;
@@ -211,13 +226,16 @@ main{padding:14px}
   }
 
   function pushRemote(store) {
-    var body = JSON.stringify({ notes: store, updatedAt: new Date().toISOString() });
-    return fetch(NOTES_URL, {
+    var body = "notes=" + encodeURIComponent(JSON.stringify(store));
+    return fetch(NOTES_PUSH, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: body
     }).then(function (r) {
       if (!r.ok) throw new Error("push");
+      return r.json();
+    }).then(function (data) {
+      if (!data || data.this !== "succeeded") throw new Error("push");
       sharedOk = true;
       stamp();
     }).catch(function () {
@@ -225,6 +243,7 @@ main{padding:14px}
       stamp();
     });
   }
+
 
   function esc(s) {
     var d = document.createElement("div");
