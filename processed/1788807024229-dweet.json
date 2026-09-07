@@ -1,0 +1,23 @@
+{
+  "event": "new_lead",
+  "venue": {
+    "name": "Nora Grill",
+    "town": "Leigh-on-Sea",
+    "email": "Info@noragrill.co.uk",
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "7 Sep 2026",
+    "subject": "Jake Essex for Nora Grill?"
+  },
+  "messages": [
+    {
+      "side": "us",
+      "at": "2026-09-07T06:44:00Z",
+      "from": "jakeessexenquiries@gmail.com",
+      "subject": "Jake Essex for Nora Grill?",
+      "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for Nora Grill — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+    }
+  ],
+  "source": "bookings-2pm-remainder-skip-already-sent",
+  "secret": "natbooksjake"
+}

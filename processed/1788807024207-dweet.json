@@ -1,0 +1,22 @@
+{
+  "event": "reply_thread",
+  "venue": {
+    "name": "Bournville Social",
+    "town": "Birmingham",
+    "email": "info@bournvillesocialclub.co.uk",
+    "badge": "bounce",
+    "tab": "other",
+    "firstPitch": "1 Sep 2026",
+    "subject": "Live music — Jake Essex"
+  },
+  "messages": [
+    {
+      "side": "us",
+      "at": "2026-09-01T11:36:23Z",
+      "from": "jakeessexenquiries@gmail.com",
+      "subject": "Live music — Jake Essex",
+      "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, no deposit.\n\nBournville already puts live entertainment on the last Saturday of every\nmonth, plus Tuesday jazz, with Saturday open from half eleven. That is the\nBirmingham night I wanted.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+    }
+  ],
+  "secret": "natbooksjake"
+}
