@@ -100,7 +100,7 @@ main{padding:14px}
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="Password"/>
 <p class="err" id="err"></p>
 <button type="button" id="go">Open board</button>
-<p class="ver">Board v12 · 7 Sep 2026</p>
+<p class="ver">Board v13 · 7 Sep 2026</p>
 </div></div>
 <div id="app">
 <header>
@@ -365,6 +365,16 @@ main{padding:14px}
     return "tel:+" + d;
   }
 
+  function addedLabel(v) {
+    var raw = v.addedAt || v.firstPitch || "";
+    if (!raw) return "";
+    var d = parseWhen(raw);
+    if (d) {
+      return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+    }
+    return String(raw).replace(/^.*(\d{1,2}\s+\w+\s+\d{4}).*$/, "$1");
+  }
+
   function prettyPhone(p) {
     var d = String(p || "").replace(/\D/g, "");
     if (d.indexOf("44") === 0) d = "0" + d.slice(2);
@@ -479,6 +489,7 @@ main{padding:14px}
       return '<article class="card' + (h === "quoted" || h === "price" ? " hotcard" : "") + '">' +
         '<div class="cardtop"><div><h2>' + esc(v.name) + '</h2>' +
         (v.town ? '<p class="town">' + esc(v.town) + '</p>' : '') +
+        (addedLabel(v) ? '<p class="town">Added ' + esc(addedLabel(v)) + '</p>' : '') +
         '</div><span class="badge ' + heatBadge + '">' + esc(heatText) + '</span></div>' +
         (v.phone
           ? '<a class="callbtn" href="' + telHref(v.phone) + '">Call ' + esc(prettyPhone(v.phone)) + '</a>'
@@ -549,6 +560,7 @@ main{padding:14px}
       "<header><button class='back' id='back' type='button'>Back to list</button>" +
       "<h1>" + esc(v.name) + "</h1>" +
       (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
+      (addedLabel(v) ? '<p class="town">Added ' + esc(addedLabel(v)) + "</p>" : "") +
       "</header>" +
       '<div class="panel" style="margin-top:14px">' +
         (v.phone ? '<a class="callbtn" href="' + telHref(v.phone) + '">Call ' + esc(prettyPhone(v.phone)) + "</a>" : '<p class="need">No public number on file</p>') +
@@ -556,6 +568,7 @@ main{padding:14px}
         '<p class="meta">Status · ' + esc(badge(v)) + "</p>" +
         (v.replied ? '<p class="replied">Replied · ' + esc(v.replied) + "</p>" : "") +
         (v.firstPitch ? '<p class="meta">First pitch · ' + esc(v.firstPitch) + "</p>" : "") +
+        (addedLabel(v) ? '<p class="meta">Date added · ' + esc(addedLabel(v)) + "</p>" : "") +
       "</div>" +
       '<div class="panel"><p class="kicker">Conversation</p>' + bubbles +
       '<p class="kicker" style="margin-top:18px">Notes</p>' + noteBlocks +
