@@ -100,7 +100,7 @@ main{padding:14px}
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="Password"/>
 <p class="err" id="err"></p>
 <button type="button" id="go">Open board</button>
-<p class="ver">Board v13 · 7 Sep 2026</p>
+<p class="ver">Board v14 · 7 Sep 2026</p>
 </div></div>
 <div id="app">
 <header>
@@ -121,6 +121,7 @@ main{padding:14px}
     <button type="button" id="tab-called" data-tab="called">Called</button>
     <button type="button" id="tab-booked" data-tab="booked">Booked</button>
     <button type="button" id="tab-nophone" data-tab="nophone">No phone</button>
+    <button type="button" id="tab-dropped" data-tab="dropped">Dropped</button>
     <button type="button" id="tab-all" data-tab="all">All</button>
   </div>
 </header>
@@ -409,8 +410,15 @@ main{padding:14px}
     return replied.indexOf("yes") === 0;
   }
 
+  function isDropped(v) {
+    var rec = notes()[v.id] || {};
+    return !!rec.dropped;
+  }
+
   function inTab(v) {
     var rec = notes()[v.id] || {};
+    if (tab === "dropped") return !!rec.dropped;
+    if (rec.dropped) return tab === "all";
     if (tab === "all") return true;
     if (tab === "nophone") return !hasPhone(v);
     if (tab === "booked") return heat(v) === "booked";
@@ -452,8 +460,8 @@ main{padding:14px}
       if (tab === "chasing") return db - da;
       return da - db;
     });
-    var groups = ["tocall","replying","hot","called","booked","nophone","all"];
-    var labels = {tocall:"To call",replying:"Replying",hot:"Hotpicks",called:"Called",booked:"Booked",nophone:"No phone",all:"All"};
+    var groups = ["tocall","replying","hot","called","booked","nophone","dropped","all"];
+    var labels = {tocall:"To call",replying:"Replying",hot:"Hotpicks",called:"Called",booked:"Booked",nophone:"No phone",dropped:"Dropped",all:"All"};
     var i;
     for (i = 0; i < groups.length; i++) {
       var g = groups[i];
@@ -462,6 +470,8 @@ main{padding:14px}
       var n = VENUES.filter(function (v) {
         var rec = store[v.id] || {};
         if (g === "all") return true;
+        if (g === "dropped") return !!rec.dropped;
+        if (rec.dropped) return false;
         if (g === "nophone") return !hasPhone(v);
         if (g === "booked") return heat(v) === "booked";
         if (g === "called") return !!rec.called;
@@ -500,6 +510,9 @@ main{padding:14px}
         (n.called ? '<p class="calledtag">Called' + (n.calledAt ? ' · ' + esc(n.calledAt) : '') + '</p>' : '') +
         (lastNoteText(n) ? '<p class="snippet">Note · ' + esc(lastNoteText(n).slice(0, 140)) + '</p>' : (snippet ? '<p class="snippet">' + esc(snippet) + '</p>' : '')) +
         '<button class="openbtn" type="button" data-open="' + esc(v.id) + '">View conversation</button>' +
+        (n.dropped
+          ? '<button class="openbtn" type="button" data-undrop="' + esc(v.id) + '">Put back on the list</button>'
+          : '<button class="openbtn" type="button" data-drop="' + esc(v.id) + '">Drop — not interested</button>') +
       '</article>';
     }).join("") || '<p class="empty">Nothing in this tab</p>';
   }
@@ -523,8 +536,26 @@ main{padding:14px}
       calledAt: n.calledAt || null,
       note: n.note || "",
       updatedAt: n.updatedAt || null,
-      entries: entries
+      entries: entries,
+      dropped: !!n.dropped,
+      droppedAt: n.droppedAt || null
     };
+  }
+
+  function setDropped(id, dropped) {
+    var store2 = notes();
+    var rec2 = recordOf(id);
+    store2[id] = {
+      venueId: id,
+      called: rec2.called,
+      calledAt: rec2.calledAt,
+      note: rec2.note,
+      updatedAt: new Date().toISOString(),
+      entries: rec2.entries,
+      dropped: !!dropped,
+      droppedAt: dropped ? new Date().toISOString() : null
+    };
+    saveNotes(store2);
   }
 
   function renderDetail(id) {
@@ -580,6 +611,9 @@ main{padding:14px}
         '<textarea id="note" rows="4" placeholder="Left voicemail / spoke to the manager / call back Friday"></textarea>' +
         '<button class="primary" id="save" type="button">Save note</button>' +
         '<p class="saveflash" id="flash"></p>' +
+        (rec.dropped
+          ? '<button class="openbtn" id="undrop" type="button">Put back on the list</button>'
+          : '<button class="openbtn" id="drop" type="button">Drop — not interested / no answer</button>') +
       "</div></div>";
     document.getElementById("back").onclick = function () {
       d.className = "";
@@ -613,7 +647,9 @@ main{padding:14px}
         calledAt: calledAt,
         note: text || rec2.note,
         updatedAt: new Date().toISOString(),
-        entries: rec2.entries
+        entries: rec2.entries,
+        dropped: rec2.dropped,
+        droppedAt: rec2.droppedAt
       };
       saveNotes(store2);
       renderDetail(id);
@@ -632,12 +668,28 @@ main{padding:14px}
           calledAt: rec2.calledAt,
           note: rec2.entries.length ? rec2.entries[rec2.entries.length - 1].text : "",
           updatedAt: new Date().toISOString(),
-          entries: rec2.entries
+          entries: rec2.entries,
+          dropped: rec2.dropped,
+          droppedAt: rec2.droppedAt
         };
         saveNotes(store2);
         renderDetail(id);
       };
     });
+    var dropBtn = document.getElementById("drop");
+    if (dropBtn) dropBtn.onclick = function () {
+      setDropped(id, true);
+      document.getElementById("detail").className = "";
+      document.getElementById("app").classList.add("show");
+      openId = null;
+      tab = "dropped";
+      renderList();
+    };
+    var undropBtn = document.getElementById("undrop");
+    if (undropBtn) undropBtn.onclick = function () {
+      setDropped(id, false);
+      renderDetail(id);
+    };
   }
 
   loadVenues();
@@ -677,6 +729,19 @@ main{padding:14px}
     location.reload();
   };
   document.getElementById("list").addEventListener("click", function (e) {
+    var drop = e.target.closest("[data-drop]");
+    if (drop) {
+      setDropped(drop.getAttribute("data-drop"), true);
+      tab = "dropped";
+      renderList();
+      return;
+    }
+    var undrop = e.target.closest("[data-undrop]");
+    if (undrop) {
+      setDropped(undrop.getAttribute("data-undrop"), false);
+      renderList();
+      return;
+    }
     var btn = e.target.closest("[data-open]");
     if (!btn) return;
     openId = btn.getAttribute("data-open");
