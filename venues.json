@@ -368,7 +368,7 @@
   {
     "id": "feelgoods",
     "name": "Feelgoods",
-    "town": "",
+    "town": "Southend-on-Sea",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -381,6 +381,14 @@
       {
         "side": "us",
         "label": "Sent",
+        "at": "2026-09-07T06:52:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Feelgoods?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for Feelgoods — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
         "at": "2026-09-07T14:52:48Z",
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex for Feelgoods?",
@@ -388,7 +396,8 @@
       }
     ],
     "hasThread": false,
-    "tab": "call"
+    "tab": "call",
+    "addedAt": "7 Sep 2026"
   },
   {
     "id": "tipples-wine-bar",
