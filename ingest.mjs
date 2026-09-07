@@ -165,28 +165,47 @@ async function drainInbox() {
 }
 
 async function drainDweet() {
-  const url = `https://dweet.cc/get/latest/dweet/for/jem-natalie-ingest-door?t=${Date.now()}`;
+  // Pull up to ~50 recent dweets so a batch of sends does not collapse to one event.
+  const url = `https://dweet.cc/get/dweets/for/jem-natalie-ingest-door?t=${Date.now()}`;
   const res = await fetch(url);
   if (!res.ok) return { pulled: false };
   const data = await res.json();
-  const content = data?.with?.[0]?.content || {};
-  const raw = content.event || content.payload || content.notes;
-  if (!raw) return { pulled: false };
-  let payload;
-  try {
-    payload = typeof raw === "string" ? JSON.parse(raw) : raw;
-  } catch {
-    return { pulled: false, error: "bad dweet json" };
+  const rows = Array.isArray(data?.with) ? data.with.slice().reverse() : [];
+  if (!rows.length) return { pulled: false };
+  let venues = JSON.parse(await readFile(VENUE_FILE, "utf8"));
+  let applied = 0;
+  const seen = new Set();
+  for (const row of rows) {
+    const content = row?.content || {};
+    const raw = content.event || content.payload || content.notes;
+    if (!raw) continue;
+    let payload;
+    try {
+      payload = typeof raw === "string" ? JSON.parse(raw) : raw;
+    } catch {
+      continue;
+    }
+    if (payload.secret && payload.secret !== SECRET) continue;
+    const key = JSON.stringify({
+      e: payload.event,
+      email: payload.venue?.email,
+      at: payload.messages?.[0]?.at,
+      body: (payload.messages?.[0]?.body || "").slice(0, 80),
+    });
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const result = await applyPayload(venues, payload);
+    venues = result.venues;
+    if (result.applied) {
+      applied += result.applied;
+      await mkdir(PROCESSED, { recursive: true });
+      await writeFile(path.join(PROCESSED, `${Date.now()}-dweet.json`), JSON.stringify(payload, null, 2));
+    }
   }
-  if (payload.secret && payload.secret !== SECRET) return { pulled: false, error: "bad secret" };
-  const venues = JSON.parse(await readFile(VENUE_FILE, "utf8"));
-  const result = await applyPayload(venues, payload);
-  if (result.applied) {
-    await writeFile(VENUE_FILE, `${JSON.stringify(result.venues, null, 2)}\n`);
-    await mkdir(PROCESSED, { recursive: true });
-    await writeFile(path.join(PROCESSED, `${Date.now()}-dweet.json`), JSON.stringify(payload, null, 2));
+  if (applied) {
+    await writeFile(VENUE_FILE, `${JSON.stringify(venues, null, 2)}\n`);
   }
-  return { pulled: true, applied: result.applied, venues: result.venues.length };
+  return { pulled: true, applied, venues: venues.length, scanned: rows.length };
 }
 
 const mode = process.argv[2] || "inbox";
