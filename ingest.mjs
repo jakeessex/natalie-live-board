@@ -24,11 +24,15 @@ function msgKey(message) {
 function asMessage(raw) {
   const body = String(raw.body || "").trim();
   const subject = String(raw.subject || "");
+  const label = String(raw.label || "");
+  const blob = `${label} ${subject} ${body}`.toLowerCase();
+  if (raw.side === "note") return null;
+  if (blob.includes("gate:send") || blob.includes("trail")) return null;
   if (!body && !subject) return null;
-  const side = raw.side === "them" || raw.side === "note" ? raw.side : "us";
+  const side = raw.side === "them" ? "them" : "us";
   return {
     side,
-    label: String(raw.label || (side === "them" ? "Their reply" : side === "note" ? "Note" : "Sent")),
+    label: String(raw.label || (side === "them" ? "Their reply" : "Sent")),
     at: String(raw.at || ""),
     from: String(raw.from || ""),
     subject,
@@ -80,12 +84,18 @@ function applyEvent(venues, event) {
   const idx = findIndex(venues, event);
   if (idx < 0) return { venues: [blankVenue(event), ...venues], action: "insert" };
   const current = venues[idx];
-  const seen = new Set(current.messages.map(msgKey));
-  const merged = current.messages.slice();
-  for (const message of incoming) {
-    if (!seen.has(msgKey(message))) {
-      merged.push(message);
-      seen.add(msgKey(message));
+  const replaceThread = String(event.event || "") === "reply_thread" && incoming.length > 0;
+  let merged;
+  if (replaceThread) {
+    merged = incoming.slice();
+  } else {
+    merged = (current.messages || []).filter((m) => m.side === "us" || m.side === "them");
+    const seen = new Set(merged.map(msgKey));
+    for (const message of incoming) {
+      if (!seen.has(msgKey(message))) {
+        merged.push(message);
+        seen.add(msgKey(message));
+      }
     }
   }
   merged.sort((a, b) => String(a.at).localeCompare(String(b.at)));
