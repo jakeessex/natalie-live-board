@@ -77,7 +77,7 @@ main{padding:14px}
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="Password"/>
 <p class="err" id="err"></p>
 <button type="button" id="go">Open board</button>
-<p class="ver">Board v3 · 7 Sep 2026</p>
+<p class="ver">Board v4 · 7 Sep 2026</p>
 </div></div>
 <div id="app">
 <header>
@@ -85,6 +85,7 @@ main{padding:14px}
     <div>
       <p class="kicker">Jake Essex Music Ltd</p>
       <h1>Live booking board</h1>
+      <p class="ver" id="sync">Notes on this phone only</p>
     </div>
     <button class="lock" id="lock" type="button">Lock</button>
   </div>
@@ -107,10 +108,13 @@ main{padding:14px}
 (function () {
   var PASS = "natbooksjake";
   var NOTEKEY = "natalie-live-board-notes-v3";
+  var NOTES_URL = "https://kvdb.io/TM793dG8ajJ2MKKbdk6R5Z/notes";
+  var NOTES_FALLBACK = "call-notes.json";
   var tab = "call";
   var q = "";
   var openId = null;
   var VENUES = [];
+  var sharedOk = false;
 
   function showErr(msg) {
     var el = document.getElementById("err");
@@ -149,8 +153,77 @@ main{padding:14px}
     try { return JSON.parse(localStorage.getItem(NOTEKEY) || "{}"); }
     catch (e) { return {}; }
   }
-  function saveNotes(store) {
+
+  function stamp() {
+    var el = document.getElementById("sync");
+    if (!el) return;
+    el.textContent = sharedOk ? "Notes shared with Jake" : "Notes on this phone only";
+  }
+
+  function newer(a, b) {
+    return String((a && a.updatedAt) || "") > String((b && b.updatedAt) || "");
+  }
+
+  function mergeStores(a, b) {
+    var out = {};
+    var k;
+    for (k in a) if (Object.prototype.hasOwnProperty.call(a, k)) out[k] = a[k];
+    for (k in b) if (Object.prototype.hasOwnProperty.call(b, k)) {
+      if (!out[k] || newer(b[k], out[k])) out[k] = b[k];
+    }
+    return out;
+  }
+
+  function writeLocal(store) {
     localStorage.setItem(NOTEKEY, JSON.stringify(store));
+  }
+
+  function saveNotes(store) {
+    writeLocal(store);
+    pushRemote(store);
+  }
+
+  function pullRemote() {
+    return fetch(NOTES_URL + "?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("kv");
+        return r.json();
+      })
+      .catch(function () {
+        return fetch(NOTES_FALLBACK + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
+          if (!r.ok) throw new Error("file");
+          return r.json();
+        });
+      })
+      .then(function (data) {
+        var incoming = (data && data.notes) ? data.notes : (data || {});
+        var merged = mergeStores(notes(), incoming);
+        writeLocal(merged);
+        sharedOk = true;
+        stamp();
+        return merged;
+      })
+      .catch(function () {
+        sharedOk = false;
+        stamp();
+        return notes();
+      });
+  }
+
+  function pushRemote(store) {
+    var body = JSON.stringify({ notes: store, updatedAt: new Date().toISOString() });
+    return fetch(NOTES_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: body
+    }).then(function (r) {
+      if (!r.ok) throw new Error("push");
+      sharedOk = true;
+      stamp();
+    }).catch(function () {
+      sharedOk = false;
+      stamp();
+    });
   }
 
   function esc(s) {
@@ -292,7 +365,7 @@ main{padding:14px}
         updatedAt: new Date().toISOString()
       };
       saveNotes(store2);
-      document.getElementById("flash").textContent = "Saved on this phone";
+      document.getElementById("flash").textContent = sharedOk ? "Saved — Jake can see this" : "Saved on this phone";
     };
     document.getElementById("copy").onclick = function () {
       var store2 = notes();
@@ -314,6 +387,12 @@ main{padding:14px}
   }
 
   loadVenues();
+  stamp();
+  pullRemote().then(function () { if (document.getElementById("app").classList.contains("show")) renderList(); });
+  setInterval(function () {
+    if (!document.getElementById("app").classList.contains("show")) return;
+    pullRemote().then(function () { if (!openId) renderList(); });
+  }, 20000);
   document.getElementById("go").onclick = unlock;
   document.getElementById("pw").addEventListener("keydown", function (e) {
     if (e.key === "Enter") unlock();
