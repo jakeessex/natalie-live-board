@@ -1,0 +1,32 @@
+name: Board ingest
+on:
+  push:
+    paths:
+      - "inbox/**"
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [board-ingest]
+permissions:
+  contents: write
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Drain inbox
+        run: node ingest.mjs inbox
+      - name: Drain live POST door
+        run: node ingest.mjs dweet
+        continue-on-error: true
+      - name: Commit venues if changed
+        run: |
+          git config user.name "natalie-board-bot"
+          git config user.email "jakeessexenquiries@gmail.com"
+          git add venues.json processed inbox
+          git diff --cached --quiet || git commit -m "Ingest board events"
+          git push

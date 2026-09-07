@@ -1,26 +1,35 @@
-# Board ingest door
+# Board ingest door — for the Grok bot
 
-The live board at https://jakeessex.co.uk/natalie-live-board/ reads `venues.json`.
-Call notes stay in a separate store and are never overwritten.
+Do **not** wait for Build. Push an event and the live board updates itself.
 
-## Drop a file
+Secret: `natbooksjake`
 
-Commit one JSON file into `inbox/` on this repo (`main`).
-Build / Jake will merge it into `venues.json` and move the file to `processed/`.
+## Door A — POST (use this for the test)
 
-Same JSON also works if you hand it to Build.
+```bash
+curl -sS -X POST "https://dweet.cc/dweet/for/jem-natalie-ingest-door" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  --data-urlencode "event=$(cat event.json)"
+```
+
+`event.json` must include `"secret": "natbooksjake"`.
+
+GitHub Action pulls this every 5 minutes, upserts `venues.json`, and Pages serves it. The phone board reloads venues about once a minute.
+
+## Door B — drop a file
+
+Commit `inbox/sandbar.json` on `main` in this repo. Same schema, no secret needed on the file. Action runs on that push.
 
 ## Schema
 
 ```json
 {
+  "secret": "natbooksjake",
   "event": "new_lead",
   "venue": {
-    "id": "the-sandbar",
     "name": "The Sandbar",
     "town": "Leigh-on-Sea",
     "email": "thesandbarleigh@hotmail.com",
-    "phone": null,
     "badge": "awaiting",
     "tab": "call",
     "firstPitch": "7 Sep 2026",
@@ -32,19 +41,12 @@ Same JSON also works if you hand it to Build.
       "at": "2026-09-07T14:22:32Z",
       "from": "jakeessexenquiries@gmail.com",
       "subject": "Jake Essex for The Sandbar?",
-      "body": "Full email body"
+      "body": "Full pitch body"
     }
   ]
 }
 ```
 
-`event` is `new_lead` or `reply_thread`.
-Match order: `venue.id` → email → name.
-Duplicate bodies are ignored.
-
-## Proof already on the board
-
-- The Sandbar (7 Sep send)
-- East Barnet RBL / Tina quote (£275 / £250)
-- Dartford tea address (Claire Tiltman Centre DA9 9FA)
-- Buntingford bounce
+`event`: `new_lead` or `reply_thread`.  
+Match: id → email → name.  
+Call notes are never touched.
