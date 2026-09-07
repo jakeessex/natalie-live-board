@@ -9,11 +9,31 @@
 <title>Natalie live board</title>
 <style>
 :root{
-  --bg:#0b0b0c;--surface:#141416;--raised:#1c1c1f;--fg:#f2efe8;--muted:#9a9790;
-  --subtle:#6e6b66;--border:#2a2a2e;--line:#232327;--accent:#cfd3d8;--accent-fg:#0b0b0c;
-  --call:#3ecf73;--call-fg:#062414;--us:#2a3344;--them:#24201c;--danger:#e26d6d;
-  --booked:#8fd4a8;--warn:#e0b15a;
+  --bg:#140e0a;--surface:#1e1510;--raised:#2a1d16;--fg:#f8f0e4;--muted:#c4b3a0;
+  --subtle:#8f7d6c;--border:#3a2b22;--line:#2c2018;--accent:#e8b84a;--accent-fg:#1a120c;
+  --call:#2ee59a;--call-fg:#062416;--us:#2a3344;--them:#2a2218;--danger:#ff7a6e;
+  --booked:#7dffb2;--warn:#ffb45a;--hot:#ff7a3a;--chase:#5cc8ff;
 }
+html,body{margin:0;background:
+  radial-gradient(1200px 500px at 50% -10%, rgba(232,184,74,.18), transparent 55%),
+  var(--bg);color:var(--fg);font-family:-apple-system,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+#go,.primary{width:100%;padding:14px;border:0;border-radius:12px;background:linear-gradient(180deg,#f3cc6a,#e8b84a);color:var(--accent-fg);font-weight:800;font-size:16px;margin-top:12px}
+.tabs button.on{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.heat{display:flex;gap:8px;margin-top:12px;overflow:auto;padding-bottom:2px}
+.heat button{flex:0 0 auto;height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--border);background:var(--raised);color:var(--muted);font-weight:750;font-size:13px;white-space:nowrap}
+.heat button.on{background:var(--hot);color:#1a0c08;border-color:var(--hot)}
+.pep{margin:10px 0 0;padding:12px 14px;border-radius:14px;background:linear-gradient(135deg,#2a1c12,#1a120c);border:1px solid #5a3d20;color:#f3d9a4;font-size:14px;font-weight:650;line-height:1.35}
+.badge.quoted{background:#3a2a10;color:#ffd36a}
+.badge.price{background:#3a2410;color:#ffb45a}
+.badge.chasing{background:#102433;color:#7ad0ff}
+.badge.stale{background:#3a1410;color:#ff8a7a}
+.badge.today{background:#12301c;color:#7dffb2}
+.callbtn{display:flex;align-items:center;justify-content:center;height:52px;margin-top:14px;border-radius:14px;background:linear-gradient(180deg,#4dffb0,#2ee59a);color:var(--call-fg);font-weight:800;text-decoration:none;letter-spacing:.01em;box-shadow:0 8px 20px rgba(46,229,154,.18)}
+.days{display:inline-block;margin-top:8px;font-size:12px;font-weight:750;color:var(--warn)}
+.days.stale{color:#ff8a7a}
+.days.fresh{color:#7dffb2}
+.card.hotcard{border-color:#6a4a20;box-shadow:inset 0 0 0 1px rgba(232,184,74,.2)}
+
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 button,input,textarea{font:inherit}
@@ -119,7 +139,7 @@ main{padding:14px}
   var NOTES_PUSH = "https://dweet.cc/dweet/for/jem-natalie-live-nbj-2026";
   var NOTES_PULL = "https://dweet.cc/get/latest/dweet/for/jem-natalie-live-nbj-2026";
   var NOTES_FALLBACK = "call-notes.json";
-  var tab = "hot";
+  var tab = "quoted";
   var q = "";
   var openId = null;
   var VENUES = [];
@@ -280,8 +300,86 @@ main{padding:14px}
     return "other";
   }
 
+  function heat(v) {
+    var badge = v.badge || "";
+    if (badge === "bounce" || badge === "declined" || badge === "retract-agency" || badge === "skip-do-not-email") return "skip";
+    if (v.tab === "booked" || badge === "booked" || badge === "locked") return "booked";
+    if (badge === "quoted") return "quoted";
+    if (badge === "replied-interested") return "price";
+    if (badge === "fully-booked-on-file" || badge === "awaiting" || badge === "queued-2pm-1sep") return "chasing";
+    return "other";
+  }
+
+  function parseWhen(s) {
+    if (!s) return null;
+    var n = Date.parse(s);
+    if (!isNaN(n)) return new Date(n);
+    var m = String(s).match(/(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
+    if (!m) return null;
+    var months = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
+    return new Date(+m[3], months[m[2].slice(0, 3).toLowerCase()], +m[1]);
+  }
+
+  function lastDate(v) {
+    var msgs = v.messages || [];
+    var i;
+    for (i = msgs.length - 1; i >= 0; i--) {
+      var d = parseWhen(msgs[i].at);
+      if (d) return d;
+    }
+    d = parseWhen(v.replied);
+    if (d) return d;
+    return parseWhen(v.firstPitch);
+  }
+
+  function daysAgo(v) {
+    var d = lastDate(v);
+    if (!d) return null;
+    return Math.floor((Date.now() - d.getTime()) / 86400000);
+  }
+
+  function daysLabel(v) {
+    var n = daysAgo(v);
+    if (n == null) return "";
+    var replied = String(v.replied || "").toLowerCase().indexOf("yes") === 0 || v.hasThread;
+    if (n <= 0) return replied ? "Replied today" : "Pitched today";
+    if (replied) return n + "d since reply";
+    return n + "d since pitch";
+  }
+
+  function telHref(p) {
+    var d = String(p || "").replace(/\D/g, "");
+    if (!d) return "";
+    if (d.charAt(0) === "0") d = "44" + d.slice(1);
+    if (d.indexOf("44") !== 0) d = "44" + d;
+    return "tel:+" + d;
+  }
+
+  function prettyPhone(p) {
+    var d = String(p || "").replace(/\D/g, "");
+    if (d.indexOf("44") === 0) d = "0" + d.slice(2);
+    if (d.length === 11) return d.slice(0, 5) + " " + d.slice(5);
+    return p;
+  }
+
+  function pepTalk() {
+    var store = notes();
+    var calledN = 0;
+    var k;
+    for (k in store) if (store[k] && store[k].called) calledN += 1;
+    var quotedN = VENUES.filter(function (v) { return heat(v) === "quoted"; }).length;
+    var chaseN = VENUES.filter(function (v) { return heat(v) === "chasing" && v.phone; }).length;
+    var bookedN = VENUES.filter(function (v) { return heat(v) === "booked"; }).length;
+    if (calledN === 0) return "Four booked already. " + quotedN + " quotes waiting. " + chaseN + " numbers ready. First call is the hardest, Nat.";
+    if (calledN < 5) return calledN + " logged on this phone. Keep going — " + chaseN + " still have a number.";
+    if (calledN < 15) return calledN + " calls in. That's a shift. Next one's in the list.";
+    return calledN + " calls logged. Booked " + bookedN + ". Don't leave a live quote hanging.";
+  }
+
+
   function inTab(v) {
     if (tab === "all") return true;
+    if (tab === "quoted" || tab === "price" || tab === "chasing" || tab === "booked") return heat(v) === tab;
     return venueGroup(v) === tab;
   }
 
@@ -309,31 +407,49 @@ main{padding:14px}
   function renderList() {
     var store = notes();
     var rows = VENUES.filter(function (v) { return inTab(v) && matches(v); });
-    var groups = ["hot","booked","cons","rbl","social","pubs","other","skip"];
-    var labels = {hot:"Hot",booked:"Booked",cons:"Cons",rbl:"RBL",social:"Social",pubs:"Pubs",other:"Other",skip:"Skip"};
+    rows.sort(function (a, b) {
+      var da = daysAgo(a); var db = daysAgo(b);
+      if (da == null) da = -1;
+      if (db == null) db = -1;
+      if (tab === "chasing") return db - da;
+      return da - db;
+    });
+    var groups = ["quoted","price","chasing","booked","cons","rbl","social","pubs","other","skip"];
+    var labels = {quoted:"Quoted",price:"Price asked",chasing:"Chasing",booked:"Booked",cons:"Cons",rbl:"RBL",social:"Social",pubs:"Pubs",other:"Other",skip:"Skip"};
     var i;
     for (i = 0; i < groups.length; i++) {
       var g = groups[i];
       var btn = document.getElementById("tab-" + g);
       if (!btn) continue;
-      var n = VENUES.filter(function (v) { return venueGroup(v) === g; }).length;
+      var n = VENUES.filter(function (v) {
+        if (g === "quoted" || g === "price" || g === "chasing" || g === "booked") return heat(v) === g;
+        return venueGroup(v) === g;
+      }).length;
       btn.textContent = labels[g] + " " + n;
       btn.className = tab === g ? "on" : "";
     }
+    var pep = document.getElementById("pep");
+    if (pep) pep.textContent = pepTalk();
     document.getElementById("count").textContent = rows.length + " venues · " + (labels[tab] || tab);
     document.getElementById("list").innerHTML = rows.map(function (v) {
       var n = store[v.id] || {};
       var b = badge(v);
+      var h = heat(v);
       var thread = v.messages || [];
       var last = thread.length ? thread[thread.length - 1] : null;
       var snippet = last && last.body ? last.body.slice(0, 140) : (v.subject || "");
-      return '<article class="card">' +
+      var days = daysLabel(v);
+      var daysClass = (daysAgo(v) != null && daysAgo(v) >= 7) ? "stale" : "fresh";
+      var heatBadge = h === "quoted" ? "quoted" : h === "price" ? "price" : h === "chasing" ? "chasing" : (b === "booked" ? "booked" : "");
+      var heatText = h === "quoted" ? "quoted" : h === "price" ? "price asked" : h === "chasing" ? "chasing" : b;
+      return '<article class="card' + (h === "quoted" || h === "price" ? " hotcard" : "") + '">' +
         '<div class="cardtop"><div><h2>' + esc(v.name) + '</h2>' +
         (v.town ? '<p class="town">' + esc(v.town) + '</p>' : '') +
-        '</div><span class="badge ' + (b === "booked" ? "booked" : "") + '">' + esc(b) + '</span></div>' +
+        '</div><span class="badge ' + heatBadge + '">' + esc(heatText) + '</span></div>' +
         (v.phone
-          ? '<a class="callbtn" href="tel:' + esc(v.phone) + '">Call ' + esc(v.phone) + '</a>'
+          ? '<a class="callbtn" href="' + telHref(v.phone) + '">Call ' + esc(prettyPhone(v.phone)) + '</a>'
           : '<p class="need">Need a public number</p>') +
+        (days ? '<p class="days ' + daysClass + '">' + esc(days) + '</p>' : '') +
         (v.email ? '<p class="email">' + esc(v.email) + '</p>' : '') +
         (v.replied ? '<p class="replied">Replied · ' + esc(v.replied) + '</p>' : '') +
         (n.called ? '<p class="calledtag">Called' + (n.calledAt ? ' · ' + esc(n.calledAt) : '') + '</p>' : '') +
@@ -479,6 +595,13 @@ main{padding:14px}
 
   loadVenues();
   stamp();
+  try {
+    var wipe = notes();
+    if (wipe["broomfield-rbl"]) {
+      delete wipe["broomfield-rbl"];
+      writeLocal(wipe);
+    }
+  } catch (e) {}
   pullRemote().then(function () { if (document.getElementById("app").classList.contains("show")) renderList(); });
   setInterval(function () {
     if (!document.getElementById("app").classList.contains("show")) return;
