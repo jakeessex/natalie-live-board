@@ -1,0 +1,22 @@
+{
+  "event": "reply_thread",
+  "venue": {
+    "name": "Milford Social",
+    "town": "Belper",
+    "email": "milfordsocialclub@mail.com",
+    "badge": "bounce",
+    "tab": "other",
+    "firstPitch": "1 Sep 2026",
+    "subject": "Live music — Jake Essex"
+  },
+  "messages": [
+    {
+      "side": "us",
+      "at": "2026-09-01T11:39:04Z",
+      "from": "jakeessexenquiries@gmail.com",
+      "subject": "Live music — Jake Essex",
+      "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, no deposit.\n\nMilford already puts live music on nearly every weekend — Saturday nights\nand Sunday afternoon at the Sunshine Club. That is his night.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+    }
+  ],
+  "secret": "natbooksjake"
+}
