@@ -1,0 +1,21 @@
+{
+  "event": "new_lead",
+  "venue": {
+    "name": "Winchester Club",
+    "town": "Winchester",
+    "email": "SMArundell@aol.com",
+    "badge": "quoted",
+    "tab": "call",
+    "firstPitch": "7 Sep 2026",
+    "subject": "Jake Essex — Winchester Club prices"
+  },
+  "messages": [
+    {
+      "side": "us",
+      "at": "2026-09-07T16:00:00Z",
+      "from": "jakeessexenquiries@gmail.com",
+      "subject": "Jake Essex — Winchester Club prices",
+      "body": "Sandra Murray website enquiry follow-up: £325 cash FAR 2h Sat/Sun only; 5 Sep treated as placeholder; she sends Saturdays/Sundays when ready."
+    }
+  ]
+}
