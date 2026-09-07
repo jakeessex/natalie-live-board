@@ -656,7 +656,7 @@
   {
     "id": "nora-grill",
     "name": "Nora Grill",
-    "town": "",
+    "town": "Leigh-on-Sea",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -669,6 +669,14 @@
       {
         "side": "us",
         "label": "Sent",
+        "at": "2026-09-07T06:44:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Nora Grill?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for Nora Grill — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
         "at": "2026-09-07T14:44:51Z",
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex for Nora Grill?",
@@ -676,12 +684,13 @@
       }
     ],
     "hasThread": false,
-    "tab": "call"
+    "tab": "call",
+    "addedAt": "7 Sep 2026"
   },
   {
     "id": "tarantino",
     "name": "Tarantino",
-    "town": "",
+    "town": "Hornchurch",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -694,6 +703,14 @@
       {
         "side": "us",
         "label": "Sent",
+        "at": "2026-09-07T06:49:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Tarantino?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for Tarantino — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
         "at": "2026-09-07T14:49:03Z",
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex for Tarantino?",
@@ -701,7 +718,8 @@
       }
     ],
     "hasThread": false,
-    "tab": "call"
+    "tab": "call",
+    "addedAt": "7 Sep 2026"
   },
   {
     "id": "feelgoods",
@@ -7312,7 +7330,7 @@
     "name": "Churchills Club Eastleigh",
     "town": "Eastleigh",
     "badge": "awaiting",
-    "phone": "+441708740817",
+    "phone": "01708 740817",
     "needPhone": false,
     "email": "info@churchillsclub.co.uk",
     "replied": "no",
@@ -7326,6 +7344,14 @@
         "at": "2026-09-01T14:07:00Z",
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex for Churchills Club Eastleigh?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nChurchills already runs Saturday night entertainment from half eight to eleven, and September's diary is live with Pure Cheese Disco, Diamond & Bowie and Ivan J still to come.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s rock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-01T14:07:40Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nChurchills already runs Saturday night entertainment from half eight to eleven, and September's diary is live with Pure Cheese Disco, Diamond & Bowie and Ivan J still to come.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s rock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
       }
     ],

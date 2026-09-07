@@ -1,0 +1,22 @@
+{
+  "event": "reply_thread",
+  "venue": {
+    "name": "Harlow Town RBL",
+    "town": "",
+    "email": "rblharlowclub@btconnect.com",
+    "badge": "bounce",
+    "tab": "other",
+    "firstPitch": "27 Aug 2026",
+    "subject": "Live music — Jake Essex"
+  },
+  "messages": [
+    {
+      "side": "us",
+      "at": "2026-08-27T09:16:10Z",
+      "from": "jakeessexenquiries@gmail.com",
+      "subject": "Live music — Jake Essex",
+      "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s rock and roll. He is the act. No impersonations, no jumpsuit, no corny gimmicks. The night has a shape: raw 50s through to 70s Vegas, plus Darin, Dion, Holly, Orbison, Sinatra. Real voice. Own PA, fully self-contained, no deposit.\n\nThis is for the club at Radburn Pavilion on Latton Common. He'd be the act for a members' night there.\n\nHave a look: http://jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. 2 × 45 or 3 × 45. If a date works, reply here and I'll lock it.\n\nBest,\nNatalie\nJake Essex Music"
+    }
+  ],
+  "secret": "natbooksjake"
+}

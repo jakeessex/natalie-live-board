@@ -1,0 +1,22 @@
+{
+  "event": "reply_thread",
+  "venue": {
+    "name": "Croydon Festival Suite",
+    "town": "",
+    "email": "info@thefestivalsuite.com",
+    "badge": "bounce",
+    "tab": "other",
+    "firstPitch": "27 Aug 2026",
+    "subject": "Jake Essex — another date"
+  },
+  "messages": [
+    {
+      "side": "us",
+      "at": "2026-08-27T13:34:55Z",
+      "from": "jakeessexenquiries@gmail.com",
+      "subject": "Jake Essex — another date",
+      "body": "Hi,\n\nJake Essex asked me to get in touch. He's already in with you on Saturday\n19 December. That night stays as it is. This is a 2027 ask for the Festival\nSuite only.\n\nHe is the act. No impersonations, no jumpsuit, no corny gimmicks.\nProfessional solo vocalist from Essex. High-energy 50s and 60s. The night\nhas a shape: raw 50s through to 70s Vegas, plus Darin, Dion, Holly,\nOrbison, Sinatra. Real voice. Own PA, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nA Friday, Saturday, Sunday or function in 2027. Reply here and I'll lock it.\n\nBest,\nNatalie\nJake Essex Music"
+    }
+  ],
+  "secret": "natbooksjake"
+}

@@ -1,0 +1,22 @@
+{
+  "event": "reply_thread",
+  "venue": {
+    "name": "Fryerns Social Club",
+    "town": "",
+    "email": "fryerns.socialclub@gmail.com",
+    "badge": "bounce",
+    "tab": "other",
+    "firstPitch": "2 Jun 2026",
+    "subject": "Jake Essex – Professional Solo Vocalist (Elvis & Friends Show) Available for Live Music Nights"
+  },
+  "messages": [
+    {
+      "side": "us",
+      "at": "2026-06-02T07:09:07Z",
+      "from": "jakeessexenquiries@gmail.com",
+      "subject": "Jake Essex – Professional Solo Vocalist (Elvis & Friends Show) Available for Live Music Nights",
+      "body": "Hi Team at Fryerns Social Club Basildon,\n\nI’m Natalie, booking agent for Jake Essex.\n\nJake is a professional solo vocalist based locally in South Ockendon who delivers a high-energy “Elvis and Friends” show — proper 50s, 60s & 70s classics that get the whole room singing along.\n\nI noticed you put on live music and I genuinely think Jake would be a perfect fit for your crowd. He’s fully self-contained (PA, lights, backing tracks), reliable, no deposit required, and used to busy pub, club and function room crowds.\n\nYou can check out recent performances and crowd reactions here: https://www.instagram.com/jakeessexmusic/\n\nHe’s available for midweek or weekend nights and his normal rate for pubs/restaurants is very competitive — happy to discuss dates, set times and pricing that work for you.\n\nLooking forward to hearing from you.\n\nBest regards,\nNatalie\nBooking Agent for Jake Essex\njakeessexenquiries@gmail.com\n@JakeEssexMusic"
+    }
+  ],
+  "secret": "natbooksjake"
+}
