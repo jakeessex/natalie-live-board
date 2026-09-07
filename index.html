@@ -66,7 +66,10 @@ main{padding:14px}
 .saveflash{color:var(--booked);font-size:13px;min-height:18px;margin:8px 0 0}
 .lock{border:0;background:none;color:var(--muted);font-size:14px}
 .empty{color:var(--muted);padding:28px 8px;text-align:center}
-.ver{color:var(--subtle);font-size:11px;margin:12px 0 0}
+.bubble.note{background:#1a241c;border-color:#2d4a34}
+.bubble.note .delnote{display:block;margin-top:8px;padding:0;color:var(--danger)}
+.composer{margin-top:12px}
+
 </style>
 </head>
 <body>
@@ -77,7 +80,7 @@ main{padding:14px}
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="Password"/>
 <p class="err" id="err"></p>
 <button type="button" id="go">Open board</button>
-<p class="ver">Board v5 · 7 Sep 2026</p>
+<p class="ver">Board v6 · 7 Sep 2026</p>
 </div></div>
 <div id="app">
 <header>
@@ -313,20 +316,42 @@ main{padding:14px}
         (v.email ? '<p class="email">' + esc(v.email) + '</p>' : '') +
         (v.replied ? '<p class="replied">Replied · ' + esc(v.replied) + '</p>' : '') +
         (n.called ? '<p class="calledtag">Called' + (n.calledAt ? ' · ' + esc(n.calledAt) : '') + '</p>' : '') +
-        (snippet ? '<p class="snippet">' + esc(snippet) + '</p>' : '') +
+        (lastNoteText(n) ? '<p class="snippet">Note · ' + esc(lastNoteText(n).slice(0, 140)) + '</p>' : (snippet ? '<p class="snippet">' + esc(snippet) + '</p>' : '')) +
         '<button class="openbtn" type="button" data-open="' + esc(v.id) + '">View conversation</button>' +
       '</article>';
     }).join("") || '<p class="empty">Nothing in this tab</p>';
+  }
+
+  function lastNoteText(n) {
+    if (n && Array.isArray(n.entries) && n.entries.length) {
+      return n.entries[n.entries.length - 1].text || "";
+    }
+    return (n && n.note) || "";
+  }
+
+  function recordOf(id) {
+    var n = notes()[id] || {};
+    var entries = Array.isArray(n.entries) ? n.entries.slice() : [];
+    if (!entries.length && n.note) {
+      entries.push({ at: n.updatedAt || n.calledAt || "", text: n.note, called: !!n.called });
+    }
+    return {
+      venueId: id,
+      called: !!n.called,
+      calledAt: n.calledAt || null,
+      note: n.note || "",
+      updatedAt: n.updatedAt || null,
+      entries: entries
+    };
   }
 
   function renderDetail(id) {
     var v = null;
     for (var i = 0; i < VENUES.length; i++) if (VENUES[i].id === id) v = VENUES[i];
     if (!v) return;
-    var store = notes();
-    var n = store[id] || {};
+    var rec = recordOf(id);
     var thread = v.messages || [];
-    var when = n.calledAt ? String(n.calledAt).slice(0, 16) : "";
+    var when = rec.calledAt ? String(rec.calledAt).slice(0, 16) : "";
     document.getElementById("app").classList.remove("show");
     var d = document.getElementById("detail");
     d.className = "show";
@@ -340,6 +365,15 @@ main{padding:14px}
             "<pre>" + esc(m.body || "") + "</pre></div>";
         }).join("")
       : '<p class="replied">No reply yet</p><p class="email">Pitch is on file. No inbound venue reply in this thread.</p>';
+    var noteBlocks = rec.entries.length
+      ? rec.entries.map(function (entry, i) {
+          return '<div class="bubble note">' +
+            '<div class="side">Note · ' + (i + 1) + "/" + rec.entries.length + "</div>" +
+            '<p class="meta">' + esc(fmtWhen(entry.at) || "just now") + (entry.called ? " · called" : "") + "</p>" +
+            "<pre>" + esc(entry.text || "") + "</pre>" +
+            '<button class="lock delnote" type="button" data-del="' + i + '">Delete note</button></div>';
+        }).join("")
+      : '<p class="email">No notes yet. Write one below and tap Save note.</p>';
     d.innerHTML =
       "<header><button class='back' id='back' type='button'>Back to list</button>" +
       "<h1>" + esc(v.name) + "</h1>" +
@@ -352,17 +386,17 @@ main{padding:14px}
         (v.replied ? '<p class="replied">Replied · ' + esc(v.replied) + "</p>" : "") +
         (v.firstPitch ? '<p class="meta">First pitch · ' + esc(v.firstPitch) + "</p>" : "") +
       "</div>" +
-      '<div class="panel"><p class="kicker">Conversation</p>' + bubbles + "</div>" +
-      '<div class="panel"><p class="kicker">Call log</p>' +
-        '<label class="tick"><input id="called" type="checkbox"' + (n.called ? " checked" : "") + "/> Called</label>" +
+      '<div class="panel"><p class="kicker">Conversation</p>' + bubbles +
+      '<p class="kicker" style="margin-top:18px">Notes</p>' + noteBlocks +
+      '<div class="composer">' +
+        '<label class="tick"><input id="called" type="checkbox"' + (rec.called ? " checked" : "") + "/> Called</label>" +
         '<label class="meta" for="when">When</label>' +
         '<input id="when" type="datetime-local" value="' + esc(when) + '"/>' +
-        '<label class="meta" for="note">What was said</label>' +
-        '<textarea id="note" rows="5" placeholder="Left voicemail / spoke to the manager / call back Friday">' + esc(n.note || "") + "</textarea>" +
+        '<label class="meta" for="note">Add a note</label>' +
+        '<textarea id="note" rows="4" placeholder="Left voicemail / spoke to the manager / call back Friday"></textarea>' +
         '<button class="primary" id="save" type="button">Save note</button>' +
         '<p class="saveflash" id="flash"></p>' +
-        '<button class="lock" id="copy" type="button">Copy call log</button>' +
-      "</div>";
+      "</div></div>";
     document.getElementById("back").onclick = function () {
       d.className = "";
       document.getElementById("app").classList.add("show");
@@ -375,34 +409,51 @@ main{padding:14px}
       }
     };
     document.getElementById("save").onclick = function () {
+      var text = (document.getElementById("note").value || "").replace(/^\s+|\s+$/g, "");
+      var called = document.getElementById("called").checked;
+      var calledAt = document.getElementById("when").value || null;
+      if (!text && !called) {
+        document.getElementById("flash").textContent = "Type a note first";
+        return;
+      }
       var store2 = notes();
+      var rec2 = recordOf(id);
+      rec2.entries.push({
+        at: new Date().toISOString(),
+        text: text || (called ? "Called" : ""),
+        called: called
+      });
       store2[id] = {
         venueId: id,
-        called: document.getElementById("called").checked,
-        calledAt: document.getElementById("when").value || null,
-        note: document.getElementById("note").value,
-        updatedAt: new Date().toISOString()
+        called: called,
+        calledAt: calledAt,
+        note: text || rec2.note,
+        updatedAt: new Date().toISOString(),
+        entries: rec2.entries
       };
       saveNotes(store2);
-      document.getElementById("flash").textContent = sharedOk ? "Saved — Jake can see this" : "Saved on this phone";
+      renderDetail(id);
+      var flash = document.getElementById("flash");
+      if (flash) flash.textContent = "Note added under the emails";
     };
-    document.getElementById("copy").onclick = function () {
-      var store2 = notes();
-      var lines = Object.keys(store2).map(function (k) {
-        var nn = store2[k];
-        var vv = null;
-        for (var i = 0; i < VENUES.length; i++) if (VENUES[i].id === nn.venueId) vv = VENUES[i];
-        return (vv ? vv.name : nn.venueId) + " | " + (nn.called ? "called" : "") + " | " + (nn.calledAt || "") + " | " + (nn.note || "");
-      });
-      var text = lines.join("\n") || "(no call notes yet)";
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(function () {
-          document.getElementById("flash").textContent = "Call log copied";
-        }).catch(function () { window.prompt("Copy this call log:", text); });
-      } else {
-        window.prompt("Copy this call log:", text);
-      }
-    };
+    d.querySelectorAll("[data-del]").forEach(function (btn) {
+      btn.onclick = function () {
+        var idx = parseInt(btn.getAttribute("data-del"), 10);
+        var store2 = notes();
+        var rec2 = recordOf(id);
+        rec2.entries.splice(idx, 1);
+        store2[id] = {
+          venueId: id,
+          called: rec2.called,
+          calledAt: rec2.calledAt,
+          note: rec2.entries.length ? rec2.entries[rec2.entries.length - 1].text : "",
+          updatedAt: new Date().toISOString(),
+          entries: rec2.entries
+        };
+        saveNotes(store2);
+        renderDetail(id);
+      };
+    });
   }
 
   loadVenues();
