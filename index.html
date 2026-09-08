@@ -405,10 +405,15 @@ main{padding:14px}
 
   function isReplying(v) {
     if (heat(v) === "booked" || heat(v) === "skip") return false;
-    if (v.hasThread) return true;
+    // Real live conversation only — NOT Us-only Sent colds (hasThread after backfill)
     if (heat(v) === "quoted" || heat(v) === "price") return true;
-    var replied = String(v.replied || "").toLowerCase();
-    return replied.indexOf("yes") === 0;
+    if (heat(v) === "chasing" && String(v.badge || "") === "fully-booked-on-file") return true;
+    var msgs = v.messages || [];
+    var i;
+    for (i = 0; i < msgs.length; i++) {
+      if (msgs[i] && msgs[i].side === "them") return true;
+    }
+    return false;
   }
 
   function isDropped(v) {
