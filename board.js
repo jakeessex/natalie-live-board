@@ -1192,7 +1192,7 @@ var NatNotes = (() => {
       (row.who ? '<p class="who">Who · ' + esc(row.who) + "</p>" : "") +
       '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p>" +
       (row.factLine ? '<p class="fact">' + esc(row.factLine) + "</p>" : "") +
-      actions(row) +
+      actions(row, true) +
       (money ? '<p class="money">' + esc(money) + "</p>" : "") +
       (row.feeMismatch ? '<p class="mismatch">fee on thread ' + B.gbp(row.feeMismatch.thread) + " / stored " + B.gbp(row.feeMismatch.stored) + "</p>" : "") +
       "</div>" +
