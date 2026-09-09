@@ -368,7 +368,10 @@ var Board = (function(exports) {
 		const name = who || "the booker";
 		const fee = displayFee(venue);
 		const feeTalk = fee ? ` The fee on the thread is £${fee} cash.` : "";
-		if (venue.id === "east-barnet-rbl-club") return `Hi Tina, Natalie for Jake Essex. You asked about 2 × 60 with his PA — that's £275 cash, no deposit. Have you got a Saturday in 2027?`;
+		if (venue.id === "east-barnet-rbl-club") {
+			if (tab === "locked") return `Already locked Sat 4 Dec 2027, £275. Don’t ring unless Tina calls you.`;
+			return `Hi Tina, Natalie for Jake Essex. You asked about 2 × 60 with his PA — that's £275 cash, no deposit. Have you got a Saturday in 2027?`;
+		}
 		if (venue.id === "corner-club-canvey") return `Hi Maxine, Natalie for Jake Essex. Sunday afternoon we can do. 2 × 45 is £250, 3 × 45 is £375, own PA. Shall I hold a Sunday?`;
 		if (venue.id === "bird-in-hand") return `Hi Alison, Natalie for Jake Essex. You said you’d send dates when you were back — have you had a look?`;
 		if (venue.id === "sedir") return `Hi Ahmet, Natalie for Jake Essex. You asked Jake to come to the restaurant. When should he pop in?`;
@@ -389,7 +392,7 @@ var Board = (function(exports) {
 	function factLine(venue) {
 		const fee = displayFee(venue);
 		const known = {
-			"east-barnet-rbl-club": "Tina asked the fee. Quoted £275. She’s picking a 2027 date — not locked.",
+			"east-barnet-rbl-club": "Locked Sat 4 Dec 2027. 2 × 60, own PA, 8.30pm. £275 on the thread. 38 Brookhill Rd EN4 8SL.",
 			"corner-club-canvey": "Saturdays full. Sunday afternoon possible. She asked how much.",
 			"bird-in-hand": "Alison is away. Said she’ll send dates when she’s back.",
 			"sedir": "Ahmet wants Jake in the restaurant to talk.",

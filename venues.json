@@ -29,11 +29,11 @@
     "id": "east-barnet-rbl-club",
     "name": "East Barnet RBL Club",
     "town": "East Barnet",
-    "badge": "quoted",
+    "badge": "locked",
     "phone": "+442084497769",
     "needPhone": false,
     "email": "Tina <sbjistlb1@gmail.com> (club ebrblclub@yahoo.com)",
-    "replied": "yes — Tina price ask",
+    "replied": "yes — Tina locked 4 Dec 2027",
     "firstPitch": "7 Sep 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
     "followUps": "0 · last —",
@@ -54,12 +54,47 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "",
         "body": "Hi Tina,\n\nThanks for coming back so quickly.\n\nFor 2 × 60 minutes with his own PA, it's £275 cash for one booking — no\ndeposit.\n\nIf you want to lock in 4 dates, Jake will do each of them for £250 cash on\nthe night.\n\nHave a look: www.jakeessex.co.uk\n\nIf you've got nights in mind (Friday, Saturday or Sunday this year or into\n2027), reply here and I'll check availability and lock them.\n\nNatalie"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-09T18:30:37Z",
+        "from": "sbjistlb1@gmail.com",
+        "subject": "Re: Fw: Jake Essex for East Barnet RBL Club?",
+        "body": "Hi,\nIf you're interested we can offer you 13th November 2027.\n2 x 60 minutes with your own PA\n£275 cash on the night.\nThanks\nTina\nSent from my Galaxy"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-09T19:03:32Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Re: Fw: Jake Essex for East Barnet RBL Club?",
+        "body": "Hi Tina,\n\nFunnily enough that's already booked. 13th November 2027 is taken.\n\nHappy to do the same deal on another night though: 2 x 60, own PA, £275 cash.\n\nHow about Saturday 6th or 27th November 2027, or Saturday 4th or 11th December 2027? Or if you've got other Fridays, Saturdays or Sundays in mind, send them over and I'll check.\n\nNatalie"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-09T20:29:01Z",
+        "from": "sbjistlb1@gmail.com",
+        "subject": "Re: Re: Fw: Jake Essex for East Barnet RBL Club?",
+        "body": "Hi,\n\n4th December 2027 is available.\nAll the other dates are booked.\nI'm happy to put that in the diary.\n\n2 x 60, own PA, £275 cash\n\nClub details are\n\nEast Barnet Royal British Legion\n\n38 Brookhill Rd, London, Barnet EN4 8SL\n\nTel 0208 449 7769\n\nStart time is approximately 8.30pm\n\nThanks\nTina\nSent from my Galaxy"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-09T20:38:45Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for East Barnet RBL Club?",
+        "body": "Confirmed, that's in the diary - thank you! And let me know if any more dates pop up we would be happy to fill!\n\nNat"
       }
     ],
     "hasThread": true,
-    "tab": "call",
-    "pendingLockFee": 275,
-    "pendingNote": "Add to locked cash only when Tina confirms a free date (not 13 Nov 2027 Hadleigh)"
+    "tab": "booked",
+    "contactName": "Tina",
+    "lockedFee": 275,
+    "lockedNights": 1,
+    "lockedDate": "Sat 4 Dec 2027",
+    "lockedNote": "2 × 60, own PA, ~8.30pm. 38 Brookhill Rd, Barnet EN4 8SL"
   },
   {
     "id": "dartford-mayor-charity-tea",
