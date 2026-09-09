@@ -61,6 +61,7 @@ var Board = (function(exports) {
 		"kind",
 		"thanks",
 		"thank",
+		"thankyou",
 		"regards",
 		"sent",
 		"chair",
