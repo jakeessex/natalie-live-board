@@ -1,7 +1,7 @@
 var Board = (function(exports) {
 	Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 	//#region src/lib/board/pipeline.ts
-	const BOARD_VERSION = "v18";
+	const BOARD_VERSION = "v19";
 	const BOARD_STAMP = "9 Sep 2026";
 	const PASSWORD = "natbooksjake";
 	const BOARD_FILTERS = [
@@ -94,6 +94,8 @@ var Board = (function(exports) {
 	const DATE_ASK_RE = /\b(\d{1,2}[\/\-]\d{1,2}([\/\-]\d{2,4})?|\d{1,2}(?:st|nd|rd|th)?\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*|remembrance|\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b.{0,24}\d{4})\b/i;
 	const FEE_ASK_RE = /\b(how much|what (would|do) you charge|what(?:'s| is) the (fee|cost|rate)|charges?|fees?|rates?|costing|quote|price|what would the fee)\b/i;
 	const POSTER_RE = /\b(poster|flyers?|artwork)\b/i;
+	/** They asked for dates / want to book — Close, even if a committee or “I’ll send dates” is in the way. */
+	const DATE_TALK_RE = /\b(interested in booking|discuss possible dates|send me (through )?(some )?(saturdays|dates)|a date in 20\d\d|open to getting jake booked|give you some dates|dates that you have available|possible dates)\b/i;
 	const AGREE_FEE_RE = /(?:for|do|it['’]s|it is|that['’]s|that is|at)\s*£\s*(\d{2,4})|£\s*(\d{2,4})\s*(?:cash|confirmed|locked)/i;
 	const WORKING_TABS = [
 		"close",
@@ -259,11 +261,12 @@ var Board = (function(exports) {
 	}
 	function lastInboundOffersClose(message) {
 		const body = message.body || "";
-		if (WAITING_RE.test(body)) return false;
 		if (CLOSE_YES_RE.test(body)) return true;
 		if (askedFee(message)) return true;
 		if (POSTER_RE.test(body)) return true;
-		if (DATE_ASK_RE.test(body) && !WAITING_RE.test(body)) return true;
+		if (DATE_ASK_RE.test(body)) return true;
+		if (WAITING_RE.test(body)) return true;
+		if (DATE_TALK_RE.test(body)) return true;
 		return false;
 	}
 	function askedFee(message) {
@@ -315,12 +318,11 @@ var Board = (function(exports) {
 		}
 		const who = extractWho(venue, note);
 		let closeReason = null;
-		const lastInBody = lastIn?.body || "";
-		const waiting = !!(lastIn && WAITING_RE.test(lastInBody));
+		const canClose = hasPhone(venue) || Number(venue.pendingLockFee || 0) > 0;
 		if (Number(venue.pendingLockFee || 0) > 0 && !inboundLooksHardNo(venue)) closeReason = "fee agreed — lock a date on this call";
 		if (noteIsBooked(note, now) && !isLockedRecord(venue)) closeReason = closeReason || "nat marked booked — not in the pot yet";
-		if (lastIn && !inboundLooksHardNo(venue) && !waiting) {
-			if (lastInboundOffersClose(lastIn) && (askedFee(lastIn) ? !!who : true)) closeReason = closeReason || (askedFee(lastIn) ? "asked the fee — close it on the phone" : "they offered a yes");
+		if (lastIn && !inboundLooksHardNo(venue) && canClose) {
+			if (lastInboundOffersClose(lastIn) && (askedFee(lastIn) ? !!who : true)) closeReason = closeReason || (askedFee(lastIn) ? "asked the fee — close it on the phone" : "asked for dates — close it on the phone");
 		}
 		if (closeReason) return {
 			tab: "close",
@@ -517,8 +519,11 @@ var Board = (function(exports) {
 		for (const tab of WORKING_TABS) out.push(...sortTab(rows, tab));
 		return out;
 	}
+	function sortAll(rows) {
+		return [...sortWorking(rows), ...sortTab(rows, "parked")];
+	}
 	function rowsForFilter(rows, filter) {
-		if (filter === "all") return sortWorking(rows);
+		if (filter === "all") return sortAll(rows);
 		if (filter === "replied") return sortWorking(rows.filter((r) => r.tab === "close" || r.tab === "live" || r.tab === "chase"));
 		return sortTab(rows, filter);
 	}
@@ -537,7 +542,7 @@ var Board = (function(exports) {
 	function filterCounts(rows) {
 		const t = tabCounts(rows);
 		return {
-			all: rows.filter((r) => r.tab !== "parked").length,
+			all: rows.length,
 			close: t.close,
 			replied: t.close + t.live + t.chase,
 			call: t.call,
@@ -727,6 +732,7 @@ var Board = (function(exports) {
 	exports.realInbound = realInbound;
 	exports.rowsForFilter = rowsForFilter;
 	exports.smsHref = smsHref;
+	exports.sortAll = sortAll;
 	exports.sortTab = sortTab;
 	exports.sortWorking = sortWorking;
 	exports.tabCounts = tabCounts;
@@ -734,6 +740,7 @@ var Board = (function(exports) {
 	exports.webHref = webHref;
 	return exports;
 })({});
+
 var NatNotes = (function(exports) {
 	Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 	//#region src/lib/board/notes.ts
@@ -894,7 +901,8 @@ var NatNotes = (function(exports) {
 	exports.writeLocal = writeLocal;
 	return exports;
 })({});
-/* Natalie Live Board v18 — vanilla UI. Pipeline is window.Board from the bundled module. */
+
+/* Natalie Live Board v19 — vanilla UI. Pipeline is window.Board from the bundled module. */
 (function () {
   var B = window.Board;
   var PASS = B.PASSWORD;
@@ -1105,7 +1113,7 @@ var NatNotes = (function(exports) {
     $("cash-slot").innerHTML = cashHtml(stats);
     $("pep").textContent = pep;
     $("filters").innerHTML = tabHtml;
-    $("count").textContent = list.length + " · " + label + (filter === "all" ? " working" : "") + ((filter === "all" || filter === "replied") && alarm ? " · quiet alarm" : "");
+    $("count").textContent = list.length + " · " + label + ((filter === "all" || filter === "replied") && alarm ? " · quiet alarm" : "");
     $("list").innerHTML = cards;
     $("sync").textContent = sharedOk ? "Notes shared with Jake" : "Notes on this phone only";
     [["cash-amt", "cash-meta"], ["cash-amt-app", "cash-meta-app"]].forEach(function (ids) {
