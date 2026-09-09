@@ -1,0 +1,23 @@
+{
+  "secret": "natbooksjake",
+  "event": "new_lead",
+  "venue": {
+    "name": "The Half Moon Putney",
+    "town": "Putney",
+    "email": "nina@halfmoon.co.uk",
+    "phone": "+442087809383",
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "9 Sep 2026",
+    "subject": "Jake Essex for The Half Moon?"
+  },
+  "messages": [
+    {
+      "side": "us",
+      "at": "2026-09-09T16:48:11Z",
+      "from": "jakeessexenquiries@gmail.com",
+      "subject": "Jake Essex for The Half Moon?",
+      "body": "Hi Nina,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Half Moon. That Putney stage has always\nbeen for nights where the voice does the heavy lifting — and Jake’s the\nreal deal: classic 50s–70s, no tribute, no gimmicks, just a proper singer\nwho holds the night. He’d love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n— Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 — if a date works,\nreply here and I'll lock it.\n\nNatalie"
+    }
+  ]
+}
