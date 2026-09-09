@@ -59,6 +59,22 @@ header h1{font-size:20px}
 .cash-ticker .cash-meta{font-size:11px;opacity:.85;font-weight:600}
 header .top-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%}
 
+.cash-wrap{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:6px;min-width:0}
+.cash-break{width:min(100%,360px);margin:8px 0 0;padding:10px 12px;border-radius:14px;background:#1a140c;border:1px solid #5a3d20;font-size:13px;line-height:1.45}
+.cash-break b{color:#ffd76a}
+.cash-break .row{display:flex;justify-content:space-between;gap:10px;color:#f3d9a4}
+.cash-break .row span:last-child{font-weight:700;color:#ffe7a8;white-space:nowrap}
+.cash-break .pend{margin-top:6px;color:#c4b3a0;font-size:12px}
+.cash-break .sum{margin-top:8px;padding-top:8px;border-top:1px solid #5a3d20;display:flex;justify-content:space-between;font-weight:800;color:#ffd76a}
+header .cash-wrap{margin-top:4px}
+@media(max-width:640px){
+  .headrow{flex-wrap:wrap}
+  .cash-wrap{width:100%;align-items:stretch;margin-left:0}
+  .cash-ticker{justify-content:center}
+  .cash-break{width:100%}
+}
+
+
 .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .tabs button{flex:1 1 calc(33% - 8px);min-width:88px;height:42px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--muted);font-weight:700;font-size:13px}
 .tabs button.on{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
@@ -111,7 +127,7 @@ main{padding:14px}
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="Password"/>
 <p class="err" id="err"></p>
 <button type="button" id="go">Open board</button>
-<p class="ver">Board v15 · 7 Sep 2026</p>
+<p class="ver">Board v16 · 9 Sep 2026</p>
 </div></div>
 <div id="app">
 <header>
@@ -121,7 +137,19 @@ main{padding:14px}
       <h1>Jake Essex Board</h1>
       <p class="ver" id="sync">Notes on this phone only</p>
     </div>
-    <button class="lock" id="lock" type="button">Lock</button>
+    <div class="cash-wrap">
+      <div class="cash-ticker" title="Locked booking cash">
+        <span class="cash-amt" id="cash-amt-app">£1,500</span>
+        <span class="cash-meta" id="cash-meta-app">7 nights locked</span>
+      </div>
+      <button class="lock" id="lock" type="button">Lock</button>
+    </div>
+  </div>
+  <div class="cash-break" id="cash-break">
+    <b>Confirmed bookings</b>
+    <div id="cash-rows"></div>
+    <div class="sum"><span>Total locked</span><span id="cash-sum">£1,500</span></div>
+    <div class="pend" id="cash-pend">East Barnet (Tina) not counted until she locks a date — £275 if she does.</div>
   </div>
   <input id="q" type="search" placeholder="Search venue, town, email" style="margin-top:12px"/>
   <p class="pep" id="pep">Numbers don’t book themselves, Nat.</p>
@@ -469,6 +497,7 @@ main{padding:14px}
   }
 
   function renderList() {
+    try { renderCashTicker(VENUES); } catch (e) {}
     var store = notes();
     var rows = VENUES.filter(function (v) { return inTab(v) && matches(v); });
     rows.sort(function (a, b) {
@@ -781,23 +810,39 @@ main{padding:14px}
 
 
 function lockedCashStats(list){
-  let cash=0, nights=0;
+  let cash=0, nights=0, rows=[];
   for (const v of list||[]){
     const badge=String(v.badge||'').toLowerCase();
-    if (badge!=='locked' && badge!=='booked') continue;
+    const tab=String(v.tab||'').toLowerCase();
+    if (badge!=='locked' && badge!=='booked' && tab!=='booked') continue;
     const fee=Number(v.lockedFee||v.fee||v.cash||0);
     if (!fee) continue;
+    const n=Number(v.lockedNights||1);
     cash+=fee;
-    nights+=Number(v.lockedNights||1);
+    nights+=n;
+    rows.push({name:v.name||'Booking', nights:n, fee:fee});
   }
-  return {cash, nights};
+  rows.sort((a,b)=>b.fee-a.fee);
+  return {cash, nights, rows};
 }
+function gbp(n){return '£'+Number(n||0).toLocaleString('en-GB')}
 function renderCashTicker(list){
-  const {cash,nights}=lockedCashStats(list);
-  const amt=document.getElementById('cash-amt');
-  const meta=document.getElementById('cash-meta');
-  if (amt) amt.textContent='£'+Number(cash||0).toLocaleString('en-GB');
-  if (meta) meta.textContent=(nights||0)+' night'+(nights===1?'':'s')+' locked';
+  const {cash,nights,rows}=lockedCashStats(list);
+  [['cash-amt','cash-meta'],['cash-amt-app','cash-meta-app']].forEach(function(ids){
+    const amt=document.getElementById(ids[0]);
+    const meta=document.getElementById(ids[1]);
+    if (amt) amt.textContent=gbp(cash);
+    if (meta) meta.textContent=(nights||0)+' night'+(nights===1?'':'s')+' locked';
+  });
+  const box=document.getElementById('cash-rows');
+  const sum=document.getElementById('cash-sum');
+  if (sum) sum.textContent=gbp(cash);
+  if (box){
+    box.innerHTML=rows.map(function(r){
+      const nt=r.nights>1?(' · '+r.nights+' nights'):'';
+      return '<div class="row"><span>'+r.name+nt+'</span><span>'+gbp(r.fee)+'</span></div>';
+    }).join('') || '<div class="row"><span>None locked yet</span><span>£0</span></div>';
+  }
 }
 
 </script>
