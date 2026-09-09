@@ -9508,23 +9508,6 @@
     "tab": "call"
   },
   {
-    "id": "efsane-meze",
-    "name": "Efsane Meze",
-    "town": "Longfield (Kent)",
-    "badge": "awaiting",
-    "phone": "+441474706043",
-    "needPhone": false,
-    "email": "reservations@efsane.co.uk",
-    "replied": "no",
-    "firstPitch": "7 Sep 2026",
-    "addedAt": "2026-09-08T15:10:07.793878Z",
-    "followUps": "0 \u00b7 last \u2014",
-    "subject": "Jake Essex for Efsane Meze?",
-    "messages": [],
-    "hasThread": false,
-    "tab": "call"
-  },
-  {
     "id": "nolaki",
     "name": "Nolaki",
     "town": "Stansted Mountfitchet",
@@ -10859,6 +10842,40 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "",
         "body": "Hi,\n\nI'm Natalie \u2014 I look after bookings for Jake Essex.\n\nJake would be a great fit for Tilbury Community Association \u2014 a classic\nvocalist for a functions and community night, and he'd love to come and\nperform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n\u2014 Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act \u2014 no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 \u2014\nif a date works, reply here and I'll lock it.\n\nNatalie"
+      }
+    ],
+    "hasThread": true,
+    "tab": "call"
+  },
+  {
+    "id": "berkhamsted-social-club",
+    "name": "Berkhamsted Social Club",
+    "town": "Berkhamsted",
+    "badge": "replied-interested",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@berkhamsted.club; Keith Eggleton <keitheggleton1@gmail.com>",
+    "replied": "yes \u2014 9 Sep 2026 (Keith Eggleton via club Fwd)",
+    "firstPitch": "7 Sep 2026",
+    "addedAt": "2026-09-09T08:43:59+01:00",
+    "followUps": "0 \u00b7 last \u2014",
+    "subject": "Jake Essex for Berkhamsted Social Club?",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-07T14:03:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "",
+        "body": "Hi,\n\nI'm Natalie \u2014 I look after bookings for Jake Essex.\n\nJake would be a great fit for Berkhamsted Social \u2014 and he'd love to come\nand perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act \u2014 no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 \u2014\nif a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-08T07:51:00Z",
+        "from": "keitheggleton1@gmail.com",
+        "subject": "",
+        "body": "Hi Natalie could you send contact details please for future reference\nkeith"
       }
     ],
     "hasThread": true,
