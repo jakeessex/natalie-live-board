@@ -3546,40 +3546,6 @@
     "tab": "call"
   },
   {
-    "id": "greenford-conservative-club",
-    "name": "Greenford Conservative Club",
-    "town": "Greenford",
-    "badge": "quoted",
-    "phone": "+44757606550",
-    "needPhone": false,
-    "email": "John Mitchell <bigbadmitchell5786@hotmail.com> (club greenconclubsec@gmail.com)",
-    "replied": "yes \u2014 John Mitchell 27 Aug",
-    "firstPitch": "1 Aug 2026",
-    "addedAt": "2026-09-08T15:12:45.692390Z",
-    "followUps": "0 \u00b7 last \u2014",
-    "subject": "Booking",
-    "messages": [
-      {
-        "side": "them",
-        "label": "Their reply",
-        "at": "2026-08-27T14:35:55Z",
-        "from": "bigbadmitchell5786@hotmail.com",
-        "subject": "",
-        "body": "Hi Natalie, I am contacting you on behalf of Greenford Conservative Club.\n\nI would be interested in booking Jake Essex for a date in 2027. Please email me your contact number so that we can discuss possible dates. Alternatively, I can be contacted on 0757 606 550.\n\nRegards\n\nJohn Mitchell"
-      },
-      {
-        "side": "us",
-        "label": "Sent",
-        "at": "2026-09-09T09:28:58Z",
-        "from": "jakeessexenquiries@gmail.com",
-        "subject": "",
-        "body": "Hi John,\n\nThanks for getting in touch about Greenford Conservative Club for 2027.\n\nHappy to keep this on email \u2014 easier for locking dates. For a Saturday or Sunday night it's \u00a3300 cash for 2 hours / \u00a3400 for 3 hours (own PA, no deposit). Fridays aren't available that far out of Essex.\n\nSend over any Saturdays or Sundays that work for the club and I'll check the diary.\n\nNatalie\nwww.jakeessex.co.uk"
-      }
-    ],
-    "hasThread": true,
-    "tab": "call"
-  },
-  {
     "id": "hammersmith-club",
     "name": "Hammersmith Club",
     "town": "",
@@ -10898,6 +10864,40 @@
     "tab": "call"
   },
   {
+    "id": "greenford-conservative-club",
+    "name": "Greenford Conservative Club",
+    "town": "Greenford",
+    "badge": "awaiting",
+    "phone": null,
+    "needPhone": true,
+    "email": "greenconclubsec@gmail.com",
+    "replied": "no",
+    "firstPitch": "1 Aug 2026",
+    "addedAt": "2026-09-08T15:12:45.692390Z",
+    "followUps": "1 \u00b7 last 28 Aug 2026",
+    "subject": "Booking",
+    "messages": [
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-08-27T14:35:55Z",
+        "from": "bigbadmitchell5786@hotmail.com",
+        "subject": "",
+        "body": "Hi Natalie, I am contacting you on behalf of Greenford Conservative Club.\n\nI would be interested in booking Jake Essex for a date in 2027. Please email me your contact number so that we can discuss possible dates. Alternatively, I can be contacted on 0757 606 550.\n\nRegards\n\nJohn Mitchell"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-09T09:28:58Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "",
+        "body": "Hi John,\n\nThanks for getting in touch about Greenford Conservative Club for 2027.\n\nHappy to keep this on email \u2014 easier for locking dates. For a Saturday or Sunday night it's \u00a3300 cash for 2 hours / \u00a3400 for 3 hours (own PA, no deposit). Fridays aren't available that far out of Essex.\n\nSend over any Saturdays or Sundays that work for the club and I'll check the diary.\n\nNatalie\nwww.jakeessex.co.uk"
+      }
+    ],
+    "hasThread": true,
+    "tab": "call"
+  },
+  {
     "id": "greenford-conservative-club-john-mitchell",
     "name": "Greenford Conservative Club (John Mitchell)",
     "town": "Greenford",
@@ -10905,13 +10905,30 @@
     "phone": "+44757606550",
     "needPhone": false,
     "email": "John Mitchell <bigbadmitchell5786@hotmail.com>",
-    "replied": "yes \u2014 John Mitchell",
+    "replied": "yes \u2014 John Mitchell 27 Aug",
     "firstPitch": "24 Aug 2026",
     "addedAt": "2026-09-09T10:29:48+01:00",
     "followUps": "1 \u00b7 last 9 Sep 2026",
-    "subject": "",
-    "messages": [],
-    "hasThread": false,
+    "subject": "Booking",
+    "messages": [
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-08-27T14:35:55Z",
+        "from": "bigbadmitchell5786@hotmail.com",
+        "subject": "",
+        "body": "Hi Natalie, I am contacting you on behalf of Greenford Conservative Club.\n\nI would be interested in booking Jake Essex for a date in 2027. Please email me your contact number so that we can discuss possible dates. Alternatively, I can be contacted on 0757 606 550.\n\nRegards\n\nJohn Mitchell"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-09T09:28:58Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "",
+        "body": "Hi John,\n\nThanks for getting in touch about Greenford Conservative Club for 2027.\n\nHappy to keep this on email \u2014 easier for locking dates. For a Saturday or Sunday night it's \u00a3300 cash for 2 hours / \u00a3400 for 3 hours (own PA, no deposit). Fridays aren't available that far out of Essex.\n\nSend over any Saturdays or Sundays that work for the club and I'll check the diary.\n\nNatalie\nwww.jakeessex.co.uk"
+      }
+    ],
+    "hasThread": true,
     "tab": "call"
   }
 ]
