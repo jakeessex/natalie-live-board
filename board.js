@@ -1,0 +1,1245 @@
+"use strict";
+var Board = (() => {
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __export = (target, all) => {
+    for (var name in all)
+      __defProp(target, name, { get: all[name], enumerable: true });
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+  // src/lib/board/pipeline.ts
+  var pipeline_exports = {};
+  __export(pipeline_exports, {
+    BOARD_STAMP: () => BOARD_STAMP,
+    BOARD_VERSION: () => BOARD_VERSION,
+    PASSWORD: () => PASSWORD,
+    UNCLASSIFIED_WITHOUT_GUESSING: () => UNCLASSIFIED_WITHOUT_GUESSING,
+    chaseAlarm: () => chaseAlarm,
+    classifyVenue: () => classifyVenue,
+    cleanThread: () => cleanThread,
+    daysBetween: () => daysBetween,
+    extractEmails: () => extractEmails,
+    extractQuotedFee: () => extractQuotedFee,
+    extractThreadFee: () => extractThreadFee,
+    extractWebsite: () => extractWebsite,
+    extractWho: () => extractWho,
+    feeMismatch: () => feeMismatch,
+    fmtDay: () => fmtDay,
+    fmtWhen: () => fmtWhen,
+    gbp: () => gbp,
+    hasPhone: () => hasPhone,
+    isAutoNoise: () => isAutoNoise,
+    isLockedRecord: () => isLockedRecord,
+    isStockUsCopy: () => isStockUsCopy,
+    lastCalledLabel: () => lastCalledLabel,
+    lastOf: () => lastOf,
+    lastTouchLabel: () => lastTouchLabel,
+    lockedCash: () => lockedCash,
+    mailtoHref: () => mailtoHref,
+    mapsHref: () => mapsHref,
+    matchesQuery: () => matchesQuery,
+    parseWhen: () => parseWhen,
+    pepLine: () => pepLine,
+    prettyPhone: () => prettyPhone,
+    primaryEmail: () => primaryEmail,
+    rankAll: () => rankAll,
+    rankVenue: () => rankVenue,
+    realInbound: () => realInbound,
+    smsHref: () => smsHref,
+    sortTab: () => sortTab,
+    tabCounts: () => tabCounts,
+    telHref: () => telHref
+  });
+  var BOARD_VERSION = "v17";
+  var BOARD_STAMP = "9 Sep 2026";
+  var PASSWORD = "natbooksjake";
+  var DAY = 864e5;
+  var STOCK_US = [
+    "lock it in",
+    "lock that date",
+    "reply here",
+    "pa included",
+    "no deposit",
+    "2 \xD7 45",
+    "3 \xD7 45",
+    "2 x 45",
+    "3 x 45",
+    "www.jakeessex.co.uk",
+    "instagram.com/jakeessexmusic"
+  ];
+  var NAME_BLOCK = new Set(
+    [
+      "info",
+      "club",
+      "secretary",
+      "admin",
+      "hello",
+      "bookings",
+      "the",
+      "contact",
+      "team",
+      "office",
+      "enquiries",
+      "events",
+      "best",
+      "kind",
+      "thanks",
+      "thank",
+      "regards",
+      "sent",
+      "chair",
+      "chairman",
+      "manager",
+      "branch",
+      "legion",
+      "social",
+      "booking",
+      "entertainment",
+      "committee",
+      "member",
+      "bar",
+      "staff",
+      "urgent",
+      "enquiries",
+      "many",
+      "good",
+      "morning",
+      "evening",
+      "natalie",
+      "jake"
+    ].map((s) => s.toLowerCase())
+  );
+  var AUTO_RE = /undeliver|mailer-daemon|delivery failed|mailbox unavailable|address rejected|address not found|out of office|automatic reply|auto[- ]?reply|office is now closed|i am (currently )?out of (the )?office/i;
+  var HARD_NO_RE = /not interested|no thank you|no thanks\b|too expensive|price too high|we('ll| will) pass|not for us|don'?t pay (bands|artists?|out)|do not pay|no short-term requirements|keep (your )?details on file|keep it on(?:ly)? file|white suit|tribute only|impersonator only/i;
+  var FULLY_BOOKED_RE = /fully booked|already booked for 2026 and 2027|bookings for the year for 2027|no dates (left|available)/i;
+  var ALTERNATIVE_RE = /\b(but|however|could|squeeze|sunday|cancellation|2027|looking at|hear from me|keep him in mind)\b/i;
+  var CONFIRM_RE = /\b(will confirm|take to (the )?committee|committee|ring (you )?back|call (you )?back|that works|book him|put him in|give you some dates|check the diary|come to (the )?restaurant|pop in|come down|come in)\b/i;
+  var DATE_ASK_RE = /\b(\d{1,2}[\/\-]\d{1,2}([\/\-]\d{2,4})?|\d{1,2}(?:st|nd|rd|th)?\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*|remembrance|\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b.{0,24}\d{4})\b/i;
+  var FEE_ASK_RE = /\b(how much|what (would|do) you charge|what(?:'s| is) the (fee|cost|rate)|charges?|fees?|rates?|costing|quote|price|what would the fee)\b/i;
+  var POSTER_RE = /\b(poster|flyers?|artwork)\b/i;
+  var NOTE_CLOSE_RE = /\b(will confirm|they'?ll confirm|committee|pending date|picking .{0,20}date|choosing .{0,20}date)\b/i;
+  function parseWhen(raw) {
+    if (!raw) return null;
+    const n = Date.parse(raw);
+    if (!Number.isNaN(n)) return new Date(n);
+    const m = String(raw).match(
+      /(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i
+    );
+    if (!m) return null;
+    const months = {
+      jan: 0,
+      feb: 1,
+      mar: 2,
+      apr: 3,
+      may: 4,
+      jun: 5,
+      jul: 6,
+      aug: 7,
+      sep: 8,
+      oct: 9,
+      nov: 10,
+      dec: 11
+    };
+    return new Date(+m[3], months[m[2].slice(0, 3).toLowerCase()] ?? 0, +m[1]);
+  }
+  function daysBetween(from, now = /* @__PURE__ */ new Date()) {
+    if (!from) return null;
+    return Math.floor((now.getTime() - from.getTime()) / DAY);
+  }
+  function cleanThread(venue) {
+    return (venue.messages || []).filter((m) => {
+      if (!m || m.side !== "us" && m.side !== "them") return false;
+      const blob = `${m.label || ""} ${m.body || ""}`.toLowerCase();
+      if (blob.includes("gate:send")) return false;
+      if (blob.includes("trail") && blob.length < 40) return false;
+      return true;
+    });
+  }
+  function isAutoNoise(message) {
+    const blob = `${message.body || ""} ${message.from || ""} ${message.subject || ""} ${message.label || ""}`;
+    return AUTO_RE.test(blob);
+  }
+  function realInbound(venue) {
+    return cleanThread(venue).filter((m) => m.side === "them" && !isAutoNoise(m));
+  }
+  function lastOf(messages, side) {
+    const list = side ? messages.filter((m) => m.side === side) : messages;
+    return list.length ? list[list.length - 1] : null;
+  }
+  function hasPhone(venue) {
+    const digits = String(venue.phone || "").replace(/\D/g, "");
+    return digits.length >= 10;
+  }
+  function isLockedRecord(venue) {
+    const badge = String(venue.badge || "").toLowerCase();
+    const fee = Number(venue.lockedFee || 0);
+    return (badge === "locked" || badge === "booked") && fee > 0;
+  }
+  function parkedBadge(venue) {
+    const badge = String(venue.badge || "").toLowerCase();
+    return badge === "bounce" || badge === "declined" || badge === "retract-agency" || badge === "skip-do-not-email" || badge === "closed" || badge === "fully-booked-on-file";
+  }
+  function extractEmails(raw) {
+    if (!raw) return [];
+    const found = raw.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi) || [];
+    return [...new Set(found.map((e) => e.toLowerCase()))];
+  }
+  function primaryEmail(venue) {
+    return extractEmails(venue.email)[0] || null;
+  }
+  function plausibleName(token) {
+    const t = token.replace(/[^A-Za-z'-]/g, "");
+    if (t.length < 3 || t.length > 14) return false;
+    if (NAME_BLOCK.has(t.toLowerCase())) return false;
+    if (!/^[A-Z][a-z]+(?:['-][A-Z]?[a-z]+)?$/.test(t) && !/^[A-Z][a-z]+$/.test(t)) {
+      if (!/^[A-Za-z][a-z]+$/.test(t)) return false;
+    }
+    return true;
+  }
+  function titleName(token) {
+    return token.charAt(0).toUpperCase() + token.slice(1);
+  }
+  function extractWho(venue, note) {
+    if (note?.contactName && plausibleName(note.contactName.split(" ")[0] || "")) {
+      return note.contactName.split(" ")[0];
+    }
+    if (venue.contactName && plausibleName(venue.contactName.split(" ")[0] || "")) {
+      return venue.contactName.split(" ")[0];
+    }
+    const email = venue.email || "";
+    const named = email.match(/^([A-Za-z][A-Za-z'-]+)\s+[A-Za-z][^<]*</);
+    if (named && plausibleName(named[1])) return titleName(named[1]);
+    const first = email.match(/^([A-Za-z][A-Za-z'-]+)\s*</);
+    if (first && plausibleName(first[1])) return titleName(first[1]);
+    const inbound = realInbound(venue);
+    for (let i = inbound.length - 1; i >= 0; i--) {
+      const body = inbound[i].body || "";
+      const lines = body.split(/\n/).map((l) => l.trim()).filter(Boolean);
+      for (const line of [...lines].reverse().slice(0, 10)) {
+        if (/^(thanks|thank you|cheers|regards|kind regards|many thanks|sent from|best regards)\b/i.test(line)) {
+          continue;
+        }
+        if (/^(hi|hello|good morning|good evening)\b/i.test(line)) continue;
+        const one = line.match(/^([A-Z][a-z]{2,13})$/);
+        if (one && plausibleName(one[1])) return one[1];
+        const two = line.match(/^([A-Z][a-z]{2,13})\s+[A-Z][a-z]+/);
+        if (two && plausibleName(two[1])) return two[1];
+      }
+    }
+    const replied = venue.replied || "";
+    const paren = replied.match(/\(([^)]+)\)/);
+    if (paren) {
+      const token = paren[1].split(/[\s,]/)[0];
+      if (token && plausibleName(token)) return titleName(token);
+    }
+    const dash = replied.match(/website\s+([A-Za-z]{3,13})/i);
+    if (dash && plausibleName(dash[1])) return titleName(dash[1]);
+    const tina = replied.match(/\b(Tina|Dee|Karen|Val|Valerie|Steve|Maxine|Siobhan|Christine|Alison|Ahmet|Jaela|John|Barbara|Sandra|Mick|Brian|Caron|Dayn|Keith|Rick|Eija)\b/i);
+    if (tina) return titleName(tina[1]);
+    return null;
+  }
+  function extractWebsite(venue) {
+    if (venue.website && /^https?:\/\//i.test(venue.website)) return venue.website;
+    const blob = `${venue.email || ""}
+${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "").join("\n")}`;
+    const urls = blob.match(/https?:\/\/[^\s<>")']+/gi) || [];
+    for (const url of urls) {
+      const clean = url.replace(/[.,;]+$/, "");
+      if (/jakeessex\.co\.uk|instagram\.com\/jakeessex/i.test(clean)) continue;
+      return clean;
+    }
+    return null;
+  }
+  function poundsIn(text) {
+    const out = [];
+    const re = /(?:£\s*|GBP\s*|@\s*)(\d{2,4})(?:\.00)?/gi;
+    let m;
+    while (m = re.exec(text)) {
+      const n = Number(m[1]);
+      if (n >= 50 && n <= 2e3) out.push(n);
+    }
+    return out;
+  }
+  function extractQuotedFee(venue) {
+    if (typeof venue.quotedFee === "number" && venue.quotedFee > 0) return venue.quotedFee;
+    const us = cleanThread(venue).filter((m) => m.side === "us");
+    for (let i = us.length - 1; i >= 0; i--) {
+      const found = poundsIn(us[i].body || "");
+      if (found.length) return found[0];
+    }
+    return null;
+  }
+  function extractThreadFee(venue) {
+    const them = realInbound(venue);
+    for (let i = them.length - 1; i >= 0; i--) {
+      const found = poundsIn(them[i].body || "");
+      if (found.length) return found[found.length - 1];
+    }
+    return null;
+  }
+  function inboundLooksHardNo(venue) {
+    const inbound = realInbound(venue);
+    if (!inbound.length) return false;
+    const last = inbound[inbound.length - 1];
+    const body = last.body || "";
+    if (HARD_NO_RE.test(body)) return true;
+    if (FULLY_BOOKED_RE.test(body) && !ALTERNATIVE_RE.test(body)) return true;
+    return false;
+  }
+  function lastInboundOffersClose(message) {
+    const body = message.body || "";
+    if (CONFIRM_RE.test(body)) return true;
+    if (DATE_ASK_RE.test(body)) return true;
+    if (POSTER_RE.test(body)) return true;
+    return false;
+  }
+  function askedFee(message) {
+    return FEE_ASK_RE.test(message.body || "");
+  }
+  function quotedThenTheyReplied(venue) {
+    const thread = cleanThread(venue);
+    let quoteAt = null;
+    for (const m of thread) {
+      if (m.side === "us" && /£\s*\d{2,4}/.test(m.body || "")) {
+        quoteAt = parseWhen(m.at);
+      }
+      if (m.side === "them" && !isAutoNoise(m) && quoteAt) {
+        const when = parseWhen(m.at);
+        if (when && quoteAt && when.getTime() >= quoteAt.getTime()) return true;
+      }
+    }
+    return false;
+  }
+  function noteIsClose(note, now) {
+    if (!note) return false;
+    if (note.outcome === "confirm" || note.outcome === "booked") {
+      const at = parseWhen(note.updatedAt || note.calledAt || null);
+      const days = daysBetween(at, now);
+      if (days != null && days <= 21) return true;
+    }
+    const windowStart = now.getTime() - 21 * DAY;
+    for (const entry of note.entries || []) {
+      const at = parseWhen(entry.at);
+      if (!at || at.getTime() < windowStart) continue;
+      if (NOTE_CLOSE_RE.test(entry.text || "")) return true;
+      if (entry.outcome === "confirm" || entry.outcome === "booked") return true;
+    }
+    if (NOTE_CLOSE_RE.test(note.note || "")) {
+      const at = parseWhen(note.updatedAt || null);
+      const days = daysBetween(at, now);
+      if (days != null && days <= 21) return true;
+    }
+    return false;
+  }
+  function isDropped(note) {
+    if (!note) return false;
+    if (note.dropped) return true;
+    if (note.outcome === "dead") return true;
+    return false;
+  }
+  function classifyVenue({ venue, note, now = /* @__PURE__ */ new Date() }) {
+    const thread = cleanThread(venue);
+    const inbound = realInbound(venue);
+    const last = lastOf(thread);
+    const lastIn = inbound[inbound.length - 1] || null;
+    const lastSide = last?.side || null;
+    const lastInAt = parseWhen(lastIn?.at);
+    const daysSinceInbound = daysBetween(lastInAt, now);
+    const lastAt = parseWhen(last?.at);
+    const daysSilent = lastSide === "us" ? daysSinceInbound : daysBetween(lastAt, now);
+    const stale = daysSinceInbound != null && daysSinceInbound >= 14;
+    if (isLockedRecord(venue)) {
+      return { tab: "locked", reason: "locked fee on file", stale: false, daysSinceInbound, daysSilent, lastSide };
+    }
+    if (isDropped(note) || parkedBadge(venue) || inboundLooksHardNo(venue)) {
+      let reason = "parked";
+      if (isDropped(note)) reason = "dropped";
+      else if (String(venue.badge) === "bounce") reason = "bounce";
+      else if (inboundLooksHardNo(venue)) reason = "hard no";
+      else reason = String(venue.badge || "parked");
+      return { tab: "parked", reason, stale: false, daysSinceInbound, daysSilent, lastSide };
+    }
+    const who = extractWho(venue, note);
+    let closeReason = null;
+    if (lastIn && !inboundLooksHardNo(venue)) {
+      if (lastInboundOffersClose(lastIn)) closeReason = "inbound date / confirm / committee";
+      if (askedFee(lastIn) && who) closeReason = closeReason || "named contact asked the fee";
+      if (quotedThenTheyReplied(venue) && !inboundLooksHardNo(venue)) {
+        closeReason = closeReason || "replied after we quoted";
+      }
+    }
+    if (noteIsClose(note, now)) closeReason = closeReason || "call note will confirm";
+    if (note?.outcome === "booked" && !isLockedRecord(venue)) {
+      closeReason = closeReason || "nat marked booked \u2014 not in the pot yet";
+    }
+    if (closeReason) {
+      return { tab: "close", reason: closeReason, stale, daysSinceInbound, daysSilent, lastSide };
+    }
+    const quietAfterUs = lastSide === "us" && inbound.length > 0 && daysSinceInbound != null && daysSinceInbound >= 5;
+    if (inbound.length && daysSinceInbound != null && daysSinceInbound <= 21 && !quietAfterUs) {
+      return { tab: "live", reason: "real conversation", stale, daysSinceInbound, daysSilent, lastSide };
+    }
+    if (quietAfterUs) {
+      return {
+        tab: "chase",
+        reason: `${daysSinceInbound} days quiet`,
+        stale,
+        daysSinceInbound,
+        daysSilent: daysSinceInbound,
+        lastSide
+      };
+    }
+    if (hasPhone(venue)) {
+      return { tab: "call", reason: "phone on file", stale: false, daysSinceInbound, daysSilent, lastSide };
+    }
+    return {
+      tab: "parked",
+      reason: inbound.length ? "no phone" : "no phone / not in play",
+      stale: false,
+      daysSinceInbound,
+      daysSilent,
+      lastSide
+    };
+  }
+  function groundedSay(venue, who, tab, note) {
+    const id = venue.id;
+    const name = who || "them";
+    if (id === "east-barnet-rbl-club") {
+      return `Tina \u2014 she\u2019s choosing a 2027 date, \xA3275, don\u2019t count it yet`;
+    }
+    if (id === "bird-in-hand") {
+      return `Alison \u2014 she\u2019s away, will send dates when she\u2019s back`;
+    }
+    if (id === "sedir") {
+      return `Ahmet \u2014 wants Jake in the restaurant to talk. Prices are on the thread`;
+    }
+    if (id === "the-muddy-duck") {
+      return `Jaela \u2014 loves the act, asked rates. Call when her next two months clear`;
+    }
+    if (id === "broomfield-rbl") {
+      return `Siobhan \u2014 committee had the Saturdays. Call for the yes`;
+    }
+    if (id === "corner-club-canvey") {
+      return `Maxine \u2014 Saturdays full, Sunday afternoon possible. \xA3250 / \xA3375 quoted`;
+    }
+    if (id === "st-neots-cons") {
+      return `Christine \u2014 committee had \xA3400 for 3 \xD7 45. Call for the decision`;
+    }
+    if (id === "hounslow-rbl") {
+      return `Mick \u2014 September committee. Remembrance is a no. Ask what they picked`;
+    }
+    if (id === "greenford-conservative-club-john-mitchell" || id === "greenford-conservative-club") {
+      return `John \u2014 wants a 2027 date. Quote is on the thread, waiting on Saturdays`;
+    }
+    if (id === "aldridge-social-club") {
+      return `Dayn \u2014 2026 full, looking at 2027. Call and get in the diary`;
+    }
+    if (id === "berkhamsted-social-club") {
+      return `Keith \u2014 asked for contact details for later. Don\u2019t let it go cold`;
+    }
+    if (id === "hadleigh-cons") {
+      return `Dee \u2014 locked 13 Nov 2027, 3 \xD7 45, \xA3250`;
+    }
+    if (id === "halstead-rbl") {
+      return `Karen \u2014 locked Sat 17 Jul 2027. Thread says \xA3250 / stored \xA3200`;
+    }
+    if (id === "oxhey-cons-keyser-hall") {
+      return `Valerie \u2014 locked. Address confirmed`;
+    }
+    if (id === "dartford-mayor-charity-tea") {
+      return `Eija \u2014 booking confirmed. Claire Tiltman Centre`;
+    }
+    if (id === "bluehouse-farm") {
+      return `Rick \u2014 Fri 30 Oct locked via Choice Live, \xA3250 in the pot`;
+    }
+    if (id === "bromley-services-club") {
+      return `Steve \u2014 two nights, \xA3400 lump. Already in the pot`;
+    }
+    if (note?.outcome === "confirm") {
+      return `${name} \u2014 they\u2019ll confirm. Call and lock the date`;
+    }
+    if (note?.outcome === "booked") {
+      const fee = note.bookedFee ? ` \xA3${note.bookedFee}` : "";
+      const date = note.bookedDate ? `, ${note.bookedDate}` : "";
+      return `${name} \u2014 Nat marked booked${fee}${date}. Not in the ticker until Jake locks the record`;
+    }
+    const lastIn = realInbound(venue).slice(-1)[0];
+    if (tab === "close" && lastIn) {
+      if (CONFIRM_RE.test(lastIn.body || "")) return `${name} \u2014 they said they\u2019d confirm. Call now`;
+      if (askedFee(lastIn)) return `${name} \u2014 asked the fee. Quote is on the thread. Call for a date`;
+      if (DATE_ASK_RE.test(lastIn.body || "")) return `${name} \u2014 a date is in play. Call and nail it`;
+    }
+    if (tab === "chase") {
+      return `${name} \u2014 went quiet after a real conversation. Ring, don\u2019t re-pitch`;
+    }
+    if (tab === "live") {
+      return `${name} \u2014 live conversation. Ask for one date`;
+    }
+    if (tab === "call") {
+      return who ? `Ring ${who}. First line: Jake Essex, live 50s\u201370s, own PA` : `Ring the booker. First line: Jake Essex, live 50s\u201370s, own PA`;
+    }
+    if (tab === "locked") {
+      const fee = Number(venue.lockedFee || 0);
+      return fee ? `Locked \xA3${fee}. Already in the pot` : `Locked`;
+    }
+    return who ? `${who} \u2014 parked. Don\u2019t spend the night here` : `Parked. Don\u2019t spend the night here`;
+  }
+  function factLine(venue, who) {
+    if (venue.id === "halstead-rbl") return "Karen locked Sat 17 Jul 2027, 2hrs. Thread \xA3250 / stored \xA3200.";
+    if (venue.id === "hadleigh-cons") return "Dee locked Fri 13 Nov 2027, 3 \xD7 45, \xA3250.";
+    if (venue.id === "east-barnet-rbl-club") return "Tina asked the fee. Quoted \xA3275. No date locked \u2014 not in the pot.";
+    if (venue.id === "dartford-mayor-charity-tea") return "Confirmed. Claire Tiltman Centre, DA9. \xA3200 in the pot.";
+    if (venue.id === "bluehouse-farm") return "Fri 30 Oct 2026, \xA3250. Choice Live on this board.";
+    if (venue.id === "bromley-services-club") return "Two nights, \xA3400 lump \u2014 do not count as \xA3800.";
+    if (venue.id === "oxhey-cons-keyser-hall") return "Valerie confirmed the address. \xA3200 in the pot.";
+    if (venue.lockedDate && venue.lockedFee) {
+      return `${who || venue.name} locked ${venue.lockedDate}, \xA3${venue.lockedFee}.`;
+    }
+    return null;
+  }
+  function feeMismatch(venue) {
+    if (!isLockedRecord(venue)) return null;
+    const thread = extractThreadFee(venue);
+    const stored = Number(venue.lockedFee || 0);
+    if (thread && stored && thread !== stored) return { thread, stored };
+    return null;
+  }
+  function rankVenue(venue, notes = {}, now = /* @__PURE__ */ new Date()) {
+    const note = notes[venue.id];
+    const classified = classifyVenue({ venue, note, now });
+    const who = extractWho(venue, note);
+    const mismatch = feeMismatch(venue);
+    return {
+      venue,
+      tab: classified.tab,
+      stale: classified.stale && (classified.tab === "close" || classified.tab === "live" || classified.tab === "chase"),
+      daysSilent: classified.daysSilent,
+      daysSinceInbound: classified.daysSinceInbound,
+      lastSide: classified.lastSide,
+      lastTouchAt: lastOf(cleanThread(venue))?.at || venue.firstPitch || null,
+      lastCalledAt: note?.calledAt || null,
+      who,
+      sayThis: groundedSay(venue, who, classified.tab, note),
+      factLine: factLine(venue, who),
+      quotedFee: extractQuotedFee(venue),
+      threadFee: extractThreadFee(venue),
+      feeMismatch: mismatch,
+      website: extractWebsite(venue),
+      reason: classified.reason,
+      called: !!note?.called,
+      dropped: isDropped(note)
+    };
+  }
+  function rankAll(venues, notes = {}, now = /* @__PURE__ */ new Date()) {
+    return venues.map((v) => rankVenue(v, notes, now));
+  }
+  function closeScore(row) {
+    if (row.venue.pendingLockFee) return 1e4;
+    if (row.stale) return -1e3 + (row.daysSinceInbound || 0) * -1;
+    const recency = row.daysSinceInbound == null ? 50 : row.daysSinceInbound;
+    return 500 - recency;
+  }
+  function sortTab(rows, tab) {
+    const list = rows.filter((r) => r.tab === tab);
+    if (tab === "close") {
+      return list.sort((a, b) => {
+        if (a.stale !== b.stale) return a.stale ? 1 : -1;
+        return closeScore(b) - closeScore(a);
+      });
+    }
+    if (tab === "live") {
+      return list.sort((a, b) => {
+        if (a.stale !== b.stale) return a.stale ? 1 : -1;
+        return (a.daysSinceInbound ?? 99) - (b.daysSinceInbound ?? 99);
+      });
+    }
+    if (tab === "chase") {
+      return list.sort((a, b) => {
+        if (a.stale !== b.stale) return a.stale ? 1 : -1;
+        return (b.daysSilent ?? 0) - (a.daysSilent ?? 0);
+      });
+    }
+    if (tab === "call") {
+      return list.sort((a, b) => {
+        if (a.called !== b.called) return a.called ? 1 : -1;
+        if (a.called && b.called) {
+          return (a.lastCalledAt || "").localeCompare(b.lastCalledAt || "");
+        }
+        const atA = a.venue.firstPitch || a.lastTouchAt || "";
+        const atB = b.venue.firstPitch || b.lastTouchAt || "";
+        return atA.localeCompare(atB);
+      });
+    }
+    if (tab === "locked") {
+      return list.sort((a, b) => Number(b.venue.lockedFee || 0) - Number(a.venue.lockedFee || 0));
+    }
+    return list.sort((a, b) => a.venue.name.localeCompare(b.venue.name));
+  }
+  function tabCounts(rows) {
+    const counts = {
+      close: 0,
+      live: 0,
+      chase: 0,
+      call: 0,
+      locked: 0,
+      parked: 0
+    };
+    for (const row of rows) counts[row.tab] += 1;
+    return counts;
+  }
+  function lockedCash(venues) {
+    const rows = [];
+    let cash = 0;
+    let nights = 0;
+    for (const v of venues) {
+      if (!isLockedRecord(v)) continue;
+      const fee = Number(v.lockedFee || 0);
+      if (!fee) continue;
+      const n = Number(v.lockedNights || 1) || 1;
+      cash += fee;
+      nights += n;
+      rows.push({
+        name: v.name,
+        fee,
+        nights: n,
+        id: v.id,
+        mismatch: feeMismatch(v)
+      });
+    }
+    rows.sort((a, b) => b.fee - a.fee);
+    const pending = venues.filter((v) => Number(v.pendingLockFee || 0) > 0 && !isLockedRecord(v)).map((v) => ({
+      name: v.name,
+      fee: Number(v.pendingLockFee),
+      note: v.pendingNote
+    }));
+    return { cash, nights, rows, pending };
+  }
+  function pepLine(rows) {
+    const close = sortTab(rows, "close");
+    const chase = rows.filter((r) => r.tab === "chase");
+    const quiet = chase.filter((r) => (r.daysSilent ?? 0) > 5);
+    const first = close[0];
+    const who = first?.who || first?.venue.name.split(" ")[0] || null;
+    const n = close.length;
+    const closeBit = n === 0 ? "Nothing to close tonight." : n === 1 ? "1 to close tonight." : `${n} to close tonight.`;
+    const whoBit = who && n ? ` ${who} first.` : "";
+    const qn = quiet.length;
+    const quietBit = qn === 0 ? " None gone quiet." : qn === 1 ? " 1 gone quiet >5 days." : ` ${qn} gone quiet >5 days.`;
+    return `${closeBit}${whoBit}${quietBit}`.replace(/\s+/g, " ").trim();
+  }
+  function chaseAlarm(rows) {
+    return rows.some((r) => r.tab === "chase" && (r.daysSilent ?? 0) > 7);
+  }
+  function matchesQuery(venue, q) {
+    if (!q.trim()) return true;
+    const hay = `${venue.name} ${venue.town || ""} ${venue.email || ""} ${venue.subject || ""} ${venue.contactName || ""}`.toLowerCase();
+    return hay.includes(q.trim().toLowerCase());
+  }
+  function telHref(phone) {
+    let d = String(phone || "").replace(/\D/g, "");
+    if (!d) return "";
+    if (d.startsWith("0")) d = "44" + d.slice(1);
+    if (!d.startsWith("44")) d = "44" + d;
+    return `tel:+${d}`;
+  }
+  function smsHref(phone) {
+    const tel = telHref(phone);
+    return tel ? tel.replace(/^tel:/, "sms:") : "";
+  }
+  function prettyPhone(phone) {
+    let d = String(phone || "").replace(/\D/g, "");
+    if (d.startsWith("44")) d = "0" + d.slice(2);
+    if (d.length === 11) return `${d.slice(0, 5)} ${d.slice(5)}`;
+    return phone || "";
+  }
+  function mapsHref(venue) {
+    const q = [venue.name, venue.town].filter(Boolean).join(" ");
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+  }
+  function mailtoHref(venue) {
+    const email = primaryEmail(venue);
+    if (!email) return "";
+    return `mailto:${email}`;
+  }
+  function gbp(n) {
+    return "\xA3" + Number(n || 0).toLocaleString("en-GB");
+  }
+  function fmtWhen(iso) {
+    if (!iso) return "";
+    const d = parseWhen(iso);
+    if (!d) return String(iso);
+    return d.toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  }
+  function fmtDay(iso) {
+    if (!iso) return "";
+    const d = parseWhen(iso);
+    if (!d) return String(iso);
+    return d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+  }
+  function lastTouchLabel(row, now = /* @__PURE__ */ new Date()) {
+    const at = row.lastTouchAt;
+    const d = parseWhen(at);
+    const who = row.lastSide === "them" ? "Them" : row.lastSide === "us" ? "Us" : "Touch";
+    if (!d) return who;
+    const days = daysBetween(d, now);
+    if (days === 0) return `${who} \xB7 today`;
+    if (days === 1) return `${who} \xB7 yesterday`;
+    return `${who} \xB7 ${fmtDay(at)}`;
+  }
+  function lastCalledLabel(note, now = /* @__PURE__ */ new Date()) {
+    if (!note?.called) return null;
+    const d = parseWhen(note.calledAt || note.updatedAt || null);
+    if (!d) return "Called";
+    const days = daysBetween(d, now);
+    if (days === 0) return "Called \xB7 today";
+    if (days === 1) return "Called \xB7 yesterday";
+    return `Called \xB7 ${fmtDay(note.calledAt || note.updatedAt)}`;
+  }
+  var UNCLASSIFIED_WITHOUT_GUESSING = [
+    {
+      id: "wilmington-private-function-barbara-morris",
+      why: "Website enquiry from Barbara, Saturday 3 Jul 2027, \xA3350 quoted \u2014 inbound body is not on the thread. No phone. Parked, not Close (that would be guessing from our own reply)."
+    },
+    {
+      id: "winchester-club",
+      why: "Badge quoted / website Sandra, but the only message on file is our pitch. Has a phone so Call list, not Close."
+    },
+    {
+      id: "california-social-ipswich",
+      why: "Last inbound is an out-of-office from Kate, not a conversation. Call list."
+    },
+    {
+      id: "greenford-conservative-club",
+      why: "Duplicate of John Mitchell\u2019s thread with no phone. Same inbound lives on greenford-conservative-club-john-mitchell."
+    }
+  ];
+  function isStockUsCopy(text) {
+    const blob = text.toLowerCase();
+    return STOCK_US.some((s) => blob.includes(s));
+  }
+  return __toCommonJS(pipeline_exports);
+})();
+"use strict";
+var NatNotes = (() => {
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __export = (target, all) => {
+    for (var name in all)
+      __defProp(target, name, { get: all[name], enumerable: true });
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+  // src/lib/board/notes.ts
+  var notes_exports = {};
+  __export(notes_exports, {
+    NOTEKEY: () => NOTEKEY,
+    NOTES_FALLBACK: () => NOTES_FALLBACK,
+    NOTES_PULL: () => NOTES_PULL,
+    NOTES_PUSH: () => NOTES_PUSH,
+    appendQuickNote: () => appendQuickNote,
+    applyAfterCall: () => applyAfterCall,
+    mergeStores: () => mergeStores,
+    pullRemote: () => pullRemote,
+    pushRemote: () => pushRemote,
+    putNote: () => putNote,
+    readLocal: () => readLocal,
+    recordOf: () => recordOf,
+    writeLocal: () => writeLocal
+  });
+  var NOTEKEY = "natalie-live-board-notes-v3";
+  var NOTES_PUSH = "https://dweet.cc/dweet/for/jem-natalie-live-nbj-2026";
+  var NOTES_PULL = "https://dweet.cc/get/latest/dweet/for/jem-natalie-live-nbj-2026";
+  var NOTES_FALLBACK = "call-notes.json";
+  function newer(a, b) {
+    return String(a && a.updatedAt || "") > String(b && b.updatedAt || "");
+  }
+  function mergeStores(a, b) {
+    const out = { ...a };
+    for (const k of Object.keys(b)) {
+      if (!out[k] || newer(b[k], out[k])) out[k] = b[k];
+    }
+    return out;
+  }
+  function readLocal() {
+    try {
+      return JSON.parse(localStorage.getItem(NOTEKEY) || "{}");
+    } catch {
+      return {};
+    }
+  }
+  function writeLocal(store) {
+    localStorage.setItem(NOTEKEY, JSON.stringify(store));
+  }
+  function recordOf(store, id) {
+    const n = store[id] || { venueId: id };
+    const entries = Array.isArray(n.entries) ? n.entries.slice() : [];
+    if (!entries.length && n.note) {
+      entries.push({ at: n.updatedAt || n.calledAt || "", text: n.note, called: !!n.called });
+    }
+    return {
+      venueId: id,
+      called: !!n.called,
+      calledAt: n.calledAt || null,
+      note: n.note || "",
+      updatedAt: n.updatedAt,
+      entries,
+      dropped: !!n.dropped,
+      droppedAt: n.droppedAt || null,
+      contactName: n.contactName,
+      outcome: n.outcome,
+      bookedFee: n.bookedFee ?? null,
+      bookedDate: n.bookedDate ?? null
+    };
+  }
+  function putNote(store, next) {
+    return { ...store, [next.venueId]: { ...next, updatedAt: (/* @__PURE__ */ new Date()).toISOString() } };
+  }
+  function appendQuickNote(store, id, text) {
+    const rec = recordOf(store, id);
+    const entries = rec.entries || [];
+    entries.push({ at: (/* @__PURE__ */ new Date()).toISOString(), text, called: rec.called });
+    rec.entries = entries;
+    rec.note = text;
+    return putNote(store, rec);
+  }
+  async function pullRemote() {
+    try {
+      const res = await fetch(`${NOTES_PULL}?t=${Date.now()}`, { cache: "no-store" });
+      if (!res.ok) throw new Error("pull");
+      const data = await res.json();
+      const content = data?.with?.[0]?.content;
+      const raw = content?.notes;
+      let incoming = {};
+      if (typeof raw === "string") {
+        try {
+          incoming = JSON.parse(raw);
+        } catch {
+          incoming = {};
+        }
+      } else if (raw && typeof raw === "object") {
+        incoming = raw;
+      }
+      const merged = mergeStores(readLocal(), incoming);
+      writeLocal(merged);
+      return { store: merged, shared: true };
+    } catch {
+      try {
+        const res = await fetch(`${NOTES_FALLBACK}?t=${Date.now()}`, { cache: "no-store" });
+        if (!res.ok) throw new Error("file");
+        const data = await res.json();
+        const incoming = data && data.notes ? data.notes : data;
+        const merged = mergeStores(readLocal(), incoming || {});
+        writeLocal(merged);
+        return { store: merged, shared: false };
+      } catch {
+        return { store: readLocal(), shared: false };
+      }
+    }
+  }
+  async function pushRemote(store) {
+    try {
+      const body = "notes=" + encodeURIComponent(JSON.stringify(store));
+      const res = await fetch(NOTES_PUSH, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body
+      });
+      if (!res.ok) return false;
+      const data = await res.json();
+      return data?.this === "succeeded";
+    } catch {
+      return false;
+    }
+  }
+  function applyAfterCall(store, id, outcome, extra = {}) {
+    const rec = recordOf(store, id);
+    const label = outcome === "booked" ? `Booked${extra.fee ? ` \xA3${extra.fee}` : ""}${extra.date ? ` ${extra.date}` : ""}` : outcome === "confirm" ? extra.text || "They\u2019ll confirm" : outcome === "voicemail" ? extra.text || "Voicemail" : extra.text || "Dead \u2014 don\u2019t chase";
+    const entries = rec.entries || [];
+    entries.push({
+      at: (/* @__PURE__ */ new Date()).toISOString(),
+      text: label,
+      called: outcome !== "dead",
+      outcome
+    });
+    rec.entries = entries;
+    rec.called = outcome !== "dead";
+    rec.calledAt = rec.called ? (/* @__PURE__ */ new Date()).toISOString() : rec.calledAt;
+    rec.outcome = outcome;
+    rec.note = label;
+    rec.dropped = outcome === "dead";
+    rec.droppedAt = outcome === "dead" ? (/* @__PURE__ */ new Date()).toISOString() : rec.droppedAt;
+    if (outcome === "booked") {
+      rec.bookedFee = extra.fee ?? rec.bookedFee;
+      rec.bookedDate = extra.date ?? rec.bookedDate;
+    }
+    return putNote(store, rec);
+  }
+  return __toCommonJS(notes_exports);
+})();
+/* Natalie Live Board v17 — vanilla UI. Pipeline is window.Board from the bundled module. */
+(function () {
+  var B = window.Board;
+  var PASS = B.PASSWORD;
+  var tab = "close";
+  var q = "";
+  var openId = null;
+  var VENUES = [];
+  var NOTES = {};
+  var sharedOk = false;
+  var moreOpen = false;
+  var cashOpen = false;
+  var emailsOpen = false;
+  var sheetOpen = false;
+
+  function $(id) { return document.getElementById(id); }
+
+  function showErr(msg) {
+    var el = $("err");
+    if (el) el.textContent = msg || "";
+  }
+
+  function loadVenues() {
+    try {
+      VENUES = JSON.parse($("venues-data").textContent);
+    } catch (e) {
+      VENUES = [];
+    }
+    fetch("venues.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("venues"); return r.json(); })
+      .then(function (data) {
+        if (Array.isArray(data) && data.length) {
+          VENUES = data;
+          if ($("app").classList.contains("show") && !openId) render();
+        }
+      })
+      .catch(function () {});
+  }
+
+  function openBoard() {
+    $("gate").classList.add("ok");
+    $("app").classList.add("show");
+    try { sessionStorage.setItem("natalie-ok", "1"); } catch (e) {}
+    render();
+  }
+
+  function unlock() {
+    showErr("");
+    var raw = ($("pw").value || "").replace(/^\s+|\s+$/g, "");
+    if (raw.toLowerCase() === PASS || raw === PASS) {
+      openBoard();
+      return;
+    }
+    showErr("Wrong password");
+  }
+
+  function ranked() {
+    return B.rankAll(VENUES, NOTES, new Date());
+  }
+
+  function persist(store) {
+    NOTES = store;
+    window.NatNotes.writeLocal(store);
+    window.NatNotes.pushRemote(store).then(function (ok) {
+      sharedOk = ok;
+      var el = $("sync");
+      if (el) el.textContent = ok ? "Notes shared with Jake" : "Notes on this phone only";
+    });
+  }
+
+  window.natUnlock = unlock;
+  window.natRender = render;
+  window.natOpen = function (id) { openId = id; emailsOpen = false; sheetOpen = false; render(); };
+  window.natCalled = function (id) { openId = id; emailsOpen = false; sheetOpen = true; render(); };
+  window.natBack = function () { openId = null; sheetOpen = false; render(); };
+  window.natTab = function (t) { tab = t; moreOpen = false; render(); };
+  window.natMore = function () { moreOpen = !moreOpen; render(); };
+  window.natCash = function () { cashOpen = !cashOpen; render(); };
+  window.natEmails = function () { emailsOpen = !emailsOpen; render(); };
+  window.natSheet = function (on) { sheetOpen = !!on; render(); };
+  window.natLock = function () {
+    try { sessionStorage.removeItem("natalie-ok"); } catch (e) {}
+    location.reload();
+  };
+  window.natDrop = function (id, dropped) {
+    var rec = window.NatNotes.recordOf(NOTES, id);
+    rec.dropped = dropped;
+    rec.droppedAt = dropped ? new Date().toISOString() : null;
+    persist(window.NatNotes.putNote(NOTES, rec));
+    if (dropped) { openId = null; tab = "parked"; }
+    render();
+  };
+  window.natQuick = function (id) {
+    var input = $("qnote-" + id);
+    var text = input ? (input.value || "").trim() : "";
+    if (!text) return;
+    persist(window.NatNotes.appendQuickNote(NOTES, id, text));
+    render();
+  };
+  window.natAfter = function (id, outcome) {
+    var extra = {};
+    if (outcome === "booked") {
+      extra.fee = Number(($("book-fee") && $("book-fee").value) || 0) || undefined;
+      extra.date = ($("book-date") && $("book-date").value) || undefined;
+    }
+    persist(window.NatNotes.applyAfterCall(NOTES, id, outcome, extra));
+    sheetOpen = false;
+    if (outcome === "dead") { openId = null; tab = "parked"; }
+    render();
+  };
+  window.natSaveWho = function (id) {
+    var rec = window.NatNotes.recordOf(NOTES, id);
+    rec.contactName = ($("who-name") && $("who-name").value || "").trim() || undefined;
+    persist(window.NatNotes.putNote(NOTES, rec));
+    render();
+  };
+  window.natSaveNote = function (id) {
+    var text = ($("detail-note") && $("detail-note").value || "").trim();
+    if (!text) return;
+    persist(window.NatNotes.appendQuickNote(NOTES, id, text));
+    render();
+  };
+  window.natDelNote = function (id, idx) {
+    var rec = window.NatNotes.recordOf(NOTES, id);
+    rec.entries.splice(idx, 1);
+    rec.note = rec.entries.length ? rec.entries[rec.entries.length - 1].text : "";
+    persist(window.NatNotes.putNote(NOTES, rec));
+    render();
+  };
+
+  function esc(s) {
+    var d = document.createElement("div");
+    d.textContent = s == null ? "" : String(s);
+    return d.innerHTML;
+  }
+
+  function chip(tabName) {
+    var map = { close: "CLOSE", live: "LIVE", chase: "CHASE", call: "CALL", locked: "LOCKED", parked: "PARKED" };
+    return map[tabName] || tabName;
+  }
+
+  function actions(row) {
+    var v = row.venue;
+    var html = '<div class="acts">';
+    if (B.telHref(v.phone)) html += '<a class="btn call" href="' + B.telHref(v.phone) + '">Call</a>';
+    if (B.smsHref(v.phone)) html += '<a class="btn" href="' + B.smsHref(v.phone) + '">Text</a>';
+    if (B.mailtoHref(v)) html += '<a class="btn" href="' + B.mailtoHref(v) + '">Email</a>';
+    html += '<a class="btn" href="' + B.mapsHref(v) + '" target="_blank" rel="noopener">Maps</a>';
+    if (row.website) html += '<a class="btn" href="' + esc(row.website) + '" target="_blank" rel="noopener">Site</a>';
+    html += "</div>";
+    return html;
+  }
+
+  function cardHtml(row, stackIndex) {
+    var v = row.venue;
+    var money = row.tab === "locked" && v.lockedFee
+      ? "Locked " + B.gbp(v.lockedFee)
+      : row.quotedFee ? "Quoted " + B.gbp(row.quotedFee) : "";
+    var called = B.lastCalledLabel(NOTES[v.id]);
+    return '<article class="card' + (stackIndex === 1 ? " top" : "") + (row.stale ? " stale" : "") + '">' +
+      (stackIndex ? '<p class="kicker">Card ' + stackIndex + "</p>" : "") +
+      '<div class="cardtop"><div><h2>' + esc(v.name) + "</h2>" +
+      (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
+      "</div><span class='badge " + row.tab + "'>" + chip(row.tab) + "</span></div>" +
+      (row.stale ? '<p class="stale-tag">STALE</p>' : "") +
+      (row.who ? '<p class="who">Who · ' + esc(row.who) + "</p>" : "") +
+      '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p>" +
+      actions(row) +
+      (money ? '<p class="money">' + esc(money) + "</p>" : "") +
+      (row.feeMismatch ? '<p class="mismatch">fee on thread ' + B.gbp(row.feeMismatch.thread) + " / stored " + B.gbp(row.feeMismatch.stored) + "</p>" : "") +
+      (row.tab === "chase" && row.daysSilent != null
+        ? '<p class="quiet' + (row.daysSilent >= 7 ? " hot" : "") + '">' + row.daysSilent + " days quiet</p>"
+        : '<p class="touch">' + esc(B.lastTouchLabel(row)) + (called ? " · " + esc(called) : "") + "</p>") +
+      '<button class="openbtn" type="button" onclick="natOpen(\'' + esc(v.id) + "')\">View emails</button>" +
+      '<div class="rowbtns"><button class="openbtn" type="button" onclick="natCalled(\'' + esc(v.id) + "')\">Called</button>" +
+      '<button class="openbtn ghost" type="button" onclick="natDrop(\'' + esc(v.id) + "', true)\">Drop</button></div>" +
+      '<form class="quick" onsubmit="natQuick(\'' + esc(v.id) + "');return false\">" +
+      '<input id="qnote-' + esc(v.id) + '" placeholder="Tina picking October, £275"/>' +
+      '<button type="submit">Save</button></form></article>';
+  }
+
+  function cashHtml(stats) {
+    var html = '<button class="cash-ticker" type="button" onclick="natCash()">' +
+      '<span class="cash-amt">' + B.gbp(stats.cash) + "</span>" +
+      '<span class="cash-meta">' + stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " locked</span></button>";
+    if (!cashOpen) return html;
+    html += '<div class="cash-break"><b>Confirmed bookings</b>';
+    stats.rows.forEach(function (r) {
+      html += '<div class="row"><span>' + esc(r.name) + (r.nights > 1 ? " · " + r.nights + " nights" : "") +
+        (r.mismatch ? '<span class="mismatch">fee on thread ' + B.gbp(r.mismatch.thread) + " / stored " + B.gbp(r.mismatch.stored) + "</span>" : "") +
+        "</span><span>" + B.gbp(r.fee) + "</span></div>";
+    });
+    html += '<div class="sum"><span>Total locked</span><span>' + B.gbp(stats.cash) + "</span></div>";
+    stats.pending.forEach(function (p) {
+      html += '<div class="pend">' + esc(p.name) + " not counted until a date is locked — " + B.gbp(p.fee) + " if she does.</div>";
+    });
+    html += "</div>";
+    return html;
+  }
+
+  function renderList() {
+    var rowsAll = ranked();
+    var counts = B.tabCounts(rowsAll);
+    var stats = B.lockedCash(VENUES);
+    var alarm = B.chaseAlarm(rowsAll);
+    var pep = B.pepLine(rowsAll);
+    var tabs = [
+      ["close", "Close tonight"],
+      ["live", "Live"],
+      ["chase", "Chase"],
+      ["call", "Call list"],
+      ["locked", "Locked"],
+      ["parked", "Parked"],
+    ];
+    var tabHtml = tabs.map(function (t) {
+      var on = tab === t[0] ? " on" : "";
+      var warn = t[0] === "chase" && alarm ? " warn" : "";
+      return '<button type="button" class="' + on + warn + '" onclick="natTab(\'' + t[0] + "')\">" + t[1] + " " + counts[t[0]] + "</button>";
+    }).join("");
+    var list = B.sortTab(rowsAll, tab).filter(function (r) { return B.matchesQuery(r.venue, q); });
+    var cards = "";
+    if (tab === "close" && !q) {
+      var top = list.slice(0, 3);
+      var rest = list.slice(3);
+      cards += '<p class="kicker">Tonight’s script</p>';
+      top.forEach(function (r, i) { cards += cardHtml(r, i + 1); });
+      if (rest.length) {
+        cards += '<button class="openbtn" type="button" onclick="natMore()">' + (moreOpen ? "Hide extra" : "More closeable (" + rest.length + ")") + "</button>";
+        if (moreOpen) rest.forEach(function (r) { cards += cardHtml(r); });
+      }
+    } else {
+      cards = list.map(function (r) { return cardHtml(r); }).join("") || '<p class="empty">Nothing in this tab</p>';
+    }
+    $("cash-slot").innerHTML = cashHtml(stats);
+    $("pep").textContent = pep;
+    $("tabs").innerHTML = tabHtml;
+    $("count").textContent = list.length + " · " + (tabs.find(function (t) { return t[0] === tab; }) || ["", tab])[1];
+    $("list").innerHTML = cards;
+    $("sync").textContent = sharedOk ? "Notes shared with Jake" : "Notes on this phone only";
+    [["cash-amt", "cash-meta"], ["cash-amt-app", "cash-meta-app"]].forEach(function (ids) {
+      if ($(ids[0])) $(ids[0]).textContent = B.gbp(stats.cash);
+      if ($(ids[1])) $(ids[1]).textContent = stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " locked";
+    });
+  }
+
+  function renderDetail(id) {
+    var row = ranked().find(function (r) { return r.venue.id === id; });
+    if (!row) return;
+    var v = row.venue;
+    var rec = window.NatNotes.recordOf(NOTES, id);
+    var thread = (v.messages || []).filter(function (m) { return m.side === "us" || m.side === "them"; });
+    var notesHtml = (rec.entries || []).map(function (entry, i) {
+      return '<div class="bubble note"><div class="side">Note</div><p class="meta">' + esc(B.fmtWhen(entry.at)) +
+        "</p><pre>" + esc(entry.text || "") + '</pre><button class="lock" type="button" onclick="natDelNote(\'' +
+        esc(id) + "', " + i + ')">Delete note</button></div>';
+    }).join("") || '<p class="email">No notes yet.</p>';
+    var bubbles = emailsOpen
+      ? (thread.length
+          ? thread.map(function (m, i) {
+              return '<div class="bubble ' + (m.side === "them" ? "them" : "us") + '"><div class="side">' +
+                (m.side === "them" ? "THEM · venue" : "US · Natalie / Jake") + " · " + (i + 1) + "/" + thread.length +
+                '</div><p class="meta">' + esc(m.label || "") + (m.at ? " · " + esc(B.fmtWhen(m.at)) : "") + "</p>" +
+                (m.from ? '<p class="meta">' + esc(m.from) + "</p>" : "") +
+                (m.subject ? '<p class="replied">' + esc(m.subject) + "</p>" : "") +
+                "<pre>" + esc(m.body || "") + "</pre></div>";
+            }).join("")
+          : '<p class="replied">No reply yet</p>')
+      : "";
+    var money = row.tab === "locked" && v.lockedFee ? "Locked " + B.gbp(v.lockedFee) : row.quotedFee ? "Quoted " + B.gbp(row.quotedFee) : "";
+    var whoPrompt = row.who ? "" :
+      '<div class="need"><p>Who’s the booker?</p><input id="who-name" placeholder="First name"/><button class="primary" type="button" onclick="natSaveWho(\'' + esc(id) + "')\">Save</button></div>";
+    var sheet = sheetOpen
+      ? '<div class="sheet" onclick="if(event.target===this)natSheet(false)"><div class="sheetbox">' +
+        "<h2>What happened?</h2>" +
+        '<div class="acts">' +
+        '<button class="btn call" type="button" onclick="document.getElementById(\'book-fee\').focus()">Booked</button>' +
+        '<button class="btn gold" type="button" onclick="natAfter(\'' + esc(id) + "', 'confirm')\">They’ll confirm</button>" +
+        '<button class="btn" type="button" onclick="natAfter(\'' + esc(id) + "', 'voicemail')\">Voicemail</button>" +
+        '<button class="btn" type="button" onclick="natAfter(\'' + esc(id) + "', 'dead')\">Dead</button></div>" +
+        '<p class="meta">Booked — fee + date (not in the ticker until Jake locks the record)</p>' +
+        '<div class="rowbtns"><input id="book-fee" inputmode="numeric" placeholder="£"/><input id="book-date" placeholder="Sat 17 Oct"/></div>' +
+        '<button class="btn call" type="button" onclick="natAfter(\'' + esc(id) + "', 'booked')\">Save booked</button>" +
+        "</div></div>"
+      : "";
+    $("detail").innerHTML =
+      "<header><button class='back' type='button' onclick='natBack()'>Back</button>" +
+      "<h1>" + esc(v.name) + "</h1>" +
+      (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
+      '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span>" +
+      (row.who ? '<p class="who">Who · ' + esc(row.who) + "</p>" : "") +
+      '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p>" +
+      (row.factLine ? '<p class="fact">' + esc(row.factLine) + "</p>" : "") +
+      actions(row) +
+      (money ? '<p class="money">' + esc(money) + "</p>" : "") +
+      (row.feeMismatch ? '<p class="mismatch">fee on thread ' + B.gbp(row.feeMismatch.thread) + " / stored " + B.gbp(row.feeMismatch.stored) + "</p>" : "") +
+      "</header>" +
+      '<div class="panel"><p class="kicker">Notes first</p>' + whoPrompt + notesHtml +
+      '<button class="callbtn" type="button" onclick="natSheet(true)">Called</button>' +
+      '<textarea id="detail-note" rows="3" placeholder="Tina picking October, £275"></textarea>' +
+      '<button class="primary" type="button" onclick="natSaveNote(\'' + esc(id) + "')\">Save note</button>" +
+      (rec.dropped
+        ? '<button class="openbtn" type="button" onclick="natDrop(\'' + esc(id) + "', false)\">Put back on the list</button>"
+        : '<button class="openbtn" type="button" onclick="natDrop(\'' + esc(id) + "', true)\">Drop — not interested</button>") +
+      "</div>" +
+      '<div class="panel"><button class="openbtn" type="button" onclick="natEmails()">View emails · ' + thread.length + " on file</button>" +
+      bubbles + "</div>" + sheet;
+  }
+
+  function render() {
+    try { B.lockedCash(VENUES); } catch (e) {}
+    if (openId) {
+      $("app").classList.remove("show");
+      $("detail").className = "show";
+      renderDetail(openId);
+      return;
+    }
+    $("detail").className = "";
+    $("app").classList.add("show");
+    renderList();
+  }
+
+  loadVenues();
+  NOTES = window.NatNotes.readLocal();
+  window.NatNotes.pullRemote().then(function (res) {
+    NOTES = res.store;
+    sharedOk = res.shared;
+    if ($("app").classList.contains("show")) render();
+  });
+  setInterval(function () {
+    if (!$("app").classList.contains("show")) return;
+    window.NatNotes.pullRemote().then(function (res) {
+      NOTES = res.store;
+      sharedOk = res.shared;
+      if (!openId) render();
+    });
+  }, 20000);
+  setInterval(function () {
+    if (!$("app").classList.contains("show")) return;
+    loadVenues();
+  }, 60000);
+  $("go").onclick = unlock;
+  $("pw").addEventListener("keydown", function (e) { if (e.key === "Enter") unlock(); });
+  $("q").addEventListener("input", function (e) { q = e.target.value; render(); });
+  try { if (sessionStorage.getItem("natalie-ok") === "1") openBoard(); } catch (e) {}
+  try { renderList(); } catch (e) {}
+})();
