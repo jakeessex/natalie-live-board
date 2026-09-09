@@ -1038,10 +1038,10 @@ var NatNotes = (() => {
     return map[tabName] || tabName;
   }
 
-  function actions(row) {
+  function actions(row, skipCall) {
     var v = row.venue;
     var html = '<div class="acts">';
-    if (B.telHref(v.phone)) html += '<a class="btn call" href="' + B.telHref(v.phone) + '">Call</a>';
+    if (B.telHref(v.phone) && !skipCall) html += '<a class="btn call" href="' + B.telHref(v.phone) + '">Call</a>';
     if (B.smsHref(v.phone)) html += '<a class="btn" href="' + B.smsHref(v.phone) + '">Text</a>';
     if (B.mailtoHref(v)) html += '<a class="btn" href="' + B.mailtoHref(v) + '">Email</a>';
     html += '<a class="btn" href="' + B.mapsHref(v) + '" target="_blank" rel="noopener">Maps</a>';
@@ -1186,13 +1186,16 @@ var NatNotes = (() => {
       "<h1>" + esc(v.name) + "</h1>" +
       (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
       '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span>" +
+      (B.telHref(v.phone) ? '<a class="callbtn" href="' + B.telHref(v.phone) + '">Call' + (row.who ? " " + esc(row.who) : "") + "</a>" : "") +
+      "</header>" +
+      '<div class="panel">' +
       (row.who ? '<p class="who">Who · ' + esc(row.who) + "</p>" : "") +
       '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p>" +
       (row.factLine ? '<p class="fact">' + esc(row.factLine) + "</p>" : "") +
       actions(row) +
       (money ? '<p class="money">' + esc(money) + "</p>" : "") +
       (row.feeMismatch ? '<p class="mismatch">fee on thread ' + B.gbp(row.feeMismatch.thread) + " / stored " + B.gbp(row.feeMismatch.stored) + "</p>" : "") +
-      "</header>" +
+      "</div>" +
       '<div class="panel"><p class="kicker">Notes first</p>' + whoPrompt + notesHtml +
       '<button class="callbtn" type="button" onclick="natSheet(true)">Called</button>' +
       '<textarea id="detail-note" rows="3" placeholder="Tina picking October, £275"></textarea>' +
