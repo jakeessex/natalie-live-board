@@ -57,7 +57,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "pendingLockFee": 275,
+    "pendingNote": "Add to locked cash only when Tina confirms a free date (not 13 Nov 2027 Hadleigh)"
   },
   {
     "id": "dartford-mayor-charity-tea",
@@ -107,7 +109,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "booked"
+    "tab": "booked",
+    "lockedFee": 200,
+    "lockedNights": 1
   },
   {
     "id": "hadleigh-cons",
@@ -197,7 +201,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "booked"
+    "tab": "booked",
+    "lockedFee": 250,
+    "lockedNights": 1
   },
   {
     "id": "halstead-rbl",
@@ -263,7 +269,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "booked"
+    "tab": "booked",
+    "lockedFee": 200,
+    "lockedNights": 1
   },
   {
     "id": "oxhey-cons-keyser-hall",
@@ -321,7 +329,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "booked"
+    "tab": "booked",
+    "lockedFee": 200,
+    "lockedNights": 1
   },
   {
     "id": "broomfield-rbl",
@@ -8673,7 +8683,7 @@
     "id": "bluehouse-farm",
     "name": "Bluehouse Farm",
     "town": "",
-    "badge": "retract-agency",
+    "badge": "locked",
     "phone": "+441268544021",
     "needPhone": false,
     "email": "bluehousefarm@hotmail.com",
@@ -8717,7 +8727,11 @@
       }
     ],
     "hasThread": true,
-    "tab": "other"
+    "tab": "booked",
+    "lockedFee": 250,
+    "lockedNights": 1,
+    "lockedDate": "2026-10-30",
+    "lockedNote": "Choice Live Laura; Jake count GBP250 from 9 Sep 2026"
   },
   {
     "id": "corringham-social",
@@ -10863,7 +10877,9 @@
     "subject": "",
     "messages": [],
     "hasThread": false,
-    "tab": "booked"
+    "tab": "booked",
+    "lockedFee": 400,
+    "lockedNights": 2
   },
   {
     "id": "the-lion-inn-hotel",
