@@ -907,6 +907,63 @@ var NatNotes = (function(exports) {
 	return exports;
 })({});
 
+/* Matrix rain */
+(function(){
+  var GLYPHS="アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ0123456789<>|*+#¥$NATJAKEV20TCB";
+  var canvas=document.getElementById("rain");
+  if(!canvas) return;
+  try{ if(sessionStorage.getItem("natalie-ok")==="1"){ canvas.style.display="none"; return; } }catch(e){}
+  var g=canvas.getContext("2d",{alpha:false});
+  if(!g) return;
+  var mode="idle", cols=[], colW=16, last=0, raf=0, running=true;
+  var reduced=false;
+  try{ reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches; }catch(e){}
+  function pal(){
+    if(mode==="denied") return {fill:"#ff7a6e",head:"#ffe4e0"};
+    if(mode==="granted"||mode==="egg") return {fill:"#ffd76a",head:"#fff4c8"};
+    return {fill:"#3dff6a",head:"#eaffea"};
+  }
+  function resize(){
+    var dpr=Math.min(window.devicePixelRatio||1,2);
+    var w=window.innerWidth, h=window.innerHeight;
+    canvas.width=Math.floor(w*dpr); canvas.height=Math.floor(h*dpr);
+    canvas.style.width=w+"px"; canvas.style.height=h+"px";
+    g.setTransform(dpr,0,0,dpr,0,0);
+    colW=w<400?18:16;
+    cols=Array.from({length:Math.max(12,Math.ceil(w/colW))}, function(){ return Math.random()*-40; });
+    g.fillStyle="#140e0a"; g.fillRect(0,0,w,h);
+  }
+  function tick(now){
+    if(!running) return;
+    raf=requestAnimationFrame(tick);
+    if(document.hidden) return;
+    var minDt=mode==="granted"?24:32;
+    if(now-last<minDt) return;
+    last=now;
+    var w=window.innerWidth, h=window.innerHeight;
+    g.fillStyle=mode==="granted"?"rgba(20,14,10,0.18)":"rgba(20,14,10,0.10)";
+    g.fillRect(0,0,w,h);
+    var p=pal(), size=colW-2, step=mode==="granted"?1.85:mode==="egg"?1.15:1;
+    g.font=size+"px ui-monospace,monospace"; g.textBaseline="top";
+    for(var i=0;i<cols.length;i++){
+      var x=i*colW, y=cols[i]*colW;
+      var ch=GLYPHS[Math.floor(Math.random()*GLYPHS.length)]||"0";
+      g.globalAlpha=0.95; g.fillStyle=p.head; g.fillText(ch,x,y);
+      g.globalAlpha=0.55; g.fillStyle=p.fill; g.fillText(ch,x,y+colW);
+      g.globalAlpha=1;
+      if(y>h && Math.random()>0.96) cols[i]=Math.random()*-20; else cols[i]+=step;
+    }
+  }
+  window.NatRain={
+    set:function(m){ mode=m||"idle"; },
+    stop:function(){ running=false; cancelAnimationFrame(raf); }
+  };
+  resize();
+  if(reduced){ canvas.style.opacity=".25"; }
+  window.addEventListener("resize", resize);
+  raf=requestAnimationFrame(tick);
+})();
+
 /* Natalie Live Board v19 — vanilla UI. Pipeline is window.Board from the bundled module. */
 (function () {
   var B = window.Board;
@@ -945,21 +1002,95 @@ var NatNotes = (function(exports) {
       .catch(function () {});
   }
 
+  function rain(mode) {
+    if (window.NatRain && window.NatRain.set) window.NatRain.set(mode);
+  }
+
+  function hideRain() {
+    if (window.NatRain && window.NatRain.stop) window.NatRain.stop();
+    var el = $("rain");
+    if (el) el.style.display = "none";
+  }
+
   function openBoard() {
+    hideRain();
     $("gate").classList.add("ok");
     $("app").classList.add("show");
     try { sessionStorage.setItem("natalie-ok", "1"); } catch (e) {}
     render();
   }
 
+  function fireEgg() {
+    rain("egg");
+    var box = $("egg");
+    var ul = $("egg-lines");
+    if (box) box.classList.add("on");
+    if (ul && !ul.childNodes.length) {
+      ["WAKE UP, NAT", "THE BOARD HAS YOU", "FOLLOW THE WHITE RABBIT", "v20 · YOU'RE THE ONE"].forEach(function (line) {
+        var li = document.createElement("li");
+        li.textContent = "› " + line;
+        ul.appendChild(li);
+      });
+    }
+    $("pw").value = "";
+    showErr("");
+  }
+
+  function grantThenOpen() {
+    try { sessionStorage.setItem("natalie-ok", "1"); } catch (e) {}
+    var reduced = false;
+    try { reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) {}
+    if (reduced) { openBoard(); return; }
+    rain("granted");
+    var card = $("gate-card");
+    var grant = $("grant");
+    if (card) card.style.display = "none";
+    if (grant) grant.classList.add("on");
+    var ul = $("grant-lines");
+    var lines = [
+      "HANDSHAKE · JEM-VAULT",
+      "KEY ACCEPTED",
+      "DECRYPTING VENUE BOOK · " + VENUES.length,
+      "NOTES CHANNEL · LIVE",
+      "ACCESS GRANTED · v20",
+      "WELCOME BACK, NAT"
+    ];
+    var i = 0;
+    function next() {
+      if (ul && i < lines.length) {
+        var li = document.createElement("li");
+        li.textContent = "› " + lines[i];
+        ul.appendChild(li);
+        i += 1;
+        setTimeout(next, 280);
+        return;
+      }
+      setTimeout(openBoard, 700);
+    }
+    next();
+  }
+
   function unlock() {
     showErr("");
     var raw = ($("pw").value || "").replace(/^\s+|\s+$/g, "");
-    if (raw.toLowerCase() === PASS || raw === PASS) {
-      openBoard();
+    var key = raw.toLowerCase();
+    if (key === "v20" || key === "neo" || key === "whiterabbit" || key === "white rabbit") {
+      fireEgg();
       return;
     }
-    showErr("Wrong password");
+    if (raw.toLowerCase() === PASS || raw === PASS) {
+      grantThenOpen();
+      return;
+    }
+    rain("denied");
+    var card = $("gate-card");
+    if (card) {
+      card.classList.remove("shake");
+      void card.offsetWidth;
+      card.classList.add("shake");
+    }
+    showErr("ACCESS DENIED");
+    setTimeout(function () { rain("idle"); }, 900);
   }
 
   function ranked() {
@@ -977,6 +1108,20 @@ var NatNotes = (function(exports) {
   }
 
   window.natUnlock = unlock;
+  window.natStamp = (function () {
+    var n = 0, t = 0;
+    return function () {
+      n += 1;
+      if (t) clearTimeout(t);
+      t = setTimeout(function () { n = 0; }, 900);
+      if (n >= 3) { n = 0; fireEgg(); }
+    };
+  })();
+  window.natEye = function () {
+    var el = $("pw");
+    if (!el) return;
+    el.type = el.type === "password" ? "text" : "password";
+  };
   window.natRender = render;
   window.natOpen = function (id) { openId = id; emailsOpen = false; sheetOpen = false; render(); };
   window.natCalled = function (id) { openId = id; emailsOpen = false; sheetOpen = true; render(); };
