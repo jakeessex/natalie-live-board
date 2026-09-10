@@ -89,6 +89,14 @@ var Board = (function(exports) {
 	/** They asked for dates / want to book — Close, even if a committee or “I’ll send dates” is in the way. */
 	const DATE_TALK_RE = /\b(interested in booking|discuss possible dates|send me (through )?(some )?(saturdays|dates)|a date in 20\d\d|open to getting jake booked|give you some dates|dates that you have available|possible dates)\b/i;
 	const AGREE_FEE_RE = /(?:for|do|it['’]s|it is|that['’]s|that is|at)\s*£\s*(\d{2,4})|£\s*(\d{2,4})\s*(?:cash|confirmed|locked)/i;
+	const ON_FILE_RE = /future reference|on file|have your details|you may be hearing from me|as i have your details|keep (your|him|this|it) (details )?on file|for later/i;
+	const DISTANCE_RE = /too far|a bit far|far for him to travel/i;
+	const NAMED_DATE_RE = /\b\d{1,2}(?:st|nd|rd|th)?\s+(?:of\s+)?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b/i;
+	const CASH_LOCK_RE = /will be the cash|the cash one|juggle some things/i;
+	const MEET_RE = /come to (the )?restaurant|come down and (we )?talk|we talk about/i;
+	const DEFINITE_RE = /definitely (be )?(interested|open)|would definitely|love the sound of jake/i;
+	const SUNDAY_IN_RE = /squeeze in a sunday|sunday afternoon/i;
+	const FORWARDED_RE = /forwarded your email|please contact him|onto peter/i;
 	const WORKING_TABS = [
 		"close",
 		"live",
@@ -528,9 +536,43 @@ var Board = (function(exports) {
 	function sortAll(rows) {
 		return [...sortWorking(rows), ...sortTab(rows, "parked")];
 	}
+	function heatScore(venue, daysSinceInbound) {
+		const inbound = realInbound(venue);
+		const lastBody = ((inbound[inbound.length - 1] && inbound[inbound.length - 1].body) || "").toLowerCase();
+		const all = inbound.map((m) => m.body || "").join("\n").toLowerCase();
+		let s = 40;
+		const days = daysSinceInbound == null ? 18 : daysSinceInbound;
+		const lastHasDate = NAMED_DATE_RE.test(lastBody);
+		if (lastHasDate && (CASH_LOCK_RE.test(lastBody) || /£\s*\d{2,4}/.test(lastBody))) s += 90;
+		else if (lastHasDate || NAMED_DATE_RE.test(all) && days < 5) s += 35;
+		if (CASH_LOCK_RE.test(lastBody)) s += 80;
+		if (MEET_RE.test(all)) s += 55;
+		if (DEFINITE_RE.test(all)) s += 38;
+		if (FEE_ASK_RE.test(lastBody)) s += 40;
+		if (DATE_TALK_RE.test(all) || /give you some dates|check the diary/.test(all)) s += 22;
+		if (/give you some dates|check the diary on my return/.test(lastBody)) s += 16;
+		if (SUNDAY_IN_RE.test(all)) s += 18;
+		if (WAITING_RE.test(all) && /committee/.test(all)) s += 6;
+		if (FORWARDED_RE.test(all)) s += 4;
+		if (/next (two|2) months|concentrating on those/.test(lastBody)) s -= 22;
+		if (/2027/.test(all) && !/\b(2026|october|november|december|this year)\b/.test(all)) s -= 14;
+		if (DISTANCE_RE.test(all)) s -= 38;
+		if (FULLY_BOOKED_RE.test(all)) s -= 22;
+		if (ON_FILE_RE.test(all) || /future reference/.test(lastBody)) s -= 60;
+		if (/^will do\b/.test(lastBody.trim())) s -= 12;
+		s -= Math.min(36, days * 2);
+		return s;
+	}
+	function sortReplied(rows) {
+		return rows.filter((r) => r.tab === "close" || r.tab === "live" || r.tab === "chase").sort((a, b) => {
+			const heat = heatScore(b.venue, b.daysSinceInbound) - heatScore(a.venue, a.daysSinceInbound);
+			if (heat) return heat;
+			return (a.daysSinceInbound ?? 99) - (b.daysSinceInbound ?? 99);
+		});
+	}
 	function rowsForFilter(rows, filter) {
 		if (filter === "all") return sortAll(rows);
-		if (filter === "replied") return sortWorking(rows.filter((r) => r.tab === "close" || r.tab === "live" || r.tab === "chase"));
+		if (filter === "replied") return sortReplied(rows);
 		if (filter === "closed") return sortTab(rows, "locked");
 		return sortTab(rows, "parked");
 	}
@@ -735,6 +777,7 @@ var Board = (function(exports) {
 	exports.rankAll = rankAll;
 	exports.rankVenue = rankVenue;
 	exports.realInbound = realInbound;
+	exports.heatScore = heatScore;
 	exports.rowsForFilter = rowsForFilter;
 	exports.smsHref = smsHref;
 	exports.sortAll = sortAll;
@@ -1249,7 +1292,7 @@ var NatNotes = (function(exports) {
     list.forEach(function (r) { counts[r.tab] = (counts[r.tab] || 0) + 1; });
     var prev = null;
     list.forEach(function (r) {
-      if (!prev || prev.tab !== r.tab) {
+      if (filter !== "replied" && (!prev || prev.tab !== r.tab)) {
         html += '<p class="group">' + groupLabel(r.tab) + " · " + counts[r.tab] + "</p>";
       }
       html += rowHtml(r);
