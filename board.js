@@ -1,8 +1,8 @@
 var Board = (function(exports) {
 	Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 	//#region src/lib/board/pipeline.ts
-	const BOARD_VERSION = "v19";
-	const BOARD_STAMP = "9 Sep 2026";
+	const BOARD_VERSION = "v20";
+	const BOARD_STAMP = "10 Sep 2026";
 	const PASSWORD = "natbooksjake";
 	const BOARD_FILTERS = [
 		{
@@ -10,24 +10,12 @@ var Board = (function(exports) {
 			label: "All"
 		},
 		{
-			id: "close",
-			label: "Close"
-		},
-		{
 			id: "replied",
 			label: "Replied"
 		},
 		{
-			id: "call",
-			label: "Call"
-		},
-		{
-			id: "locked",
-			label: "Locked"
-		},
-		{
-			id: "parked",
-			label: "Parked"
+			id: "closed",
+			label: "Closed"
 		}
 	];
 	const DAY = 864e5;
@@ -103,6 +91,12 @@ var Board = (function(exports) {
 		"chase",
 		"call",
 		"locked"
+	];
+	const OPEN_TABS = [
+		"close",
+		"live",
+		"chase",
+		"call"
 	];
 	function parseWhen(raw) {
 		if (!raw) return null;
@@ -519,13 +513,21 @@ var Board = (function(exports) {
 		for (const tab of WORKING_TABS) out.push(...sortTab(rows, tab));
 		return out;
 	}
+	function sortOpen(rows) {
+		const out = [];
+		for (const tab of OPEN_TABS) out.push(...sortTab(rows, tab));
+		return out;
+	}
+	function sortClosed(rows) {
+		return [...sortTab(rows, "locked"), ...sortTab(rows, "parked")];
+	}
 	function sortAll(rows) {
 		return [...sortWorking(rows), ...sortTab(rows, "parked")];
 	}
 	function rowsForFilter(rows, filter) {
-		if (filter === "all") return sortAll(rows);
+		if (filter === "all") return sortOpen(rows);
 		if (filter === "replied") return sortWorking(rows.filter((r) => r.tab === "close" || r.tab === "live" || r.tab === "chase"));
-		return sortTab(rows, filter);
+		return sortClosed(rows);
 	}
 	function tabCounts(rows) {
 		const counts = {
@@ -542,12 +544,9 @@ var Board = (function(exports) {
 	function filterCounts(rows) {
 		const t = tabCounts(rows);
 		return {
-			all: rows.length,
-			close: t.close,
+			all: t.close + t.live + t.chase + t.call,
 			replied: t.close + t.live + t.chase,
-			call: t.call,
-			locked: t.locked,
-			parked: t.parked
+			closed: t.locked + t.parked
 		};
 	}
 	function lockedCash(venues) {
@@ -1055,26 +1054,48 @@ var NatNotes = (function(exports) {
     return html;
   }
 
-  function cardHtml(row) {
+  function groupLabel(tab) {
+    if (tab === "close") return "Close tonight";
+    if (tab === "live") return "Live threads";
+    if (tab === "chase") return "Chase";
+    if (tab === "call") return "To call";
+    if (tab === "locked") return "Locked in";
+    return "Parked";
+  }
+
+  function rowHtml(row) {
     var v = row.venue;
-    var money = moneyLabel(row);
+    var bits = [];
+    if (v.town) bits.push(v.town);
+    if (row.who) bits.push(row.who);
+    if (row.tab === "chase" && row.daysSilent != null) bits.push(row.daysSilent + " days quiet");
+    else if (row.tab !== "locked" && row.tab !== "parked") bits.push(B.lastTouchLabel(row));
     var called = B.lastCalledLabel(NOTES[v.id]);
-    return '<article class="card' + (row.stale ? " stale" : "") + '">' +
-      '<div class="cardtop"><div><h2>' + esc(v.name) + "</h2>" +
-      (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
-      "</div><span class='badge " + row.tab + "'>" + chip(row.tab) + "</span></div>" +
-      (row.stale ? '<p class="stale-tag">STALE</p>' : "") +
-      (row.who ? '<p class="who">Who · ' + esc(row.who) + "</p>" : "") +
-      '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p>" +
-      (row.factLine ? '<p class="fact"><span>On file</span>' + esc(row.factLine) + "</p>" : "") +
-      actions(row) +
-      (money ? '<p class="money">' + esc(money) + "</p>" : "") +
-      (row.tab === "chase" && row.daysSilent != null
-        ? '<p class="quiet' + (row.daysSilent >= 7 ? " hot" : "") + '">' + row.daysSilent + " days quiet</p>"
-        : '<p class="touch">' + esc(B.lastTouchLabel(row)) + (called ? " · " + esc(called) : "") + "</p>") +
-      '<button class="openbtn" type="button" onclick="natOpen(\'' + esc(v.id) + "')\">Open</button>" +
-      '<div class="rowbtns"><button class="openbtn" type="button" onclick="natCalled(\'' + esc(v.id) + "')\">Called</button>" +
-      '<button class="openbtn ghost" type="button" onclick="natDrop(\'' + esc(v.id) + "', true)\">Drop</button></div></article>";
+    if (called) bits.push(called);
+    var quiet = row.stale || (row.tab === "chase" && (row.daysSilent || 0) >= 7);
+    var fee = (row.fee && row.tab === "locked") ? '<span class="row-fee">' + B.gbp(row.fee) + "</span>" : "";
+    return '<button type="button" class="job' + (quiet ? " hot" : "") + '" onclick="natOpen(\'' + esc(v.id) + "')\">" +
+      '<span class="job-main"><span class="job-name">' + esc(v.name) + '</span><span class="job-meta">' + esc(bits.join(" · ") || "Tap to open") + "</span></span>" +
+      fee +
+      '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span>" +
+      '<span class="chev">›</span></button>';
+  }
+
+  function listHtml(list) {
+    if (!list.length) return '<p class="empty">Nothing in this list</p>';
+    var html = '<div class="joblist">';
+    var counts = {};
+    list.forEach(function (r) { counts[r.tab] = (counts[r.tab] || 0) + 1; });
+    var prev = null;
+    list.forEach(function (r) {
+      if (!prev || prev.tab !== r.tab) {
+        html += '<p class="group">' + groupLabel(r.tab) + " · " + counts[r.tab] + "</p>";
+      }
+      html += rowHtml(r);
+      prev = r;
+    });
+    html += "</div>";
+    return html;
   }
 
   function cashHtml(stats) {
@@ -1105,11 +1126,11 @@ var NatNotes = (function(exports) {
     var tabHtml = tabs.map(function (t) {
       var on = filter === t.id ? " on" : "";
       var warn = t.id === "replied" && alarm ? " warn" : "";
-      return '<button type="button" class="' + on + warn + '" onclick="natFilter(\'' + t.id + "')\">" + t.label + " " + counts[t.id] + "</button>";
+      return '<button type="button" class="' + on + warn + '" onclick="natFilter(\'' + t.id + "')\"><b>" + counts[t.id] + "</b><span>" + t.label + "</span></button>";
     }).join("");
     var list = B.rowsForFilter(rowsAll, filter).filter(function (r) { return B.matchesQuery(r.venue, q); });
     var label = (tabs.find(function (t) { return t.id === filter; }) || { label: "All" }).label;
-    var cards = list.map(function (r) { return cardHtml(r); }).join("") || '<p class="empty">Nothing in this list</p>';
+    var cards = listHtml(list);
     $("cash-slot").innerHTML = cashHtml(stats);
     $("pep").textContent = pep;
     $("filters").innerHTML = tabHtml;

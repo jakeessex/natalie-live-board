@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="theme-color" content="#140e0a"/>
 <title>Jake Essex Board</title>
-<!-- UI LOCK: Board v19 shell. Never embed venues. Data is venues.json only. -->
+<!-- UI LOCK: Board v20 shell. Never embed venues. Data is venues.json only. -->
 <style>
 :root{
   --bg:#140e0a;--surface:#1e1510;--raised:#2a1d16;--fg:#f8f0e4;--muted:#c4b3a0;
@@ -93,10 +93,22 @@ main{padding:14px 14px 140px}
 .fact{margin:8px 0 0;font-size:13px;color:var(--muted);line-height:1.4}
 .email,.replied{margin:8px 0 0;font-size:14px;color:var(--muted);word-break:break-word}
 .search{margin-top:12px}
-.filters{position:fixed;bottom:0;left:0;right:0;z-index:20;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,14,10,.96);border-top:1px solid var(--line);backdrop-filter:blur(10px)}
-.filters button{height:44px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--muted);font-weight:700;font-size:13px}
-.filters button.on{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
-.filters button.warn{border-color:var(--warn);background:#3a2410;color:var(--warn)}
+.filters{position:fixed;bottom:0;left:0;right:0;z-index:20;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:8px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,14,10,.96);border-top:1px solid var(--line);backdrop-filter:blur(10px)}
+.filters button{min-height:52px;border-radius:16px;border:0;background:var(--raised);color:var(--muted);font-weight:800;font-size:11px;letter-spacing:.06em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.filters button b{font-size:15px;letter-spacing:0;text-transform:none}
+.filters button.on{background:var(--accent);color:var(--accent-fg)}
+.filters button.warn{background:#3a2410;color:var(--warn)}
+.joblist{border:1px solid var(--border);border-radius:18px;overflow:hidden;background:var(--surface)}
+.group{margin:0;padding:8px 14px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--raised);border-top:1px solid var(--line)}
+.joblist .group:first-child{border-top:0}
+.job{width:100%;display:flex;align-items:center;gap:10px;text-align:left;min-height:56px;padding:10px 14px;border:0;border-top:1px solid var(--line);background:transparent;color:var(--fg)}
+.job-main{flex:1;min-width:0}
+.job-name{display:block;font-size:16px;font-weight:650;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.job-meta{display:block;margin-top:2px;font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.job.hot .job-meta{color:var(--stale)}
+.row-fee{flex-shrink:0;font-size:12px;font-weight:800;color:#ffd76a}
+.badge{flex-shrink:0;white-space:nowrap;border-radius:999px;background:var(--raised);color:var(--muted);font-size:10px;font-weight:800;padding:3px 8px}
+.chev{flex-shrink:0;color:var(--subtle);font-size:18px;line-height:1}
 </style>
 </head>
 <body>
@@ -111,7 +123,7 @@ main{padding:14px 14px 140px}
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="Password"/>
 <p class="err" id="err"></p>
 <button type="button" id="go">Open board</button>
-<p class="ver">Board v19 · 10 Sep 2026</p>
+<p class="ver">Board v20 · 10 Sep 2026</p>
 </div></div>
 <div id="app">
 <header>
@@ -135,6 +147,6 @@ main{padding:14px 14px 140px}
 </div>
 <div id="detail"></div>
 <script type="application/json" id="venues-data">[]</script>
-<script src="board.js"></script>
+<script src="board.js?v=20"></script>
 </body>
 </html>
