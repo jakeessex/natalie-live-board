@@ -2,49 +2,378 @@
   "updatedAt": "2026-09-10",
   "source": "JAKE ESSEX GIGS @ CL",
   "gigs": [
-    {"date":"2026-09-11","venue":"","status":"held","source":"cl"},
-    {"date":"2026-09-12","venue":"Bellingham Ex Servicemens Club","postcode":"SE6 3DD","start":"20:30","finish":"23:30","status":"booked","source":"cl"},
-    {"date":"2026-09-13","venue":"Pelly House Sports & Social","postcode":"IG9 5BY","start":"14:00","finish":"17:00","status":"booked","source":"cl","note":"afternoon tea"},
-    {"date":"2026-09-19","venue":"Stone Street Club, Maidstone","postcode":"ME15 6JN","start":"20:30","finish":"23:00","status":"booked","source":"cl"},
-    {"date":"2026-09-20","venue":"The Bricklayers Arms, Aylesford","postcode":"ME20 6SA","start":"15:00","finish":"17:30","status":"booked","source":"cl"},
-    {"date":"2026-09-25","venue":"The Summerfield Tavern, Bromley","postcode":"SE12 0PS","start":"20:00","finish":"22:30","status":"booked","source":"cl"},
-    {"date":"2026-09-26","venue":"Pagham Beach Club","postcode":"PO21 4SY","start":"16:00","finish":"19:00","status":"booked","source":"cl"},
-    {"date":"2026-09-27","venue":"Ponders End WMC","postcode":"EN3 4LB","start":"20:30","finish":"23:00","status":"booked","source":"cl"},
-    {"date":"2026-10-02","venue":"","status":"held","source":"cl"},
-    {"date":"2026-10-03","venue":"","status":"held","source":"cl"},
-    {"date":"2026-10-04","venue":"","status":"held","source":"cl"},
-    {"date":"2026-10-24","venue":"Barking United Services Club","postcode":"IG11 9SF","start":"20:00","finish":"23:00","status":"booked","source":"cl"},
-    {"date":"2026-10-30","venue":"The Bluehouse Farm Community Association","postcode":"SS15 5UH","start":"20:30","finish":"23:00","status":"booked","source":"cl"},
-    {"date":"2026-11-01","venue":"Corringham Social Club","postcode":"SS17 9AA","start":"20:15","finish":"23:10","status":"booked","source":"cl"},
-    {"date":"2026-11-08","venue":"Glamis Hall Club","postcode":"E1 0AF","start":"15:00","finish":"18:00","status":"booked","source":"cl"},
-    {"date":"2026-11-13","venue":"","status":"held","source":"cl"},
-    {"date":"2026-12-05","venue":"The Springhouse Club","postcode":"SS17 7QT","start":"20:45","finish":"23:30","status":"booked","source":"cl"},
-    {"date":"2026-12-12","venue":"Kings Park Residents Club","postcode":"SS8 8QW","start":"20:30","finish":"23:00","status":"booked","source":"cl"},
-    {"date":"2026-12-13","venue":"Bellingham Ex Servicemens Club","postcode":"SE6 3DD","start":"14:30","finish":"17:30","status":"booked","source":"cl","note":"Sunday"},
-    {"date":"2026-12-18","venue":"The Posh Boys Brewery Bar","postcode":"SS11 8BB","start":"19:30","finish":"22:15","status":"booked","source":"cl"},
-    {"date":"2026-12-19","venue":"Croydon and District Masonic Halls","postcode":"CR0 2UX","start":"20:30","finish":"23:30","status":"booked","source":"cl"},
-    {"date":"2026-12-26","venue":"The George","postcode":"TN27 9NL","start":"17:00","finish":"19:30","status":"booked","source":"cl"},
-    {"date":"2026-12-31","venue":"Hartley Country Club","postcode":"DA3 8BS","start":"20:00","finish":"00:30","status":"booked","source":"cl","note":"NYE"},
-    {"date":"2027-01-08","venue":"","status":"held","source":"cl"},
-    {"date":"2027-01-16","venue":"Hoo Village Institute","postcode":"ME3 9AA","start":"20:00","finish":"23:00","status":"booked","source":"cl"},
-    {"date":"2027-01-30","venue":"Globe Town","postcode":"E2 0RY","start":"20:00","finish":"23:00","status":"booked","source":"cl"},
-    {"date":"2027-02-21","venue":"Glamis Hall Club","postcode":"E1 0AF","start":"15:00","finish":"18:00","status":"booked","source":"cl"},
-    {"date":"2027-03-13","venue":"West Beckenham Conservative Social Club","postcode":"BR3 4PX","start":"20:30","finish":"23:30","status":"booked","source":"cl"},
-    {"date":"2027-04-24","venue":"","status":"held","source":"cl"},
-    {"date":"2027-05-29","venue":"Dagenham RBL","postcode":"RM8 3JP","start":"20:30","finish":"23:30","status":"booked","source":"cl"},
-    {"date":"2027-05-30","venue":"Park Avenue Holiday Village, Leysdown","postcode":"ME12 4QP","start":"21:00","finish":"23:30","status":"booked","source":"cl"},
-    {"date":"2027-07-10","venue":"Canvey Royal British Legion","postcode":"SS8 9HB","start":"20:30","finish":"23:30","status":"booked","source":"cl"},
-    {"date":"2027-07-17","venue":"","status":"held","source":"cl"},
-    {"date":"2027-07-18","venue":"Glamis Hall Club","postcode":"E1 0AF","start":"15:00","finish":"18:00","status":"booked","source":"cl"},
-    {"date":"2027-08-20","venue":"Loxford Club","postcode":"IG3 9AU","start":"20:30","finish":"00:15","status":"booked","source":"cl"},
-    {"date":"2027-08-28","venue":"Stifford Clays Social Club","postcode":"RM16 2AP","start":"20:15","finish":"23:10","status":"booked","source":"cl"},
-    {"date":"2027-09-18","venue":"West Beckenham Conservative Social Club","postcode":"BR3 4PX","start":"20:30","finish":"23:30","status":"booked","source":"cl"},
-    {"date":"2027-10-09","venue":"","status":"held","source":"cl"},
-    {"date":"2027-10-23","venue":"","status":"held","source":"cl"},
-    {"date":"2027-10-30","venue":"Globe Town","postcode":"E2 0RY","start":"20:00","finish":"23:00","status":"booked","source":"cl"},
-    {"date":"2027-11-21","venue":"Glamis Hall Club","postcode":"E1 0AF","start":"15:00","finish":"18:00","status":"booked","source":"cl"}
+    {
+      "date": "2026-09-11",
+      "venue": "",
+      "status": "held",
+      "source": "cl"
+    },
+    {
+      "date": "2026-09-12",
+      "venue": "Bellingham Ex Servicemens Club",
+      "postcode": "SE6 3DD",
+      "start": "20:30",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-09-13",
+      "venue": "Pelly House Sports & Social",
+      "postcode": "IG9 5BY",
+      "start": "14:00",
+      "finish": "17:00",
+      "status": "booked",
+      "source": "cl",
+      "note": "afternoon tea"
+    },
+    {
+      "date": "2026-09-19",
+      "venue": "Stone Street Club, Maidstone",
+      "postcode": "ME15 6JN",
+      "start": "20:30",
+      "finish": "23:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-09-20",
+      "venue": "The Bricklayers Arms, Aylesford",
+      "postcode": "ME20 6SA",
+      "start": "15:00",
+      "finish": "17:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-09-25",
+      "venue": "The Summerfield Tavern, Bromley",
+      "postcode": "SE12 0PS",
+      "start": "20:00",
+      "finish": "22:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-09-26",
+      "venue": "Pagham Beach Club",
+      "postcode": "PO21 4SY",
+      "start": "16:00",
+      "finish": "19:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-09-27",
+      "venue": "Ponders End WMC",
+      "postcode": "EN3 4LB",
+      "start": "20:30",
+      "finish": "23:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-10-02",
+      "venue": "",
+      "status": "held",
+      "source": "cl"
+    },
+    {
+      "date": "2026-10-03",
+      "venue": "",
+      "status": "held",
+      "source": "cl"
+    },
+    {
+      "date": "2026-10-04",
+      "venue": "",
+      "status": "held",
+      "source": "cl"
+    },
+    {
+      "date": "2026-10-24",
+      "venue": "Barking United Services Club",
+      "postcode": "IG11 9SF",
+      "start": "20:00",
+      "finish": "23:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-10-30",
+      "venue": "The Bluehouse Farm Community Association",
+      "postcode": "SS15 5UH",
+      "start": "20:30",
+      "finish": "23:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-11-01",
+      "venue": "Corringham Social Club",
+      "postcode": "SS17 9AA",
+      "start": "20:15",
+      "finish": "23:10",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-11-08",
+      "venue": "Glamis Hall Club",
+      "postcode": "E1 0AF",
+      "start": "15:00",
+      "finish": "18:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-11-13",
+      "venue": "",
+      "status": "held",
+      "source": "cl"
+    },
+    {
+      "date": "2026-11-27",
+      "venue": "Dartford Mayor charity tea",
+      "town": "Dartford",
+      "status": "booked",
+      "source": "board",
+      "note": "charity tea"
+    },
+    {
+      "date": "2026-12-05",
+      "venue": "The Springhouse Club",
+      "postcode": "SS17 7QT",
+      "start": "20:45",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-12-12",
+      "venue": "Kings Park Residents Club",
+      "postcode": "SS8 8QW",
+      "start": "20:30",
+      "finish": "23:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-12-13",
+      "venue": "Bellingham Ex Servicemens Club",
+      "postcode": "SE6 3DD",
+      "start": "14:30",
+      "finish": "17:30",
+      "status": "booked",
+      "source": "cl",
+      "note": "Sunday"
+    },
+    {
+      "date": "2026-12-18",
+      "venue": "The Posh Boys Brewery Bar",
+      "postcode": "SS11 8BB",
+      "start": "19:30",
+      "finish": "22:15",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-12-19",
+      "venue": "Croydon and District Masonic Halls",
+      "postcode": "CR0 2UX",
+      "start": "20:30",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-12-26",
+      "venue": "The George",
+      "postcode": "TN27 9NL",
+      "start": "17:00",
+      "finish": "19:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2026-12-31",
+      "venue": "Hartley Country Club",
+      "postcode": "DA3 8BS",
+      "start": "20:00",
+      "finish": "00:30",
+      "status": "booked",
+      "source": "cl",
+      "note": "NYE"
+    },
+    {
+      "date": "2027-01-08",
+      "venue": "",
+      "status": "held",
+      "source": "cl"
+    },
+    {
+      "date": "2027-01-16",
+      "venue": "Hoo Village Institute",
+      "postcode": "ME3 9AA",
+      "start": "20:00",
+      "finish": "23:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-01-30",
+      "venue": "Globe Town",
+      "postcode": "E2 0RY",
+      "start": "20:00",
+      "finish": "23:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-02-21",
+      "venue": "Glamis Hall Club",
+      "postcode": "E1 0AF",
+      "start": "15:00",
+      "finish": "18:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-03-13",
+      "venue": "West Beckenham Conservative Social Club",
+      "postcode": "BR3 4PX",
+      "start": "20:30",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-04-24",
+      "venue": "",
+      "status": "held",
+      "source": "cl"
+    },
+    {
+      "date": "2027-05-29",
+      "venue": "Dagenham RBL",
+      "postcode": "RM8 3JP",
+      "start": "20:30",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-05-30",
+      "venue": "Park Avenue Holiday Village, Leysdown",
+      "postcode": "ME12 4QP",
+      "start": "21:00",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-07-10",
+      "venue": "Canvey Royal British Legion",
+      "postcode": "SS8 9HB",
+      "start": "20:30",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-07-17",
+      "venue": "Halstead RBL",
+      "town": "Halstead",
+      "status": "booked",
+      "source": "board"
+    },
+    {
+      "date": "2027-07-18",
+      "venue": "Glamis Hall Club",
+      "postcode": "E1 0AF",
+      "start": "15:00",
+      "finish": "18:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-08-20",
+      "venue": "Loxford Club",
+      "postcode": "IG3 9AU",
+      "start": "20:30",
+      "finish": "00:15",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-08-28",
+      "venue": "Stifford Clays Social Club",
+      "postcode": "RM16 2AP",
+      "start": "20:15",
+      "finish": "23:10",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-09-18",
+      "venue": "West Beckenham Conservative Social Club",
+      "postcode": "BR3 4PX",
+      "start": "20:30",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-10-09",
+      "venue": "",
+      "status": "held",
+      "source": "cl"
+    },
+    {
+      "date": "2027-10-23",
+      "venue": "Oxhey Cons / Keyser Hall",
+      "town": "Oxhey / Watford",
+      "status": "booked",
+      "source": "board"
+    },
+    {
+      "date": "2027-10-30",
+      "venue": "Globe Town",
+      "postcode": "E2 0RY",
+      "start": "20:00",
+      "finish": "23:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-11-13",
+      "venue": "Hadleigh Cons",
+      "town": "Hadleigh, Essex",
+      "status": "booked",
+      "source": "board"
+    },
+    {
+      "date": "2027-11-21",
+      "venue": "Glamis Hall Club",
+      "postcode": "E1 0AF",
+      "start": "15:00",
+      "finish": "18:00",
+      "status": "booked",
+      "source": "cl"
+    },
+    {
+      "date": "2027-12-04",
+      "venue": "East Barnet RBL Club",
+      "town": "East Barnet",
+      "status": "booked",
+      "source": "board"
+    }
   ],
   "undated": [
-    {"venue":"Bromley Services Club","nights":2,"note":"Locked — date TBC, don’t offer until Jake confirms"}
+    {
+      "venue": "Bromley Services Club",
+      "nights": 2,
+      "note": "Locked — date TBC, don’t offer until Jake confirms"
+    }
   ]
 }
