@@ -1357,7 +1357,7 @@ var NatNotes = (function(exports) {
       "</div>" +
       '<div class="panel"><p class="kicker">Notes first</p>' + whoPrompt + notesHtml +
       '<button class="callbtn" type="button" onclick="natSheet(true)">Called</button>' +
-      '<textarea id="detail-note" rows="3" placeholder="Tina picking October, £275"></textarea>' +
+      '<textarea id="detail-note" rows="3" placeholder="type here"></textarea>' +
       '<button class="primary" type="button" onclick="natSaveNote(\'' + esc(id) + "')\">Save note</button>" +
       (rec.dropped
         ? '<button class="openbtn" type="button" onclick="natDrop(\'' + esc(id) + "', false)\">Put back on the list</button>"
