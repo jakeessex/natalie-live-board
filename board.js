@@ -985,17 +985,27 @@ var NatNotes = (function(exports) {
     if (el) el.textContent = msg || "";
   }
 
+  function paintCash() {
+    if (!VENUES.length) return;
+    var stats = B.lockedCash(VENUES);
+    if ($("cash-amt")) $("cash-amt").textContent = B.gbp(stats.cash);
+    if ($("cash-meta")) $("cash-meta").textContent = stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " locked";
+    return stats;
+  }
+
   function loadVenues() {
     try {
       VENUES = JSON.parse($("venues-data").textContent);
     } catch (e) {
       VENUES = [];
     }
+    paintCash();
     fetch("venues.json?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error("venues"); return r.json(); })
       .then(function (data) {
         if (Array.isArray(data) && data.length) {
           VENUES = data;
+          paintCash();
           if ($("app").classList.contains("show") && !openId) render();
         }
       })
@@ -1052,8 +1062,8 @@ var NatNotes = (function(exports) {
       "KEY ACCEPTED",
       "DECRYPTING VENUE BOOK · " + VENUES.length,
       "NOTES CHANNEL · LIVE",
-      "ACCESS GRANTED · v20",
-      "WELCOME BACK, NAT"
+      "ACCESS GRANTED · NATALIE",
+      "WELCOME IN, NATALIE"
     ];
     var i = 0;
     function next() {
@@ -1103,7 +1113,7 @@ var NatNotes = (function(exports) {
     window.NatNotes.pushRemote(store).then(function (ok) {
       sharedOk = ok;
       var el = $("sync");
-      if (el) el.textContent = ok ? "Notes shared with Jake" : "Notes on this phone only";
+      if (el) el.textContent = ok ? "Notes live with Jake" : "Board live";
     });
   }
 
@@ -1287,7 +1297,7 @@ var NatNotes = (function(exports) {
     $("filters").innerHTML = tabHtml;
     $("count").textContent = list.length + " job" + (list.length === 1 ? "" : "s") + " · " + label + ((filter === "all" || filter === "replied") && alarm ? " · quiet alarm" : "");
     $("list").innerHTML = cards;
-    $("sync").textContent = sharedOk ? "Notes shared with Jake" : "Notes on this phone only";
+    $("sync").textContent = sharedOk ? "Notes live with Jake" : "Board live";
     [["cash-amt", "cash-meta"], ["cash-amt-app", "cash-meta-app"]].forEach(function (ids) {
       if ($(ids[0])) $(ids[0]).textContent = B.gbp(stats.cash);
       if ($(ids[1])) $(ids[1]).textContent = stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " locked";
@@ -1393,5 +1403,4 @@ var NatNotes = (function(exports) {
   $("pw").addEventListener("keydown", function (e) { if (e.key === "Enter") unlock(); });
   $("q").addEventListener("input", function (e) { q = e.target.value; render(); });
   try { if (sessionStorage.getItem("natalie-ok") === "1") openBoard(); } catch (e) {}
-  try { renderList(); } catch (e) {}
 })();
