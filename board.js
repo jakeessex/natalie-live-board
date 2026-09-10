@@ -529,7 +529,7 @@ var Board = (function(exports) {
 		return [...sortWorking(rows), ...sortTab(rows, "parked")];
 	}
 	function rowsForFilter(rows, filter) {
-		if (filter === "all") return sortOpen(rows);
+		if (filter === "all") return sortAll(rows);
 		if (filter === "replied") return sortWorking(rows.filter((r) => r.tab === "close" || r.tab === "live" || r.tab === "chase"));
 		if (filter === "closed") return sortTab(rows, "locked");
 		return sortTab(rows, "parked");
@@ -549,7 +549,7 @@ var Board = (function(exports) {
 	function filterCounts(rows) {
 		const t = tabCounts(rows);
 		return {
-			all: t.close + t.live + t.chase + t.call,
+			all: rows.length,
 			replied: t.close + t.live + t.chase,
 			closed: t.locked,
 			inactive: t.parked
@@ -1211,7 +1211,7 @@ var NatNotes = (function(exports) {
     if (tab === "chase") return "Chase";
     if (tab === "call") return "To call";
     if (tab === "locked") return "Locked in";
-    return "Parked";
+    return "Inactive";
   }
 
   function rowHtml(row) {
@@ -1285,7 +1285,7 @@ var NatNotes = (function(exports) {
     $("cash-slot").innerHTML = cashHtml(stats);
     $("pep").textContent = pep;
     $("filters").innerHTML = tabHtml;
-    $("count").textContent = list.length + " · " + label + ((filter === "all" || filter === "replied") && alarm ? " · quiet alarm" : "");
+    $("count").textContent = list.length + " job" + (list.length === 1 ? "" : "s") + " · " + label + ((filter === "all" || filter === "replied") && alarm ? " · quiet alarm" : "");
     $("list").innerHTML = cards;
     $("sync").textContent = sharedOk ? "Notes shared with Jake" : "Notes on this phone only";
     [["cash-amt", "cash-meta"], ["cash-amt-app", "cash-meta-app"]].forEach(function (ids) {
