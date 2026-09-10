@@ -5304,12 +5304,12 @@
     "badge": "awaiting",
     "phone": "+441202482928",
     "needPhone": false,
-    "email": "mudefordsec@gmail.com",
+    "email": "mudefordsec@gmail.com; mudefordents@gmail.com",
     "replied": "no",
     "firstPitch": "28 Aug 2026",
     "addedAt": "31 Aug 2026",
     "followUps": "1 · last 10 Sep 2026",
-    "subject": "Re: Live music — Jake Essex",
+    "subject": "Jake Essex for Mudeford Club?",
     "messages": [
       {
         "side": "us",
@@ -5328,10 +5328,21 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've\ngot a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk\n",
         "messageId": "1a08bfdf5da71df9",
         "threadId": "1a0481cd69d70c56"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-10T16:21:08Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Mudeford Club?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex. Your club secretary\npassed me this address.\n\nJake would be a great fit for Mudeford Club, and he'd love to come and\nperform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s,\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act, no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027, if a date works,\nreply here and I'll lock it.\n\nNatalie",
+        "messageId": "1a08c1f7b368476e",
+        "threadId": "1a08c1e80a6ba779"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "Secretary redirected ~16:56 to mudefordents@gmail.com — new address SENT_OK ~17:18; do not re-mail mudefordsec@"
   },
   {
     "id": "naval-and-military-southend",
