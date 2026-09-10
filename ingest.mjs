@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-import { mkdir, readdir, readFile, rename, writeFile } from "node:fs/promises";
-import { existsSync } from "node:fs";
+import { mkdir, readdir, readFile, rename, writeFile, stat } from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname);
@@ -8,6 +7,41 @@ const VENUE_FILE = path.join(ROOT, "venues.json");
 const INBOX = path.join(ROOT, "inbox");
 const PROCESSED = path.join(ROOT, "processed");
 const SECRET = "natbooksjake";
+
+/** Data-only lock. Ingest must never write the board shell. */
+const UI_FILES = new Set(["index.html", "board.js"]);
+
+function assertDataPath(file) {
+  const base = path.basename(file);
+  if (UI_FILES.has(base)) {
+    throw new Error(`UI LOCK: ingest must never write ${base}. Data = venues.json only. See BOARD_UI_LOCK.md`);
+  }
+}
+
+async function writeData(file, contents) {
+  assertDataPath(file);
+  await writeFile(file, contents);
+}
+
+async function warnIfUiBroken() {
+  try {
+    const index = path.join(ROOT, "index.html");
+    const js = path.join(ROOT, "board.js");
+    const html = await readFile(index, "utf8");
+    const size = (await stat(index)).size;
+    const board = await readFile(js, "utf8");
+    const problems = [];
+    if (!html.includes("Board v19")) problems.push("index.html missing 'Board v19'");
+    if (size > 40000) problems.push(`index.html is fat embed (${size} bytes) — should be ~9KB`);
+    if (html.includes("venues-data") && html.length > 20000) problems.push("index.html looks like a v15 venues embed");
+    if (!board.includes('BOARD_VERSION = "v19"')) problems.push("board.js is not v19");
+    if (problems.length) {
+      console.error("UI LOCK WARNING (venues will still write):\n - " + problems.join("\n - "));
+    }
+  } catch (err) {
+    console.error("UI LOCK WARNING: could not read board shell", err.message);
+  }
+}
 
 function slugify(name) {
   return String(name || "")
@@ -139,6 +173,7 @@ async function applyPayload(venues, payload) {
 }
 
 async function drainInbox() {
+  await warnIfUiBroken();
   await mkdir(INBOX, { recursive: true });
   await mkdir(PROCESSED, { recursive: true });
   const names = (await readdir(INBOX)).filter((name) => name.endsWith(".json") && name !== ".keep.json");
@@ -160,11 +195,12 @@ async function drainInbox() {
     await rename(from, path.join(PROCESSED, `${Date.now()}-${name}`));
     results.push({ file: name, ok: true, applied: result.applied });
   }
-  if (dirty) await writeFile(VENUE_FILE, `${JSON.stringify(venues, null, 2)}\n`);
+  if (dirty) await writeData(VENUE_FILE, `${JSON.stringify(venues, null, 2)}\n`);
   return { results, venues: venues.length, dirty };
 }
 
 async function drainDweet() {
+  await warnIfUiBroken();
   // Pull up to ~50 recent dweets so a batch of sends does not collapse to one event.
   const url = `https://dweet.cc/get/dweets/for/jem-natalie-ingest-door?t=${Date.now()}`;
   const res = await fetch(url);
@@ -199,11 +235,11 @@ async function drainDweet() {
     if (result.applied) {
       applied += result.applied;
       await mkdir(PROCESSED, { recursive: true });
-      await writeFile(path.join(PROCESSED, `${Date.now()}-dweet.json`), JSON.stringify(payload, null, 2));
+      await writeData(path.join(PROCESSED, `${Date.now()}-dweet.json`), JSON.stringify(payload, null, 2));
     }
   }
   if (applied) {
-    await writeFile(VENUE_FILE, `${JSON.stringify(venues, null, 2)}\n`);
+    await writeData(VENUE_FILE, `${JSON.stringify(venues, null, 2)}\n`);
   }
   return { pulled: true, applied, venues: venues.length, scanned: rows.length };
 }
