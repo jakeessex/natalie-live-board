@@ -29,7 +29,7 @@
     "id": "east-barnet-rbl-club",
     "name": "East Barnet RBL Club",
     "town": "East Barnet",
-    "badge": "locked",
+    "badge": "quoted",
     "phone": "+442084497769",
     "needPhone": false,
     "email": "Tina <sbjistlb1@gmail.com> (club ebrblclub@yahoo.com)",
@@ -89,12 +89,12 @@
       }
     ],
     "hasThread": true,
-    "tab": "booked",
+    "tab": "call",
     "contactName": "Tina",
-    "lockedFee": 275,
-    "lockedNights": 1,
-    "lockedDate": "Sat 4 Dec 2027",
-    "lockedNote": "2 × 60, own PA, ~8.30pm. 38 Brookhill Rd, Barnet EN4 8SL"
+    "lockedNote": "2 × 60, own PA, ~8.30pm. 38 Brookhill Rd, Barnet EN4 8SL",
+    "statusNote": "quoted/date-offered Sat 4 Dec 2027 — awaiting Gate:lock",
+    "pendingLockFee": 275,
+    "pendingNote": "Add to locked cash only when Jake Gate:locks Tina date"
   },
   {
     "id": "dartford-mayor-charity-tea",
