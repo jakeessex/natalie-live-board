@@ -4495,11 +4495,11 @@
     "id": "honiton-cons",
     "name": "Honiton Cons",
     "town": "",
-    "badge": "awaiting",
+    "badge": "replied-interested",
     "phone": "+44140442525",
     "needPhone": false,
     "email": "bar@honitonconservativeclub.com",
-    "replied": "no",
+    "replied": "yes — 10 Sep 2026 (Lesley)",
     "firstPitch": "28 Aug 2026",
     "addedAt": "28 May 2026",
     "followUps": "1 · last 10 Sep 2026",
@@ -4508,10 +4508,12 @@
       {
         "side": "us",
         "label": "Sent",
-        "at": "2026-05-28T11:17:03Z",
+        "at": "2026-08-28T14:00:48Z",
         "from": "jakeessexenquiries@gmail.com",
-        "subject": "Jake Essex – Relaxed Sing-Along Classics for Care Home Residents (Special Rate)",
-        "body": "Dear Activities / Enquiries Team at Holmes Care,\n\nMy name is Natalie and I look after bookings for Jake Essex, a professional solo vocalist based in South Ockendon, Essex.\n\nJake performs relaxed sets of classic hits from the 1950s, 60s and 70s that are very popular with elderly residents for sing-alongs. His performances are warm, gentle and well-suited to care home environments.\n\nHe normally charges around £250 for a 2-hour performance in pubs and restaurants. However, he genuinely enjoys performing for older people and is happy to offer care homes a significantly reduced rate.\n\nHe can provide a 1-hour performance for £80–£100.\n\nJake is fully self-contained and reliable. He would be delighted to bring some lovely music to residents across your homes.\n\nWould you be interested in having him visit any of your Essex homes? I’m happy to send a short video or availability.\n\nThank you for your time.\n\nBest regards,\nNatalie\nBooking Agent for Jake Essex\njakeessexenquiries@gmail.com\n@JakeEssexMusic"
+        "subject": "Live music — Jake Essex",
+        "body": "Hi Team at Honiton Conservative Club,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll — he is the act, not a tribute. Own PA, no deposit.\n\nYou already promote live entertainment from 50s and 60s rock and roll on\nSaturday from 5.30. That is exactly his night.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, just let me know.\n\nBest regards,\nNatalie",
+        "messageId": "1a048ac54f9f149d",
+        "threadId": "1a048ab744521288"
       },
       {
         "side": "us",
@@ -4519,8 +4521,28 @@
         "at": "2026-09-10T15:51:23Z",
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Live music — Jake Essex",
-        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've\ngot a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk\n",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've\ngot a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
         "messageId": "1a08c0441e5f028d",
+        "threadId": "1a048ab744521288"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-10T16:35:19Z",
+        "from": "lesley@honitonconservativeclub.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Think it might be a bit far for him to travel Natalie.",
+        "messageId": "1a08c2ca42f4581a",
+        "threadId": "1a048ab744521288"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-10T16:45:24Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi Lesley,\n\nFair on the distance. Jake does travel for the right Saturday or Sunday, so\nwe can make Honiton work. He's worth the trip: proper high-energy night,\nhimself not a tribute, own PA, no deposit. Usually pays for itself on the\nbar.\n\nWhat's your max budget for a Saturday or Sunday live night?\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "messageId": "1a08c35b5d4f5100",
         "threadId": "1a048ab744521288"
       }
     ],
