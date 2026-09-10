@@ -1020,6 +1020,15 @@ var NatNotes = (function(exports) {
   var cashOpen = false;
   var emailsOpen = false;
   var sheetOpen = false;
+  var GIGS = [];
+  var UNDATED = [];
+  var diaryOpen = false;
+  var diaryPick = "";
+  var _n = new Date();
+  var diaryYear = _n.getFullYear();
+  var diaryMonth = _n.getMonth();
+  if (diaryYear < 2026 || (diaryYear === 2026 && diaryMonth < 8)) { diaryYear = 2026; diaryMonth = 8; }
+  if (diaryYear > 2027) { diaryYear = 2027; diaryMonth = 11; }
 
   function $(id) { return document.getElementById(id); }
 
@@ -1051,6 +1060,17 @@ var NatNotes = (function(exports) {
           paintCash();
           if ($("app").classList.contains("show") && !openId) render();
         }
+      })
+      .catch(function () {});
+  }
+
+  function loadGigs() {
+    fetch("gigs.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("gigs"); return r.json(); })
+      .then(function (data) {
+        GIGS = (data && data.gigs) || [];
+        UNDATED = (data && data.undated) || [];
+        if (diaryOpen) render();
       })
       .catch(function () {});
   }
@@ -1188,6 +1208,33 @@ var NatNotes = (function(exports) {
     try { sessionStorage.removeItem("natalie-ok"); } catch (e) {}
     location.reload();
   };
+  window.natDiary = function () {
+    diaryOpen = true;
+    render();
+    var el = $("diary");
+    if (el) el.scrollTop = 0;
+  };
+  window.natDiaryClose = function () {
+    diaryOpen = false;
+    render();
+  };
+  window.natDiaryMonth = function (delta) {
+    var d = new Date(diaryYear, diaryMonth + delta, 1);
+    diaryYear = d.getFullYear();
+    diaryMonth = d.getMonth();
+    if (diaryYear < 2026 || (diaryYear === 2026 && diaryMonth < 8)) { diaryYear = 2026; diaryMonth = 8; }
+    if (diaryYear > 2027) { diaryYear = 2027; diaryMonth = 11; }
+    render();
+  };
+  window.natDiaryPick = function (date) {
+    diaryPick = date || "";
+    var p = String(date || "").split("-");
+    if (p.length === 3) {
+      diaryYear = Number(p[0]);
+      diaryMonth = Number(p[1]) - 1;
+    }
+    render();
+  };
   window.natDrop = function (id, dropped) {
     var rec = window.NatNotes.recordOf(NOTES, id);
     rec.dropped = dropped;
@@ -1251,11 +1298,152 @@ var NatNotes = (function(exports) {
     if (B.telHref(v.phone)) {
       html += '<a class="btn call full" href="' + B.telHref(v.phone) + '">Call' + (row.who ? " " + esc(row.who) : "") + "</a>";
     }
-    html += '<div class="acts-pair">';
+    html += '<div class="acts-triple">';
     html += '<a class="btn" href="' + B.mapsHref(v) + '" target="_blank" rel="noopener">Maps</a>';
+    html += '<button class="btn gold" type="button" onclick="natDiary()">Calendar</button>';
     html += '<a class="btn" href="' + esc(B.webHref(v, row.website)) + '" target="_blank" rel="noopener">Web</a>';
     html += "</div></div>";
     return html;
+  }
+
+  function todayIso() {
+    var d = new Date();
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+
+  function mergeDiary(gigs, venues) {
+    var by = {};
+    (gigs || []).forEach(function (g) {
+      if (!g || !g.date) return;
+      by[g.date] = {
+        date: g.date,
+        venue: g.venue || "",
+        town: g.town || "",
+        postcode: g.postcode || "",
+        start: g.start || "",
+        finish: g.finish || "",
+        status: g.status === "held" ? "held" : "booked",
+        source: g.source || "cl",
+        note: g.note || ""
+      };
+    });
+    (venues || []).forEach(function (v) {
+      var date = String(v.lockedDate || "").slice(0, 10);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
+      var prev = by[date] || {};
+      var start = prev.start && prev.start !== "00:00" && prev.start !== "00:01" ? prev.start : "";
+      var finish = prev.finish && prev.finish !== "00:02" && prev.finish !== "00:00" ? prev.finish : "";
+      by[date] = {
+        date: date,
+        venue: v.name,
+        town: v.town || prev.town || "",
+        postcode: prev.postcode || "",
+        start: start,
+        finish: finish,
+        status: "booked",
+        source: "board",
+        note: prev.note || ""
+      };
+    });
+    return Object.keys(by).sort().map(function (k) { return by[k]; });
+  }
+
+  function fmtGigDay(date) {
+    var p = String(date || "").split("-");
+    if (p.length !== 3) return date;
+    var d = new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+    var dow = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][d.getDay()];
+    var mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getMonth()];
+    return dow + " " + d.getDate() + " " + mon + " " + d.getFullYear();
+  }
+
+  function gigLine(g) {
+    if (g.status === "held") return "Held — don’t offer this date";
+    var bits = [g.venue];
+    if (g.town) bits.push(g.town);
+    if (g.postcode) bits.push(g.postcode);
+    if (g.start && g.finish) bits.push(g.start + "–" + g.finish);
+    else if (g.start) bits.push(g.start);
+    if (g.note) bits.push(g.note);
+    return bits.filter(Boolean).join(" · ");
+  }
+
+  function renderDiary() {
+    var el = $("diary");
+    if (!el) return;
+    if (!diaryOpen) {
+      el.className = "";
+      el.innerHTML = "";
+      return;
+    }
+    el.className = "show";
+    var gigs = mergeDiary(GIGS, VENUES);
+    var y = diaryYear, m = diaryMonth;
+    var first = new Date(y, m, 1);
+    var pad = (first.getDay() + 6) % 7;
+    var nDays = new Date(y, m + 1, 0).getDate();
+    var today = todayIso();
+    var by = {};
+    gigs.forEach(function (g) { by[g.date] = g; });
+    var prefix = y + "-" + String(m + 1).padStart(2, "0");
+    var monthList = gigs.filter(function (g) { return g.date.slice(0, 7) === prefix; });
+    var title = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][m] + " " + y;
+    var cells = "";
+    var i, d, date, g, cls;
+    for (i = 0; i < pad; i++) cells += '<div class="cal-day empty"></div>';
+    for (d = 1; d <= nDays; d++) {
+      date = prefix + "-" + String(d).padStart(2, "0");
+      g = by[date];
+      cls = "cal-day";
+      if (g && g.status === "held") cls += " held";
+      else if (g) cls += " booked";
+      if (date === today) cls += " today";
+      if (date < today) cls += " past";
+      if (diaryPick === date) cls += " pick";
+      cells += '<button type="button" class="' + cls + '" onclick="natDiaryPick(\'' + date + "')\">" + d + (g ? '<i class="cal-dot"></i>' : "") + "</button>";
+    }
+    var pick = diaryPick && by[diaryPick];
+    var check = "";
+    if (diaryPick) {
+      if (pick && pick.status === "held") {
+        check = '<div class="diary-check held"><span>' + esc(fmtGigDay(diaryPick)) + "</span><b>HELD</b><p>" + esc(gigLine(pick)) + "</p></div>";
+      } else if (pick) {
+        check = '<div class="diary-check taken"><span>' + esc(fmtGigDay(diaryPick)) + "</span><b>TAKEN</b><p>" + esc(gigLine(pick)) + "</p></div>";
+      } else {
+        check = '<div class="diary-check free"><span>' + esc(fmtGigDay(diaryPick)) + "</span><b>FREE</b><p>Jake is free. You can offer this date.</p></div>";
+      }
+    }
+    var list = monthList.map(function (row) {
+      return '<div class="diary-gig ' + row.status + '"><span>' + esc(fmtGigDay(row.date)) + "</span><p>" + esc(gigLine(row)) + "</p></div>";
+    }).join("") || '<p class="empty">Nothing this month — those dates are free.</p>';
+    var undated = (UNDATED || []).map(function (u) {
+      return '<p class="diary-undated">' + esc(u.venue) + (u.note ? " · " + esc(u.note) : " · date TBC") + "</p>";
+    }).join("");
+    var bookedN = gigs.filter(function (row) { return row.status === "booked" && row.date >= today; }).length;
+    var heldN = gigs.filter(function (row) { return row.status === "held" && row.date >= today; }).length;
+    el.innerHTML =
+      '<header class="diary-head"><button class="back" type="button" onclick="natDiaryClose()">Close <span>Jake’s diary</span></button></header>' +
+      '<div class="panel">' +
+      '<p class="kicker">2026 / 2027</p>' +
+      "<h1>Jake’s diary</h1>" +
+      '<p class="fact">' + bookedN + " booked · " + heldN + " held · from today. Held dates are blocked — don’t offer them.</p>" +
+      '<label class="kicker" for="diary-date">Check a date</label>' +
+      '<input id="diary-date" type="date" min="2026-09-01" max="2027-12-31" value="' + esc(diaryPick || today) + '" onchange="natDiaryPick(this.value)"/>' +
+      check +
+      "</div>" +
+      '<div class="panel">' +
+      '<div class="diary-nav">' +
+      '<button class="btn" type="button" onclick="natDiaryMonth(-1)">‹</button>' +
+      "<h2>" + esc(title) + "</h2>" +
+      '<button class="btn" type="button" onclick="natDiaryMonth(1)">›</button>' +
+      "</div>" +
+      '<div class="cal-grid">' +
+      '<span class="cal-dow">Mon</span><span class="cal-dow">Tue</span><span class="cal-dow">Wed</span><span class="cal-dow">Thu</span><span class="cal-dow">Fri</span><span class="cal-dow">Sat</span><span class="cal-dow">Sun</span>' +
+      cells +
+      "</div>" +
+      '<p class="legend"><span class="booked">Booked</span><span class="held">Held — don’t offer</span><span>Blank is free</span></p>' +
+      "</div>" +
+      '<div class="panel"><p class="kicker">This month</p>' + list + undated + "</div>";
   }
 
   function groupLabel(tab) {
@@ -1416,14 +1604,16 @@ var NatNotes = (function(exports) {
       $("app").classList.remove("show");
       $("detail").className = "show";
       renderDetail(openId);
-      return;
+    } else {
+      $("detail").className = "";
+      $("app").classList.add("show");
+      renderList();
     }
-    $("detail").className = "";
-    $("app").classList.add("show");
-    renderList();
+    renderDiary();
   }
 
   loadVenues();
+  loadGigs();
   NOTES = window.NatNotes.readLocal();
   window.NatNotes.pullRemote().then(function (res) {
     NOTES = res.store;
