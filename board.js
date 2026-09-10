@@ -16,6 +16,10 @@ var Board = (function(exports) {
 		{
 			id: "closed",
 			label: "Closed"
+		},
+		{
+			id: "inactive",
+			label: "Inactive"
 		}
 	];
 	const DAY = 864e5;
@@ -527,7 +531,8 @@ var Board = (function(exports) {
 	function rowsForFilter(rows, filter) {
 		if (filter === "all") return sortOpen(rows);
 		if (filter === "replied") return sortWorking(rows.filter((r) => r.tab === "close" || r.tab === "live" || r.tab === "chase"));
-		return sortClosed(rows);
+		if (filter === "closed") return sortTab(rows, "locked");
+		return sortTab(rows, "parked");
 	}
 	function tabCounts(rows) {
 		const counts = {
@@ -546,7 +551,8 @@ var Board = (function(exports) {
 		return {
 			all: t.close + t.live + t.chase + t.call,
 			replied: t.close + t.live + t.chase,
-			closed: t.locked + t.parked
+			closed: t.locked,
+			inactive: t.parked
 		};
 	}
 	function lockedCash(venues) {
@@ -1030,7 +1036,7 @@ var NatNotes = (function(exports) {
   }
 
   function chip(tabName) {
-    var map = { close: "CLOSE", live: "LIVE", chase: "CHASE", call: "CALL", locked: "LOCKED", parked: "PARKED" };
+    var map = { close: "CLOSE", live: "LIVE", chase: "CHASE", call: "CALL", locked: "LOCKED", parked: "INACTIVE" };
     return map[tabName] || tabName;
   }
 
