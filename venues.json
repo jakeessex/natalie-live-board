@@ -29,11 +29,11 @@
     "id": "east-barnet-rbl-club",
     "name": "East Barnet RBL Club",
     "town": "East Barnet",
-    "badge": "quoted / date-offered",
+    "badge": "locked",
     "phone": "+442084497769",
     "needPhone": false,
     "email": "Tina <sbjistlb1@gmail.com> (club ebrblclub@yahoo.com)",
-    "replied": "yes \u2014 Tina date offer",
+    "replied": "yes \u2014 Tina locked 4 Dec 2027",
     "firstPitch": "7 Sep 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
     "followUps": "0 \u00b7 last \u2014",
@@ -89,10 +89,12 @@
       }
     ],
     "hasThread": true,
-    "tab": "call",
-    "pendingLockFee": 275,
-    "pendingNote": "Add to locked cash only when Jake Gate:locks Tina date",
-    "statusNote": "quoted/date-offered Sat 4 Dec 2027 \u2014 Us Sent confirm 1a087e524708b45e exists but NO diary event; Jake skipped Gate:lock \u2014 keep pendingLockFee \u00a3275 only"
+    "tab": "booked",
+    "contactName": "Tina",
+    "lockedFee": 275,
+    "lockedNights": 1,
+    "lockedDate": "2027-12-04",
+    "lockedNote": "2 \u00d7 60, own PA, ~8.30pm. 38 Brookhill Rd, East Barnet EN4 8SL. Diary j2p4h39h51apb5sq15mrdordmk"
   },
   {
     "id": "dartford-mayor-charity-tea",
