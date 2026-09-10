@@ -1705,31 +1705,45 @@
   {
     "id": "bardswell-social-club",
     "name": "Bardswell Social Club",
-    "town": "",
+    "town": "Brentwood",
     "badge": "quoted",
     "phone": "+441277214057",
     "needPhone": false,
     "email": "Sharon Banks <bardswellweddings@gmail.com> (club thebardswellclub@aol.com)",
-    "replied": true,
+    "replied": "10 Sep 2026 · Sharon price ask",
     "firstPitch": "27 Aug 2026",
     "addedAt": "26 Aug 2026",
-    "followUps": "1 · last 7 Sep 2026",
+    "followUps": 1,
     "subject": "Saturday entertainment — Jake Essex",
     "messages": [
       {
+        "id": "1a043a3a07539738",
         "side": "us",
-        "label": "Sent",
-        "at": "2026-08-26T22:52:58Z",
+        "at": "2026-08-27T15:33:11+01:00",
         "from": "jakeessexenquiries@gmail.com",
-        "subject": "Saturday entertainment — Jake Essex",
-        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake is a singer from Essex. Classic 50s and 60s rock 'n' roll. Himself, not a tribute. The night has a shape: the era first, Elvis to finish. High energy, no dead air, own PA.\n\nHe already plays The Ship in Aveley. I wanted to put the Village Social Club on his books as well for Saturday nights in late 2026 and 2027.\n\n2-hour show £280. 3-hour / 3-set £400. Fully self-contained.\n\nSite: www.jakeessex.co.uk\nInstagram: https://www.instagram.com/jakeessexmusic\n\nIf the secretary has a date, reply here and I'll confirm availability.\n\nBest,\nNatalie\nJake Essex Music"
+        "to": "thebardswellclub@aol.com",
+        "subject": "Live music — Jake Essex",
+        "label": "Us · cold (AOL)",
+        "body": "Hi, I'm Natalie, I look after bookings for Jake Essex.\n\nEvery weekend you put live entertainment on at Bardswell Close, including Saturday rock and roll.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s rock and roll. He is the act. No impersonations, no jumpsuit, no corny gimmicks. The night has a shape: raw 50s through to 70s Vegas, plus Darin, Dion, Holly, Orbison, Sinatra. Real voice. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027, 2 × 45 or 3 × 45; if a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "id": "1a07b42b5ef7458a",
+        "side": "us",
+        "at": "2026-09-07T10:46:04+01:00",
+        "from": "jakeessexenquiries@gmail.com",
+        "to": "thebardswellclub@aol.com",
+        "subject": "Re: Live music — Jake Essex",
+        "label": "Us · follow-up (AOL)",
+        "body": "Hi,\n\nJust floating Jake Essex back up in case a Friday, Saturday or Sunday opens at Bardswell Social.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. 50s, 60s and into the 70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nIf a date works, reply here and I'll lock it.\n\nNatalie"
       },
       {
         "id": "1a08ae7df33c8b40",
         "side": "them",
         "at": "2026-09-10T11:40:33+01:00",
         "from": "bardswellweddings@gmail.com",
+        "to": "jakeessexenquiries@gmail.com",
         "subject": "Jake",
+        "label": "Them · Sharon Banks",
         "body": "Hi Natalie\nMy name is sharon and I work for the Bardswell club. Thank you for your email. How much would two one hour sets with a break inbetween the middle cost? Show would start at 8 finish at 11 with break inbetween\nKindest regards\n\nSharon Banks,\nEvents Manager\nBardswell Social Club, Bardswell Close, Brentwood, CM14 4TJ"
       },
       {
@@ -1737,7 +1751,9 @@
         "side": "us",
         "at": "2026-09-10T11:59:58+01:00",
         "from": "jakeessexenquiries@gmail.com",
+        "to": "bardswellweddings@gmail.com",
         "subject": "Re: Jake",
+        "label": "Us · quote",
         "body": "Hi Sharon,\n\nThanks for getting back.\n\nFor two 1-hour sets with a break in the middle (8-11), it's £250 cash or £280 on the books. Own PA, no deposit.\n\nIf you've got a Friday, Saturday or Sunday in mind, send the date over and I'll check the diary and lock it.\n\nNatalie\nwww.jakeessex.co.uk"
       }
     ],
@@ -1745,7 +1761,8 @@
     "tab": "call",
     "quoteFeeCash": 250,
     "quoteFeeBooks": 280,
-    "quoteNote": "2x1hr 8-11; local; Sharon Events Manager; SENT_OK 10 Sep msg 1a08af9731f4a175"
+    "quoteNote": "2x1hr 8-11; local; Sharon Events Manager; SENT_OK 10 Sep msg 1a08af9731f4a175",
+    "website": "https://www.thebardswellclub.co.uk/"
   },
   {
     "id": "barrow-upon-soar-cons",
