@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "source": "JAKE ESSEX GIGS @ CL",
   "gigs": [
     {
@@ -252,6 +252,17 @@
       "venue": "",
       "status": "held",
       "source": "cl"
+    },
+    {
+      "date": "2027-05-01",
+      "venue": "Mudeford Club",
+      "town": "Christchurch, Dorset",
+      "postcode": "BH23 3LY",
+      "start": "20:00",
+      "finish": "23:15",
+      "status": "booked",
+      "source": "board",
+      "note": "£425 Geoff · Dorset FAR — nearby Dorset block only, NOT UK-wide held"
     },
     {
       "date": "2027-05-29",
