@@ -15195,5 +15195,27 @@
     "lockedNights": 1,
     "statusNote": "OWN LOCK Mon 12 Oct 2026 Memory Afternoon £200 cash · Johnno FB · soundcheck after 13:00 · sets 14:00 + 15:30 · never Choice-mail without Jake OK",
     "notes": "Shrub End Social Centre 252-254 Shrub End Rd Colchester CO3 4SA. Johnno 07986 837056 · FB The Warm and Toasty Club. Not Natalie cold."
+  },
+  {
+    "id": "thurrock-irish-club-tilbury",
+    "name": "Thurrock Irish Club Tilbury",
+    "town": "Tilbury RM18 7BS",
+    "email": null,
+    "phone": null,
+    "badge": "locked",
+    "tab": "booked",
+    "firstPitch": "11 Sep 2026",
+    "subject": "OWN LOCK — rebook after gig",
+    "hasThread": false,
+    "messages": [],
+    "addedAt": "2026-09-11T22:39:43Z",
+    "followUps": 0,
+    "replied": "yes — own rebook after 11 Sep gig",
+    "needPhone": true,
+    "lockedFee": 400,
+    "lockedDate": "2026-10-31",
+    "lockedNights": 1,
+    "statusNote": "OWN LOCK Sat 31 Oct 2026 £400 cash · 4×45 · start ~20:30 · 150–152 Dock Road Tilbury RM18 7BS · RAC same day OK evening LOCAL",
+    "notes": "Thurrock Irish Association Social Club. Enquiry nicupc265mse2c3oggrvqvpvkc. No Choice mail. Rebook after tonight’s gig."
   }
 ]
