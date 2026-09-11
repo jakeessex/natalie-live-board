@@ -563,8 +563,16 @@ var Board = (function(exports) {
 		s -= Math.min(36, days * 2);
 		return s;
 	}
+	function hasReplyLane(row) {
+		const lane = String((row && row.venue && row.venue.replyLane) || "").toLowerCase();
+		return lane === "call" || lane === "email";
+	}
+	function isRepliedRow(row) {
+		// Engaged thread tabs + call-tab rows Jake tagged Call/Email (otherwise Replied hid Jaela/Ahmet/Jodie/John).
+		return row.tab === "close" || row.tab === "live" || row.tab === "chase" || (row.tab === "call" && hasReplyLane(row));
+	}
 	function sortReplied(rows) {
-		return rows.filter((r) => r.tab === "close" || r.tab === "live" || r.tab === "chase").sort((a, b) => {
+		return rows.filter(isRepliedRow).sort((a, b) => {
 			const heat = heatScore(b.venue, b.daysSinceInbound) - heatScore(a.venue, a.daysSinceInbound);
 			if (heat) return heat;
 			return (a.daysSinceInbound ?? 99) - (b.daysSinceInbound ?? 99);
@@ -590,9 +598,10 @@ var Board = (function(exports) {
 	}
 	function filterCounts(rows) {
 		const t = tabCounts(rows);
+		const callLane = rows.filter((r) => r.tab === "call" && hasReplyLane(r)).length;
 		return {
 			all: rows.length,
-			replied: t.close + t.live + t.chase,
+			replied: t.close + t.live + t.chase + callLane,
 			closed: t.locked,
 			inactive: t.parked
 		};
