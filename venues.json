@@ -12644,15 +12644,15 @@
     "id": "frimley-green-club",
     "name": "Frimley Green Club",
     "town": "Frimley Green",
-    "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
-    "email": "Info@frimleygreenclub.co.uk",
-    "replied": "no",
+    "badge": "replied-interested",
+    "phone": "+441252836081",
+    "needPhone": false,
+    "email": "cheryl.h@frimleygreenclub.co.uk (Cheryl Harvey); Info@frimleygreenclub.co.uk",
+    "replied": "yes — 11 Sep 2026 (Cheryl Harvey) · soft-no mostly bands Sat / solo vs bands",
     "firstPitch": "10 Sep 2026",
     "addedAt": "2026-09-10T13:01:05.009164Z",
-    "followUps": "0 \u00b7 last \u2014",
-    "subject": "Jake Essex for Frimley Green Club?",
+    "followUps": "0 · last —",
+    "subject": "RE: Jake Essex for Frimley Green Club?",
     "messages": [
       {
         "side": "us",
@@ -12661,8 +12661,17 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex for Frimley Green Club?",
         "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake would be a great fit for Frimley Green Club, and he'd love to come and\nperform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s,\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act, no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027, if a date works,\nreply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-11T10:27:17Z",
+        "from": "cheryl.h@frimleygreenclub.co.uk",
+        "subject": "RE: Jake Essex for Frimley Green Club?",
+        "body": "Hi Natalie,\n\nMany thanks for your interest in The Frimley Green Club.\n\nAlthough we have live music every Saturday night these are mostly bands of various genres, Rock, Mod, Soul etc.\n\nI like to book a variety for the club members.\n\nHowever , unfortunately we do not feel that a solo performer would be suitable for our Saturday nights.\n\nKind Regards,\n\nCheryl.\n\nCheryl Harvey\nAdministrator\n18-20 Sturt Road\nFrimley Green\nCamberley\nSurrey\nGU16 6HX\n\nTelephone:\nOffice: 01252 836 081\nBar: 01252 835 322\nEmail: cheryl.h@frimleygreenclub.co.uk\nWeb: www.frimleygreenclub.co.uk"
       }
     ],
+    "statusNote": "SOFT-NO Cheryl Harvey — mostly bands Sat / solo not suitable Sat nights. msg 1a0900202e70ff9a thread 1a08b5f94c7cd131. Haggle owns push. Do not cold again.",
     "hasThread": true,
     "tab": "call"
   },
