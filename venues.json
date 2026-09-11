@@ -10586,7 +10586,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "replyLane": "call"
+    "replyLane": "email"
   },
   {
     "id": "tugra",
@@ -11980,9 +11980,9 @@
     "town": "Greenford",
     "badge": "quoted",
     "phone": "+44757606550",
-    "needPhone": false,
+    "needPhone": true,
     "email": "John Mitchell <bigbadmitchell5786@hotmail.com>",
-    "replied": "yes — John Mitchell 27 Aug",
+    "replied": "yes — John Mitchell 27 Aug | Broken mobile (missing digit); main no answer 11 Sep Jake — Call demoted to Email until number fixed.",
     "firstPitch": "24 Aug 2026",
     "addedAt": "2026-09-09T10:29:48+01:00",
     "followUps": "1 · last 9 Sep 2026",
@@ -12007,7 +12007,8 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "replyLane": "call"
+    "replyLane": "email",
+    "notes": "Broken mobile (missing digit); main no answer 11 Sep Jake — Call demoted to Email until number fixed."
   },
   {
     "id": "best-western-thurrock-hotel",

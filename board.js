@@ -586,19 +586,16 @@ var Board = (function(exports) {
 		return row.tab === "close" || row.tab === "live" || row.tab === "chase" || (row.tab === "call" && hasReplyLane(row));
 	}
 	/** Jake 11 Sep: Call-lane (phone close from thread) at top of Replied; named heat order. */
-	/** Jake call attempts 11 Sep — re-ranked from live notes.
-	 *  1 Walderslade (no note yet — still hot Xmas Eve)
-	 *  2 California (spoke Kate — Peter Mon before 12)
-	 *  3 Muddy Duck (left number for Jaela callback)
-	 *  4 Sedir (called + dates sent — waiting)
-	 *  5 Greenford John (mobile digit missing; main no answer)
+	/** Jake call attempts 11 Sep (JEM update) — Call heat only.
+	 *  1 Walderslade (no attempt — still hot)
+	 *  2 California (Peter Mon before 12)
+	 *  3 Muddy Duck (awaiting Jaela callback)
+	 *  Sedir + Greenford John → replyLane email (already called / broken mobile).
 	 */
 	const CALL_LANE_RANK = {
 		"walderslade-social-club": 1,
 		"california-social-ipswich": 2,
-		"the-muddy-duck": 3,
-		sedir: 4,
-		"greenford-conservative-club-john-mitchell": 5
+		"the-muddy-duck": 3
 	};
 	function callLaneRank(row) {
 		const id = String((row && row.venue && row.venue.id) || "");
