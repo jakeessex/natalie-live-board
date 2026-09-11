@@ -5369,15 +5369,15 @@
     "id": "mudeford-club",
     "name": "Mudeford Club",
     "town": "",
-    "badge": "quoted",
+    "badge": "locked",
     "phone": "+441202482928",
     "needPhone": false,
-    "email": "mudefordsec@gmail.com; mudefordents@gmail.com (Geoff Dean)",
-    "replied": "yes \u2014 11 Sep 2026 (Geoff Dean)",
+    "email": "mudefordents@gmail.com (Geoff Dean); mudefordsec@gmail.com (NEVER re-mail)",
+    "replied": "yes \u2014 Geoff Dean locked Sat 1 May 2027",
     "firstPitch": "28 Aug 2026",
     "addedAt": "31 Aug 2026",
     "followUps": "1 \u00b7 last 10 Sep 2026",
-    "subject": "Jake Essex for Mudeford Club?",
+    "subject": "Re: Jake Essex for Mudeford Club?",
     "messages": [
       {
         "side": "us",
@@ -5418,11 +5418,30 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Jake Essex for Mudeford Club?",
         "body": "Hi Geoff,\n\nThat window works. 8.30 to 11.15 with a half hour break is Jake's three-set\nnight: about 2 hours 15 singing.\n\nIt's a fair drive from Essex, but he's willing to travel and branching out\nto newer venues. Fee for Mudeford is \u00a3425 cash. Own PA, no deposit.\n\nHe's not the usual Elvis turn: Darin, Dion, Holly, Orbison, Sinatra, Elvis\nand more, himself not a tribute. Breath of fresh air for your regulars.\nThey won't regret booking him.\n\n2027 Saturdays or Sundays. Send over any free dates and I'll check the\ndiary.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-11T09:29:55Z",
+        "from": "mudefordents@gmail.com",
+        "subject": "Re: Jake Essex for Mudeford Club?",
+        "body": "Hi Natalie. \u00a3425 is ok for me. I noticed that the music on the website\nconsisted mainly of Elvis. We would want a mix of the artists mentioned\nlike Roy Orbison,Frank Sinatra,Buddy Holly as well as Elvis. I have the\nfollowing Saturdays available in 2027...May 1st...July 17th...September\n18th. Are any of these suitable ? Cheers Geoff"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-11T10:08:46Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Mudeford Club?",
+        "body": "Hi Geoff,\n\nSaturday 1st May 2027 confirmed & in the diary.\n\nThe website is still being built, which is why there's mainly Elvis up\nthere for now. The live night is a full mix.\n\nArtists Jake covers: Elvis Presley, Bobby Darin, Dion, Buddy Holly, Roy\nOrbison, Frank Sinatra, Johnny Cash, Jerry Lee Lewis, Willie Nelson, the\nEverly Brothers, Queen, Louis Armstrong, and more from that era.\n\nA typical three-set night runs like this:\nSet 1: Young Elvis / 50s rock and roll\nSet 2: Non-Elvis (Orbison, Sinatra, Holly, Darin, Dion and the rest)\nSet 3: Elvis 68 into the 70s, finish with a boom\n\nIt always goes down a treat along those lines for the regulars.\n\nSaturday 17 July and Saturday 18 September are already booked for Jake. If\nyou've got any other Saturdays or Sundays in 2027, send them over and we\ncan look at those too.\n\nI've got The Mudeford Club, 161 Stanpit, Christchurch, Dorset BH23 3LY as\nthe address. Please confirm.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
       }
     ],
     "hasThread": true,
-    "tab": "call",
-    "statusNote": "Secretary redirected ~16:56 to mudefordents@gmail.com \u2014 new address SENT_OK ~17:18; do not re-mail mudefordsec@"
+    "tab": "booked",
+    "statusNote": "LOCKED Sat 1 May 2027 \u00a3425 cash FAR \u00b7 msg 1a08ff0eee795877 thread 1a08c1e80a6ba779. NEVER re-mail mudefordsec@. Diary enquiry hdvt8f6uf6ng3e97p95odje83c",
+    "lockedFee": 425,
+    "lockedNights": 1,
+    "lockedDate": "2027-05-01"
   },
   {
     "id": "naval-and-military-southend",
