@@ -289,6 +289,9 @@ var Board = (function(exports) {
 		if (note.outcome === "dead") return true;
 		return false;
 	}
+	const DUPLICATE_PARK_IDS = new Set([
+		"greenford-conservative-club" // same thread as greenford-conservative-club-john-mitchell
+	]);
 	function classifyVenue({ venue, note, now = /* @__PURE__ */ new Date() }) {
 		const thread = cleanThread(venue);
 		const inbound = realInbound(venue);
@@ -299,6 +302,14 @@ var Board = (function(exports) {
 		const lastAt = parseWhen(last?.at);
 		const daysSilent = lastSide === "us" ? daysSinceInbound : daysBetween(lastAt, now);
 		const stale = daysSinceInbound != null && daysSinceInbound >= 14;
+		if (DUPLICATE_PARK_IDS.has(String(venue.id || ""))) return {
+			tab: "parked",
+			reason: "duplicate thread",
+			stale: false,
+			daysSinceInbound,
+			daysSilent,
+			lastSide
+		};
 		if (isLockedRecord(venue)) return {
 			tab: "locked",
 			reason: "locked fee on file",

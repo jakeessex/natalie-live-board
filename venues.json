@@ -11942,11 +11942,11 @@
     "id": "greenford-conservative-club",
     "name": "Greenford Conservative Club",
     "town": "Greenford",
-    "badge": "awaiting",
+    "badge": "skip-do-not-email",
     "phone": null,
     "needPhone": true,
     "email": "greenconclubsec@gmail.com",
-    "replied": "no",
+    "replied": "no | Duplicate of greenford-conservative-club-john-mitchell — same inbound; no phone on this row. Parked 11 Sep.",
     "firstPitch": "1 Aug 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
     "followUps": "1 · last 28 Aug 2026",
@@ -11970,7 +11970,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "parked",
+    "replyLane": null
   },
   {
     "id": "greenford-conservative-club-john-mitchell",
