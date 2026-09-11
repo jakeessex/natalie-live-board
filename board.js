@@ -1341,15 +1341,28 @@ var NatNotes = (function(exports) {
     return "";
   }
 
-  var CALL_LANE_WHY = {
+  /** One-line green sum-ups on Replied (Call + hot Email). Suggestion chips stay separate. */
+  var REPLY_WHY = {
     "walderslade-social-club": "Xmas Eve quote live · hot host",
     "california-social-ipswich": "Peter Mon before 12",
-    "the-muddy-duck": "Awaiting Jaela callback"
+    "the-muddy-duck": "Awaiting Jaela callback",
+    sedir: "Called + dates sent · waiting reply",
+    "greenford-conservative-club-john-mitchell": "Mobile digit missing · main no answer",
+    "corner-club-canvey": "Chase sent · Sunday £250/£375 hold",
+    "bird-in-hand": "Alison away · dates on return",
+    "st-neots-cons": "Dates offered · awaiting pick",
+    "the-bull": "Quote live · awaiting dates",
+    "iona-social-club": "Quote live · awaiting dates",
+    "honiton-cons": "£400 quoted · works/spend tight",
+    "frimley-green-club": "Soft-no push sent · awaiting reply",
+    "broomfield-rbl": "Chase sent · waiting committee",
+    "imperial-cheshunt-and-waltham-cross-cons": "Chase sent · waiting date",
+    "winchester-club": "£325 quoted · she sends Sat/Sun"
   };
 
   function laneWhyHtml(venue) {
-    if (!venue || String(venue.replyLane || "").toLowerCase() !== "call") return "";
-    var why = CALL_LANE_WHY[String(venue.id || "")] || "";
+    if (!venue) return "";
+    var why = REPLY_WHY[String(venue.id || "")] || "";
     if (!why && venue.needPhone) why = "Need better number";
     if (!why) return "";
     return '<span class="job-lane-why">' + esc(why) + "</span>";
