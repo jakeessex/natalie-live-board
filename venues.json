@@ -15173,5 +15173,27 @@
     "hasThread": true,
     "tab": "other",
     "statusNote": "Recipient-server block 11 Sep — do not resend events@orsetthall.co.uk"
+  },
+  {
+    "id": "warm-and-toasty-shrub-end",
+    "name": "Warm and Toasty / Shrub End Social Centre",
+    "town": "Colchester CO3 4SA",
+    "email": null,
+    "phone": "+447986837056",
+    "badge": "locked",
+    "tab": "booked",
+    "firstPitch": "11 Sep 2026",
+    "subject": "OWN LOCK — Memory Afternoon",
+    "hasThread": false,
+    "messages": [],
+    "addedAt": "2026-09-11T20:15:03Z",
+    "followUps": 0,
+    "replied": "yes — own FB lock Johnno",
+    "needPhone": false,
+    "lockedFee": 200,
+    "lockedDate": "2026-10-12",
+    "lockedNights": 1,
+    "statusNote": "OWN LOCK Mon 12 Oct 2026 Memory Afternoon £200 cash · Johnno FB · soundcheck after 13:00 · sets 14:00 + 15:30 · never Choice-mail without Jake OK",
+    "notes": "Shrub End Social Centre 252-254 Shrub End Rd Colchester CO3 4SA. Johnno 07986 837056 · FB The Warm and Toasty Club. Not Natalie cold."
   }
 ]

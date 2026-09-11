@@ -378,6 +378,17 @@
       "town": "East Barnet",
       "status": "booked",
       "source": "board"
+    },
+    {
+      "date": "2026-10-12",
+      "venue": "Warm and Toasty Memory Afternoon — Shrub End Social Centre",
+      "town": "Colchester",
+      "postcode": "CO3 4SA",
+      "start": "14:00",
+      "finish": "16:00",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £200 cash · soundcheck after 13:00 · Johnno FB"
     }
   ],
   "undated": [
