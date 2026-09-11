@@ -563,16 +563,38 @@ var Board = (function(exports) {
 		s -= Math.min(36, days * 2);
 		return s;
 	}
+	function replyLaneOf(row) {
+		return String((row && row.venue && row.venue.replyLane) || "").toLowerCase();
+	}
 	function hasReplyLane(row) {
-		const lane = String((row && row.venue && row.venue.replyLane) || "").toLowerCase();
+		const lane = replyLaneOf(row);
 		return lane === "call" || lane === "email";
 	}
 	function isRepliedRow(row) {
 		// Engaged thread tabs + call-tab rows Jake tagged Call/Email (otherwise Replied hid Jaela/Ahmet/Jodie/John).
 		return row.tab === "close" || row.tab === "live" || row.tab === "chase" || (row.tab === "call" && hasReplyLane(row));
 	}
+	/** Jake 11 Sep: Call-lane (phone close from thread) at top of Replied; named heat order. */
+	const CALL_LANE_RANK = {
+		"walderslade-social-club": 1,
+		"the-muddy-duck": 2,
+		sedir: 3,
+		"greenford-conservative-club-john-mitchell": 4
+	};
+	function callLaneRank(row) {
+		const id = String((row && row.venue && row.venue.id) || "");
+		if (Object.prototype.hasOwnProperty.call(CALL_LANE_RANK, id)) return CALL_LANE_RANK[id];
+		return 50;
+	}
 	function sortReplied(rows) {
 		return rows.filter(isRepliedRow).sort((a, b) => {
+			const laneA = replyLaneOf(a) === "call" ? 0 : 1;
+			const laneB = replyLaneOf(b) === "call" ? 0 : 1;
+			if (laneA !== laneB) return laneA - laneB;
+			if (laneA === 0) {
+				const rank = callLaneRank(a) - callLaneRank(b);
+				if (rank) return rank;
+			}
 			const heat = heatScore(b.venue, b.daysSinceInbound) - heatScore(a.venue, a.daysSinceInbound);
 			if (heat) return heat;
 			return (a.daysSinceInbound ?? 99) - (b.daysSinceInbound ?? 99);
