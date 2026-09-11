@@ -56,9 +56,12 @@ main{padding:14px 14px 140px}
 .badge.locked{background:var(--call);color:var(--call-fg)}
 .badge.chase{background:#3a2410;color:var(--warn)}
 .badge.live{background:#102433;color:var(--chase)}
-.badge.lane-call{background:var(--call);color:var(--call-fg);font-size:11px;padding:4px 10px}
-.badge.lane-email{background:#243044;color:#9ec5ff;font-size:11px;padding:4px 10px}
-.lane-wrap{display:inline-block;margin:0 0 0 8px;vertical-align:middle}
+.job-badges{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0}
+.detail-badges{display:inline-flex;flex-direction:row;align-items:center;gap:6px;margin:8px 0 0;flex-wrap:wrap}
+.badge.lane-call{background:var(--call);color:var(--call-fg);font-size:10px;padding:2px 8px;line-height:1.2}
+.badge.lane-email{background:#243044;color:#9ec5ff;font-size:10px;padding:2px 8px;line-height:1.2}
+.job-lane-why{display:block;margin-top:3px;font-size:11px;font-weight:700;color:var(--call);line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#detail .job-lane-why{display:block;margin:6px 0 0;white-space:normal}
 
 .who{margin:8px 0 0;font-weight:700}
 .say{margin:10px 0 0;padding:10px 12px;border-radius:12px;background:var(--raised);font-weight:650;line-height:1.35}
@@ -247,6 +250,6 @@ main{padding:14px 14px 140px}
 <div id="detail"></div>
 <div id="diary"></div>
 <script type="application/json" id="venues-data">[]</script>
-<script src="board.js?v=31"></script>
+<script src="board.js?v=32"></script>
 </body>
 </html>

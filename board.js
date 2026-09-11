@@ -1332,13 +1332,27 @@ var NatNotes = (function(exports) {
     return map[tabName] || tabName;
   }
 
-  /** Jake reply lane: conversation Call vs Email correspondence only (from venue.replyLane).
-   *  Must sit OUTSIDE .job-name (ellipsis clips long names). */
+  /** Jake reply lane chips = SUGGESTION only (never hide Call tel: if phone exists).
+   *  Must sit in .job-badges, not inside .job-name (ellipsis clips). */
   function laneChipHtml(venue) {
     var lane = String((venue && venue.replyLane) || "").toLowerCase();
-    if (lane === "call") return '<span class="badge lane-call" title="Call — mobile/call path in thread">Call</span>';
-    if (lane === "email") return '<span class="badge lane-email" title="Email correspondence only">Email correspondence only</span>';
+    if (lane === "call") return '<span class="badge lane-call" title="Suggestion: phone could book from this thread">Call</span>';
+    if (lane === "email") return '<span class="badge lane-email" title="Suggestion: keep on email unless you want to dial">Email</span>';
     return "";
+  }
+
+  var CALL_LANE_WHY = {
+    "walderslade-social-club": "Xmas Eve quote live · hot host",
+    "california-social-ipswich": "Peter Mon before 12",
+    "the-muddy-duck": "Awaiting Jaela callback"
+  };
+
+  function laneWhyHtml(venue) {
+    if (!venue || String(venue.replyLane || "").toLowerCase() !== "call") return "";
+    var why = CALL_LANE_WHY[String(venue.id || "")] || "";
+    if (!why && venue.needPhone) why = "Need better number";
+    if (!why) return "";
+    return '<span class="job-lane-why">' + esc(why) + "</span>";
   }
 
   function moneyLabel(row) {
@@ -1351,6 +1365,7 @@ var NatNotes = (function(exports) {
   function actions(row) {
     var v = row.venue;
     var html = '<div class="acts">';
+    // Lane chip is suggestion only — always offer tel: when a number exists (incl. Email-lane).
     if (B.telHref(v.phone)) {
       html += '<a class="btn call full" href="' + B.telHref(v.phone) + '">Call' + (row.who ? " " + esc(row.who) : "") + "</a>";
     }
@@ -1523,11 +1538,11 @@ var NatNotes = (function(exports) {
     var quiet = row.stale || (row.tab === "chase" && (row.daysSilent || 0) >= 7);
     var fee = (row.fee && row.tab === "locked") ? '<span class="row-fee">' + B.gbp(row.fee) + "</span>" : "";
     var lane = laneChipHtml(v);
+    var why = laneWhyHtml(v);
     return '<button type="button" class="job' + (quiet ? " hot" : "") + '" onclick="natOpen(\'' + esc(v.id) + "')\">" +
-      '<span class="job-main"><span class="job-name">' + esc(v.name) + '</span><span class="job-meta">' + esc(bits.join(" · ") || "Tap to open") + "</span></span>" +
+      '<span class="job-main"><span class="job-name">' + esc(v.name) + '</span><span class="job-meta">' + esc(bits.join(" · ") || "Tap to open") + "</span>" + (why || "") + "</span>" +
       fee +
-      (lane || "") +
-      '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span>" +
+      '<span class="job-badges">' + (lane || "") + '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span></span>" +
       '<span class="chev">›</span></button>';
   }
 
@@ -1637,8 +1652,8 @@ var NatNotes = (function(exports) {
       '<div class="panel">' +
       "<h1>" + esc(v.name) + "</h1>" +
       (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
-      '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span>" +
-      (laneChipHtml(v) ? '<span class="lane-wrap">' + laneChipHtml(v) + "</span>" : "") +
+      '<span class="job-badges detail-badges">' + laneChipHtml(v) + '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span></span>" +
+      laneWhyHtml(v) +
       (row.who ? '<p class="who">Who · ' + esc(row.who) + "</p>" : "") +
       '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p>" +
       (row.factLine ? '<p class="fact"><span>On file</span>' + esc(row.factLine) + "</p>" : "") +
