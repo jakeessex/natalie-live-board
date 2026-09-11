@@ -23,7 +23,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "east-barnet-rbl-club",
@@ -434,7 +435,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "corner-club-canvey",
@@ -485,7 +487,8 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "CHASED / awaiting reply 11 Sep 2026 — pencilled-in hold £250/2h · £375/3h Sunday afternoon. Us chase msg `1a0903fd6f87152f` thread `1a06bd225ae629e2`. Badge quoted (MASTER). One chase only — do not re-chase. Haggle owns close if she replies."
+    "statusNote": "CHASED / awaiting reply 11 Sep 2026 — pencilled-in hold £250/2h · £375/3h Sunday afternoon. Us chase msg `1a0903fd6f87152f` thread `1a06bd225ae629e2`. Badge quoted (MASTER). One chase only — do not re-chase. Haggle owns close if she replies.",
+    "replyLane": "email"
   },
   {
     "id": "imperial-cheshunt-and-waltham-cross-cons",
@@ -527,7 +530,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "st-neots-cons",
@@ -586,7 +590,8 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Us dates 11 Sep — Dec Suns 6/20/27 + 2027 Sats through Jun · £400 3×45 held. msg 1a09008cf2a09566 thread 1a043a342da1a896. Badge quoted (awaiting date pick). Haggle owns close."
+    "statusNote": "Us dates 11 Sep — Dec Suns 6/20/27 + 2027 Sats through Jun · £400 3×45 held. msg 1a09008cf2a09566 thread 1a043a342da1a896. Badge quoted (awaiting date pick). Haggle owns close.",
+    "replyLane": "email"
   },
   {
     "id": "brightlingsea-rbl",
@@ -620,7 +625,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "greenford-rbl",
@@ -662,7 +668,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "hounslow-rbl",
@@ -704,7 +711,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "denvilles-house-havant",
@@ -1874,7 +1882,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "barrow-upon-soar-cons",
@@ -4583,7 +4592,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "horbury-working-members-club",
@@ -7666,7 +7676,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "wisbech-ex-services",
@@ -10530,7 +10541,7 @@
     "name": "Sedir",
     "town": "Dartford",
     "badge": "quoted",
-    "phone": "+441322226421",
+    "phone": "+447867968113",
     "needPhone": false,
     "email": "Ahmet / Ozgur Efe <info@sedirrestaurant.co.uk>",
     "replied": "yes — 8 Sep 2026 (Ahmet)",
@@ -10573,7 +10584,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "call"
   },
   {
     "id": "tugra",
@@ -11090,7 +11102,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "the-rettendon-bell",
@@ -11853,7 +11866,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "call"
   },
   {
     "id": "tilbury-community-association",
@@ -11921,7 +11935,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "greenford-conservative-club",
@@ -11989,7 +12004,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "call"
   },
   {
     "id": "best-western-thurrock-hotel",
@@ -12291,7 +12307,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "the-hop-inn",
@@ -12699,7 +12716,8 @@
     ],
     "statusNote": "SOFT-NO countered Us push 11 Sep ~11:43 BST — 'Different to any other solo act' · Sat change-of-pace / Fri–Sun function offer. msg 1a0901110c4f8424 thread 1a08b5f94c7cd131. Badge replied-interested (awaiting). Haggle owns close. Do not cold again.",
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "hythe-and-district-club",
@@ -13547,7 +13565,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "bretons-social-club",
@@ -13684,8 +13703,8 @@
     "name": "Walderslade Social Club",
     "town": "Chatham",
     "badge": "quoted",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+447951648922",
+    "needPhone": false,
     "email": "bar.manager@waldersladeclub.co.uk",
     "replied": "yes — 10 Sep 2026 (Jodie Helene)",
     "firstPitch": "10 Sep 2026",
@@ -13719,7 +13738,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "call"
   },
   {
     "id": "sturdee-social-bowling-club",

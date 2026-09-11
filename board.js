@@ -1285,6 +1285,14 @@ var NatNotes = (function(exports) {
     return map[tabName] || tabName;
   }
 
+  /** Jake reply lane: conversation Call vs Email correspondence only (from venue.replyLane). */
+  function laneChipHtml(venue) {
+    var lane = String((venue && venue.replyLane) || "").toLowerCase();
+    if (lane === "call") return '<span class="badge locked" title="Call — mobile/call path in thread">Call</span>';
+    if (lane === "email") return '<span class="badge" title="Email correspondence only">Email correspondence only</span>';
+    return "";
+  }
+
   function moneyLabel(row) {
     if (!row.fee) return "";
     if (row.tab === "locked") return "Locked " + B.gbp(row.fee);
@@ -1466,8 +1474,9 @@ var NatNotes = (function(exports) {
     if (called) bits.push(called);
     var quiet = row.stale || (row.tab === "chase" && (row.daysSilent || 0) >= 7);
     var fee = (row.fee && row.tab === "locked") ? '<span class="row-fee">' + B.gbp(row.fee) + "</span>" : "";
+    var lane = laneChipHtml(v);
     return '<button type="button" class="job' + (quiet ? " hot" : "") + '" onclick="natOpen(\'' + esc(v.id) + "')\">" +
-      '<span class="job-main"><span class="job-name">' + esc(v.name) + '</span><span class="job-meta">' + esc(bits.join(" · ") || "Tap to open") + "</span></span>" +
+      '<span class="job-main"><span class="job-name">' + esc(v.name) + (lane ? " " + lane : "") + '</span><span class="job-meta">' + esc(bits.join(" · ") || "Tap to open") + "</span></span>" +
       fee +
       '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span>" +
       '<span class="chev">›</span></button>';
@@ -1580,6 +1589,7 @@ var NatNotes = (function(exports) {
       "<h1>" + esc(v.name) + "</h1>" +
       (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
       '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span>" +
+      laneChipHtml(v) +
       (row.who ? '<p class="who">Who · ' + esc(row.who) + "</p>" : "") +
       '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p>" +
       (row.factLine ? '<p class="fact"><span>On file</span>' + esc(row.factLine) + "</p>" : "") +
