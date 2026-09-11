@@ -446,7 +446,7 @@
     "phone": "+447830763936",
     "needPhone": false,
     "email": "maxinetopliss@gmail.com",
-    "replied": "yes — 4 Sep 2026 (Maxine)",
+    "replied": "Maxine · back next week (busy/away) · Sunday £250/£375 hold",
     "firstPitch": "4 Sep 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
     "followUps": "1 · last 11 Sep 2026",
@@ -483,11 +483,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Re: Jake Essex for Corner Club?",
         "body": "Hi Maxine,\n\nJust checking in — if a Sunday afternoon still looks useful for Jake at the Corner Club, happy to hold the £250 / £375 and get it pencilled in when you're ready.\n\nNatalie"
+      },
+      {
+        "side": "them",
+        "label": "Inbound",
+        "at": "2026-09-11T13:02:32Z",
+        "from": "maxinetopliss@gmail.com",
+        "subject": "Re: Re: Jake Essex for Corner Club?",
+        "msgId": "1a0909034b675b7a",
+        "body": "HI I’ve not forgot will get back to you next week if okay has a couple of very busy weeks and we away next week so can catch up x"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "CHASED / awaiting reply 11 Sep 2026 — pencilled-in hold £250/2h · £375/3h Sunday afternoon. Us chase msg `1a0903fd6f87152f` thread `1a06bd225ae629e2`. Badge quoted (MASTER). One chase only — do not re-chase. Haggle owns close if she replies.",
+    "statusNote": "Maxine back next week · £250/£375 Sunday hold · no chase this week",
     "replyLane": "email"
   },
   {
@@ -15096,5 +15105,34 @@
     "followUps": 0,
     "replied": null,
     "needPhone": false
+  },
+  {
+    "id": "orsett-hall-hotel",
+    "name": "Orsett Hall Hotel",
+    "town": "Orsett / Thurrock",
+    "email": "events@orsetthall.co.uk",
+    "phone": null,
+    "badge": "bounce",
+    "tab": "parked",
+    "firstPitch": "11 Sep 2026",
+    "subject": "Jake Essex for Orsett Hall Hotel?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-11T14:32:27Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Orsett Hall Hotel?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for an Orsett Hall Saturday entertainment night — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "QgrcJHsTlmgbGhfBSmlBQVrXNWmtlQPMVXb"
+      }
+    ],
+    "addedAt": "2026-09-11T15:36:12Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": true,
+    "statusNote": "Recipient-server block 11 Sep — do not resend events@orsetthall.co.uk",
+    "notes": "2pm LOCAL FAIL bounce — do not retry"
   }
 ]

@@ -1348,7 +1348,7 @@ var NatNotes = (function(exports) {
     "the-muddy-duck": "Awaiting Jaela callback",
     sedir: "Called + dates sent · waiting reply",
     "greenford-conservative-club-john-mitchell": "Mobile digit missing · main no answer",
-    "corner-club-canvey": "Chase sent · Sunday £250/£375 hold",
+    "corner-club-canvey": "Maxine back next week · Sunday hold",
     "bird-in-hand": "Alison away · dates on return",
     "st-neots-cons": "Committee 1st Tue · Jake ack’d · wait",
     "the-bull": "Quote live · awaiting dates",
