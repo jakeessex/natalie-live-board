@@ -1350,7 +1350,7 @@ var NatNotes = (function(exports) {
     "greenford-conservative-club-john-mitchell": "Mobile digit missing · main no answer",
     "corner-club-canvey": "Chase sent · Sunday £250/£375 hold",
     "bird-in-hand": "Alison away · dates on return",
-    "st-neots-cons": "Dates offered · awaiting pick",
+    "st-neots-cons": "Committee 1st Tue · Jake ack’d · wait",
     "the-bull": "Quote live · awaiting dates",
     "iona-social-club": "Quote live · awaiting dates",
     "honiton-cons": "£400 quoted · works/spend tight",
