@@ -650,7 +650,8 @@ var Board = (function(exports) {
 		let nights = 0;
 		for (const v of venues) {
 			if (!isLockedRecord(v)) continue;
-			const fee = displayFee(v) || 0;
+			// Locked rows trust lockedFee — feeOnThread can still see an older quote (£300 vs £400).
+			const fee = Number(v.lockedFee || 0) || displayFee(v) || 0;
 			if (!fee) continue;
 			const n = Number(v.lockedNights || 1) || 1;
 			cash += fee;
