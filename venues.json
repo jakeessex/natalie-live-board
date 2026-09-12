@@ -15519,5 +15519,33 @@
     "replied": null,
     "needPhone": false,
     "statusNote": "free-nights #10 SENT_OK 1a095eb398cfe178 · awaiting"
+  },
+  {
+    "id": "railway-telegraph",
+    "name": "Railway Telegraph",
+    "town": "Forest Hill",
+    "email": "info@railwaytelegraph.co.uk",
+    "phone": "+442086995504",
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for Railway Telegraph?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T14:02:40Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Railway Telegraph?",
+        "msgId": "1a095ed6fb376448",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for a Railway Telegraph live night in Forest Hill. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie\n"
+      }
+    ],
+    "addedAt": "2026-09-12T14:05:00Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": false,
+    "statusNote": "free-nights #11 SENT_OK 1a095ed6fb376448 · awaiting"
   }
 ]
