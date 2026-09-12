@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "source": "JAKE ESSEX GIGS @ CL",
   "gigs": [
     {
@@ -91,6 +91,28 @@
       "source": "cl"
     },
     {
+      "date": "2026-10-12",
+      "venue": "Warm and Toasty Memory Afternoon \u2014 Shrub End Social Centre",
+      "town": "Colchester",
+      "postcode": "CO3 4SA",
+      "start": "14:00",
+      "finish": "16:00",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN \u00a3200 cash \u00b7 soundcheck after 13:00 \u00b7 Johnno FB"
+    },
+    {
+      "date": "2026-10-17",
+      "venue": "ECTA Grand Final",
+      "town": "Halstead",
+      "postcode": "",
+      "start": "",
+      "finish": "",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN/ECTA all-day \u00b7 Empire Theatre Halstead \u00b7 leave required \u00b7 NEVER free \u00b7 enquiry gqgfc62btrk0nucugnd8s65p2k"
+    },
+    {
       "date": "2026-10-24",
       "venue": "Barking United Services Club",
       "postcode": "IG11 9SF",
@@ -107,6 +129,17 @@
       "finish": "23:00",
       "status": "booked",
       "source": "cl"
+    },
+    {
+      "date": "2026-10-31",
+      "venue": "Thurrock Irish Club Tilbury",
+      "town": "Tilbury",
+      "postcode": "RM18 7BS",
+      "start": "20:30",
+      "finish": "00:30",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN \u00a3400 cash \u00b7 4\u00d745 \u00b7 RAC Dagenham day \u00b7 150-152 Dock Road"
     },
     {
       "date": "2026-11-01",
@@ -262,7 +295,7 @@
       "finish": "23:15",
       "status": "booked",
       "source": "board",
-      "note": "£425 Geoff · Dorset FAR — nearby buffer Fri 30 Apr + Sun 2 May only (NOT UK-wide held)"
+      "note": "\u00a3425 Geoff \u00b7 Dorset FAR \u2014 nearby buffer Fri 30 Apr + Sun 2 May only (NOT UK-wide held)"
     },
     {
       "date": "2027-05-29",
@@ -378,24 +411,13 @@
       "town": "East Barnet",
       "status": "booked",
       "source": "board"
-    },
-    {
-      "date": "2026-10-12",
-      "venue": "Warm and Toasty Memory Afternoon — Shrub End Social Centre",
-      "town": "Colchester",
-      "postcode": "CO3 4SA",
-      "start": "14:00",
-      "finish": "16:00",
-      "status": "booked",
-      "source": "board",
-      "note": "OWN £200 cash · soundcheck after 13:00 · Johnno FB"
     }
   ],
   "undated": [
     {
       "venue": "Bromley Services Club",
       "nights": 2,
-      "note": "Locked — date TBC, don’t offer until Jake confirms"
+      "note": "Locked \u2014 date TBC, don\u2019t offer until Jake confirms"
     }
   ]
 }
