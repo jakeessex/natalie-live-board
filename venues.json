@@ -12051,6 +12051,15 @@
         "subject": "Re: Booking",
         "msgId": "1a095ec1b4b91f08",
         "body": "Hi Natalie,\n\nI would like to book Jake Essex on 19th June 2027.\n\nCost: £400 for three hours.\n20:45-23:45\nVenue: Greenford GCC.\n\nRegards\n"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T14:36:32Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Booking",
+        "body": "Hi John,\n\n19th June 2027 confirmed & in the diary. 20:45 to 23:45 at Greenford GCC.\n\nI've got Greenford Conservative Club as the venue. Please confirm the full\naddress when you can.\n\nIf you've got any other nights or places in mind, send them over and I'll\ncheck the diary.\n\nNatalie\nwww.jakeessex.co.uk",
+        "msgId": "1a0960c701186d74"
       }
     ],
     "hasThread": true,
@@ -12059,7 +12068,7 @@
     "lockedDate": "2027-06-19",
     "lockedNights": 1,
     "replyLane": null,
-    "statusNote": "OWN LOCK Sat 19 Jun 2027 £400 · 20:45–23:45 · John Mitchell · thread 1a043a6287765013 · enquiry 23pc0sdfph5lietr91qlvimqjo",
+    "statusNote": "OWN LOCK Sat 19 Jun 2027 £400 · 20:45–23:45 · John Mitchell · thread 1a043a6287765013 · enquiry 23pc0sdfph5lietr91qlvimqjo · confirm Us SENT_OK 1a0960c701186d74",
     "notes": "LOCKED Sat 19 Jun 2027 £400 3h 20:45–23:45. Cal 23pc0sdfph5lietr91qlvimqjo. Mobile digit still broken — email thread locked it."
   },
   {
