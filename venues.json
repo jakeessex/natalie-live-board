@@ -12017,11 +12017,11 @@
     "id": "greenford-conservative-club-john-mitchell",
     "name": "Greenford Conservative Club (John Mitchell)",
     "town": "Greenford",
-    "badge": "quoted",
+    "badge": "locked",
     "phone": "+44757606550",
-    "needPhone": false,
+    "needPhone": true,
     "email": "John Mitchell <bigbadmitchell5786@hotmail.com>",
-    "replied": "yes — John Mitchell 27 Aug",
+    "replied": "2026-09-12",
     "firstPitch": "24 Aug 2026",
     "addedAt": "2026-09-09T10:29:48+01:00",
     "followUps": "1 · last 9 Sep 2026",
@@ -12042,10 +12042,25 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "",
         "body": "Hi John,\n\nThanks for getting in touch about Greenford Conservative Club for 2027.\n\nHappy to keep this on email — easier for locking dates. For a Saturday or Sunday night it's £300 cash for 2 hours / £400 for 3 hours (own PA, no deposit). Fridays aren't available that far out of Essex.\n\nSend over any Saturdays or Sundays that work for the club and I'll check the diary.\n\nNatalie\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "them",
+        "label": "Replied",
+        "at": "2026-09-12T14:01:11Z",
+        "from": "bigbadmitchell5786@hotmail.com",
+        "subject": "Re: Booking",
+        "msgId": "1a095ec1b4b91f08",
+        "body": "Hi Natalie,\n\nI would like to book Jake Essex on 19th June 2027.\n\nCost: £400 for three hours.\n20:45-23:45\nVenue: Greenford GCC.\n\nRegards\n"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "booked",
+    "lockedFee": 400,
+    "lockedDate": "2027-06-19",
+    "lockedNights": 1,
+    "replyLane": null,
+    "statusNote": "OWN LOCK Sat 19 Jun 2027 £400 · 20:45–23:45 · John Mitchell · thread 1a043a6287765013 · enquiry 23pc0sdfph5lietr91qlvimqjo",
+    "notes": "LOCKED Sat 19 Jun 2027 £400 3h 20:45–23:45. Cal 23pc0sdfph5lietr91qlvimqjo. Mobile digit still broken — email thread locked it."
   },
   {
     "id": "best-western-thurrock-hotel",
