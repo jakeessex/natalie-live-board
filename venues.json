@@ -15217,5 +15217,145 @@
     "lockedNights": 1,
     "statusNote": "OWN LOCK Sat 31 Oct 2026 £400 cash · 4×45 · start ~20:30 · 150–152 Dock Road Tilbury RM18 7BS · RAC same day OK evening LOCAL",
     "notes": "Thurrock Irish Association Social Club. Enquiry nicupc265mse2c3oggrvqvpvkc. No Choice mail. Rebook after tonight’s gig."
+  },
+  {
+    "id": "dagenham-trades-hall",
+    "name": "Dagenham Trades Hall",
+    "town": "Dagenham",
+    "email": "info@dagenham-trade-shall.co.uk",
+    "phone": "+442085920403",
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for Dagenham Trades Hall?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T13:33:57Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Dagenham Trades Hall?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake would be a great fit for Dagenham Trades Hall's live nights, and he'd\nlove to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s,\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act, no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nJake has Saturdays and Sundays free through autumn into Christmas. If a\ndate works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a095d324eb77bde"
+      }
+    ],
+    "addedAt": "2026-09-12T13:51:31Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": false,
+    "statusNote": "free-nights #1 SENT_OK 1a095d324eb77bde · awaiting"
+  },
+  {
+    "id": "plumstead-common-working-men-s-club",
+    "name": "Plumstead Common Working Men's Club",
+    "town": "Plumstead",
+    "email": "pcwmc@plumstead.london",
+    "phone": "+442088540847",
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for Plumstead Common Working Men's Club?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T13:36:38Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Plumstead Common Working Men's Club?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake would be a great fit for Plumstead Common Working Men's Club, and he'd\nlove to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s,\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act, no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nJake has Saturdays and Sundays free through autumn into Christmas. If a\ndate works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a095d59627474da"
+      }
+    ],
+    "addedAt": "2026-09-12T13:51:31Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": false,
+    "statusNote": "free-nights #2 SENT_OK 1a095d59627474da · awaiting"
+  },
+  {
+    "id": "blackheath-newbridge-club",
+    "name": "Blackheath Newbridge Club",
+    "town": "Charlton / Blackheath",
+    "email": "blackheathwmc@gmail.com",
+    "phone": "+442088580525",
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for Blackheath Newbridge Club?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T13:39:37Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Blackheath Newbridge Club?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake would be a great fit for Blackheath Newbridge Club's entertainment\nnights, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s,\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act, no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nJake has Saturdays and Sundays free through autumn into Christmas. If a\ndate works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a095d852846fdbc"
+      }
+    ],
+    "addedAt": "2026-09-12T13:51:31Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": false,
+    "statusNote": "free-nights #3 SENT_OK 1a095d852846fdbc · awaiting"
+  },
+  {
+    "id": "the-woodcroft-club",
+    "name": "The Woodcroft Club",
+    "town": "Eltham",
+    "email": "enquiries@woodcroft.club",
+    "phone": "+442088508659",
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for The Woodcroft Club?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T13:43:49Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Woodcroft Club?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake would be a great fit for The Woodcroft Club, and he'd love to come and\nperform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s,\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act, no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nJake has Saturdays and Sundays free through autumn into Christmas. If a\ndate works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a095dc2a66e4a49"
+      }
+    ],
+    "addedAt": "2026-09-12T13:51:31Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": false,
+    "statusNote": "free-nights #4 SENT_OK 1a095dc2a66e4a49 · awaiting"
+  },
+  {
+    "id": "victory-club-south-norwood",
+    "name": "Victory Club South Norwood",
+    "town": "South Norwood",
+    "email": "victoryclub1920@gmail.com",
+    "phone": "+442086532617",
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for Victory Club South Norwood?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T13:46:49Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Victory Club South Norwood?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for a Victory Club South Norwood entertainment\nnight. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s:\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027: if\na date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a095deeb9691810"
+      }
+    ],
+    "addedAt": "2026-09-12T13:51:31Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": false,
+    "statusNote": "free-nights #5 SENT_OK 1a095deeb9691810 · awaiting"
   }
 ]
