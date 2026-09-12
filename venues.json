@@ -15711,5 +15711,140 @@
     "replied": null,
     "needPhone": false,
     "statusNote": "free-nights #16 SENT_OK 1a095fbb573e6788 · awaiting · FAR"
+  },
+  {
+    "id": "o-connor-s",
+    "name": "O’Connor’s",
+    "town": "Hamlin / Black Buoy",
+    "email": "manager.blackbuoy@gmail.com",
+    "phone": null,
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for O’Connor’s?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T16:23:10Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for O’Connor’s?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for O’Connor’s and the other Hamlin pubs — and\nhe'd love to bring a Jake Essex Christmas special your way.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n— Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nHe's free Friday 4th, Sunday 6th, Friday 11th, Sunday 20th and Sunday 27th\nDecember — if one of those works (or another Friday, Saturday or Sunday\ninto 2027), reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0966e12a4dceff"
+      }
+    ],
+    "addedAt": "2026-09-12T16:30:43Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": true,
+    "statusNote": "CLEAR6-XMAS #1 SENT_OK 1a0966e12a4dceff · awaiting",
+    "notes": "Christmas special cold · CLEAR6 wave"
+  },
+  {
+    "id": "three-wise-monkeys-colchester",
+    "name": "Three Wise Monkeys Colchester",
+    "town": "Colchester",
+    "email": "events@twmcolchester.com",
+    "phone": null,
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for Three Wise Monkeys Colchester?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T16:24:15Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Three Wise Monkeys Colchester?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for TWM Live at Three Wise Monkeys Colchester —\nand he'd love to bring a Jake Essex Christmas special across for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n— Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nHe's free Friday 4th, Sunday 6th, Friday 11th, Sunday 20th and Sunday 27th\nDecember — if one of those works (or another Friday, Saturday or Sunday\ninto 2027), reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0966f0da7c3f50"
+      }
+    ],
+    "addedAt": "2026-09-12T16:30:43Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": true,
+    "statusNote": "CLEAR6-XMAS #2 SENT_OK 1a0966f0da7c3f50 · awaiting",
+    "notes": "Christmas special cold · CLEAR6 wave"
+  },
+  {
+    "id": "pope-street",
+    "name": "Pope Street",
+    "town": "Fest & Revel",
+    "email": "info@festandrevel.co.uk",
+    "phone": null,
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for Pope Street?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T16:25:12Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Pope Street?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for Pope Street and the Fest & Revel nights — and\nhe'd love to bring a Jake Essex Christmas special to one of your venues.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n— Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nHe's free Friday 4th, Sunday 6th, Friday 11th, Sunday 20th and Sunday 27th\nDecember — if one of those works (or another Friday, Saturday or Sunday\ninto 2027), reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0966feed8d987d"
+      }
+    ],
+    "addedAt": "2026-09-12T16:30:43Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": true,
+    "statusNote": "CLEAR6-XMAS #4 SENT_OK 1a0966feed8d987d · awaiting",
+    "notes": "Christmas special cold · CLEAR6 wave"
+  },
+  {
+    "id": "the-little-brown-jug",
+    "name": "The Little Brown Jug",
+    "town": "WH Pubs",
+    "email": "enquiries@whpubs.co.uk",
+    "phone": null,
+    "badge": "awaiting",
+    "tab": "call",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for The Little Brown Jug?",
+    "hasThread": true,
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-12T16:26:48Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Little Brown Jug?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Little Brown Jug and the WH Pubs nights —\nand he'd love to bring a Jake Essex Christmas special across.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n— Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nHe's free Sunday 6th, Sunday 20th and Sunday 27th December — if one of\nthose works (or another Saturday or Sunday into 2027), reply here and I'll\nlock it.\n\nNatalie",
+        "msgId": "1a0967167bb04cd0"
+      }
+    ],
+    "addedAt": "2026-09-12T16:30:43Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": true,
+    "statusNote": "CLEAR6-XMAS #5 SENT_OK 1a0967167bb04cd0 · awaiting",
+    "notes": "Christmas special cold · CLEAR6 wave"
+  },
+  {
+    "id": "casa-dunmow",
+    "name": "CASA Dunmow",
+    "town": "Dunmow",
+    "email": "info@house-group.uk",
+    "phone": null,
+    "badge": "bounce",
+    "tab": "parked",
+    "firstPitch": "12 Sep 2026",
+    "subject": "Jake Essex for CASA Dunmow?",
+    "hasThread": false,
+    "messages": [],
+    "addedAt": "2026-09-12T16:30:43Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": true,
+    "statusNote": "CLEAR6-XMAS #6 BLOCKED bounce mailer-daemon 1a09672bdac174b0 · do not resend info@house-group.uk",
+    "notes": "House Group · CLEAR6 Christmas cold blocked by recipient server. No Us Sent on Conversation."
   }
 ]
