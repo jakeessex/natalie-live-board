@@ -92,14 +92,14 @@
     },
     {
       "date": "2026-10-12",
-      "venue": "Warm and Toasty Memory Afternoon \u2014 Shrub End Social Centre",
+      "venue": "Warm and Toasty Memory Afternoon — Shrub End Social Centre",
       "town": "Colchester",
       "postcode": "CO3 4SA",
       "start": "14:00",
       "finish": "16:00",
       "status": "booked",
       "source": "board",
-      "note": "OWN \u00a3200 cash \u00b7 soundcheck after 13:00 \u00b7 Johnno FB"
+      "note": "OWN £200 cash · soundcheck after 13:00 · Johnno FB"
     },
     {
       "date": "2026-10-17",
@@ -110,7 +110,7 @@
       "finish": "",
       "status": "booked",
       "source": "board",
-      "note": "OWN/ECTA all-day \u00b7 Empire Theatre Halstead \u00b7 leave required \u00b7 NEVER free \u00b7 enquiry gqgfc62btrk0nucugnd8s65p2k"
+      "note": "OWN/ECTA all-day · Empire Theatre Halstead · leave required · NEVER free · enquiry gqgfc62btrk0nucugnd8s65p2k"
     },
     {
       "date": "2026-10-24",
@@ -139,7 +139,7 @@
       "finish": "00:30",
       "status": "booked",
       "source": "board",
-      "note": "OWN \u00a3400 cash \u00b7 4\u00d745 \u00b7 RAC Dagenham day \u00b7 150-152 Dock Road"
+      "note": "OWN £400 cash · 4×45 · RAC Dagenham day · 150-152 Dock Road"
     },
     {
       "date": "2026-11-01",
@@ -164,6 +164,17 @@
       "venue": "",
       "status": "held",
       "source": "cl"
+    },
+    {
+      "date": "2026-11-21",
+      "venue": "King Edward Stratford",
+      "town": "Stratford",
+      "postcode": "",
+      "start": "20:30",
+      "finish": "",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £325 · Willz Farrell FB · start 20:30 · cash/books TBC · enquiry 92ai1nb7i7crtkgkmrjclf7rrs · NEVER free"
     },
     {
       "date": "2026-11-27",
@@ -295,7 +306,7 @@
       "finish": "23:15",
       "status": "booked",
       "source": "board",
-      "note": "\u00a3425 Geoff \u00b7 Dorset FAR \u2014 nearby buffer Fri 30 Apr + Sun 2 May only (NOT UK-wide held)"
+      "note": "£425 Geoff · Dorset FAR — nearby buffer Fri 30 Apr + Sun 2 May only (NOT UK-wide held)"
     },
     {
       "date": "2027-05-29",
@@ -417,7 +428,7 @@
     {
       "venue": "Bromley Services Club",
       "nights": 2,
-      "note": "Locked \u2014 date TBC, don\u2019t offer until Jake confirms"
+      "note": "Locked — date TBC, don’t offer until Jake confirms"
     }
   ]
 }

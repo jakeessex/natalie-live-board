@@ -15357,5 +15357,27 @@
     "replied": null,
     "needPhone": false,
     "statusNote": "free-nights #5 SENT_OK 1a095deeb9691810 · awaiting"
+  },
+  {
+    "id": "king-edward-stratford",
+    "name": "King Edward Stratford",
+    "town": "Stratford",
+    "email": null,
+    "phone": null,
+    "badge": "locked",
+    "tab": "booked",
+    "lockedFee": 325,
+    "lockedDate": "2026-11-21",
+    "lockedNights": 1,
+    "firstPitch": null,
+    "subject": null,
+    "hasThread": false,
+    "messages": [],
+    "addedAt": "2026-09-12T14:00:00Z",
+    "followUps": 0,
+    "replied": null,
+    "needPhone": true,
+    "statusNote": "OWN LOCK Sat 21 Nov 2026 £325 · start 20:30 · Willz Farrell FB · enquiry 92ai1nb7i7crtkgkmrjclf7rrs · cash/books TBC · never Natalie-offer",
+    "notes": "Willz Farrell FB Messenger. Pencil ea8st86mp3picisnnsutkrgmd4 upgraded → lock 92ai1nb7i7crtkgkmrjclf7rrs. Payment type TBC."
   }
 ]
