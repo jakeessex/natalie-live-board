@@ -1671,7 +1671,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "28 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -1681,10 +1681,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi Team at Abingdon Conservative Club,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll — he is the act, not a tribute. Own PA, no deposit.\n\nOck Street already lists Saturday Entertainment on the diary, bar through\nto half twelve. If you want him on that night, have a look:\nwww.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, just let me know.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:27:08Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f3de7a69cde0"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f3de7a69cde0`"
   },
   {
     "id": "allestree-rbl",
@@ -2162,11 +2172,11 @@
     "id": "bishopsworth-rbl",
     "name": "Bishopsworth RBL",
     "town": "",
-    "badge": "awaiting",
+    "badge": "declined",
     "phone": "+441179642622",
     "needPhone": false,
     "email": "vince.anstey@gmail.com",
-    "replied": "no",
+    "replied": "yes — declined nothing available",
     "firstPitch": "28 Aug 2026",
     "addedAt": "28 Aug 2026",
     "followUps": "1 · last 11 Sep 2026",
@@ -2187,10 +2197,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-14T11:58:26Z",
+        "from": "vince.anstey@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi there\nNothing availiable at present sorry.",
+        "msgId": "1a09fc8987586393"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "declined · Vince Them 14 Sep `1a09fc8987586393` Nothing available — park"
   },
   {
     "id": "bletchley-social-club",
@@ -2271,7 +2291,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -2281,10 +2301,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nBoston Cons already puts free entertainment in the lounge on a Saturday\nevening, with the club open through to midnight. That's the Lincolnshire\nSaturday I wanted Jake on.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:29:02Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f3fa044b02fb"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f3fa044b02fb`"
   },
   {
     "id": "boxted-rbl",
@@ -2357,7 +2387,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "28 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -2367,10 +2397,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi Team at Bramford Social Club,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll — he is the act, not a tribute. Own PA, no deposit.\n\nSaturday night on The Street is already the entertainment night, bands in a\nroom that holds 130. If you want a vocalist who is himself, have a look:\nwww.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, just let me know.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:31:14Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f41a71f430c4"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f41a71f430c4`"
   },
   {
     "id": "broadwater-wmcc",
@@ -3131,7 +3171,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "27 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -3141,10 +3181,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi, I'm Natalie, I look after bookings for Jake Essex.\n\nYour August Saturday diary on Salisbury Road is live on the club site — a\nproper weekly entertainment room.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act. No impersonations, no jumpsuit, no corny\ngimmicks. The night has a shape: raw 50s through to 70s Vegas, plus Darin,\nDion, Holly, Orbison, Sinatra. Real voice. Own PA, fully self-contained, no\ndeposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027, 2\n× 45 or 3 × 45; if a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:34:05Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f4440e410050"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f4440e410050`"
   },
   {
     "id": "dartford-wm-club",
@@ -3251,7 +3301,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "31 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -3261,10 +3311,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, no deposit.\n\nDesborough already lists Saturday Live Entertainment on the What’s On page.\nHe would fit that slot.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:36:40Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f46a0e6cafac"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f46a0e6cafac`"
   },
   {
     "id": "dormans-middlesbrough",
@@ -3277,7 +3337,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "31 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -3287,10 +3347,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nWilsford House on Long Street already has that ground-floor function room\nfor around 130, and Saturday you're open through the afternoon then again\nfrom half seven. That's the Devizes night I had in mind.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:39:28Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f49301d87486"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f49301d87486`"
   },
   {
     "id": "down-hall",
@@ -3578,14 +3648,14 @@
     "id": "erdington-cons-birmingham",
     "name": "Erdington Cons Birmingham",
     "town": "",
-    "badge": "awaiting",
+    "badge": "bounce",
     "phone": "+441213730075",
     "needPhone": false,
     "email": "office@erdingtonconclub.co.uk",
-    "replied": "no",
+    "replied": "bounce",
     "firstPitch": "31 Aug 2026",
     "addedAt": "27 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -3595,10 +3665,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nYou already put live music on at Old Park Avenue, and you keep the room\nopen later for it. He'd be that later close. Jake Essex is the act. No\nimpersonations, no jumpsuit, no corny gimmicks. Professional solo vocalist\nfrom Essex. High-energy 50s and 60s rock and roll. The night has a shape:\nraw 50s through to 70s Vegas, plus Darin, Dion, Holly, Orbison, Sinatra.\nReal voice. Own PA, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na live night works, reply here and I'll lock it.\n\nBest,\nNatalie\nJake Essex Music"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:52:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f54a7bcb00c7"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "other",
+    "statusNote": "10am FU SENT then DSN Failure domain not found `1a09f54a7bcb00c7` / bounce `1a09f54d74bcdb5a` — do not resend"
   },
   {
     "id": "fairwater-cons-cardiff",
@@ -3611,7 +3691,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "31 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -3621,10 +3701,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nOrchard Road already runs live entertainment every Saturday in the members'\nlounge, and the function room for 120 is taking Friday, Saturday and Sunday\ninto 2026 and 2027. That's the Erdington night.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:53:54Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f566686b016c"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f566686b016c`"
   },
   {
     "id": "farington-cons",
@@ -3765,7 +3855,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "31 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -3775,10 +3865,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nThe Ferndown Legion already says you don't have to be service to join, and\nthe hall takes 120 with a stage. That's the Dorset Saturday I wanted to put\na real 50s and 60s voice into — himself, not a tribute.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:56:02Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f5858d574f63"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f5858d574f63`"
   },
   {
     "id": "flixton-cons",
@@ -3791,7 +3891,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "31 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -3801,10 +3901,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, no deposit.\n\nFigheldean already puts regular live entertainment on at the club. That is\nhis kind of night.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:58:09Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f5a481d57fae"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f5a481d57fae`"
   },
   {
     "id": "garforth-wmc-leeds",
@@ -3817,7 +3927,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "31 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -3827,10 +3937,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, no deposit.\n\nYou’ve already got The White Hairs in on Saturday 26 September. He would\nsit in that same Saturday live slot on another date.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T10:00:45Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f5cab0dd7f29"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f5cab0dd7f29`"
   },
   {
     "id": "george-and-dragon-e11",
@@ -5331,7 +5451,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "28 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -5341,10 +5461,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi Team at Market Harborough Conservative Club,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll — he is the act, not a tribute. Own PA, no deposit.\n\nSaturday nights at 6 Fairfield Road already take live acts. If you want\nsomething a bit different to a typical tribute night, have a look:\nwww.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, just let me know.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T10:03:07Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f5ed7c91b657"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f5ed7c91b657`"
   },
   {
     "id": "millhouse-social",
@@ -5409,7 +5539,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -5419,10 +5549,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nMoordown's been a Conservative club since 1881 — oldest in the area — and\nBalfour Road already does cabaret nights with Friday and Saturday through\nto half eleven. That's the Bournemouth room I wanted.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T10:06:06Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f6193136cd3d"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f6193136cd3d`"
   },
   {
     "id": "mudeford-club",
@@ -5785,7 +5925,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "27 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -5795,10 +5935,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s rock and roll. He is the act. No impersonations, no jumpsuit, no corny gimmicks. The night has a shape: raw 50s through to 70s Vegas, plus Darin, Dion, Holly, Orbison, Sinatra. Real voice. Own PA, fully self-contained, no deposit.\n\nYou already put Saturday nights on from 8.30 at Church Hill. He'd be the act for one of those, or a Friday or Sunday if that sits better.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. 2 × 45 or 3 × 45. If a date works, reply here and I'll lock it.\n\nBest,\nNatalie\nJake Essex Music"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T10:09:42Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f64dfd71799f"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f64dfd71799f`"
   },
   {
     "id": "paul-blount-named-contact-no-venue",
@@ -5897,7 +6047,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -5907,10 +6057,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, no deposit.\n\nPlympton already runs a Saturday night entertainment schedule. That is his\nnight.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T10:11:36Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f669c7bf751d"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f669c7bf751d`"
   },
   {
     "id": "potton-and-district-club",
@@ -6085,7 +6245,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "1 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live entertainment – Jake Essex (Elvis & Rock ’n’ Roll)",
     "messages": [
       {
@@ -6095,10 +6255,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live entertainment – Jake Essex (Elvis & Rock ’n’ Roll)",
         "body": "Hi,\n\nMy name is Natalie and I look after bookings for Jake Essex.\n\nJake performs a high-energy classic Rock ’n’ Roll show with a strong Elvis element – he’s not a typical Elvis impersonator. The first half covers Bobby Darin, Sinatra, Johnny Cash, Buddy Holly, Roy Orbison and more, before moving into a full Elvis set that takes the audience through the years.\n\nHe already works regularly across Essex, East & South London and Kent, and is now expanding into West London. He has some availability left this year and is also taking bookings for 2027.\n\nFully self-contained with his own PA.\n\nPricing:\n• 2 × 1 hour – £250 cash / £280 through the books\n• 3 × 45 mins – £350 cash / £380 through the books\n\nFootage here: www.instagram.com/jakeessexmusic\n\nIf you have any suitable dates or would like more information, just let me know.\n\nBest regards,\nNatalie\non behalf of Jake Essex Music"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T10:14:22Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live entertainment – Jake Essex (Elvis & Rock ’n’ Roll)",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f6923072bdd9"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f6923072bdd9`"
   },
   {
     "id": "ramsgate-rbl",
@@ -6419,7 +6589,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "2 Jun 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Jake Essex – Professional Solo Vocalist (Elvis & Friends Show) Available for Live Music Nights",
     "messages": [
       {
@@ -6429,10 +6599,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex – Professional Solo Vocalist (Elvis & Friends Show) Available for Live Music Nights",
         "body": "Hi Team at Seasons Bar Woodford Green,\n\nI’m Natalie, booking agent for Jake Essex.\n\nJake is a professional solo vocalist based locally in South Ockendon who delivers a high-energy “Elvis and Friends” show — proper 50s, 60s & 70s classics that get the whole room singing along.\n\nI noticed you put on live music and I genuinely think Jake would be a perfect fit for your crowd. He’s fully self-contained (PA, lights, backing tracks), reliable, no deposit required, and used to busy pub, club and function room crowds.\n\nYou can check out recent performances and crowd reactions here: https://www.instagram.com/jakeessexmusic/\n\nHe’s available for midweek or weekend nights and his normal rate for pubs/restaurants is very competitive — happy to discuss dates, set times and pricing that work for you.\n\nLooking forward to hearing from you.\n\nBest regards,\nNatalie\nBooking Agent for Jake Essex\njakeessexenquiries@gmail.com\n@JakeEssexMusic"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T10:16:46Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex – Professional Solo Vocalist (Elvis & Friends Show) Available for Live Music Nights",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f6b5749f6533"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f6b5749f6533`"
   },
   {
     "id": "ship-gillingham",
@@ -6651,7 +6831,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -6661,10 +6841,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, no deposit.\n\nSouthern Parishes has a function room with a dance floor and stage, and\nalready lists live music. That is his room.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T10:19:33Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f6de00b99f4a"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f6de00b99f4a`"
   },
   {
     "id": "st-marychurch-torquay",
@@ -6745,7 +6935,7 @@
     "replied": "no",
     "firstPitch": "28 Aug 2026",
     "addedAt": "28 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -6755,10 +6945,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi Team at Stanboroughs,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll — he is the act, not a tribute. Own PA, no deposit.\n\nThe suite on Conduit Lane already has an elevated stage for artists. If you\nwant a Friday or Saturday that is him, have a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, just let me know.\n\nBest regards,\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T09:25:03Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f3bffd3504bd"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f3bffd3504bd`"
   },
   {
     "id": "steam-packet",
@@ -6873,7 +7073,7 @@
     "replied": "no",
     "firstPitch": "31 Aug 2026",
     "addedAt": "27 Aug 2026",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 14 Sep 2026",
     "subject": "Live music — Jake Essex",
     "messages": [
       {
@@ -6883,10 +7083,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi, I'm Natalie, I look after bookings for Jake Essex.\n\nWeekly live music in the function room on Regent Street, and Saturday\nnights run through to midnight.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act. No impersonations, no jumpsuit, no corny\ngimmicks. The night has a shape: raw 50s through to 70s Vegas, plus Darin,\nDion, Holly, Orbison, Sinatra. Real voice. Own PA, fully self-contained, no\ndeposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027, 2\n× 45 or 3 × 45; if a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T10:21:51Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09f6ffc5cd13fe"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "10am FU SENT_OK 14 Sep `1a09f6ffc5cd13fe`"
   },
   {
     "id": "teddington-conservative-club",
@@ -12359,7 +12569,7 @@
     "phone": "+441375645000",
     "needPhone": false,
     "email": "info@bull-pub.co.uk",
-    "replied": "yes — 10 Sep 2026",
+    "replied": "yes — Holly Thu 22 Oct ask",
     "firstPitch": "9 Sep 2026",
     "addedAt": "2026-09-09T10:55:47.630508Z",
     "followUps": "0 · last —",
@@ -12388,10 +12598,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Jake Essex for The Bull?",
         "body": "Hi,\n\nThanks for getting back.\n\nFor The Bull it's £275 for 2 × 1 hour sets with a break in between (2 hour\nshow), or £375 for 3 × 45 minute sets (3 hour show). Own PA, no deposit.\n\nIf you can lock in 4 dates we can do £250 for the 2 hour and £350 for the 3\nhour.\n\nHappy to look at Fridays, Saturdays or Sundays from October. Fri 9, Sat 10\nand Sun 11 Oct are free on our side if any of those work, or send over what\nsuits you and which format you prefer.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-14T12:44:42Z",
+        "from": "info@bull-pub.co.uk",
+        "subject": "Re: Jake Essex for The Bull?",
+        "body": "Hi Natalie,\n\nThank you for your email.\n\nHow much would you charge for a Thursday Evening from 7pm - 9pm? and would Jake be available Thursday 22nd October?\n\nKind regards,\n\nHolly Bennett\n\nThe Bull\nChurch Road\nCorringham\nEssex\nSS17 9AT\nTelephone: 01375 645000\n\nwww.bull-pub.co.uk\nFacebook: thebullcorringham\nInstagram: bullpubcorringham",
+        "msgId": "1a09ff706ead2e9d"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "quoted · Holly Bennett Them 14 Sep `1a09ff706ead2e9d` · Thu 22 Oct 19:00–21:00 ask · on Jake Gate — no Us invent · no email chase from Nat"
   },
   {
     "id": "the-hop-inn",
@@ -13112,7 +13332,7 @@
     ],
     "hasThread": true,
     "tab": "other",
-    "statusNote": "DSN Delay 11 Sep ~16:07 BST — not bounce; Gmail retrying"
+    "statusNote": "DSN Failure 13 Sep permanent — do not resend"
   },
   {
     "id": "little-bay-croydon",
@@ -15387,7 +15607,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "free-nights #4 SENT_OK 1a095dc2a66e4a49 · awaiting"
+    "statusNote": "free-nights #4 SENT_OK 1a095dc2a66e4a49 · awaiting · DSN Delay 13 Sep — not bounce yet; Gmail retrying"
   },
   {
     "id": "victory-club-south-norwood",
