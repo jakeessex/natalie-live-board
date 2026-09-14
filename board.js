@@ -1346,7 +1346,7 @@ var NatNotes = (function(exports) {
   /** One-line green sum-ups on Replied (Call + hot Email). Suggestion chips stay separate. */
   var REPLY_WHY = {
     "walderslade-social-club": "Xmas Eve quote live · hot host",
-    "california-social-ipswich": "Peter Mon before 12",
+    "california-social-ipswich": "Call Peter today before 12",
     "the-muddy-duck": "Awaiting Jaela callback",
     sedir: "Called + dates sent · waiting reply",
     "greenford-conservative-club-john-mitchell": "Mobile digit missing · main no answer",
@@ -1359,7 +1359,7 @@ var NatNotes = (function(exports) {
     "frimley-green-club": "Soft-no push sent · awaiting reply",
     "broomfield-rbl": "Chase sent · waiting committee",
     "imperial-cheshunt-and-waltham-cross-cons": "Chase sent · waiting date",
-    "winchester-club": "Callback Wed ~10:30 · £325 FAR Sat/Sun"
+    "winchester-club": "Jake calls Wed ~10:30 · £325 FAR"
   };
 
   function laneWhyHtml(venue) {

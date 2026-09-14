@@ -2477,12 +2477,12 @@
   {
     "id": "california-social-ipswich",
     "name": "California Social Ipswich",
-    "town": "",
-    "badge": "awaiting",
+    "town": "Ipswich",
+    "badge": "replied-interested",
     "phone": "+441473720633",
     "needPhone": false,
-    "email": "californiaclubsecretary@gmail.com / calisocialsec@outlook.com (Peter Loweman)",
-    "replied": "yes — booker handoff",
+    "email": "calisocialsec@outlook.com",
+    "replied": "Kate → Peter Loweman · Jake calls Peter before 12",
     "firstPitch": "27 Aug 2026",
     "addedAt": "1 Sep 2026",
     "followUps": "1 · last 2026-09-09",
@@ -2532,7 +2532,9 @@
     "hasThread": true,
     "tab": "call",
     "replyLane": "call",
-    "callNote": "Call Peter Mon before 12 (Jake 11–14 Sep). 01473 720633."
+    "callNote": "Call Peter Mon before 12 (Jake 11–14 Sep). 01473 720633.",
+    "statusNote": "Call lane · Call Peter Loweman today before 12 · 01473 720633 · calisocialsec@outlook.com · Kate forwarded · DO NOT miss Mon AM window",
+    "notes": "Also californiaclubsecretary@gmail.com (Kate Hebden). Bar urgent 01473 727625. Jake note: spoke Kate; Peter Mon morning before 12."
   },
   {
     "id": "calverton-wmc",
