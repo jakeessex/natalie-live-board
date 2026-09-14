@@ -595,7 +595,8 @@ var Board = (function(exports) {
 	const CALL_LANE_RANK = {
 		"walderslade-social-club": 1,
 		"california-social-ipswich": 2,
-		"the-muddy-duck": 3
+		"the-muddy-duck": 3,
+		"winchester-club": 4
 	};
 	function callLaneRank(row) {
 		const id = String((row && row.venue && row.venue.id) || "");
@@ -1358,7 +1359,7 @@ var NatNotes = (function(exports) {
     "frimley-green-club": "Soft-no push sent · awaiting reply",
     "broomfield-rbl": "Chase sent · waiting committee",
     "imperial-cheshunt-and-waltham-cross-cons": "Chase sent · waiting date",
-    "winchester-club": "£325 quoted · she sends Sat/Sun"
+    "winchester-club": "Callback Wed ~10:30 · £325 FAR Sat/Sun"
   };
 
   function laneWhyHtml(venue) {
