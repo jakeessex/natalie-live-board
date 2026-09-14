@@ -2482,7 +2482,7 @@
     "phone": "+441473720633",
     "needPhone": false,
     "email": "calisocialsec@outlook.com",
-    "replied": "Kate → Peter Loweman · Jake calls Peter before 12",
+    "replied": "Jake called Mon 14 before 12 · Peter looking at website · get back",
     "firstPitch": "27 Aug 2026",
     "addedAt": "1 Sep 2026",
     "followUps": "1 · last 2026-09-09",
@@ -2531,10 +2531,10 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "replyLane": "call",
+    "replyLane": "email",
     "callNote": "Call Peter Mon before 12 (Jake 11–14 Sep). 01473 720633.",
-    "statusNote": "Call lane · Call Peter Loweman today before 12 · 01473 720633 · calisocialsec@outlook.com · Kate forwarded · DO NOT miss Mon AM window",
-    "notes": "Also californiaclubsecretary@gmail.com (Kate Hebden). Bar urgent 01473 727625. Jake note: spoke Kate; Peter Mon morning before 12."
+    "statusNote": "replied-interested · Jake called Peter Mon 14 before 12 · Peter will look at site and get back · 01473 720633 · waiting reply · no chase yet",
+    "notes": "Peter Loweman calisocialsec@outlook.com. Kate Hebden forwarded. Jake Mon 14 call: Peter reviewing jakeessex.co.uk then reply."
   },
   {
     "id": "calverton-wmc",

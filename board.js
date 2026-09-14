@@ -594,9 +594,8 @@ var Board = (function(exports) {
 	 */
 	const CALL_LANE_RANK = {
 		"walderslade-social-club": 1,
-		"california-social-ipswich": 2,
-		"the-muddy-duck": 3,
-		"winchester-club": 4
+		"the-muddy-duck": 2,
+		"winchester-club": 3
 	};
 	function callLaneRank(row) {
 		const id = String((row && row.venue && row.venue.id) || "");
@@ -1346,7 +1345,7 @@ var NatNotes = (function(exports) {
   /** One-line green sum-ups on Replied (Call + hot Email). Suggestion chips stay separate. */
   var REPLY_WHY = {
     "walderslade-social-club": "Xmas Eve quote live · hot host",
-    "california-social-ipswich": "Call Peter today before 12",
+    "california-social-ipswich": "Peter looking at site — waiting reply",
     "the-muddy-duck": "Awaiting Jaela callback",
     sedir: "Called + dates sent · waiting reply",
     "greenford-conservative-club-john-mitchell": "Mobile digit missing · main no answer",
