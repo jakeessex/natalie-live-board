@@ -14967,11 +14967,11 @@
     "id": "the-greyhound-hotel",
     "name": "The Greyhound Hotel",
     "town": "Carshalton",
-    "badge": "awaiting",
+    "badge": "quoted",
     "phone": "+442086471511",
     "needPhone": false,
     "email": "greyhound@youngs.co.uk",
-    "replied": "no",
+    "replied": "Annemarie asked price list · Us quoted FAR Sat/Sun £285/£385",
     "firstPitch": "11 Sep 2026",
     "addedAt": "2026-09-11T14:44:27Z",
     "followUps": "0 · last —",
@@ -14983,11 +14983,33 @@
         "at": "2026-09-11T14:39:33Z",
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex for The Greyhound Hotel?",
-        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Greyhound Carshalton's entertainment nights — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Greyhound Carshalton's entertainment nights — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a090d3456c9177c"
+      },
+      {
+        "side": "them",
+        "label": "Reply",
+        "at": "2026-09-11T21:06:09Z",
+        "from": "Annemarie Mc Carthy <greyhound@youngs.co.uk>",
+        "subject": "RE: Jake Essex for The Greyhound Hotel?",
+        "body": "Dear Jake\nDo you have a price list ?\n\nKind regards,\n\nAnnemarie Mc Carthy\nGeneral Manager\n\nT. 02086471511\nE. greyhound@youngs.co.uk\nHigh Street, Carshalton\nSurrey, SM5 3PE",
+        "msgId": "1a0924ad311165b7"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-14T07:31:31Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for The Greyhound Hotel?",
+        "body": "Hi Annemarie,\n\nThanks for getting back — here's a clear price list for Jake at The\nGreyhound.\n\nSaturdays or Sundays: £285 cash for 2 × 1 hour sets, or £385 for 3 × 45.\nOwn PA, no deposit.\n\nIf you book a few nights we can do £250 or £350.\n\nIf a Saturday or Sunday looks useful, reply here and I'll check the diary.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a09ed40bafa096e"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "close",
+    "replyLane": "email",
+    "statusNote": "quoted · Annemarie GM · Us price list SENT_OK 1a09ed40bafa096e · FAR Sat/Sun £285 2×1hr / £385 3×45 · deal £250/£350 · await date",
+    "notes": "Young's · High Street Carshalton SM5 3PE · Annemarie Mc Carthy · 020 8647 1511 · FAR no Friday · diary before dates · no fee restate once she agrees"
   },
   {
     "id": "duke-s-head",
