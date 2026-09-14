@@ -2530,7 +2530,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "call",
+    "callNote": "Call Peter Mon before 12 (Jake 11–14 Sep). 01473 720633."
   },
   {
     "id": "calverton-wmc",
