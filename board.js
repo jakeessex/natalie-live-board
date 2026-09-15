@@ -528,7 +528,12 @@ var Board = (function(exports) {
 			const atB = b.venue.firstPitch || b.lastTouchAt || "";
 			return atA.localeCompare(atB);
 		});
-		if (tab === "locked") return list.sort((a, b) => Number(b.fee || 0) - Number(a.fee || 0));
+		if (tab === "locked") return list.sort((a, b) => {
+			const da = String(a.venue.lockedDate || "");
+			const db = String(b.venue.lockedDate || "");
+			if (da !== db) return da.localeCompare(db);
+			return String(a.venue.name || "").localeCompare(String(b.venue.name || ""));
+		});
 		return list.sort((a, b) => a.venue.name.localeCompare(b.venue.name));
 	}
 	function sortWorking(rows) {

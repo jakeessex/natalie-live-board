@@ -12009,7 +12009,9 @@
     "hasThread": false,
     "tab": "booked",
     "lockedFee": 400,
-    "lockedNights": 2
+    "lockedNights": 2,
+    "lockedDate": "2027-04-24",
+    "statusNote": "OWN LOCK Sat 24 Apr 2027 + Sat 9 Oct 2027 £200 each (£400) · Steve SMS"
   },
   {
     "id": "the-lion-inn-hotel",
@@ -16865,10 +16867,10 @@
     "messages": [],
     "hasThread": false,
     "tab": "booked",
-    "lockedFee": 359,
+    "lockedFee": 350,
     "lockedNights": 1,
     "lockedDate": "2026-11-14",
-    "statusNote": "OWN LOCK Sat 14 Nov 2026 Magpie Events Mildenhall £359 · 30 Market Place IP28 7EF · Nathalie Magpie Events LDN 07523 924644 WhatsApp · diary i8js5d0ndlmkfp1n43fq9ch48s · not Willz"
+    "statusNote": "OWN LOCK Sat 14 Nov 2026 Magpie Events Mildenhall £350 · 30 Market Place IP28 7EF · Nathalie Magpie Events LDN 07523 924644 WhatsApp · diary i8js5d0ndlmkfp1n43fq9ch48s · not Willz"
   },
   {
     "id": "volunteer",
