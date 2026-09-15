@@ -17577,7 +17577,7 @@
     "town": "Herne Bay",
     "email": "hbexservice.members@gmail.com",
     "phone": null,
-    "badge": "awaiting",
+    "badge": "quoted",
     "tab": "call",
     "firstPitch": "15 Sep 2026",
     "subject": "Jake Essex for Herne Bay Ex-Servicemen's Club?",
@@ -17591,14 +17591,33 @@
         "subject": "Jake Essex for Herne Bay Ex-Servicemen's Club?",
         "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Herne Bay Ex-Servicemen's Club's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a0a634abae963ba"
+      },
+      {
+        "side": "them",
+        "label": "Reply",
+        "at": "2026-09-15T18:44:16Z",
+        "from": "Debs <hbexservice.members@gmail.com>",
+        "subject": "Re: Jake Essex for Herne Bay Ex-Servicemen's Club?",
+        "body": "Good evening,\n\nI am contacting you on behalf of the entertainment manager. He was\nwondering what your prices are because we are a small independent club and\nhave to watch our budget.\n\nAlso does Jake sing anything past the 70’s?\n\nRegards\nDebs",
+        "msgId": "1a0a6627f061134e"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-15T19:04:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Herne Bay Ex-Servicemen's Club?",
+        "body": "Hi Debs,\n\nThanks for getting back to me.\n\nJake sticks to the 50s, 60s and into the 70s. That's the show. Nothing past\nthat. He's not an impersonator either. He's himself: classics without the\ncorny act. Proper breath of fresh air for a club night, and venues tell us\nhe becomes a favourite pretty quick.\n\nFor other ex-servicemen's clubs we do the same rate: if you book a few\nSaturdays or Sundays, it's £250 cash each for 2 × 1 hour. Roughly that's\none hour of non-Elvis classics, then one hour of Elvis.\n\nOwn PA, no deposit. Happy to look at dates when you've got a few Saturdays\nor Sundays in mind.\n\nNatalie\nwww.jakeessex.co.uk",
+        "msgId": "1a0a674649d36f83"
       }
     ],
     "addedAt": "2026-09-15T18:02:16Z",
     "followUps": 0,
-    "replied": null,
+    "replied": "Debs · price ask · Us multi Sat/Sun £250 cash 2×1hr quoted",
     "needPhone": true,
-    "statusNote": "wed-likeness partial SENT_OK 1a0a634abae963ba · awaiting · FAR",
-    "notes": "Wed likeness cold wave partial 9 (Galaxy pause)"
+    "statusNote": "quoted · Debs for ents manager · Us SENT_OK 1a0a674649d36f83 · multi Sat/Sun £250 cash 2×1hr · 50s–70s only · await dates · Haggle owns close",
+    "notes": "Herne Bay Ex-Servicemen's Club · hbexservice.members@gmail.com · Debs. FAR multi rate £250. Haggle owns close.",
+    "replyLane": "email"
   },
   {
     "id": "horley-district-constitutional-club",
