@@ -5148,12 +5148,12 @@
   {
     "id": "kinson-cons",
     "name": "Kinson Cons",
-    "town": "",
-    "badge": "quoted",
+    "town": "Bournemouth BH10 7AR",
+    "badge": "locked",
     "phone": "+441202572719",
     "needPhone": false,
     "email": "entertainmentkinsoncon@outlook.com",
-    "replied": "Steve Cole · Us FAR quote £325/£450/£565 + 4-date deal + Sat list",
+    "replied": "LOCKED Sat 6 Feb + Sat 21 Aug 2027 · 2×1hr · £650 (£325×2)",
     "firstPitch": "28 Aug 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
     "followUps": "2 · last 15 Sep 2026",
@@ -5192,13 +5192,34 @@
         "subject": "Re: Live music — Jake Essex",
         "body": "Hi Steve,\n\nThanks for getting back.\n\nFor a Saturday or Sunday at Kinson it is £325 cash for 2 × 1 hour sets,\n£450 for 3 × 45, or £565 for 4 × 45. Own PA, no deposit. If you book 4\ndates and lock them in, we can do a deal on the fee.\n\nFree Saturdays through 2027 on our side:\n\nSaturday 2 January\nSaturday 9 January\nSaturday 6 February\nSaturday 13 February\nSaturday 27 February\nSaturday 6 March\nSaturday 27 March\nSaturday 3 April\nSaturday 10 April\nSaturday 8 May\nSaturday 22 May\nSaturday 5 June\nSaturday 26 June\nSaturday 3 July\nSaturday 24 July\nSaturday 31 July\nSaturday 14 August\nSaturday 21 August\nSaturday 11 September\nSaturday 25 September\nSaturday 16 October\nSaturday 6 November\nSaturday 20 November\nSaturday 11 December\nSaturday 18 December\n\nIf one of those works, or you have another Saturday or Sunday in mind,\nreply here and I will check the diary and confirm.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a0a446040ac5a63"
+      },
+      {
+        "side": "them",
+        "label": "Reply",
+        "at": "2026-09-15T19:02:35Z",
+        "from": "Steve Cole <entertainmentkinsoncon@outlook.com>",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Good Evening,\n\nYes please can i book;\n\nSaturday 6th February\n\nSaturday 21st August\n\nfor 2 x 1 hour sets please\n\nMany thanks\n\nSteve",
+        "msgId": "1a0a6731f346a31e"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-15T19:25:56Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi Steve,\n\nThanks for booking him.\n\n6th February 2027 confirmed & in the diary, and 21st August 2027 confirmed\n& in the diary. Both as 2 × 1 hour.\n\nI've got 1394-1396 Wimborne Road, Bournemouth BH10 7AR as the address.\nPlease confirm.\n\nWhat time would you like the show to start on each night?\n\nIf you've got any other Saturdays or Sundays later, send them over and I'll\ncheck the diary.\n\nNatalie\nwww.jakeessex.co.uk",
+        "msgId": "1a0a68876f788f8d"
       }
     ],
     "hasThread": true,
-    "tab": "call",
-    "statusNote": "quoted/sitting · Steve Cole · Us SENT_OK 1a0a446040ac5a63 · FAR Sat/Sun £325/£450/£565 · 4-date deal · free Sats 2027 listed · await pick",
-    "replyLane": "email",
-    "notes": "Kinson Conservative Club · FAR — Sat/Sun only on quote. Haggle owns close."
+    "tab": "booked",
+    "statusNote": "OWN LOCK Sat 6 Feb 2027 + Sat 21 Aug 2027 · 2×1hr each · £650 cash (£325×2) · 1394-1396 Wimborne Road BH10 7AR (awaiting address + start times) · Them 1a0a6731f346a31e · Us 1a0a68876f788f8d · never Choice-mail without Jake OK",
+    "replyLane": null,
+    "notes": "Steve Cole · Kinson Cons · FAR Dorset. Soft door other Sat/Sun. Haggle closed.",
+    "lockedFee": 650,
+    "lockedDate": "2027-02-06",
+    "lockedNights": 2
   },
   {
     "id": "la-quinta",
