@@ -593,9 +593,8 @@ var Board = (function(exports) {
 	 *  Sedir + Greenford John → replyLane email (already called / broken mobile).
 	 */
 	const CALL_LANE_RANK = {
-		"walderslade-social-club": 1,
-		"the-muddy-duck": 2,
-		"winchester-club": 3
+		"the-muddy-duck": 1,
+		"winchester-club": 2
 	};
 	function callLaneRank(row) {
 		const id = String((row && row.venue && row.venue.id) || "");
