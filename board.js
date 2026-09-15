@@ -451,6 +451,11 @@ var Board = (function(exports) {
 		return null;
 	}
 	function displayFee(venue) {
+		// Jake 15 Sep: locked rows always show lockedFee (never a stale thread or note fee).
+		if (isLockedRecord(venue)) {
+			const locked = Number(venue.lockedFee || 0);
+			if (locked) return locked;
+		}
 		const thread = feeOnThread(venue);
 		if (thread) return thread;
 		const stored = Number(venue.lockedFee || 0);
