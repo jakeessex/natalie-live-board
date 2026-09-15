@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-15",
   "source": "JAKE ESSEX GIGS @ CL",
   "gigs": [
     {
@@ -164,6 +164,17 @@
       "venue": "",
       "status": "held",
       "source": "cl"
+    },
+    {
+      "date": "2026-11-14",
+      "venue": "Magpie Events Mildenhall",
+      "town": "Mildenhall",
+      "postcode": "IP28 7EF",
+      "start": "",
+      "finish": "",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £359 · 30 Market Place Mildenhall · Nathalie Magpie Events LDN 07523 924644 · diary i8js5d0ndlmkfp1n43fq9ch48s · NEVER free"
     },
     {
       "date": "2026-11-21",
