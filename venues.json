@@ -1921,15 +1921,15 @@
     "id": "barrow-upon-soar-cons",
     "name": "Barrow Upon Soar Cons",
     "town": "Barrow upon Soar",
-    "badge": "awaiting",
+    "badge": "quoted",
     "phone": "+441509768600",
     "needPhone": false,
-    "email": "info@barrowconservativeclub.co.uk",
-    "replied": "no",
+    "email": "dsarmiger1@gmail.com",
+    "replied": "Danielle · fee ask · Us FAR £300 cash/£330 books 2h or £450 3h",
     "firstPitch": "1 Sep 2026",
     "addedAt": "27 Aug 2026",
     "followUps": "0 · last —",
-    "subject": "Live music — Jake Essex",
+    "subject": "Re: Live music — Jake Essex",
     "messages": [
       {
         "side": "us",
@@ -1938,10 +1938,31 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi, I'm Natalie, I look after bookings for Jake Essex.\n\nEvery weekend you put live entertainment on at Bardswell Close, including\nSaturday rock and roll.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act. No impersonations, no jumpsuit, no corny\ngimmicks. The night has a shape: raw 50s through to 70s Vegas, plus Darin,\nDion, Holly, Orbison, Sinatra. Real voice. Own PA, fully self-contained, no\ndeposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027, 2\n× 45 or 3 × 45; if a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "them",
+        "label": "Reply",
+        "at": "2026-09-15T14:42:30Z",
+        "from": "Danielle Armiger <dsarmiger1@gmail.com>",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "What’s the fee please?",
+        "msgId": "1a0a58529c05fbc1"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-15T15:14:31Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nThanks for getting back.\n\nFor a Saturday or Sunday at Barrow it is £300 cash for 2 hours (£330\nbooks), or £450 for 3 hours. Own PA, no deposit.\n\nIf a date works, reply here and I will check the diary and confirm.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0a5a249c4a0d5e"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email",
+    "statusNote": "quoted · Danielle Armiger dsarmiger1@gmail.com · Us SENT_OK 1a0a5a249c4a0d5e · FAR Sat/Sun £300 cash (£330 books) 2h / £450 3h · club info@ also on thread · Haggle owns close",
+    "notes": "Barrow Upon Soar Cons · also info@barrowconservativeclub.co.uk CC. FAR Sat/Sun. Haggle owns close."
   },
   {
     "id": "basildon-post-club",
