@@ -664,10 +664,17 @@ var Board = (function(exports) {
 				name: v.name,
 				fee,
 				nights: n,
-				id: v.id
+				id: v.id,
+				lockedDate: String(v.lockedDate || "").slice(0, 10)
 			});
 		}
-		rows.sort((a, b) => b.fee - a.fee);
+		// Jake 15 Sep: Nat locked list by gig date ascending (not fee).
+		rows.sort((a, b) => {
+			const da = a.lockedDate || "";
+			const db = b.lockedDate || "";
+			if (da !== db) return da.localeCompare(db);
+			return String(a.name || "").localeCompare(String(b.name || ""));
+		});
 		const pending = venues.filter((v) => Number(v.pendingLockFee || 0) > 0 && !isLockedRecord(v)).map((v) => ({
 			name: v.name,
 			fee: Number(v.pendingLockFee),
@@ -1588,7 +1595,8 @@ var NatNotes = (function(exports) {
     if (!cashOpen) return html;
     html += '<div class="cash-break"><b>Confirmed bookings</b>';
     stats.rows.forEach(function (r) {
-      html += '<div class="row"><span>' + esc(r.name) + (r.nights > 1 ? " · " + r.nights + " nights" : "") +
+      var when = r.lockedDate ? " · " + r.lockedDate : "";
+      html += '<div class="row"><span>' + esc(r.name) + when + (r.nights > 1 ? " · " + r.nights + " nights" : "") +
         "</span><span>" + B.gbp(r.fee) + "</span></div>";
     });
     html += '<div class="sum"><span>Total locked</span><span>' + B.gbp(stats.cash) + "</span></div>";
