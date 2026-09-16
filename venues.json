@@ -18202,15 +18202,15 @@
     "id": "coulsdon-victoria-social-club",
     "name": "Coulsdon Victoria Social Club",
     "town": "Coulsdon (Surrey)",
-    "badge": "awaiting",
+    "badge": "quoted",
     "phone": null,
     "needPhone": true,
     "email": "coulsdonvictoriaclub@gmail.com",
-    "replied": "no",
+    "replied": true,
     "firstPitch": "16 Sep 2026",
     "addedAt": "2026-09-16T12:15:37.718Z",
     "followUps": "0 · last —",
-    "subject": "Jake Essex for Coulsdon Victoria Social Club?",
+    "subject": "Re: Jake Essex for Coulsdon Victoria Social Club?",
     "messages": [
       {
         "side": "us",
@@ -18220,12 +18220,27 @@
         "subject": "Jake Essex for Coulsdon Victoria Social Club?",
         "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Coulsdon Victoria Social Club's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a0aa129e14a1e5a"
+      },
+      {
+        "side": "them",
+        "msgId": "1a0aa3371bd8ef49",
+        "at": "2026-09-16T12:31:20Z",
+        "subject": "Re: Jake Essex for Coulsdon Victoria Social Club?",
+        "body": "Hi Natalie\nWhat would he charge for a couple of hours on a Sunday. Starting at 2pm with small break before the last Hour\n\nRegards\nVictoria club"
+      },
+      {
+        "side": "us",
+        "msgId": "1a0aa4307d026920",
+        "at": "2026-09-16T12:48:34Z",
+        "subject": "Re: Jake Essex for Coulsdon Victoria Social Club?",
+        "body": "Hi,\n\nThanks for getting back.\n\nFor a Sunday afternoon at Coulsdon it's £325 cash for 2 × 1 hour, or £450 for 3 × 1 hour — that short break before the last hour works fine. Own PA, no deposit.\n\nIf you book four dates and lock them in, we can do £275 for 2 × 1 hour and £400 for 3 × 1 hour on each night.\n\nFree Sundays from now through December 2027:\n\nRest of 2026:\n11 Oct, 25 Oct, 22 Nov, 29 Nov, 6 Dec, 20 Dec, 27 Dec\n\n2027:\nJan: 3, 10, 17, 24, 31\nFeb: 7, 14, 28\nMar: 7, 14, 21, 28\nApr: 4, 11, 18\nMay: 9, 16, 23\nJun: 6, 13, 20, 27\nJul: 4, 11, 25\nAug: 1, 8, 15, 22, 29\nSep: 5, 12, 19, 26\nOct: 3, 17, 31\nNov: 7, 14, 28\nDec: 5, 12, 19, 26\n\nHappy to pencil any of those that work for you.\n\nNatalie\nwww.jakeessex.co.uk"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa129e14a1e5a · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "quoted · Victoria club Sunday fee ask · Us SENT_OK 1a0aa4307d026920 · £325 cash 2×1hr / £450 3×1hr · 4 dates → £275/£400 · free Sundays through Dec 2027 · Haggle owns close",
+    "notes": "Them 1a0aa3371bd8ef49 Sunday 2pm couple hours + break. Us quote £325/£450 + multi-deal £275/£400. Thread 1a0aa120650d833e. FAR Sunday.",
+    "replyLane": "email"
   },
   {
     "id": "tooting-conservative-club",
