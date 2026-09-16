@@ -213,7 +213,7 @@ var Board = (function(exports) {
 				if (two && plausibleName(two[1])) return two[1];
 			}
 		}
-		const replied = venue.replied || "";
+		const replied = String(venue.replied || "");
 		const paren = replied.match(/\(([^)]+)\)/);
 		if (paren) {
 			const token = paren[1].split(/[\s,]/)[0];
@@ -505,7 +505,35 @@ var Board = (function(exports) {
 		};
 	}
 	function rankAll(venues, notes = {}, now = /* @__PURE__ */ new Date()) {
-		return venues.map((v) => rankVenue(v, notes, now));
+		const out = [];
+		for (const v of venues) {
+			try {
+				out.push(rankVenue(v, notes, now));
+			} catch (e) {
+				out.push({
+					venue: v,
+					tab: "call",
+					stale: false,
+					daysSilent: null,
+					daysSinceInbound: null,
+					lastSide: null,
+					lastTouchAt: v && v.firstPitch || null,
+					lastCalledAt: null,
+					who: null,
+					sayThis: "Hi, Natalie for Jake Essex — live 50s to 70s, own PA. Have you got a Saturday this year or 2027?",
+					factLine: null,
+					fee: null,
+					quotedFee: null,
+					threadFee: null,
+					feeMismatch: null,
+					website: null,
+					reason: "safe fallback",
+					called: false,
+					dropped: false
+				});
+			}
+		}
+		return out;
 	}
 	function closeScore(row) {
 		if (row.venue.pendingLockFee) return 1e4;
