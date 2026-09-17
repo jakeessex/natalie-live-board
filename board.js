@@ -1182,7 +1182,10 @@ var NatNotes = (function(exports) {
     $("gate").classList.add("ok");
     $("app").classList.add("show");
     try { sessionStorage.setItem("natalie-ok", "1"); } catch (e) {}
+    // Fresh unlock/open — allow £5k congrats again this open.
+    cash5kFiredThisOpen = false;
     render();
+    celebrate5kOnUnlock();
   }
 
   function fireEgg() {
@@ -1621,28 +1624,34 @@ var NatNotes = (function(exports) {
     return html;
   }
 
-  var CASH_5K_KEY = "natalie-cash-5k-v1";
-  function maybeCelebrate5k(cash) {
-    if (!(cash >= 5000)) return;
-    try {
-      if (localStorage.getItem(CASH_5K_KEY) === "1") return;
-      localStorage.setItem(CASH_5K_KEY, "1");
-    } catch (e) {}
+  // Jake 17 Sep HARD: £5k congrats on UNLOCK (gate success), not a buried one-shot.
+  // Fires every authentic openBoard while ticker ≥ £5000. Mid-session re-renders do not re-fire.
+  var cash5kFiredThisOpen = false;
+  function celebrate5kOnUnlock() {
+    try { localStorage.removeItem("natalie-cash-5k-v1"); } catch (e) {}
+    if (cash5kFiredThisOpen) return;
+    var stats = B.lockedCash(VENUES);
+    if (!(stats.cash >= 5000)) return;
+    cash5kFiredThisOpen = true;
+    var old = document.getElementById("cash-5k-party");
+    if (old && old.parentNode) old.parentNode.removeChild(old);
     var layer = document.createElement("div");
     layer.id = "cash-5k-party";
     layer.setAttribute("aria-live", "polite");
     layer.style.cssText = "position:fixed;inset:0;z-index:9999;pointer-events:none;overflow:hidden;";
     var banner = document.createElement("div");
-    banner.textContent = "£5k locked — Nat list";
-    banner.style.cssText = "position:absolute;left:50%;top:18%;transform:translateX(-50%);background:#111;color:#4cd964;border:1px solid #2a2a2e;border-radius:14px;padding:12px 18px;font:700 16px/1.2 -apple-system,system-ui,sans-serif;box-shadow:0 10px 40px rgba(0,0,0,.45);";
+    banner.innerHTML = "<div style=\"font-size:18px;margin:0 0 6px\">Congrats — £5k locked</div>" +
+      "<div style=\"font-size:14px;font-weight:600;color:#cfcfcf\">" + B.gbp(stats.cash) + " / " + stats.nights +
+      " night" + (stats.nights === 1 ? "" : "s") + "</div>";
+    banner.style.cssText = "position:absolute;left:50%;top:16%;transform:translateX(-50%);background:#111;color:#4cd964;border:1px solid #2a2a2e;border-radius:16px;padding:16px 22px;font:700 16px/1.25 -apple-system,system-ui,sans-serif;box-shadow:0 12px 44px rgba(0,0,0,.5);text-align:center;min-width:220px;";
     layer.appendChild(banner);
     var colors = ["#4cd964", "#2c64f6", "#ff9f0a", "#ff375f", "#bf5af2", "#64d2ff"];
-    for (var i = 0; i < 80; i++) {
+    for (var i = 0; i < 100; i++) {
       var bit = document.createElement("span");
       var left = Math.random() * 100;
-      var delay = Math.random() * 0.6;
-      var dur = 1.6 + Math.random() * 1.4;
-      var size = 6 + Math.random() * 8;
+      var delay = Math.random() * 0.7;
+      var dur = 1.7 + Math.random() * 1.5;
+      var size = 6 + Math.random() * 9;
       bit.style.cssText = "position:absolute;top:-12px;left:" + left + "%;width:" + size + "px;height:" + (size * 0.4) + "px;background:" + colors[i % colors.length] + ";border-radius:2px;opacity:.95;transform:rotate(" + (Math.random() * 360) + "deg);animation:cash5kFall " + dur + "s linear " + delay + "s forwards;";
       layer.appendChild(bit);
     }
@@ -1655,7 +1664,7 @@ var NatNotes = (function(exports) {
     document.body.appendChild(layer);
     setTimeout(function () {
       if (layer.parentNode) layer.parentNode.removeChild(layer);
-    }, 4200);
+    }, 4800);
   }
 
   function cashHtml(stats) {
@@ -1702,7 +1711,6 @@ var NatNotes = (function(exports) {
       if ($(ids[0])) $(ids[0]).textContent = B.gbp(stats.cash);
       if ($(ids[1])) $(ids[1]).textContent = stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " locked";
     });
-    maybeCelebrate5k(stats.cash);
   }
 
   function renderDetail(id) {
