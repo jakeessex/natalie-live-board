@@ -1975,9 +1975,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Danielle Armiger dsarmiger1@gmail.com · Us SENT_OK 1a0a5a249c4a0d5e · FAR Sat/Sun £300 cash (£330 books) 2h / £450 3h · club info@ also on thread · Haggle owns close · 10am FU SENT_OK 15 Sep",
-    "replyLane": "email",
-    "notes": "Barrow Upon Soar Cons · also info@barrowconservativeclub.co.uk CC. FAR Sat/Sun. Haggle owns close."
+    "statusNote": "quoted · Danielle Armiger dsarmiger1@gmail.com · Us SENT_OK 1a0a5a249c4a0d5e · FAR Sat/Sun £300 cash (£330 books) 2h / £450 3h · club info@ also on thread · Haggle owns close · 10am FU SENT_OK 15 Sep"
   },
   {
     "id": "basildon-post-club",
@@ -2621,10 +2619,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "replied-interested · Jake called Peter Mon 14 before 12 · Peter will look at site and get back · 01473 720633 · waiting reply · no chase yet",
-    "replyLane": "email",
-    "notes": "Peter Loweman calisocialsec@outlook.com. Kate Hebden forwarded. Jake Mon 14 call: Peter reviewing jakeessex.co.uk then reply.",
-    "callNote": "Call Peter Mon before 12 (Jake 11–14 Sep). 01473 720633."
+    "statusNote": "replied-interested · Jake called Peter Mon 14 before 12 · Peter will look at site and get back · 01473 720633 · waiting reply · no chase yet"
   },
   {
     "id": "calverton-wmc",
@@ -5210,8 +5205,7 @@
     "lockedFee": 650,
     "lockedNights": 2,
     "lockedDate": "2027-02-06",
-    "statusNote": "OWN LOCK Sat 6 Feb 2027 + Sat 21 Aug 2027 · 2×1hr each · £650 cash (£325×2) · 1394-1396 Wimborne Road BH10 7AR (awaiting address + start times) · Them 1a0a6731f346a31e · Us 1a0a68876f788f8d · never Choice-mail without Jake OK",
-    "notes": "Steve Cole · Kinson Cons · FAR Dorset. Soft door other Sat/Sun. Haggle closed."
+    "statusNote": "OWN LOCK Sat 6 Feb 2027 + Sat 21 Aug 2027 · 2×1hr each · £650 cash (£325×2) · 1394-1396 Wimborne Road BH10 7AR (awaiting address + start times) · Them 1a0a6731f346a31e · Us 1a0a68876f788f8d · never Choice-mail without Jake OK"
   },
   {
     "id": "la-quinta",
@@ -8157,8 +8151,7 @@
     "hasThread": true,
     "tab": "call",
     "statusNote": "quoted · Call lane · Jake called Mon 14 Sep · Sandra callback Wed ~10:30 (half 10) · £325 cash 2h FAR Sat/Sun · DO NOT email chase",
-    "replyLane": "call",
-    "notes": "Sandra Murray SMArundell@aol.com · club secretary@thewinchesterclub.org.uk · FAR no Friday · Jake phone Mon 14: callback Wed ~10:30. Haggle owns close — no email chase while Call live."
+    "replyLane": "call"
   },
   {
     "id": "wisbech-ex-services",
@@ -12831,9 +12824,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Holly Bennett · £250 Thu evening 7–9pm · Thu 22 Oct free to pencil · Us SENT_OK 1a0a0f3d6bc7b3b1 · replyLane email · await pencil",
-    "replyLane": "email",
-    "notes": "The Bull Church Road Corringham SS17 9AT · 01375 645000 · Holly Bennett. Haggle owns close."
+    "statusNote": "quoted · Holly Bennett · £250 Thu evening 7–9pm · Thu 22 Oct free to pencil · Us SENT_OK 1a0a0f3d6bc7b3b1 · replyLane email · await pencil"
   },
   {
     "id": "the-hop-inn",
@@ -13502,8 +13493,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a02c716fb20e5 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a02c716fb20e5 · awaiting"
   },
   {
     "id": "king-of-the-south",
@@ -14230,7 +14220,7 @@
     "town": "Chatham",
     "badge": "locked",
     "phone": "+447951648922",
-    "needPhone": true,
+    "needPhone": false,
     "email": "bar.manager@waldersladeclub.co.uk",
     "replied": "yes — Jodie Xmas Eve LOCK",
     "firstPitch": "10 Sep 2026",
@@ -14284,8 +14274,7 @@
     "lockedFee": 300,
     "lockedNights": 1,
     "lockedDate": "2026-12-24",
-    "statusNote": "OWN LOCK Thu 24 Dec 2026 Christmas Eve £300 · show 8pm · arrive ~7:30 · 274 Walderslade Road Chatham ME5 0PA (awaiting Jodie address confirm) · Them 1a0a5be3447ddf89 · Us 1a0a6038f91e4a0c · soft door other dates",
-    "notes": "Jodie Helene Bar Manager 07951 648922 · bar.manager@waldersladeclub.co.uk. Address confirm pending."
+    "statusNote": "OWN LOCK Thu 24 Dec 2026 Christmas Eve £300 · show 8pm · arrive ~7:30 · 274 Walderslade Road Chatham ME5 0PA (awaiting Jodie address confirm) · Them 1a0a5be3447ddf89 · Us 1a0a6038f91e4a0c · soft door other dates"
   },
   {
     "id": "sturdee-social-and-bowling-club",
@@ -15395,8 +15384,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a046be5e847cb · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a046be5e847cb · awaiting"
   },
   {
     "id": "manor-hotel-and-suites",
@@ -15518,8 +15506,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a539458ca632c · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a539458ca632c · awaiting"
   },
   {
     "id": "the-windsor-castle",
@@ -16309,8 +16296,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a02aab862a738 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a02aab862a738 · awaiting"
   },
   {
     "id": "the-royal-oak-85a665",
@@ -16337,8 +16323,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a02c716fb20e5 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a02c716fb20e5 · awaiting"
   },
   {
     "id": "man-of-kent-ale-house",
@@ -16365,8 +16350,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a02e2ba7fa3e2 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a02e2ba7fa3e2 · awaiting"
   },
   {
     "id": "cotton-mill-micro-pub",
@@ -16393,8 +16377,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a02f89bcd7290 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a02f89bcd7290 · awaiting"
   },
   {
     "id": "the-railway",
@@ -16421,8 +16404,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a030f841876fa · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a030f841876fa · awaiting"
   },
   {
     "id": "the-nag-s-head",
@@ -16449,8 +16431,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a032bb3777cdd · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a032bb3777cdd · awaiting"
   },
   {
     "id": "the-chequers",
@@ -16477,8 +16458,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a035e482c6da9 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a035e482c6da9 · awaiting"
   },
   {
     "id": "inn-on-the-green",
@@ -16505,8 +16485,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a0396461ec4a7 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a0396461ec4a7 · awaiting"
   },
   {
     "id": "the-bread-and-cheese",
@@ -16533,8 +16512,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a03b15ff9b9ad · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a03b15ff9b9ad · awaiting"
   },
   {
     "id": "fatty-s-bar",
@@ -16561,8 +16539,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a03c9f0dbac6c · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a03c9f0dbac6c · awaiting"
   },
   {
     "id": "the-anchor",
@@ -16589,8 +16566,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a03e8804d4581 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a03e8804d4581 · awaiting"
   },
   {
     "id": "the-oakwood",
@@ -16617,8 +16593,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a040bbeda7b94 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a040bbeda7b94 · awaiting"
   },
   {
     "id": "the-loyal-toast",
@@ -16645,8 +16620,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a042bfd7eb47f · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a042bfd7eb47f · awaiting"
   },
   {
     "id": "the-shepherd-and-dog",
@@ -16673,8 +16647,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a044a4bd091d9 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a044a4bd091d9 · awaiting"
   },
   {
     "id": "the-rose-and-crown-a90e2f",
@@ -16701,8 +16674,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a046be5e847cb · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a046be5e847cb · awaiting"
   },
   {
     "id": "peggy-s-music-bar",
@@ -16729,8 +16701,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a0483802a4321 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a0483802a4321 · awaiting"
   },
   {
     "id": "shoeburyness-hotel",
@@ -16757,8 +16728,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a04b5214a40f0 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a04b5214a40f0 · awaiting"
   },
   {
     "id": "chinnery-s",
@@ -16785,8 +16755,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a04d60fac9f04 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a04d60fac9f04 · awaiting"
   },
   {
     "id": "hangar-black-box-brewery",
@@ -16813,8 +16782,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a04f3f8c44199 · awaiting",
-    "notes": "LOCAL SE cold wave Mon 14 Sep 2pm"
+    "statusNote": "Natalie 2pm Mon 14 SENT_OK 1a0a04f3f8c44199 · awaiting"
   },
   {
     "id": "ten-green-bottles",
@@ -16832,8 +16800,7 @@
     "messages": [],
     "hasThread": false,
     "tab": "other",
-    "statusNote": "Natalie 2pm Mon 14 BOUNCE Address not found · info@ten-green-bottles.co.uk · do not retry · mailer-daemon 1a0a049ab0379d4c",
-    "notes": "Mon 14 Natalie 2pm LOCAL SE — Address not found bounce. No Us Sent on Conversation."
+    "statusNote": "Natalie 2pm Mon 14 BOUNCE Address not found · info@ten-green-bottles.co.uk · do not retry · mailer-daemon 1a0a049ab0379d4c"
   },
   {
     "id": "magpie-events-mildenhall",
@@ -16872,8 +16839,7 @@
     "messages": [],
     "hasThread": false,
     "tab": "other",
-    "statusNote": "Natalie 2pm Tue 15 BOUNCE · Address not found · do not retry · daemon 1a0a5327f86584f5",
-    "notes": "Tue 15 Natalie 2pm — Address not found bounce. Never retry. No Us Sent on Conversation."
+    "statusNote": "Natalie 2pm Tue 15 BOUNCE · Address not found · do not retry · daemon 1a0a5327f86584f5"
   },
   {
     "id": "corner-pin",
@@ -16900,8 +16866,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a5345586f35fa · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a5345586f35fa · awaiting"
   },
   {
     "id": "running-horses",
@@ -16928,8 +16893,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a535f99978a31 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a535f99978a31 · awaiting"
   },
   {
     "id": "long-haul",
@@ -16956,8 +16920,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a5378460bbd86 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a5378460bbd86 · awaiting"
   },
   {
     "id": "duke-s-head-thedukesheadcrayford",
@@ -16984,8 +16947,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a539458ca632c · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a539458ca632c · awaiting"
   },
   {
     "id": "junction",
@@ -17012,8 +16974,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a53b24f500028 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a53b24f500028 · awaiting"
   },
   {
     "id": "george-dragon",
@@ -17040,8 +17001,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a53cf4fbabca0 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a53cf4fbabca0 · awaiting"
   },
   {
     "id": "eastbrook",
@@ -17068,8 +17028,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a540174d26e48 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a540174d26e48 · awaiting"
   },
   {
     "id": "ivy-house",
@@ -17096,8 +17055,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a5420f8580d76 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a5420f8580d76 · awaiting"
   },
   {
     "id": "dacre-arms",
@@ -17124,8 +17082,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a5446e30576ab · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a5446e30576ab · awaiting"
   },
   {
     "id": "mayflower",
@@ -17143,8 +17100,7 @@
     "messages": [],
     "hasThread": false,
     "tab": "other",
-    "statusNote": "Natalie 2pm Tue 15 BOUNCE · Address not found · do not retry · daemon 1a0a547b4f4caaf2",
-    "notes": "Tue 15 Natalie 2pm — Address not found bounce. Never retry. No Us Sent on Conversation."
+    "statusNote": "Natalie 2pm Tue 15 BOUNCE · Address not found · do not retry · daemon 1a0a547b4f4caaf2"
   },
   {
     "id": "lobster-smack",
@@ -17171,8 +17127,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a54a3290d27e0 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a54a3290d27e0 · awaiting"
   },
   {
     "id": "castle-inn",
@@ -17199,8 +17154,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a54c09204bc61 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a54c09204bc61 · awaiting"
   },
   {
     "id": "shepherd-dog",
@@ -17235,8 +17189,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "replied-interested · Them 1a0a5b5273eecc40 Tue 15 ~16:34 London · \"Thank you, I will let you know\" · Natalie 2pm Tue 15 SENT_OK 1a0a54dbdedf623c",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "replied-interested · Them 1a0a5b5273eecc40 Tue 15 ~16:34 London · \"Thank you, I will let you know\" · Natalie 2pm Tue 15 SENT_OK 1a0a54dbdedf623c"
   },
   {
     "id": "fox-hounds",
@@ -17263,8 +17216,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a550e7fbf360f · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a550e7fbf360f · awaiting"
   },
   {
     "id": "horse-groom",
@@ -17291,8 +17243,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a552fb507dfe9 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a552fb507dfe9 · awaiting"
   },
   {
     "id": "the-hoop",
@@ -17319,8 +17270,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a55553a6fbcad · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a55553a6fbcad · awaiting"
   },
   {
     "id": "the-waeccer",
@@ -17347,8 +17297,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a557decf791d5 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a557decf791d5 · awaiting"
   },
   {
     "id": "mitre",
@@ -17375,8 +17324,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a55a1614f61c5 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a55a1614f61c5 · awaiting"
   },
   {
     "id": "pelton-arms",
@@ -17403,8 +17351,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a55c37dd82fd9 · awaiting",
-    "notes": "LOCAL SE cold wave Tue 15 Sep 2pm"
+    "statusNote": "Natalie 2pm Tue 15 SENT_OK 1a0a55c37dd82fd9 · awaiting"
   },
   {
     "id": "dartford-conservative-club",
@@ -17431,8 +17378,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-likeness partial SENT_OK 1a0a62bf285dc60e · awaiting · LOCAL",
-    "notes": "Wed likeness cold wave partial 9 (Galaxy pause)"
+    "statusNote": "wed-likeness partial SENT_OK 1a0a62bf285dc60e · awaiting · LOCAL"
   },
   {
     "id": "cuxton-social-club",
@@ -17454,14 +17400,12 @@
         "at": "2026-09-15T17:46:52Z",
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex for Cuxton Social Club?",
-        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Cuxton Social Club's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie",
-        "msgId": "1a0a62dc4446c430"
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Cuxton Social Club's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-likeness partial SENT_OK 1a0a62dc4446c430 · awaiting · LOCAL · auto hall redirect ignored (not Conversation)",
-    "notes": "Wed likeness cold wave partial 9 (Galaxy pause)"
+    "statusNote": "wed-likeness partial SENT_OK 1a0a62dc4446c430 · awaiting · LOCAL · auto hall redirect ignored (not Conversation)"
   },
   {
     "id": "chatham-suburban-social-club",
@@ -17488,8 +17432,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-likeness partial SENT_OK 1a0a62fa9e8fb612 · awaiting · LOCAL",
-    "notes": "Wed likeness cold wave partial 9 (Galaxy pause)"
+    "statusNote": "wed-likeness partial SENT_OK 1a0a62fa9e8fb612 · awaiting · LOCAL"
   },
   {
     "id": "tovil-working-men-s-club",
@@ -17516,8 +17459,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-likeness partial SENT_OK 1a0a630febdeaa71 · awaiting · LOCAL",
-    "notes": "Wed likeness cold wave partial 9 (Galaxy pause)"
+    "statusNote": "wed-likeness partial SENT_OK 1a0a630febdeaa71 · awaiting · LOCAL"
   },
   {
     "id": "aylesham-district-social-club",
@@ -17544,8 +17486,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-likeness partial SENT_OK 1a0a6324e34414b6 · awaiting · FAR",
-    "notes": "Wed likeness cold wave partial 9 (Galaxy pause)"
+    "statusNote": "wed-likeness partial SENT_OK 1a0a6324e34414b6 · awaiting · FAR"
   },
   {
     "id": "herne-bay-ex-servicemen-s-club",
@@ -17588,9 +17529,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Debs for ents manager · Us SENT_OK 1a0a674649d36f83 · multi Sat/Sun £250 cash 2×1hr · 50s–70s only · await dates · Haggle owns close",
-    "replyLane": "email",
-    "notes": "Herne Bay Ex-Servicemen's Club · hbexservice.members@gmail.com · Debs. FAR multi rate £250. Haggle owns close."
+    "statusNote": "quoted · Debs for ents manager · Us SENT_OK 1a0a674649d36f83 · multi Sat/Sun £250 cash 2×1hr · 50s–70s only · await dates · Haggle owns close"
   },
   {
     "id": "hunton-village-club",
@@ -17617,8 +17556,7 @@
     ],
     "hasThread": true,
     "tab": "other",
-    "statusNote": "wed-likeness partial BOUNCE domain not found · info@huntonvillageclub.co.uk · do not retry · daemon 1a0a635f11aa996f · Us Sent folded 1a0a635c09b45086",
-    "notes": "Wed likeness partial — Address not found bounce. Never retry. No Us Sent on Conversation."
+    "statusNote": "wed-likeness partial BOUNCE domain not found · info@huntonvillageclub.co.uk · do not retry · daemon 1a0a635f11aa996f · Us Sent folded 1a0a635c09b45086"
   },
   {
     "id": "horley-district-constitutional-club",
@@ -17645,8 +17583,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-likeness partial SENT_OK 1a0a637253530f3c · awaiting · FAR",
-    "notes": "Wed likeness cold wave partial 9 (Galaxy pause)"
+    "statusNote": "wed-likeness partial SENT_OK 1a0a637253530f3c · awaiting · FAR"
   },
   {
     "id": "hartley-district-social-club",
@@ -17673,13 +17610,96 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-likeness partial SENT_OK 1a0a6394d26cc060 · awaiting · LOCAL",
-    "notes": "Wed likeness cold wave partial 9 (Galaxy pause)"
+    "statusNote": "wed-likeness partial SENT_OK 1a0a6394d26cc060 · awaiting · LOCAL"
+  },
+  {
+    "id": "rafa-club-romford",
+    "name": "RAFA Club Romford",
+    "town": "—",
+    "badge": "awaiting",
+    "phone": null,
+    "needPhone": true,
+    "email": "rafa.romford2019@outlook.com",
+    "replied": "no",
+    "firstPitch": "16 Sep 2026",
+    "addedAt": "2026-09-16T12:15:37.718Z",
+    "followUps": "0 · last —",
+    "subject": "Jake Essex for RAFA Club Romford?",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-16T09:21:18Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for RAFA Club Romford?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for RAFA Club Romford's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0a985487f39eeb"
+      }
+    ],
+    "hasThread": true,
+    "tab": "call",
+    "statusNote": "wed-16-sep SENT_OK 1a0a985487f39eeb · awaiting · LOCAL"
+  },
+  {
+    "id": "chingford-united-services-club",
+    "name": "Chingford United Services Club",
+    "town": "—",
+    "badge": "awaiting",
+    "phone": null,
+    "needPhone": true,
+    "email": "admin@theusc.club",
+    "replied": "no",
+    "firstPitch": "16 Sep 2026",
+    "addedAt": "2026-09-16T12:15:37.718Z",
+    "followUps": "0 · last —",
+    "subject": "Jake Essex for Chingford United Services Club?",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-16T09:21:40Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Chingford United Services Club?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Chingford United Services Club's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0a9859cce84e88"
+      }
+    ],
+    "hasThread": true,
+    "tab": "call",
+    "statusNote": "wed-16-sep SENT_OK 1a0a9859cce84e88 · awaiting · LOCAL"
+  },
+  {
+    "id": "the-duke-wanstead",
+    "name": "The Duke Wanstead",
+    "town": "Wanstead",
+    "badge": "awaiting",
+    "phone": "+442089890014",
+    "needPhone": false,
+    "email": "hello@thedukewanstead.com",
+    "replied": "no (auto-ack only)",
+    "firstPitch": "16 Sep 2026",
+    "addedAt": "2026-09-16T12:15:37.718Z",
+    "followUps": "0 · last —",
+    "subject": "Jake Essex for The Duke Wanstead?",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-16T09:22:44Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Duke Wanstead?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for The Duke Wanstead's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0a986937b2fe30"
+      }
+    ],
+    "hasThread": true,
+    "tab": "call",
+    "statusNote": "wed-16-sep SENT_OK 1a0a986937b2fe30 · awaiting · LOCAL"
   },
   {
     "id": "royal-oak-tunbridge-wells",
     "name": "Royal Oak Tunbridge Wells",
-    "town": "Tunbridge Wells",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17702,13 +17722,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0a9f74986c7f06 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0a9f74986c7f06 · awaiting · FAR"
   },
   {
     "id": "crowborough-constitutional-club",
     "name": "Crowborough Constitutional Club",
-    "town": "Crowborough",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17731,13 +17750,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0a9f84e662b881 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0a9f84e662b881 · awaiting · FAR"
   },
   {
     "id": "sidley-working-men-s-club",
     "name": "Sidley Working Men's Club",
-    "town": "Sidley / Bexhill",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17760,13 +17778,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0a9f9342112686 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0a9f9342112686 · awaiting · FAR"
   },
   {
     "id": "moulsecoomb-social-club",
     "name": "Moulsecoomb Social Club",
-    "town": "Moulsecoomb / Brighton",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17789,13 +17806,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0a9fa61be36151 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0a9fa61be36151 · awaiting · FAR"
   },
   {
     "id": "elwick-club",
     "name": "Elwick Club",
-    "town": "Ashford",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17818,13 +17834,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0a9fb8b648a9b8 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0a9fb8b648a9b8 · awaiting · FAR"
   },
   {
     "id": "south-park-constitutional-club",
     "name": "South Park Constitutional Club",
-    "town": "Reigate",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17847,13 +17862,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0a9fdfff777f4b · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0a9fdfff777f4b · awaiting · FAR"
   },
   {
     "id": "the-epsom-club",
     "name": "The Epsom Club",
-    "town": "Epsom",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17876,13 +17890,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0a9ff28d1f4881 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0a9ff28d1f4881 · awaiting · FAR"
   },
   {
     "id": "comrades-club-epsom",
     "name": "Comrades Club Epsom",
-    "town": "Epsom",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17905,13 +17918,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa00e798b4e0c · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa00e798b4e0c · awaiting · FAR"
   },
   {
     "id": "the-tenterden-club",
     "name": "The Tenterden Club",
-    "town": "Tenterden",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17934,13 +17946,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa0304c6f7d17 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa0304c6f7d17 · awaiting · FAR"
   },
   {
     "id": "west-st-leonard-s-club",
     "name": "West St Leonard's Club",
-    "town": "St Leonard's-on-Sea",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17963,13 +17974,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa04488412e6a · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa04488412e6a · awaiting · FAR"
   },
   {
     "id": "selsdon-village-club",
     "name": "Selsdon Village Club",
-    "town": "Selsdon / Croydon",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -17992,13 +18002,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa05de1b83120 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa05de1b83120 · awaiting · FAR"
   },
   {
     "id": "shirley-millbrook-conservative-club",
     "name": "Shirley & Millbrook Conservative Club",
-    "town": "Southampton",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18021,13 +18030,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa0778ef538c4 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa0778ef538c4 · awaiting · FAR"
   },
   {
     "id": "forest-row-village-club",
     "name": "Forest Row Village Club",
-    "town": "Forest Row",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18050,13 +18058,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa0925fe0425f · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa0925fe0425f · awaiting · FAR"
   },
   {
     "id": "pokesdown-southbourne-ex-servicemen-s-club",
     "name": "Pokesdown & Southbourne Ex-Servicemen's Club",
-    "town": "Pokesdown / Bournemouth",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18079,18 +18086,17 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa0ae178573e2 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa0ae178573e2 · awaiting · FAR"
   },
   {
     "id": "sutton-social-club",
     "name": "Sutton Social Club",
-    "town": "Sutton SM1 · 138 Carshalton Road",
+    "town": "",
     "badge": "quoted",
-    "phone": "020 8642 1929",
-    "needPhone": false,
-    "email": "Julie Wren <jwren7412@gmail.com>",
-    "replied": "yes — 16 Sep 2026 (Julie Wren)",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@suttonsocialclub.co.uk",
+    "replied": "no",
     "firstPitch": "16 Sep 2026",
     "addedAt": "2026-09-16T12:15:37.718Z",
     "followUps": "0 · last —",
@@ -18126,13 +18132,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "16 Sep quoted Julie · Sat 8.30–11.30 3 sets · £400 / 4× £350 · thread 1a0aaa885e20877d",
-    "notes": "Club inbox info@suttonsocialclub.co.uk · Julie books weekly entertainment · push 4-date deal"
+    "statusNote": "16 Sep quoted Julie · Sat 8.30–11.30 3 sets · £400 / 4× £350 · thread 1a0aaa885e20877d"
   },
   {
     "id": "wraysbury-village-club",
     "name": "Wraysbury Village Club",
-    "town": "Wraysbury",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18155,13 +18160,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa0e68c17f3f6 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa0e68c17f3f6 · awaiting · FAR"
   },
   {
     "id": "nork-village-club",
     "name": "Nork Village Club",
-    "town": "Nork / Banstead",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18184,13 +18188,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa0fa87e3810d · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa0fa87e3810d · awaiting · FAR"
   },
   {
     "id": "handcross-club",
     "name": "Handcross Club",
-    "town": "Handcross",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18213,18 +18216,17 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa10f585b5023 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa10f585b5023 · awaiting · FAR"
   },
   {
     "id": "coulsdon-victoria-social-club",
     "name": "Coulsdon Victoria Social Club",
-    "town": "Coulsdon (Surrey)",
+    "town": "",
     "badge": "quoted",
     "phone": null,
     "needPhone": true,
     "email": "coulsdonvictoriaclub@gmail.com",
-    "replied": "yes — Sunday 2pm fee",
+    "replied": "yes — Victoria club Sunday fee + review",
     "firstPitch": "16 Sep 2026",
     "addedAt": "2026-09-16T12:15:37.718Z",
     "followUps": "0 · last —",
@@ -18252,18 +18254,34 @@
         "at": "2026-09-16T12:48:34Z",
         "subject": "Re: Jake Essex for Coulsdon Victoria Social Club?",
         "body": "Hi,\n\nThanks for getting back.\n\nFor a Sunday afternoon at Coulsdon it's £325 cash for 2 × 1 hour, or £450 for 3 × 1 hour — that short break before the last hour works fine. Own PA, no deposit.\n\nIf you book four dates and lock them in, we can do £275 for 2 × 1 hour and £400 for 3 × 1 hour on each night.\n\nFree Sundays from now through December 2027:\n\nRest of 2026:\n11 Oct, 25 Oct, 22 Nov, 29 Nov, 6 Dec, 20 Dec, 27 Dec\n\n2027:\nJan: 3, 10, 17, 24, 31\nFeb: 7, 14, 28\nMar: 7, 14, 21, 28\nApr: 4, 11, 18\nMay: 9, 16, 23\nJun: 6, 13, 20, 27\nJul: 4, 11, 25\nAug: 1, 8, 15, 22, 29\nSep: 5, 12, 19, 26\nOct: 3, 17, 31\nNov: 7, 14, 28\nDec: 5, 12, 19, 26\n\nHappy to pencil any of those that work for you.\n\nNatalie\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-16T12:58:31Z",
+        "from": "coulsdonvictoriaclub@gmail.com",
+        "subject": "Re: Jake Essex for Coulsdon Victoria Social Club?",
+        "body": "Hi, we will review and see what Sundays we have free next year and get back to you. We'll only want to book one Sunday at present 2×1 hour sets with a small break in between.\n\nRegards,\n Victoria Club",
+        "msgId": "1a0aa4c501016d90"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-16T13:00:58Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Coulsdon Victoria Social Club?",
+        "body": "Hi,\n\nNo problem at all just let me know as soon as you have a date in mind and I'll get it secured.\n\nMany thanks\nNatalie\nwww.jakeessex.co.uk",
+        "msgId": "1a0aa4e8e4e3d10f"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Victoria club Sunday fee ask · Us SENT_OK 1a0aa4307d026920 · £325 cash 2×1hr / £450 3×1hr · 4 dates → £275/£400 · free Sundays through Dec 2027 · Haggle owns close",
-    "notes": "Them 1a0aa3371bd8ef49 Sunday 2pm couple hours + break. Us quote £325/£450 + multi-deal £275/£400. Thread 1a0aa120650d833e. FAR Sunday.",
-    "replyLane": "email"
+    "statusNote": "quoted · Sunday £325 cash 2×1hr / £450 3×1hr · Them review free Sundays · one Sunday · Us ack 1a0aa4e8e4e3d10f · Haggle owns close"
   },
   {
     "id": "tooting-conservative-club",
     "name": "Tooting Conservative Club",
-    "town": "Tooting (SW17)",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18286,16 +18304,15 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa14251fa78cb · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa14251fa78cb · awaiting · FAR"
   },
   {
     "id": "the-six-in-one-club",
     "name": "The Six In One Club",
-    "town": "Tonbridge",
+    "town": "",
     "badge": "awaiting",
-    "phone": "+441732358883",
-    "needPhone": false,
+    "phone": null,
+    "needPhone": true,
     "email": "sixinoneclub@gmail.com",
     "replied": "no",
     "firstPitch": "16 Sep 2026",
@@ -18315,13 +18332,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa15f9c8b7267 · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa15f9c8b7267 · awaiting · FAR"
   },
   {
     "id": "purley-social-club",
     "name": "Purley Social Club",
-    "town": "Purley (CR8)",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18344,13 +18360,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa17578772eab · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa17578772eab · awaiting · FAR"
   },
   {
     "id": "carshalton-social-club",
     "name": "Carshalton Social Club",
-    "town": "Carshalton (SM5)",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18373,13 +18388,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa1895f997bbc · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa1895f997bbc · awaiting · FAR"
   },
   {
     "id": "west-byfleet-social-club",
     "name": "West Byfleet Social Club",
-    "town": "West Byfleet (KT14)",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18402,13 +18416,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa19d8e4ad8fc · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa19d8e4ad8fc · awaiting · FAR"
   },
   {
     "id": "cheam-social-club",
     "name": "Cheam Social Club",
-    "town": "Cheam / Sutton (SM3)",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18431,13 +18444,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa1b50931bddb · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa1b50931bddb · awaiting · FAR"
   },
   {
     "id": "west-ewell-social-club",
     "name": "West Ewell Social Club",
-    "town": "West Ewell / Epsom (KT19)",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18460,16 +18472,15 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa1ce67d0bbdb · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa1ce67d0bbdb · awaiting · FAR"
   },
   {
     "id": "townend-social-club",
     "name": "Townend Social Club",
-    "town": "Caterham (CR3)",
+    "town": "",
     "badge": "awaiting",
-    "phone": "+441883344438",
-    "needPhone": false,
+    "phone": null,
+    "needPhone": true,
     "email": "townendsocialclub@outlook.com",
     "replied": "no",
     "firstPitch": "16 Sep 2026",
@@ -18489,109 +18500,21 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa1e7477b873e · awaiting · FAR",
-    "notes": "Wed 16 Sep 2026 cold wave · FAR"
-  },
-  {
-    "id": "the-duke-wanstead",
-    "name": "The Duke Wanstead",
-    "town": "Wanstead",
-    "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
-    "email": "hello@thedukewanstead.com",
-    "replied": "no",
-    "firstPitch": "16 Sep 2026",
-    "addedAt": "2026-09-16T12:15:37.718Z",
-    "followUps": "0 · last —",
-    "subject": "Jake Essex for The Duke Wanstead?",
-    "messages": [
-      {
-        "side": "us",
-        "label": "Sent",
-        "at": "2026-09-16T09:22:44Z",
-        "from": "jakeessexenquiries@gmail.com",
-        "subject": "Jake Essex for The Duke Wanstead?",
-        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for The Duke Wanstead's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie",
-        "msgId": "1a0a986937b2fe30"
-      }
-    ],
-    "hasThread": true,
-    "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0a986937b2fe30 · awaiting · LOCAL",
-    "notes": "Wed 16 Sep 2026 cold wave · LOCAL"
-  },
-  {
-    "id": "rafa-club-romford",
-    "name": "RAFA Club Romford",
-    "town": "Romford",
-    "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
-    "email": "rafa.romford2019@outlook.com",
-    "replied": "no",
-    "firstPitch": "16 Sep 2026",
-    "addedAt": "2026-09-16T12:15:37.718Z",
-    "followUps": "0 · last —",
-    "subject": "Jake Essex for RAFA Club Romford?",
-    "messages": [
-      {
-        "side": "us",
-        "label": "Sent",
-        "at": "2026-09-16T09:21:18Z",
-        "from": "jakeessexenquiries@gmail.com",
-        "subject": "Jake Essex for RAFA Club Romford?",
-        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for RAFA Club Romford's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie",
-        "msgId": "1a0a985487f39eeb"
-      }
-    ],
-    "hasThread": true,
-    "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0a985487f39eeb · awaiting · LOCAL",
-    "notes": "Wed 16 Sep 2026 cold wave · LOCAL"
-  },
-  {
-    "id": "chingford-united-services-club",
-    "name": "Chingford United Services Club",
-    "town": "Chingford",
-    "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
-    "email": "admin@theusc.club",
-    "replied": "no",
-    "firstPitch": "16 Sep 2026",
-    "addedAt": "2026-09-16T12:15:37.718Z",
-    "followUps": "0 · last —",
-    "subject": "Jake Essex for Chingford United Services Club?",
-    "messages": [
-      {
-        "side": "us",
-        "label": "Sent",
-        "at": "2026-09-16T09:21:40Z",
-        "from": "jakeessexenquiries@gmail.com",
-        "subject": "Jake Essex for Chingford United Services Club?",
-        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Chingford United Services Club's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie",
-        "msgId": "1a0a9859cce84e88"
-      }
-    ],
-    "hasThread": true,
-    "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0a9859cce84e88 · awaiting · LOCAL",
-    "notes": "Wed 16 Sep 2026 cold wave · LOCAL"
+    "statusNote": "wed-16-sep SENT_OK 1a0aa1e7477b873e · awaiting · FAR"
   },
   {
     "id": "mildmay-club",
     "name": "Mildmay Club",
-    "town": "N16 / Stoke Newington",
-    "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
-    "email": "enquiries@mildmay.club",
-    "replied": "no",
+    "town": "",
+    "badge": "replied-interested",
+    "phone": "+442072542265",
+    "needPhone": false,
+    "email": "Iona Dudley <enquiries@mildmay.club>",
+    "replied": "yes — Iona Dudley £250 Sat Members Bar",
     "firstPitch": "17 Sep 2026",
     "addedAt": "2026-09-17T07:02:12.402Z",
     "followUps": "0 · last —",
-    "subject": "Jake Essex for Mildmay Club?",
+    "subject": "Re: Jake Essex for Mildmay Club?",
     "messages": [
       {
         "side": "us",
@@ -18601,17 +18524,25 @@
         "subject": "Jake Essex for Mildmay Club?",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for Mildmay Club — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a0adfb835821b60"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-17T07:55:26Z",
+        "from": "Iona Dudley <enquiries@mildmay.club>",
+        "subject": "Re: Jake Essex for Mildmay Club?",
+        "body": "Hello Jake,\n\nThanks for your email.\n\nWe're always interested in new acts for The Mildmay Club to play our Members Bar on Saturday nights. We offer £250 fee for the gig which is 3 x 45 min set between 9pm-12am with breaks.\n\nDo let us know if you'd be interested. Just to note we pay via bank transfer and require an invoice for payment.\n\nBest Wishes,\n\nIona Dudley\n\nMildmay Club Manager\n020 7254 2265",
+        "msgId": "1a0ae5d80a4e509c"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0adfb835821b60 · awaiting · LOCAL",
-    "notes": "Thu 17 Sep 2026 cold wave · LOCAL"
+    "statusNote": "Them Iona Dudley · Sat Members Bar £250 · 3×45 9pm–12am · BACS+invoice · phone +442072542265 · thread 1a0adfb4ae07faf3 · replied-interested · Haggle owns accept/counter"
   },
   {
     "id": "shortlands-tavern",
     "name": "Shortlands Tavern",
-    "town": "Shortlands (Bromley)",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18634,13 +18565,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0adfddd1ba4b18 · awaiting · LOCAL",
-    "notes": "Thu 17 Sep 2026 cold wave · LOCAL"
+    "statusNote": "thu-17-sep SENT_OK 1a0adfddd1ba4b18 · awaiting · LOCAL"
   },
   {
     "id": "goldstone-ex-service-club",
     "name": "Goldstone Ex-Service Club",
-    "town": "Hove",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18663,13 +18593,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0adff4420b71ed · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0adff4420b71ed · awaiting · FAR"
   },
   {
     "id": "harwich-united-services-club",
     "name": "Harwich United Services Club",
-    "town": "Harwich",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18692,12 +18621,11 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae00baaa3798b · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae00baaa3798b · awaiting · FAR"
   },
   {
-    "id": "tarring-club-worthing",
-    "name": "Tarring Club Worthing",
+    "id": "tarring-club",
+    "name": "Tarring Club",
     "town": "Worthing",
     "badge": "awaiting",
     "phone": null,
@@ -18705,7 +18633,7 @@
     "email": "thetarringclub1@yahoo.co.uk",
     "replied": "no",
     "firstPitch": "17 Sep 2026",
-    "addedAt": "2026-09-17T07:02:12.402Z",
+    "addedAt": "2026-09-17T08:12:17.714230Z",
     "followUps": "0 · last —",
     "subject": "Jake Essex for Tarring Club?",
     "messages": [
@@ -18721,12 +18649,11 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae025e0efca2c · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae025e0efca2c · awaiting · FAR"
   },
   {
-    "id": "concorde-club-eastleigh",
-    "name": "Concorde Club Eastleigh",
+    "id": "concorde-club",
+    "name": "Concorde Club",
     "town": "Eastleigh",
     "badge": "awaiting",
     "phone": null,
@@ -18734,7 +18661,7 @@
     "email": "info@theconcordeclub.com",
     "replied": "no",
     "firstPitch": "17 Sep 2026",
-    "addedAt": "2026-09-17T07:02:12.402Z",
+    "addedAt": "2026-09-17T08:12:17.714230Z",
     "followUps": "0 · last —",
     "subject": "Jake Essex for Concorde Club?",
     "messages": [
@@ -18750,12 +18677,11 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae04035f4408f · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae04035f4408f · awaiting · FAR"
   },
   {
-    "id": "the-rifle-portsmouth",
-    "name": "The Rifle Portsmouth",
+    "id": "the-rifle",
+    "name": "The Rifle",
     "town": "Portsmouth",
     "badge": "awaiting",
     "phone": null,
@@ -18763,7 +18689,7 @@
     "email": "bookings@therifle.co.uk",
     "replied": "no",
     "firstPitch": "17 Sep 2026",
-    "addedAt": "2026-09-17T07:02:12.402Z",
+    "addedAt": "2026-09-17T08:12:17.714230Z",
     "followUps": "0 · last —",
     "subject": "Jake Essex for The Rifle?",
     "messages": [
@@ -18779,12 +18705,11 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae059a3c10650 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae059a3c10650 · awaiting · FAR"
   },
   {
-    "id": "headland-bohemian-eastbourne",
-    "name": "Headland / Bohemian Eastbourne",
+    "id": "headland",
+    "name": "Headland",
     "town": "Eastbourne",
     "badge": "awaiting",
     "phone": null,
@@ -18792,7 +18717,7 @@
     "email": "hello@weareheadland.com",
     "replied": "no",
     "firstPitch": "17 Sep 2026",
-    "addedAt": "2026-09-17T07:02:12.402Z",
+    "addedAt": "2026-09-17T08:12:17.714230Z",
     "followUps": "0 · last —",
     "subject": "Jake Essex for Headland?",
     "messages": [
@@ -18808,13 +18733,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae06f11b804e4 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae06f11b804e4 · awaiting · FAR"
   },
   {
     "id": "romford-united-services-and-social-club",
     "name": "Romford United Services & Social Club",
-    "town": "Romford",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18837,13 +18761,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae0b562d0bc8c · awaiting · LOCAL",
-    "notes": "Thu 17 Sep 2026 cold wave · LOCAL"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae0b562d0bc8c · awaiting · LOCAL"
   },
   {
     "id": "hither-green-railwaymens-social-club",
     "name": "Hither Green Railwaymens Social Club",
-    "town": "Hither Green / Lewisham",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18866,13 +18789,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae0cd052ac28f · awaiting · LOCAL",
-    "notes": "Thu 17 Sep 2026 cold wave · LOCAL"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae0cd052ac28f · awaiting · LOCAL"
   },
   {
     "id": "walthamstow-trades-hall-club",
     "name": "Walthamstow Trades Hall Club",
-    "town": "Walthamstow E17",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18895,13 +18817,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae0e5b40e6602 · awaiting · LOCAL",
-    "notes": "Thu 17 Sep 2026 cold wave · LOCAL"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae0e5b40e6602 · awaiting · LOCAL"
   },
   {
     "id": "halstead-conservative-club",
     "name": "Halstead Conservative Club",
-    "town": "Halstead",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18924,13 +18845,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae082fe883a41 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae082fe883a41 · awaiting · FAR"
   },
   {
     "id": "raob-club-addlestone",
     "name": "RAOB Club Addlestone",
-    "town": "Addlestone",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -18953,13 +18873,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae09ae6474349 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae09ae6474349 · awaiting · FAR"
   },
   {
     "id": "merstham-village-club",
     "name": "Merstham Village Club",
-    "town": "Merstham / Redhill",
+    "town": "",
     "badge": "bounce",
     "phone": null,
     "needPhone": true,
@@ -18981,14 +18900,13 @@
       }
     ],
     "hasThread": true,
-    "tab": "parked",
-    "statusNote": "BOUNCE · Address not found (domain mersthamvillageclub.com) · Us SENT 1a0ae1005b451da9 kept for audit · never-retry · Thu 17 Sep",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR · bounce never-retry"
+    "tab": "other",
+    "statusNote": "BOUNCE · Address not found (domain mersthamvillageclub.com) · Us SENT 1a0ae1005b451da9 kept for audit · never-retry · Thu 17 Sep"
   },
   {
     "id": "lightwater-club",
     "name": "Lightwater Club",
-    "town": "Lightwater",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19011,13 +18929,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae11717af24c6 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae11717af24c6 · awaiting · FAR"
   },
   {
     "id": "cowplain-social-club",
     "name": "Cowplain Social Club",
-    "town": "Cowplain / Waterlooville",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19040,13 +18957,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae127ef56b63b · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae127ef56b63b · awaiting · FAR"
   },
   {
     "id": "the-broadway-club",
     "name": "The Broadway Club",
-    "town": "Fleet",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19069,13 +18985,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae1399d57dd8c · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae1399d57dd8c · awaiting · FAR"
   },
   {
     "id": "chertsey-social-club",
     "name": "Chertsey Social Club",
-    "town": "Chertsey",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19098,13 +19013,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae14b722c2170 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae14b722c2170 · awaiting · FAR"
   },
   {
     "id": "new-haw-social-club",
     "name": "New Haw Social Club",
-    "town": "New Haw / Addlestone",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19127,13 +19041,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae16040a16a90 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae16040a16a90 · awaiting · FAR"
   },
   {
     "id": "the-faraday-social-club",
     "name": "The Faraday Social Club",
-    "town": "Slough",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19156,13 +19069,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae174a74f9f92 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae174a74f9f92 · awaiting · FAR"
   },
   {
     "id": "whitley-social-club",
     "name": "Whitley Social Club",
-    "town": "Reading",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19185,13 +19097,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae18bf5b97db4 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae18bf5b97db4 · awaiting · FAR"
   },
   {
     "id": "hamble-social-club",
     "name": "Hamble Social Club",
-    "town": "Hamble-le-Rice / Southampton",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19214,13 +19125,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae1a37872a9b3 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae1a37872a9b3 · awaiting · FAR"
   },
   {
     "id": "sunninghill-comrades-club",
     "name": "Sunninghill Comrades Club",
-    "town": "Sunninghill / Ascot",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19243,13 +19153,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae1bf2274a950 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae1bf2274a950 · awaiting · FAR"
   },
   {
     "id": "sandhurst-social-club",
     "name": "Sandhurst Social Club",
-    "town": "Sandhurst / Berks",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19272,13 +19181,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae1d14c206311 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae1d14c206311 · awaiting · FAR"
   },
   {
     "id": "progressive-club-eastleigh",
     "name": "Progressive Club Eastleigh",
-    "town": "Eastleigh",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19301,13 +19209,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae1e2cdf5cbc7 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae1e2cdf5cbc7 · awaiting · FAR"
   },
   {
     "id": "shottermill-club",
     "name": "Shottermill Club",
-    "town": "Haslemere",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19330,13 +19237,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae1f6d44b5526 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae1f6d44b5526 · awaiting · FAR"
   },
   {
     "id": "ashtead-village-club",
     "name": "Ashtead Village Club",
-    "town": "Ashtead / Epsom",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19359,17 +19265,16 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae20a04f21136 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae20a04f21136 · awaiting · FAR"
   },
   {
     "id": "oxshott-club",
     "name": "Oxshott Club",
-    "town": "Oxshott",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
-    "email": "Oxshottclub1907@gmail.com",
+    "email": "oxshottclub1907@gmail.com",
     "replied": "no",
     "firstPitch": "17 Sep 2026",
     "addedAt": "2026-09-17T07:02:12.402Z",
@@ -19388,13 +19293,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae21f396a6f9b · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae21f396a6f9b · awaiting · FAR"
   },
   {
     "id": "solent-social-club",
     "name": "Solent Social Club",
-    "town": "Lee-on-the-Solent",
+    "town": "",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
@@ -19417,7 +19321,6 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae2366b262c18 · awaiting · FAR",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "statusNote": "thu-17-sep SENT_OK 1a0ae2366b262c18 · awaiting · FAR"
   }
 ]
