@@ -18960,7 +18960,7 @@
     "id": "merstham-village-club",
     "name": "Merstham Village Club",
     "town": "Merstham / Redhill",
-    "badge": "awaiting",
+    "badge": "bounce",
     "phone": null,
     "needPhone": true,
     "email": "contact@mersthamvillageclub.com",
@@ -18981,9 +18981,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae1005b451da9 · awaiting · FAR · DSN bounce domain-not-found (Us Sent still folded)",
-    "notes": "Thu 17 Sep 2026 cold wave · FAR"
+    "tab": "parked",
+    "statusNote": "BOUNCE · Address not found (domain mersthamvillageclub.com) · Us SENT 1a0ae1005b451da9 kept for audit · never-retry · Thu 17 Sep",
+    "notes": "Thu 17 Sep 2026 cold wave · FAR · bounce never-retry"
   },
   {
     "id": "lightwater-club",
