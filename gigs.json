@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T19:34:40Z",
+  "updatedAt": "2026-09-17T20:05:49Z",
   "source": "JAKE ESSEX GIGS @ CL",
   "gigs": [
     {
@@ -194,6 +194,18 @@
       "status": "booked",
       "source": "board",
       "note": "charity tea"
+    },
+    {
+      "date": "2026-11-27",
+      "venue": "Magpie Events Lot 14 Theydon",
+      "town": "Theydon Bois",
+      "postcode": "CM16 7EY",
+      "location": "14 Forest Drive, Theydon Bois, Essex CM16 7EY",
+      "start": "19:30",
+      "finish": null,
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £325 · Ricky Magpie · arrive ~19:00 · after Dartford Mayor afternoon same day · enquiry 8tmib11bmuvs66atst27ibg0vo · NEVER free"
     },
     {
       "date": "2026-12-05",
