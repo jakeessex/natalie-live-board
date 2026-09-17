@@ -1621,6 +1621,43 @@ var NatNotes = (function(exports) {
     return html;
   }
 
+  var CASH_5K_KEY = "natalie-cash-5k-v1";
+  function maybeCelebrate5k(cash) {
+    if (!(cash >= 5000)) return;
+    try {
+      if (localStorage.getItem(CASH_5K_KEY) === "1") return;
+      localStorage.setItem(CASH_5K_KEY, "1");
+    } catch (e) {}
+    var layer = document.createElement("div");
+    layer.id = "cash-5k-party";
+    layer.setAttribute("aria-live", "polite");
+    layer.style.cssText = "position:fixed;inset:0;z-index:9999;pointer-events:none;overflow:hidden;";
+    var banner = document.createElement("div");
+    banner.textContent = "£5k locked — Nat list";
+    banner.style.cssText = "position:absolute;left:50%;top:18%;transform:translateX(-50%);background:#111;color:#4cd964;border:1px solid #2a2a2e;border-radius:14px;padding:12px 18px;font:700 16px/1.2 -apple-system,system-ui,sans-serif;box-shadow:0 10px 40px rgba(0,0,0,.45);";
+    layer.appendChild(banner);
+    var colors = ["#4cd964", "#2c64f6", "#ff9f0a", "#ff375f", "#bf5af2", "#64d2ff"];
+    for (var i = 0; i < 80; i++) {
+      var bit = document.createElement("span");
+      var left = Math.random() * 100;
+      var delay = Math.random() * 0.6;
+      var dur = 1.6 + Math.random() * 1.4;
+      var size = 6 + Math.random() * 8;
+      bit.style.cssText = "position:absolute;top:-12px;left:" + left + "%;width:" + size + "px;height:" + (size * 0.4) + "px;background:" + colors[i % colors.length] + ";border-radius:2px;opacity:.95;transform:rotate(" + (Math.random() * 360) + "deg);animation:cash5kFall " + dur + "s linear " + delay + "s forwards;";
+      layer.appendChild(bit);
+    }
+    if (!document.getElementById("cash-5k-style")) {
+      var style = document.createElement("style");
+      style.id = "cash-5k-style";
+      style.textContent = "@keyframes cash5kFall{to{transform:translateY(110vh) rotate(720deg);opacity:0;}}";
+      document.head.appendChild(style);
+    }
+    document.body.appendChild(layer);
+    setTimeout(function () {
+      if (layer.parentNode) layer.parentNode.removeChild(layer);
+    }, 4200);
+  }
+
   function cashHtml(stats) {
     var html = '<button class="cash-ticker" type="button" onclick="natCash()">' +
       '<span class="cash-amt">' + B.gbp(stats.cash) + "</span>" +
@@ -1665,6 +1702,7 @@ var NatNotes = (function(exports) {
       if ($(ids[0])) $(ids[0]).textContent = B.gbp(stats.cash);
       if ($(ids[1])) $(ids[1]).textContent = stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " locked";
     });
+    maybeCelebrate5k(stats.cash);
   }
 
   function renderDetail(id) {
