@@ -18629,15 +18629,15 @@
     "id": "goldstone-ex-service-club",
     "name": "Goldstone Ex-Service Club",
     "town": "",
-    "badge": "awaiting",
+    "badge": "quoted",
     "phone": null,
     "needPhone": true,
     "email": "thegoldstoneclub@gmail.com",
-    "replied": "no",
+    "replied": true,
     "firstPitch": "17 Sep 2026",
     "addedAt": "2026-09-17T07:02:12.402Z",
     "followUps": "0 · last —",
-    "subject": "Jake Essex for Goldstone Ex-Service Club?",
+    "subject": "Re: Jake Essex for Goldstone Ex-Service Club?",
     "messages": [
       {
         "side": "us",
@@ -18647,11 +18647,48 @@
         "subject": "Jake Essex for Goldstone Ex-Service Club?",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for Goldstone Ex-Service Club — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a0adff4420b71ed"
+      },
+      {
+        "side": "them",
+        "msgId": "1a0af3b94147acd9",
+        "at": "2026-09-17T11:58:20Z",
+        "subject": "Re: Jake Essex for Goldstone Ex-Service Club?",
+        "body": "Hi\n\nWe are very interested but as a non for profit social club our budget is quite tight.\n\nCan you send me some cost information please?\n\nThanks"
+      },
+      {
+        "side": "us",
+        "msgId": "1a0af436114f7184",
+        "at": "2026-09-17T12:07:03Z",
+        "subject": "Re: Jake Essex for Goldstone Ex-Service Club?",
+        "body": "Hi,\n\nThanks for getting back.\n\nWhat we usually do is £250 cash for 2 × 1 hour (with a half-hour break), or £280 through the books.\n\nBecause you're a nonprofit and looking at a few dates, if you book four Saturday or Sunday nights we can do £225 a night for that same 2 × 1 hour shape.\n\nOwn PA, no deposit. Happy to look at dates when you've got a few Saturdays or Sundays in mind.\n\nNatalie\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "them",
+        "msgId": "1a0af45a2b381814",
+        "at": "2026-09-17T12:09:20Z",
+        "subject": "Re: Jake Essex for Goldstone Ex-Service Club?",
+        "body": "Ok sounds good\n\nWhat Saturdays do you have available, evenings.\n\nAnd sunday afternoons.\n\nThanks"
+      },
+      {
+        "side": "us",
+        "msgId": "1a0af5e08283a151",
+        "at": "2026-09-17T12:36:10Z",
+        "subject": "Re: Jake Essex for Goldstone Ex-Service Club?",
+        "body": "Hi,\n\nGreat — here are some Saturday evenings and Sunday afternoons that are free at the moment:\n\nSaturday evenings: 10 October, 7 November, 2 January, 9 January\nSunday afternoons: 11 October, 18 October, 25 October, 15 November\n\nIf none of those work, send over a few more Saturdays or Sundays you fancy and I'll check them.\n\nNatalie\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "us",
+        "msgId": "1a0af638ee1e3207",
+        "at": "2026-09-17T12:42:11Z",
+        "subject": "Re: Jake Essex for Goldstone Ex-Service Club?",
+        "body": "Hi,\n\nYou're interested and the diary's open, so let's get you locked in.\n\nBest shape for Goldstone is Saturday evenings or Sunday afternoons, 2 × 1 hour.\n\nSaturday evenings free:\n10 October\n7 November\n2 January\n9 January\n13 February\n27 February\n6 March\n27 March\n3 April\n10 April\n8 May\n22 May\n5 June\n26 June\n\nSunday afternoons free:\n11 October, 18 October, 25 October\n15 November, 22 November, 29 November\n6 December, 20 December, 27 December\n3 January, 10 January, 17 January, 24 January, 31 January\n7 February, 14 February, 28 February\n7 March, 14 March, 21 March, 28 March\n4 April, 11 April, 18 April, 25 April\n9 May, 16 May, 23 May\n6 June, 13 June, 20 June, 27 June\n\nIf you lock four of those, it's £225 a night cash for the 2 × 1 hour. Own PA, no deposit. That's about £900 locked in, and we can sort more dates after if you want them.\n\nReply with four dates (or say which work) and I'll confirm them in the diary today.\n\nNatalie\nwww.jakeessex.co.uk"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0adff4420b71ed · awaiting · FAR"
+    "statusNote": "quoted · hot · nonprofit · £250c/£280b one-off · £225 if lock 4 · Us hard-close 1a0af638ee1e3207 · Sat eve + Sun aft dates offered through Jun 2027 · NOT locked until they confirm 4 · Haggle owns close",
+    "replyLane": "email",
+    "notes": "Them interested + fee ask 1a0af3b94147acd9 · Ok sounds good + dates ask 1a0af45a2b381814. Us quote £250/£280 + 4-date £225. Hard close with free Sat/Sun list. Ticker unchanged until 4 dates locked."
   },
   {
     "id": "harwich-united-services-club",
