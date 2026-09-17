@@ -1871,7 +1871,7 @@
     "replied": "yes — 10 Sep 2026 (Sharon Banks)",
     "firstPitch": "10 Sep 2026",
     "addedAt": "2026-09-10T15:14:20.492902Z",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 17 Sep 2026",
     "subject": "Jake",
     "messages": [
       {
@@ -1921,10 +1921,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Jake",
         "body": "No problem at all let me know\n\nNatalie\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-17T09:37:02Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake",
+        "body": "Hi Sharon,\n\nJust gently checking in on Jake for Bardswell, still happy to hold £250\ncash / £280 books for 2 × 1 hour when you've got dates.\n\nHappy to work around what suits you.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0aeba0a56e5e34"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "chase Us SENT_OK 1a0aeba0a56e5e34 · still hold £250c/£280b 2×1hr · Sharon juggling dates after Aug 28 clash · keep close heat"
   },
   {
     "id": "barrow-upon-soar-cons",
@@ -12778,7 +12788,7 @@
     "replied": "yes — Holly Bennett + Us Thu quote",
     "firstPitch": "9 Sep 2026",
     "addedAt": "2026-09-09T10:55:47.630508Z",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 17 Sep 2026",
     "subject": "Jake Essex for The Bull?",
     "messages": [
       {
@@ -12820,11 +12830,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Jake Essex for The Bull?",
         "body": "Hi Holly,\n\nThanks for this.\n\nWe can do £250 for the Thursday evening set for you (7pm–9pm, 2 × 1 hour\nwith a break). Own PA, no deposit.\n\nThursday 22nd October is free on our side if you want to pencil that in.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-17T09:42:16Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for The Bull?",
+        "body": "Hi Holly,\n\nJust gently checking in on Thursday 22nd October, still happy to hold £250\nfor 7 to 9pm (2 × 1 hour) if that still works for you.\n\nHappy to pencil it in when you're ready.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0aebed2fe7f726"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Holly Bennett · £250 Thu evening 7–9pm · Thu 22 Oct free to pencil · Us SENT_OK 1a0a0f3d6bc7b3b1 · replyLane email · await pencil"
+    "statusNote": "quoted · Holly Bennett · nudge Us SENT_OK 1a0aebed2fe7f726 · £250 Thu 22 Oct 7–9pm 2×1hr · await pencil · replyLane email"
   },
   {
     "id": "the-hop-inn",
@@ -14053,7 +14072,7 @@
     "replied": "yes — 10 Sep 2026 (Iona Committee)",
     "firstPitch": "10 Sep 2026",
     "addedAt": "2026-09-10T19:26:00.000000Z",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 17 Sep 2026",
     "subject": "Jake Essex for Iona Social Club?",
     "messages": [
       {
@@ -14079,10 +14098,20 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Re: Jake Essex for Iona Social Club?",
         "body": "Hi,\n\nThanks for getting back.\n\nFor Iona it's £275 for 2 × 1 hour sets with a break in between. Own PA, no deposit.\n\nIf you can lock in 4 dates we can do £250 a night. Let us know what works.\n\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-17T09:38:55Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Re: Jake Essex for Iona Social Club?",
+        "body": "Hi,\n\nJust gently checking in on Jake for Iona, still happy to hold £275 for 2 ×\n1 hour (or £250 a night if you lock 4 dates) when you've got something free.\n\nHappy to work around your calendar.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0aebbc14c19796"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "chase Us SENT_OK 1a0aebbc14c19796 · hold £275 2×1hr / £250×4 · keep quoted heat"
   },
   {
     "id": "bretons-social-club",
@@ -18309,16 +18338,16 @@
   {
     "id": "the-six-in-one-club",
     "name": "The Six In One Club",
-    "town": "",
-    "badge": "awaiting",
+    "town": "Tonbridge",
+    "badge": "quoted",
     "phone": null,
     "needPhone": true,
-    "email": "sixinoneclub@gmail.com",
-    "replied": "no",
+    "email": "sixinoneclub@gmail.com; Terry Coomber <terry.coomber67@hotmail.com>",
+    "replied": "yes — Terry Coomber (hotmail)",
     "firstPitch": "16 Sep 2026",
     "addedAt": "2026-09-16T12:15:37.718Z",
     "followUps": "0 · last —",
-    "subject": "Jake Essex for The Six In One Club?",
+    "subject": "Re: 6 In 1",
     "messages": [
       {
         "side": "us",
@@ -18328,11 +18357,30 @@
         "subject": "Jake Essex for The Six In One Club?",
         "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for The Six In One Club's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027: if a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a0aa15f9c8b7267"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-16T17:03:39Z",
+        "from": "terry.coomber67@hotmail.com",
+        "subject": "6 In 1",
+        "body": "Hello\nI am entertainment secretary for the 6 in one in Tonbridge can you tell me how much take would be for a Saturday night 2 x 1 hour spots from 8.30-9.30 and 10 to 11 please also for a Sunday 4 to 5 then 5.30 to 6.30\nThank you\n\nterry.coomber67@hotmail.com\n\nSent from my Galaxy",
+        "msgId": "1a0ab2c995b0410f"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-17T09:27:24Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: 6 In 1",
+        "body": "Hi Terry,\n\nThanks for getting back.\n\nFor 2 × 1 hour it's £300 cash for a one-off booking, or £250 a night if you\nbook four dates. That works for Saturday evening or Sunday afternoon.\n\nOwn PA, no deposit. Happy to look at dates when you've got a Saturday or\nSunday in mind.\n\nNatalie\nwww.jakeessex.co.uk",
+        "msgId": "1a0aeb136ba72e11"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "wed-16-sep SENT_OK 1a0aa15f9c8b7267 · awaiting · FAR"
+    "statusNote": "quoted · Terry Coomber · Us SENT_OK 1a0aeb136ba72e11 · Gmail quote £300 cash one-off / £250×4 · Sat 20:30–21:30+22:00–23:00 · Sun 16:00–17:00+17:30–18:30 · Bookings SYNC also had LOCAL £250 cash/£280 books — Gmail body wins · replyLane email · Haggle owns close · do not re-cold hotmail",
+    "replyLane": "email"
   },
   {
     "id": "purley-social-club",
@@ -18506,11 +18554,11 @@
     "id": "mildmay-club",
     "name": "Mildmay Club",
     "town": "",
-    "badge": "replied-interested",
+    "badge": "quoted",
     "phone": "+442072542265",
     "needPhone": false,
     "email": "Iona Dudley <enquiries@mildmay.club>",
-    "replied": "yes — Iona Dudley £250 Sat Members Bar",
+    "replied": "yes — Iona Dudley £250 · Us counter sent",
     "firstPitch": "17 Sep 2026",
     "addedAt": "2026-09-17T07:02:12.402Z",
     "followUps": "0 · last —",
@@ -18533,11 +18581,21 @@
         "subject": "Re: Jake Essex for Mildmay Club?",
         "body": "Hello Jake,\n\nThanks for your email.\n\nWe're always interested in new acts for The Mildmay Club to play our Members Bar on Saturday nights. We offer £250 fee for the gig which is 3 x 45 min set between 9pm-12am with breaks.\n\nDo let us know if you'd be interested. Just to note we pay via bank transfer and require an invoice for payment.\n\nBest Wishes,\n\nIona Dudley\n\nMildmay Club Manager\n020 7254 2265",
         "msgId": "1a0ae5d80a4e509c"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-17T09:31:10Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Mildmay Club?",
+        "body": "Hi Iona,\n\nThanks for getting back.\n\n£250 for 3 sets on NPU / books isn't quite enough for Jake, I'm afraid.\n\nWhat we usually do: £250 cash for 2 × 1 hour (with a half-hour break), or\n£275 through the books for that same shape. For 3 sets it's £350 cash, or\n£375 NPU / books.\n\nIf you book four Saturdays we can look at a deal on the fee.\n\nHappy to look at dates when you've got a few Saturdays in mind.\n\nNatalie\nwww.jakeessex.co.uk",
+        "msgId": "1a0aeb4a9f3c3b2b"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Them Iona Dudley · Sat Members Bar £250 · 3×45 9pm–12am · BACS+invoice · phone +442072542265 · thread 1a0adfb4ae07faf3 · replied-interested · Haggle owns accept/counter"
+    "statusNote": "quoted · COUNTER Us SENT_OK 1a0aeb4a9f3c3b2b · Them £250 house 3×45 NPU/BACS · Us counter £250c/£275b 2×1hr · £350c/£375 NPU 3 sets · thread 1a0adfb4ae07faf3 · replyLane email · Haggle owns close",
+    "replyLane": "email"
   },
   {
     "id": "shortlands-tavern",
@@ -19322,5 +19380,61 @@
     "hasThread": true,
     "tab": "call",
     "statusNote": "thu-17-sep SENT_OK 1a0ae2366b262c18 · awaiting · FAR"
+  },
+  {
+    "id": "the-crofton-club",
+    "name": "The Crofton Club",
+    "town": "",
+    "badge": "awaiting",
+    "phone": null,
+    "needPhone": true,
+    "email": "secretary@thecroftonclub.co.uk",
+    "replied": "no",
+    "firstPitch": "17 Sep 2026",
+    "addedAt": "2026-09-17T09:18:05.000Z",
+    "followUps": "0 · last —",
+    "subject": "Jake Essex for The Crofton Club?",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-17T09:18:05Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Crofton Club?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for The Crofton Club's live entertainment nights.\nHe'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s:\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 — if a date works,\nreply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0aea8aedadea55"
+      }
+    ],
+    "hasThread": true,
+    "tab": "call",
+    "statusNote": "Thu 17 Sep COLD Us SENT_OK 1a0aea8aedadea55 · awaiting · FAR"
+  },
+  {
+    "id": "the-77-club",
+    "name": "The 77 Club",
+    "town": "Earlswood",
+    "badge": "awaiting",
+    "phone": null,
+    "needPhone": true,
+    "email": "the77clubearlswood@gmail.com",
+    "replied": "no",
+    "firstPitch": "17 Sep 2026",
+    "addedAt": "2026-09-17T09:34:51.000Z",
+    "followUps": "0 · last —",
+    "subject": "Jake Essex for The 77 Club?",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-17T09:34:51Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The 77 Club?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for The 77 Club's live entertainment nights. He'd\nlove to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s:\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 — if a date works,\nreply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0aeb808b204e3f"
+      }
+    ],
+    "hasThread": true,
+    "tab": "call",
+    "statusNote": "Thu 17 Sep COLD Us SENT_OK 1a0aeb808b204e3f · awaiting · FAR"
   }
 ]
