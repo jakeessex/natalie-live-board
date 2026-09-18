@@ -31,7 +31,7 @@
     "id": "old-bexley-ex-servicemen-s-club",
     "name": "Old Bexley Ex-Servicemen's Club",
     "town": "",
-    "badge": "awaiting",
+    "badge": "bounce",
     "phone": null,
     "needPhone": true,
     "email": "info@obesc.co.uk",
@@ -52,8 +52,9 @@
       }
     ],
     "hasThread": false,
-    "tab": "call",
-    "statusNote": "Fri 18 Sep COLD Us SENT_OK 1a0b3c9da7ed265f · awaiting · LOCAL"
+    "tab": "parked",
+    "statusNote": "BOUNCE · remote server misconfigured · Us SENT 1a0b3c9da7ed265f kept for audit · never-retry · Fri 18 Sep · DSN 1a0b3ca0e0f7373a",
+    "notes": "bounce never-retry info@obesc.co.uk"
   },
   {
     "id": "hindhead-rbl",
