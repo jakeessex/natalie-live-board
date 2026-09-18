@@ -1116,6 +1116,10 @@ var NatNotes = (function(exports) {
   var UNDATED = [];
   var diaryOpen = false;
   var diaryPick = "";
+  var datesOpen = false;
+  var datesPick = "";
+  var datesMap = null;
+  var datesMarkers = {};
   var _n = new Date();
   var diaryYear = _n.getFullYear();
   var diaryMonth = _n.getMonth();
@@ -1162,7 +1166,7 @@ var NatNotes = (function(exports) {
       .then(function (data) {
         GIGS = (data && data.gigs) || [];
         UNDATED = (data && data.undated) || [];
-        if (diaryOpen) render();
+        if (diaryOpen || datesOpen) render();
       })
       .catch(function () {});
   }
@@ -1296,7 +1300,12 @@ var NatNotes = (function(exports) {
   window.natBack = function () { openId = null; sheetOpen = false; render(); };
   window.natFilter = function (t) { filter = t; render(); };
   window.natTab = window.natFilter;
-  window.natCash = function () { cashOpen = !cashOpen; render(); };
+  window.natCash = function () {
+    datesOpen = true;
+    diaryOpen = false;
+    cashOpen = false;
+    render();
+  };
   window.natEmails = function () { emailsOpen = !emailsOpen; render(); };
   window.natSheet = function (on) { sheetOpen = !!on; render(); };
   window.natLock = function () {
@@ -1305,6 +1314,8 @@ var NatNotes = (function(exports) {
   };
   window.natDiary = function () {
     diaryOpen = true;
+    datesOpen = false;
+    destroyDatesMap();
     render();
     var el = $("diary");
     if (el) el.scrollTop = 0;
@@ -1312,6 +1323,25 @@ var NatNotes = (function(exports) {
   window.natDiaryClose = function () {
     diaryOpen = false;
     render();
+  };
+  window.natDatesClose = function () {
+    datesOpen = false;
+    datesPick = "";
+    destroyDatesMap();
+    render();
+  };
+  window.natDatesPick = function (id) {
+    datesPick = id || "";
+    var rows = document.querySelectorAll("#dates .date-row");
+    var i, row;
+    for (i = 0; i < rows.length; i++) {
+      row = rows[i];
+      if (row.getAttribute("data-id") === datesPick) row.classList.add("on");
+      else row.classList.remove("on");
+    }
+    flyDatesPin(datesPick);
+    row = document.querySelector('#dates .date-row[data-id="' + datesPick + '"]');
+    if (row && row.scrollIntoView) row.scrollIntoView({ block: "nearest", behavior: "smooth" });
   };
   window.natDiaryMonth = function (delta) {
     var d = new Date(diaryYear, diaryMonth + delta, 1);
@@ -1578,6 +1608,384 @@ var NatNotes = (function(exports) {
       '<div class="panel"><p class="kicker">This month</p>' + list + undated + "</div>";
   }
 
+  var PC_LL = {
+    "BH10 7AR":[50.76756,-1.89535],"BH14 0BB":[50.72927,-1.94613],"BH23 3LY":[50.72968,-1.75475],
+    "BR1 3NN":[51.40827,0.01713],"BR3 4PX":[51.4077,-0.04238],"CM16 7EY":[51.67199,0.10169],
+    "CO3 4SA":[51.87308,0.86255],"CO9 1HT":[51.94367,0.63477],"CO9 2ET":[51.94248,0.648],
+    "CR0 2UX":[51.38183,-0.10123],"DA1 1DZ":[51.44597,0.22017],"DA3 8BS":[51.38418,0.30357],
+    "E1 0AF":[51.51086,-0.05116],"E15 4BQ":[51.54095,0.00272],"E2 0RY":[51.52935,-0.04538],
+    "EN3 4LB":[51.64402,-0.04351],"EN4 8SY":[51.64183,-0.1626],"IG11 9SF":[51.53301,0.09853],
+    "IG3 9AU":[51.54966,0.09303],"IG9 5BY":[51.62511,0.04464],"IP28 7EF":[52.3433,0.51059],
+    "KT12 1JP":[51.3734,-0.41526],"ME12 4QP":[51.39509,0.92253],"ME15 6JN":[51.27236,0.52437],
+    "ME20 6SA":[51.31053,0.44861],"ME3 9AA":[51.41998,0.56061],"ME5 0PA":[51.34596,0.52542],
+    "PO21 4SY":[50.76742,-0.73855],"RM16 2AP":[51.49762,0.3292],"RM18 7BS":[51.46291,0.35397],
+    "RM8 3JP":[51.55919,0.13664],"SE12 0PS":[51.44323,0.01476],"SE6 3DD":[51.43093,-0.01699],
+    "SS11 8BB":[51.61369,0.5238],"SS15 5UH":[51.57191,0.43183],"SS17 7QT":[51.52443,0.45016],
+    "SS17 9AA":[51.52659,0.45969],"SS7 2RF":[51.55375,0.6096],"SS8 8QW":[51.52414,0.60923],
+    "SS8 9HB":[51.52209,0.58038],"TN27 9NL":[51.16792,0.62265],"UB6 9AR":[51.52381,-0.35306],
+    "WD19 4BX":[51.64664,-0.37963]
+  };
+  var NAME_LL = [
+    ["ecta",[51.94367,0.63477]],
+    ["empire theatre",[51.94367,0.63477]],
+    ["halstead rbl",[51.94248,0.648]],
+    ["king edward",[51.54095,0.00272]],
+    ["dartford mayor",[51.44597,0.22017]],
+    ["greenford",[51.52381,-0.35306]],
+    ["oxhey",[51.64664,-0.37963]],
+    ["keyser",[51.64664,-0.37963]],
+    ["hadleigh cons",[51.55375,0.6096]],
+    ["east barnet",[51.64183,-0.1626]],
+    ["walton cons",[51.3734,-0.41526]],
+    ["bromley services",[51.40827,0.01713]]
+  ];
+  var NAME_STOP = { club:1, social:1, the:1, and:1, conservative:1, cons:1, events:1, community:1, association:1, royal:1, british:1, legion:1, trades:1, labour:1, centre:1, center:1, house:1, from:1, with:1, that:1, this:1, night:1, nights:1, memory:1, afternoon:1, charity:1, tea:1 };
+
+  function pcKey(pc) {
+    return String(pc || "").toUpperCase().replace(/\s+/g, " ").trim();
+  }
+  function nameTokens(s) {
+    return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().split(" ").filter(function (t) {
+      return t.length >= 4 && !NAME_STOP[t];
+    });
+  }
+  function namesClose(a, b) {
+    var na = String(a || "").toLowerCase(), nb = String(b || "").toLowerCase();
+    if (!na || !nb) return false;
+    if (na === nb) return true;
+    if (na.indexOf(nb) !== -1 || nb.indexOf(na) !== -1) return na.length > 10 || nb.length > 10;
+    var ta = nameTokens(a), tb = nameTokens(b), hit = 0, i;
+    if (!ta.length || !tb.length) return false;
+    for (i = 0; i < ta.length; i++) if (tb.indexOf(ta[i]) !== -1) hit += 1;
+    return hit >= 1 && (hit >= 2 || ta.length === 1 || tb.length === 1);
+  }
+  function parseIsoDay(date) {
+    var p = String(date || "").split("-");
+    if (p.length !== 3) return null;
+    return new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+  }
+  function daysBetweenIso(date, today) {
+    var a = parseIsoDay(date), b = parseIsoDay(today);
+    if (!a || !b) return 0;
+    return Math.round((a.getTime() - b.getTime()) / 864e5);
+  }
+  function untilInfo(show, today) {
+    var n = daysBetweenIso(show.date, today);
+    var hour = 20;
+    if (show.start) {
+      var h = Number(String(show.start).split(":")[0]);
+      if (!isNaN(h)) hour = h;
+    }
+    if (n === 0) return { n: 0, label: hour < 17 ? "Today" : "Tonight", cls: "now" };
+    if (n === 1) return { n: 1, label: "Tomorrow", cls: "soon" };
+    if (n === -1) return { n: -1, label: "Yesterday", cls: "past" };
+    if (n > 1) return { n: n, label: "In " + n + " days", cls: n <= 7 ? "soon" : n <= 31 ? "mid" : "later" };
+    return { n: n, label: Math.abs(n) + " days ago", cls: "past" };
+  }
+  function shortDay(date) {
+    var d = parseIsoDay(date);
+    if (!d) return date;
+    var dow = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][d.getDay()];
+    var mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getMonth()];
+    return dow + " " + d.getDate() + " " + mon;
+  }
+  function readGeo() {
+    try { return JSON.parse(localStorage.getItem("nat-geo-v1") || "{}"); } catch (e) { return {}; }
+  }
+  function writeGeo(obj) {
+    try { localStorage.setItem("nat-geo-v1", JSON.stringify(obj)); } catch (e) {}
+  }
+  function coordsFor(show, geo) {
+    var pc = pcKey(show.postcode);
+    if (pc && PC_LL[pc]) return PC_LL[pc];
+    if (pc && geo && geo[pc]) return geo[pc];
+    var name = String(show.venue || "").toLowerCase();
+    var i;
+    for (i = 0; i < NAME_LL.length; i++) {
+      if (name.indexOf(NAME_LL[i][0]) !== -1) return NAME_LL[i][1];
+    }
+    var town = String(show.town || "").toLowerCase();
+    for (i = 0; i < NAME_LL.length; i++) {
+      if (town.indexOf(NAME_LL[i][0]) !== -1) return NAME_LL[i][1];
+    }
+    return null;
+  }
+  function bookedShows() {
+    var list = [];
+    function add(row) {
+      if (!row || !row.date || !/^\d{4}-\d{2}-\d{2}$/.test(row.date) || !row.venue) return;
+      var i, prev;
+      for (i = 0; i < list.length; i++) {
+        if (list[i].date === row.date && namesClose(list[i].venue, row.venue)) {
+          prev = list[i];
+          if (!prev.postcode && row.postcode) prev.postcode = row.postcode;
+          if (!prev.town && row.town) prev.town = row.town;
+          if (!prev.start && row.start) prev.start = row.start;
+          if (!prev.finish && row.finish) prev.finish = row.finish;
+          if (row.fee) prev.fee = row.fee;
+          if (row.locked) prev.locked = true;
+          if (row.venueId) prev.venueId = row.venueId;
+          return;
+        }
+      }
+      list.push({
+        date: row.date,
+        venue: row.venue,
+        town: row.town || "",
+        postcode: row.postcode || "",
+        start: row.start || "",
+        finish: row.finish || "",
+        note: row.note || "",
+        fee: row.fee || 0,
+        nights: row.nights || 1,
+        locked: !!row.locked,
+        venueId: row.venueId || ""
+      });
+    }
+    (GIGS || []).forEach(function (g) {
+      if (!g || g.status === "held" || !g.venue) return;
+      add({
+        date: g.date,
+        venue: g.venue,
+        town: g.town,
+        postcode: g.postcode,
+        start: g.start,
+        finish: g.finish,
+        note: g.note
+      });
+    });
+    (VENUES || []).forEach(function (v) {
+      if (!B.isLockedRecord(v)) return;
+      add({
+        date: String(v.lockedDate || "").slice(0, 10),
+        venue: v.name,
+        town: v.town,
+        fee: Number(v.lockedFee || 0) || 0,
+        nights: Number(v.lockedNights || 1) || 1,
+        locked: true,
+        venueId: v.id
+      });
+    });
+    var cash = B.lockedCash(VENUES);
+    list.forEach(function (s) {
+      var hits = (cash.rows || []).filter(function (r) { return r.lockedDate === s.date; });
+      var best = null;
+      if (hits.length === 1) best = hits[0];
+      else if (hits.length > 1) {
+        best = hits.filter(function (r) { return namesClose(r.name, s.venue); })[0] || hits[0];
+      } else {
+        var byName = (cash.rows || []).filter(function (r) { return namesClose(r.name, s.venue); });
+        if (byName.length === 1) best = byName[0];
+      }
+      if (!best) return;
+      s.locked = true;
+      s.venueId = s.venueId || best.id;
+      if (!s.fee) {
+        if (best.lockedDate === s.date) s.fee = best.fee;
+        else if (best.nights > 1) s.fee = Math.round(best.fee / best.nights);
+        else s.fee = best.fee;
+      }
+    });
+    list.sort(function (a, b) {
+      if (a.date !== b.date) return a.date < b.date ? -1 : 1;
+      return String(a.venue).localeCompare(String(b.venue));
+    });
+    list.forEach(function (s, i) { s.id = s.date + "-" + i; });
+    return list;
+  }
+  function fillCoords(shows, done) {
+    var geo = readGeo();
+    var missing = [];
+    var seen = {};
+    shows.forEach(function (s) {
+      s.ll = coordsFor(s, geo);
+      var pc = pcKey(s.postcode);
+      if (!s.ll && pc && !seen[pc]) { seen[pc] = 1; missing.push(pc); }
+    });
+    if (!missing.length) { done(); return; }
+    fetch("https://api.postcodes.io/postcodes", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ postcodes: missing.slice(0, 100) })
+    }).then(function (r) { return r.json(); }).then(function (data) {
+      (data.result || []).forEach(function (row) {
+        if (row && row.result) geo[row.query] = [row.result.latitude, row.result.longitude];
+      });
+      writeGeo(geo);
+      shows.forEach(function (s) { if (!s.ll) s.ll = coordsFor(s, geo); });
+      done();
+    }).catch(function () { done(); });
+  }
+  var leafletPromise = null;
+  function loadLeaflet() {
+    if (window.L) return Promise.resolve(window.L);
+    if (leafletPromise) return leafletPromise;
+    leafletPromise = new Promise(function (resolve, reject) {
+      if (!document.getElementById("leaflet-css")) {
+        var link = document.createElement("link");
+        link.id = "leaflet-css";
+        link.rel = "stylesheet";
+        link.href = "vendor/leaflet/leaflet.css";
+        document.head.appendChild(link);
+      }
+      var script = document.createElement("script");
+      script.src = "vendor/leaflet/leaflet.js";
+      script.async = true;
+      script.onload = function () { if (window.L) resolve(window.L); else reject(new Error("leaflet")); };
+      script.onerror = function () { reject(new Error("leaflet")); };
+      document.head.appendChild(script);
+    });
+    return leafletPromise;
+  }
+  function destroyDatesMap() {
+    if (datesMap) {
+      try { datesMap.remove(); } catch (e) {}
+    }
+    datesMap = null;
+    datesMarkers = {};
+  }
+  function flyDatesPin(id) {
+    var m = datesMarkers[id];
+    var k;
+    if (!datesMap || !m) return;
+    datesMap.setView(m.getLatLng(), 11, { animate: true });
+    for (k in datesMarkers) {
+      if (!Object.prototype.hasOwnProperty.call(datesMarkers, k)) continue;
+      var el = datesMarkers[k]._icon;
+      if (!el) continue;
+      if (k === id) el.classList.add("on");
+      else el.classList.remove("on");
+    }
+  }
+  function paintDatesMap(shows, today) {
+    var hold = $("dates-map");
+    var msg = $("dates-map-msg");
+    if (!hold) return;
+    var upcoming = shows.filter(function (s) { return s.date >= today && s.ll; });
+    var pins = upcoming.length ? upcoming : shows.filter(function (s) { return s.ll; });
+    if (!pins.length) {
+      if (msg) msg.textContent = "No pins yet — list below still has every date.";
+      return;
+    }
+    loadLeaflet().then(function (L) {
+      if (!datesOpen || !$("dates-map")) return;
+      destroyDatesMap();
+      var map = L.map(hold, { scrollWheelZoom: false, attributionControl: true, zoomControl: true });
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+        attribution: "&copy; OpenStreetMap &copy; CARTO",
+        subdomains: "abcd",
+        maxZoom: 18
+      }).addTo(map);
+      var next = upcoming[0] || pins[0];
+      datesMarkers = {};
+      pins.forEach(function (s) {
+        var isNext = next && s.id === next.id;
+        var icon = L.divIcon({
+          className: "pin" + (isNext ? " next" : ""),
+          html: "<i></i>",
+          iconSize: isNext ? [18, 18] : [18, 18],
+          iconAnchor: [9, 9]
+        });
+        var mk = L.marker(s.ll, { icon: icon, keyboard: false });
+        var until = untilInfo(s, today);
+        mk.bindTooltip(s.venue + "<br>" + until.label + " · " + shortDay(s.date), {
+          direction: "top",
+          opacity: 1,
+          className: "dates-tip"
+        });
+        mk.on("click", function () { window.natDatesPick(s.id); });
+        mk.addTo(map);
+        datesMarkers[s.id] = mk;
+      });
+      var bounds = L.latLngBounds(pins.map(function (s) { return s.ll; }));
+      var frame = function () {
+        map.invalidateSize();
+        if (pins.length === 1) map.setView(pins[0].ll, 11);
+        else map.fitBounds(bounds, { padding: [36, 36], maxZoom: 10 });
+      };
+      requestAnimationFrame(frame);
+      setTimeout(frame, 160);
+      datesMap = map;
+      if (msg) { msg.textContent = ""; msg.style.display = "none"; }
+    }).catch(function () {
+      if (msg) msg.textContent = "Map needs a signal — list below still works.";
+    });
+  }
+  function dateRowHtml(s, today) {
+    var until = untilInfo(s, today);
+    var bits = [];
+    if (s.town) bits.push(s.town);
+    if (s.postcode) bits.push(s.postcode);
+    if (s.start && s.finish) bits.push(s.start + "–" + s.finish);
+    else if (s.start) bits.push(s.start);
+    var fee = s.fee ? '<span class="date-fee">' + B.gbp(s.fee) + "</span>" : "";
+    var on = datesPick === s.id ? " on" : "";
+    var past = until.n < 0 ? " past" : "";
+    return '<button type="button" class="date-row until-' + until.cls + on + past + '" data-id="' + esc(s.id) + '" onclick="natDatesPick(\'' + esc(s.id) + "')\">" +
+      '<span class="date-when"><b>' + esc(until.label) + "</b><span>" + esc(shortDay(s.date)) + "</span></span>" +
+      '<span class="date-main"><span class="date-name">' + esc(s.venue) + '</span><span class="date-meta">' + esc(bits.join(" · ") || (s.locked ? "Locked" : "Booked")) + "</span></span>" +
+      fee + "</button>";
+  }
+  function renderDates() {
+    var el = $("dates");
+    if (!el) return;
+    if (!datesOpen) {
+      destroyDatesMap();
+      el.className = "";
+      el.innerHTML = "";
+      return;
+    }
+    var today = todayIso();
+    var shows = bookedShows();
+    var geo = readGeo();
+    shows.forEach(function (s) { s.ll = coordsFor(s, geo); });
+    var upcoming = shows.filter(function (s) { return s.date >= today; });
+    var past = shows.filter(function (s) { return s.date < today; });
+    var stats = B.lockedCash(VENUES);
+    var next = upcoming[0];
+    var nextCard = "";
+    if (next) {
+      var u = untilInfo(next, today);
+      nextCard = '<button type="button" class="dates-next" onclick="natDatesPick(\'' + esc(next.id) + "')\"><span>Next up · " + esc(u.label.toLowerCase()) + "</span><b>" + esc(next.venue) + "</b><em>" +
+        esc(shortDay(next.date)) + (next.town ? " · " + esc(next.town) : "") + (next.start ? " · " + esc(next.start) : "") + "</em></button>";
+    }
+    var heldN = (GIGS || []).filter(function (g) {
+      return g && g.status === "held" && g.date >= today && !shows.some(function (s) { return s.date === g.date; });
+    }).length;
+    var undatedHtml = (UNDATED || []).filter(function (u) {
+      return !shows.some(function (s) { return namesClose(s.venue, u.venue); });
+    }).map(function (u) {
+      return '<p class="dates-pend">' + esc(u.venue) + (u.note ? " · " + esc(u.note) : " · date TBC") + "</p>";
+    }).join("");
+    var pendingHtml = (stats.pending || []).map(function (p) {
+      return '<p class="dates-pend">' + esc(p.name) + " not counted until a date is locked — " + B.gbp(p.fee) + " if she does.</p>";
+    }).join("");
+    var heldHtml = heldN ? '<p class="dates-held">' + heldN + " held date" + (heldN === 1 ? "" : "s") + " blocked in the diary — not on this map.</p>" : "";
+    var listUp = upcoming.map(function (s) { return dateRowHtml(s, today); }).join("") ||
+      '<p class="empty">No upcoming performing dates on the book.</p>';
+    var listPast = past.length
+      ? '<p class="dates-kicker">Already sung · ' + past.length + "</p>" + past.map(function (s) { return dateRowHtml(s, today); }).join("")
+      : "";
+    var onMap = upcoming.filter(function (s) { return s.ll; }).length;
+    var stamp = [upcoming.length, shows.length, stats.cash, stats.nights, next && next.id].join("|");
+    if (el.className === "show" && el.getAttribute("data-stamp") === stamp && datesMap) return;
+    destroyDatesMap();
+    el.className = "show";
+    el.setAttribute("data-stamp", stamp);
+    el.innerHTML =
+      '<header class="dates-head"><button class="back" type="button" onclick="natDatesClose()">Close <span>Dates booked</span></button>' +
+      "<h1>Dates booked</h1>" +
+      '<p class="dates-sub"><b>' + B.gbp(stats.cash) + "</b> locked · " + stats.nights + " night" + (stats.nights === 1 ? "" : "s") +
+      " · " + upcoming.length + " coming up</p></header>" +
+      '<div class="dates-map-wrap"><div id="dates-map"></div><p class="dates-map-msg" id="dates-map-msg">Loading the map…</p>' + nextCard + "</div>" +
+      '<div class="dates-list"><p class="dates-kicker">Coming up · ' + upcoming.length + (onMap ? " · " + onMap + " on the map" : "") + "</p>" +
+      listUp + heldHtml + undatedHtml + pendingHtml + listPast + "</div>";
+    fillCoords(shows, function () {
+      if (!datesOpen) return;
+      paintDatesMap(shows, today);
+    });
+  }
+
   function groupLabel(tab) {
     if (tab === "close") return "Close tonight";
     if (tab === "live") return "Live threads";
@@ -1668,22 +2076,9 @@ var NatNotes = (function(exports) {
   }
 
   function cashHtml(stats) {
-    var html = '<button class="cash-ticker" type="button" onclick="natCash()">' +
+    return '<button class="cash-ticker" type="button" onclick="natCash()" aria-label="Dates booked">' +
       '<span class="cash-amt">' + B.gbp(stats.cash) + "</span>" +
-      '<span class="cash-meta">' + stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " locked</span></button>";
-    if (!cashOpen) return html;
-    html += '<div class="cash-break"><b>Confirmed bookings</b>';
-    stats.rows.forEach(function (r) {
-      var when = r.lockedDate ? " · " + r.lockedDate : "";
-      html += '<div class="row"><span>' + esc(r.name) + when + (r.nights > 1 ? " · " + r.nights + " nights" : "") +
-        "</span><span>" + B.gbp(r.fee) + "</span></div>";
-    });
-    html += '<div class="sum"><span>Total locked</span><span>' + B.gbp(stats.cash) + "</span></div>";
-    stats.pending.forEach(function (p) {
-      html += '<div class="pend">' + esc(p.name) + " not counted until a date is locked — " + B.gbp(p.fee) + " if she does.</div>";
-    });
-    html += "</div>";
-    return html;
+      '<span class="cash-meta">' + stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " locked · dates</span></button>";
   }
 
   function renderList() {
@@ -1779,6 +2174,12 @@ var NatNotes = (function(exports) {
 
   function render() {
     try { B.lockedCash(VENUES); } catch (e) {}
+    if (datesOpen) {
+      if ($("detail")) $("detail").className = "";
+      if ($("app")) $("app").classList.add("show");
+      renderDates();
+      return;
+    }
     if (openId) {
       $("app").classList.remove("show");
       $("detail").className = "show";
@@ -1789,6 +2190,7 @@ var NatNotes = (function(exports) {
       renderList();
     }
     renderDiary();
+    renderDates();
   }
 
   loadVenues();
