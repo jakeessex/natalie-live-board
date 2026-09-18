@@ -348,13 +348,20 @@
         "subject": "Re: Jake Essex for Parkstone Trades & Labour Club?",
         "body": "Hi Danny,\n\nAs per our conversation Friday 5th Feb looks to be a good one to book in as I’m in the kinson club on the 6th, double check and get back to me as soon as you can & I’ll get it locked into the diary.\n\nThanks mate,\nJake Essex",
         "msgId": "1a0b4b1d830ab9b3"
+      },
+      {
+        "side": "them",
+        "msgId": "1a0b4ca186305e91",
+        "at": "2026-09-18T13:52:18Z",
+        "subject": "Re: Jake Essex for Parkstone Trades & Labour Club?",
+        "body": "Hi Jake\n\nYep that sounds good. Ill book that in please fella.\n\nKind regards\n\nDanny"
       }
     ],
     "hasThread": true,
     "tab": "booked",
-    "statusNote": "LOCKED Danny yes 18 Sep · Fri 5 Feb 2027 · £300 cash · 485 Ashley Road Poole BH14 0BB · sets 20:30–21:30 + 22:00–23:00 · night before Kinson Cons Sat 6 Feb · diary vvdrotspvlrhb9pb1svt5ekd1k · OWN",
+    "statusNote": "LOCKED Danny yes 18 Sep · Them 1a0b4ca186305e91 · Fri 5 Feb 2027 · £300 cash · 485 Ashley Road Poole BH14 0BB · sets 20:30–21:30 + 22:00–23:00 · night before Kinson · diary vvdrotspvlrhb9pb1svt5ekd1k · OWN",
     "replyLane": null,
-    "notes": "CONFIRMED lock 18 Sep — Danny yes (was soft-lock). £300 cash 2hr Friday. Ticker £5,750 / 20 nights.",
+    "notes": "CONFIRMED Danny Them “book that in” 18 Sep. Soft→LOCKED. Ticker £5,750 / 20.",
     "lockedFee": 300,
     "lockedDate": "2027-02-05",
     "lockedNights": 1,
