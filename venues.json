@@ -4848,7 +4848,7 @@
         "at": "2026-09-18T08:09:58Z",
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Live music \u2014 Jake Essex",
-        "body": "Hi Lesley,\n\nJust checking in \u2014 if a Saturday or Sunday into 2027 still looks useful once the works settle, happy to hold the \u00a3400 and get it pencilled in when you're ready.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
+        "body": "Hi Lesley,\n\nJust checking in \u2014 if a Saturday or Sunday into 2027 still looks useful\nonce the works settle, happy to hold the \u00a3400 and get it pencilled in when\nyou're ready.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
       }
     ],
     "hasThread": true,
@@ -7876,7 +7876,7 @@
     "badge": "quoted",
     "phone": "+441932227549",
     "needPhone": false,
-    "email": "waltonconclub@outlook.com",
+    "email": "waltonconclub@outlook.com \u00b7 bar.manager.waltonconclub@outlook.com",
     "replied": "yes \u2014 Kelly Rowbottom fee ask 17 Sep",
     "firstPitch": "28 Aug 2026",
     "addedAt": "28 Aug 2026",
@@ -7918,8 +7918,8 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "replyLane": "email",
-    "statusNote": "quoted \u00b7 Kelly Rowbottom fee ask + Us \u00a3300c/\u00a3330b 2\u00d71hr \u00b7 \u00a3400c/\u00a3430b 3\u00d745 \u00b7 Haggle owns wait \u00b7 Also cold email waltonconclub@"
+    "statusNote": "quoted \u00b7 Kelly Rowbottom fee ask + Us \u00a3300c/\u00a3330b 2\u00d71hr \u00b7 \u00a3400c/\u00a3430b 3\u00d745 \u00b7 Haggle owns wait \u00b7 Also cold email waltonconclub@",
+    "replyLane": "email"
   },
   {
     "id": "warminster-cons",
@@ -18537,8 +18537,8 @@
         "body": "Hi Natalie\nWhat would he charge for a couple of hours on a Sunday. Starting at 2pm with small break before the last Hour\n\nRegards\nVictoria club"
       },
       {
-        "side": "them",
-        "label": "Their reply",
+        "side": "us",
+        "label": "Sent",
         "at": "2026-09-16T12:48:34Z",
         "from": "",
         "subject": "Re: Jake Essex for Coulsdon Victoria Social Club?",
