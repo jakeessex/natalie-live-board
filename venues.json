@@ -260,7 +260,7 @@
     "phone": null,
     "needPhone": true,
     "email": "info@ptlc.co.uk",
-    "replied": true,
+    "replied": "yes — Danny soft-lock Fri 5 Feb pending final yes",
     "firstPitch": "18 Sep 2026",
     "addedAt": "2026-09-18T09:19:59.562Z",
     "followUps": "0 · last —",
@@ -331,11 +331,28 @@
         "at": "2026-09-18T12:44:18Z",
         "subject": "Re: Jake Essex for Parkstone Trades & Labour Club?",
         "body": "Hi Danny,\n\nSorry about that. I've had another look and I need to correct myself.\n\nThe 29th of January is a Thursday, not a Friday, so we shouldn't have locked that as a Friday night. Apologies for the mix-up.\n\nHere are some Fridays that are free if any work for Parkstone:\n\nFriday 15th January 2027\nFriday 22nd January 2027\nFriday 5th February 2027\nFriday 12th February 2027\nFriday 19th February 2027\nFriday 26th February 2027\nFriday 5th March 2027\nFriday 12th March 2027\n\nSame as before: £300 cash for the 2 hour Friday. Reply with a date and I'll lock it.\n\nNatalie\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-18T13:14:27Z",
+        "from": "info@ptlc.co.uk",
+        "subject": "Re: Jake Essex for Parkstone Trades & Labour Club?",
+        "body": "Hi Natalie\n\nIts 485 Ashley Road, poole, Dorset. BH14 0BB\n\nSet times would be 8.30pm to 9.30pm and 10pm to 11pm please.\n\nKind regards\n\nDanny",
+        "msgId": "1a0b4a77220ca5d1"
+      },
+      {
+        "side": "us",
+        "at": "2026-09-18T13:25:38Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Parkstone Trades & Labour Club?",
+        "body": "Hi Danny,\n\nAs per our conversation Friday 5th Feb looks to be a good one to book in as I’m in the kinson club on the 6th, double check and get back to me as soon as you can & I’ll get it locked into the diary.\n\nThanks mate,\nJake Essex",
+        "msgId": "1a0b4b1d830ab9b3"
       }
     ],
     "hasThread": true,
     "tab": "booked",
-    "statusNote": "SOFT-LOCK Fri 5 Feb 2027 · £300 cash · 485 Ashley Road Poole BH14 0BB · sets 20:30–21:30 + 22:00–23:00 · night before Kinson Cons Sat 6 Feb · Jake soft-lock 18 Sep pending Danny yes · diary vvdrotspvlrhb9pb1svt5ekd1k · NOT Choice",
+    "statusNote": "SOFT-LOCK Jake 18 Sep · Fri 5 Feb 2027 £300 cash · 485 Ashley Road Poole BH14 0BB · sets 20:30–21:30 + 22:00–23:00 · night before Kinson · pending Danny yes",
     "replyLane": null,
     "notes": "Jake soft-lock 18 Sep pending Danny confirm. Prior 29 Jan VOID. Address 485 Ashley Road Poole BH14 0BB. Ticker +£300 → £5,750 / 20 nights.",
     "lockedFee": 300,
