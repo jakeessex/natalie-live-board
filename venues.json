@@ -21001,5 +21001,30 @@
     ],
     "hasThread": true,
     "tab": "call"
+  },
+  {
+    "id": "sidcup-social",
+    "name": "Sidcup Social (Katie Harris)",
+    "badge": "locked",
+    "tab": "booked",
+    "lockedFee": 300,
+    "lockedDate": "2027-04-17",
+    "lockedNights": 1,
+    "address": "169 Main Road",
+    "postcode": "DA14 6PD",
+    "town": "Sidcup",
+    "email": "Katie Harris (Messenger — no club email)",
+    "phone": null,
+    "needPhone": false,
+    "replyLane": null,
+    "hasThread": false,
+    "messages": [],
+    "replied": "OWN LOCK Katie Harris Messenger — Sat 17 Apr 2027 £300 cash",
+    "statusNote": "OWN LOCK Sat 17 Apr 2027 · £300 cash · Katie Harris Messenger · 3hr 20:30–23:30 · 169 Main Rd Sidcup DA14 6PD · RAC Dagenham day then evening · diary ij6mkh2ehno23qqvelh5ceh6d8 · NEVER Choice without Jake OK",
+    "notes": "OWN lock 18 Sep 2026. Cash board £6,050 / 21 nights. Not Natalie email.",
+    "subject": "OWN LOCK Sidcup Social Sat 17 Apr 2027",
+    "addedAt": "2026-09-18T15:47:19.252108Z",
+    "firstPitch": "18 Sep 2026",
+    "followUps": 0
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T14:02:17Z",
+  "updatedAt": "2026-09-18T16:47:19+01:00",
   "source": "JAKE ESSEX GIGS @ CL",
   "gigs": [
     {
@@ -501,6 +501,18 @@
       "town": "East Barnet",
       "status": "booked",
       "source": "board"
+    },
+    {
+      "date": "2027-04-17",
+      "venue": "Sidcup Social (Katie Harris)",
+      "town": "Sidcup",
+      "postcode": "DA14 6PD",
+      "location": "169 Main Road, Sidcup DA14 6PD",
+      "start": "20:30",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £300 cash · Katie Harris Messenger · 3hr · RAC Dagenham day then evening · diary ij6mkh2ehno23qqvelh5ceh6d8"
     }
   ],
   "undated": [
