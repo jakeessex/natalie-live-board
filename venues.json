@@ -260,7 +260,7 @@
     "phone": null,
     "needPhone": true,
     "email": "info@ptlc.co.uk",
-    "replied": "yes — Danny budget then rate pushback 18 Sep",
+    "replied": true,
     "firstPitch": "18 Sep 2026",
     "addedAt": "2026-09-18T09:19:59.562Z",
     "followUps": "0 · last —",
@@ -310,11 +310,34 @@
         "subject": "Re: Jake Essex for Parkstone Trades & Labour Club?",
         "body": "Hi Danny,\n\nSorry about that. You're right to ask for a clear figure.\n\nFor a 2 hour Friday night at Parkstone from Essex, it's £300 cash or £330 through the books. That covers the travel and the night. Rates do change with the day of the week, how far the drive is, cash or books, and whether it's one date or a few.\n\nIf that sits a bit high for you, tell us what you can stretch to for a Friday and we'll be straight about whether we can make it work. If you can line up a few Fridays into 2027 we can look at £250 cash each. We'd rather get a booking sorted than talk past each other.\n\nOwn PA, no deposit.\n\nNatalie\nwww.jakeessex.co.uk",
         "msgId": "1a0b45d4c2a7e510"
+      },
+      {
+        "side": "them",
+        "msgId": "1a0b476360cde57d",
+        "at": "2026-09-18T12:20:40Z",
+        "subject": "Re: Jake Essex for Parkstone Trades & Labour Club?",
+        "body": "Hi Natalie\n\nMany thanks.\n\nI would want to see one performance before committing to any more. It would be a cash payment.\n\nWould Friday 29th January be available?\n\nKind regards\n\nDanny"
+      },
+      {
+        "side": "us",
+        "msgId": "1a0b484f380f457f",
+        "at": "2026-09-18T12:36:46Z",
+        "subject": "Re: Jake Essex for Parkstone Trades & Labour Club?",
+        "body": "Hi Danny,\n\nThanks for booking him. Friday 29th January 2027 confirmed & in the diary.\n\nI've got Parkstone Trades & Labour Club as the address — please confirm the full address and what time you'd like him to start.\n\nIf you've got other dates after you've seen him, happy to look after those too.\n\nNatalie\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "us",
+        "msgId": "1a0b48bd86e932ce",
+        "at": "2026-09-18T12:44:18Z",
+        "subject": "Re: Jake Essex for Parkstone Trades & Labour Club?",
+        "body": "Hi Danny,\n\nSorry about that. I've had another look and I need to correct myself.\n\nThe 29th of January is a Thursday, not a Friday, so we shouldn't have locked that as a Friday night. Apologies for the mix-up.\n\nHere are some Fridays that are free if any work for Parkstone:\n\nFriday 15th January 2027\nFriday 22nd January 2027\nFriday 5th February 2027\nFriday 12th February 2027\nFriday 19th February 2027\nFriday 26th February 2027\nFriday 5th March 2027\nFriday 12th March 2027\n\nSame as before: £300 cash for the 2 hour Friday. Reply with a date and I'll lock it.\n\nNatalie\nwww.jakeessex.co.uk"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Quoted £300 cash / £330 books 2hr Friday FAR · multi Fridays 2027 £250 cash · Haggle"
+    "statusNote": "quoted · NOT locked · Fri 29 Jan VOID (was Thursday) · Us correction 1a0b48bd86e932ce · £300 cash 2hr Fridays · alt Fridays Jan–Mar 2027 offered · wait Danny pick · Haggle owns",
+    "replyLane": "email",
+    "notes": "Them asked Fri 29 Jan · Us briefly confirmed then VOIDED — 29 Jan is Thursday. Date correction Us Sent with alt Fridays £300 cash. Do NOT add to ticker until real Friday locked."
   },
   {
     "id": "freshwater-conservative-club",
@@ -13861,7 +13884,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Holly Bennett · nudge Us SENT_OK 1a0aebed2fe7f726 · £250 Thu 22 Oct 7–9pm 2×1hr · await pencil · replyLane email"
+    "statusNote": "quoted · Call lane · Jake called Fri 18 Sep · Holly date expected Monday · NO email chase · wait phone · £250 Thu 22 Oct pencil still live until Mon",
+    "replyLane": "call",
+    "notes": "Jake called Fri 18 Sep — date expected Monday; replyLane=call; do not Us Sent."
   },
   {
     "id": "the-hop-inn",
