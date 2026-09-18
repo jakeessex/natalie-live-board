@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T20:05:49Z",
+  "updatedAt": "2026-09-18T13:29:08Z",
   "source": "JAKE ESSEX GIGS @ CL",
   "gigs": [
     {
@@ -306,6 +306,18 @@
       "finish": "23:00",
       "status": "booked",
       "source": "cl"
+    },
+    {
+      "date": "2027-02-05",
+      "venue": "Parkstone Trades & Labour Club",
+      "town": "Poole",
+      "postcode": "BH14 0BB",
+      "location": "485 Ashley Road, Poole, Dorset BH14 0BB",
+      "start": "20:30",
+      "finish": "23:00",
+      "status": "booked",
+      "source": "board",
+      "note": "SOFT-LOCK £300 cash · Danny · sets 20:30–21:30+22:00–23:00 · night before Kinson · pending Danny yes · diary vvdrotspvlrhb9pb1svt5ekd1k"
     },
     {
       "date": "2027-02-06",

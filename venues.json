@@ -255,8 +255,8 @@
   {
     "id": "parkstone-trades-and-labour-club",
     "name": "Parkstone Trades & Labour Club",
-    "town": "",
-    "badge": "quoted",
+    "town": "Poole",
+    "badge": "locked",
     "phone": null,
     "needPhone": true,
     "email": "info@ptlc.co.uk",
@@ -334,10 +334,15 @@
       }
     ],
     "hasThread": true,
-    "tab": "call",
-    "statusNote": "quoted · NOT locked · Fri 29 Jan VOID (was Thursday) · Us correction 1a0b48bd86e932ce · £300 cash 2hr Fridays · alt Fridays Jan–Mar 2027 offered · wait Danny pick · Haggle owns",
-    "replyLane": "email",
-    "notes": "Them asked Fri 29 Jan · Us briefly confirmed then VOIDED — 29 Jan is Thursday. Date correction Us Sent with alt Fridays £300 cash. Do NOT add to ticker until real Friday locked."
+    "tab": "booked",
+    "statusNote": "SOFT-LOCK Fri 5 Feb 2027 · £300 cash · 485 Ashley Road Poole BH14 0BB · sets 20:30–21:30 + 22:00–23:00 · night before Kinson Cons Sat 6 Feb · Jake soft-lock 18 Sep pending Danny yes · diary vvdrotspvlrhb9pb1svt5ekd1k · NOT Choice",
+    "replyLane": null,
+    "notes": "Jake soft-lock 18 Sep pending Danny confirm. Prior 29 Jan VOID. Address 485 Ashley Road Poole BH14 0BB. Ticker +£300 → £5,750 / 20 nights.",
+    "lockedFee": 300,
+    "lockedDate": "2027-02-05",
+    "lockedNights": 1,
+    "postcode": "BH14 0BB",
+    "address": "485 Ashley Road, Poole, Dorset BH14 0BB"
   },
   {
     "id": "freshwater-conservative-club",
