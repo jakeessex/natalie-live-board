@@ -21390,16 +21390,16 @@
   {
     "id": "george-and-dragon-headcorn",
     "name": "George & Dragon Headcorn",
-    "badge": "awaiting",
-    "tab": "call",
+    "badge": "retract-agency",
+    "tab": "other",
     "email": "info@georgeanddragon-headcorn.co.uk",
     "phone": "+441622890239",
     "needPhone": false,
     "town": "Headcorn",
     "postcode": "TN27 9NL",
     "subject": "Jake Essex for George & Dragon Headcorn?",
-    "statusNote": "Natalie cold Sat 19 SENT_OK 1a0b96627921ba8f · awaiting · FAR Headcorn",
-    "notes": "29 High Street Headcorn TN27 9NL · FAR Maidstone belt · call backup 01622 890239 if bounce",
+    "statusNote": "Choice Live room · mistaken Natalie cold retracted · Us apology 1a0b999b638be40a · NEVER cold / NEVER chase · agency only",
+    "notes": "Choice Live. Do not Natalie-cold. Apology sent 19 Sep. Call/email chase banned.",
     "hasThread": true,
     "messages": [
       {
@@ -21410,9 +21410,18 @@
         "subject": "Jake Essex for George & Dragon Headcorn?",
         "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the George & Dragon's weekend live music nights, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027. If a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a0b96627921ba8f"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-19T12:17:34Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for George & Dragon Headcorn?",
+        "body": "Hi,\n\nApologies. Please ignore my earlier email. Jake books George & Dragon Headcorn through Choice Live, so I shouldn't have reached out direct.\n\nSorry for the noise.\n\nNatalie",
+        "msgId": "1a0b999b638be40a"
       }
     ],
-    "replied": null,
+    "replied": "Retracted — Choice Live agency room",
     "replyLane": null,
     "followUps": 0,
     "firstPitch": "19 Sep 2026",
