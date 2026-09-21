@@ -23267,5 +23267,33 @@
     "hasThread": true,
     "tab": "call",
     "statusNote": "WAVE-C6 cold Us SENT_OK 1a0c49bf6cc82a6f \u00b7 awaiting \u00b7 FAR \u00b7 Also 01793 614114"
+  },
+  {
+    "id": "salisbury-club",
+    "name": "Salisbury Club",
+    "town": "Reading",
+    "badge": "awaiting",
+    "phone": null,
+    "needPhone": true,
+    "email": "salisburyclub@hotmail.com",
+    "replied": "no",
+    "firstPitch": "21 Sep 2026",
+    "addedAt": "2026-09-21T15:38:34Z",
+    "followUps": "0 \u00b7 last \u2014",
+    "subject": "Jake Essex for Salisbury Club?",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-21T15:38:34Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Salisbury Club?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Salisbury Club's Saturday live music nights.\nHe'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s:\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027. If a date works,\nreply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0c49e76ed0e765"
+      }
+    ],
+    "hasThread": true,
+    "tab": "call",
+    "statusNote": "WAVE-C6 SWAP2 cold Us SENT_OK 1a0c49e76ed0e765 \u00b7 awaiting \u00b7 FAR \u00b7 Also 0118 926 5804"
   }
 ]
