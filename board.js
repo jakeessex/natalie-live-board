@@ -1420,6 +1420,9 @@ var NatNotes = (function(exports) {
     $("gate").classList.add("ok");
     $("app").classList.add("show");
     try { sessionStorage.setItem("natalie-ok", "1"); } catch (e) {}
+    try { localStorage.removeItem("natalie-cash-5k-v1"); } catch (e) {}
+    var party = document.getElementById("cash-5k-party");
+    if (party && party.parentNode) party.parentNode.removeChild(party);
     render();
   }
 
@@ -2226,7 +2229,7 @@ var NatNotes = (function(exports) {
       '<header class="dates-head"><button class="back" type="button" onclick="natDatesClose()">Close <span>Dates booked</span></button>' +
       "<h1>Dates booked</h1>" +
       '<p class="dates-sub"><b>' + B.gbp(stats.cash) + "</b> locked · " + stats.nights + " night" + (stats.nights === 1 ? "" : "s") +
-      " · " + upcoming.length + " coming up</p></header>" +
+      " · " + B.gbp(stats.cash) + " of £10k · " + B.gbp((B.cashTarget(stats) || {}).left || 0) + " to go</p></header>" +
       '<div class="dates-map-wrap"><div id="dates-map"></div><p class="dates-map-msg" id="dates-map-msg">Loading the map…</p>' + nextCard + "</div>" +
       '<div class="dates-list"><p class="dates-kicker">Coming up · ' + upcoming.length + (onMap ? " · " + onMap + " on the map" : "") + "</p>" +
       listUp + heldHtml + undatedHtml + pendingHtml + listPast + "</div>";
@@ -2309,7 +2312,7 @@ var NatNotes = (function(exports) {
     var goal = B.cashTarget(stats);
     return '<button class="cash-ticker" type="button" onclick="natCash()" aria-label="Dates booked">' +
       '<span class="cash-amt">' + B.gbp(stats.cash) + "</span>" +
-      '<span class="cash-meta">' + stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " locked · dates</span></button>" +
+      '<span class="cash-meta">' + stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " · of £10k</span></button>" +
       '<div class="cash-goal" aria-label="Ten thousand target">' +
         '<div class="cash-bar"><i style="width:' + goal.pct + '%"></i></div>' +
         '<div class="cash-goal-meta"><span>' + B.gbp(stats.cash) + " of £10k</span><span>" + B.gbp(goal.left) + " to go</span></div>" +
