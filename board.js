@@ -2008,62 +2008,42 @@ var NatNotes = (function(exports) {
         venueId: row.venueId || ""
       });
     }
-    (GIGS || []).forEach(function (g) {
-      // Choice Live stays in Diary so Nat doesn’t double-book. This map is own closed only.
-      if (!g || g.status === "held" || !g.venue) return;
-      if (String(g.source || "").toLowerCase() !== "board") return;
-      add({
-        date: g.date,
-        venue: g.venue,
-        town: g.town,
-        postcode: g.postcode,
-        start: g.start,
-        finish: g.finish,
-        note: g.note,
-        locked: true
-      });
-    });
+    // Dates booked map = locked book only (the 25 nights). Never the Choice Live calendar.
+    // Extra pins for a lock (Stortford 4, Kinson 2) come from OUR dates for that venue, not CL.
     (VENUES || []).forEach(function (v) {
       if (!B.isLockedRecord(v)) return;
-      var date = String(v.lockedDate || "").slice(0, 10);
-      var hit = null;
+      var lockDate = String(v.lockedDate || "").slice(0, 10);
+      var rows = [];
       (GIGS || []).forEach(function (g) {
-        if (!g || !g.venue || !namesClose(g.venue, v.name)) return;
-        if (g.date === date) hit = g;
-        else if (!hit) hit = g;
+        if (!g || !g.venue || !g.date || g.status === "held") return;
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(g.date)) return;
+        if (!namesClose(g.venue, v.name)) return;
+        var src = String(g.source || "").toLowerCase();
+        if (src === "board" || g.date === lockDate) rows.push(g);
       });
-      add({
-        date: date,
-        venue: v.name,
-        town: v.town || (hit && hit.town) || "",
-        postcode: (v.postcode || (hit && hit.postcode) || ""),
-        start: hit && hit.start,
-        finish: hit && hit.finish,
-        fee: Number(v.lockedFee || 0) || 0,
-        nights: Number(v.lockedNights || 1) || 1,
-        locked: true,
-        venueId: v.id
+      if (!rows.length && /^\d{4}-\d{2}-\d{2}$/.test(lockDate)) {
+        rows.push({ date: lockDate, venue: v.name, town: v.town, postcode: v.postcode });
+      }
+      var fee = Number(v.lockedFee || 0) || 0;
+      var nights = Number(v.lockedNights || 1) || 1;
+      var split = rows.length > 1;
+      var feeEach = split ? Math.round(fee / rows.length) : fee;
+      var nightsEach = split ? 1 : nights;
+      rows.forEach(function (g) {
+        add({
+          date: g.date,
+          venue: v.name,
+          town: v.town || g.town || "",
+          postcode: v.postcode || g.postcode || "",
+          start: g.start,
+          finish: g.finish,
+          note: g.note,
+          fee: feeEach,
+          nights: nightsEach,
+          locked: true,
+          venueId: v.id
+        });
       });
-    });
-    var cash = B.lockedCash(VENUES);
-    list.forEach(function (s) {
-      var hits = (cash.rows || []).filter(function (r) { return r.lockedDate === s.date; });
-      var best = null;
-      if (hits.length === 1) best = hits[0];
-      else if (hits.length > 1) {
-        best = hits.filter(function (r) { return namesClose(r.name, s.venue); })[0] || hits[0];
-      } else {
-        var byName = (cash.rows || []).filter(function (r) { return namesClose(r.name, s.venue); });
-        if (byName.length === 1) best = byName[0];
-      }
-      if (!best) return;
-      s.locked = true;
-      s.venueId = s.venueId || best.id;
-      if (!s.fee) {
-        if (best.lockedDate === s.date) s.fee = best.fee;
-        else if (best.nights > 1) s.fee = Math.round(best.fee / best.nights);
-        else s.fee = best.fee;
-      }
     });
     list.sort(function (a, b) {
       if (a.date !== b.date) return a.date < b.date ? -1 : 1;
@@ -2195,6 +2175,7 @@ var NatNotes = (function(exports) {
     var bits = [];
     if (s.town) bits.push(s.town);
     if (s.postcode) bits.push(s.postcode);
+    if (s.nights > 1) bits.push(s.nights + " nights");
     if (s.start && s.finish) bits.push(s.start + "–" + s.finish);
     else if (s.start) bits.push(s.start);
     var fee = s.fee ? '<span class="date-fee">' + B.gbp(s.fee) + "</span>" : "";
@@ -2255,7 +2236,7 @@ var NatNotes = (function(exports) {
       '<header class="dates-head"><button class="back" type="button" onclick="natDatesClose()">Close <span>Dates booked</span></button>' +
       "<h1>Dates booked</h1>" +
       '<p class="dates-sub"><b>' + B.gbp(stats.cash) + "</b> locked · " + stats.nights + " night" + (stats.nights === 1 ? "" : "s") +
-      " · " + B.gbp(stats.cash) + " of £10k · own closed only — Choice Live is in Diary</p></header>" +
+      " · " + B.gbp(stats.cash) + " of £10k · " + stats.nights + " nights we’ve closed</p></header>" +
       '<div class="dates-map-wrap"><div id="dates-map"></div><p class="dates-map-msg" id="dates-map-msg">Loading the map…</p>' + nextCard + "</div>" +
       '<div class="dates-list"><p class="dates-kicker">Coming up · ' + upcoming.length + (onMap ? " · " + onMap + " on the map" : "") + "</p>" +
       listUp + heldHtml + undatedHtml + pendingHtml + listPast + "</div>";
