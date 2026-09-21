@@ -2205,16 +2205,16 @@
   {
     "id": "bishop-s-stortford-social",
     "name": "Bishop's Stortford Social",
-    "town": "",
-    "badge": "awaiting",
+    "town": "Bishop's Stortford",
+    "badge": "quoted",
     "phone": "+441279654960",
     "needPhone": false,
-    "email": "barmanager@stortfordsocial.co.uk",
-    "replied": "no",
+    "email": "entertainment@stortfordsocial.co.uk",
+    "replied": "Jade book ask Sun 10 Jan 2027 15:15–18:00 · Us quote £300/£425 cash · 4-date £250/£375",
     "firstPitch": "28 Aug 2026",
     "addedAt": "26 Aug 2026",
     "followUps": "1 · last 9 Sep 2026",
-    "subject": "Saturday entertainment — Jake Essex",
+    "subject": "Re: Booking",
     "messages": [
       {
         "side": "us",
@@ -2223,10 +2223,31 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Saturday entertainment — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake is a singer from Essex. Classic 50s and 60s rock 'n' roll. Himself, not a tribute. The night has a shape: the era first, Elvis to finish. High energy, no dead air, own PA.\n\nHe already works Brentwood, Basildon and Rayleigh Cons. I wanted to offer him to the Constitutional Club for Saturday nights in late 2026 and 2027.\n\n2-hour show £280. 3-hour / 3-set £400. Fully self-contained. Invoice from Jake Essex Music Ltd if you need it through the books.\n\nSite: www.jakeessex.co.uk\nInstagram: https://www.instagram.com/jakeessexmusic\n\nIf you've got a date, reply here and I'll confirm availability.\n\nBest,\nNatalie\nJake Essex Music"
+      },
+      {
+        "side": "them",
+        "label": "Inbox",
+        "at": "2026-09-21T11:28:26Z",
+        "from": "entertainment@stortfordsocial.co.uk",
+        "subject": "Booking",
+        "body": "Good Afternoon, Natalie\nWe would like to book Jake for a Sunday day 3:15pm till 6pm.\n\nWe was thinking January 10th if this date works with you if not please send us some dates we can work with and a few price.\n\nKids regs\nJade Entertainment Manager",
+        "msgId": "1a0c3b97d2347db3"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-21T12:31:12Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Booking",
+        "body": "Hi Jade,\n\nThanks for getting in touch. Sunday 10th January 2027 is free for Jake for\nthat afternoon set, 3:15 till 6.\n\nPrices for Bishop's Stortford: £300 cash for a 2 hour show with a half hour\nbreak, or £425 cash for a 3 hour show with three short breaks. Own PA, no\ndeposit.\n\nIf you can lock four dates through 2027 we can do £250 cash for the 2 hour\nshow, or £375 cash for the 3 hour show, per night.\n\nYour 3:15 till 6 window is the 3 hour shape. Reply confirming 10th January\nand which show length, and I'll lock it in. Happy to look at other Sundays\ntoo if you want a four-date package.\n\nNatalie\nwww.jakeessex.co.uk",
+        "msgId": "1a0c3f2efdd64b69"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email",
+    "statusNote": "quoted · Jade entertainment@ · prefer Sun 10 Jan 2027 15:15–18:00 · £300 cash 2hr / £425 cash 3hr · 4-date £250/£375 · Them 1a0c3b97d2347db3 · Us 1a0c3f2efdd64b69 · Haggle owns · do not Natalie-chase",
+    "notes": "Also barmanager@stortfordsocial.co.uk (earlier cold). 104 South Street CM23 3BG."
   },
   {
     "id": "bishopsworth-rbl",
