@@ -39,6 +39,10 @@ header{position:relative;background:var(--bg);border-bottom:1px solid var(--line
 .cash-ticker{display:flex;width:100%;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;background:linear-gradient(135deg,#3a2a12,#1a140c);border:1px solid #c9a227;border-radius:999px;padding:8px 14px;font-weight:700;color:#f5e6b8;box-shadow:0 0 18px rgba(201,162,39,.25)}
 .cash-amt{font-size:18px;color:#ffd76a}
 .cash-meta{font-size:11px;opacity:.85}
+.cash-goal{margin:8px 0 0;padding:0 2px}
+.cash-bar{height:10px;border-radius:999px;background:#2a1d12;border:1px solid #5a3d20;overflow:hidden}
+.cash-bar i{display:block;height:100%;background:linear-gradient(90deg,#c9a227,#ffd76a);border-radius:999px;box-shadow:0 0 10px rgba(255,215,106,.45)}
+.cash-goal-meta{display:flex;justify-content:space-between;gap:10px;margin-top:6px;font-size:11px;font-weight:800;color:#f3d9a4;letter-spacing:.02em}
 .cash-break{margin:8px 0 0;padding:10px 12px;border-radius:14px;background:#1a140c;border:1px solid #5a3d20;font-size:13px;line-height:1.45}
 .cash-break b{color:#ffd76a}
 .cash-break .row{display:flex;justify-content:space-between;gap:10px;color:#f3d9a4;margin-top:4px}
@@ -61,6 +65,7 @@ main{padding:14px 14px 140px}
 .badge.lane-call{background:var(--call);color:var(--call-fg);font-size:10px;padding:2px 8px;line-height:1.2}
 .badge.lane-email{background:#243044;color:#9ec5ff;font-size:10px;padding:2px 8px;line-height:1.2}
 .job-lane-why{display:block;margin-top:3px;font-size:11px;font-weight:700;color:var(--call);line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.job-lane-why.wait{color:#f3d9a4}
 #detail .job-lane-why{display:block;margin:6px 0 0;white-space:normal}
 
 .who{margin:8px 0 0;font-weight:700}
@@ -109,6 +114,8 @@ main{padding:14px 14px 140px}
 .filters button.warn{background:#3a2410;color:var(--warn)}
 .joblist{border:1px solid var(--border);border-radius:18px;overflow:hidden;background:var(--surface)}
 .group{margin:0;padding:8px 14px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--raised);border-top:1px solid var(--line)}
+.group-latest{color:#ffd76a}
+.group-call{color:var(--call)}
 .joblist .group:first-child{border-top:0}
 .job{width:100%;display:flex;align-items:center;gap:10px;text-align:left;min-height:56px;padding:10px 14px;border:0;border-top:1px solid var(--line);background:transparent;color:var(--fg)}
 .job-main{flex:1;min-width:0}
@@ -297,6 +304,6 @@ main{padding:14px 14px 140px}
 <div id="diary"></div>
 <div id="dates"></div>
 <script type="application/json" id="venues-data">[]</script>
-<script src="board.js?v=45"></script>
+<script src="board.js?v=46"></script>
 </body>
 </html>
