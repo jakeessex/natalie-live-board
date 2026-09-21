@@ -1866,6 +1866,7 @@ var NatNotes = (function(exports) {
     "BR1 3NN":[51.40827,0.01713],"BR3 4PX":[51.4077,-0.04238],"CM16 7EY":[51.67199,0.10169],
     "CO3 4SA":[51.87308,0.86255],"CO9 1HT":[51.94367,0.63477],"CO9 2ET":[51.94248,0.648],
     "CR0 2UX":[51.38183,-0.10123],"DA1 1DZ":[51.44597,0.22017],"DA3 8BS":[51.38418,0.30357],
+    "DA14 6PD":[51.4265,0.1029],"CM23 3BG":[51.8683,0.1605],
     "E1 0AF":[51.51086,-0.05116],"E15 4BQ":[51.54095,0.00272],"E2 0RY":[51.52935,-0.04538],
     "EN3 4LB":[51.64402,-0.04351],"EN4 8SY":[51.64183,-0.1626],"IG11 9SF":[51.53301,0.09853],
     "IG3 9AU":[51.54966,0.09303],"IG9 5BY":[51.62511,0.04464],"IP28 7EF":[52.3433,0.51059],
@@ -1890,7 +1891,19 @@ var NatNotes = (function(exports) {
     ["hadleigh cons",[51.55375,0.6096]],
     ["east barnet",[51.64183,-0.1626]],
     ["walton cons",[51.3734,-0.41526]],
-    ["bromley services",[51.40827,0.01713]]
+    ["bromley services",[51.40827,0.01713]],
+    ["sidcup",[51.4265,0.1029]],
+    ["stortford",[51.8683,0.1605]],
+    ["walderslade",[51.343,0.526]],
+    ["mildenhall",[52.3433,0.51059]],
+    ["theydon",[51.67199,0.10169]],
+    ["parkstone",[50.72927,-1.94613]],
+    ["kinson",[50.76756,-1.89535]],
+    ["mudeford",[50.72968,-1.75475]],
+    ["tilbury",[51.46291,0.35397]],
+    ["thurrock irish",[51.46291,0.35397]],
+    ["shrub end",[51.87308,0.86255]],
+    ["warm and toasty",[51.87308,0.86255]]
   ];
   var NAME_STOP = { club:1, social:1, the:1, and:1, conservative:1, cons:1, events:1, community:1, association:1, royal:1, british:1, legion:1, trades:1, labour:1, centre:1, center:1, house:1, from:1, with:1, that:1, this:1, night:1, nights:1, memory:1, afternoon:1, charity:1, tea:1 };
 
@@ -1996,7 +2009,9 @@ var NatNotes = (function(exports) {
       });
     }
     (GIGS || []).forEach(function (g) {
+      // Choice Live stays in Diary so Nat doesn’t double-book. This map is own closed only.
       if (!g || g.status === "held" || !g.venue) return;
+      if (String(g.source || "").toLowerCase() !== "board") return;
       add({
         date: g.date,
         venue: g.venue,
@@ -2004,15 +2019,26 @@ var NatNotes = (function(exports) {
         postcode: g.postcode,
         start: g.start,
         finish: g.finish,
-        note: g.note
+        note: g.note,
+        locked: true
       });
     });
     (VENUES || []).forEach(function (v) {
       if (!B.isLockedRecord(v)) return;
+      var date = String(v.lockedDate || "").slice(0, 10);
+      var hit = null;
+      (GIGS || []).forEach(function (g) {
+        if (!g || !g.venue || !namesClose(g.venue, v.name)) return;
+        if (g.date === date) hit = g;
+        else if (!hit) hit = g;
+      });
       add({
-        date: String(v.lockedDate || "").slice(0, 10),
+        date: date,
         venue: v.name,
-        town: v.town,
+        town: v.town || (hit && hit.town) || "",
+        postcode: (v.postcode || (hit && hit.postcode) || ""),
+        start: hit && hit.start,
+        finish: hit && hit.finish,
         fee: Number(v.lockedFee || 0) || 0,
         nights: Number(v.lockedNights || 1) || 1,
         locked: true,
@@ -2229,7 +2255,7 @@ var NatNotes = (function(exports) {
       '<header class="dates-head"><button class="back" type="button" onclick="natDatesClose()">Close <span>Dates booked</span></button>' +
       "<h1>Dates booked</h1>" +
       '<p class="dates-sub"><b>' + B.gbp(stats.cash) + "</b> locked · " + stats.nights + " night" + (stats.nights === 1 ? "" : "s") +
-      " · " + B.gbp(stats.cash) + " of £10k · " + B.gbp((B.cashTarget(stats) || {}).left || 0) + " to go</p></header>" +
+      " · " + B.gbp(stats.cash) + " of £10k · own closed only — Choice Live is in Diary</p></header>" +
       '<div class="dates-map-wrap"><div id="dates-map"></div><p class="dates-map-msg" id="dates-map-msg">Loading the map…</p>' + nextCard + "</div>" +
       '<div class="dates-list"><p class="dates-kicker">Coming up · ' + upcoming.length + (onMap ? " · " + onMap + " on the map" : "") + "</p>" +
       listUp + heldHtml + undatedHtml + pendingHtml + listPast + "</div>";
