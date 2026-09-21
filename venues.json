@@ -2206,11 +2206,11 @@
     "id": "bishop-s-stortford-social",
     "name": "Bishop's Stortford Social",
     "town": "Bishop's Stortford",
-    "badge": "quoted",
+    "badge": "locked",
     "phone": "+441279654960",
     "needPhone": false,
     "email": "entertainment@stortfordsocial.co.uk",
-    "replied": "Jade book ask Sun 10 Jan 2027 15:15–18:00 · Us quote £300/£425 cash · 4-date £250/£375",
+    "replied": "LOCKED Jade 4 Sundays £250 cash each · Us confirm 1a0c408fd0596ead",
     "firstPitch": "28 Aug 2026",
     "addedAt": "26 Aug 2026",
     "followUps": "1 · last 9 Sep 2026",
@@ -2241,13 +2241,36 @@
         "subject": "Re: Booking",
         "body": "Hi Jade,\n\nThanks for getting in touch. Sunday 10th January 2027 is free for Jake for\nthat afternoon set, 3:15 till 6.\n\nPrices for Bishop's Stortford: £300 cash for a 2 hour show with a half hour\nbreak, or £425 cash for a 3 hour show with three short breaks. Own PA, no\ndeposit.\n\nIf you can lock four dates through 2027 we can do £250 cash for the 2 hour\nshow, or £375 cash for the 3 hour show, per night.\n\nYour 3:15 till 6 window is the 3 hour shape. Reply confirming 10th January\nand which show length, and I'll lock it in. Happy to look at other Sundays\ntoo if you want a four-date package.\n\nNatalie\nwww.jakeessex.co.uk",
         "msgId": "1a0c3f2efdd64b69"
+      },
+      {
+        "side": "them",
+        "label": "Inbox",
+        "at": "2026-09-21T12:45:54Z",
+        "from": "entertainment@stortfordsocial.co.uk",
+        "subject": "Re: Booking",
+        "body": "Hi Natalie\n\nThanks for your quick reply\n\nWe would love to take up the offer and book four slots for the year for two hours each slot.\n\n3:15pm- 5:15pm\n\n10th Jan 2027\n\n14th March 2027 (if available)\n\n16th May 2027 (if available)\n\n15th August (if available)",
+        "msgId": "1a0c40066a07f769"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-21T12:55:18Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Booking",
+        "body": "Hi Jade,\n\nThanks for booking Jake.\n\nSunday 10th January, Sunday 14th March, Sunday 16th May and Sunday 15th\nAugust 2027 are all confirmed and in the diary. Each afternoon is 2 × 1\nhour with a half hour break, so from 3:15 that runs through to about 5:45.\nJake will arrive between 30 minutes and an hour before to set up. Own PA.\n\nI've got 104 South Street, Bishop's Stortford CM23 3BG as the address.\nPlease confirm that's right.\n\nLooking forward to the four Sundays.\n\nNatalie\nwww.jakeessex.co.uk",
+        "msgId": "1a0c408fd0596ead"
       }
     ],
     "hasThread": true,
-    "tab": "call",
-    "replyLane": "email",
-    "statusNote": "quoted · Jade entertainment@ · prefer Sun 10 Jan 2027 15:15–18:00 · £300 cash 2hr / £425 cash 3hr · 4-date £250/£375 · Them 1a0c3b97d2347db3 · Us 1a0c3f2efdd64b69 · Haggle owns · do not Natalie-chase",
-    "notes": "Also barmanager@stortfordsocial.co.uk (earlier cold). 104 South Street CM23 3BG."
+    "tab": "booked",
+    "replyLane": null,
+    "statusNote": "OWN LOCK 4× Sun £250 cash (=£1,000) · 10 Jan / 14 Mar / 16 May / 15 Aug 2027 · 15:15–17:45 2×1hr · 104 South Street CM23 3BG · Jade entertainment@ · Them 1a0c40066a07f769 · Us 1a0c408fd0596ead · NEVER Choice without Jake OK",
+    "notes": "Four-date package. Also barmanager@ earlier cold. Ticker £7,050 / 25.",
+    "lockedFee": 1000,
+    "lockedDate": "2027-01-10",
+    "lockedNights": 4,
+    "address": "104 South Street",
+    "postcode": "CM23 3BG"
   },
   {
     "id": "bishopsworth-rbl",
