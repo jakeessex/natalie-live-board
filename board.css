@@ -356,3 +356,17 @@ header h1{letter-spacing:-.02em}
 .hero-cash,.joblist,.dash .pep{border-radius:0}
 header h1{font-family:"Figtree",system-ui,sans-serif;font-size:20px;font-weight:650;letter-spacing:-.02em}
 @media (prefers-reduced-motion:reduce){.gate-scan{animation:none}}
+
+.lead-status{margin:0;font:700 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#ffd76a}
+.lead-why{margin:8px 0 0;font-size:15px;font-weight:650;line-height:1.35}
+.lead-links{display:flex;gap:14px;margin:8px 0 0;font-size:13px;font-weight:750}
+.lead-links a,.lead-links button{border:0;background:transparent;padding:0;color:var(--muted);font-weight:750}
+.lead-facts{display:grid;grid-template-columns:64px 1fr;gap:4px 8px;margin:12px 0 0}
+.lead-facts span{color:var(--subtle);font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.lead-facts b{font-size:14px;font-weight:650;overflow:hidden;text-overflow:ellipsis}
+.mail{margin:8px 0 0;padding:10px 12px;border:1px solid var(--border)}
+.mail.us{background:var(--us)}
+.mail.them{background:var(--them)}
+.mail b{display:block;margin-top:4px;font-size:14px}
+.mail pre{white-space:pre-wrap;font:14px/1.45 system-ui,sans-serif;margin:6px 0 0}
+.textbtn{width:100%;margin-top:8px;border:0;background:transparent;color:var(--subtle);font-weight:700;min-height:44px}

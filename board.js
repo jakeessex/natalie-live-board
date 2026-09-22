@@ -2764,62 +2764,67 @@ var NatNotes = (function(exports) {
     var v = row.venue;
     var rec = window.NatNotes.recordOf(NOTES, id);
     var thread = (v.messages || []).filter(function (m) { return m.side === "us" || m.side === "them"; });
-    var notesHtml = (rec.entries || []).map(function (entry, i) {
-      return '<div class="bubble note"><div class="side">Note</div><p class="meta">' + esc(B.fmtWhen(entry.at)) +
-        "</p><pre>" + esc(entry.text || "") + '</pre><button class="lock" type="button" onclick="natDelNote(\'' +
-        esc(id) + "', " + i + ')">Delete note</button></div>';
-    }).join("") || '<p class="email">No notes yet.</p>';
-    var bubbles = emailsOpen
-      ? (thread.length
-          ? thread.map(function (m, i) {
-              return '<div class="bubble ' + (m.side === "them" ? "them" : "us") + '"><div class="side">' +
-                (m.side === "them" ? "THEM · venue" : "US · Natalie / Jake") + " · " + (i + 1) + "/" + thread.length +
-                '</div><p class="meta">' + esc(m.label || "") + (m.at ? " · " + esc(B.fmtWhen(m.at)) : "") + "</p>" +
-                (m.from ? '<p class="meta">' + esc(m.from) + "</p>" : "") +
-                (m.subject ? '<p class="replied">' + esc(m.subject) + "</p>" : "") +
-                "<pre>" + esc(m.body || "") + "</pre></div>";
-            }).join("")
-          : '<p class="replied">No reply yet</p>')
-      : "";
-    var money = moneyLabel(row);
+    thread = thread.slice().sort(function (a, b) { return String(b.at || "").localeCompare(String(a.at || "")); });
+    var visible = emailsOpen ? thread : thread.slice(0, 2);
+    var hidden = thread.length - visible.length;
+    var notesHtml = (rec.entries || []).slice().reverse().map(function (entry, i) {
+      var real = (rec.entries || []).length - 1 - i;
+      return '<div class="bubble note"><p class="meta">' + esc(B.fmtWhen(entry.at)) + '</p><pre>' + esc(entry.text || "") + '</pre><button class="lock" type="button" onclick="natDelNote(' + "'" + esc(id) + "'" + ', ' + real + ')">Delete</button></div>';
+    }).join("");
+    var mails = visible.map(function (m) {
+      return '<article class="mail ' + (m.side === "them" ? "them" : "us") + '"><p class="meta">' +
+        (m.side === "them" ? "Them" : "Us") + (m.at ? " · " + esc(B.fmtWhen(m.at)) : "") + "</p>" +
+        (m.subject ? "<b>" + esc(m.subject) + "</b>" : "") +
+        "<pre>" + esc(m.body || "") + "</pre></article>";
+    }).join("");
+    var facts = [];
+    if (row.who) facts.push("<span>Who</span><b>" + esc(row.who) + "</b>");
+    if (row.fee) facts.push("<span>" + (row.desk === "booked" ? "Locked" : "Fee") + "</span><b>" + B.gbp(row.fee) + "</b>");
+    if (v.phone) facts.push("<span>Phone</span><b>" + esc(v.phone) + "</b>");
+    if (v.email) facts.push("<span>Email</span><b>" + esc(v.email) + "</b>");
+    facts.push("<span>Last</span><b>" + esc(B.lastTouchLabel(row)) + "</b>");
     var whoPrompt = row.who ? "" :
-      '<div class="need"><p>Who’s the booker?</p><input id="who-name" placeholder="First name"/><button class="primary" type="button" onclick="natSaveWho(\'' + esc(id) + "')\">Save</button></div>";
+      '<div class="need"><p>Who’s the booker?</p><input id="who-name" placeholder="First name"/><button class="primary" type="button" onclick="natSaveWho(' + "'" + esc(id) + "'" + ')">Save</button></div>';
+    function afterBtn(label, outcome, cls) {
+      return '<button class="btn ' + cls + '" type="button" onclick="natAfter(' + "'" + esc(id) + "','" + outcome + "'" + ')">' + label + '</button>';
+    }
     var sheet = sheetOpen
-      ? '<div class="sheet" onclick="if(event.target===this)natSheet(false)"><div class="sheetbox">' +
-        "<h2>What happened?</h2>" +
-        '<div class="acts">' +
-        '<button class="btn call" type="button" onclick="document.getElementById(\'book-fee\').focus()">Booked</button>' +
-        '<button class="btn gold" type="button" onclick="natAfter(\'' + esc(id) + "', 'confirm')\">They’ll confirm</button>" +
-        '<button class="btn" type="button" onclick="natAfter(\'' + esc(id) + "', 'voicemail')\">Voicemail</button>" +
-        '<button class="btn" type="button" onclick="natAfter(\'' + esc(id) + "', 'dead')\">Dead</button></div>" +
-        '<p class="meta">Booked — fee + date (not in the ticker until Jake locks the record)</p>' +
-        '<div class="rowbtns"><input id="book-fee" inputmode="numeric" placeholder="£"/><input id="book-date" placeholder="Sat 17 Oct"/></div>' +
-        '<button class="btn call" type="button" onclick="natAfter(\'' + esc(id) + "', 'booked')\">Save booked</button>" +
+      ? '<div class="sheet" onclick="if(event.target===this)natSheet(false)"><div class="sheetbox"><h2>What happened?</h2><div class="acts">' +
+        '<button class="btn call" type="button" onclick="document.getElementById(' + "'" + 'book-fee' + "'" + ').focus()">Booked</button>' +
+        afterBtn("They’ll confirm", "confirm", "gold") +
+        afterBtn("Voicemail", "voicemail", "") +
+        afterBtn("Dead", "dead", "") +
+        '</div><p class="meta">Booked — fee and date. Not in the pot until the record is locked.</p><div class="rowbtns"><input id="book-fee" inputmode="numeric" placeholder="Fee"/><input id="book-date" placeholder="Sat 17 Oct"/></div>' +
+        afterBtn("Save booked", "booked", "call") +
         "</div></div>"
       : "";
+    var links = "";
+    if (B.telHref(v.phone)) links += '<a class="btn call full" href="' + B.telHref(v.phone) + '">Call' + (row.who ? " " + esc(row.who) : "") + "</a>";
+    links += '<p class="lead-links"><a href="' + B.mapsHref(v) + '" target="_blank" rel="noopener">Maps</a>';
+    links += '<a href="' + esc(B.webHref(v, row.website)) + '" target="_blank" rel="noopener">Web</a>';
+    links += '<button type="button" onclick="natDiary()">Diary</button></p>';
+    var drop = rec.dropped
+      ? '<button class="textbtn" type="button" onclick="natDrop(' + "'" + esc(id) + "',false" + ')">Put back on the list</button>'
+      : '<button class="textbtn" type="button" onclick="natDrop(' + "'" + esc(id) + "',true" + ')">Not interested</button>';
     $("detail").innerHTML =
       "<header class='thin'><button class='back' type='button' onclick='natBack()'>Back <span>" + esc(v.name) + "</span></button></header>" +
-      '<div class="panel">' +
+      '<div class="panel lead">' +
+      '<p class="lead-status">' + esc(chip(row.desk)) + (row.followState && row.followState !== "none" ? " · " + esc(followChip(row.followState)) : "") + "</p>" +
       "<h1>" + esc(v.name) + "</h1>" +
       (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
-      '<span class="job-badges detail-badges">' + (followChip(row.followState) ? '<span class="badge follow ' + row.followState + '">' + followChip(row.followState) + "</span>" : "") + '<span class="badge ' + (row.desk || "") + '">' + chip(row.desk) + "</span></span>" +
-      laneWhyHtml(v, row) +
-      (row.who ? '<p class="who">Who · ' + esc(row.who) + "</p>" : "") +
-      '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p>" +
-      (row.factLine ? '<p class="fact"><span>On file</span>' + esc(row.factLine) + "</p>" : "") +
-      actions(row) +
-      (money ? '<p class="money">' + esc(money) + "</p>" : "") +
+      (row.deskWhy ? '<p class="lead-why">' + esc(row.deskWhy) + "</p>" : "") +
+      links +
+      '<dl class="lead-facts">' + facts.join("") + "</dl>" +
+      '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p></div>" +
+      '<div class="panel"><p class="kicker">Emails · ' + thread.length + "</p>" +
+      (mails || '<p class="email">No emails on file.</p>') +
+      (hidden > 0 ? '<button class="openbtn" type="button" onclick="natEmails()">Earlier emails · ' + hidden + "</button>" : "") +
       "</div>" +
-      '<div class="panel"><p class="kicker">Notes first</p>' + whoPrompt + notesHtml +
+      '<div class="panel"><p class="kicker">Notes</p>' + whoPrompt + notesHtml +
+      '<textarea id="detail-note" rows="3" placeholder="What did they say?"></textarea>' +
+      '<button class="primary" type="button" onclick="natSaveNote(' + "'" + esc(id) + "'" + ')">Save note</button>' +
       '<button class="callbtn" type="button" onclick="natSheet(true)">Called</button>' +
-      '<textarea id="detail-note" rows="3" placeholder="type here"></textarea>' +
-      '<button class="primary" type="button" onclick="natSaveNote(\'' + esc(id) + "')\">Save note</button>" +
-      (rec.dropped
-        ? '<button class="openbtn" type="button" onclick="natDrop(\'' + esc(id) + "', false)\">Put back on the list</button>"
-        : '<button class="openbtn" type="button" onclick="natDrop(\'' + esc(id) + "', true)\">Drop — not interested</button>") +
-      "</div>" +
-      '<div class="panel"><button class="openbtn" type="button" onclick="natEmails()">Emails · ' + thread.length + " on file</button>" +
-      bubbles + "</div>" + sheet;
+      drop + "</div>" + sheet;
   }
 
   function render() {

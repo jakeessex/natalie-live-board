@@ -31,10 +31,10 @@ async function warnIfUiBroken() {
     const size = (await stat(index)).size;
     const board = await readFile(js, "utf8");
     const problems = [];
-    if (!html.includes("Board v19")) problems.push("index.html missing 'Board v19'");
+    if (!html.includes("Board v42")) problems.push("index.html missing 'Board v42'");
     if (size > 40000) problems.push(`index.html is fat embed (${size} bytes) — should be ~9KB`);
     if (html.includes("venues-data") && html.length > 20000) problems.push("index.html looks like a v15 venues embed");
-    if (!board.includes('BOARD_VERSION = "v19"')) problems.push("board.js is not v19");
+    if (!board.includes('BOARD_VERSION = "v42"')) problems.push("board.js is not v42");
     if (problems.length) {
       console.error("UI LOCK WARNING (venues will still write):\n - " + problems.join("\n - "));
     }
@@ -88,27 +88,60 @@ function findIndex(venues, event) {
   });
 }
 
+function looksBounce(messages) {
+  const blob = messages.filter((m) => m.side === "them").map((m) => `${m.subject} ${m.body}`).join("\n").toLowerCase();
+  return /bounce|undeliverable|address not found|delivery status notification/.test(blob);
+}
+
+function deriveBadge(explicit, messages, lock) {
+  if (explicit) return String(explicit);
+  if (lock) return "locked";
+  if (looksBounce(messages)) return "bounce";
+  if (messages.some((m) => m.side === "them")) return "replied-interested";
+  return "awaiting";
+}
+
+function numOr(value, fallback) {
+  const n = Number(value);
+  return Number.isFinite(n) && n > 0 ? n : fallback;
+}
+
+function isoDay(value) {
+  const day = String(value || "").slice(0, 10);
+  return /^\d{4}-\d{2}-\d{2}$/.test(day) ? day : "";
+}
+
 function blankVenue(event) {
   const venue = event.venue || {};
   const name = String(venue.name || venue.email || "New venue");
   const incoming = (event.messages || []).map(asMessage).filter(Boolean);
-  const badge = String(venue.badge || (incoming.some((m) => m.side === "them") ? "replied-interested" : "awaiting"));
+  const lock = event.event === "lock" || venue.badge === "locked" || venue.badge === "booked";
+  const badge = deriveBadge(venue.badge, incoming, lock);
   return {
     id: slugify(String(venue.id || name)),
     name,
     town: String(venue.town || ""),
+    postcode: String(venue.postcode || ""),
+    website: String(venue.website || ""),
+    contactName: String(venue.contactName || ""),
     badge,
     phone: venue.phone || null,
     needPhone: !venue.phone,
     email: String(venue.email || ""),
-    replied: String(venue.replied || (incoming.some((m) => m.side === "them") ? "yes" : "no")),
+    replied: incoming.some((m) => m.side === "them") ? "yes" : "no",
     firstPitch: String(venue.firstPitch || ""),
     addedAt: String(venue.addedAt || event.at || new Date().toISOString()),
     followUps: String(venue.followUps || ""),
     subject: String(venue.subject || incoming[0]?.subject || ""),
     messages: incoming,
     hasThread: incoming.some((m) => m.side === "them"),
-    tab: venue.tab || (badge === "locked" || badge === "booked" ? "booked" : "call"),
+    quotedFee: numOr(venue.quotedFee, undefined),
+    pendingLockFee: numOr(venue.pendingLockFee, undefined),
+    pendingNote: venue.pendingNote ? String(venue.pendingNote) : undefined,
+    lockedFee: lock ? numOr(venue.lockedFee || venue.fee, undefined) : undefined,
+    lockedDate: lock ? isoDay(venue.lockedDate) || undefined : undefined,
+    lockedNights: lock ? numOr(venue.lockedNights || (venue.dates || []).length, 1) : undefined,
+    lockedNote: venue.lockedNote ? String(venue.lockedNote) : undefined,
   };
 }
 
@@ -118,7 +151,7 @@ function applyEvent(venues, event) {
   const idx = findIndex(venues, event);
   if (idx < 0) return { venues: [blankVenue(event), ...venues], action: "insert" };
   const current = venues[idx];
-  const replaceThread = String(event.event || "") === "reply_thread" && incoming.length > 0;
+  const replaceThread = String(event.event || "") === "replace_thread" && incoming.length > 0;
   let merged;
   if (replaceThread) {
     merged = incoming.slice();
@@ -134,21 +167,39 @@ function applyEvent(venues, event) {
   }
   merged.sort((a, b) => String(a.at).localeCompare(String(b.at)));
   const patch = event.venue || {};
+  const locking = event.event === "lock" || patch.badge === "locked" || patch.badge === "booked";
+  const nextBadge = patch.badge
+    ? String(patch.badge)
+    : looksBounce(incoming) && current.badge !== "locked"
+      ? "bounce"
+      : locking
+        ? "locked"
+        : current.badge;
   const next = {
     ...current,
     name: String(patch.name || current.name),
     town: patch.town ? String(patch.town) : current.town,
+    postcode: patch.postcode ? String(patch.postcode) : current.postcode,
+    website: patch.website ? String(patch.website) : current.website,
+    contactName: patch.contactName ? String(patch.contactName) : current.contactName,
     email: patch.email ? String(patch.email) : current.email,
     phone: patch.phone ? String(patch.phone) : current.phone,
     needPhone: patch.phone ? false : current.needPhone,
-    badge: patch.badge ? String(patch.badge) : current.badge,
-    tab: patch.tab || current.tab,
-    replied: patch.replied ? String(patch.replied) : current.replied,
+    badge: nextBadge,
+    replied: merged.some((m) => m.side === "them") ? "yes" : current.replied || "no",
     firstPitch: patch.firstPitch ? String(patch.firstPitch) : current.firstPitch,
     addedAt: current.addedAt || patch.addedAt || event.at || current.firstPitch,
+    followUps: patch.followUps ? String(patch.followUps) : current.followUps,
     subject: patch.subject ? String(patch.subject) : current.subject,
+    quotedFee: numOr(patch.quotedFee, current.quotedFee),
+    pendingLockFee: numOr(patch.pendingLockFee, current.pendingLockFee),
+    pendingNote: patch.pendingNote ? String(patch.pendingNote) : current.pendingNote,
+    lockedFee: locking ? numOr(patch.lockedFee || patch.fee, current.lockedFee) : current.lockedFee,
+    lockedDate: locking ? isoDay(patch.lockedDate) || current.lockedDate : current.lockedDate,
+    lockedNights: locking ? numOr(patch.lockedNights || (patch.dates || []).length, current.lockedNights || 1) : current.lockedNights,
+    lockedNote: patch.lockedNote ? String(patch.lockedNote) : current.lockedNote,
     messages: merged,
-    hasThread: current.hasThread || merged.some((m) => m.side === "them"),
+    hasThread: merged.some((m) => m.side === "them"),
   };
   const copy = venues.slice();
   copy[idx] = next;
@@ -172,6 +223,46 @@ async function applyPayload(venues, payload) {
   return { venues: next, applied };
 }
 
+const GIGS_FILE = path.join(ROOT, "gigs.json");
+
+async function upsertBoardDates(events) {
+  let file;
+  try {
+    file = JSON.parse(await readFile(GIGS_FILE, "utf8"));
+  } catch {
+    return 0;
+  }
+  const gigs = Array.isArray(file.gigs) ? file.gigs : [];
+  let added = 0;
+  for (const event of events) {
+    const venue = event?.venue || {};
+    const dates = Array.isArray(venue.dates) ? venue.dates : [];
+    if (!dates.length || !venue.name) continue;
+    for (const raw of dates) {
+      const date = isoDay(raw);
+      if (!date) continue;
+      const row = {
+        date,
+        venue: String(venue.name),
+        town: String(venue.town || ""),
+        postcode: String(venue.postcode || ""),
+        start: String(venue.start || ""),
+        finish: String(venue.finish || ""),
+        status: "booked",
+        source: "board",
+      };
+      const idx = gigs.findIndex((g) => g && g.date === date && String(g.source || "") === "board" && slugify(g.venue) === slugify(venue.name));
+      if (idx >= 0) gigs[idx] = { ...gigs[idx], ...row };
+      else gigs.push(row);
+      added += 1;
+    }
+  }
+  if (!added) return 0;
+  gigs.sort((a, b) => String(a.date).localeCompare(String(b.date)));
+  await writeData(GIGS_FILE, `${JSON.stringify({ ...file, gigs }, null, 2)}\n`);
+  return added;
+}
+
 async function drainInbox() {
   await warnIfUiBroken();
   await mkdir(INBOX, { recursive: true });
@@ -191,7 +282,10 @@ async function drainInbox() {
     }
     const result = await applyPayload(venues, payload);
     venues = result.venues;
-    if (result.applied) dirty = true;
+    if (result.applied) {
+      dirty = true;
+      await upsertBoardDates(eventsFrom(payload));
+    }
     await rename(from, path.join(PROCESSED, `${Date.now()}-${name}`));
     results.push({ file: name, ok: true, applied: result.applied });
   }
@@ -234,6 +328,7 @@ async function drainDweet() {
     venues = result.venues;
     if (result.applied) {
       applied += result.applied;
+      await upsertBoardDates(eventsFrom(payload));
       await mkdir(PROCESSED, { recursive: true });
       await writeData(path.join(PROCESSED, `${Date.now()}-dweet.json`), JSON.stringify(payload, null, 2));
     }
