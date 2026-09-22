@@ -191,7 +191,8 @@ var Board = (() => {
       "morning",
       "evening",
       "natalie",
-      "jake"
+      "jake",
+      "essex"
     ].map((s) => s.toLowerCase())
   );
   var AUTO_RE = /undeliver|mailer-daemon|delivery failed|mailbox unavailable|address rejected|address not found|out of office|automatic reply|auto[- ]?reply|office is now closed|i am (currently )?out of (the )?office/i;
@@ -314,7 +315,10 @@ var Board = (() => {
           const bits = venue.name.toLowerCase().split(/[^a-z]+/).filter(Boolean);
           if (bits.includes(line.toLowerCase())) continue;
         }
-        if (venue.town && venue.town.toLowerCase() === line.toLowerCase()) continue;
+        if (venue.town) {
+          const bits = venue.town.toLowerCase().split(/[^a-z]+/).filter((b) => b.length > 2);
+          if (bits.includes(line.toLowerCase())) continue;
+        }
         if (venue.name && line.toLowerCase().includes(venue.name.split(/\s+/)[0].toLowerCase()) && line.split(/\s+/).length > 2) continue;
         const one = line.match(/^([A-Z][a-z]{2,13})$/);
         if (one && plausibleName(one[1])) return one[1];
