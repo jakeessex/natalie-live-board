@@ -21526,7 +21526,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "DSN Delay soft-watch Tue 22 Sep ~11:35 London · mailer-daemon 1a0c8af20e158204 thread 1a0c34677a0e919f · temp delivery problem to secretary@northenfieldconservativeclub.co.uk · Gmail retrying (not permanent Failure) · remain awaiting · do not bounce / do not re-cold until Failure"
   },
   {
     "id": "cricklewood-trades-hall-club",
