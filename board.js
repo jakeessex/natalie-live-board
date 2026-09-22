@@ -27,6 +27,7 @@ var Board = (() => {
     CASH_TARGET: () => CASH_TARGET,
     DESK_CHIP: () => DESK_CHIP,
     FOLLOW_CHIP: () => FOLLOW_CHIP,
+    NAV_FILTERS: () => NAV_FILTERS,
     PASSWORD: () => PASSWORD,
     UNCLASSIFIED_WITHOUT_GUESSING: () => UNCLASSIFIED_WITHOUT_GUESSING,
     assignDesk: () => assignDesk,
@@ -38,6 +39,7 @@ var Board = (() => {
     deskBanner: () => deskBanner,
     deskGroupKey: () => deskGroupKey,
     deskGroupLabel: () => deskGroupLabel,
+    deskPulse: () => deskPulse,
     displayFee: () => displayFee,
     extractEmails: () => extractEmails,
     extractQuotedFee: () => extractQuotedFee,
@@ -54,6 +56,7 @@ var Board = (() => {
     hasPhone: () => hasPhone,
     heatScore: () => heatScore,
     isAutoNoise: () => isAutoNoise,
+    isBounceVenue: () => isBounceVenue,
     isLatestVenue: () => isLatestVenue,
     isLockedRecord: () => isLockedRecord,
     isRepliedRow: () => isRepliedRow,
@@ -87,7 +90,7 @@ var Board = (() => {
     telHref: () => telHref,
     webHref: () => webHref
   });
-  var BOARD_VERSION = "v21";
+  var BOARD_VERSION = "v25";
   var BOARD_STAMP = "22 Sep 2026";
   var PASSWORD = "natbooksjake";
   var CASH_TARGET = 1e4;
@@ -120,9 +123,13 @@ var Board = (() => {
   var BOARD_FILTERS = [
     { id: "call", label: "Call" },
     { id: "wait", label: "Wait" },
-    { id: "silent", label: "No reply" },
+    { id: "silent", label: "Silent" },
     { id: "booked", label: "Booked" },
     { id: "no", label: "No" }
+  ];
+  var NAV_FILTERS = [
+    { id: "home", label: "Home" },
+    ...BOARD_FILTERS
   ];
   var DESK_CHIP = {
     call: "CALL",
@@ -267,7 +274,11 @@ var Board = (() => {
   }
   function parkedBadge(venue) {
     const badge = String(venue.badge || "").toLowerCase();
-    return badge === "bounce" || badge === "declined" || badge === "retract-agency" || badge === "skip-do-not-email" || badge === "closed" || badge === "fully-booked-on-file";
+    return badge === "bounce" || badge === "bounced" || badge === "declined" || badge === "retract-agency" || badge === "skip-do-not-email" || badge === "closed" || badge === "fully-booked-on-file";
+  }
+  function isBounceVenue(venue, reason = "") {
+    const badge = String(venue.badge || "").toLowerCase();
+    return badge === "bounce" || badge === "bounced" || /bounce/i.test(reason);
   }
   function extractEmails(raw) {
     if (!raw) return [];
@@ -799,10 +810,10 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
       row.deskWhy = "Locked \u2014 don\u2019t contact";
       return row;
     }
-    if (row.dropped || parkedBadge(venue) || row.reason === "hard no" || row.reason === "bounce" || row.replyBucket === "file") {
+    if (row.dropped || parkedBadge(venue) || row.reason === "hard no" || isBounceVenue(venue, row.reason) || row.replyBucket === "file") {
       row.desk = "no";
       row.followState = follows >= 1 || row.called ? "done" : "none";
-      row.deskWhy = row.replyWhy || (row.reason === "hard no" ? "Not interested \u2014 leave" : row.reason === "bounce" ? "Bounce \u2014 dead address" : row.reason === "dropped" ? "Dropped \u2014 not interested" : /on file|file/i.test(row.reason + " " + row.replyWhy) ? "On file \u2014 leave them" : "Not in play \u2014 leave");
+      row.deskWhy = row.replyWhy || (row.reason === "hard no" ? "Not interested \u2014 leave" : isBounceVenue(venue, row.reason) ? "Bounce \u2014 dead address" : row.reason === "dropped" ? "Dropped \u2014 not interested" : /on file|file/i.test(row.reason + " " + row.replyWhy) ? "On file \u2014 leave them" : "Not in play \u2014 leave");
       return row;
     }
     if (!inbound.length) {
@@ -1077,7 +1088,8 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     return key;
   }
   function deskBanner(filter) {
-    if (filter === "call") return "These are the ones to ring. Waiting and no-replies live on their own tabs.";
+    if (filter === "home") return "Tonight\u2019s desk. Figures open the list. Don\u2019t ring Booked or No.";
+    if (filter === "call") return "Ring these. Waiting and silent live on their own tabs.";
     if (filter === "wait") return "Ball is in their court. Don\u2019t chase until the why-line says they\u2019re due.";
     if (filter === "silent") return "Never wrote back. Follow-up due is the work. Followed up and too-soon sit below.";
     if (filter === "booked") return "Locked. Don\u2019t contact unless they call you.";
@@ -1116,17 +1128,72 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     return { target, pct, left: Math.max(0, target - cash) };
   }
   function pepLine(rows) {
-    const call = sortCallDesk(rows);
+    const call = sortCallDesk(rows).filter((r) => r.followState !== "done");
     const due = rows.filter((r) => r.desk === "silent" && r.followState === "due");
     const wait = rows.filter((r) => r.desk === "wait");
     const first = call[0];
-    const who = first?.who || first?.venue.name.split(" ")[0] || null;
+    const who = first?.who || first?.venue.name.split(/\s+/)[0] || null;
     const n = call.length;
     const callBit = n === 0 ? "Nothing to call." : n === 1 ? "1 to call." : `${n} to call.`;
     const whoBit = who && n ? ` ${who} first.` : "";
     const dueBit = due.length === 0 ? " No follow-ups due." : due.length === 1 ? " 1 follow-up due." : ` ${due.length} follow-ups due.`;
     const waitBit = wait.length === 0 ? "" : wait.length === 1 ? " 1 waiting on them." : ` ${wait.length} waiting on them.`;
     return `${callBit}${whoBit}${dueBit}${waitBit}`.replace(/\s+/g, " ").trim();
+  }
+  function sentToday(venue, now) {
+    const us = cleanThread(venue).filter((m) => m.side === "us");
+    return us.some((m) => daysBetween(parseWhen(m.at), now) === 0) || daysBetween(parseWhen(venue.firstPitch), now) === 0;
+  }
+  function deskPulse(rows, venues, now = /* @__PURE__ */ new Date()) {
+    const stats = lockedCash(venues);
+    const goal = cashTarget(stats);
+    const counts = filterCounts(rows);
+    const hot = sortCallDesk(rows).filter((r) => r.followState !== "done");
+    const due = sortSilentDesk(rows).filter((r) => r.followState === "due");
+    const latest = rows.filter((r) => r.latest);
+    const bounced = rows.filter((r) => isBounceVenue(r.venue, r.reason));
+    const rejected = rows.filter(
+      (r) => r.desk === "no" && !isBounceVenue(r.venue, r.reason) && !/not sent|not in play/i.test(r.deskWhy)
+    );
+    const pitched = rows.filter((r) => usCount(r.venue) >= 1);
+    const replied = rows.filter((r) => realInbound(r.venue).length > 0);
+    const pipelineValue = rows.filter((r) => r.desk === "call" || r.desk === "wait").reduce((sum, r) => sum + Number(r.fee || r.quotedFee || 0), 0);
+    const calledToday = rows.filter((r) => r.called && daysBetween(parseWhen(r.lastCalledAt), now) === 0).length;
+    const sent = rows.filter((r) => sentToday(r.venue, now)).length;
+    const tooSoon = rows.filter((r) => r.desk === "silent" && r.followState === "fresh").length;
+    const followedStillSilent = rows.filter((r) => r.desk === "silent" && r.followState === "done").length;
+    const decided = stats.nights > 0 || rejected.length > 0 ? counts.booked + rejected.length : 0;
+    const winRate = decided ? Math.round(counts.booked / decided * 1e3) / 10 : 0;
+    const replyRate = pitched.length ? Math.round(replied.length / pitched.length * 1e3) / 10 : 0;
+    const avgFee = stats.nights ? Math.round(stats.cash / stats.nights) : 0;
+    return {
+      cash: stats.cash,
+      nights: stats.nights,
+      target: goal.target,
+      pct: goal.pct,
+      left: goal.left,
+      avgFee,
+      sentToday: sent,
+      pitched: pitched.length,
+      followDue: due.length,
+      silent: counts.silent,
+      bounced: bounced.length,
+      rejected: rejected.length,
+      closeNow: hot.length,
+      waiting: counts.wait,
+      booked: counts.booked,
+      pipelineValue,
+      replyRate,
+      winRate,
+      calledToday,
+      tooSoon,
+      followedStillSilent,
+      replied: replied.length,
+      pep: pepLine(rows),
+      hot: hot.slice(0, 6),
+      due: due.slice(0, 6),
+      latest: latest.slice(0, 8)
+    };
   }
   function chaseAlarm(rows) {
     return rows.some((r) => r.tab === "chase" && (r.daysSilent ?? 0) > 7);
@@ -1384,7 +1451,7 @@ var NatNotes = (function(exports) {
 
 /* Matrix rain */
 (function(){
-  var GLYPHS="アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ0123456789<>|*+#¥$NATJAKEV21TCB";
+  var GLYPHS="アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ0123456789<>|*+#¥$NATJAKEV25TCB";
   var canvas=document.getElementById("rain");
   if(!canvas) return;
   try{ if(sessionStorage.getItem("natalie-ok")==="1"){ canvas.style.display="none"; return; } }catch(e){}
@@ -1439,11 +1506,11 @@ var NatNotes = (function(exports) {
   raf=requestAnimationFrame(tick);
 })();
 
-/* Natalie Live Board v21 — vanilla UI. Pipeline is window.Board from the bundled module. */
+/* Natalie Live Board v25 — vanilla UI. Pipeline is window.Board from the bundled module. */
 (function () {
   var B = window.Board;
   var PASS = B.PASSWORD;
-  var filter = "call";
+  var filter = "home";
   var q = "";
   var openId = null;
   var VENUES = [];
@@ -1538,7 +1605,7 @@ var NatNotes = (function(exports) {
     var ul = $("egg-lines");
     if (box) box.classList.add("on");
     if (ul && !ul.childNodes.length) {
-      ["WAKE UP, NAT", "THE BOARD HAS YOU", "FOLLOW THE WHITE RABBIT", "v21 · YOU'RE THE ONE"].forEach(function (line) {
+      ["WAKE UP, NAT", "THE BOARD HAS YOU", "FOLLOW THE WHITE RABBIT", "v25 · YOU'RE THE ONE"].forEach(function (line) {
         var li = document.createElement("li");
         li.textContent = "› " + line;
         ul.appendChild(li);
@@ -1586,7 +1653,7 @@ var NatNotes = (function(exports) {
     showErr("");
     var raw = ($("pw").value || "").replace(/^\s+|\s+$/g, "");
     var key = raw.toLowerCase();
-    if (key === "v20" || key === "v21" || key === "neo" || key === "whiterabbit" || key === "white rabbit") {
+    if (key === "v20" || key === "v21" || key === "v25" || key === "neo" || key === "whiterabbit" || key === "white rabbit") {
       fireEgg();
       return;
     }
@@ -2420,28 +2487,83 @@ var NatNotes = (function(exports) {
       "</div>";
   }
 
+  function ringSvg(pct) {
+    var r = 34, c = 2 * Math.PI * r;
+    var dash = (Math.max(0, Math.min(100, pct)) / 100) * c;
+    return '<svg viewBox="0 0 80 80" width="72" height="72" aria-hidden="true"><circle cx="40" cy="40" r="34" fill="none" stroke="#5a3d20" stroke-width="6"/><circle cx="40" cy="40" r="34" fill="none" stroke="#ffd76a" stroke-width="6" stroke-linecap="round" stroke-dasharray="' + dash.toFixed(1) + " " + c.toFixed(1) + '" transform="rotate(-90 40 40)"/><text x="40" y="44" text-anchor="middle" fill="#ffd76a" font-size="13" font-weight="700">' + Math.round(pct) + "%</text></svg>";
+  }
+
+  function statHtml(label, value, hint, tone, nav) {
+    return '<button type="button" class="stat ' + (tone || "") + '" onclick="natFilter(\'' + nav + "')\"><span>" + label + "</span><b>" + value + "</b>" + (hint ? "<i>" + hint + "</i>" : "") + "</button>";
+  }
+
+  function queueHtml(title, rows, empty) {
+    var body = rows.length
+      ? rows.map(function (row, i) {
+          return '<button type="button" class="qrow" onclick="natOpen(\'' + esc(row.venue.id) + "')\"><span class=\"qnum\">" + String(i + 1).padStart(2, "0") + '</span><span class="job-main"><span class="job-name">' + esc(row.venue.name) + '</span><span class="job-meta">' + esc(row.deskWhy || B.lastTouchLabel(row)) + "</span></span>" + (row.who ? '<span class="row-fee">' + esc(row.who) + "</span>" : "") + '<span class="chev">›</span></button>';
+        }).join("")
+      : '<p class="empty">' + empty + "</p>";
+    return '<div class="joblist"><p class="group">' + title + " · " + rows.length + "</p>" + body + "</div>";
+  }
+
+  function dashHtml(pulse) {
+    var funnelSent = Math.max(1, pulse.pitched);
+    var repliedW = Math.round((pulse.replied / funnelSent) * 100);
+    var bookedW = Math.round((pulse.booked / funnelSent) * 100);
+    return '<div class="dash">' +
+      '<button type="button" class="hero-cash" onclick="natCash()">' + ringSvg(pulse.pct) +
+        '<span class="job-main"><span class="hero-k">Locked in</span><b>' + B.gbp(pulse.cash) + "</b><em>" + pulse.nights + " nights · " + B.gbp(pulse.left) + " to £10k</em></span><span class=\"hero-go\">Dates</span></button>" +
+      '<p class="pep">' + esc(pulse.pep) + "</p>" +
+      '<div class="stats">' +
+        statHtml("Call now", pulse.closeNow, "Ring these", "gold", "call") +
+        statHtml("Follow-up due", pulse.followDue, "Silent too long", "stale", "silent") +
+        statHtml("Waiting", pulse.waiting, "Ball with them", "warn", "wait") +
+        statHtml("Sent today", pulse.sentToday, "Leave them", "gold", "silent") +
+        statHtml("No reply", pulse.silent, pulse.tooSoon + " too soon · " + pulse.followedStillSilent + " chased", "", "silent") +
+        statHtml("Bounced", pulse.bounced, "Dead addresses", "stale", "no") +
+        statHtml("Not interested", pulse.rejected, "Leave them", "", "no") +
+        statHtml("Booked", pulse.booked, B.gbp(pulse.avgFee) + " avg night", "call", "booked") +
+      "</div>" +
+      '<div class="stats">' +
+        statHtml("In play £", B.gbp(pulse.pipelineValue), "Call + wait fees", "gold", "call") +
+        statHtml("Reply rate", pulse.replyRate + "%", pulse.replied + " wrote back", "", "home") +
+        statHtml("Win rate", pulse.winRate + "%", "Booked vs no", "call", "booked") +
+        statHtml("Called today", pulse.calledToday, "Notes after a call", "", "call") +
+      "</div>" +
+      '<div class="funnel"><span class="hero-k">Funnel</span><div class="funnel-bar"><i style="width:' + bookedW + '%;background:var(--call)"></i><i style="width:' + Math.max(0, repliedW - bookedW) + '%;background:var(--warn)"></i><i style="width:' + Math.max(8, 100 - repliedW) + '%;background:rgba(255,138,122,.55)"></i></div>' +
+        '<div class="funnel-meta"><span>Pitched ' + pulse.pitched + "</span><span>Replied " + pulse.replied + '</span><span class="ok">Booked ' + pulse.booked + "</span></div></div>" +
+      queueHtml("Tonight — call now", pulse.hot, "Nothing to ring.") +
+      queueHtml("Tonight — follow-up due", pulse.due, "No follow-ups due.") +
+    "</div>";
+  }
+
   function renderList() {
     var rowsAll = ranked();
     var counts = B.filterCounts(rowsAll);
     var stats = B.lockedCash(VENUES);
     var alarm = B.chaseAlarm(rowsAll);
     var pep = B.pepLine(rowsAll);
-    var tabs = B.BOARD_FILTERS;
+    var pulse = B.deskPulse(rowsAll, VENUES);
+    var tabs = B.NAV_FILTERS || [{ id: "home", label: "Home" }].concat(B.BOARD_FILTERS);
     var tabHtml = tabs.map(function (t) {
       var on = (filter === t.id && !searching()) ? " on desk-" + t.id : " desk-" + t.id;
       var warn = t.id === "call" && alarm ? " warn" : "";
-      return '<button type="button" class="' + on + warn + '" onclick="natFilter(\'' + t.id + "')\"><b>" + counts[t.id] + "</b><span>" + t.label + "</span></button>";
+      var n = t.id === "home" ? (pulse.closeNow + pulse.followDue) : counts[t.id];
+      return '<button type="button" class="' + on + warn + '" onclick="natFilter(\'' + t.id + "')\"><b>" + n + "</b><span>" + t.label + "</span></button>";
     }).join("");
     var list = searching()
       ? B.sortDeskAll(rowsAll.filter(function (r) { return B.matchesQuery(r.venue, q); }))
-      : B.rowsForFilter(rowsAll, filter);
-    var label = searching() ? "Search" : ((tabs.find(function (t) { return t.id === filter; }) || { label: "Call" }).label);
-    var banner = searching() ? "" : '<p class="desk-note">' + esc(B.deskBanner(filter)) + "</p>";
-    var cards = banner + listHtml(list);
-    $("cash-slot").innerHTML = cashHtml(stats);
+      : (filter === "home" ? [] : B.rowsForFilter(rowsAll, filter));
+    var label = searching() ? "Search" : ((tabs.find(function (t) { return t.id === filter; }) || { label: "Home" }).label);
+    var home = filter === "home" && !searching();
+    var banner = searching() || home ? "" : '<p class="desk-note">' + esc(B.deskBanner(filter)) + "</p>";
+    var cards = home ? dashHtml(pulse) : (banner + listHtml(list));
+    $("cash-slot").innerHTML = home ? "" : cashHtml(stats);
+    $("pep").style.display = home ? "none" : "";
     $("pep").textContent = pep;
     $("filters").innerHTML = tabHtml;
-    $("count").textContent = list.length + " job" + (list.length === 1 ? "" : "s") + " · " + label + (filter === "call" && alarm ? " · quiet alarm" : "");
+    $("count").textContent = home ? "" : (list.length + " job" + (list.length === 1 ? "" : "s") + " · " + label + (filter === "call" && alarm ? " · quiet alarm" : ""));
+    $("count").style.display = home ? "none" : "";
     $("list").innerHTML = cards;
     $("sync").textContent = sharedOk ? "Notes live with Jake" : "Board live";
     [["cash-amt", "cash-meta"], ["cash-amt-app", "cash-meta-app"]].forEach(function (ids) {
