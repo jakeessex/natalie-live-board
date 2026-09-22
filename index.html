@@ -9,7 +9,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
 <meta http-equiv="Pragma" content="no-cache"/>
 <title>Jake Essex Board</title>
-<!-- UI LOCK: Board v20 shell. Never embed venues. Data is venues.json only. -->
+<!-- UI LOCK: Board v21 shell. Never embed venues. Data is venues.json only. -->
 <script>
 (function(){function k(){var n=document.getElementById("cash-5k-party");if(n&&n.parentNode)n.parentNode.removeChild(n);try{localStorage.removeItem("natalie-cash-5k-v1")}catch(e){}}k();document.addEventListener("DOMContentLoaded",k);try{new MutationObserver(k).observe(document.documentElement,{childList:true,subtree:true})}catch(e){}})();
 </script>
@@ -112,11 +112,34 @@ main{padding:14px 14px 140px}
 .fact{margin:8px 0 0;font-size:13px;color:var(--muted);line-height:1.4}
 .email,.replied{margin:8px 0 0;font-size:14px;color:var(--muted);word-break:break-word}
 .search{margin-top:12px}
-.filters{position:fixed;bottom:0;left:0;right:0;z-index:20;display:grid;grid-template-columns:repeat(4,1fr);gap:5px;padding:8px 10px calc(10px + env(safe-area-inset-bottom));background:rgba(20,14,10,.96);border-top:1px solid var(--line);backdrop-filter:blur(10px)}
-.filters button{min-height:52px;border-radius:14px;border:0;background:var(--raised);color:var(--muted);font-weight:800;font-size:10px;letter-spacing:.04em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
-.filters button b{font-size:15px;letter-spacing:0;text-transform:none}
-.filters button.on{background:var(--accent);color:var(--accent-fg)}
-.filters button.warn{background:#3a2410;color:var(--warn)}
+.filters{position:fixed;bottom:0;left:0;right:0;z-index:20;display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding:8px 6px calc(10px + env(safe-area-inset-bottom));background:rgba(20,14,10,.96);border-top:1px solid var(--line);backdrop-filter:blur(10px)}
+.filters button{min-height:54px;border-radius:12px;border:0;background:transparent;color:var(--muted);font-weight:800;font-size:9px;letter-spacing:.03em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:4px 2px}
+.filters button b{font-size:14px;letter-spacing:0;text-transform:none}
+.filters button.on{color:var(--accent-fg)}
+.filters button.on.desk-call{background:var(--accent);color:var(--accent-fg)}
+.filters button.on.desk-wait{background:var(--warn);color:#1a120c}
+.filters button.on.desk-silent{background:var(--stale);color:#1a120c}
+.filters button.on.desk-booked{background:var(--call);color:var(--call-fg)}
+.filters button.on.desk-no{background:var(--raised);color:var(--fg)}
+.filters button.warn{color:var(--warn)}
+.desk-note{margin:0 0 10px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--raised);color:var(--muted);font-size:12px;font-weight:650;line-height:1.35}
+.job.desk-call{border-left:3px solid var(--accent)}
+.job.desk-wait{border-left:3px solid var(--warn)}
+.job.desk-silent{border-left:3px solid var(--subtle)}
+.job.desk-silent.due,.job.due{border-left-color:var(--stale)}
+.job.desk-booked{border-left:3px solid var(--call)}
+.job.desk-no{border-left:3px solid var(--border)}
+.badge.call,.badge.desk-call{background:var(--accent);color:var(--accent-fg)}
+.badge.wait{background:#3a2410;color:var(--warn)}
+.badge.silent{background:#3a1c18;color:var(--stale)}
+.badge.booked{background:var(--call);color:var(--call-fg)}
+.badge.no{background:var(--raised);color:var(--subtle)}
+.badge.follow{font-size:8px;letter-spacing:.04em}
+.badge.follow.due{background:var(--stale);color:#1a120c}
+.badge.follow.done{background:var(--raised);color:var(--muted)}
+.badge.follow.fresh{background:#3a2a12;color:#ffd76a}
+.group-due{color:var(--stale)}
+.job-lane-why.due{color:var(--stale)}
 .joblist{border:1px solid var(--border);border-radius:18px;overflow:hidden;background:var(--surface)}
 .group{margin:0;padding:8px 14px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--raised);border-top:1px solid var(--line)}
 .group-latest{color:#ffd76a}
@@ -254,14 +277,14 @@ main{padding:14px 14px 140px}
 <div id="gate">
 <div class="gate-vignette"></div>
 <div id="grant">
-  <p class="k">SECURE CHANNEL · v20</p>
+  <p class="k">SECURE CHANNEL · v21</p>
   <h2>Access granted Natalie</h2>
   <ul id="grant-lines"></ul>
 </div>
 <div class="box" id="gate-card">
 <div class="gate-top">
   <p class="enc">JEM · encrypted</p>
-  <button type="button" id="ver-btn" onclick="natStamp()" aria-label="Board version">v20</button>
+  <button type="button" id="ver-btn" onclick="natStamp()" aria-label="Board version">v21</button>
 </div>
 <div class="gate-title">
   <span class="shield" aria-hidden="true">⛨</span>
@@ -271,7 +294,7 @@ main{padding:14px 14px 140px}
   </div>
 </div>
 <p class="lede">Natalie’s booking board. Type the access key.</p>
-<div id="egg"><p>WHITE RABBIT · v20</p><ul id="egg-lines"></ul><p class="hint">Cute. Still need the real key.</p></div>
+<div id="egg"><p>WHITE RABBIT · v21</p><ul id="egg-lines"></ul><p class="hint">Cute. Still need the real key.</p></div>
 <label class="kicker" for="pw">Access key</label>
 <div class="pw-wrap">
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="••••••••"/>
@@ -279,7 +302,7 @@ main{padding:14px 14px 140px}
 </div>
 <p class="err" id="err"></p>
 <button type="button" id="go">AUTHENTICATE</button>
-<p class="ver">Board v20 · 10 Sep 2026 · channel live</p>
+<p class="ver">Board v21 · 22 Sep 2026 · channel live</p>
 </div>
 </div>
 <div id="app">
@@ -309,6 +332,6 @@ main{padding:14px 14px 140px}
 <div id="diary"></div>
 <div id="dates"></div>
 <script type="application/json" id="venues-data">[]</script>
-<script src="board.js?v=49"></script>
+<script src="board.js?v=50"></script>
 </body>
 </html>

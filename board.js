@@ -1,1119 +1,1221 @@
-var Board = (function(exports) {
-	Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-	//#region src/lib/board/pipeline.ts
-	const BOARD_VERSION = "v20";
-	const BOARD_STAMP = "10 Sep 2026";
-	const PASSWORD = "natbooksjake";
-	const CASH_TARGET = 1e4;
-	const MONTH_IDX = {
-		jan: 0, january: 0, feb: 1, february: 1, mar: 2, march: 2, apr: 3, april: 3,
-		may: 4, jun: 5, june: 5, jul: 6, july: 6, aug: 7, august: 7,
-		sep: 8, sept: 8, september: 8, oct: 9, october: 9, nov: 10, november: 10, dec: 11, december: 11
-	};
-	const BOARD_FILTERS = [
-		{
-			id: "all",
-			label: "All"
-		},
-		{
-			id: "replied",
-			label: "Replied"
-		},
-		{
-			id: "closed",
-			label: "Closed"
-		},
-		{
-			id: "inactive",
-			label: "Inactive"
-		}
-	];
-	const DAY = 864e5;
-	const STOCK_US = [
-		"lock it in",
-		"lock that date",
-		"reply here",
-		"pa included",
-		"no deposit",
-		"2 × 45",
-		"3 × 45",
-		"2 x 45",
-		"3 x 45",
-		"www.jakeessex.co.uk",
-		"instagram.com/jakeessexmusic"
-	];
-	const NAME_BLOCK = new Set([
-		"info",
-		"club",
-		"secretary",
-		"admin",
-		"hello",
-		"bookings",
-		"the",
-		"contact",
-		"team",
-		"office",
-		"enquiries",
-		"events",
-		"best",
-		"kind",
-		"thanks",
-		"thank",
-		"thankyou",
-		"regards",
-		"sent",
-		"chair",
-		"chairman",
-		"manager",
-		"branch",
-		"legion",
-		"social",
-		"booking",
-		"entertainment",
-		"committee",
-		"member",
-		"bar",
-		"staff",
-		"urgent",
-		"enquiries",
-		"many",
-		"good",
-		"morning",
-		"evening",
-		"natalie",
-		"jake"
-	].map((s) => s.toLowerCase()));
-	const AUTO_RE = /undeliver|mailer-daemon|delivery failed|mailbox unavailable|address rejected|address not found|out of office|automatic reply|auto[- ]?reply|office is now closed|i am (currently )?out of (the )?office/i;
-	const HARD_NO_RE = /not interested|no thank you|no thanks\b|too expensive|price too high|we('ll| will) pass|not for us|don'?t pay (bands|artists?|out)|do not pay|no short-term requirements|keep (your )?details on file|keep it on(?:ly)? file|white suit|tribute only|impersonator only/i;
-	const FULLY_BOOKED_RE = /fully booked|already booked for 2026 and 2027|bookings for the year for 2027|no dates (left|available)/i;
-	const ALTERNATIVE_RE = /\b(but|however|could|squeeze|sunday|cancellation|2027|looking at|hear from me|keep him in mind)\b/i;
-	const CLOSE_YES_RE = /\b(book him|put him in|that works|we('ll| will) book|you('re| are) booked|lock (it|that|the) (in|date))\b/i;
-	const WAITING_RE = /\b(committee|put (it|this|your email) forward|i('m| am) away|on my return|when i.?m back|next (two|2) months|concentrating on|come to (the )?restaurant|pop in|i('ll| will) (check|get back|send|give you)|will check the diary|give you some dates|discuss with|next meeting|be in touch|meeting on (mon|tues|wednes|thurs|fri)day)\b/i;
-	const DATE_ASK_RE = /\b(\d{1,2}[\/\-]\d{1,2}([\/\-]\d{2,4})?|\d{1,2}(?:st|nd|rd|th)?\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*|remembrance|\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b.{0,24}\d{4})\b/i;
-	const FEE_ASK_RE = /\b(how much|what (would|do) you charge|what(?:'s| is) the (fee|cost|rate)|charges?|fees?|rates?|costing|quote|price|what would the fee)\b/i;
-	const POSTER_RE = /\b(poster|flyers?|artwork)\b/i;
-	/** They asked for dates / want to book — Close, even if a committee or “I’ll send dates” is in the way. */
-	const DATE_TALK_RE = /\b(interested in booking|discuss possible dates|send me (through )?(some )?(saturdays|dates)|a date in 20\d\d|open to getting jake booked|give you some dates|dates that you have available|possible dates)\b/i;
-	const AGREE_FEE_RE = /(?:for|do|it['’]s|it is|that['’]s|that is|at)\s*£\s*(\d{2,4})|£\s*(\d{2,4})\s*(?:cash|confirmed|locked)/i;
-	const ON_FILE_RE = /future reference|on file|have your details|you may be hearing from me|as i have your details|keep (your|him|this|it) (details )?on file|for later/i;
-	const DISTANCE_RE = /too far|a bit far|far for him to travel/i;
-	const NAMED_DATE_RE = /\b\d{1,2}(?:st|nd|rd|th)?\s+(?:of\s+)?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b/i;
-	const CASH_LOCK_RE = /will be the cash|the cash one|juggle some things/i;
-	const MEET_RE = /come to (the )?restaurant|come down and (we )?talk|we talk about/i;
-	const DEFINITE_RE = /definitely (be )?(interested|open)|would definitely|love the sound of jake/i;
-	const SUNDAY_IN_RE = /squeeze in a sunday|sunday afternoon/i;
-	const FORWARDED_RE = /forwarded your email|please contact him|onto peter/i;
-	const WORKING_TABS = [
-		"close",
-		"live",
-		"chase",
-		"call",
-		"locked"
-	];
-	const OPEN_TABS = [
-		"close",
-		"live",
-		"chase",
-		"call"
-	];
-	function parseWhen(raw) {
-		if (!raw) return null;
-		const n = Date.parse(raw);
-		if (!Number.isNaN(n)) return new Date(n);
-		const m = String(raw).match(/(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
-		if (!m) return null;
-		return new Date(+m[3], {
-			jan: 0,
-			feb: 1,
-			mar: 2,
-			apr: 3,
-			may: 4,
-			jun: 5,
-			jul: 6,
-			aug: 7,
-			sep: 8,
-			oct: 9,
-			nov: 10,
-			dec: 11
-		}[m[2].slice(0, 3).toLowerCase()] ?? 0, +m[1]);
-	}
-	function daysBetween(from, now = /* @__PURE__ */ new Date()) {
-		if (!from) return null;
-		return Math.floor((now.getTime() - from.getTime()) / DAY);
-	}
-	function cleanThread(venue) {
-		return (venue.messages || []).filter((m) => {
-			if (!m || m.side !== "us" && m.side !== "them") return false;
-			const blob = `${m.label || ""} ${m.body || ""}`.toLowerCase();
-			if (blob.includes("gate:send")) return false;
-			if (blob.includes("trail") && blob.length < 40) return false;
-			return true;
-		});
-	}
-	function isAutoNoise(message) {
-		const blob = `${message.body || ""} ${message.from || ""} ${message.subject || ""} ${message.label || ""}`;
-		return AUTO_RE.test(blob);
-	}
-	function realInbound(venue) {
-		return cleanThread(venue).filter((m) => m.side === "them" && !isAutoNoise(m));
-	}
-	function lastOf(messages, side) {
-		const list = side ? messages.filter((m) => m.side === side) : messages;
-		return list.length ? list[list.length - 1] : null;
-	}
-	function hasPhone(venue) {
-		return String(venue.phone || "").replace(/\D/g, "").length >= 10;
-	}
-	function isLockedRecord(venue) {
-		const badge = String(venue.badge || "").toLowerCase();
-		const fee = Number(venue.lockedFee || 0);
-		return (badge === "locked" || badge === "booked") && fee > 0;
-	}
-	function parkedBadge(venue) {
-		const badge = String(venue.badge || "").toLowerCase();
-		return badge === "bounce" || badge === "declined" || badge === "retract-agency" || badge === "skip-do-not-email" || badge === "closed" || badge === "fully-booked-on-file";
-	}
-	function extractEmails(raw) {
-		if (!raw) return [];
-		const found = raw.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi) || [];
-		return [...new Set(found.map((e) => e.toLowerCase()))];
-	}
-	function primaryEmail(venue) {
-		return extractEmails(venue.email)[0] || null;
-	}
-	function plausibleName(token) {
-		const t = token.replace(/[^A-Za-z'-]/g, "");
-		if (t.length < 3 || t.length > 14) return false;
-		if (NAME_BLOCK.has(t.toLowerCase())) return false;
-		if (!/^[A-Z][a-z]+(?:['-][A-Z]?[a-z]+)?$/.test(t) && !/^[A-Z][a-z]+$/.test(t)) {
-			if (!/^[A-Za-z][a-z]+$/.test(t)) return false;
-		}
-		return true;
-	}
-	function titleName(token) {
-		return token.charAt(0).toUpperCase() + token.slice(1);
-	}
-	function extractWho(venue, note) {
-		if (note?.contactName && plausibleName(note.contactName.split(" ")[0] || "")) return note.contactName.split(" ")[0];
-		if (venue.contactName && plausibleName(venue.contactName.split(" ")[0] || "")) return venue.contactName.split(" ")[0];
-		const email = venue.email || "";
-		const named = email.match(/^([A-Za-z][A-Za-z'-]+)\s+[A-Za-z][^<]*</);
-		if (named && plausibleName(named[1])) return titleName(named[1]);
-		const first = email.match(/^([A-Za-z][A-Za-z'-]+)\s*</);
-		if (first && plausibleName(first[1])) return titleName(first[1]);
-		const inbound = realInbound(venue);
-		for (let i = inbound.length - 1; i >= 0; i--) {
-			const lines = (inbound[i].body || "").split(/\n/).map((l) => l.trim()).filter(Boolean);
-			for (const line of [...lines].reverse().slice(0, 10)) {
-				if (/^(thanks|thank you|cheers|regards|kind regards|many thanks|sent from|best regards)\b/i.test(line)) continue;
-				if (/^(hi|hello|good morning|good evening)\b/i.test(line)) continue;
-				if (/\b(road|street|lane|hall|club|legion|avenue|close|drive|whitton|secretary|branch)\b/i.test(line)) continue;
-				if (venue.name) {
-					if (venue.name.toLowerCase().split(/[^a-z]+/).filter(Boolean).includes(line.toLowerCase())) continue;
-				}
-				if (venue.town && venue.town.toLowerCase() === line.toLowerCase()) continue;
-				if (venue.name && line.toLowerCase().includes(venue.name.split(/\s+/)[0].toLowerCase()) && line.split(/\s+/).length > 2) continue;
-				const one = line.match(/^([A-Z][a-z]{2,13})$/);
-				if (one && plausibleName(one[1])) return one[1];
-				const two = line.match(/^([A-Z][a-z]{2,13})\s+[A-Z][a-z]+/);
-				if (two && plausibleName(two[1])) return two[1];
-			}
-		}
-		const replied = String(venue.replied || "");
-		const paren = replied.match(/\(([^)]+)\)/);
-		if (paren) {
-			const token = paren[1].split(/[\s,]/)[0];
-			if (token && plausibleName(token)) return titleName(token);
-		}
-		const dash = replied.match(/website\s+([A-Za-z]{3,13})/i);
-		if (dash && plausibleName(dash[1])) return titleName(dash[1]);
-		const tina = replied.match(/\b(Tina|Dee|Karen|Val|Valerie|Steve|Maxine|Siobhan|Christine|Alison|Ahmet|Jaela|John|Barbara|Sandra|Mick|Brian|Caron|Dayn|Keith|Rick|Eija)\b/i);
-		if (tina) return titleName(tina[1]);
-		return null;
-	}
-	function extractWebsite(venue) {
-		if (venue.website && /^https?:\/\//i.test(venue.website)) return venue.website;
-		const urls = `${venue.email || ""}\n${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "").join("\n")}`.match(/https?:\/\/[^\s<>")']+/gi) || [];
-		for (const url of urls) {
-			const clean = url.replace(/[.,;]+$/, "");
-			if (/jakeessex\.co\.uk|instagram\.com\/jakeessex/i.test(clean)) continue;
-			return clean;
-		}
-		return null;
-	}
-	function poundsIn(text) {
-		const out = [];
-		const re = /(?:£\s*|GBP\s*|@\s*)(\d{2,4})(?:\.00)?/gi;
-		let m;
-		while (m = re.exec(text)) {
-			const n = Number(m[1]);
-			if (n >= 50 && n <= 2e3) out.push(n);
-		}
-		return out;
-	}
-	function extractQuotedFee(venue) {
-		if (typeof venue.quotedFee === "number" && venue.quotedFee > 0) return venue.quotedFee;
-		const us = cleanThread(venue).filter((m) => m.side === "us");
-		for (let i = us.length - 1; i >= 0; i--) {
-			const found = poundsIn(us[i].body || "");
-			if (found.length) return found[0];
-		}
-		return null;
-	}
-	function extractThreadFee(venue) {
-		return feeOnThread(venue);
-	}
-	function inboundLooksHardNo(venue) {
-		const inbound = realInbound(venue);
-		if (!inbound.length) return false;
-		const body = inbound[inbound.length - 1].body || "";
-		if (HARD_NO_RE.test(body)) return true;
-		if (FULLY_BOOKED_RE.test(body) && !ALTERNATIVE_RE.test(body)) return true;
-		return false;
-	}
-	function lastInboundOffersClose(message) {
-		const body = message.body || "";
-		if (CLOSE_YES_RE.test(body)) return true;
-		if (askedFee(message)) return true;
-		if (POSTER_RE.test(body)) return true;
-		if (DATE_ASK_RE.test(body)) return true;
-		if (WAITING_RE.test(body)) return true;
-		if (DATE_TALK_RE.test(body)) return true;
-		return false;
-	}
-	function askedFee(message) {
-		return FEE_ASK_RE.test(message.body || "");
-	}
-	function noteIsBooked(note, now) {
-		if (!note || note.outcome !== "booked") return false;
-		const days = daysBetween(parseWhen(note.updatedAt || note.calledAt || null), now);
-		return days != null && days <= 21;
-	}
-	function isDropped(note) {
-		if (!note) return false;
-		if (note.dropped) return true;
-		if (note.outcome === "dead") return true;
-		return false;
-	}
-	const DUPLICATE_PARK_IDS = new Set([
-		"greenford-conservative-club" // same thread as greenford-conservative-club-john-mitchell
-	]);
-	function classifyVenue({ venue, note, now = /* @__PURE__ */ new Date() }) {
-		const thread = cleanThread(venue);
-		const inbound = realInbound(venue);
-		const last = lastOf(thread);
-		const lastIn = inbound[inbound.length - 1] || null;
-		const lastSide = last?.side || null;
-		const daysSinceInbound = daysBetween(parseWhen(lastIn?.at), now);
-		const lastAt = parseWhen(last?.at);
-		const daysSilent = lastSide === "us" ? daysSinceInbound : daysBetween(lastAt, now);
-		const stale = daysSinceInbound != null && daysSinceInbound >= 14;
-		if (DUPLICATE_PARK_IDS.has(String(venue.id || ""))) return {
-			tab: "parked",
-			reason: "duplicate thread",
-			stale: false,
-			daysSinceInbound,
-			daysSilent,
-			lastSide
-		};
-		if (isLockedRecord(venue)) return {
-			tab: "locked",
-			reason: "locked fee on file",
-			stale: false,
-			daysSinceInbound,
-			daysSilent,
-			lastSide
-		};
-		if (isDropped(note) || parkedBadge(venue) || inboundLooksHardNo(venue)) {
-			let reason = "parked";
-			if (isDropped(note)) reason = "dropped";
-			else if (String(venue.badge) === "bounce") reason = "bounce";
-			else if (inboundLooksHardNo(venue)) reason = "hard no";
-			else reason = String(venue.badge || "parked");
-			return {
-				tab: "parked",
-				reason,
-				stale: false,
-				daysSinceInbound,
-				daysSilent,
-				lastSide
-			};
-		}
-		const who = extractWho(venue, note);
-		let closeReason = null;
-		const canClose = hasPhone(venue) || Number(venue.pendingLockFee || 0) > 0;
-		if (Number(venue.pendingLockFee || 0) > 0 && !inboundLooksHardNo(venue)) closeReason = "fee agreed — lock a date on this call";
-		if (noteIsBooked(note, now) && !isLockedRecord(venue)) closeReason = closeReason || "nat marked booked — not in the pot yet";
-		if (lastIn && !inboundLooksHardNo(venue) && canClose) {
-			if (lastInboundOffersClose(lastIn) && (askedFee(lastIn) ? !!who : true)) closeReason = closeReason || (askedFee(lastIn) ? "asked the fee — close it on the phone" : "asked for dates — close it on the phone");
-		}
-		if (closeReason) return {
-			tab: "close",
-			reason: closeReason,
-			stale,
-			daysSinceInbound,
-			daysSilent,
-			lastSide
-		};
-		const quietAfterUs = lastSide === "us" && inbound.length > 0 && daysSinceInbound != null && daysSinceInbound >= 5;
-		if (inbound.length && daysSinceInbound != null && daysSinceInbound <= 21 && !quietAfterUs) return {
-			tab: "live",
-			reason: "real conversation",
-			stale,
-			daysSinceInbound,
-			daysSilent,
-			lastSide
-		};
-		if (quietAfterUs) return {
-			tab: "chase",
-			reason: `${daysSinceInbound} days quiet`,
-			stale,
-			daysSinceInbound,
-			daysSilent: daysSinceInbound,
-			lastSide
-		};
-		if (hasPhone(venue)) return {
-			tab: "call",
-			reason: "phone on file",
-			stale: false,
-			daysSinceInbound,
-			daysSilent,
-			lastSide
-		};
-		return {
-			tab: "parked",
-			reason: inbound.length ? "no phone" : "no phone / not in play",
-			stale: false,
-			daysSinceInbound,
-			daysSilent,
-			lastSide
-		};
-	}
-	function groundedSay(venue, who, tab) {
-		const name = who || "the booker";
-		const fee = displayFee(venue);
-		const feeTalk = fee ? ` The fee on the thread is £${fee} cash.` : "";
-		if (venue.id === "east-barnet-rbl-club") {
-			if (tab === "locked") return `Already locked Sat 4 Dec 2027, £275. Don’t ring unless Tina calls you.`;
-			return `Hi Tina, Natalie for Jake Essex. You asked about 2 × 60 with his PA — that's £275 cash, no deposit. Have you got a Saturday in 2027?`;
-		}
-		if (venue.id === "corner-club-canvey") return `Hi Maxine, Natalie for Jake Essex. Sunday afternoon we can do. 2 × 45 is £250, 3 × 45 is £375, own PA. Shall I hold a Sunday?`;
-		if (venue.id === "bird-in-hand") return `Hi Alison, Natalie for Jake Essex. You said you’d send dates when you were back — have you had a look?`;
-		if (venue.id === "sedir") return `Hi Ahmet, Natalie for Jake Essex. You asked Jake to come to the restaurant. When should he pop in?`;
-		if (venue.id === "the-muddy-duck") return `Hi Jaela, Natalie for Jake Essex. You wanted rates — 2 × 45 is £250 cash, own PA. When those next two months clear, shall I hold a Saturday?`;
-		if (venue.id === "broomfield-rbl") return `Hi Siobhan, Natalie for Jake Essex. Did the committee pick a Saturday?`;
-		if (venue.id === "st-neots-cons") return `Hi Christine, Natalie for Jake Essex. Did the committee want Jake for a Saturday?`;
-		if (venue.id === "hounslow-rbl") return `Hi Mick, Natalie for Jake Essex. Did September’s committee pick a date?`;
-		if (venue.id === "greenford-conservative-club-john-mitchell" || venue.id === "greenford-conservative-club") return `Hi John, Natalie for Jake Essex. You wanted a 2027 date — shall we pick one now?`;
-		if (venue.id === "aldridge-social-club") return `Hi Dayn, Natalie for Jake Essex. You were looking at 2027 — have you got a Saturday?`;
-		if (venue.id === "berkhamsted-social-club") return `Hi Keith, Natalie for Jake Essex. You asked for contact details — have you got a date in mind?`;
-		if (tab === "close") return `Hi ${name}, Natalie for Jake Essex. Can we lock a date on this call?${feeTalk}`;
-		if (tab === "live") return `Hi ${name}, Natalie for Jake Essex. Just picking up the thread — have you got a date for Jake?`;
-		if (tab === "chase") return `Hi ${name}, Natalie for Jake Essex. You went quiet on me. Shall we pick a date now?`;
-		if (tab === "call") return `Hi, Natalie for Jake Essex — live 50s to 70s, own PA. Have you got a Saturday this year or 2027?`;
-		if (tab === "locked") return fee ? `Already locked £${fee}. Don’t ring unless they call you.` : `Already locked. Don’t ring unless they call you.`;
-		return `Parked. Don’t spend the night here.`;
-	}
-	function factLine(venue) {
-		const fee = displayFee(venue);
-		const known = {
-			"east-barnet-rbl-club": "Locked Sat 4 Dec 2027. 2 × 60, own PA, 8.30pm. £275 on the thread. 38 Brookhill Rd EN4 8SL.",
-			"corner-club-canvey": "Saturdays full. Sunday afternoon possible. She asked how much.",
-			"bird-in-hand": "Alison is away. Said she’ll send dates when she’s back.",
-			"sedir": "Ahmet wants Jake in the restaurant to talk.",
-			"the-muddy-duck": "Jaela loves the act. Busy the next two months. Asked for rates.",
-			"broomfield-rbl": "Siobhan took Saturdays to the committee.",
-			"st-neots-cons": "Christine asked a Saturday costing for the committee.",
-			"hounslow-rbl": "Mick put it to the September committee.",
-			"greenford-conservative-club-john-mitchell": "John wants a 2027 date. Quiet since late August.",
-			"aldridge-social-club": "Dayn said 2026 is full. Looking at 2027.",
-			"berkhamsted-social-club": "Keith asked for contact details for later.",
-			"halstead-rbl": "Locked Sat 17 Jul 2027. £250 on the thread.",
-			"hadleigh-cons": "Locked 13 Nov 2027, 3 × 45. £250 on the thread.",
-			"dartford-mayor-charity-tea": "Charity tea. £100 on the thread. Claire Tiltman Centre.",
-			"oxhey-cons-keyser-hall": "Locked 23 Oct 2027. £250 on the thread.",
-			"bluehouse-farm": "Fri 30 Oct. £250. Choice Live.",
-			"bromley-services-club": "Two nights. £400 lump on the thread — not £800."
-		};
-		if (known[venue.id]) return known[venue.id];
-		const bits = [];
-		if (fee) bits.push(`£${fee} on the thread`);
-		if (venue.lockedDate) bits.push(String(venue.lockedDate));
-		return bits.length ? bits.join(" · ") : null;
-	}
-	/** Newest agreed fee in the emails. Stored lockedFee is only a fallback. */
-	function feeOnThread(venue) {
-		const thread = cleanThread(venue);
-		for (let i = thread.length - 1; i >= 0; i--) {
-			const m = (thread[i].body || "").match(AGREE_FEE_RE);
-			if (!m) continue;
-			const n = Number(m[1] || m[2]);
-			if (n >= 50 && n <= 2e3) return n;
-		}
-		for (let i = thread.length - 1; i >= 0; i--) {
-			const found = poundsIn(thread[i].body || "").filter((n) => n >= 80);
-			if (found.length) return found[found.length - 1];
-		}
-		return null;
-	}
-	function displayFee(venue) {
-		// Jake 15 Sep: locked rows always show lockedFee (never a stale thread or note fee).
-		if (isLockedRecord(venue)) {
-			const locked = Number(venue.lockedFee || 0);
-			if (locked) return locked;
-		}
-		const thread = feeOnThread(venue);
-		if (thread) return thread;
-		const stored = Number(venue.lockedFee || 0);
-		if (stored) return stored;
-		const pending = Number(venue.pendingLockFee || 0);
-		if (pending) return pending;
-		return extractQuotedFee(venue);
-	}
-	function feeMismatch(_venue) {
-		return null;
-	}
-	function webHref(venue, website) {
-		const real = website || extractWebsite(venue);
-		if (real && /^https?:\/\//i.test(real)) return real;
-		const q = [venue.name, venue.town].filter(Boolean).join(" ");
-		return `https://www.google.com/search?q=${encodeURIComponent(q)}`;
-	}
-	function rankVenue(venue, notes = {}, now = /* @__PURE__ */ new Date()) {
-		const note = notes[venue.id];
-		const classified = classifyVenue({
-			venue,
-			note,
-			now
-		});
-		const who = extractWho(venue, note);
-		const fee = displayFee(venue);
-		const row = {
-			venue,
-			tab: classified.tab,
-			stale: classified.stale && (classified.tab === "close" || classified.tab === "live" || classified.tab === "chase"),
-			daysSilent: classified.daysSilent,
-			daysSinceInbound: classified.daysSinceInbound,
-			lastSide: classified.lastSide,
-			lastTouchAt: lastOf(cleanThread(venue))?.at || venue.firstPitch || null,
-			lastCalledAt: note?.calledAt || null,
-			who,
-			sayThis: groundedSay(venue, who, classified.tab),
-			factLine: factLine(venue),
-			fee,
-			quotedFee: extractQuotedFee(venue),
-			threadFee: feeOnThread(venue),
-			feeMismatch: null,
-			website: extractWebsite(venue),
-			reason: classified.reason,
-			called: !!note?.called,
-			dropped: isDropped(note),
-			latest: isLatestVenue(venue, classified.tab, now),
-			giveTime: false,
-			replyBucket: "email",
-			replyWhy: ""
-		};
-		const action = replyAction(row, now);
-		row.giveTime = !!action.wait;
-		row.replyBucket = action.bucket;
-		row.replyWhy = action.why || "";
-		return row;
-	}
-	function rankAll(venues, notes = {}, now = /* @__PURE__ */ new Date()) {
-		const out = [];
-		for (const v of venues) {
-			try {
-				out.push(rankVenue(v, notes, now));
-			} catch (e) {
-				out.push({
-					venue: v,
-					tab: "call",
-					stale: false,
-					daysSilent: null,
-					daysSinceInbound: null,
-					lastSide: null,
-					lastTouchAt: v && v.firstPitch || null,
-					lastCalledAt: null,
-					who: null,
-					sayThis: "Hi, Natalie for Jake Essex — live 50s to 70s, own PA. Have you got a Saturday this year or 2027?",
-					factLine: null,
-					fee: null,
-					quotedFee: null,
-					threadFee: null,
-					feeMismatch: null,
-					website: null,
-					reason: "safe fallback",
-					called: false,
-					dropped: false,
-					latest: false,
-					giveTime: false,
-					replyBucket: "email",
-					replyWhy: ""
-				});
-			}
-		}
-		return out;
-	}
-	function closeScore(row) {
-		if (row.giveTime) return -2e3 - (row.daysSinceInbound || 0);
-		if (row.venue.pendingLockFee) return 1e4;
-		if (row.stale) return -1e3 + (row.daysSinceInbound || 0) * -1;
-		return 500 - (row.daysSinceInbound == null ? 50 : row.daysSinceInbound);
-	}
-	function sortTab(rows, tab) {
-		const list = rows.filter((r) => r.tab === tab);
-		if (tab === "close") return list.sort((a, b) => {
-			if (a.giveTime !== b.giveTime) return a.giveTime ? 1 : -1;
-			if (a.stale !== b.stale) return a.stale ? 1 : -1;
-			return closeScore(b) - closeScore(a);
-		});
-		if (tab === "live") return list.sort((a, b) => {
-			if (a.stale !== b.stale) return a.stale ? 1 : -1;
-			return (a.daysSinceInbound ?? 99) - (b.daysSinceInbound ?? 99);
-		});
-		if (tab === "chase") return list.sort((a, b) => {
-			if (a.stale !== b.stale) return a.stale ? 1 : -1;
-			return (b.daysSilent ?? 0) - (a.daysSilent ?? 0);
-		});
-		if (tab === "call") return list.sort((a, b) => {
-			if (a.called !== b.called) return a.called ? 1 : -1;
-			if (a.called && b.called) return (a.lastCalledAt || "").localeCompare(b.lastCalledAt || "");
-			const atA = a.venue.firstPitch || a.lastTouchAt || "";
-			const atB = b.venue.firstPitch || b.lastTouchAt || "";
-			return atA.localeCompare(atB);
-		});
-		if (tab === "locked") return list.sort((a, b) => {
-			const da = String(a.venue.lockedDate || "");
-			const db = String(b.venue.lockedDate || "");
-			if (da !== db) return da.localeCompare(db);
-			return String(a.venue.name || "").localeCompare(String(b.venue.name || ""));
-		});
-		return list.sort((a, b) => a.venue.name.localeCompare(b.venue.name));
-	}
-	function sortWorking(rows) {
-		const out = [];
-		for (const tab of WORKING_TABS) out.push(...sortTab(rows, tab));
-		return out;
-	}
-	function sortOpen(rows) {
-		const out = [];
-		for (const tab of OPEN_TABS) out.push(...sortTab(rows, tab));
-		return out;
-	}
-	function sortClosed(rows) {
-		return [...sortTab(rows, "locked"), ...sortTab(rows, "parked")];
-	}
-	function sortAll(rows) {
-		const latest = rows.filter((r) => r.latest).sort((a, b) => String(b.lastTouchAt || "").localeCompare(String(a.lastTouchAt || "")));
-		const rest = rows.filter((r) => !r.latest);
-		return [...sortWorking(rest), ...latest, ...sortTab(rest, "parked")];
-	}
-	function namedDatePast(body, now) {
-		const m = String(body || "").match(/\b(\d{1,2})(?:st|nd|rd|th)?\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+(\d{4})\b/i);
-		if (!m) return false;
-		const d = new Date(+m[3], MONTH_IDX[m[2].slice(0, 3).toLowerCase()] ?? 0, +m[1]);
-		return d.getTime() < now.getTime() - DAY;
-	}
-	function heatScore(venue, daysSinceInbound, now = /* @__PURE__ */ new Date()) {
-		const inbound = realInbound(venue);
-		const lastBody = ((inbound[inbound.length - 1] && inbound[inbound.length - 1].body) || "").toLowerCase();
-		const all = inbound.map((m) => m.body || "").join("\n").toLowerCase();
-		let s = 40;
-		const days = daysSinceInbound == null ? 18 : daysSinceInbound;
-		const lastHasDate = NAMED_DATE_RE.test(lastBody) && !namedDatePast(lastBody, now);
-		if (lastHasDate && (CASH_LOCK_RE.test(lastBody) || /£\s*\d{2,4}/.test(lastBody))) s += 90;
-		else if (lastHasDate || NAMED_DATE_RE.test(all) && days < 5 && !namedDatePast(all, now)) s += 35;
-		if (CASH_LOCK_RE.test(lastBody)) s += 80;
-		if (MEET_RE.test(all)) s += 55;
-		if (DEFINITE_RE.test(all)) s += 38;
-		if (FEE_ASK_RE.test(lastBody)) s += 40;
-		if (DATE_TALK_RE.test(all) || /give you some dates|check the diary/.test(all)) s += 22;
-		if (/give you some dates|check the diary on my return/.test(lastBody)) s += 16;
-		if (SUNDAY_IN_RE.test(all)) s += 18;
-		if (WAITING_RE.test(all) && /committee/.test(all)) s += 6;
-		if (FORWARDED_RE.test(all)) s += 4;
-		if (/next (two|2) months|concentrating on those/.test(lastBody)) s -= 22;
-		if (/2027/.test(all) && !/\b(2026|october|november|december|this year)\b/.test(all)) s -= 14;
-		if (DISTANCE_RE.test(all)) s -= 38;
-		if (FULLY_BOOKED_RE.test(all)) s -= 22;
-		if (ON_FILE_RE.test(all) || /future reference/.test(lastBody)) s -= 60;
-		if (/^will do\b/.test(lastBody.trim())) s -= 12;
-		if (namedDatePast(lastBody, now)) s -= 30;
-		s -= Math.min(36, days * 2);
-		return s;
-	}
-	function isLatestVenue(venue, tab, now) {
-		if (tab === "locked") return false;
-		if (realInbound(venue).length) return false;
-		const us = cleanThread(venue).filter((m) => m.side === "us");
-		const last = us.length ? us[us.length - 1] : null;
-		const at = parseWhen((last && last.at) || venue.firstPitch);
-		return daysBetween(at, now) === 0;
-	}
-	function monthToken(text) {
-		const m = String(text || "").toLowerCase().match(/\b(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec)\b/);
-		if (!m) return null;
-		const n = MONTH_IDX[m[1]];
-		return n == null ? null : n;
-	}
-	function replyAction(row, now = /* @__PURE__ */ new Date()) {
-		const venue = row.venue || {};
-		const inbound = realInbound(venue);
-		const last = inbound[inbound.length - 1];
-		const lastBody = ((last && last.body) || "").toLowerCase();
-		const all = inbound.map((m) => m.body || "").join("\n").toLowerCase();
-		const days = row.daysSinceInbound == null ? 18 : row.daysSinceInbound;
-		const hasTel = hasPhone(venue);
-		const who = row.who || extractWho(venue, null) || "them";
-		if (!inbound.length) return {
-			bucket: "wait",
-			why: "",
-			wait: true
-		};
-		if (ON_FILE_RE.test(all) || /future reference/.test(lastBody) || /hang on to your details|for the future/.test(lastBody) || /^will do\b/.test(lastBody.trim())) return {
-			bucket: "file",
-			why: "On file — leave them",
-			wait: true
-		};
-		if (/email back in january|come back in january/.test(lastBody)) return {
-			bucket: "wait",
-			why: "Told us January — don’t chase",
-			wait: true
-		};
-		if (/not for us i'?m afraid|soft-no|mostly bands/.test(lastBody) && /not interested|not for us|mostly bands/.test(all)) return {
-			bucket: "file",
-			why: "Soft no — leave unless they write",
-			wait: true
-		};
-		if (/committee/.test(lastBody) || /committee/.test(all) && days < 40) {
-			const mo = monthToken(lastBody);
-			if (mo != null) {
-				let until = new Date(now.getFullYear(), mo, 28);
-				if (until.getTime() < now.getTime()) until = new Date(now.getFullYear() + 1, mo, 28);
-				if (mo === now.getMonth() && days >= 21) return {
-					bucket: hasTel ? "call" : "email",
-					why: "Committee window passed — call",
-					wait: false
-				};
-				if (until.getTime() > now.getTime()) return {
-					bucket: "wait",
-					why: `Committee ${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][mo]} — give them time`,
-					wait: true
-				};
-			}
-			if (/first tuesday of every month/.test(lastBody) && days < 28) return {
-				bucket: "wait",
-				why: "Committee first Tuesday — wait",
-				wait: true
-			};
-			if (days >= 10) return {
-				bucket: "call",
-				why: "Committee window passed — call",
-				wait: false
-			};
-			return {
-				bucket: "wait",
-				why: "With the committee — wait",
-				wait: true
-			};
-		}
-		if (/annual leave until|on annual leave/.test(lastBody)) {
-			const dm = lastBody.match(/until\s+(\d{1,2})\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*/i);
-			if (dm) {
-				const until = new Date(now.getFullYear(), MONTH_IDX[dm[2].slice(0, 3).toLowerCase()] ?? 0, Number(dm[1]));
-				if (until.getTime() > now.getTime()) return {
-					bucket: "wait",
-					why: "On leave — wait until they’re back",
-					wait: true
-				};
-				return {
-					bucket: hasTel ? "call" : "email",
-					why: "Leave ended — pick this up",
-					wait: false
-				};
-			}
-			if (days < 7) return {
-				bucket: "wait",
-				why: "On leave — wait",
-				wait: true
-			};
-		}
-		if (/i'?m away|on my return|check the diary on my return/.test(lastBody)) {
-			if (days < 10) return {
-				bucket: "wait",
-				why: `${who} away — dates on return`,
-				wait: true
-			};
-			return {
-				bucket: hasTel ? "call" : "email",
-				why: `${who} should be back — chase`,
-				wait: false
-			};
-		}
-		if (/will let you know|get back to you next week|i will get back|we will review/.test(lastBody)) {
-			if (days < 8) return {
-				bucket: "wait",
-				why: "They asked for time — wait",
-				wait: true
-			};
-			return {
-				bucket: hasTel ? "call" : "email",
-				why: `${who} said they’d come back — now due`,
-				wait: false
-			};
-		}
-		if ((/forwarding your email|forwarded your email|fyi/.test(lastBody)) && days < 6) return {
-			bucket: "wait",
-			why: "Passed internally — give them a few days",
-			wait: true
-		};
-		if (/area branch office|contact the clubs?/.test(lastBody)) return {
-			bucket: "wait",
-			why: "Branch office — not a venue booker",
-			wait: true
-		};
-		if (namedDatePast(lastBody, now)) return {
-			bucket: "wait",
-			why: "Date they named has gone — waiting on a new one",
-			wait: true
-		};
-		if (row.lastSide === "us" && days <= 1) return {
-			bucket: "wait",
-			why: "Just wrote them — no chase today",
-			wait: true
-		};
-		const heat = heatScore(venue, row.daysSinceInbound, now);
-		if (FEE_ASK_RE.test(lastBody) || DATE_ASK_RE.test(lastBody) || CASH_LOCK_RE.test(lastBody) || CLOSE_YES_RE.test(lastBody)) {
-			if (hasTel) return {
-				bucket: "call",
-				why: FEE_ASK_RE.test(lastBody) ? `${who} asked the fee — call` : `${who} talking dates — call`,
-				wait: false
-			};
-			return {
-				bucket: "email",
-				why: `${who} replied — no number, stay on email`,
-				wait: false
-			};
-		}
-		if (MEET_RE.test(all) && hasTel) return {
-			bucket: "call",
-			why: `${who} wants Jake in — call`,
-			wait: false
-		};
-		if (hasTel && heat >= 48 && days >= 3) return {
-			bucket: "call",
-			why: `${who} gone quiet — call`,
-			wait: false
-		};
-		if (!hasTel) return {
-			bucket: "email",
-			why: `${who} on email — no number`,
-			wait: false
-		};
-		if (heat < 18) return {
-			bucket: "file",
-			why: "Cold reply — leave for now",
-			wait: true
-		};
-		return {
-			bucket: "call",
-			why: `${who} — call when you’re on`,
-			wait: false
-		};
-	}
-	const REPLY_BUCKET_ORDER = {
-		call: 0,
-		email: 1,
-		wait: 2,
-		file: 3
-	};
-	function replyLaneOf(row) {
-		return String((row && row.venue && row.venue.replyLane) || "").toLowerCase();
-	}
-	function hasReplyLane(row) {
-		const lane = replyLaneOf(row);
-		return lane === "call" || lane === "email";
-	}
-	function isRepliedRow(row) {
-		// Engaged thread tabs + call-tab rows Jake tagged Call/Email (otherwise Replied hid Jaela/Ahmet/Jodie/John).
-		return row.tab === "close" || row.tab === "live" || row.tab === "chase" || (row.tab === "call" && hasReplyLane(row));
-	}
-	/** Jake 11 Sep: Call-lane (phone close from thread) at top of Replied; named heat order. */
-	/** Jake call attempts 11 Sep (JEM update) — Call heat only.
-	 *  1 Walderslade (no attempt — still hot)
-	 *  2 California (Peter Mon before 12)
-	 *  3 Muddy Duck (awaiting Jaela callback)
-	 *  Sedir + Greenford John → replyLane email (already called / broken mobile).
-	 */
-	const CALL_LANE_RANK = {
-		"the-bull": 1,
-		"sutton-social-club": 2,
-		"the-muddy-duck": 3,
-		"bardswell-social-club-sharon-banks": 4,
-		"sedir": 5,
-		"mildmay-club": 6,
-		"california-social-ipswich": 7
-	};
-	function callLaneRank(row) {
-		const id = String((row && row.venue && row.venue.id) || "");
-		if (Object.prototype.hasOwnProperty.call(CALL_LANE_RANK, id)) return CALL_LANE_RANK[id];
-		return 50;
-	}
-	function sortReplied(rows) {
-		return rows.filter(isRepliedRow).sort((a, b) => {
-			const ba = REPLY_BUCKET_ORDER[a.replyBucket] ?? 1;
-			const bb = REPLY_BUCKET_ORDER[b.replyBucket] ?? 1;
-			if (ba !== bb) return ba - bb;
-			if (a.replyBucket === "call") {
-				const rank = callLaneRank(a) - callLaneRank(b);
-				if (rank) return rank;
-			}
-			const heat = heatScore(b.venue, b.daysSinceInbound) - heatScore(a.venue, a.daysSinceInbound);
-			if (heat) return heat;
-			return (a.daysSinceInbound ?? 99) - (b.daysSinceInbound ?? 99);
-		});
-	}
-	function rowsForFilter(rows, filter) {
-		if (filter === "all") return sortAll(rows);
-		if (filter === "replied") return sortReplied(rows);
-		if (filter === "closed") return sortTab(rows, "locked");
-		return sortTab(rows, "parked");
-	}
-	function tabCounts(rows) {
-		const counts = {
-			close: 0,
-			live: 0,
-			chase: 0,
-			call: 0,
-			locked: 0,
-			parked: 0
-		};
-		for (const row of rows) counts[row.tab] += 1;
-		return counts;
-	}
-	function filterCounts(rows) {
-		const t = tabCounts(rows);
-		const callLane = rows.filter((r) => r.tab === "call" && hasReplyLane(r)).length;
-		return {
-			all: rows.length,
-			replied: t.close + t.live + t.chase + callLane,
-			closed: t.locked,
-			inactive: t.parked
-		};
-	}
-	function lockedCash(venues) {
-		const rows = [];
-		let cash = 0;
-		let nights = 0;
-		for (const v of venues) {
-			if (!isLockedRecord(v)) continue;
-			// Locked rows trust lockedFee — feeOnThread can still see an older quote (£300 vs £400).
-			const fee = Number(v.lockedFee || 0) || displayFee(v) || 0;
-			if (!fee) continue;
-			const n = Number(v.lockedNights || 1) || 1;
-			cash += fee;
-			nights += n;
-			rows.push({
-				name: v.name,
-				fee,
-				nights: n,
-				id: v.id,
-				lockedDate: String(v.lockedDate || "").slice(0, 10)
-			});
-		}
-		// Jake 15 Sep: Nat locked list by gig date ascending (not fee).
-		rows.sort((a, b) => {
-			const da = a.lockedDate || "";
-			const db = b.lockedDate || "";
-			if (da !== db) return da.localeCompare(db);
-			return String(a.name || "").localeCompare(String(b.name || ""));
-		});
-		const pending = venues.filter((v) => Number(v.pendingLockFee || 0) > 0 && !isLockedRecord(v)).map((v) => ({
-			name: v.name,
-			fee: Number(v.pendingLockFee),
-			note: v.pendingNote
-		}));
-		return {
-			cash,
-			nights,
-			rows,
-			pending
-		};
-	}
-	function cashTarget(stats) {
-		const target = CASH_TARGET;
-		const cash = Number(stats && stats.cash || 0);
-		const pct = Math.max(0, Math.min(100, Math.round(cash / target * 1000) / 10));
-		return {
-			target,
-			pct,
-			left: Math.max(0, target - cash)
-		};
-	}
-	function pepLine(rows) {
-		const close = sortTab(rows, "close").filter((r) => !r.giveTime);
-		const quiet = rows.filter((r) => r.tab === "chase").filter((r) => (r.daysSilent ?? 0) > 5);
-		const first = close[0];
-		const who = first?.who || first?.venue.name.split(" ")[0] || null;
-		const n = close.length;
-		const closeBit = n === 0 ? "Nothing to close tonight." : n === 1 ? "1 to close tonight." : `${n} to close tonight.`;
-		const whoBit = who && n ? ` ${who} first.` : "";
-		const qn = quiet.length;
-		return `${closeBit}${whoBit}${qn === 0 ? " None gone quiet." : qn === 1 ? " 1 gone quiet >5 days." : ` ${qn} gone quiet >5 days.`}`.replace(/\s+/g, " ").trim();
-	}
-	function chaseAlarm(rows) {
-		return rows.some((r) => r.tab === "chase" && (r.daysSilent ?? 0) > 7);
-	}
-	function matchesQuery(venue, q) {
-		if (!q.trim()) return true;
-		return `${venue.name} ${venue.town || ""} ${venue.email || ""} ${venue.subject || ""} ${venue.contactName || ""}`.toLowerCase().includes(q.trim().toLowerCase());
-	}
-	function telHref(phone) {
-		let d = String(phone || "").replace(/\D/g, "");
-		if (!d) return "";
-		if (d.startsWith("0")) d = "44" + d.slice(1);
-		if (!d.startsWith("44")) d = "44" + d;
-		return `tel:+${d}`;
-	}
-	function smsHref(phone) {
-		const tel = telHref(phone);
-		return tel ? tel.replace(/^tel:/, "sms:") : "";
-	}
-	function prettyPhone(phone) {
-		let d = String(phone || "").replace(/\D/g, "");
-		if (d.startsWith("44")) d = "0" + d.slice(2);
-		if (d.length === 11) return `${d.slice(0, 5)} ${d.slice(5)}`;
-		return phone || "";
-	}
-	function mapsHref(venue) {
-		const q = [venue.name, venue.town].filter(Boolean).join(" ");
-		return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
-	}
-	function mailtoHref(venue) {
-		const email = primaryEmail(venue);
-		if (!email) return "";
-		return `mailto:${email}`;
-	}
-	function gbp(n) {
-		return "£" + Number(n || 0).toLocaleString("en-GB");
-	}
-	function fmtWhen(iso) {
-		if (!iso) return "";
-		const d = parseWhen(iso);
-		if (!d) return String(iso);
-		return d.toLocaleString("en-GB", {
-			day: "numeric",
-			month: "short",
-			hour: "2-digit",
-			minute: "2-digit"
-		});
-	}
-	function fmtDay(iso) {
-		if (!iso) return "";
-		const d = parseWhen(iso);
-		if (!d) return String(iso);
-		return d.toLocaleDateString("en-GB", {
-			day: "numeric",
-			month: "short"
-		});
-	}
-	function lastTouchLabel(row, now = /* @__PURE__ */ new Date()) {
-		const at = row.lastTouchAt;
-		const d = parseWhen(at);
-		const who = row.lastSide === "them" ? "Them" : row.lastSide === "us" ? "Us" : "Touch";
-		if (!d) return who;
-		const days = daysBetween(d, now);
-		if (days === 0) return `${who} · today`;
-		if (days === 1) return `${who} · yesterday`;
-		return `${who} · ${fmtDay(at)}`;
-	}
-	function lastCalledLabel(note, now = /* @__PURE__ */ new Date()) {
-		if (!note?.called) return null;
-		const d = parseWhen(note.calledAt || note.updatedAt || null);
-		if (!d) return "Called";
-		const days = daysBetween(d, now);
-		if (days === 0) return "Called · today";
-		if (days === 1) return "Called · yesterday";
-		return `Called · ${fmtDay(note.calledAt || note.updatedAt)}`;
-	}
-	/** Venues we would not put in Close/Live without guessing. */
-	const UNCLASSIFIED_WITHOUT_GUESSING = [
-		{
-			id: "wilmington-private-function-barbara-morris",
-			why: "Website enquiry from Barbara, Saturday 3 Jul 2027, £350 quoted — inbound body is not on the thread. No phone. Parked, not Close (that would be guessing from our own reply)."
-		},
-		{
-			id: "winchester-club",
-			why: "Badge quoted / website Sandra, but the only message on file is our pitch. Has a phone so Call list, not Close."
-		},
-		{
-			id: "california-social-ipswich",
-			why: "Last inbound is an out-of-office from Kate, not a conversation. Call list."
-		},
-		{
-			id: "greenford-conservative-club",
-			why: "Duplicate of John Mitchell’s thread with no phone. Same inbound lives on greenford-conservative-club-john-mitchell."
-		}
-	];
-	function isStockUsCopy(text) {
-		const blob = text.toLowerCase();
-		return STOCK_US.some((s) => blob.includes(s));
-	}
-	//#endregion
-	exports.BOARD_FILTERS = BOARD_FILTERS;
-	exports.BOARD_STAMP = BOARD_STAMP;
-	exports.BOARD_VERSION = BOARD_VERSION;
-	exports.CASH_TARGET = CASH_TARGET;
-	exports.PASSWORD = PASSWORD;
-	exports.UNCLASSIFIED_WITHOUT_GUESSING = UNCLASSIFIED_WITHOUT_GUESSING;
-	exports.chaseAlarm = chaseAlarm;
-	exports.classifyVenue = classifyVenue;
-	exports.cleanThread = cleanThread;
-	exports.daysBetween = daysBetween;
-	exports.displayFee = displayFee;
-	exports.extractEmails = extractEmails;
-	exports.extractQuotedFee = extractQuotedFee;
-	exports.extractThreadFee = extractThreadFee;
-	exports.extractWebsite = extractWebsite;
-	exports.extractWho = extractWho;
-	exports.feeMismatch = feeMismatch;
-	exports.feeOnThread = feeOnThread;
-	exports.filterCounts = filterCounts;
-	exports.fmtDay = fmtDay;
-	exports.fmtWhen = fmtWhen;
-	exports.gbp = gbp;
-	exports.hasPhone = hasPhone;
-	exports.isAutoNoise = isAutoNoise;
-	exports.isLockedRecord = isLockedRecord;
-	exports.isStockUsCopy = isStockUsCopy;
-	exports.lastCalledLabel = lastCalledLabel;
-	exports.lastOf = lastOf;
-	exports.lastTouchLabel = lastTouchLabel;
-	exports.lockedCash = lockedCash;
-	exports.cashTarget = cashTarget;
-	exports.mailtoHref = mailtoHref;
-	exports.mapsHref = mapsHref;
-	exports.matchesQuery = matchesQuery;
-	exports.parseWhen = parseWhen;
-	exports.pepLine = pepLine;
-	exports.prettyPhone = prettyPhone;
-	exports.primaryEmail = primaryEmail;
-	exports.rankAll = rankAll;
-	exports.rankVenue = rankVenue;
-	exports.realInbound = realInbound;
-	exports.heatScore = heatScore;
-	exports.replyAction = replyAction;
-	exports.isLatestVenue = isLatestVenue;
-	exports.rowsForFilter = rowsForFilter;
-	exports.smsHref = smsHref;
-	exports.sortAll = sortAll;
-	exports.sortTab = sortTab;
-	exports.sortWorking = sortWorking;
-	exports.tabCounts = tabCounts;
-	exports.telHref = telHref;
-	exports.webHref = webHref;
-	return exports;
-})({});
+"use strict";
+var Board = (() => {
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __export = (target, all) => {
+    for (var name in all)
+      __defProp(target, name, { get: all[name], enumerable: true });
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+  // src/lib/board/pipeline.ts
+  var pipeline_exports = {};
+  __export(pipeline_exports, {
+    BOARD_FILTERS: () => BOARD_FILTERS,
+    BOARD_STAMP: () => BOARD_STAMP,
+    BOARD_VERSION: () => BOARD_VERSION,
+    CASH_TARGET: () => CASH_TARGET,
+    DESK_CHIP: () => DESK_CHIP,
+    FOLLOW_CHIP: () => FOLLOW_CHIP,
+    PASSWORD: () => PASSWORD,
+    UNCLASSIFIED_WITHOUT_GUESSING: () => UNCLASSIFIED_WITHOUT_GUESSING,
+    assignDesk: () => assignDesk,
+    cashTarget: () => cashTarget,
+    chaseAlarm: () => chaseAlarm,
+    classifyVenue: () => classifyVenue,
+    cleanThread: () => cleanThread,
+    daysBetween: () => daysBetween,
+    deskBanner: () => deskBanner,
+    deskGroupKey: () => deskGroupKey,
+    deskGroupLabel: () => deskGroupLabel,
+    displayFee: () => displayFee,
+    extractEmails: () => extractEmails,
+    extractQuotedFee: () => extractQuotedFee,
+    extractThreadFee: () => extractThreadFee,
+    extractWebsite: () => extractWebsite,
+    extractWho: () => extractWho,
+    feeMismatch: () => feeMismatch,
+    feeOnThread: () => feeOnThread,
+    filterCounts: () => filterCounts,
+    fmtDay: () => fmtDay,
+    fmtWhen: () => fmtWhen,
+    followCount: () => followCount,
+    gbp: () => gbp,
+    hasPhone: () => hasPhone,
+    heatScore: () => heatScore,
+    isAutoNoise: () => isAutoNoise,
+    isLatestVenue: () => isLatestVenue,
+    isLockedRecord: () => isLockedRecord,
+    isRepliedRow: () => isRepliedRow,
+    isStockUsCopy: () => isStockUsCopy,
+    lastCalledLabel: () => lastCalledLabel,
+    lastOf: () => lastOf,
+    lastTouchLabel: () => lastTouchLabel,
+    lockedCash: () => lockedCash,
+    mailtoHref: () => mailtoHref,
+    mapsHref: () => mapsHref,
+    matchesQuery: () => matchesQuery,
+    parseWhen: () => parseWhen,
+    pepLine: () => pepLine,
+    prettyPhone: () => prettyPhone,
+    primaryEmail: () => primaryEmail,
+    rankAll: () => rankAll,
+    rankVenue: () => rankVenue,
+    realInbound: () => realInbound,
+    replyAction: () => replyAction,
+    rowsForFilter: () => rowsForFilter,
+    smsHref: () => smsHref,
+    sortAll: () => sortAll,
+    sortClosed: () => sortClosed,
+    sortDesk: () => sortDesk,
+    sortDeskAll: () => sortDeskAll,
+    sortOpen: () => sortOpen,
+    sortReplied: () => sortReplied,
+    sortTab: () => sortTab,
+    sortWorking: () => sortWorking,
+    tabCounts: () => tabCounts,
+    telHref: () => telHref,
+    webHref: () => webHref
+  });
+  var BOARD_VERSION = "v21";
+  var BOARD_STAMP = "22 Sep 2026";
+  var PASSWORD = "natbooksjake";
+  var CASH_TARGET = 1e4;
+  var MONTH_IDX = {
+    jan: 0,
+    january: 0,
+    feb: 1,
+    february: 1,
+    mar: 2,
+    march: 2,
+    apr: 3,
+    april: 3,
+    may: 4,
+    jun: 5,
+    june: 5,
+    jul: 6,
+    july: 6,
+    aug: 7,
+    august: 7,
+    sep: 8,
+    sept: 8,
+    september: 8,
+    oct: 9,
+    october: 9,
+    nov: 10,
+    november: 10,
+    dec: 11,
+    december: 11
+  };
+  var BOARD_FILTERS = [
+    { id: "call", label: "Call" },
+    { id: "wait", label: "Wait" },
+    { id: "silent", label: "No reply" },
+    { id: "booked", label: "Booked" },
+    { id: "no", label: "No" }
+  ];
+  var DESK_CHIP = {
+    call: "CALL",
+    wait: "WAITING",
+    silent: "NO REPLY",
+    booked: "BOOKED",
+    no: "NO"
+  };
+  var FOLLOW_CHIP = {
+    due: "FOLLOW UP DUE",
+    done: "FOLLOWED UP",
+    fresh: "TOO SOON",
+    none: ""
+  };
+  var DAY = 864e5;
+  var STOCK_US = [
+    "lock it in",
+    "lock that date",
+    "reply here",
+    "pa included",
+    "no deposit",
+    "2 \xD7 45",
+    "3 \xD7 45",
+    "2 x 45",
+    "3 x 45",
+    "www.jakeessex.co.uk",
+    "instagram.com/jakeessexmusic"
+  ];
+  var NAME_BLOCK = new Set(
+    [
+      "info",
+      "club",
+      "secretary",
+      "admin",
+      "hello",
+      "bookings",
+      "the",
+      "contact",
+      "team",
+      "office",
+      "enquiries",
+      "events",
+      "best",
+      "kind",
+      "thanks",
+      "thank",
+      "thankyou",
+      "regards",
+      "sent",
+      "chair",
+      "chairman",
+      "manager",
+      "branch",
+      "legion",
+      "social",
+      "booking",
+      "entertainment",
+      "committee",
+      "member",
+      "bar",
+      "staff",
+      "urgent",
+      "enquiries",
+      "many",
+      "good",
+      "morning",
+      "evening",
+      "natalie",
+      "jake"
+    ].map((s) => s.toLowerCase())
+  );
+  var AUTO_RE = /undeliver|mailer-daemon|delivery failed|mailbox unavailable|address rejected|address not found|out of office|automatic reply|auto[- ]?reply|office is now closed|i am (currently )?out of (the )?office/i;
+  var HARD_NO_RE = /not interested|no thank you|no thanks\b|too expensive|price too high|we('ll| will) pass|not for us|don'?t pay (bands|artists?|out)|do not pay|no short-term requirements|keep (your )?details on file|keep it on(?:ly)? file|white suit|tribute only|impersonator only/i;
+  var FULLY_BOOKED_RE = /fully booked|already booked for 2026 and 2027|bookings for the year for 2027|no dates (left|available)/i;
+  var ALTERNATIVE_RE = /\b(but|however|could|squeeze|sunday|cancellation|2027|looking at|hear from me|keep him in mind)\b/i;
+  var CLOSE_YES_RE = /\b(book him|put him in|that works|we('ll| will) book|you('re| are) booked|lock (it|that|the) (in|date))\b/i;
+  var WAITING_RE = /\b(committee|put (it|this|your email) forward|i('m| am) away|on my return|when i.?m back|next (two|2) months|concentrating on|come to (the )?restaurant|pop in|i('ll| will) (check|get back|send|give you)|will check the diary|give you some dates|discuss with|next meeting|be in touch|meeting on (mon|tues|wednes|thurs|fri)day)\b/i;
+  var DATE_ASK_RE = /\b(\d{1,2}[\/\-]\d{1,2}([\/\-]\d{2,4})?|\d{1,2}(?:st|nd|rd|th)?\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*|remembrance|\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b.{0,24}\d{4})\b/i;
+  var FEE_ASK_RE = /\b(how much|what (would|do) you charge|what(?:'s| is) the (fee|cost|rate)|charges?|fees?|rates?|costing|quote|price|what would the fee)\b/i;
+  var POSTER_RE = /\b(poster|flyers?|artwork)\b/i;
+  var DATE_TALK_RE = /\b(interested in booking|discuss possible dates|send me (through )?(some )?(saturdays|dates)|a date in 20\d\d|open to getting jake booked|give you some dates|dates that you have available|possible dates)\b/i;
+  var AGREE_FEE_RE = /(?:for|do|it['’]s|it is|that['’]s|that is|at)\s*£\s*(\d{2,4})|£\s*(\d{2,4})\s*(?:cash|confirmed|locked)/i;
+  var WORKING_TABS = ["close", "live", "chase", "call", "locked"];
+  var OPEN_TABS = ["close", "live", "chase", "call"];
+  function parseWhen(raw) {
+    if (!raw) return null;
+    const n = Date.parse(raw);
+    if (!Number.isNaN(n)) return new Date(n);
+    const m = String(raw).match(
+      /(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i
+    );
+    if (!m) return null;
+    const months = {
+      jan: 0,
+      feb: 1,
+      mar: 2,
+      apr: 3,
+      may: 4,
+      jun: 5,
+      jul: 6,
+      aug: 7,
+      sep: 8,
+      oct: 9,
+      nov: 10,
+      dec: 11
+    };
+    return new Date(+m[3], months[m[2].slice(0, 3).toLowerCase()] ?? 0, +m[1]);
+  }
+  function daysBetween(from, now = /* @__PURE__ */ new Date()) {
+    if (!from) return null;
+    return Math.floor((now.getTime() - from.getTime()) / DAY);
+  }
+  function cleanThread(venue) {
+    return (venue.messages || []).filter((m) => {
+      if (!m || m.side !== "us" && m.side !== "them") return false;
+      const blob = `${m.label || ""} ${m.body || ""}`.toLowerCase();
+      if (blob.includes("gate:send")) return false;
+      if (blob.includes("trail") && blob.length < 40) return false;
+      return true;
+    });
+  }
+  function isAutoNoise(message) {
+    const blob = `${message.body || ""} ${message.from || ""} ${message.subject || ""} ${message.label || ""}`;
+    return AUTO_RE.test(blob);
+  }
+  function realInbound(venue) {
+    return cleanThread(venue).filter((m) => m.side === "them" && !isAutoNoise(m));
+  }
+  function lastOf(messages, side) {
+    const list = side ? messages.filter((m) => m.side === side) : messages;
+    return list.length ? list[list.length - 1] : null;
+  }
+  function hasPhone(venue) {
+    const digits = String(venue.phone || "").replace(/\D/g, "");
+    return digits.length >= 10;
+  }
+  function isLockedRecord(venue) {
+    const badge = String(venue.badge || "").toLowerCase();
+    const fee = Number(venue.lockedFee || 0);
+    return (badge === "locked" || badge === "booked") && fee > 0;
+  }
+  function parkedBadge(venue) {
+    const badge = String(venue.badge || "").toLowerCase();
+    return badge === "bounce" || badge === "declined" || badge === "retract-agency" || badge === "skip-do-not-email" || badge === "closed" || badge === "fully-booked-on-file";
+  }
+  function extractEmails(raw) {
+    if (!raw) return [];
+    const found = raw.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi) || [];
+    return [...new Set(found.map((e) => e.toLowerCase()))];
+  }
+  function primaryEmail(venue) {
+    return extractEmails(venue.email)[0] || null;
+  }
+  function plausibleName(token) {
+    const t = token.replace(/[^A-Za-z'-]/g, "");
+    if (t.length < 3 || t.length > 14) return false;
+    if (NAME_BLOCK.has(t.toLowerCase())) return false;
+    if (!/^[A-Z][a-z]+(?:['-][A-Z]?[a-z]+)?$/.test(t) && !/^[A-Z][a-z]+$/.test(t)) {
+      if (!/^[A-Za-z][a-z]+$/.test(t)) return false;
+    }
+    return true;
+  }
+  function titleName(token) {
+    return token.charAt(0).toUpperCase() + token.slice(1);
+  }
+  function extractWho(venue, note) {
+    if (note?.contactName && plausibleName(note.contactName.split(" ")[0] || "")) {
+      return note.contactName.split(" ")[0];
+    }
+    if (venue.contactName && plausibleName(venue.contactName.split(" ")[0] || "")) {
+      return venue.contactName.split(" ")[0];
+    }
+    const email = venue.email || "";
+    const named = email.match(/^([A-Za-z][A-Za-z'-]+)\s+[A-Za-z][^<]*</);
+    if (named && plausibleName(named[1])) return titleName(named[1]);
+    const first = email.match(/^([A-Za-z][A-Za-z'-]+)\s*</);
+    if (first && plausibleName(first[1])) return titleName(first[1]);
+    const inbound = realInbound(venue);
+    for (let i = inbound.length - 1; i >= 0; i--) {
+      const body = inbound[i].body || "";
+      const lines = body.split(/\n/).map((l) => l.trim()).filter(Boolean);
+      for (const line of [...lines].reverse().slice(0, 10)) {
+        if (/^(thanks|thank you|cheers|regards|kind regards|many thanks|sent from|best regards)\b/i.test(line)) {
+          continue;
+        }
+        if (/^(hi|hello|good morning|good evening)\b/i.test(line)) continue;
+        if (/\b(road|street|lane|hall|club|legion|avenue|close|drive|whitton|secretary|branch)\b/i.test(line)) continue;
+        if (venue.name) {
+          const bits = venue.name.toLowerCase().split(/[^a-z]+/).filter(Boolean);
+          if (bits.includes(line.toLowerCase())) continue;
+        }
+        if (venue.town && venue.town.toLowerCase() === line.toLowerCase()) continue;
+        if (venue.name && line.toLowerCase().includes(venue.name.split(/\s+/)[0].toLowerCase()) && line.split(/\s+/).length > 2) continue;
+        const one = line.match(/^([A-Z][a-z]{2,13})$/);
+        if (one && plausibleName(one[1])) return one[1];
+        const two = line.match(/^([A-Z][a-z]{2,13})\s+[A-Z][a-z]+/);
+        if (two && plausibleName(two[1])) return two[1];
+      }
+    }
+    const replied = String(venue.replied || "");
+    const paren = replied.match(/\(([^)]+)\)/);
+    if (paren) {
+      const token = paren[1].split(/[\s,]/)[0];
+      if (token && plausibleName(token)) return titleName(token);
+    }
+    const dash = replied.match(/website\s+([A-Za-z]{3,13})/i);
+    if (dash && plausibleName(dash[1])) return titleName(dash[1]);
+    const tina = replied.match(/\b(Tina|Dee|Karen|Val|Valerie|Steve|Maxine|Siobhan|Christine|Alison|Ahmet|Jaela|John|Barbara|Sandra|Mick|Brian|Caron|Dayn|Keith|Rick|Eija)\b/i);
+    if (tina) return titleName(tina[1]);
+    return null;
+  }
+  function extractWebsite(venue) {
+    if (venue.website && /^https?:\/\//i.test(venue.website)) return venue.website;
+    const blob = `${venue.email || ""}
+${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "").join("\n")}`;
+    const urls = blob.match(/https?:\/\/[^\s<>")']+/gi) || [];
+    for (const url of urls) {
+      const clean = url.replace(/[.,;]+$/, "");
+      if (/jakeessex\.co\.uk|instagram\.com\/jakeessex/i.test(clean)) continue;
+      return clean;
+    }
+    return null;
+  }
+  function poundsIn(text) {
+    const out = [];
+    const re = /(?:£\s*|GBP\s*|@\s*)(\d{2,4})(?:\.00)?/gi;
+    let m;
+    while (m = re.exec(text)) {
+      const n = Number(m[1]);
+      if (n >= 50 && n <= 2e3) out.push(n);
+    }
+    return out;
+  }
+  function extractQuotedFee(venue) {
+    if (typeof venue.quotedFee === "number" && venue.quotedFee > 0) return venue.quotedFee;
+    const us = cleanThread(venue).filter((m) => m.side === "us");
+    for (let i = us.length - 1; i >= 0; i--) {
+      const found = poundsIn(us[i].body || "");
+      if (found.length) return found[0];
+    }
+    return null;
+  }
+  function extractThreadFee(venue) {
+    return feeOnThread(venue);
+  }
+  function inboundLooksHardNo(venue) {
+    const inbound = realInbound(venue);
+    if (!inbound.length) return false;
+    const last = inbound[inbound.length - 1];
+    const body = last.body || "";
+    if (HARD_NO_RE.test(body)) return true;
+    if (FULLY_BOOKED_RE.test(body) && !ALTERNATIVE_RE.test(body)) return true;
+    return false;
+  }
+  function lastInboundOffersClose(message) {
+    const body = message.body || "";
+    if (CLOSE_YES_RE.test(body)) return true;
+    if (askedFee(message)) return true;
+    if (POSTER_RE.test(body)) return true;
+    if (DATE_ASK_RE.test(body)) return true;
+    if (WAITING_RE.test(body)) return true;
+    if (DATE_TALK_RE.test(body)) return true;
+    return false;
+  }
+  function askedFee(message) {
+    return FEE_ASK_RE.test(message.body || "");
+  }
+  function noteIsBooked(note, now) {
+    if (!note || note.outcome !== "booked") return false;
+    const at = parseWhen(note.updatedAt || note.calledAt || null);
+    const days = daysBetween(at, now);
+    return days != null && days <= 21;
+  }
+  function isDropped(note) {
+    if (!note) return false;
+    if (note.dropped) return true;
+    if (note.outcome === "dead") return true;
+    return false;
+  }
+  function classifyVenue({ venue, note, now = /* @__PURE__ */ new Date() }) {
+    const thread = cleanThread(venue);
+    const inbound = realInbound(venue);
+    const last = lastOf(thread);
+    const lastIn = inbound[inbound.length - 1] || null;
+    const lastSide = last?.side || null;
+    const lastInAt = parseWhen(lastIn?.at);
+    const daysSinceInbound = daysBetween(lastInAt, now);
+    const lastAt = parseWhen(last?.at);
+    const daysSilent = lastSide === "us" ? daysSinceInbound : daysBetween(lastAt, now);
+    const stale = daysSinceInbound != null && daysSinceInbound >= 14;
+    if (isLockedRecord(venue)) {
+      return { tab: "locked", reason: "locked fee on file", stale: false, daysSinceInbound, daysSilent, lastSide };
+    }
+    if (isDropped(note) || parkedBadge(venue) || inboundLooksHardNo(venue)) {
+      let reason = "parked";
+      if (isDropped(note)) reason = "dropped";
+      else if (String(venue.badge) === "bounce") reason = "bounce";
+      else if (inboundLooksHardNo(venue)) reason = "hard no";
+      else reason = String(venue.badge || "parked");
+      return { tab: "parked", reason, stale: false, daysSinceInbound, daysSilent, lastSide };
+    }
+    const who = extractWho(venue, note);
+    let closeReason = null;
+    const canClose = hasPhone(venue) || Number(venue.pendingLockFee || 0) > 0;
+    if (Number(venue.pendingLockFee || 0) > 0 && !inboundLooksHardNo(venue)) {
+      closeReason = "fee agreed \u2014 lock a date on this call";
+    }
+    if (noteIsBooked(note, now) && !isLockedRecord(venue)) {
+      closeReason = closeReason || "nat marked booked \u2014 not in the pot yet";
+    }
+    if (lastIn && !inboundLooksHardNo(venue) && canClose) {
+      if (lastInboundOffersClose(lastIn) && (askedFee(lastIn) ? !!who : true)) {
+        closeReason = closeReason || (askedFee(lastIn) ? "asked the fee \u2014 close it on the phone" : "asked for dates \u2014 close it on the phone");
+      }
+    }
+    if (closeReason) {
+      return { tab: "close", reason: closeReason, stale, daysSinceInbound, daysSilent, lastSide };
+    }
+    const quietAfterUs = lastSide === "us" && inbound.length > 0 && daysSinceInbound != null && daysSinceInbound >= 5;
+    if (inbound.length && daysSinceInbound != null && daysSinceInbound <= 21 && !quietAfterUs) {
+      return { tab: "live", reason: "real conversation", stale, daysSinceInbound, daysSilent, lastSide };
+    }
+    if (quietAfterUs) {
+      return {
+        tab: "chase",
+        reason: `${daysSinceInbound} days quiet`,
+        stale,
+        daysSinceInbound,
+        daysSilent: daysSinceInbound,
+        lastSide
+      };
+    }
+    if (hasPhone(venue)) {
+      return { tab: "call", reason: "phone on file", stale: false, daysSinceInbound, daysSilent, lastSide };
+    }
+    return {
+      tab: "parked",
+      reason: inbound.length ? "no phone" : "no phone / not in play",
+      stale: false,
+      daysSinceInbound,
+      daysSilent,
+      lastSide
+    };
+  }
+  function groundedSay(venue, who, tab) {
+    const name = who || "the booker";
+    const fee = displayFee(venue);
+    const feeTalk = fee ? ` The fee on the thread is \xA3${fee} cash.` : "";
+    if (venue.id === "east-barnet-rbl-club") {
+      if (tab === "locked") {
+        return `Already locked Sat 4 Dec 2027, \xA3275. Don\u2019t ring unless Tina calls you.`;
+      }
+      return `Hi Tina, Natalie for Jake Essex. You asked about 2 \xD7 60 with his PA \u2014 that's \xA3275 cash, no deposit. Have you got a Saturday in 2027?`;
+    }
+    if (venue.id === "corner-club-canvey") {
+      return `Hi Maxine, Natalie for Jake Essex. Sunday afternoon we can do. 2 \xD7 45 is \xA3250, 3 \xD7 45 is \xA3375, own PA. Shall I hold a Sunday?`;
+    }
+    if (venue.id === "bird-in-hand") {
+      return `Hi Alison, Natalie for Jake Essex. You said you\u2019d send dates when you were back \u2014 have you had a look?`;
+    }
+    if (venue.id === "sedir") {
+      return `Hi Ahmet, Natalie for Jake Essex. You asked Jake to come to the restaurant. When should he pop in?`;
+    }
+    if (venue.id === "the-muddy-duck") {
+      return `Hi Jaela, Natalie for Jake Essex. You wanted rates \u2014 2 \xD7 45 is \xA3250 cash, own PA. When those next two months clear, shall I hold a Saturday?`;
+    }
+    if (venue.id === "broomfield-rbl") {
+      return `Hi Siobhan, Natalie for Jake Essex. Did the committee pick a Saturday?`;
+    }
+    if (venue.id === "st-neots-cons") {
+      return `Hi Christine, Natalie for Jake Essex. Did the committee want Jake for a Saturday?`;
+    }
+    if (venue.id === "hounslow-rbl") {
+      return `Hi Mick, Natalie for Jake Essex. Did September\u2019s committee pick a date?`;
+    }
+    if (venue.id === "greenford-conservative-club-john-mitchell" || venue.id === "greenford-conservative-club") {
+      return `Hi John, Natalie for Jake Essex. You wanted a 2027 date \u2014 shall we pick one now?`;
+    }
+    if (venue.id === "aldridge-social-club") {
+      return `Hi Dayn, Natalie for Jake Essex. You were looking at 2027 \u2014 have you got a Saturday?`;
+    }
+    if (venue.id === "berkhamsted-social-club") {
+      return `Hi Keith, Natalie for Jake Essex. You asked for contact details \u2014 have you got a date in mind?`;
+    }
+    if (tab === "close") {
+      return `Hi ${name}, Natalie for Jake Essex. Can we lock a date on this call?${feeTalk}`;
+    }
+    if (tab === "live") {
+      return `Hi ${name}, Natalie for Jake Essex. Just picking up the thread \u2014 have you got a date for Jake?`;
+    }
+    if (tab === "chase") {
+      return `Hi ${name}, Natalie for Jake Essex. You went quiet on me. Shall we pick a date now?`;
+    }
+    if (tab === "call") {
+      return `Hi, Natalie for Jake Essex \u2014 live 50s to 70s, own PA. Have you got a Saturday this year or 2027?`;
+    }
+    if (tab === "locked") {
+      return fee ? `Already locked \xA3${fee}. Don\u2019t ring unless they call you.` : `Already locked. Don\u2019t ring unless they call you.`;
+    }
+    return `Parked. Don\u2019t spend the night here.`;
+  }
+  function factLine(venue) {
+    const fee = displayFee(venue);
+    const known = {
+      "east-barnet-rbl-club": "Locked Sat 4 Dec 2027. 2 \xD7 60, own PA, 8.30pm. \xA3275 on the thread. 38 Brookhill Rd EN4 8SL.",
+      "corner-club-canvey": "Saturdays full. Sunday afternoon possible. She asked how much.",
+      "bird-in-hand": "Alison is away. Said she\u2019ll send dates when she\u2019s back.",
+      "sedir": "Ahmet wants Jake in the restaurant to talk.",
+      "the-muddy-duck": "Jaela loves the act. Busy the next two months. Asked for rates.",
+      "broomfield-rbl": "Siobhan took Saturdays to the committee.",
+      "st-neots-cons": "Christine asked a Saturday costing for the committee.",
+      "hounslow-rbl": "Mick put it to the September committee.",
+      "greenford-conservative-club-john-mitchell": "John wants a 2027 date. Quiet since late August.",
+      "aldridge-social-club": "Dayn said 2026 is full. Looking at 2027.",
+      "berkhamsted-social-club": "Keith asked for contact details for later.",
+      "halstead-rbl": "Locked Sat 17 Jul 2027. \xA3250 on the thread.",
+      "hadleigh-cons": "Locked 13 Nov 2027, 3 \xD7 45. \xA3250 on the thread.",
+      "dartford-mayor-charity-tea": "Charity tea. \xA3100 on the thread. Claire Tiltman Centre.",
+      "oxhey-cons-keyser-hall": "Locked 23 Oct 2027. \xA3250 on the thread.",
+      "bluehouse-farm": "Fri 30 Oct. \xA3250. Choice Live.",
+      "bromley-services-club": "Two nights. \xA3400 lump on the thread \u2014 not \xA3800."
+    };
+    if (known[venue.id]) return known[venue.id];
+    const bits = [];
+    if (fee) bits.push(`\xA3${fee} on the thread`);
+    if (venue.lockedDate) bits.push(String(venue.lockedDate));
+    return bits.length ? bits.join(" \xB7 ") : null;
+  }
+  function feeOnThread(venue) {
+    const thread = cleanThread(venue);
+    for (let i = thread.length - 1; i >= 0; i--) {
+      const m = (thread[i].body || "").match(AGREE_FEE_RE);
+      if (!m) continue;
+      const n = Number(m[1] || m[2]);
+      if (n >= 50 && n <= 2e3) return n;
+    }
+    for (let i = thread.length - 1; i >= 0; i--) {
+      const found = poundsIn(thread[i].body || "").filter((n) => n >= 80);
+      if (found.length) return found[found.length - 1];
+    }
+    return null;
+  }
+  function displayFee(venue) {
+    const thread = feeOnThread(venue);
+    if (thread) return thread;
+    const stored = Number(venue.lockedFee || 0);
+    if (stored) return stored;
+    const pending = Number(venue.pendingLockFee || 0);
+    if (pending) return pending;
+    return extractQuotedFee(venue);
+  }
+  function feeMismatch(_venue) {
+    return null;
+  }
+  function webHref(venue, website) {
+    const real = website || extractWebsite(venue);
+    if (real && /^https?:\/\//i.test(real)) return real;
+    const q = [venue.name, venue.town].filter(Boolean).join(" ");
+    return `https://www.google.com/search?q=${encodeURIComponent(q)}`;
+  }
+  function rankVenue(venue, notes = {}, now = /* @__PURE__ */ new Date()) {
+    const note = notes[venue.id];
+    const classified = classifyVenue({ venue, note, now });
+    const who = extractWho(venue, note);
+    const fee = displayFee(venue);
+    const row = {
+      venue,
+      tab: classified.tab,
+      stale: classified.stale && (classified.tab === "close" || classified.tab === "live" || classified.tab === "chase"),
+      daysSilent: classified.daysSilent,
+      daysSinceInbound: classified.daysSinceInbound,
+      lastSide: classified.lastSide,
+      lastTouchAt: lastOf(cleanThread(venue))?.at || venue.firstPitch || null,
+      lastCalledAt: note?.calledAt || null,
+      who,
+      sayThis: groundedSay(venue, who, classified.tab),
+      factLine: factLine(venue),
+      fee,
+      quotedFee: extractQuotedFee(venue),
+      threadFee: feeOnThread(venue),
+      feeMismatch: null,
+      website: extractWebsite(venue),
+      reason: classified.reason,
+      called: !!note?.called,
+      dropped: isDropped(note),
+      latest: isLatestVenue(venue, classified.tab, now),
+      giveTime: false,
+      replyBucket: "email",
+      replyWhy: "",
+      desk: "silent",
+      followState: "none",
+      followCount: 0,
+      deskWhy: ""
+    };
+    const action = replyAction(row, now);
+    row.giveTime = !!action.wait;
+    row.replyBucket = action.bucket;
+    row.replyWhy = action.why || "";
+    return assignDesk(row, now);
+  }
+  function rankAll(venues, notes = {}, now = /* @__PURE__ */ new Date()) {
+    const out = [];
+    for (const v of venues) {
+      try {
+        out.push(rankVenue(v, notes, now));
+      } catch {
+        out.push({
+          venue: v,
+          tab: "call",
+          stale: false,
+          daysSilent: null,
+          daysSinceInbound: null,
+          lastSide: null,
+          lastTouchAt: v.firstPitch || null,
+          lastCalledAt: null,
+          who: null,
+          sayThis: "Hi, Natalie for Jake Essex \u2014 live 50s to 70s, own PA. Have you got a Saturday this year or 2027?",
+          factLine: null,
+          fee: null,
+          quotedFee: null,
+          threadFee: null,
+          feeMismatch: null,
+          website: null,
+          reason: "safe fallback",
+          called: false,
+          dropped: false,
+          latest: false,
+          giveTime: false,
+          replyBucket: "email",
+          replyWhy: "",
+          desk: "silent",
+          followState: "none",
+          followCount: 0,
+          deskWhy: "Safe fallback"
+        });
+      }
+    }
+    return out;
+  }
+  function closeScore(row) {
+    if (row.giveTime) return -2e3 - (row.daysSinceInbound || 0);
+    if (row.venue.pendingLockFee) return 1e4;
+    if (row.stale) return -1e3 + (row.daysSinceInbound || 0) * -1;
+    const recency = row.daysSinceInbound == null ? 50 : row.daysSinceInbound;
+    return 500 - recency;
+  }
+  function sortTab(rows, tab) {
+    const list = rows.filter((r) => r.tab === tab);
+    if (tab === "close") {
+      return list.sort((a, b) => {
+        if (a.giveTime !== b.giveTime) return a.giveTime ? 1 : -1;
+        if (a.stale !== b.stale) return a.stale ? 1 : -1;
+        return closeScore(b) - closeScore(a);
+      });
+    }
+    if (tab === "live") {
+      return list.sort((a, b) => {
+        if (a.stale !== b.stale) return a.stale ? 1 : -1;
+        return (a.daysSinceInbound ?? 99) - (b.daysSinceInbound ?? 99);
+      });
+    }
+    if (tab === "chase") {
+      return list.sort((a, b) => {
+        if (a.stale !== b.stale) return a.stale ? 1 : -1;
+        return (b.daysSilent ?? 0) - (a.daysSilent ?? 0);
+      });
+    }
+    if (tab === "call") {
+      return list.sort((a, b) => {
+        if (a.called !== b.called) return a.called ? 1 : -1;
+        if (a.called && b.called) {
+          return (a.lastCalledAt || "").localeCompare(b.lastCalledAt || "");
+        }
+        const atA = a.venue.firstPitch || a.lastTouchAt || "";
+        const atB = b.venue.firstPitch || b.lastTouchAt || "";
+        return atA.localeCompare(atB);
+      });
+    }
+    if (tab === "locked") {
+      return list.sort((a, b) => Number(b.fee || 0) - Number(a.fee || 0));
+    }
+    return list.sort((a, b) => a.venue.name.localeCompare(b.venue.name));
+  }
+  function sortWorking(rows) {
+    const out = [];
+    for (const tab of WORKING_TABS) out.push(...sortTab(rows, tab));
+    return out;
+  }
+  function sortOpen(rows) {
+    const out = [];
+    for (const tab of OPEN_TABS) out.push(...sortTab(rows, tab));
+    return out;
+  }
+  function sortClosed(rows) {
+    return [...sortTab(rows, "locked"), ...sortTab(rows, "parked")];
+  }
+  var ON_FILE_RE = /future reference|on file|have your details|you may be hearing from me|as i have your details|keep (your|him|this|it) (details )?on file|for later/i;
+  var DISTANCE_RE = /too far|a bit far|far for him to travel/i;
+  var NAMED_DATE_RE = /\b\d{1,2}(?:st|nd|rd|th)?\s+(?:of\s+)?(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b/i;
+  var CASH_LOCK_RE = /will be the cash|the cash one|juggle some things/i;
+  var MEET_RE = /come to (the )?restaurant|come down and (we )?talk|we talk about/i;
+  var DEFINITE_RE = /definitely (be )?(interested|open)|would definitely|love the sound of jake/i;
+  var SUNDAY_IN_RE = /squeeze in a sunday|sunday afternoon/i;
+  var FORWARDED_RE = /forwarded your email|please contact him|onto peter/i;
+  function namedDatePast(body, now) {
+    const m = String(body || "").match(
+      /\b(\d{1,2})(?:st|nd|rd|th)?\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\s+(\d{4})\b/i
+    );
+    if (!m) return false;
+    const d = new Date(+m[3], MONTH_IDX[m[2].slice(0, 3).toLowerCase()] ?? 0, +m[1]);
+    return d.getTime() < now.getTime() - DAY;
+  }
+  function heatScore(venue, daysSinceInbound, now = /* @__PURE__ */ new Date()) {
+    const inbound = realInbound(venue);
+    const lastBody = (inbound[inbound.length - 1]?.body || "").toLowerCase();
+    const all = inbound.map((m) => m.body || "").join("\n").toLowerCase();
+    let s = 40;
+    const days = daysSinceInbound ?? 18;
+    const lastHasDate = NAMED_DATE_RE.test(lastBody) && !namedDatePast(lastBody, now);
+    if (lastHasDate && (CASH_LOCK_RE.test(lastBody) || /£\s*\d{2,4}/.test(lastBody))) {
+      s += 90;
+    } else if (lastHasDate || NAMED_DATE_RE.test(all) && days < 5 && !namedDatePast(all, now)) {
+      s += 35;
+    }
+    if (CASH_LOCK_RE.test(lastBody)) s += 80;
+    if (MEET_RE.test(all)) s += 55;
+    if (DEFINITE_RE.test(all)) s += 38;
+    if (FEE_ASK_RE.test(lastBody)) s += 40;
+    if (DATE_TALK_RE.test(all) || /give you some dates|check the diary/.test(all)) s += 22;
+    if (/give you some dates|check the diary on my return/.test(lastBody)) s += 16;
+    if (SUNDAY_IN_RE.test(all)) s += 18;
+    if (WAITING_RE.test(all) && /committee/.test(all)) s += 6;
+    if (FORWARDED_RE.test(all)) s += 4;
+    if (/next (two|2) months|concentrating on those/.test(lastBody)) s -= 22;
+    if (/2027/.test(all) && !/\b(2026|october|november|december|this year)\b/.test(all)) s -= 14;
+    if (DISTANCE_RE.test(all)) s -= 38;
+    if (FULLY_BOOKED_RE.test(all)) s -= 22;
+    if (ON_FILE_RE.test(all) || /future reference/.test(lastBody)) s -= 60;
+    if (/^will do\b/.test(lastBody.trim())) s -= 12;
+    if (namedDatePast(lastBody, now)) s -= 30;
+    s -= Math.min(36, days * 2);
+    return s;
+  }
+  function isLatestVenue(venue, tab, now) {
+    if (tab === "locked") return false;
+    if (realInbound(venue).length) return false;
+    const us = cleanThread(venue).filter((m) => m.side === "us");
+    const last = us.length ? us[us.length - 1] : null;
+    const at = parseWhen(last?.at || venue.firstPitch);
+    return daysBetween(at, now) === 0;
+  }
+  function followCount(venue) {
+    const m = String(venue.followUps || "").match(/^(\d+)/);
+    const listed = m ? Number(m[1]) : 0;
+    const us = cleanThread(venue).filter((msg) => msg.side === "us").length;
+    return Math.max(listed, Math.max(0, us - 1));
+  }
+  function usCount(venue) {
+    return cleanThread(venue).filter((m) => m.side === "us").length;
+  }
+  function assignDesk(row, now = /* @__PURE__ */ new Date()) {
+    const venue = row.venue;
+    const inbound = realInbound(venue);
+    const sent = usCount(venue);
+    const follows = followCount(venue);
+    row.followCount = follows;
+    if (row.tab === "locked" || isLockedRecord(venue)) {
+      row.desk = "booked";
+      row.followState = "none";
+      row.deskWhy = "Locked \u2014 don\u2019t contact";
+      return row;
+    }
+    if (row.dropped || parkedBadge(venue) || row.reason === "hard no" || row.reason === "bounce" || row.replyBucket === "file") {
+      row.desk = "no";
+      row.followState = follows >= 1 || row.called ? "done" : "none";
+      row.deskWhy = row.replyWhy || (row.reason === "hard no" ? "Not interested \u2014 leave" : row.reason === "bounce" ? "Bounce \u2014 dead address" : row.reason === "dropped" ? "Dropped \u2014 not interested" : /on file|file/i.test(row.reason + " " + row.replyWhy) ? "On file \u2014 leave them" : "Not in play \u2014 leave");
+      return row;
+    }
+    if (!inbound.length) {
+      if (!sent && hasPhone(venue)) {
+        row.desk = "call";
+        row.followState = row.called ? "done" : "none";
+        row.deskWhy = "Phone on file \u2014 first contact";
+        return row;
+      }
+      if (!sent) {
+        row.desk = "no";
+        row.followState = "none";
+        row.deskWhy = "Not sent \u2014 not in play";
+        return row;
+      }
+      row.desk = "silent";
+      const days = row.daysSilent ?? daysBetween(parseWhen(row.lastTouchAt), now);
+      if (row.latest || days === 0) {
+        row.followState = "fresh";
+        row.deskWhy = "Sent today \u2014 leave";
+      } else if (follows >= 1 || row.called) {
+        row.followState = "done";
+        row.deskWhy = row.called ? `Followed up \xB7 still silent${days != null ? ` \xB7 ${days}d` : ""}` : `Followed up \xD7${follows} \xB7 still silent${days != null ? ` \xB7 ${days}d` : ""}`;
+      } else if (days != null && days >= 5) {
+        row.followState = "due";
+        row.deskWhy = `No reply \xB7 ${days} days \xB7 follow-up due`;
+      } else {
+        row.followState = "fresh";
+        row.deskWhy = days === 1 ? "Pitched yesterday \u2014 too soon" : `Pitched ${days ?? 0} days ago \u2014 too soon`;
+      }
+      return row;
+    }
+    if (row.giveTime || row.replyBucket === "wait") {
+      row.desk = "wait";
+      row.followState = row.called || follows >= 1 ? "done" : "none";
+      row.deskWhy = row.replyWhy || "Waiting on them \u2014 don\u2019t chase";
+      return row;
+    }
+    row.desk = "call";
+    row.followState = row.called ? "done" : "none";
+    row.deskWhy = row.replyWhy || row.reason || (hasPhone(venue) ? "Call when you\u2019re on" : "On email \u2014 no number");
+    return row;
+  }
+  function monthToken(text) {
+    const m = String(text || "").toLowerCase().match(
+      /\b(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec)\b/
+    );
+    if (!m) return null;
+    const n = MONTH_IDX[m[1]];
+    return n == null ? null : n;
+  }
+  function replyAction(row, now = /* @__PURE__ */ new Date()) {
+    const venue = row.venue || {};
+    const inbound = realInbound(venue);
+    const last = inbound[inbound.length - 1];
+    const lastBody = (last?.body || "").toLowerCase();
+    const all = inbound.map((m) => m.body || "").join("\n").toLowerCase();
+    const days = row.daysSinceInbound == null ? 18 : row.daysSinceInbound;
+    const tel = hasPhone(venue);
+    const who = row.who || extractWho(venue, null) || "them";
+    if (!inbound.length) return { bucket: "wait", why: "", wait: true };
+    if (ON_FILE_RE.test(all) || /future reference/.test(lastBody) || /hang on to your details|for the future/.test(lastBody) || /^will do\b/.test(lastBody.trim())) {
+      return { bucket: "file", why: "On file \u2014 leave them", wait: true };
+    }
+    if (/email back in january|come back in january/.test(lastBody)) {
+      return { bucket: "wait", why: "Told us January \u2014 don\u2019t chase", wait: true };
+    }
+    if (/not for us i'?m afraid|mostly bands/.test(lastBody) && /not interested|not for us|mostly bands/.test(all)) {
+      return { bucket: "file", why: "Soft no \u2014 leave unless they write", wait: true };
+    }
+    if (/committee/.test(lastBody) || /committee/.test(all) && days < 40) {
+      const mo = monthToken(lastBody);
+      if (mo != null) {
+        let until = new Date(now.getFullYear(), mo, 28);
+        if (until.getTime() < now.getTime()) until = new Date(now.getFullYear() + 1, mo, 28);
+        if (mo === now.getMonth() && days >= 21) {
+          return { bucket: tel ? "call" : "email", why: "Committee window passed \u2014 call", wait: false };
+        }
+        if (until.getTime() > now.getTime()) {
+          const label = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][mo];
+          return { bucket: "wait", why: `Committee ${label} \u2014 give them time`, wait: true };
+        }
+      }
+      if (/first tuesday of every month/.test(lastBody) && days < 28) {
+        return { bucket: "wait", why: "Committee first Tuesday \u2014 wait", wait: true };
+      }
+      if (days >= 10) return { bucket: "call", why: "Committee window passed \u2014 call", wait: false };
+      return { bucket: "wait", why: "With the committee \u2014 wait", wait: true };
+    }
+    if (/annual leave until|on annual leave/.test(lastBody)) {
+      const dm = lastBody.match(/until\s+(\d{1,2})\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*/i);
+      if (dm) {
+        const until = new Date(now.getFullYear(), MONTH_IDX[dm[2].slice(0, 3).toLowerCase()] ?? 0, Number(dm[1]));
+        if (until.getTime() > now.getTime()) {
+          return { bucket: "wait", why: "On leave \u2014 wait until they\u2019re back", wait: true };
+        }
+        return { bucket: tel ? "call" : "email", why: "Leave ended \u2014 pick this up", wait: false };
+      }
+      if (days < 7) return { bucket: "wait", why: "On leave \u2014 wait", wait: true };
+    }
+    if (/i'?m away|on my return|check the diary on my return/.test(lastBody)) {
+      if (days < 10) return { bucket: "wait", why: `${who} away \u2014 dates on return`, wait: true };
+      return { bucket: tel ? "call" : "email", why: `${who} should be back \u2014 chase`, wait: false };
+    }
+    if (/will let you know|get back to you next week|i will get back|we will review/.test(lastBody)) {
+      if (days < 8) return { bucket: "wait", why: "They asked for time \u2014 wait", wait: true };
+      return { bucket: tel ? "call" : "email", why: `${who} said they\u2019d come back \u2014 now due`, wait: false };
+    }
+    if (/forwarding your email|forwarded your email|fyi/.test(lastBody) && days < 6) {
+      return { bucket: "wait", why: "Passed internally \u2014 give them a few days", wait: true };
+    }
+    if (/area branch office|contact the clubs?/.test(lastBody)) {
+      return { bucket: "wait", why: "Branch office \u2014 not a venue booker", wait: true };
+    }
+    if (namedDatePast(lastBody, now)) {
+      return { bucket: "wait", why: "Date they named has gone \u2014 waiting on a new one", wait: true };
+    }
+    if (row.lastSide === "us" && days <= 1) {
+      return { bucket: "wait", why: "Just wrote them \u2014 no chase today", wait: true };
+    }
+    const heat = heatScore(venue, row.daysSinceInbound, now);
+    if (FEE_ASK_RE.test(lastBody) || DATE_ASK_RE.test(lastBody) || CASH_LOCK_RE.test(lastBody) || CLOSE_YES_RE.test(lastBody)) {
+      if (tel) {
+        return {
+          bucket: "call",
+          why: FEE_ASK_RE.test(lastBody) ? `${who} asked the fee \u2014 call` : `${who} talking dates \u2014 call`,
+          wait: false
+        };
+      }
+      return { bucket: "email", why: `${who} replied \u2014 no number, stay on email`, wait: false };
+    }
+    if (MEET_RE.test(all) && tel) return { bucket: "call", why: `${who} wants Jake in \u2014 call`, wait: false };
+    if (tel && heat >= 48 && days >= 3) return { bucket: "call", why: `${who} gone quiet \u2014 call`, wait: false };
+    if (!tel) return { bucket: "email", why: `${who} on email \u2014 no number`, wait: false };
+    if (heat < 18) return { bucket: "file", why: "Cold reply \u2014 leave for now", wait: true };
+    return { bucket: "call", why: `${who} \u2014 call when you\u2019re on`, wait: false };
+  }
+  var REPLY_BUCKET_ORDER = { call: 0, email: 1, wait: 2, file: 3 };
+  function hasReplyLane(row) {
+    const lane = String(row.venue.replyLane || "").toLowerCase();
+    return lane === "call" || lane === "email";
+  }
+  function isRepliedRow(row) {
+    return row.tab === "close" || row.tab === "live" || row.tab === "chase" || row.tab === "call" && hasReplyLane(row);
+  }
+  function sortReplied(rows) {
+    return rows.filter(isRepliedRow).sort((a, b) => {
+      const ba = REPLY_BUCKET_ORDER[a.replyBucket] ?? 1;
+      const bb = REPLY_BUCKET_ORDER[b.replyBucket] ?? 1;
+      if (ba !== bb) return ba - bb;
+      const heat = heatScore(b.venue, b.daysSinceInbound) - heatScore(a.venue, a.daysSinceInbound);
+      if (heat) return heat;
+      return (a.daysSinceInbound ?? 99) - (b.daysSinceInbound ?? 99);
+    });
+  }
+  var SILENT_ORDER = { due: 0, done: 1, fresh: 2, none: 3 };
+  var DESK_ORDER = { call: 0, wait: 1, silent: 2, booked: 3, no: 4 };
+  function sortCallDesk(rows) {
+    return rows.filter((r) => r.desk === "call").sort((a, b) => {
+      if (a.followState === "done" && b.followState !== "done") return 1;
+      if (b.followState === "done" && a.followState !== "done") return -1;
+      const heat = heatScore(b.venue, b.daysSinceInbound) - heatScore(a.venue, a.daysSinceInbound);
+      if (heat) return heat;
+      return (a.daysSinceInbound ?? 99) - (b.daysSinceInbound ?? 99);
+    });
+  }
+  function sortWaitDesk(rows) {
+    return rows.filter((r) => r.desk === "wait").sort((a, b) => {
+      return (a.daysSinceInbound ?? 0) - (b.daysSinceInbound ?? 0);
+    });
+  }
+  function sortSilentDesk(rows) {
+    return rows.filter((r) => r.desk === "silent").sort((a, b) => {
+      const oa = SILENT_ORDER[a.followState] ?? 3;
+      const ob = SILENT_ORDER[b.followState] ?? 3;
+      if (oa !== ob) return oa - ob;
+      if (a.followState === "due") return (b.daysSilent ?? 0) - (a.daysSilent ?? 0);
+      if (a.followState === "fresh") return String(b.lastTouchAt || "").localeCompare(String(a.lastTouchAt || ""));
+      return (b.daysSilent ?? 0) - (a.daysSilent ?? 0);
+    });
+  }
+  function sortBookedDesk(rows) {
+    return rows.filter((r) => r.desk === "booked").sort((a, b) => Number(b.fee || 0) - Number(a.fee || 0));
+  }
+  function sortNoDesk(rows) {
+    return rows.filter((r) => r.desk === "no").sort((a, b) => a.venue.name.localeCompare(b.venue.name));
+  }
+  function sortDesk(rows, filter) {
+    if (filter === "call") return sortCallDesk(rows);
+    if (filter === "wait") return sortWaitDesk(rows);
+    if (filter === "silent") return sortSilentDesk(rows);
+    if (filter === "booked") return sortBookedDesk(rows);
+    return sortNoDesk(rows);
+  }
+  function sortDeskAll(rows) {
+    const ids = Object.keys(DESK_ORDER).sort((a, b) => DESK_ORDER[a] - DESK_ORDER[b]);
+    const out = [];
+    for (const id of ids) out.push(...sortDesk(rows, id));
+    return out;
+  }
+  function sortAll(rows) {
+    return sortDeskAll(rows);
+  }
+  function rowsForFilter(rows, filter) {
+    return sortDesk(rows, filter);
+  }
+  function tabCounts(rows) {
+    const counts = {
+      close: 0,
+      live: 0,
+      chase: 0,
+      call: 0,
+      locked: 0,
+      parked: 0
+    };
+    for (const row of rows) counts[row.tab] += 1;
+    return counts;
+  }
+  function filterCounts(rows) {
+    const counts = { call: 0, wait: 0, silent: 0, booked: 0, no: 0 };
+    for (const row of rows) counts[row.desk] += 1;
+    return counts;
+  }
+  function deskGroupKey(row, filter, searching = false) {
+    if (searching) return row.desk;
+    if (filter === "silent") return row.followState || "none";
+    if (filter === "call") {
+      if (!realInbound(row.venue).length) return "cold";
+      if (row.replyBucket === "email") return "email";
+      return "call";
+    }
+    if (filter === "no") {
+      if (/bounce/i.test(row.reason)) return "bounce";
+      if (/hard no|not interested|dropped/i.test(row.reason + " " + row.deskWhy)) return "no";
+      if (/file|on file/i.test(row.reason + " " + row.deskWhy + " " + row.replyWhy)) return "file";
+      return "parked";
+    }
+    if (filter === "wait") return "wait";
+    if (filter === "booked") return "booked";
+    return row.desk;
+  }
+  function deskGroupLabel(key, filter, searching = false) {
+    if (searching || ["call", "wait", "silent", "booked", "no"].includes(key)) {
+      const labels = {
+        call: "Call now",
+        wait: "Waiting on them",
+        silent: "No reply",
+        booked: "Booked \u2014 don\u2019t contact",
+        no: "Not interested"
+      };
+      if (labels[key]) return labels[key];
+    }
+    if (filter === "silent") {
+      if (key === "due") return "Follow-up due";
+      if (key === "done") return "Followed up \xB7 still silent";
+      if (key === "fresh") return "Pitched recently \xB7 leave";
+      return "No reply";
+    }
+    if (filter === "call") {
+      if (key === "email") return "On email \u2014 no number";
+      if (key === "cold") return "Phone on file \xB7 never emailed";
+      return "Call now";
+    }
+    if (filter === "no") {
+      if (key === "bounce") return "Bounce \xB7 dead address";
+      if (key === "file") return "On file \xB7 leave";
+      if (key === "no") return "Not interested";
+      return "Parked";
+    }
+    if (filter === "wait") return "Waiting on them";
+    if (filter === "booked") return "Locked in";
+    return key;
+  }
+  function deskBanner(filter) {
+    if (filter === "call") return "These are the ones to ring. Waiting and no-replies live on their own tabs.";
+    if (filter === "wait") return "Ball is in their court. Don\u2019t chase until the why-line says they\u2019re due.";
+    if (filter === "silent") return "Never wrote back. Follow-up due is the work. Followed up and too-soon sit below.";
+    if (filter === "booked") return "Locked. Don\u2019t contact unless they call you.";
+    return "Said no, on file, bounce, or not in play. Leave them.";
+  }
+  function lockedCash(venues) {
+    const rows = [];
+    let cash = 0;
+    let nights = 0;
+    for (const v of venues) {
+      if (!isLockedRecord(v)) continue;
+      const fee = Number(v.lockedFee || 0) || displayFee(v) || 0;
+      if (!fee) continue;
+      const n = Number(v.lockedNights || 1) || 1;
+      cash += fee;
+      nights += n;
+      rows.push({
+        name: v.name,
+        fee,
+        nights: n,
+        id: v.id
+      });
+    }
+    rows.sort((a, b) => b.fee - a.fee);
+    const pending = venues.filter((v) => Number(v.pendingLockFee || 0) > 0 && !isLockedRecord(v)).map((v) => ({
+      name: v.name,
+      fee: Number(v.pendingLockFee),
+      note: v.pendingNote
+    }));
+    return { cash, nights, rows, pending };
+  }
+  function cashTarget(stats) {
+    const target = CASH_TARGET;
+    const cash = Number(stats?.cash || 0);
+    const pct = Math.max(0, Math.min(100, Math.round(cash / target * 1e3) / 10));
+    return { target, pct, left: Math.max(0, target - cash) };
+  }
+  function pepLine(rows) {
+    const call = sortCallDesk(rows);
+    const due = rows.filter((r) => r.desk === "silent" && r.followState === "due");
+    const wait = rows.filter((r) => r.desk === "wait");
+    const first = call[0];
+    const who = first?.who || first?.venue.name.split(" ")[0] || null;
+    const n = call.length;
+    const callBit = n === 0 ? "Nothing to call." : n === 1 ? "1 to call." : `${n} to call.`;
+    const whoBit = who && n ? ` ${who} first.` : "";
+    const dueBit = due.length === 0 ? " No follow-ups due." : due.length === 1 ? " 1 follow-up due." : ` ${due.length} follow-ups due.`;
+    const waitBit = wait.length === 0 ? "" : wait.length === 1 ? " 1 waiting on them." : ` ${wait.length} waiting on them.`;
+    return `${callBit}${whoBit}${dueBit}${waitBit}`.replace(/\s+/g, " ").trim();
+  }
+  function chaseAlarm(rows) {
+    return rows.some((r) => r.tab === "chase" && (r.daysSilent ?? 0) > 7);
+  }
+  function matchesQuery(venue, q) {
+    if (!q.trim()) return true;
+    const hay = `${venue.name} ${venue.town || ""} ${venue.email || ""} ${venue.subject || ""} ${venue.contactName || ""}`.toLowerCase();
+    return hay.includes(q.trim().toLowerCase());
+  }
+  function telHref(phone) {
+    let d = String(phone || "").replace(/\D/g, "");
+    if (!d) return "";
+    if (d.startsWith("0")) d = "44" + d.slice(1);
+    if (!d.startsWith("44")) d = "44" + d;
+    return `tel:+${d}`;
+  }
+  function smsHref(phone) {
+    const tel = telHref(phone);
+    return tel ? tel.replace(/^tel:/, "sms:") : "";
+  }
+  function prettyPhone(phone) {
+    let d = String(phone || "").replace(/\D/g, "");
+    if (d.startsWith("44")) d = "0" + d.slice(2);
+    if (d.length === 11) return `${d.slice(0, 5)} ${d.slice(5)}`;
+    return phone || "";
+  }
+  function mapsHref(venue) {
+    const q = [venue.name, venue.town].filter(Boolean).join(" ");
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+  }
+  function mailtoHref(venue) {
+    const email = primaryEmail(venue);
+    if (!email) return "";
+    return `mailto:${email}`;
+  }
+  function gbp(n) {
+    return "\xA3" + Number(n || 0).toLocaleString("en-GB");
+  }
+  function fmtWhen(iso) {
+    if (!iso) return "";
+    const d = parseWhen(iso);
+    if (!d) return String(iso);
+    return d.toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  }
+  function fmtDay(iso) {
+    if (!iso) return "";
+    const d = parseWhen(iso);
+    if (!d) return String(iso);
+    return d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+  }
+  function lastTouchLabel(row, now = /* @__PURE__ */ new Date()) {
+    const at = row.lastTouchAt;
+    const d = parseWhen(at);
+    const who = row.lastSide === "them" ? "Them" : row.lastSide === "us" ? "Us" : "Touch";
+    if (!d) return who;
+    const days = daysBetween(d, now);
+    if (days === 0) return `${who} \xB7 today`;
+    if (days === 1) return `${who} \xB7 yesterday`;
+    return `${who} \xB7 ${fmtDay(at)}`;
+  }
+  function lastCalledLabel(note, now = /* @__PURE__ */ new Date()) {
+    if (!note?.called) return null;
+    const d = parseWhen(note.calledAt || note.updatedAt || null);
+    if (!d) return "Called";
+    const days = daysBetween(d, now);
+    if (days === 0) return "Called \xB7 today";
+    if (days === 1) return "Called \xB7 yesterday";
+    return `Called \xB7 ${fmtDay(note.calledAt || note.updatedAt)}`;
+  }
+  var UNCLASSIFIED_WITHOUT_GUESSING = [
+    {
+      id: "wilmington-private-function-barbara-morris",
+      why: "Website enquiry from Barbara, Saturday 3 Jul 2027, \xA3350 quoted \u2014 inbound body is not on the thread. No phone. Parked, not Close (that would be guessing from our own reply)."
+    },
+    {
+      id: "winchester-club",
+      why: "Badge quoted / website Sandra, but the only message on file is our pitch. Has a phone so Call list, not Close."
+    },
+    {
+      id: "california-social-ipswich",
+      why: "Last inbound is an out-of-office from Kate, not a conversation. Call list."
+    },
+    {
+      id: "greenford-conservative-club",
+      why: "Duplicate of John Mitchell\u2019s thread with no phone. Same inbound lives on greenford-conservative-club-john-mitchell."
+    }
+  ];
+  function isStockUsCopy(text) {
+    const blob = text.toLowerCase();
+    return STOCK_US.some((s) => blob.includes(s));
+  }
+  return __toCommonJS(pipeline_exports);
+})();
 
 var NatNotes = (function(exports) {
 	Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
@@ -1278,7 +1380,7 @@ var NatNotes = (function(exports) {
 
 /* Matrix rain */
 (function(){
-  var GLYPHS="アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ0123456789<>|*+#¥$NATJAKEV20TCB";
+  var GLYPHS="アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ0123456789<>|*+#¥$NATJAKEV21TCB";
   var canvas=document.getElementById("rain");
   if(!canvas) return;
   try{ if(sessionStorage.getItem("natalie-ok")==="1"){ canvas.style.display="none"; return; } }catch(e){}
@@ -1333,11 +1435,11 @@ var NatNotes = (function(exports) {
   raf=requestAnimationFrame(tick);
 })();
 
-/* Natalie Live Board v19 — vanilla UI. Pipeline is window.Board from the bundled module. */
+/* Natalie Live Board v21 — vanilla UI. Pipeline is window.Board from the bundled module. */
 (function () {
   var B = window.Board;
   var PASS = B.PASSWORD;
-  var filter = "all";
+  var filter = "call";
   var q = "";
   var openId = null;
   var VENUES = [];
@@ -1432,7 +1534,7 @@ var NatNotes = (function(exports) {
     var ul = $("egg-lines");
     if (box) box.classList.add("on");
     if (ul && !ul.childNodes.length) {
-      ["WAKE UP, NAT", "THE BOARD HAS YOU", "FOLLOW THE WHITE RABBIT", "v20 · YOU'RE THE ONE"].forEach(function (line) {
+      ["WAKE UP, NAT", "THE BOARD HAS YOU", "FOLLOW THE WHITE RABBIT", "v21 · YOU'RE THE ONE"].forEach(function (line) {
         var li = document.createElement("li");
         li.textContent = "› " + line;
         ul.appendChild(li);
@@ -1480,7 +1582,7 @@ var NatNotes = (function(exports) {
     showErr("");
     var raw = ($("pw").value || "").replace(/^\s+|\s+$/g, "");
     var key = raw.toLowerCase();
-    if (key === "v20" || key === "neo" || key === "whiterabbit" || key === "white rabbit") {
+    if (key === "v20" || key === "v21" || key === "neo" || key === "whiterabbit" || key === "white rabbit") {
       fireEgg();
       return;
     }
@@ -1639,9 +1741,12 @@ var NatNotes = (function(exports) {
     return d.innerHTML;
   }
 
-  function chip(tabName) {
-    var map = { close: "CLOSE", live: "LIVE", chase: "CHASE", call: "CALL", locked: "LOCKED", parked: "INACTIVE" };
-    return map[tabName] || tabName;
+  function chip(desk) {
+    return (B.DESK_CHIP && B.DESK_CHIP[desk]) || desk || "";
+  }
+
+  function followChip(state) {
+    return (B.FOLLOW_CHIP && B.FOLLOW_CHIP[state]) || "";
   }
 
   /** Jake reply lane chips = SUGGESTION only (never hide Call tel: if phone exists).
@@ -1692,18 +1797,18 @@ var NatNotes = (function(exports) {
 
   function laneWhyHtml(venue, row) {
     if (!venue) return "";
-    var why = REPLY_WHY[String(venue.id || "")] || (row && row.replyWhy) || "";
+    var why = (row && row.deskWhy) || REPLY_WHY[String(venue.id || "")] || (row && row.replyWhy) || "";
     if (!why && venue.needPhone) why = "Need better number";
     if (!why) return "";
-    var wait = row && row.giveTime ? " wait" : "";
+    var wait = (row && (row.desk === "wait" || row.followState === "fresh")) ? " wait" : (row && row.followState === "due" ? " due" : "");
     return '<span class="job-lane-why' + wait + '">' + esc(why) + "</span>";
   }
 
   function moneyLabel(row) {
     if (!row.fee) return "";
-    if (row.tab === "locked") return "Locked " + B.gbp(row.fee);
-    if (row.tab === "call" || row.tab === "parked") return "";
-    return B.gbp(row.fee) + " on the thread";
+    if (row.desk === "booked") return "Locked " + B.gbp(row.fee);
+    if (row.desk === "call" || row.desk === "wait") return B.gbp(row.fee) + " on the thread";
+    return "";
   }
 
   function actions(row) {
@@ -2246,26 +2351,14 @@ var NatNotes = (function(exports) {
     });
   }
 
+  function searching() { return !!(q && String(q).trim()); }
+
   function groupKey(row, filterName) {
-    if (filterName === "replied") return row.replyBucket || "email";
-    if (filterName === "all" && row.latest) return "latest";
-    return row.tab;
+    return B.deskGroupKey(row, filterName, searching());
   }
 
-  function groupLabel(key, filterName) {
-    if (key === "latest") return "Latest · sent today · no chase";
-    if (filterName === "replied") {
-      if (key === "call") return "Call now";
-      if (key === "email") return "On email";
-      if (key === "wait") return "Give them time";
-      if (key === "file") return "On file";
-    }
-    if (key === "close") return "Close tonight";
-    if (key === "live") return "Live threads";
-    if (key === "chase") return "Chase";
-    if (key === "call") return "To call";
-    if (key === "locked") return "Locked in";
-    return "Inactive";
+  function groupLabelFor(row, filterName) {
+    return B.deskGroupLabel(groupKey(row, filterName), filterName, searching());
   }
 
   function rowHtml(row) {
@@ -2273,19 +2366,20 @@ var NatNotes = (function(exports) {
     var bits = [];
     if (v.town) bits.push(v.town);
     if (row.who) bits.push(row.who);
-    if (row.tab === "chase" && row.daysSilent != null) bits.push(row.daysSilent + " days quiet");
-    else if (row.tab !== "locked" && row.tab !== "parked") bits.push(B.lastTouchLabel(row));
+    if (row.desk === "silent" && row.daysSilent != null) bits.push(row.daysSilent + "d silent");
+    else if (row.desk !== "booked" && row.desk !== "no") bits.push(B.lastTouchLabel(row));
     var called = B.lastCalledLabel(NOTES[v.id]);
     if (called) bits.push(called);
-    var quiet = row.stale || (row.tab === "chase" && (row.daysSilent || 0) >= 7);
-    var fee = (row.fee && row.tab === "locked") ? '<span class="row-fee">' + B.gbp(row.fee) + "</span>" : "";
-    var lane = laneChipHtml(v);
+    var quiet = row.followState === "due" || row.stale;
+    var fee = (row.fee && row.desk === "booked") ? '<span class="row-fee">' + B.gbp(row.fee) + "</span>" : "";
     var why = laneWhyHtml(v, row);
-    var latest = row.latest ? " latest" : "";
-    return '<button type="button" class="job' + (quiet ? " hot" : "") + latest + '" onclick="natOpen(\'' + esc(v.id) + "')\">" +
+    var follow = followChip(row.followState);
+    var followHtml = follow ? '<span class="badge follow ' + row.followState + '">' + follow + "</span>" : "";
+    var rail = " desk-" + (row.desk || "no") + (row.followState === "due" ? " due" : "");
+    return '<button type="button" class="job' + (quiet ? " hot" : "") + rail + '" onclick="natOpen(\'' + esc(v.id) + "')\">" +
       '<span class="job-main"><span class="job-name">' + esc(v.name) + '</span><span class="job-meta">' + esc(bits.join(" · ") || "Tap to open") + "</span>" + (why || "") + "</span>" +
       fee +
-      '<span class="job-badges">' + (lane || "") + '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span></span>" +
+      '<span class="job-badges">' + followHtml + '<span class="badge ' + (row.desk || "") + '">' + chip(row.desk) + "</span></span>" +
       '<span class="chev">›</span></button>';
   }
 
@@ -2300,13 +2394,9 @@ var NatNotes = (function(exports) {
     var prev = null;
     list.forEach(function (r) {
       var k = groupKey(r, filter);
-      if (filter === "replied" || filter === "all") {
-        if (!prev || groupKey(prev, filter) !== k) {
-          var gcls = k === "latest" ? " group-latest" : (filter === "replied" && k === "call" ? " group-call" : "");
-          html += '<p class="group' + gcls + '">' + groupLabel(k, filter) + " · " + counts[k] + "</p>";
-        }
-      } else if (!prev || prev.tab !== r.tab) {
-        html += '<p class="group">' + groupLabel(r.tab, filter) + " · " + counts[k] + "</p>";
+      if (!prev || groupKey(prev, filter) !== k) {
+        var gcls = k === "due" ? " group-due" : (k === "call" || k === "booked" ? " group-call" : (k === "fresh" ? " group-latest" : ""));
+        html += '<p class="group' + gcls + '">' + groupLabelFor(r, filter) + " · " + counts[k] + "</p>";
       }
       html += rowHtml(r);
       prev = r;
@@ -2334,17 +2424,20 @@ var NatNotes = (function(exports) {
     var pep = B.pepLine(rowsAll);
     var tabs = B.BOARD_FILTERS;
     var tabHtml = tabs.map(function (t) {
-      var on = filter === t.id ? " on" : "";
-      var warn = t.id === "replied" && alarm ? " warn" : "";
+      var on = (filter === t.id && !searching()) ? " on desk-" + t.id : " desk-" + t.id;
+      var warn = t.id === "call" && alarm ? " warn" : "";
       return '<button type="button" class="' + on + warn + '" onclick="natFilter(\'' + t.id + "')\"><b>" + counts[t.id] + "</b><span>" + t.label + "</span></button>";
     }).join("");
-    var list = B.rowsForFilter(rowsAll, filter).filter(function (r) { return B.matchesQuery(r.venue, q); });
-    var label = (tabs.find(function (t) { return t.id === filter; }) || { label: "All" }).label;
-    var cards = listHtml(list);
+    var list = searching()
+      ? B.sortDeskAll(rowsAll.filter(function (r) { return B.matchesQuery(r.venue, q); }))
+      : B.rowsForFilter(rowsAll, filter);
+    var label = searching() ? "Search" : ((tabs.find(function (t) { return t.id === filter; }) || { label: "Call" }).label);
+    var banner = searching() ? "" : '<p class="desk-note">' + esc(B.deskBanner(filter)) + "</p>";
+    var cards = banner + listHtml(list);
     $("cash-slot").innerHTML = cashHtml(stats);
     $("pep").textContent = pep;
     $("filters").innerHTML = tabHtml;
-    $("count").textContent = list.length + " job" + (list.length === 1 ? "" : "s") + " · " + label + ((filter === "all" || filter === "replied") && alarm ? " · quiet alarm" : "");
+    $("count").textContent = list.length + " job" + (list.length === 1 ? "" : "s") + " · " + label + (filter === "call" && alarm ? " · quiet alarm" : "");
     $("list").innerHTML = cards;
     $("sync").textContent = sharedOk ? "Notes live with Jake" : "Board live";
     [["cash-amt", "cash-meta"], ["cash-amt-app", "cash-meta-app"]].forEach(function (ids) {
@@ -2397,7 +2490,7 @@ var NatNotes = (function(exports) {
       '<div class="panel">' +
       "<h1>" + esc(v.name) + "</h1>" +
       (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
-      '<span class="job-badges detail-badges">' + laneChipHtml(v) + '<span class="badge ' + row.tab + '">' + chip(row.tab) + "</span></span>" +
+      '<span class="job-badges detail-badges">' + (followChip(row.followState) ? '<span class="badge follow ' + row.followState + '">' + followChip(row.followState) + "</span>" : "") + '<span class="badge ' + (row.desk || "") + '">' + chip(row.desk) + "</span></span>" +
       laneWhyHtml(v, row) +
       (row.who ? '<p class="who">Who · ' + esc(row.who) + "</p>" : "") +
       '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p>" +
