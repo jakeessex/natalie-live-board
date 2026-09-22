@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T13:56:28+01:00",
+  "updatedAt": "2026-09-22T09:23:46+01:00",
   "source": "JAKE ESSEX GIGS @ CL",
   "gigs": [
     {
@@ -561,6 +561,26 @@
       "status": "booked",
       "source": "board",
       "note": "OWN £250 cash · 2×1hr · Jade four-date · diary lf3b0pc4puf0r5v0dhth8a9gas · Us 1a0c408fd0596ead · NEVER Choice without Jake OK"
+    },
+    {
+      "date": "2027-05-15",
+      "venue": "Bromley Services Club",
+      "town": "Bromley",
+      "start": "20:45",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £200 cash · Steve · moved from 24 Apr · diary g40sp1vvu48qkl9pto95cjcl0g · 20:45–23:30 · NEVER Choice without Jake OK"
+    },
+    {
+      "date": "2027-10-09",
+      "venue": "Bromley Services Club",
+      "town": "Bromley",
+      "start": "20:45",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £200 cash · Steve · Oct 9 unchanged · NEVER Choice without Jake OK"
     }
   ],
   "undated": [
