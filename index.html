@@ -9,10 +9,10 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
 <meta http-equiv="Pragma" content="no-cache"/>
 <title>Jake Essex Board</title>
-<!-- UI LOCK: Board v25 shell. Never embed venues. Data is venues.json only. -->
+<!-- UI LOCK: Board v42 shell. Never embed venues. Data is venues.json only. -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap"/>
-<link rel="stylesheet" href="board.css?v=25"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&family=Fraunces:opsz,wght@9..144,560&display=swap"/>
+<link rel="stylesheet" href="board.css?v=42"/>
 <script>
 (function(){function k(){var n=document.getElementById("cash-5k-party");if(n&&n.parentNode)n.parentNode.removeChild(n);try{localStorage.removeItem("natalie-cash-5k-v1")}catch(e){}}k();document.addEventListener("DOMContentLoaded",k);try{new MutationObserver(k).observe(document.documentElement,{childList:true,subtree:true})}catch(e){}})();
 </script>
@@ -21,33 +21,34 @@
 <canvas id="rain" aria-hidden="true"></canvas>
 <div id="gate">
 <div class="gate-vignette"></div>
+<div class="gate-corners" aria-hidden="true"><i></i></div>
+<div class="gate-hud" aria-hidden="true">
+  <span class="tl">JEM-VAULT</span>
+  <span class="tr">22 SEP 2026</span>
+</div>
 <div id="grant">
-  <p class="k">SECURE CHANNEL · v25</p>
-  <h2>Access granted Natalie</h2>
+  <p class="k">SECURE CHANNEL · v42</p>
+  <h2>Access granted<span>Natalie</span></h2>
   <ul id="grant-lines"></ul>
 </div>
 <div class="box" id="gate-card">
+<div class="gate-scan" aria-hidden="true"></div>
 <div class="gate-top">
-  <p class="enc">JEM · encrypted</p>
-  <button type="button" id="ver-btn" onclick="natStamp()" aria-label="Board version">v25</button>
+  <p class="enc"><i></i> Encrypted</p>
+  <button type="button" id="ver-btn" onclick="natStamp()" aria-label="Board version">v42</button>
 </div>
-<div class="gate-title">
-  <span class="shield" aria-hidden="true">⛨</span>
-  <div>
-    <p>Jake Essex Music Ltd</p>
-    <h1>Secure gate</h1>
-  </div>
-</div>
-<p class="lede">Natalie’s booking board. Type the access key.</p>
-<div id="egg"><p>WHITE RABBIT · v25</p><ul id="egg-lines"></ul><p class="hint">Cute. Still need the real key.</p></div>
+<p class="gate-brand">Jake Essex Music Ltd</p>
+<h1>Natalie live book</h1>
+<p class="lede">Type the access key. The book stays on this phone.</p>
+<div id="egg"><p>WHITE RABBIT · v42</p><ul id="egg-lines"></ul><p class="hint">Cute. Still need the real key.</p></div>
 <label class="kicker" for="pw">Access key</label>
 <div class="pw-wrap">
 <input id="pw" type="password" inputmode="text" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false" placeholder="••••••••"/>
 <button type="button" class="eye" id="eye" onclick="natEye()" aria-label="Show key">◉</button>
 </div>
 <p class="err" id="err"></p>
-<button type="button" id="go">AUTHENTICATE</button>
-<p class="ver">Board v25 · 22 Sep 2026 · channel live</p>
+<button type="button" id="go">ENTER</button>
+<p class="ver" id="hud-count">Channel live</p>
 </div>
 </div>
 <div id="app">
@@ -55,7 +56,7 @@
   <div class="headrow">
     <div>
       <p class="kicker">Jake Essex Music Ltd</p>
-      <h1>Natalie desk</h1>
+      <h1>Natalie</h1>
       <p class="ver" id="sync">Board live</p>
     </div>
     <div class="head-acts">
@@ -77,6 +78,6 @@
 <div id="diary"></div>
 <div id="dates"></div>
 <script type="application/json" id="venues-data">[]</script>
-<script src="board.js?v=70"></script>
+<script src="board.js?v=80"></script>
 </body>
 </html>

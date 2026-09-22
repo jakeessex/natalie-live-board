@@ -90,7 +90,7 @@ var Board = (() => {
     telHref: () => telHref,
     webHref: () => webHref
   });
-  var BOARD_VERSION = "v25";
+  var BOARD_VERSION = "v42";
   var BOARD_STAMP = "22 Sep 2026";
   var PASSWORD = "natbooksjake";
   var CASH_TARGET = 1e4;
@@ -1451,19 +1451,20 @@ var NatNotes = (function(exports) {
 
 /* Matrix rain */
 (function(){
-  var GLYPHS="アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ0123456789<>|*+#¥$NATJAKEV25TCB";
+  var GLYPHS="アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモ0123456789<>|*+#¥$JEMNATT CB";
+  var WORDS=["JEM","NAT","TCB","JAKE","ESSEX"];
   var canvas=document.getElementById("rain");
   if(!canvas) return;
   try{ if(sessionStorage.getItem("natalie-ok")==="1"){ canvas.style.display="none"; return; } }catch(e){}
   var g=canvas.getContext("2d",{alpha:false});
   if(!g) return;
-  var mode="idle", cols=[], colW=16, last=0, raf=0, running=true;
+  var mode="idle", cols=[], speeds=[], words=[], colW=14, last=0, raf=0, running=true;
   var reduced=false;
   try{ reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches; }catch(e){}
   function pal(){
-    if(mode==="denied") return {fill:"#ff7a6e",head:"#ffe4e0"};
-    if(mode==="granted"||mode==="egg") return {fill:"#ffd76a",head:"#fff4c8"};
-    return {fill:"#3dff6a",head:"#eaffea"};
+    if(mode==="denied") return {fill:"#ff5a4e",head:"#ffe8e4",dim:"#7a2a24"};
+    if(mode==="granted"||mode==="egg") return {fill:"#ffd76a",head:"#fff6d0",dim:"#8a6a28"};
+    return {fill:"#3dff6a",head:"#f4fff6",dim:"#146632"};
   }
   function resize(){
     var dpr=Math.min(window.devicePixelRatio||1,2);
@@ -1471,29 +1472,45 @@ var NatNotes = (function(exports) {
     canvas.width=Math.floor(w*dpr); canvas.height=Math.floor(h*dpr);
     canvas.style.width=w+"px"; canvas.style.height=h+"px";
     g.setTransform(dpr,0,0,dpr,0,0);
-    colW=w<400?18:16;
-    cols=Array.from({length:Math.max(12,Math.ceil(w/colW))}, function(){ return Math.random()*-40; });
-    g.fillStyle="#140e0a"; g.fillRect(0,0,w,h);
+    colW=w<400?14:16;
+    var n=Math.max(16,Math.ceil(w/colW));
+    cols=[]; speeds=[]; words=[];
+    for(var i=0;i<n;i++){
+      cols.push(Math.random()*-h);
+      speeds.push(0.55+Math.random()*1.35);
+      words.push(i%7===0?WORDS[i%WORDS.length]:"");
+    }
+    g.fillStyle="#070806"; g.fillRect(0,0,w,h);
   }
   function tick(now){
     if(!running) return;
     raf=requestAnimationFrame(tick);
     if(document.hidden) return;
-    var minDt=mode==="granted"?24:32;
-    if(now-last<minDt) return;
+    if(now-last<(mode==="granted"?16:22)) return;
     last=now;
     var w=window.innerWidth, h=window.innerHeight;
-    g.fillStyle=mode==="granted"?"rgba(20,14,10,0.18)":"rgba(20,14,10,0.10)";
+    g.fillStyle=mode==="granted"?"rgba(7,8,6,0.22)":"rgba(7,8,6,0.14)";
     g.fillRect(0,0,w,h);
-    var p=pal(), size=colW-2, step=mode==="granted"?1.85:mode==="egg"?1.15:1;
-    g.font=size+"px ui-monospace,monospace"; g.textBaseline="top";
+    var p=pal(), size=colW-1;
+    g.font="600 "+size+"px ui-monospace,monospace"; g.textBaseline="top";
     for(var i=0;i<cols.length;i++){
-      var x=i*colW, y=cols[i]*colW;
-      var ch=GLYPHS[Math.floor(Math.random()*GLYPHS.length)]||"0";
-      g.globalAlpha=0.95; g.fillStyle=p.head; g.fillText(ch,x,y);
-      g.globalAlpha=0.55; g.fillStyle=p.fill; g.fillText(ch,x,y+colW);
+      var x=i*colW, head=cols[i], depth=10+(i%6), word=words[i];
+      for(var t=depth;t>=0;t--){
+        var y=head-t*colW;
+        if(y<-colW||y>h) continue;
+        var ch=word&&t<word.length?word.charAt(t):(GLYPHS[Math.floor(Math.random()*GLYPHS.length)]||"0");
+        if(t===0){ g.fillStyle=p.head; g.globalAlpha=1; }
+        else if(t<3){ g.fillStyle=p.fill; g.globalAlpha=0.9-t*0.12; }
+        else { g.fillStyle=p.dim; g.globalAlpha=Math.max(0.08,0.45-t*0.035); }
+        g.fillText(ch,x,y);
+      }
       g.globalAlpha=1;
-      if(y>h && Math.random()>0.96) cols[i]=Math.random()*-20; else cols[i]+=step;
+      cols[i]+=speeds[i]*colW*0.55;
+      if(head-depth*colW>h && Math.random()>0.92){
+        cols[i]=Math.random()*-h*0.4;
+        speeds[i]=0.55+Math.random()*1.35;
+        words[i]=Math.random()>0.82?WORDS[Math.floor(Math.random()*WORDS.length)]:"";
+      }
     }
   }
   window.NatRain={
@@ -1506,7 +1523,7 @@ var NatNotes = (function(exports) {
   raf=requestAnimationFrame(tick);
 })();
 
-/* Natalie Live Board v25 — vanilla UI. Pipeline is window.Board from the bundled module. */
+/* Natalie Live Board v42 — vanilla UI. Pipeline is window.Board from the bundled module. */
 (function () {
   var B = window.Board;
   var PASS = B.PASSWORD;
@@ -1560,6 +1577,8 @@ var NatNotes = (function(exports) {
       .then(function (data) {
         if (Array.isArray(data) && data.length) {
           VENUES = data;
+          var hud = document.getElementById("hud-count");
+          if (hud) hud.textContent = data.length + " records · channel live";
           paintCash();
           if ($("app").classList.contains("show") && !openId) render();
         }
@@ -1605,7 +1624,7 @@ var NatNotes = (function(exports) {
     var ul = $("egg-lines");
     if (box) box.classList.add("on");
     if (ul && !ul.childNodes.length) {
-      ["WAKE UP, NAT", "THE BOARD HAS YOU", "FOLLOW THE WHITE RABBIT", "v25 · YOU'RE THE ONE"].forEach(function (line) {
+      ["WAKE UP, NAT", "THE BOARD HAS YOU", "FOLLOW THE WHITE RABBIT", "v42 · YOU'RE THE ONE"].forEach(function (line) {
         var li = document.createElement("li");
         li.textContent = "› " + line;
         ul.appendChild(li);
@@ -1653,7 +1672,7 @@ var NatNotes = (function(exports) {
     showErr("");
     var raw = ($("pw").value || "").replace(/^\s+|\s+$/g, "");
     var key = raw.toLowerCase();
-    if (key === "v20" || key === "v21" || key === "v25" || key === "neo" || key === "whiterabbit" || key === "white rabbit") {
+    if (key === "v20" || key === "v21" || key === "v25" || key === "v42" || key === "neo" || key === "whiterabbit" || key === "white rabbit") {
       fireEgg();
       return;
     }
@@ -2506,34 +2525,26 @@ var NatNotes = (function(exports) {
     return '<div class="joblist"><p class="group">' + title + " · " + rows.length + "</p>" + body + "</div>";
   }
 
+  function act(label, value, hint, tone, nav) {
+    return '<button type="button" class="act ' + tone + '" onclick="natFilter(\'' + nav + "')\"><span><b>" + label + "</b><i>" + hint + "</i></span><em>" + value + "</em><span class=\"chev\">›</span></button>";
+  }
+
   function dashHtml(pulse) {
-    var funnelSent = Math.max(1, pulse.pitched);
-    var repliedW = Math.round((pulse.replied / funnelSent) * 100);
-    var bookedW = Math.round((pulse.booked / funnelSent) * 100);
     return '<div class="dash">' +
       '<button type="button" class="hero-cash" onclick="natCash()">' + ringSvg(pulse.pct) +
-        '<span class="job-main"><span class="hero-k">Locked in</span><b>' + B.gbp(pulse.cash) + "</b><em>" + pulse.nights + " nights · " + B.gbp(pulse.left) + " to £10k</em></span><span class=\"hero-go\">Dates</span></button>" +
+        '<span class="job-main"><span class="hero-k">Locked</span><b>' + B.gbp(pulse.cash) + "</b><em>" + pulse.nights + " nights · " + B.gbp(pulse.left) + " of £10k still open</em></span><span class=\"hero-go\">Dates</span></button>" +
       '<p class="pep">' + esc(pulse.pep) + "</p>" +
-      '<div class="stats">' +
-        statHtml("Call now", pulse.closeNow, "Ring these", "gold", "call") +
-        statHtml("Follow-up due", pulse.followDue, "Silent too long", "stale", "silent") +
-        statHtml("Waiting", pulse.waiting, "Ball with them", "warn", "wait") +
-        statHtml("Sent today", pulse.sentToday, "Leave them", "gold", "silent") +
-        statHtml("No reply", pulse.silent, pulse.tooSoon + " too soon · " + pulse.followedStillSilent + " chased", "", "silent") +
-        statHtml("Bounced", pulse.bounced, "Dead addresses", "stale", "no") +
-        statHtml("Not interested", pulse.rejected, "Leave them", "", "no") +
-        statHtml("Booked", pulse.booked, B.gbp(pulse.avgFee) + " avg night", "call", "booked") +
+      '<div class="desk-acts">' +
+        act("Call now", pulse.closeNow, "Ring these. Hottest first.", "gold", "call") +
+        act("Follow-up due", pulse.followDue, "Silent long enough to chase.", "stale", "silent") +
+        act("Waiting on them", pulse.waiting, "They replied. Leave it.", "warn", "wait") +
+        act("Booked", pulse.booked, B.gbp(pulse.avgFee) + " average night. Don’t contact.", "call", "booked") +
+        act("Not interested", pulse.rejected, "Said no, or on file.", "", "no") +
+        act("Bounced", pulse.bounced, "Dead address.", "stale", "no") +
       "</div>" +
-      '<div class="stats">' +
-        statHtml("In play £", B.gbp(pulse.pipelineValue), "Call + wait fees", "gold", "call") +
-        statHtml("Reply rate", pulse.replyRate + "%", pulse.replied + " wrote back", "", "home") +
-        statHtml("Win rate", pulse.winRate + "%", "Booked vs no", "call", "booked") +
-        statHtml("Called today", pulse.calledToday, "Notes after a call", "", "call") +
-      "</div>" +
-      '<div class="funnel"><span class="hero-k">Funnel</span><div class="funnel-bar"><i style="width:' + bookedW + '%;background:var(--call)"></i><i style="width:' + Math.max(0, repliedW - bookedW) + '%;background:var(--warn)"></i><i style="width:' + Math.max(8, 100 - repliedW) + '%;background:rgba(255,138,122,.55)"></i></div>' +
-        '<div class="funnel-meta"><span>Pitched ' + pulse.pitched + "</span><span>Replied " + pulse.replied + '</span><span class="ok">Booked ' + pulse.booked + "</span></div></div>" +
-      queueHtml("Tonight — call now", pulse.hot, "Nothing to ring.") +
-      queueHtml("Tonight — follow-up due", pulse.due, "No follow-ups due.") +
+      '<p class="quiet">Sent today ' + pulse.sentToday + " · too soon " + pulse.tooSoon + " · chased " + pulse.followedStillSilent + " · reply " + pulse.replyRate + "% · in play " + B.gbp(pulse.pipelineValue) + "</p>" +
+      queueHtml("Tonight — call", pulse.hot, "Nothing to ring.") +
+      queueHtml("Tonight — follow-up", pulse.due, "No follow-ups due.") +
     "</div>";
   }
 
@@ -2548,7 +2559,7 @@ var NatNotes = (function(exports) {
     var tabHtml = tabs.map(function (t) {
       var on = (filter === t.id && !searching()) ? " on desk-" + t.id : " desk-" + t.id;
       var warn = t.id === "call" && alarm ? " warn" : "";
-      var n = t.id === "home" ? (pulse.closeNow + pulse.followDue) : counts[t.id];
+      var n = t.id === "home" ? counts.call : counts[t.id];
       return '<button type="button" class="' + on + warn + '" onclick="natFilter(\'' + t.id + "')\"><b>" + n + "</b><span>" + t.label + "</span></button>";
     }).join("");
     var list = searching()
