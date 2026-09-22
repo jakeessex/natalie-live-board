@@ -1544,6 +1544,7 @@ var NatNotes = (function(exports) {
   var diaryPick = "";
   var datesOpen = false;
   var datesPick = "";
+  var datesMonth = "all";
   var datesMap = null;
   var datesMarkers = {};
   var _n = new Date();
@@ -1760,16 +1761,39 @@ var NatNotes = (function(exports) {
   };
   window.natDatesPick = function (id) {
     datesPick = id || "";
-    var rows = document.querySelectorAll("#dates .date-row");
-    var i, row;
-    for (i = 0; i < rows.length; i++) {
-      row = rows[i];
-      if (row.getAttribute("data-id") === datesPick) row.classList.add("on");
-      else row.classList.remove("on");
+    var cards = document.querySelectorAll("#dates .house");
+    var i, card;
+    for (i = 0; i < cards.length; i++) {
+      card = cards[i];
+      if (card.getAttribute("data-id") === datesPick) card.classList.add("on");
+      else card.classList.remove("on");
     }
     flyDatesPin(datesPick);
-    row = document.querySelector('#dates .date-row[data-id="' + datesPick + '"]');
-    if (row && row.scrollIntoView) row.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    card = document.querySelector('#dates .house[data-id="' + datesPick + '"]');
+    if (card && card.scrollIntoView) card.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  };
+  window.natDatesMonth = function (m) {
+    datesMonth = m || "all";
+    datesPick = "";
+    render();
+  };
+  window.natDatesVenue = function (id) {
+    datesOpen = false;
+    datesPick = "";
+    destroyDatesMap();
+    openId = id;
+    emailsOpen = false;
+    sheetOpen = false;
+    render();
+  };
+  window.natDatesCopy = function () {
+    var el = document.getElementById("dates-copy-src");
+    var text = el ? el.textContent : "";
+    var btn = document.getElementById("dates-copy");
+    if (!text) return;
+    var done = function () { if (btn) btn.textContent = "Copied"; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done).catch(done);
+    else done();
   };
   window.natDiaryMonth = function (delta) {
     var d = new Date(diaryYear, diaryMonth + delta, 1);
@@ -2313,75 +2337,175 @@ var NatNotes = (function(exports) {
       else el.classList.remove("on");
     }
   }
-  function paintDatesMap(shows, today) {
+  function milesFromHome(ll) {
+    if (!ll) return 0;
+    var R = 3958.8;
+    var lat1 = 51.5207 * Math.PI / 180, lat2 = ll[0] * Math.PI / 180;
+    var dlat = (ll[0] - 51.5207) * Math.PI / 180;
+    var dlon = (ll[1] - 0.3058) * Math.PI / 180;
+    var a = Math.sin(dlat / 2) * Math.sin(dlat / 2) + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dlon / 2) * Math.sin(dlon / 2);
+    return Math.round(R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
+  }
+  function venueRecord(id) {
+    var i;
+    for (i = 0; i < (VENUES || []).length; i++) if (VENUES[i].id === id) return VENUES[i];
+    return null;
+  }
+  function bookerName(label) {
+    var m = /\(([^)]+)\)/.exec(String(label || ""));
+    return m ? m[1] : "";
+  }
+  function slotLabel(start) {
+    if (!start) return "";
+    var h = Number(String(start).split(":")[0]);
+    if (isNaN(h)) return "";
+    return h < 17 ? "Afternoon" : "Night";
+  }
+  function monthTitle(key) {
+    var p = String(key || "").split("-");
+    if (p.length < 2) return key;
+    var names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    return names[Number(p[1]) - 1] + " " + String(p[0]).slice(2);
+  }
+  function venueHouses(shows) {
+    var order = [], map = {}, i, s, g, key;
+    for (i = 0; i < shows.length; i++) {
+      s = shows[i];
+      key = s.venueId || s.venue;
+      g = map[key];
+      if (!g) {
+        g = map[key] = { id: key, venue: s.venue, town: s.town || "", postcode: s.postcode || "", venueId: s.venueId || "", fee: 0, nights: 0, dates: [], ll: s.ll || null };
+        order.push(g);
+      }
+      g.dates.push(s);
+      g.fee += Number(s.fee) || 0;
+      g.nights += Number(s.nights) || 1;
+      if (!g.ll && s.ll) g.ll = s.ll;
+      if (!g.postcode && s.postcode) g.postcode = s.postcode;
+      if (!g.town && s.town) g.town = s.town;
+    }
+    order.forEach(function (house) {
+      house.dates.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
+    });
+    return order;
+  }
+  function nextNight(house, today) {
+    var i;
+    for (i = 0; i < house.dates.length; i++) if (house.dates[i].date >= today) return house.dates[i];
+    return null;
+  }
+  function houseVisible(house, today) {
+    var i, s;
+    for (i = 0; i < house.dates.length; i++) {
+      s = house.dates[i];
+      if (datesMonth === "repeats") { if (house.nights > 1) return true; }
+      else if (datesMonth === "all" || s.date.slice(0, 7) === datesMonth) return true;
+    }
+    return false;
+  }
+  function visibleDates(house) {
+    return house.dates.filter(function (s) {
+      if (datesMonth === "repeats") return true;
+      if (datesMonth === "all") return true;
+      return s.date.slice(0, 7) === datesMonth;
+    });
+  }
+  function mapsHref(house) {
+    var q = [house.venue, house.postcode, house.town].filter(Boolean).join(" ");
+    return "https://maps.google.com/maps?q=" + encodeURIComponent(q);
+  }
+  function paintDatesMap(houses, today, nextId) {
     var hold = $("dates-map");
     var msg = $("dates-map-msg");
     if (!hold) return;
-    var upcoming = shows.filter(function (s) { return s.date >= today && s.ll; });
-    var pins = upcoming.length ? upcoming : shows.filter(function (s) { return s.ll; });
+    var pins = houses.filter(function (h) { return h.ll && visibleDates(h).length; });
     if (!pins.length) {
-      if (msg) msg.textContent = "No pins yet — list below still has every date.";
+      if (msg) { msg.style.display = ""; msg.textContent = "No pins for this view — the list still has every house."; }
       return;
     }
     loadLeaflet().then(function (L) {
       if (!datesOpen || !$("dates-map")) return;
       destroyDatesMap();
       var map = L.map(hold, { scrollWheelZoom: false, attributionControl: true, zoomControl: true });
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-        attribution: "&copy; OpenStreetMap &copy; CARTO",
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+        attribution: "&copy; OSM &copy; CARTO",
         subdomains: "abcd",
         maxZoom: 18
       }).addTo(map);
-      var next = upcoming[0] || pins[0];
       datesMarkers = {};
-      pins.forEach(function (s) {
-        var isNext = next && s.id === next.id;
+      pins.forEach(function (h) {
+        var n = 0, dates = visibleDates(h), i;
+        for (i = 0; i < dates.length; i++) n += Number(dates[i].nights) || 1;
+        var isNext = h.id === nextId;
         var icon = L.divIcon({
-          className: "pin" + (isNext ? " next" : ""),
-          html: "<i></i>",
-          iconSize: isNext ? [18, 18] : [18, 18],
-          iconAnchor: [9, 9]
+          className: "pin" + (isNext ? " next" : "") + (datesPick === h.id ? " on" : "") + (n > 1 ? " multi" : ""),
+          html: "<b>" + n + "</b>",
+          iconSize: [28, 28],
+          iconAnchor: [14, 14]
         });
-        var mk = L.marker(s.ll, { icon: icon, keyboard: false });
-        var until = untilInfo(s, today);
-        mk.bindTooltip(s.venue + "<br>" + until.label + " · " + shortDay(s.date), {
-          direction: "top",
-          opacity: 1,
-          className: "dates-tip"
-        });
-        mk.on("click", function () { window.natDatesPick(s.id); });
+        var nxt = nextNight(h, today);
+        var tip = h.venue + "<br>" + n + (n === 1 ? " night" : " nights") + (nxt ? " · " + shortDay(nxt.date) : "");
+        var mk = L.marker(h.ll, { icon: icon, keyboard: false });
+        mk.bindTooltip(tip, { direction: "top", opacity: 1, className: "dates-tip" });
+        mk.on("click", function () { window.natDatesPick(h.id); });
         mk.addTo(map);
-        datesMarkers[s.id] = mk;
+        datesMarkers[h.id] = mk;
       });
-      var bounds = L.latLngBounds(pins.map(function (s) { return s.ll; }));
+      var bounds = L.latLngBounds(pins.map(function (h) { return h.ll; }));
       var frame = function () {
         map.invalidateSize();
         if (pins.length === 1) map.setView(pins[0].ll, 11);
-        else map.fitBounds(bounds, { padding: [36, 36], maxZoom: 10 });
+        else map.fitBounds(bounds, { padding: [28, 28], maxZoom: 9 });
       };
       requestAnimationFrame(frame);
-      setTimeout(frame, 160);
+      setTimeout(frame, 180);
       datesMap = map;
       if (msg) { msg.textContent = ""; msg.style.display = "none"; }
     }).catch(function () {
-      if (msg) msg.textContent = "Map needs a signal — list below still works.";
+      if (msg) msg.textContent = "Map needs a signal — the list still works.";
     });
   }
-  function dateRowHtml(s, today) {
-    var until = untilInfo(s, today);
+  function houseHtml(house, today, clashDates) {
+    var dates = visibleDates(house);
+    var nxt = null, i, s, pastN = 0, upN = 0;
+    for (i = 0; i < dates.length; i++) {
+      s = dates[i];
+      if (s.date >= today) { upN += Number(s.nights) || 1; if (!nxt) nxt = s; }
+      else pastN += Number(s.nights) || 1;
+    }
+    var miles = milesFromHome(house.ll);
+    var rec = venueRecord(house.venueId);
+    var who = bookerName(house.venue) || bookerName(dates[0] && dates[0].venue);
+    var phone = rec && rec.phone ? String(rec.phone) : "";
     var bits = [];
-    if (s.town) bits.push(s.town);
-    if (s.postcode) bits.push(s.postcode);
-    if (s.nights > 1) bits.push(s.nights + " nights");
-    if (s.start && s.finish) bits.push(s.start + "–" + s.finish);
-    else if (s.start) bits.push(s.start);
-    var fee = s.fee ? '<span class="date-fee">' + B.gbp(s.fee) + "</span>" : "";
-    var on = datesPick === s.id ? " on" : "";
-    var past = until.n < 0 ? " past" : "";
-    return '<button type="button" class="date-row until-' + until.cls + on + past + '" data-id="' + esc(s.id) + '" onclick="natDatesPick(\'' + esc(s.id) + "')\">" +
-      '<span class="date-when"><b>' + esc(until.label) + "</b><span>" + esc(shortDay(s.date)) + "</span></span>" +
-      '<span class="date-main"><span class="date-name">' + esc(s.venue) + '</span><span class="date-meta">' + esc(bits.join(" · ") || (s.locked ? "Locked" : "Booked")) + "</span></span>" +
-      fee + "</button>";
+    bits.push(B.gbp(house.fee));
+    bits.push(house.nights + (house.nights === 1 ? " night" : " nights"));
+    if (nxt) bits.push("next " + shortDay(nxt.date));
+    else if (pastN) bits.push("sung");
+    if (miles) bits.push(miles + " mi from home");
+    if (!house.ll) bits.push("not on the map");
+    var rows = dates.map(function (d) {
+      var until = untilInfo(d, today);
+      var extra = [];
+      if (d.start) extra.push(d.start + (d.finish ? "–" + d.finish : ""));
+      var slot = slotLabel(d.start);
+      if (slot) extra.push(slot);
+      if (clashDates[d.date] && clashDates[d.date].length > 1) extra.push("same day as another show");
+      var fee = d.fee && dates.length > 1 ? " · " + B.gbp(d.fee) : "";
+      return '<p class="night until-' + until.cls + (until.n < 0 ? " past" : "") + '"><b>' + esc(shortDay(d.date)) + '</b><span>' + esc(until.label) + (extra.length ? " · " + esc(extra.join(" · ")) : "") + fee + "</span></p>";
+    }).join("");
+    var acts = '<a class="house-act" href="' + mapsHref(house) + '" target="_blank" rel="noopener">Directions</a>';
+    if (phone) acts += '<a class="house-act" href="tel:' + esc(phone.replace(/\s/g, "")) + '">Call club</a>';
+    if (house.venueId) acts += '<button type="button" class="house-act" onclick="natDatesVenue(\'' + esc(house.venueId) + "')\">Open lead</button>";
+    var badge = house.nights > 1 ? house.nights : (upN || house.nights);
+    return '<article class="house' + (datesPick === house.id ? " on" : "") + '" data-id="' + esc(house.id) + '">' +
+      '<button type="button" class="house-top" onclick="natDatesPick(\'' + esc(house.id) + "')\">" +
+        '<b class="house-n' + (house.nights > 1 ? " multi" : "") + '">' + badge + "</b>" +
+        '<span class="job-main"><span class="date-name">' + esc(house.venue) + "</span><span class=\"date-meta\">" + esc(bits.join(" · ")) + "</span></span>" +
+      "</button>" +
+      (who ? '<p class="house-who">Booked with ' + esc(who) + "</p>" : "") +
+      rows +
+      '<div class="house-acts">' + acts + "</div></article>";
   }
   function renderDates() {
     var el = $("dates");
@@ -2396,35 +2520,68 @@ var NatNotes = (function(exports) {
     var shows = bookedShows();
     var geo = readGeo();
     shows.forEach(function (s) { s.ll = coordsFor(s, geo); });
-    var upcoming = shows.filter(function (s) { return s.date >= today; });
-    var past = shows.filter(function (s) { return s.date < today; });
+    var houses = venueHouses(shows);
     var stats = B.lockedCash(VENUES);
-    var next = upcoming[0];
+    var avg = stats.nights ? Math.round(stats.cash / stats.nights) : 0;
+    var repeats = houses.filter(function (h) { return h.nights > 1; });
+    var clashMap = {}, clashList = [], di, s;
+    shows.forEach(function (s) {
+      if (!clashMap[s.date]) clashMap[s.date] = [];
+      clashMap[s.date].push(s.venue);
+    });
+    Object.keys(clashMap).forEach(function (date) {
+      if (clashMap[date].length > 1) clashList.push({ date: date, names: clashMap[date] });
+    });
+    clashList.sort(function (a, b) { return a.date < b.date ? -1 : 1; });
+    var months = {}, mi;
+    shows.forEach(function (s) {
+      var key = s.date.slice(0, 7);
+      if (!months[key]) months[key] = { key: key, nights: 0, fee: 0 };
+      months[key].nights += Number(s.nights) || 1;
+      months[key].fee += Number(s.fee) || 0;
+    });
+    var monthKeys = Object.keys(months).sort();
+    var shown = houses.filter(function (h) { return houseVisible(h, today); });
+    shown.sort(function (a, b) {
+      var na = nextNight(a, today), nb = nextNight(b, today);
+      var da = na ? na.date : "9" + a.dates[a.dates.length - 1].date;
+      var db = nb ? nb.date : "9" + b.dates[b.dates.length - 1].date;
+      return da < db ? -1 : da > db ? 1 : 0;
+    });
+    var upcomingH = shown.filter(function (h) { return nextNight(h, today); });
+    var nextH = upcomingH[0] || null;
+    var nextShow = nextH ? nextNight(nextH, today) : null;
+    var furthest = null, furthestMi = 0;
+    houses.forEach(function (h) {
+      var mi2 = milesFromHome(h.ll);
+      if (mi2 > furthestMi) { furthestMi = mi2; furthest = h; }
+    });
+    var unpinned = shown.filter(function (h) { return !h.ll; }).length;
+    var chips = '<button type="button" class="mchip' + (datesMonth === "all" ? " on" : "") + '" onclick="natDatesMonth(\'all\')">All · ' + stats.nights + "</button>";
+    if (repeats.length) chips += '<button type="button" class="mchip' + (datesMonth === "repeats" ? " on" : "") + '" onclick="natDatesMonth(\'repeats\')">Repeats · ' + repeats.length + "</button>";
+    monthKeys.forEach(function (key) {
+      var m = months[key];
+      chips += '<button type="button" class="mchip' + (datesMonth === key ? " on" : "") + '" onclick="natDatesMonth(\'' + key + "')\">" + monthTitle(key) + " · " + m.nights + " · " + B.gbp(m.fee) + "</button>";
+    });
+    var clashHtml = clashList.filter(function (c) { return datesMonth === "all" || datesMonth === "repeats" || c.date.slice(0, 7) === datesMonth; }).map(function (c) {
+      return '<p class="dates-clash"><b>' + esc(shortDay(c.date)) + '</b> · two shows the same day · ' + esc(c.names.join(" and ")) + "</p>";
+    }).join("");
     var nextCard = "";
-    if (next) {
-      var u = untilInfo(next, today);
-      nextCard = '<button type="button" class="dates-next" onclick="natDatesPick(\'' + esc(next.id) + "')\"><span>Next up · " + esc(u.label.toLowerCase()) + "</span><b>" + esc(next.venue) + "</b><em>" +
-        esc(shortDay(next.date)) + (next.town ? " · " + esc(next.town) : "") + (next.start ? " · " + esc(next.start) : "") + "</em></button>";
+    if (nextShow) {
+      var u = untilInfo(nextShow, today);
+      nextCard = '<button type="button" class="dates-next" onclick="natDatesPick(\'' + esc(nextH.id) + "')\"><span>Next · " + esc(u.label) + "</span><b>" + esc(nextH.venue) + "</b><em>" +
+        esc(shortDay(nextShow.date)) + (nextShow.start ? " · " + esc(nextShow.start) : "") + (nextH.town ? " · " + esc(nextH.town) : "") + (milesFromHome(nextH.ll) ? " · " + milesFromHome(nextH.ll) + " mi" : "") + "</em></button>";
     }
-    var heldN = (GIGS || []).filter(function (g) {
-      return g && g.status === "held" && g.date >= today && !shows.some(function (s) { return s.date === g.date; });
-    }).length;
-    var undatedHtml = (UNDATED || []).filter(function (u) {
-      return !shows.some(function (s) { return namesClose(s.venue, u.venue); });
-    }).map(function (u) {
-      return '<p class="dates-pend">' + esc(u.venue) + (u.note ? " · " + esc(u.note) : " · date TBC") + "</p>";
-    }).join("");
-    var pendingHtml = (stats.pending || []).map(function (p) {
-      return '<p class="dates-pend">' + esc(p.name) + " not counted until a date is locked — " + B.gbp(p.fee) + " if she does.</p>";
-    }).join("");
-    var heldHtml = heldN ? '<p class="dates-held">' + heldN + " held date" + (heldN === 1 ? "" : "s") + " blocked in the diary — not on this map.</p>" : "";
-    var listUp = upcoming.map(function (s) { return dateRowHtml(s, today); }).join("") ||
-      '<p class="empty">No upcoming performing dates on the book.</p>';
-    var listPast = past.length
-      ? '<p class="dates-kicker">Already sung · ' + past.length + "</p>" + past.map(function (s) { return dateRowHtml(s, today); }).join("")
-      : "";
-    var onMap = upcoming.filter(function (s) { return s.ll; }).length;
-    var stamp = [upcoming.length, shows.length, stats.cash, stats.nights, next && next.id].join("|");
+    var copyLines = [];
+    shown.forEach(function (h) {
+      visibleDates(h).forEach(function (d) {
+        copyLines.push(shortDay(d.date) + " · " + h.venue + (d.start ? " · " + d.start : "") + (d.fee ? " · " + B.gbp(d.fee) : ""));
+      });
+    });
+    var cards = shown.map(function (h) { return houseHtml(h, today, clashMap); }).join("") || '<p class="empty">Nothing in this view.</p>';
+    var facts = "<span><b>" + stats.nights + "</b> nights</span><span><b>" + houses.length + "</b> houses</span><span><b>" + B.gbp(avg) + "</b> avg</span>";
+    if (furthest) facts += "<span><b>" + furthestMi + "</b> mi furthest</span>";
+    var stamp = [datesMonth, stats.cash, stats.nights, shows.length, nextShow && nextShow.id, shown.length].join("|");
     if (el.className === "show" && el.getAttribute("data-stamp") === stamp && datesMap) return;
     destroyDatesMap();
     el.className = "show";
@@ -2432,14 +2589,20 @@ var NatNotes = (function(exports) {
     el.innerHTML =
       '<header class="dates-head"><button class="back" type="button" onclick="natDatesClose()">Close <span>Dates booked</span></button>' +
       "<h1>Dates booked</h1>" +
-      '<p class="dates-sub"><b>' + B.gbp(stats.cash) + "</b> locked · " + stats.nights + " night" + (stats.nights === 1 ? "" : "s") +
-      " · " + B.gbp(stats.cash) + " of £10k · " + stats.nights + " nights we’ve closed</p></header>" +
-      '<div class="dates-map-wrap"><div id="dates-map"></div><p class="dates-map-msg" id="dates-map-msg">Loading the map…</p>' + nextCard + "</div>" +
-      '<div class="dates-list"><p class="dates-kicker">Coming up · ' + upcoming.length + (onMap ? " · " + onMap + " on the map" : "") + "</p>" +
-      listUp + heldHtml + undatedHtml + pendingHtml + listPast + "</div>";
+      '<p class="dates-sub"><b>' + B.gbp(stats.cash) + "</b> locked · " + B.gbp(B.cashTarget(stats).left) + " still open to £10k</p>" +
+      '<div class="dates-facts">' + facts + "</div>" +
+      '<div class="dates-months">' + chips + "</div></header>" +
+      '<div class="dates-map-wrap"><div id="dates-map"></div><p class="dates-map-msg" id="dates-map-msg">Loading the map…</p></div>' +
+      '<div class="dates-list">' + nextCard + clashHtml +
+      '<div class="dates-tools"><p class="dates-kicker">' + shown.length + " house" + (shown.length === 1 ? "" : "s") + (unpinned ? " · " + unpinned + " not on the map" : "") + '</p><button type="button" id="dates-copy" onclick="natDatesCopy()">Copy list</button></div>' +
+      cards +
+      '<pre id="dates-copy-src" hidden>' + esc(copyLines.join("\n")) + "</pre></div>";
     fillCoords(shows, function () {
       if (!datesOpen) return;
-      paintDatesMap(shows, today);
+      houses.forEach(function (h) {
+        h.dates.forEach(function (s) { if (!s.ll) s.ll = coordsFor(s, readGeo()); if (!h.ll && s.ll) h.ll = s.ll; });
+      });
+      paintDatesMap(houses, today, nextH && nextH.id);
     });
   }
 
