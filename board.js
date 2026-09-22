@@ -129,6 +129,7 @@ var Board = (() => {
   ];
   var NAV_FILTERS = [
     { id: "home", label: "Home" },
+    { id: "all", label: "All" },
     ...BOARD_FILTERS
   ];
   var DESK_CHIP = {
@@ -1089,6 +1090,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
   }
   function deskBanner(filter) {
     if (filter === "home") return "Tonight\u2019s desk. Figures open the list. Don\u2019t ring Booked or No.";
+    if (filter === "all") return "The whole book, grouped by desk.";
     if (filter === "call") return "Ring these. Waiting and silent live on their own tabs.";
     if (filter === "wait") return "Ball is in their court. Don\u2019t chase until the why-line says they\u2019re due.";
     if (filter === "silent") return "Never wrote back. Follow-up due is the work. Followed up and too-soon sit below.";
@@ -2559,12 +2561,12 @@ var NatNotes = (function(exports) {
     var tabHtml = tabs.map(function (t) {
       var on = (filter === t.id && !searching()) ? " on desk-" + t.id : " desk-" + t.id;
       var warn = t.id === "call" && alarm ? " warn" : "";
-      var n = t.id === "home" ? counts.call : counts[t.id];
+      var n = t.id === "home" ? counts.call : t.id === "all" ? rowsAll.length : counts[t.id];
       return '<button type="button" class="' + on + warn + '" onclick="natFilter(\'' + t.id + "')\"><b>" + n + "</b><span>" + t.label + "</span></button>";
     }).join("");
     var list = searching()
       ? B.sortDeskAll(rowsAll.filter(function (r) { return B.matchesQuery(r.venue, q); }))
-      : (filter === "home" ? [] : B.rowsForFilter(rowsAll, filter));
+      : (filter === "home" ? [] : filter === "all" ? B.sortAll(rowsAll) : B.rowsForFilter(rowsAll, filter));
     var label = searching() ? "Search" : ((tabs.find(function (t) { return t.id === filter; }) || { label: "Home" }).label);
     var home = filter === "home" && !searching();
     var banner = searching() || home ? "" : '<p class="desk-note">' + esc(B.deskBanner(filter)) + "</p>";
@@ -2576,7 +2578,17 @@ var NatNotes = (function(exports) {
     $("count").textContent = home ? "" : (list.length + " job" + (list.length === 1 ? "" : "s") + " · " + label + (filter === "call" && alarm ? " · quiet alarm" : ""));
     $("count").style.display = home ? "none" : "";
     $("list").innerHTML = cards;
-    $("sync").textContent = sharedOk ? "Notes live with Jake" : "Board live";
+    var mail = $("mailcount");
+    if (mail) {
+      var emails = 0;
+      for (var i = 0; i < VENUES.length; i++) {
+        var msgs = VENUES[i].messages || [];
+        for (var j = 0; j < msgs.length; j++) {
+          if (msgs[j] && (msgs[j].side === "us" || msgs[j].side === "them")) emails++;
+        }
+      }
+      mail.innerHTML = '<b>' + emails.toLocaleString("en-GB") + '</b> emails<span>' + VENUES.length + ' venues · tap for all</span>';
+    }
     [["cash-amt", "cash-meta"], ["cash-amt-app", "cash-meta-app"]].forEach(function (ids) {
       if ($(ids[0])) $(ids[0]).textContent = B.gbp(stats.cash);
       if ($(ids[1])) $(ids[1]).textContent = stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " locked";

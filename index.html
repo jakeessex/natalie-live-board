@@ -12,7 +12,7 @@
 <!-- UI LOCK: Board v42 shell. Never embed venues. Data is venues.json only. -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&family=Fraunces:opsz,wght@9..144,560&display=swap"/>
-<link rel="stylesheet" href="board.css?v=42"/>
+<link rel="stylesheet" href="board.css?v=43"/>
 <script>
 (function(){function k(){var n=document.getElementById("cash-5k-party");if(n&&n.parentNode)n.parentNode.removeChild(n);try{localStorage.removeItem("natalie-cash-5k-v1")}catch(e){}}k();document.addEventListener("DOMContentLoaded",k);try{new MutationObserver(k).observe(document.documentElement,{childList:true,subtree:true})}catch(e){}})();
 </script>
@@ -57,6 +57,7 @@
     <div>
       <p class="kicker">Jake Essex Music Ltd</p>
       <h1>Natalie</h1>
+      <button type="button" id="mailcount" class="mailcount" onclick="natFilter('all')"><b>…</b> emails</button>
       <p class="ver" id="sync">Board live</p>
     </div>
     <div class="head-acts">
@@ -78,6 +79,6 @@
 <div id="diary"></div>
 <div id="dates"></div>
 <script type="application/json" id="venues-data">[]</script>
-<script src="board.js?v=80"></script>
+<script src="board.js?v=81"></script>
 </body>
 </html>
