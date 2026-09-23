@@ -125,7 +125,8 @@ var Board = (() => {
     { id: "wait", label: "Wait" },
     { id: "silent", label: "Silent" },
     { id: "booked", label: "Booked" },
-    { id: "no", label: "No" }
+    { id: "no", label: "No" },
+    { id: "potential", label: "Pot" }
   ];
   var NAV_FILTERS = [
     { id: "home", label: "Home" },
@@ -137,7 +138,8 @@ var Board = (() => {
     wait: "WAITING",
     silent: "NO REPLY",
     booked: "BOOKED",
-    no: "NO"
+    no: "NO",
+    potential: "POT"
   };
   var FOLLOW_CHIP = {
     due: "FOLLOW UP DUE",
@@ -811,6 +813,14 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
       row.deskWhy = "Locked \u2014 don\u2019t contact";
       return row;
     }
+    if (isOpenProspect(venue)) {
+      row.desk = "potential";
+      row.followState = "none";
+      row.deskWhy = prospectWhy(venue);
+      var pst = prospectStatusOf(venue);
+      row.sayThis = pst === "AGENCY_LATER" ? "Agency later. Don\u2019t cold email." : pst === "NEED_PUBLIC" ? "No public email yet. Don\u2019t invent one." : "Not mailed. Leave it until Jake opens this list.";
+      return row;
+    }
     if (row.dropped || parkedBadge(venue) || row.reason === "hard no" || isBounceVenue(venue, row.reason) || row.replyBucket === "file") {
       row.desk = "no";
       row.followState = follows >= 1 || row.called ? "done" : "none";
@@ -971,7 +981,33 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     });
   }
   var SILENT_ORDER = { due: 0, done: 1, fresh: 2, none: 3 };
-  var DESK_ORDER = { call: 0, wait: 1, silent: 2, booked: 3, no: 4 };
+  var DESK_ORDER = { call: 0, wait: 1, silent: 2, booked: 3, no: 4, potential: 5 };
+  var POT_ORDER = { NEW_EMAIL: 0, NEED_PUBLIC: 1, AGENCY_LATER: 2 };
+  function prospectStatusOf(venue) {
+    var s = String((venue && venue.prospectStatus) || "").toUpperCase().replace(/[\s-]+/g, "_");
+    if (s === "NEW_EMAIL" || s === "EMAIL") return "NEW_EMAIL";
+    if (s === "NEED_PUBLIC" || s === "NEED_PHONE" || s === "PHONE") return "NEED_PUBLIC";
+    if (s === "AGENCY_LATER" || s === "FAR" || s === "AGENCY" || s === "N") return "AGENCY_LATER";
+    return venue && venue.email ? "NEW_EMAIL" : "NEED_PUBLIC";
+  }
+  function isOpenProspect(venue) {
+    if (!venue) return false;
+    var flagged = venue.prospect === true || String(venue.badge || "").toLowerCase() === "prospect" || !!venue.prospectStatus;
+    if (!flagged) return false;
+    return usCount(venue) === 0;
+  }
+  function prospectWhy(venue) {
+    var s = prospectStatusOf(venue);
+    if (s === "NEW_EMAIL") return "Not mailed \u2014 email on file";
+    if (s === "NEED_PUBLIC") return "Not mailed \u2014 need a public number";
+    return "Agency later \u2014 don\u2019t cold email";
+  }
+  function prospectChip(venue) {
+    var s = prospectStatusOf(venue);
+    if (s === "NEW_EMAIL") return "NEW EMAIL";
+    if (s === "NEED_PUBLIC") return "NEED PUBLIC";
+    return "AGENCY LATER";
+  }
   function sortCallDesk(rows) {
     return rows.filter((r) => r.desk === "call").sort((a, b) => {
       if (a.followState === "done" && b.followState !== "done") return 1;
@@ -1002,11 +1038,19 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
   function sortNoDesk(rows) {
     return rows.filter((r) => r.desk === "no").sort((a, b) => a.venue.name.localeCompare(b.venue.name));
   }
+  function sortPotentialDesk(rows) {
+    return rows.filter((r) => r.desk === "potential").sort((a, b) => {
+      var d = (POT_ORDER[prospectStatusOf(a.venue)] || 0) - (POT_ORDER[prospectStatusOf(b.venue)] || 0);
+      if (d) return d;
+      return a.venue.name.localeCompare(b.venue.name);
+    });
+  }
   function sortDesk(rows, filter) {
     if (filter === "call") return sortCallDesk(rows);
     if (filter === "wait") return sortWaitDesk(rows);
     if (filter === "silent") return sortSilentDesk(rows);
     if (filter === "booked") return sortBookedDesk(rows);
+    if (filter === "potential") return sortPotentialDesk(rows);
     return sortNoDesk(rows);
   }
   function sortDeskAll(rows) {
@@ -1034,7 +1078,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     return counts;
   }
   function filterCounts(rows) {
-    const counts = { call: 0, wait: 0, silent: 0, booked: 0, no: 0 };
+    const counts = { call: 0, wait: 0, silent: 0, booked: 0, no: 0, potential: 0 };
     for (const row of rows) counts[row.desk] += 1;
     return counts;
   }
@@ -1054,6 +1098,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     }
     if (filter === "wait") return "wait";
     if (filter === "booked") return "booked";
+    if (filter === "potential") return prospectStatusOf(row.venue);
     return row.desk;
   }
   function deskGroupLabel(key, filter, searching = false) {
@@ -1063,7 +1108,8 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
         wait: "Waiting on them",
         silent: "No reply",
         booked: "Booked \u2014 don\u2019t contact",
-        no: "Not interested"
+        no: "Not interested",
+        potential: "Potential \u2014 not mailed"
       };
       if (labels[key]) return labels[key];
     }
@@ -1086,6 +1132,12 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     }
     if (filter === "wait") return "Waiting on them";
     if (filter === "booked") return "Locked in";
+    if (filter === "potential") {
+      if (key === "NEW_EMAIL") return "New email \u2014 not mailed";
+      if (key === "NEED_PUBLIC") return "Need a public number";
+      if (key === "AGENCY_LATER") return "Agency later";
+      return "Potential";
+    }
     return key;
   }
   function deskBanner(filter) {
@@ -1095,6 +1147,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     if (filter === "wait") return "Ball is in their court. Don\u2019t chase until the why-line says they\u2019re due.";
     if (filter === "silent") return "Never wrote back. Follow-up due is the work. Followed up and too-soon sit below.";
     if (filter === "booked") return "Locked. Don\u2019t contact unless they call you.";
+    if (filter === "potential") return "Not mailed. Not Silent. Already on the book means they are not here.";
     return "Said no, on file, bounce, or not in play. Leave them.";
   }
   function lockedCash(venues) {
@@ -1546,6 +1599,8 @@ var NatNotes = (function(exports) {
   var datesPick = "";
   var datesMonth = "all";
   var datesMap = null;
+  var potStatus = "all";
+  var potMap = null;
   var datesMarkers = {};
   var _n = new Date();
   var diaryYear = _n.getFullYear();
@@ -1727,7 +1782,7 @@ var NatNotes = (function(exports) {
   window.natOpen = function (id) { openId = id; emailsOpen = false; sheetOpen = false; render(); };
   window.natCalled = function (id) { openId = id; emailsOpen = false; sheetOpen = true; render(); };
   window.natBack = function () { openId = null; sheetOpen = false; render(); };
-  window.natFilter = function (t) { filter = t; render(); };
+  window.natFilter = function (t) { filter = t; if (t !== "potential") destroyPotMap(); render(); };
   window.natTab = window.natFilter;
   window.natCash = function () {
     datesOpen = true;
@@ -2620,13 +2675,19 @@ var NatNotes = (function(exports) {
     var v = row.venue;
     var bits = [];
     if (v.town) bits.push(v.town);
-    if (row.who) bits.push(row.who);
+    if (row.desk === "potential") {
+      if (v.region) bits.push(v.region);
+      if (v.venueType) bits.push(v.venueType);
+      if (!v.email) bits.push("no email");
+    } else if (row.who) bits.push(row.who);
     if (row.desk === "silent" && row.daysSilent != null) bits.push(row.daysSilent + "d silent");
-    else if (row.desk !== "booked" && row.desk !== "no") bits.push(B.lastTouchLabel(row));
+    else if (row.desk !== "booked" && row.desk !== "no" && row.desk !== "potential") bits.push(B.lastTouchLabel(row));
     var called = B.lastCalledLabel(NOTES[v.id]);
     if (called) bits.push(called);
     var quiet = row.followState === "due" || row.stale;
     var fee = (row.fee && row.desk === "booked") ? '<span class="row-fee">' + B.gbp(row.fee) + "</span>" : "";
+    var badgeText = row.desk === "potential" ? prospectChip(v) : chip(row.desk);
+    var badgeCls = row.desk === "potential" ? "potential " + prospectStatusOf(v) : (row.desk || "");
     var why = laneWhyHtml(v, row);
     var follow = followChip(row.followState);
     var followHtml = follow ? '<span class="badge follow ' + row.followState + '">' + follow + "</span>" : "";
@@ -2634,7 +2695,7 @@ var NatNotes = (function(exports) {
     return '<button type="button" class="job' + (quiet ? " hot" : "") + rail + '" onclick="natOpen(\'' + esc(v.id) + "')\">" +
       '<span class="job-main"><span class="job-name">' + esc(v.name) + '</span><span class="job-meta">' + esc(bits.join(" · ") || "Tap to open") + "</span>" + (why || "") + "</span>" +
       fee +
-      '<span class="job-badges">' + followHtml + '<span class="badge ' + (row.desk || "") + '">' + chip(row.desk) + "</span></span>" +
+      '<span class="job-badges">' + followHtml + '<span class="badge ' + badgeCls + '">' + badgeText + "</span></span>" +
       '<span class="chev">›</span></button>';
   }
 
@@ -2713,6 +2774,85 @@ var NatNotes = (function(exports) {
     "</div>";
   }
 
+  function destroyPotMap() {
+    if (potMap) {
+      try { potMap.remove(); } catch (e) {}
+    }
+    potMap = null;
+  }
+  function prospectLl(v, geo) {
+    var lat = Number(v && v.lat), lng = Number(v && v.lng);
+    if (isFinite(lat) && isFinite(lng) && Math.abs(lat) > 0.1 && Math.abs(lng) > 0.01) return [lat, lng];
+    return coordsFor({ venue: v.name, town: v.town || "", postcode: v.postcode || "" }, geo || {});
+  }
+  function paintPot(rows) {
+    var hold = $("pot-map");
+    if (!hold) return;
+    var missing = [], seen = {};
+    rows.forEach(function (r) {
+      if (prospectLl(r.venue, readGeo())) return;
+      var pc = pcKey(r.venue.postcode);
+      if (pc && !seen[pc]) { seen[pc] = 1; missing.push(pc); }
+    });
+    var draw = function () {
+      if (filter !== "potential" || !$("pot-map")) return;
+      var pins = [];
+      rows.forEach(function (r) {
+        var ll = prospectLl(r.venue, readGeo());
+        if (ll) pins.push({ row: r, ll: ll });
+      });
+      var msg = $("pot-map-msg");
+      if (!pins.length) {
+        if (msg) { msg.style.display = ""; msg.textContent = rows.length ? "No pins yet — the list still has every house." : "No potential bookers yet."; }
+        return;
+      }
+      loadLeaflet().then(function (L) {
+        if (filter !== "potential" || !$("pot-map")) return;
+        destroyPotMap();
+        var map = L.map($("pot-map"), { scrollWheelZoom: false, attributionControl: true, zoomControl: true });
+        L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+          attribution: "&copy; OSM &copy; CARTO",
+          subdomains: "abcd",
+          maxZoom: 18
+        }).addTo(map);
+        pins.forEach(function (p) {
+          var st = prospectStatusOf(p.row.venue);
+          var icon = L.divIcon({ className: "pin pot " + st, html: "<b></b>", iconSize: [18, 18], iconAnchor: [9, 9] });
+          var mk = L.marker(p.ll, { icon: icon, keyboard: false });
+          mk.bindTooltip(esc(p.row.venue.name) + "<br>" + esc(prospectChip(p.row.venue)), { direction: "top", opacity: 1, className: "dates-tip" });
+          mk.on("click", function () { window.natOpen(p.row.venue.id); });
+          mk.addTo(map);
+        });
+        var bounds = L.latLngBounds(pins.map(function (p) { return p.ll; }));
+        var frame = function () {
+          map.invalidateSize();
+          if (pins.length === 1) map.setView(pins[0].ll, 11);
+          else map.fitBounds(bounds, { padding: [28, 28], maxZoom: 9 });
+        };
+        requestAnimationFrame(frame);
+        setTimeout(frame, 160);
+        potMap = map;
+        if (msg) { msg.textContent = ""; msg.style.display = "none"; }
+      }).catch(function () {
+        if (msg) msg.textContent = "Map needs a signal — the list still works.";
+      });
+    };
+    if (!missing.length) { draw(); return; }
+    fetch("https://api.postcodes.io/postcodes", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ postcodes: missing.slice(0, 100) })
+    }).then(function (r) { return r.json(); }).then(function (data) {
+      var geo = readGeo();
+      (data.result || []).forEach(function (row) {
+        if (row && row.result) geo[row.query] = [row.result.latitude, row.result.longitude];
+      });
+      writeGeo(geo);
+      draw();
+    }).catch(function () { draw(); });
+  }
+  window.natPot = function (s) { potStatus = s || "all"; render(); };
+
   function renderList() {
     var rowsAll = ranked();
     var counts = B.filterCounts(rowsAll);
@@ -2730,10 +2870,25 @@ var NatNotes = (function(exports) {
     var list = searching()
       ? B.sortDeskAll(rowsAll.filter(function (r) { return B.matchesQuery(r.venue, q); }))
       : (filter === "home" ? [] : filter === "all" ? B.sortAll(rowsAll) : B.rowsForFilter(rowsAll, filter));
+    if (filter === "potential" && !searching() && potStatus !== "all") {
+      list = list.filter(function (r) { return prospectStatusOf(r.venue) === potStatus; });
+    }
     var label = searching() ? "Search" : ((tabs.find(function (t) { return t.id === filter; }) || { label: "Home" }).label);
     var home = filter === "home" && !searching();
     var banner = searching() || home ? "" : '<p class="desk-note">' + esc(B.deskBanner(filter)) + "</p>";
-    var cards = home ? dashHtml(pulse) : (banner + listHtml(list));
+    var potHead = "";
+    if (filter === "potential" && !searching()) {
+      var fullPot = B.rowsForFilter(rowsAll, "potential");
+      var pc = { NEW_EMAIL: 0, NEED_PUBLIC: 0, AGENCY_LATER: 0 };
+      fullPot.forEach(function (r) { pc[prospectStatusOf(r.venue)] += 1; });
+      function potBtn(id, text, n) {
+        return '<button type="button" class="mchip' + (potStatus === id ? " on" : "") + '" onclick="natPot(\'' + id + "')\">" + text + " · " + n + "</button>";
+      }
+      potHead = '<div class="pot-wrap"><div id="pot-map"></div><p class="dates-map-msg" id="pot-map-msg">Loading the map…</p></div><div class="pot-chips">' +
+        potBtn("all", "All", fullPot.length) + potBtn("NEW_EMAIL", "New email", pc.NEW_EMAIL) + potBtn("NEED_PUBLIC", "Need public", pc.NEED_PUBLIC) + potBtn("AGENCY_LATER", "Agency later", pc.AGENCY_LATER) +
+        "</div>";
+    }
+    var cards = home ? dashHtml(pulse) : (potHead + banner + listHtml(list));
     $("cash-slot").innerHTML = home ? "" : cashHtml(stats);
     $("pep").style.display = home ? "none" : "";
     $("pep").textContent = pep;
@@ -2741,6 +2896,8 @@ var NatNotes = (function(exports) {
     $("count").textContent = home ? "" : (list.length + " job" + (list.length === 1 ? "" : "s") + " · " + label + (filter === "call" && alarm ? " · quiet alarm" : ""));
     $("count").style.display = home ? "none" : "";
     $("list").innerHTML = cards;
+    if (filter === "potential" && !searching()) paintPot(list);
+    else destroyPotMap();
     var mail = $("mailcount");
     if (mail) {
       var emails = 0;
@@ -2779,6 +2936,11 @@ var NatNotes = (function(exports) {
     }).join("");
     var facts = [];
     if (row.who) facts.push("<span>Who</span><b>" + esc(row.who) + "</b>");
+    if (row.desk === "potential") {
+      facts.push("<span>Status</span><b>" + esc(prospectChip(v)) + "</b>");
+      if (v.venueType) facts.push("<span>Type</span><b>" + esc(v.venueType) + "</b>");
+      if (v.region) facts.push("<span>Region</span><b>" + esc(v.region) + "</b>");
+    }
     if (row.fee) facts.push("<span>" + (row.desk === "booked" ? "Locked" : "Fee") + "</span><b>" + B.gbp(row.fee) + "</b>");
     if (v.phone) facts.push("<span>Phone</span><b>" + esc(v.phone) + "</b>");
     if (v.email) facts.push("<span>Email</span><b>" + esc(v.email) + "</b>");

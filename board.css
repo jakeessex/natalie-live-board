@@ -97,9 +97,10 @@ main{padding:14px 14px 140px}
 .fact{margin:8px 0 0;font-size:13px;color:var(--muted);line-height:1.4}
 .email,.replied{margin:8px 0 0;font-size:14px;color:var(--muted);word-break:break-word}
 .search{margin-top:12px}
-.filters{position:fixed;bottom:0;left:0;right:0;z-index:20;display:grid;grid-template-columns:repeat(7,1fr);gap:2px;padding:8px 4px calc(10px + env(safe-area-inset-bottom));background:rgba(7,8,6,.96);border-top:1px solid var(--line);backdrop-filter:blur(10px)}
-.filters button{min-height:54px;border-radius:12px;border:0;background:transparent;color:var(--muted);font-weight:800;font-size:8px;letter-spacing:.03em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:4px 2px}
-.filters button b{font-size:14px;letter-spacing:0;text-transform:none}
+.filters{position:fixed;bottom:0;left:0;right:0;z-index:20;display:grid;grid-template-columns:repeat(8,1fr);gap:2px;padding:8px 4px calc(10px + env(safe-area-inset-bottom));background:rgba(7,8,6,.96);border-top:1px solid var(--line);backdrop-filter:blur(10px)}
+.filters button{min-height:48px;border-radius:10px;border:0;background:transparent;color:var(--muted);font-weight:800;font-size:7px;letter-spacing:0;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:2px 0}
+.filters button b{font-size:12px;letter-spacing:0;text-transform:none}
+.filters button span{display:block;max-width:100%;overflow:hidden;white-space:nowrap}
 .filters button.on{color:var(--accent-fg)}
 .filters button.on.desk-call{background:var(--accent);color:var(--accent-fg)}
 .filters button.on.desk-wait{background:var(--warn);color:#1a120c}
@@ -370,3 +371,16 @@ header h1{font-family:"Figtree",system-ui,sans-serif;font-size:20px;font-weight:
 .mail b{display:block;margin-top:4px;font-size:14px}
 .mail pre{white-space:pre-wrap;font:14px/1.45 system-ui,sans-serif;margin:6px 0 0}
 .textbtn{width:100%;margin-top:8px;border:0;background:transparent;color:var(--subtle);font-weight:700;min-height:44px}
+
+.filters button.on.desk-potential{background:#243528;color:#b6f2c4}
+.badge.potential{background:#243528;color:#b6f2c4}
+.badge.NEW_EMAIL{background:#243528;color:#b6f2c4}
+.badge.NEED_PUBLIC{background:#3a2a12;color:#ffd76a}
+.badge.AGENCY_LATER{background:#2a2420;color:#c8b8a4}
+.pot-wrap{position:relative;height:220px;margin:0 0 8px}
+#pot-map{height:100%;border:1px solid var(--border);background:#14110e}
+.pot-wrap .dates-map-msg{inset:0}
+.pot-chips{display:flex;gap:6px;overflow:auto;margin:0 0 10px}
+#pot-map .pin.pot b{width:14px;height:14px;background:#b6f2c4}
+#pot-map .pin.NEED_PUBLIC b{background:#ffd76a}
+#pot-map .pin.AGENCY_LATER b{background:#c8b8a4}

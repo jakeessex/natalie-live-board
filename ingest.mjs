@@ -145,7 +145,112 @@ function blankVenue(event) {
   };
 }
 
+function cleanStatus(raw) {
+  const s = String(raw || "").toUpperCase().replace(/[\s-]+/g, "_");
+  if (s === "NEW_EMAIL" || s === "EMAIL") return "NEW_EMAIL";
+  if (s === "NEED_PUBLIC" || s === "NEED_PHONE" || s === "PHONE") return "NEED_PUBLIC";
+  if (s === "AGENCY_LATER" || s === "FAR" || s === "AGENCY" || s === "N") return "AGENCY_LATER";
+  return "";
+}
+
+function hasUs(venue) {
+  return (venue?.messages || []).some((m) => m && m.side === "us");
+}
+
+function isOpenProspectRow(venue) {
+  return (venue?.prospect === true || String(venue?.badge || "").toLowerCase() === "prospect" || venue?.prospectStatus) && !hasUs(venue);
+}
+
+function emailsOf(venue) {
+  const out = new Set();
+  const add = (value) => {
+    const key = String(value || "").trim().toLowerCase();
+    if (key.includes("@")) out.add(key);
+  };
+  add(venue?.email);
+  for (const message of venue?.messages || []) add(message?.from);
+  return out;
+}
+
+function sameHouse(a, b) {
+  const left = slugify(a);
+  const right = slugify(b);
+  if (!left || !right) return false;
+  if (left === right) return true;
+  if (left.length >= 12 && right.length >= 12 && (left.includes(right) || right.includes(left))) return true;
+  return false;
+}
+
+function contactedTwin(venues, venue) {
+  const email = String(venue.email || "").trim().toLowerCase();
+  const id = slugify(venue.id || venue.name);
+  for (const row of venues) {
+    if (isOpenProspectRow(row)) continue;
+    if (email && emailsOf(row).has(email)) return row;
+    if (id && (row.id === id || slugify(row.name) === id)) return row;
+    if (venue.name && sameHouse(venue.name, row.name)) return row;
+  }
+  return null;
+}
+
+function prospectIndex(venues, venue) {
+  const email = String(venue.email || "").trim().toLowerCase();
+  const id = slugify(venue.id || venue.name);
+  return venues.findIndex((row) => {
+    if (!isOpenProspectRow(row)) return false;
+    if (id && row.id === id) return true;
+    if (email && String(row.email || "").trim().toLowerCase() === email) return true;
+    if (venue.name && slugify(row.name) === slugify(venue.name)) return true;
+    return false;
+  });
+}
+
+function prospectRecord(event, current) {
+  const venue = event.venue || {};
+  const name = String(venue.name || current?.name || "");
+  const status = cleanStatus(venue.prospectStatus) || cleanStatus(current?.prospectStatus) || (venue.email || current?.email ? "NEW_EMAIL" : "NEED_PUBLIC");
+  const lat = Number(venue.lat);
+  const lng = Number(venue.lng);
+  return {
+    ...(current || {}),
+    id: current?.id || slugify(venue.id || name),
+    name,
+    town: venue.town ? String(venue.town) : current?.town || "",
+    postcode: venue.postcode ? String(venue.postcode) : current?.postcode || "",
+    region: venue.region ? String(venue.region) : current?.region || "",
+    venueType: venue.venueType || venue.type ? String(venue.venueType || venue.type) : current?.venueType || "",
+    email: venue.email ? String(venue.email) : current?.email || "",
+    phone: venue.phone ? String(venue.phone) : current?.phone || null,
+    website: venue.website ? String(venue.website) : current?.website || "",
+    contactName: venue.contactName ? String(venue.contactName) : current?.contactName || "",
+    lat: Number.isFinite(lat) ? lat : current?.lat,
+    lng: Number.isFinite(lng) ? lng : current?.lng,
+    badge: "prospect",
+    prospect: true,
+    prospectStatus: status,
+    replied: "no",
+    messages: current?.messages || [],
+    hasThread: false,
+    addedAt: current?.addedAt || event.at || new Date().toISOString(),
+    lockedNote: venue.note ? String(venue.note) : current?.lockedNote,
+  };
+}
+
+function placeProspect(venues, event) {
+  const venue = event.venue || {};
+  if (!venue.name && !venue.email) return { venues, action: "skip", reason: "no name" };
+  const twin = contactedTwin(venues, venue);
+  if (twin) return { venues, action: "skip", reason: "contacted", matched: twin.id };
+  const idx = prospectIndex(venues, venue);
+  const next = prospectRecord(event, idx >= 0 ? venues[idx] : null);
+  const copy = venues.slice();
+  if (idx >= 0) copy[idx] = next;
+  else copy.unshift(next);
+  return { venues: copy, action: idx >= 0 ? "update" : "insert" };
+}
+
 function applyEvent(venues, event) {
+  if (String(event?.event || "") === "prospect") return placeProspect(venues, event);
   if (!event || (!event.venue && !event.messages?.length)) return { venues, action: "skip" };
   const incoming = (event.messages || []).map(asMessage).filter(Boolean);
   const idx = findIndex(venues, event);
@@ -200,7 +305,12 @@ function applyEvent(venues, event) {
     lockedNote: patch.lockedNote ? String(patch.lockedNote) : current.lockedNote,
     messages: merged,
     hasThread: merged.some((m) => m.side === "them"),
+    prospect: merged.some((m) => m.side === "us") ? false : current.prospect,
+    prospectStatus: merged.some((m) => m.side === "us") ? undefined : current.prospectStatus,
   };
+  if (merged.some((m) => m.side === "us") && (current.prospect || current.badge === "prospect")) {
+    next.badge = next.badge === "prospect" ? (merged.some((m) => m.side === "them") ? "replied-interested" : "awaiting") : next.badge;
+  }
   const copy = venues.slice();
   copy[idx] = next;
   return { venues: copy, action: "update" };
@@ -214,13 +324,15 @@ function eventsFrom(payload) {
 
 async function applyPayload(venues, payload) {
   let applied = 0;
+  const skipped = [];
   let next = venues;
   for (const event of eventsFrom(payload)) {
     const result = applyEvent(next, event || {});
     next = result.venues;
     if (result.action !== "skip") applied += 1;
+    else if (result.reason) skipped.push({ reason: result.reason, matched: result.matched || "", name: event?.venue?.name || "" });
   }
-  return { venues: next, applied };
+  return { venues: next, applied, skipped };
 }
 
 const GIGS_FILE = path.join(ROOT, "gigs.json");
@@ -287,7 +399,7 @@ async function drainInbox() {
       await upsertBoardDates(eventsFrom(payload));
     }
     await rename(from, path.join(PROCESSED, `${Date.now()}-${name}`));
-    results.push({ file: name, ok: true, applied: result.applied });
+    results.push({ file: name, ok: true, applied: result.applied, skipped: result.skipped || [] });
   }
   if (dirty) await writeData(VENUE_FILE, `${JSON.stringify(venues, null, 2)}\n`);
   return { results, venues: venues.length, dirty };

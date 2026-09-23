@@ -109,3 +109,33 @@ Leave `tab` out. The board decides Call, Wait, Silent, Booked, or No from the th
 - Empty fields are ignored. A blank phone does not wipe the number already on file.
 - One venue per file if you are dropping inbox JSON. A file may also be `{ "events": [ ... ] }`.
 - Do not invent a fee. If it is not in the thread, leave `lockedFee` and `quotedFee` out.
+
+## Potential booker — not mailed
+
+`event: "prospect"`. These are houses that book live acts and have **not** been emailed. They land on the **Pot** tab and on the potential map. They never land on Silent, Call, Wait, or No.
+
+If the email, or the venue name, already matches someone on the contacted book, the row is **skipped**. It stays Contacted. No twin. Romford RBL, Stansted Mountfitchet Social, and Montrose Park are already contacted — a prospect push for them does nothing.
+
+`prospectStatus`: `NEW_EMAIL`, `NEED_PUBLIC`, or `AGENCY_LATER`. `FAR` and `N` are read as `AGENCY_LATER`.
+
+```json
+{
+  "event": "prospect",
+  "venue": {
+    "name": "Example Social Club",
+    "town": "Basildon",
+    "region": "South",
+    "venueType": "Social club",
+    "email": "secretary@example-social.test",
+    "phone": "01268555000",
+    "postcode": "SS14 1AB",
+    "lat": 51.572,
+    "lng": 0.47,
+    "prospectStatus": "NEW_EMAIL",
+    "note": "Books live acts. Not mailed."
+  }
+}
+```
+
+No `messages`. No `tab`. A later real pitch uses `new_lead` or `reply` with the same email — that takes them off Potential and onto the normal desks.
+
