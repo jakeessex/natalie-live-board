@@ -1040,10 +1040,19 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
   function sortNoDesk(rows) {
     return rows.filter((r) => r.desk === "no").sort((a, b) => a.venue.name.localeCompare(b.venue.name));
   }
+  function potMiles(row) {
+    var n = Number(row.venue && row.venue.miles);
+    return Number.isFinite(n) ? n : 9999;
+  }
+  function potHasEmail(row) {
+    return !!(row.venue && row.venue.email && String(row.venue.email).indexOf("@") !== -1);
+  }
   function sortPotentialDesk(rows) {
     return rows.filter((r) => r.desk === "potential").sort((a, b) => {
-      var d = (POT_ORDER[prospectStatusOf(a.venue)] || 0) - (POT_ORDER[prospectStatusOf(b.venue)] || 0);
+      var d = (potHasEmail(a) ? 0 : 1) - (potHasEmail(b) ? 0 : 1);
       if (d) return d;
+      var m = potMiles(a) - potMiles(b);
+      if (m) return m;
       return a.venue.name.localeCompare(b.venue.name);
     });
   }
@@ -1100,7 +1109,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     }
     if (filter === "wait") return "wait";
     if (filter === "booked") return "booked";
-    if (filter === "potential") return prospectStatusOf(row.venue);
+    if (filter === "potential") return potHasEmail(row) ? "email" : "phone";
     return row.desk;
   }
   function deskGroupLabel(key, filter, searching = false) {
@@ -1135,9 +1144,8 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     if (filter === "wait") return "Waiting on them";
     if (filter === "booked") return "Locked in";
     if (filter === "potential") {
-      if (key === "NEW_EMAIL") return "New email \u2014 not mailed";
-      if (key === "NEED_PUBLIC") return "Need a public number";
-      if (key === "AGENCY_LATER") return "Agency later";
+      if (key === "email") return "With an email";
+      if (key === "phone") return "Phone only";
       return "Potential";
     }
     return key;
@@ -1149,7 +1157,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     if (filter === "wait") return "Ball is in their court. Don\u2019t chase until the why-line says they\u2019re due.";
     if (filter === "silent") return "Never wrote back. Follow-up due is the work. Followed up and too-soon sit below.";
     if (filter === "booked") return "Locked. Don\u2019t contact unless they call you.";
-    if (filter === "potential") return "Not mailed. Not Silent. Already on the book means they are not here.";
+    if (filter === "potential") return "Closest first. With an email, then phone only. Already on the book means they are not here.";
     return "Said no, on file, bounce, or not in play. Leave them.";
   }
   function lockedCash(venues) {
@@ -2730,7 +2738,7 @@ var NatNotes = (function(exports) {
     list.forEach(function (r) {
       var k = groupKey(r, filter);
       if (!prev || groupKey(prev, filter) !== k) {
-        var gcls = k === "due" ? " group-due" : (k === "call" || k === "booked" ? " group-call" : (k === "fresh" ? " group-latest" : ""));
+        var gcls = k === "due" ? " group-due" : (k === "call" || k === "booked" || k === "email" ? " group-call" : (k === "fresh" ? " group-latest" : ""));
         html += '<p class="group' + gcls + '">' + groupLabelFor(r, filter) + " · " + counts[k] + "</p>";
       }
       html += rowHtml(r);
@@ -2917,7 +2925,10 @@ var NatNotes = (function(exports) {
       ? B.sortDeskAll(pool.filter(function (r) { return B.matchesQuery(r.venue, q); }))
       : (filter === "home" ? [] : filter === "all" ? B.sortAll(rowsAll) : B.rowsForFilter(rowsAll, filter));
     if (filter === "potential" && !searching() && potStatus !== "all") {
-      list = list.filter(function (r) { return prospectStatusOf(r.venue) === potStatus; });
+      list = list.filter(function (r) {
+        var has = !!(r.venue.email && String(r.venue.email).indexOf("@") !== -1);
+        return potStatus === "email" ? has : !has;
+      });
     }
     var label = searching() ? "Search" : ((tabs.find(function (t) { return t.id === filter; }) || { label: "Home" }).label);
     var home = filter === "home" && !searching();
@@ -2925,13 +2936,17 @@ var NatNotes = (function(exports) {
     var potHead = "";
     if (filter === "potential" && !searching()) {
       var fullPot = B.rowsForFilter(rowsAll, "potential");
-      var pc = { NEW_EMAIL: 0, NEED_PUBLIC: 0, AGENCY_LATER: 0 };
-      fullPot.forEach(function (r) { pc[prospectStatusOf(r.venue)] += 1; });
+      var emailN = 0;
+      var phoneN = 0;
+      fullPot.forEach(function (r) {
+        if (r.venue.email && String(r.venue.email).indexOf("@") !== -1) emailN++;
+        else phoneN++;
+      });
       function potBtn(id, text, n) {
         return '<button type="button" class="mchip' + (potStatus === id ? " on" : "") + '" onclick="natPot(\'' + id + "')\">" + text + " · " + n + "</button>";
       }
       potHead = '<div class="pot-wrap"><div id="pot-map"></div><p class="dates-map-msg" id="pot-map-msg">Loading the map…</p></div><div class="pot-chips">' +
-        potBtn("all", "All", fullPot.length) + potBtn("NEW_EMAIL", "New email", pc.NEW_EMAIL) + potBtn("NEED_PUBLIC", "Need public", pc.NEED_PUBLIC) + potBtn("AGENCY_LATER", "Agency later", pc.AGENCY_LATER) +
+        potBtn("all", "All", fullPot.length) + potBtn("email", "With email", emailN) + potBtn("phone", "Phone only", phoneN) +
         "</div>";
     }
     var cards = home ? dashHtml(pulse) : (potHead + banner + listHtml(list));
