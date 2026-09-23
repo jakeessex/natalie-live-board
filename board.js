@@ -1060,7 +1060,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     return out;
   }
   function sortAll(rows) {
-    return sortDeskAll(rows);
+    return sortDeskAll(rows.filter((r) => r.desk !== "potential"));
   }
   function rowsForFilter(rows, filter) {
     return sortDesk(rows, filter);
@@ -1142,7 +1142,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
   }
   function deskBanner(filter) {
     if (filter === "home") return "Tonight\u2019s desk. Figures open the list. Don\u2019t ring Booked or No.";
-    if (filter === "all") return "The whole book, grouped by desk.";
+    if (filter === "all") return "Every house we've emailed. Pot is not in here.";
     if (filter === "call") return "Ring these. Waiting and silent live on their own tabs.";
     if (filter === "wait") return "Ball is in their court. Don\u2019t chase until the why-line says they\u2019re due.";
     if (filter === "silent") return "Never wrote back. Follow-up due is the work. Followed up and too-soon sit below.";
@@ -2685,10 +2685,10 @@ var NatNotes = (function(exports) {
       var call = B.telHref(v.phone);
       var web = B.webHref(v, row.website);
       var maps = B.mapsHref(v);
-      var acts = '<span class="pot-acts">';
+      var acts = '<div class="pot-acts">';
       if (call) acts += '<a class="btn call" href="' + call + '">Call</a>';
-      acts += '<a class="btn" href="' + maps + '" target="_blank" rel="noopener">Map</a>';
-      acts += '<a class="btn" href="' + esc(web) + '" target="_blank" rel="noopener">Web</a></span>';
+      acts += '<a class="btn" href="' + esc(maps) + '" target="_blank" rel="noopener">Map</a>';
+      acts += '<a class="btn" href="' + esc(web) + '" target="_blank" rel="noopener">Web</a></div>';
       return '<div class="job pot desk-potential">' +
         '<button type="button" class="job-open" onclick="natOpen(\'' + esc(v.id) + "')\">" +
         '<span class="job-main"><span class="job-name">' + esc(v.name) + '</span><span class="job-meta">' + esc(bits.join(" · ") || "Tap to open") + "</span></span>" +
@@ -2834,7 +2834,6 @@ var NatNotes = (function(exports) {
           var st = prospectStatusOf(p.row.venue);
           var icon = L.divIcon({ className: "pin pot " + st, html: "<b></b>", iconSize: [18, 18], iconAnchor: [9, 9] });
           var mk = L.marker(p.ll, { icon: icon, keyboard: false });
-          mk.bindTooltip(esc(p.row.venue.name) + "<br>" + esc(prospectChip(p.row.venue)), { direction: "top", opacity: 1, className: "dates-tip" });
           mk.on("click", function () { window.natOpen(p.row.venue.id); });
           mk.addTo(map);
         });
@@ -2870,20 +2869,22 @@ var NatNotes = (function(exports) {
 
   function renderList() {
     var rowsAll = ranked();
+    var emailed = rowsAll.filter(function (r) { return r.desk !== "potential"; });
     var counts = B.filterCounts(rowsAll);
     var stats = B.lockedCash(VENUES);
     var alarm = B.chaseAlarm(rowsAll);
-    var pep = B.pepLine(rowsAll);
-    var pulse = B.deskPulse(rowsAll, VENUES);
+    var pep = B.pepLine(emailed);
+    var pulse = B.deskPulse(emailed, VENUES);
     var tabs = B.NAV_FILTERS || [{ id: "home", label: "Home" }].concat(B.BOARD_FILTERS);
     var tabHtml = tabs.map(function (t) {
       var on = (filter === t.id && !searching()) ? " on desk-" + t.id : " desk-" + t.id;
       var warn = t.id === "call" && alarm ? " warn" : "";
-      var n = t.id === "home" ? counts.call : t.id === "all" ? rowsAll.length : counts[t.id];
+      var n = t.id === "home" ? counts.call : t.id === "all" ? emailed.length : counts[t.id];
       return '<button type="button" class="' + on + warn + '" onclick="natFilter(\'' + t.id + "')\"><b>" + n + "</b><span>" + t.label + "</span></button>";
     }).join("");
+    var pool = filter === "potential" ? rowsAll : emailed;
     var list = searching()
-      ? B.sortDeskAll(rowsAll.filter(function (r) { return B.matchesQuery(r.venue, q); }))
+      ? B.sortDeskAll(pool.filter(function (r) { return B.matchesQuery(r.venue, q); }))
       : (filter === "home" ? [] : filter === "all" ? B.sortAll(rowsAll) : B.rowsForFilter(rowsAll, filter));
     if (filter === "potential" && !searching() && potStatus !== "all") {
       list = list.filter(function (r) { return prospectStatusOf(r.venue) === potStatus; });
@@ -2911,18 +2912,22 @@ var NatNotes = (function(exports) {
     $("count").textContent = home ? "" : (list.length + " job" + (list.length === 1 ? "" : "s") + " · " + label + (filter === "call" && alarm ? " · quiet alarm" : ""));
     $("count").style.display = home ? "none" : "";
     $("list").innerHTML = cards;
-    if (filter === "potential" && !searching()) paintPot(list);
+    if (filter === "potential" && !searching()) setTimeout(function () { if (filter === "potential") paintPot(list); }, 30);
     else destroyPotMap();
     var mail = $("mailcount");
     if (mail) {
       var emails = 0;
+      var book = 0;
       for (var i = 0; i < VENUES.length; i++) {
-        var msgs = VENUES[i].messages || [];
+        var venue = VENUES[i];
+        var pot = venue.prospect || String(venue.badge || "").toLowerCase() === "prospect";
+        if (!pot) book++;
+        var msgs = venue.messages || [];
         for (var j = 0; j < msgs.length; j++) {
           if (msgs[j] && (msgs[j].side === "us" || msgs[j].side === "them")) emails++;
         }
       }
-      mail.innerHTML = '<b>' + emails.toLocaleString("en-GB") + '</b> emails<span>' + VENUES.length + ' venues · tap for all</span>';
+      mail.innerHTML = '<b>' + emails.toLocaleString("en-GB") + '</b> emails<span>' + book + ' venues · tap for all</span>';
     }
     [["cash-amt", "cash-meta"], ["cash-amt-app", "cash-meta-app"]].forEach(function (ids) {
       if ($(ids[0])) $(ids[0]).textContent = B.gbp(stats.cash);
