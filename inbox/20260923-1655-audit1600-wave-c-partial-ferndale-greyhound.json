@@ -1,0 +1,84 @@
+{
+  "events": [
+    {
+      "event": "new_lead",
+      "venue": {
+        "id": "pot-horn-and-horseshoes-the-cm17-9hx",
+        "name": "Horn and Horseshoes, The",
+        "town": "Foster Street",
+        "email": "mail@hornsandhorseshoes.co.uk",
+        "phone": "01279 422667",
+        "postcode": "CM17 9HX"
+      },
+      "messages": [
+        {
+          "side": "us",
+          "at": "2026-09-23T15:51:23Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "subject": "Jake Essex for The Horn and Horseshoes?",
+          "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Horn and Horseshoes — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+        }
+      ]
+    },
+    {
+      "event": "new_lead",
+      "venue": {
+        "id": "pot-beehive-the-n9-9jz",
+        "name": "Beehive, The",
+        "town": "Lower Edmonton",
+        "email": "info@thebeehivebhp.co.uk",
+        "phone": "020 8360 4358",
+        "postcode": "N9 9JZ"
+      },
+      "messages": [
+        {
+          "side": "us",
+          "at": "2026-09-23T15:52:17Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "subject": "Jake Essex for The Beehive?",
+          "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Beehive — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+        }
+      ]
+    },
+    {
+      "event": "reply",
+      "venue": {
+        "id": "ferndale-baptist-church",
+        "email": "ferndalebaptist.info@gmail.com"
+      },
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-23T13:43:44Z",
+          "from": "ferndalebaptist.info@gmail.com",
+          "subject": "Re: Jake Essex for Ferndale Baptist Church?",
+          "body": "Hi Natalie\n\nApologies for the late reply.\nThank you for your email. We will keep this information in mind for the future events.\n\nMany thanks.\n\nKind Regards\nJennifer"
+        }
+      ]
+    },
+    {
+      "event": "reply",
+      "venue": {
+        "id": "the-greyhound-hotel",
+        "email": "greyhound@youngs.co.uk",
+        "phone": "+442086471511"
+      },
+      "messages": [
+        {
+          "side": "us",
+          "at": "2026-09-21T09:21:42Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Jake Essex for The Greyhound Hotel?",
+          "body": "Hi Annemarie,\n\nJust gently checking in on Jake for The Greyhound — still happy to pencil a Saturday or Sunday when you've got something free.\n\nHappy to work around your diary.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
+        },
+        {
+          "side": "them",
+          "at": "2026-09-23T09:19:05Z",
+          "from": "greyhound@youngs.co.uk",
+          "subject": "RE: Jake Essex for The Greyhound Hotel?",
+          "body": "Dear Jake\n\nThanks for the information, we will be in touch,\n\nKind regards,\n\nAnnemarie Mc Carthy\nGeneral Manager"
+        }
+      ]
+    }
+  ]
+}

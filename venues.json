@@ -15708,11 +15708,25 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Jake Essex for The Greyhound Hotel?",
         "body": "Hi Annemarie,\n\nThanks for getting back — here's a clear price list for Jake at The\nGreyhound.\n\nSaturdays or Sundays: £285 cash for 2 × 1 hour sets, or £385 for 3 × 45.\nOwn PA, no deposit.\n\nIf you book a few nights we can do £250 or £350.\n\nIf a Saturday or Sunday looks useful, reply here and I'll check the diary.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "us",
+        "at": "2026-09-21T09:21:42Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for The Greyhound Hotel?",
+        "body": "Hi Annemarie,\n\nJust gently checking in on Jake for The Greyhound — still happy to pencil a Saturday or Sunday when you've got something free.\n\nHappy to work around your diary.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "them",
+        "at": "2026-09-23T09:19:05Z",
+        "from": "greyhound@youngs.co.uk",
+        "subject": "RE: Jake Essex for The Greyhound Hotel?",
+        "body": "Dear Jake\n\nThanks for the information, we will be in touch,\n\nKind regards,\n\nAnnemarie Mc Carthy\nGeneral Manager"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Annemarie GM · Us price list SENT_OK 1a09ed40bafa096e · FAR Sat/Sun £285 2×1hr / £385 3×45 · deal £250/£350 · await date"
+    "statusNote": "quoted · Annemarie GM · Us price list + chase · Them Wed 23 ~10:19 London 1a0cd8fe4072ee45 will be in touch · soft park · Haggle owns close · do not re-cold"
   },
   {
     "id": "duke-s-head-196ec4",
@@ -21224,11 +21238,18 @@
         "label": "Sent",
         "at": "2026-09-18T16:17:43Z",
         "from": "jakeessexenquiries@gmail.com"
+      },
+      {
+        "side": "them",
+        "at": "2026-09-23T13:43:44Z",
+        "from": "ferndalebaptist.info@gmail.com",
+        "subject": "Re: Jake Essex for Ferndale Baptist Church?",
+        "body": "Hi Natalie\n\nApologies for the late reply.\nThank you for your email. We will keep this information in mind for the future events.\n\nMany thanks.\n\nKind Regards\nJennifer"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Gospel trial Us Sent 2026-09-18 · awaiting · ferndalebaptist.info@gmail.com"
+    "statusNote": "Jennifer Them soft park Wed 23 Sep ~14:43 London · 1a0ce82362cf2ca8 · keep in mind for future · do not chase / do not re-cold · reply hunter owns any thank-you"
   },
   {
     "id": "chelmsford-cathedral",
@@ -21544,7 +21565,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "DSN Delay soft-watch Tue 22 Sep ~11:35 London · mailer-daemon 1a0c8af20e158204 thread 1a0c34677a0e919f · temp delivery problem to secretary@northenfieldconservativeclub.co.uk · Gmail retrying (not permanent Failure) · remain awaiting · do not bounce / do not re-cold until Failure"
+    "statusNote": "DSN Delay soft-watch · Tue 22 ~11:35 London 1a0c8af20e158204 + Wed 23 ~10:42 London 1a0cda50d0b8eedc thread 1a0c34677a0e919f · Gmail still retrying until ~Thu 24 ~10:23 London · not Failure · no re-cold"
   },
   {
     "id": "cricklewood-trades-hall-club",
@@ -22142,7 +22163,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "replyLane": "email"
   },
   {
     "id": "ciu-wessex-branch",
@@ -25804,10 +25826,18 @@
     "website": "http://www.thebeehivebhp.co.uk",
     "venueType": "Pub / Restaurant",
     "miles": 17,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "prospectStatus": null,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-09-23T15:52:17Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Beehive?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Beehive — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.63335,
     "lng": -0.07876
@@ -25883,10 +25913,18 @@
     "website": "https://www.hornsandhorseshoes.co.uk/",
     "venueType": "Pub",
     "miles": 17,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "prospectStatus": null,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-09-23T15:51:23Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Horn and Horseshoes?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Horn and Horseshoes — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.75908,
     "lng": 0.15357
