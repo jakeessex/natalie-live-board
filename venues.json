@@ -26498,10 +26498,18 @@
     "website": "https://www.thegoodmixer.co.uk",
     "venueType": "Pub",
     "miles": 18,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "prospectStatus": null,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-09-23T15:57:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Good Mixer?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Good Mixer — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.5396,
     "lng": -0.14417
@@ -26660,10 +26668,18 @@
     "website": "http://thewaterratsvenue.london/",
     "venueType": "Music Venue",
     "miles": 18,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "prospectStatus": null,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-09-23T15:53:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Water Rats?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Water Rats — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.5292,
     "lng": -0.11916
@@ -26732,10 +26748,18 @@
     "website": "",
     "venueType": "CIU club",
     "miles": 18,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "prospectStatus": null,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-09-23T15:55:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for South Norwood & Woodside Club?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for South Norwood & Woodside Club — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.39321,
     "lng": -0.06923
@@ -26768,10 +26792,18 @@
     "website": "https://www.facebook.com/RailwayHotelSouthend",
     "venueType": "Pub & Food Bar",
     "miles": 19,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "prospectStatus": null,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-09-23T15:54:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Railway Hotel?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Railway Hotel — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.53676,
     "lng": 0.71099
@@ -26786,10 +26818,18 @@
     "website": "https://www.thecamdenclub.co.uk/",
     "venueType": "Live Music Venue",
     "miles": 19,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "prospectStatus": null,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-09-23T15:58:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Camden Club?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Camden Club — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.54334,
     "lng": -0.14999
@@ -26876,10 +26916,18 @@
     "website": "https://www.theterracebarsouthend.co.uk/",
     "venueType": "Restaurant / Music Bar",
     "miles": 19,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "prospectStatus": null,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-09-23T15:56:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Terrace?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Terrace — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.53484,
     "lng": 0.7139
