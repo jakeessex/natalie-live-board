@@ -132,6 +132,10 @@ main{padding:14px 14px 140px}
 .group-call{color:var(--call)}
 .joblist .group:first-child{border-top:0}
 .job{width:100%;display:flex;align-items:center;gap:10px;text-align:left;min-height:56px;padding:10px 14px;border:0;border-top:1px solid var(--line);background:transparent;color:var(--fg)}
+.job.pot{flex-wrap:wrap;align-items:flex-start;padding-bottom:12px}
+.job-open{flex:1;min-width:0;display:flex;align-items:center;gap:10px;background:none;border:0;color:inherit;text-align:left;padding:0}
+.pot-acts{display:flex;gap:8px;flex-basis:100%;margin-top:8px}
+.pot-acts .btn{flex:1;height:42px;display:flex;align-items:center;justify-content:center;text-decoration:none;border-radius:12px;font-weight:800}
 .job-main{flex:1;min-width:0}
 .job-name{display:block;font-size:16px;font-weight:650;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .job-meta{display:block;margin-top:2px;font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

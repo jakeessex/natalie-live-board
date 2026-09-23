@@ -1276,7 +1276,10 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     return phone || "";
   }
   function mapsHref(venue) {
-    const q = [venue.name, venue.town].filter(Boolean).join(" ");
+    if (typeof venue.lat === "number" && typeof venue.lng === "number") {
+      return "https://www.google.com/maps/search/?api=1&query=" + venue.lat + "," + venue.lng;
+    }
+    const q = [venue.name, venue.postcode, venue.town].filter(Boolean).join(", ");
     return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
   }
   function mailtoHref(venue) {
@@ -2676,9 +2679,21 @@ var NatNotes = (function(exports) {
     var bits = [];
     if (v.town) bits.push(v.town);
     if (row.desk === "potential") {
-      if (v.region) bits.push(v.region);
+      if (v.miles != null) bits.push(v.miles + " mi");
+      if (v.postcode) bits.push(v.postcode);
       if (v.venueType) bits.push(v.venueType);
-      if (!v.email) bits.push("no email");
+      var call = B.telHref(v.phone);
+      var web = B.webHref(v, row.website);
+      var maps = B.mapsHref(v);
+      var acts = '<span class="pot-acts">';
+      if (call) acts += '<a class="btn call" href="' + call + '">Call</a>';
+      acts += '<a class="btn" href="' + maps + '" target="_blank" rel="noopener">Map</a>';
+      acts += '<a class="btn" href="' + esc(web) + '" target="_blank" rel="noopener">Web</a></span>';
+      return '<div class="job pot desk-potential">' +
+        '<button type="button" class="job-open" onclick="natOpen(\'' + esc(v.id) + "')\">" +
+        '<span class="job-main"><span class="job-name">' + esc(v.name) + '</span><span class="job-meta">' + esc(bits.join(" · ") || "Tap to open") + "</span></span>" +
+        '<span class="badge potential ' + prospectStatusOf(v) + '">' + prospectChip(v) + '</span><span class="chev">›</span></button>' +
+        acts + "</div>";
     } else if (row.who) bits.push(row.who);
     if (row.desk === "silent" && row.daysSilent != null) bits.push(row.daysSilent + "d silent");
     else if (row.desk !== "booked" && row.desk !== "no" && row.desk !== "potential") bits.push(B.lastTouchLabel(row));
@@ -2938,8 +2953,8 @@ var NatNotes = (function(exports) {
     if (row.who) facts.push("<span>Who</span><b>" + esc(row.who) + "</b>");
     if (row.desk === "potential") {
       facts.push("<span>Status</span><b>" + esc(prospectChip(v)) + "</b>");
-      if (v.venueType) facts.push("<span>Type</span><b>" + esc(v.venueType) + "</b>");
-      if (v.region) facts.push("<span>Region</span><b>" + esc(v.region) + "</b>");
+      if (v.postcode) facts.push("<span>Where</span><b>" + esc(v.postcode) + (v.miles != null ? " · " + esc(String(v.miles)) + " mi" : "") + "</b>");
+      if (v.website) facts.push("<span>Web</span><b>" + esc(v.website.replace(/^https?:\/\//, "").replace(/\/$/, "")) + "</b>");
     }
     if (row.fee) facts.push("<span>" + (row.desk === "booked" ? "Locked" : "Fee") + "</span><b>" + B.gbp(row.fee) + "</b>");
     if (v.phone) facts.push("<span>Phone</span><b>" + esc(v.phone) + "</b>");
