@@ -72,6 +72,8 @@ var Board = (() => {
     pepLine: () => pepLine,
     prettyPhone: () => prettyPhone,
     primaryEmail: () => primaryEmail,
+    prospectChip: () => prospectChip,
+    prospectStatusOf: () => prospectStatusOf,
     rankAll: () => rankAll,
     rankVenue: () => rankVenue,
     realInbound: () => realInbound,
@@ -1584,6 +1586,8 @@ var NatNotes = (function(exports) {
 /* Natalie Live Board v42 — vanilla UI. Pipeline is window.Board from the bundled module. */
 (function () {
   var B = window.Board;
+  function prospectStatusOf(venue) { return B.prospectStatusOf(venue); }
+  function prospectChip(venue) { return B.prospectChip(venue); }
   var PASS = B.PASSWORD;
   var filter = "home";
   var q = "";
