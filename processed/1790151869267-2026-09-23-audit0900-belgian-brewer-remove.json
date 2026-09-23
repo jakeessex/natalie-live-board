@@ -1,0 +1,18 @@
+{
+  "event": "reply",
+  "venue": {
+    "id": "belgian-brewer-epping",
+    "email": "hello@thebelgianbrewer.co.uk",
+    "badge": "closed"
+  },
+  "messages": [
+    {
+      "side": "them",
+      "label": "Their reply",
+      "at": "2026-09-22T18:27:42Z",
+      "from": "hello@thebelgianbrewer.co.uk",
+      "subject": "Re: Jake Essex for Belgian Brewer?",
+      "body": "Remove\nSent from my iPhone"
+    }
+  ]
+}
