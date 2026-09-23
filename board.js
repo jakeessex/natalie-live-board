@@ -2828,29 +2828,55 @@ var NatNotes = (function(exports) {
       loadLeaflet().then(function (L) {
         if (filter !== "potential" || !$("pot-map")) return;
         destroyPotMap();
-        var map = L.map($("pot-map"), { scrollWheelZoom: false, attributionControl: true, zoomControl: true });
+        var home = [51.521, 0.283];
+        function milesBetween(a, b) {
+          var r = 3958.8;
+          var dLat = (b[0] - a[0]) * Math.PI / 180;
+          var dLng = (b[1] - a[1]) * Math.PI / 180;
+          var la1 = a[0] * Math.PI / 180, la2 = b[0] * Math.PI / 180;
+          var h = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(la1) * Math.cos(la2) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+          return 2 * r * Math.asin(Math.min(1, Math.sqrt(h)));
+        }
+        var near = pins.filter(function (p) { return milesBetween(home, p.ll) <= 115; });
+        if (!near.length) near = pins;
+        var map = L.map($("pot-map"), { scrollWheelZoom: false, attributionControl: true, zoomControl: true, preferCanvas: true });
         L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
           attribution: "&copy; OSM &copy; CARTO",
           subdomains: "abcd",
           maxZoom: 18
         }).addTo(map);
-        pins.forEach(function (p) {
+        near.forEach(function (p) {
           var st = prospectStatusOf(p.row.venue);
-          var icon = L.divIcon({ className: "pin pot " + st, html: "<b></b>", iconSize: [18, 18], iconAnchor: [9, 9] });
-          var mk = L.marker(p.ll, { icon: icon, keyboard: false });
+          var mk = L.circleMarker(p.ll, {
+            radius: 6,
+            weight: 1,
+            color: "#14110e",
+            fillColor: st === "NEW_EMAIL" ? "#b6f2c4" : "#ffd76a",
+            fillOpacity: 0.95
+          });
+          mk.bindTooltip(p.row.venue.name + (p.row.venue.town ? " · " + p.row.venue.town : ""), { direction: "top", opacity: 1 });
           mk.on("click", function () { window.natOpen(p.row.venue.id); });
           mk.addTo(map);
         });
-        var bounds = L.latLngBounds(pins.map(function (p) { return p.ll; }));
+        L.circleMarker(home, { radius: 7, weight: 2, color: "#fff", fillColor: "#e8b84a", fillOpacity: 1 })
+          .bindTooltip("South Ockendon", { direction: "top", opacity: 1 })
+          .addTo(map);
+        var bounds = L.latLngBounds(near.map(function (p) { return p.ll; }).concat([home]));
         var frame = function () {
           map.invalidateSize();
-          if (pins.length === 1) map.setView(pins[0].ll, 11);
-          else map.fitBounds(bounds, { padding: [28, 28], maxZoom: 9 });
+          if (near.length === 1) map.setView(near[0].ll, 11);
+          else map.fitBounds(bounds, { padding: [24, 24], maxZoom: 11 });
         };
         requestAnimationFrame(frame);
-        setTimeout(frame, 160);
+        setTimeout(frame, 180);
         potMap = map;
-        if (msg) { msg.textContent = ""; msg.style.display = "none"; }
+        if (msg) {
+          msg.textContent = near.length + " on the map";
+          msg.style.display = "";
+          msg.style.alignItems = "flex-end";
+          msg.style.justifyContent = "flex-start";
+          msg.style.padding = "8px";
+        }
       }).catch(function () {
         if (msg) msg.textContent = "Map needs a signal — the list still works.";
       });
