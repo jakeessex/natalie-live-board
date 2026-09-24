@@ -1,0 +1,26 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "peckham-liberal-club",
+        "name": "Peckham Liberal Club",
+        "email": "peckhamliberalclub@gmail.com",
+        "contactName": "Janice Brittain (events)",
+        "phone": "020 7639 1093"
+      },
+      "badge": "replied-soft / park (not-now)",
+      "statusNote": "Them soft redirect Janice Brittain events path Wed 23 ~16:52 London · 1a0cef8405949ee1",
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-23T15:52:50Z",
+          "from": "peckhamliberalclub@gmail.com",
+          "subject": "Thanks for emailing the Peckham Liberal Club Re: Jake Essex for Peckham Liberal Club?",
+          "msgId": "1a0cef8405949ee1",
+          "body": "Hi there,\n\nThanks for getting in touch\n\nIf you are interested in being a member of the club the best thing to do is head down to us at 24 Elm Grove, Peckham, and buzz the door. Ask to come and have a look at the club, and say you are interested in becoming a member. Charles Coote is the president and he will give you an application form. Membership costs £20 a year and you need the signatures of two existing members.\n\nIf you are enquiring about booking the club for an event then please contact our events manager Janice Brittain in the first instance - you can reach her at the club on 020 7639 1093 or 07527 912 119 (not on Tuesdays). this is the best way to book or check availability\n\nMore information on our venue is available here: http://www.peckhamliberalclub.org/venue-hire\n\nWeb and Social Media manager\nPeckham Liberal Club\n24 Elm Grove, SE15 5DE"
+        }
+      ]
+    }
+  ]
+}

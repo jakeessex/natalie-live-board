@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "maxines-the-trafalgar",
+        "name": "Maxines @ The Trafalgar",
+        "email": "info@thetrafalgarchelsea.com",
+        "contactName": "Kim"
+      },
+      "badge": "replied-soft / park (not-now)",
+      "statusNote": "Kim / Trafalgar Them soft redirect Thu 24 ~08:58 London · 1a0d26cf10a6b5bc · contact Maxine's directly",
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-24T07:58:56Z",
+          "from": "info@thetrafalgarchelsea.com",
+          "subject": "Re: Jake Essex for Maxines @ The Trafalgar?",
+          "msgId": "1a0d26cf10a6b5bc",
+          "body": "Hi Natalie,\n\nThank you for reaching out.\n\nI would suggest contacting Maxine's directly. While they use our gorgeous event space here at The Trafalgar, they manage all ticketing and event organisation themselves, so they'll be best placed to help you.\n\nThanks so much,\n\nKim\nThe Trafalgar Public House\n224 – 226 King's Road, London SW3 5UA\n\n020 4631 7162 | thetrafalgarchelsea.com"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "st-harmonica-s-blues-club",
+        "name": "St Harmonica's Blues Club",
+        "email": "dave.a.thomas@blueyonder.co.uk",
+        "contactName": "Dave Thomas",
+        "phone": "07710528997"
+      },
+      "badge": "replied-soft / park (not-now)",
+      "statusNote": "Dave Them soft no (blues) + Southgate forward + band/tracks Q Wed 23 ~23:55 London · 1a0d07bdbd312851",
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-23T22:55:56Z",
+          "from": "dave.a.thomas@blueyonder.co.uk",
+          "subject": "Re: Jake Essex for St Harmonica's Blues Club?",
+          "msgId": "1a0d07bdbd312851",
+          "body": "Probably not for St Harmonica's Natalie as we are blues club but I have forwarded your details to the Southgate Club for consideration. Does Jake work with a band of backing tracks?\n\nThe very best\n\nDT\n\nDave Thomas\nSt Harmonicas Blues Club\n07710528997\ndave.a.thomas@blueyonder.co.uk"
+        }
+      ]
+    }
+  ]
+}

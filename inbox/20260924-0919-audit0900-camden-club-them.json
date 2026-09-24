@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "camden-club-the",
+        "name": "Camden Club, The",
+        "email": "bookings@thecamdenclub.co.uk",
+        "contactName": "Andrew Hart"
+      },
+      "badge": "replied-soft / park (not-now)",
+      "statusNote": "Andrew Hart Them venue-hire soft misdirect Wed 23 ~17:49 London · 1a0cf2c08df7cc77",
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-23T16:49:13Z",
+          "from": "bookings@thecamdenclub.co.uk",
+          "subject": "Re: Jake Essex for The Camden Club?",
+          "msgId": "1a0cf2c08df7cc77",
+          "body": "You want to hire the event space\n\nKind Regards,\nAndrew Hart | The Camden Club"
+        }
+      ]
+    }
+  ]
+}
