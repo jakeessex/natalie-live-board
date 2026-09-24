@@ -34201,7 +34201,7 @@
   },
   {
     "id": "pot-hop-tap-the-hp1-1ep",
-    "name": "Hop Tap, The",
+    "name": "The Hop Tap",
     "town": "Hemel Hempstead",
     "phone": "07810 607586",
     "email": "tracey@thehoptap.com",
@@ -34209,13 +34209,25 @@
     "website": "https://thehoptap.com",
     "venueType": "Pub",
     "miles": 35,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "prospectStatus": null,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-09-24T14:10:00+01:00",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Hop Tap?",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Hop Tap — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.75228,
-    "lng": -0.47282
+    "lng": -0.47282,
+    "tab": "call",
+    "hasThread": true,
+    "subject": "Jake Essex for The Hop Tap?",
+    "firstPitch": "24 Sep 2026 ~14:10 Europe/London"
   },
   {
     "id": "pot-midland-hotel-the-hp2-5bh",
