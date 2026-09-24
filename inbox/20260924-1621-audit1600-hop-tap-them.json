@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "pot-hop-tap-the-hp1-1ep",
+        "name": "The Hop Tap",
+        "email": "tracey@thehoptap.com",
+        "contactName": "Tracey",
+        "town": "Hemel Hempstead",
+        "postcode": "HP1 1EP",
+        "phone": "+447810607586"
+      },
+      "badge": "replied-interested",
+      "replyLane": "email",
+      "statusNote": "Tracey Them fee-ask Thu 24 ~14:58 London `1a0d3b5c812b14ae` thread `1a0d3883b9b22781` \u00b7 8pm\u201311pm limited budget / may need 2027 \u00b7 Gate quote DRAFT ready (do NOT send from Nat Board) \u00b7 Haggle owns replyLane=email",
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-24T13:58:07Z",
+          "from": "tracey@thehoptap.com",
+          "subject": "Re: Jake Essex for The Hop Tap?",
+          "msgId": "1a0d3b5c812b14ae",
+          "body": "Good afternoon Natalie\n\nThanks for your email\n\nHow much do you charge as we have a very limited budget and would this be from 8pm until 11pm\n\nWe are getting booked up and may have to look at 2027\n\nKind regards\n\nTracey\nThe Hop Tap"
+        }
+      ]
+    }
+  ]
+}

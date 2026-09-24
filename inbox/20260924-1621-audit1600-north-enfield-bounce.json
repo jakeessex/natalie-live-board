@@ -1,0 +1,14 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "north-enfield-conservative-club",
+        "name": "North Enfield Conservative Club",
+        "email": "secretary@northenfieldconservativeclub.co.uk"
+      },
+      "badge": "bounce",
+      "statusNote": "DSN Failure bounce never-retry \u00b7 Thu 24 ~13:02 London `1a0d34c0563b3c8e` thread `1a0c34677a0e919f` \u00b7 Cloudflare connect timeout Status 4.4.1 \u00b7 MASTER+CONTACTED BOUNCE ~16:14 \u00b7 NEVER_AGAIN \u00b7 do not invent alt \u00b7 no re-cold \u00b7 Us cold retained \u00b7 no DSN body in Conversation"
+    }
+  ]
+}

@@ -21358,7 +21358,7 @@
     "id": "north-enfield-conservative-club",
     "name": "North Enfield Conservative Club",
     "town": "NEED_TOWN",
-    "badge": "awaiting",
+    "badge": "bounce",
     "phone": null,
     "needPhone": true,
     "email": "secretary@northenfieldconservativeclub.co.uk",
@@ -21379,8 +21379,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call",
-    "statusNote": "DSN Delay soft-watch · Tue 22 ~11:35 London 1a0c8af20e158204 + Wed 23 ~10:42 London 1a0cda50d0b8eedc thread 1a0c34677a0e919f · Gmail still retrying until ~Thu 24 ~10:23 London · not Failure · no re-cold"
+    "tab": "other",
+    "statusNote": "DSN Failure bounce never-retry · Thu 24 ~13:02 London `1a0d34c0563b3c8e` thread `1a0c34677a0e919f` · Cloudflare connect timeout Status 4.4.1 · MASTER+CONTACTED BOUNCE ~16:14 · NEVER_AGAIN · do not invent alt · no re-cold · Us cold retained · no DSN body in Conversation"
   },
   {
     "id": "cricklewood-trades-hall-club",
@@ -34203,7 +34203,7 @@
     "id": "pot-hop-tap-the-hp1-1ep",
     "name": "The Hop Tap",
     "town": "Hemel Hempstead",
-    "phone": "07810 607586",
+    "phone": "+447810607586",
     "email": "tracey@thehoptap.com",
     "postcode": "HP1 1EP",
     "website": "https://thehoptap.com",
@@ -34211,7 +34211,7 @@
     "miles": 35,
     "prospect": false,
     "prospectStatus": null,
-    "badge": "awaiting",
+    "badge": "replied-interested",
     "messages": [
       {
         "side": "us",
@@ -34219,6 +34219,14 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex for The Hop Tap?",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Hop Tap — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "them",
+        "at": "2026-09-24T13:58:07Z",
+        "from": "tracey@thehoptap.com",
+        "subject": "Re: Jake Essex for The Hop Tap?",
+        "msgId": "1a0d3b5c812b14ae",
+        "body": "Good afternoon Natalie\n\nThanks for your email\n\nHow much do you charge as we have a very limited budget and would this be from 8pm until 11pm\n\nWe are getting booked up and may have to look at 2027\n\nKind regards\n\nTracey\nThe Hop Tap"
       }
     ],
     "addedAt": "2026-09-23",
@@ -34227,7 +34235,10 @@
     "tab": "call",
     "hasThread": true,
     "subject": "Jake Essex for The Hop Tap?",
-    "firstPitch": "24 Sep 2026 ~14:10 Europe/London"
+    "firstPitch": "24 Sep 2026 ~14:10 Europe/London",
+    "replyLane": "email",
+    "contactName": "Tracey",
+    "statusNote": "Tracey Them fee-ask Thu 24 ~14:58 London `1a0d3b5c812b14ae` thread `1a0d3883b9b22781` · 8pm–11pm limited budget / may need 2027 · Gate quote DRAFT ready (do NOT send from Nat Board) · Haggle owns replyLane=email"
   },
   {
     "id": "pot-midland-hotel-the-hp2-5bh",
