@@ -1,0 +1,24 @@
+{
+  "event": "reply",
+  "note": "audit1600 hygiene: attach missing msgIds onto existing Hop Tap Us msgs only; do not re-append bodies; Action disabled_manually keep OFF",
+  "venue": {
+    "id": "pot-hop-tap-the-hp1-1ep",
+    "email": "tracey@thehoptap.com",
+    "phone": "+447810607586"
+  },
+  "threadId": "1a0d3883b9b22781",
+  "msgId_backfill": [
+    {
+      "side": "us",
+      "at": "2026-09-24T14:10:00+01:00",
+      "msgId": "1a0d38a1b4eaa3cf",
+      "body_prefix": "Hi, I'm Natalie — I look after bookings for Jake Essex."
+    },
+    {
+      "side": "us",
+      "at": "2026-09-24T17:58:54+01:00",
+      "msgId": "1a0d45b08eaa6ca3",
+      "body_prefix": "Hi Tracey, Thanks for being straight with me."
+    }
+  ]
+}
