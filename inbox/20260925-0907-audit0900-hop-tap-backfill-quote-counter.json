@@ -1,0 +1,37 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "pot-hop-tap-the-hp1-1ep",
+        "name": "The Hop Tap",
+        "email": "tracey@thehoptap.com",
+        "contactName": "Tracey",
+        "town": "Hemel Hempstead",
+        "postcode": "HP1 1EP",
+        "phone": "+447810607586"
+      },
+      "badge": "replied-interested",
+      "replyLane": "email",
+      "note": "audit0900 backfill: Us £400/£300 quote ~16:41 London + Them £200-is-what-we-pay ~16:43 London Thu 24 Sep (thread 1a0d3883b9b22781). Msgs 4->6. Not locked.",
+      "messages": [
+        {
+          "side": "us",
+          "at": "2026-09-24T15:41:01Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Jake Essex for The Hop Tap?",
+          "msgId": "1a0d413f58ad2627",
+          "body": "Hi Tracey,\n\nThanks for coming back — and for being upfront on budget.\n\nFor The Hop Tap, an 8pm–11pm show (3 x 1 hour) is £400 cash. Own PA, no deposit.\n\nIf you book four dates and lock them in, we can do £300 cash for that 3 hour show on each of those nights. If a shorter night suits the budget better, Jake is £300 cash for 2 x 1 hour, or £250 cash each night when you lock four dates.\n\nThose four-date deals tend to fill quickly as Jake is one of a kind, so if you want them locked in it is worth grabbing them soon — 2027 is already filling.\n\nHis free Saturdays and Sundays from now:\n\nOctober 2026: Sun 11, Sun 18, Sun 25\nNovember 2026: Sat 7, Sun 15, Sun 22, Sun 29\nDecember 2026: Sun 6, Sun 27\nJanuary 2027: Sat 2, Sun 3, Sat 9, Sun 17, Sun 24, Sun 31\nFebruary 2027: Sun 7, Sat 13, Sun 14, Sat 27, Sun 28\nMarch 2027: Sat 6, Sun 7, Sun 21, Sat 27, Sun 28\nApril 2027: Sat 3, Sun 4, Sat 10, Sun 11, Sun 18, Sun 25\nMay 2027: Sat 8, Sat 22, Sun 23\nJune 2027: Sat 5, Sun 6, Sun 13, Sun 20\nJuly 2027: Sun 11, Sat 24, Sun 25, Sat 31\nAugust 2027: Sun 1, Sun 8, Sun 22, Sun 29\nSeptember 2027: Sun 5, Sat 11, Sun 12, Sun 19, Sat 25, Sun 26\nOctober 2027: Sun 3, Sun 10, Sat 16, Sun 17, Sun 24, Sun 31\nNovember 2027: Sat 6, Sun 7, Sat 20, Sun 28\nDecember 2027: Sun 5, Sat 11, Sun 12, Sat 18, Sun 19, Sun 26\n\nHappy to check anything else you've got in mind.\n\nNatalie\njakeessex.co.uk"
+        },
+        {
+          "side": "them",
+          "at": "2026-09-24T15:42:51Z",
+          "from": "tracey@thehoptap.com",
+          "subject": "Re: Jake Essex for The Hop Tap?",
+          "msgId": "1a0d415aeebb76c4",
+          "body": "Hi\nThe pricing is to high for our venue and looking at £200 which is what we pay for a set from 8pm h too 11pm with a couple of 15 mins break\n\nThanks"
+        }
+      ]
+    }
+  ]
+}
