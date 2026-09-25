@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "pot-hop-tap-the-hp1-1ep",
+        "name": "The Hop Tap",
+        "email": "tracey@thehoptap.com",
+        "contactName": "Tracey",
+        "town": "Hemel Hempstead",
+        "postcode": "HP1 1EP",
+        "phone": "+447810607586"
+      },
+      "badge": "replied-interested",
+      "replyLane": "email",
+      "statusNote": "Them ~18:03 Europe/London Thu 24 Sep: wants ONE date first; can't commit 4–5. £200×4/5 accept on file. Not locked, no cash. Haggle + Jake Gate own next reply · thread 1a0d3883b9b22781 · replyLane=email",
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-24T17:03:24Z",
+          "from": "tracey@thehoptap.com",
+          "subject": "Re: Jake Essex for The Hop Tap?",
+          "msgId": "1a0d45f921eea174",
+          "body": "Hi Natalie\n\nWe cannot add 4 or 5 dates as we normally book a date and we need to see how it goes initially with a view after\n\nThanks\n\nTracey"
+        }
+      ]
+    }
+  ]
+}
