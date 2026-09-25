@@ -1,0 +1,16 @@
+{
+  "event": "lock",
+  "venue": {
+    "id": "peacock-close-xmas-do",
+    "name": "Peacock Close Xmas do",
+    "town": "Emerson Park, Hornchurch",
+    "contactName": "Booked via Kelly and Fas",
+    "lockedFee": 200,
+    "lockedDate": "2026-12-17",
+    "lockedNights": 1,
+    "start": "13:30",
+    "finish": "15:30",
+    "dates": ["2026-12-17"],
+    "lockedNote": "OWN LOCK Thu 17 Dec 2026 · residents' Christmas do · Housing 21 warden-controlled flats, Peacock Close, Emerson Park, Hornchurch · £200 cash on the day · arrive 13:00 start 13:30 ~2hr · TV corner lounge 1 speaker · Booked via Kelly and Fas · diary ptjq12ihoeoiuv2unccp1bm7bk · Jake confirm 25 Sep 2026 · not Choice / not Magpie"
+  }
+}

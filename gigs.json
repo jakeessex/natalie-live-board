@@ -236,6 +236,16 @@
       "note": "Sunday"
     },
     {
+      "date": "2026-12-17",
+      "venue": "Peacock Close Xmas do",
+      "town": "Emerson Park, Hornchurch",
+      "postcode": "",
+      "start": "13:30",
+      "finish": "15:30",
+      "status": "booked",
+      "source": "board"
+    },
+    {
       "date": "2026-12-18",
       "venue": "The Posh Boys Brewery Bar",
       "postcode": "SS11 8BB",
@@ -288,6 +298,18 @@
       "venue": "",
       "status": "held",
       "source": "cl"
+    },
+    {
+      "date": "2027-01-10",
+      "venue": "Bishop's Stortford Social (Jade)",
+      "town": "Bishop's Stortford",
+      "postcode": "CM23 3BG",
+      "location": "104 South Street, Bishop's Stortford CM23 3BG",
+      "start": "15:15",
+      "finish": "17:45",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £250 cash · 2×1hr · Jade four-date · diary a388prumv7bqgdact6chhllmu4 · Us 1a0c408fd0596ead · NEVER Choice without Jake OK"
     },
     {
       "date": "2027-01-16",
@@ -349,6 +371,30 @@
       "source": "cl"
     },
     {
+      "date": "2027-03-14",
+      "venue": "Bishop's Stortford Social (Jade)",
+      "town": "Bishop's Stortford",
+      "postcode": "CM23 3BG",
+      "location": "104 South Street, Bishop's Stortford CM23 3BG",
+      "start": "15:15",
+      "finish": "17:45",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £250 cash · 2×1hr · Jade four-date · diary vl3lhs0u9fm59ghqo3ikeslsh8 · Us 1a0c408fd0596ead · NEVER Choice without Jake OK"
+    },
+    {
+      "date": "2027-04-17",
+      "venue": "Sidcup Social (Katie Harris)",
+      "town": "Sidcup",
+      "postcode": "DA14 6PD",
+      "location": "169 Main Road, Sidcup DA14 6PD",
+      "start": "20:30",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £300 cash · Katie Harris Messenger · 3hr · RAC Dagenham day then evening · diary ij6mkh2ehno23qqvelh5ceh6d8"
+    },
+    {
       "date": "2027-04-24",
       "venue": "",
       "status": "held",
@@ -364,6 +410,28 @@
       "status": "booked",
       "source": "board",
       "note": "£425 Geoff · Dorset FAR — nearby buffer Fri 30 Apr + Sun 2 May only (NOT UK-wide held)"
+    },
+    {
+      "date": "2027-05-15",
+      "venue": "Bromley Services Club",
+      "town": "Bromley",
+      "start": "20:45",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £200 cash · Steve · moved from 24 Apr · diary g40sp1vvu48qkl9pto95cjcl0g · 20:45–23:30 · NEVER Choice without Jake OK"
+    },
+    {
+      "date": "2027-05-16",
+      "venue": "Bishop's Stortford Social (Jade)",
+      "town": "Bishop's Stortford",
+      "postcode": "CM23 3BG",
+      "location": "104 South Street, Bishop's Stortford CM23 3BG",
+      "start": "15:15",
+      "finish": "17:45",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £250 cash · 2×1hr · Jade four-date · diary tos3ohgavajcn6gk7da0q9iojs · Us 1a0c408fd0596ead · NEVER Choice without Jake OK"
     },
     {
       "date": "2027-05-29",
@@ -420,6 +488,18 @@
       "source": "cl"
     },
     {
+      "date": "2027-08-15",
+      "venue": "Bishop's Stortford Social (Jade)",
+      "town": "Bishop's Stortford",
+      "postcode": "CM23 3BG",
+      "location": "104 South Street, Bishop's Stortford CM23 3BG",
+      "start": "15:15",
+      "finish": "17:45",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £250 cash · 2×1hr · Jade four-date · diary lf3b0pc4puf0r5v0dhth8a9gas · Us 1a0c408fd0596ead · NEVER Choice without Jake OK"
+    },
+    {
       "date": "2027-08-20",
       "venue": "Loxford Club",
       "postcode": "IG3 9AU",
@@ -464,6 +544,16 @@
       "source": "cl"
     },
     {
+      "date": "2027-10-09",
+      "venue": "Bromley Services Club",
+      "town": "Bromley",
+      "start": "20:45",
+      "finish": "23:30",
+      "status": "booked",
+      "source": "board",
+      "note": "OWN £200 cash · Steve · Oct 9 unchanged · NEVER Choice without Jake OK"
+    },
+    {
       "date": "2027-10-23",
       "venue": "Oxhey Cons / Keyser Hall",
       "town": "Oxhey / Watford",
@@ -501,86 +591,6 @@
       "town": "East Barnet",
       "status": "booked",
       "source": "board"
-    },
-    {
-      "date": "2027-04-17",
-      "venue": "Sidcup Social (Katie Harris)",
-      "town": "Sidcup",
-      "postcode": "DA14 6PD",
-      "location": "169 Main Road, Sidcup DA14 6PD",
-      "start": "20:30",
-      "finish": "23:30",
-      "status": "booked",
-      "source": "board",
-      "note": "OWN £300 cash · Katie Harris Messenger · 3hr · RAC Dagenham day then evening · diary ij6mkh2ehno23qqvelh5ceh6d8"
-    },
-    {
-      "date": "2027-01-10",
-      "venue": "Bishop's Stortford Social (Jade)",
-      "town": "Bishop's Stortford",
-      "postcode": "CM23 3BG",
-      "location": "104 South Street, Bishop's Stortford CM23 3BG",
-      "start": "15:15",
-      "finish": "17:45",
-      "status": "booked",
-      "source": "board",
-      "note": "OWN £250 cash · 2×1hr · Jade four-date · diary a388prumv7bqgdact6chhllmu4 · Us 1a0c408fd0596ead · NEVER Choice without Jake OK"
-    },
-    {
-      "date": "2027-03-14",
-      "venue": "Bishop's Stortford Social (Jade)",
-      "town": "Bishop's Stortford",
-      "postcode": "CM23 3BG",
-      "location": "104 South Street, Bishop's Stortford CM23 3BG",
-      "start": "15:15",
-      "finish": "17:45",
-      "status": "booked",
-      "source": "board",
-      "note": "OWN £250 cash · 2×1hr · Jade four-date · diary vl3lhs0u9fm59ghqo3ikeslsh8 · Us 1a0c408fd0596ead · NEVER Choice without Jake OK"
-    },
-    {
-      "date": "2027-05-16",
-      "venue": "Bishop's Stortford Social (Jade)",
-      "town": "Bishop's Stortford",
-      "postcode": "CM23 3BG",
-      "location": "104 South Street, Bishop's Stortford CM23 3BG",
-      "start": "15:15",
-      "finish": "17:45",
-      "status": "booked",
-      "source": "board",
-      "note": "OWN £250 cash · 2×1hr · Jade four-date · diary tos3ohgavajcn6gk7da0q9iojs · Us 1a0c408fd0596ead · NEVER Choice without Jake OK"
-    },
-    {
-      "date": "2027-08-15",
-      "venue": "Bishop's Stortford Social (Jade)",
-      "town": "Bishop's Stortford",
-      "postcode": "CM23 3BG",
-      "location": "104 South Street, Bishop's Stortford CM23 3BG",
-      "start": "15:15",
-      "finish": "17:45",
-      "status": "booked",
-      "source": "board",
-      "note": "OWN £250 cash · 2×1hr · Jade four-date · diary lf3b0pc4puf0r5v0dhth8a9gas · Us 1a0c408fd0596ead · NEVER Choice without Jake OK"
-    },
-    {
-      "date": "2027-05-15",
-      "venue": "Bromley Services Club",
-      "town": "Bromley",
-      "start": "20:45",
-      "finish": "23:30",
-      "status": "booked",
-      "source": "board",
-      "note": "OWN £200 cash · Steve · moved from 24 Apr · diary g40sp1vvu48qkl9pto95cjcl0g · 20:45–23:30 · NEVER Choice without Jake OK"
-    },
-    {
-      "date": "2027-10-09",
-      "venue": "Bromley Services Club",
-      "town": "Bromley",
-      "start": "20:45",
-      "finish": "23:30",
-      "status": "booked",
-      "source": "board",
-      "note": "OWN £200 cash · Steve · Oct 9 unchanged · NEVER Choice without Jake OK"
     }
   ],
   "undated": [
