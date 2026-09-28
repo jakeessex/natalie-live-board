@@ -1,0 +1,1228 @@
+{
+ "version": 1,
+ "title": "Nat call deck, Mon 28 Sep",
+ "listDate": "2026-09-28",
+ "source": "ops/handoffs/2026-09-28-WARM-CALL-LIST.md",
+ "freeNights": [
+  {
+   "month": "Oct",
+   "nights": "Sun 11, 18, 25 Oct"
+  },
+  {
+   "month": "Nov",
+   "nights": "Sat 7 Nov (only free Saturday)"
+  },
+  {
+   "month": "Nov",
+   "nights": "Sun 15, 22, 29 Nov"
+  },
+  {
+   "month": "Dec",
+   "nights": "Sun 6, 20, 27 Dec"
+  },
+  {
+   "month": "Oct",
+   "nights": "Plus The Bull: Thu 22 Oct"
+  }
+ ],
+ "rules": [
+  "Check both calendars before offering any date.",
+  "Never restate a fee already agreed.",
+  "Cash or books fee only.",
+  "Never ticket or door deals."
+ ],
+ "venues": [
+  {
+   "rank": 1,
+   "id": "the-bull",
+   "venue": "The Bull",
+   "town": "Corringham (SS17 9AT)",
+   "contact": "Holly Bennett",
+   "phones": [
+    {
+     "number": "01375 645000",
+     "label": "files",
+     "tel": "01375645000"
+    }
+   ],
+   "noPhone": "",
+   "quote": "10 Sep: £275 for 2×1h or £375 for 3×45 (£250/£350 if they book 4). Then on 14 Sep: £250 for Thu 22 Oct, 7-9pm (2×1h), with a nudge on 17 Sep.",
+   "lastWho": "Them",
+   "lastDate": "14 Sep",
+   "lastMsg": "Holly asked the price for a Thursday 7-9pm and whether Jake is free on Thu 22 Oct.",
+   "days": "10",
+   "daysNote": "Jake phoned on Fri 18 Sep and Holly was due to confirm on Mon 21 Sep. Nothing has come in since.",
+   "why": "She named the date herself, the price is in line with what she asked, and the gig is 3½ weeks away. One call gets a yes or no on 22 Oct. (Board rule: no email chase, so phone is the agreed route. Confirm 22 Oct is still clear.)",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 2,
+   "id": "corner-club",
+   "venue": "Corner Club",
+   "town": "Canvey Island",
+   "contact": "Maxine Topliss",
+   "phones": [
+    {
+     "number": "07830 763936",
+     "label": "mobile, files",
+     "tel": "07830763936"
+    }
+   ],
+   "noPhone": "",
+   "quote": "4 Sep: £250 for a 2h show or £375 for 3h, Sunday afternoon, with the Oct-Dec free Sundays listed. Chased 11 Sep.",
+   "lastWho": "Them",
+   "lastDate": "11 Sep",
+   "lastMsg": "She hadn't forgotten; she was busy and away and would get back \"next week\".",
+   "days": "17",
+   "daysNote": "",
+   "why": "She asked for a Sunday afternoon, and Sundays are what Jake has free in 2026 (a Christmas Sunday on 6, 20 or 27 Dec is an easy yes). She is now about 10 days past her own \"next week\". Local.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 3,
+   "id": "mildmay-club",
+   "venue": "Mildmay Club",
+   "town": "London N16",
+   "contact": "Iona Dudley (Club Manager)",
+   "phones": [
+    {
+     "number": "020 7254 2265",
+     "label": "files, her signature",
+     "tel": "02072542265"
+    }
+   ],
+   "noPhone": "",
+   "quote": "On 17 Sep they offered £250 for Sat 3×45, 9pm-12am, paid by bank transfer on invoice. We countered the same day: £250 cash or £275 on the books for 2×1h, and £350 cash or £375 on the books for 3 sets.",
+   "lastWho": "Them",
+   "lastDate": "17 Sep",
+   "lastMsg": "They always want new acts for Saturday nights in the Members Bar and pay £250 for 3×45 by bank transfer.",
+   "days": "0 (11 since their message)",
+   "daysNote": "",
+   "why": "They have already named a budget and a slot, so only the format and fee gap is left. A call can settle a number (for example 2×1h at £275 on invoice) and fix Sat 7 Nov or a 2027 Saturday. Give the chase 24-48h first.",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY 16:25"
+    },
+    {
+     "type": "wait",
+     "text": "WAIT: give 24 to 48h"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 4,
+   "id": "whitstable-social-club",
+   "venue": "Whitstable Social Club",
+   "town": "Whitstable (CT5 1QP)",
+   "contact": "Claire (Chair)",
+   "phones": [
+    {
+     "number": "01227 272023",
+     "label": "web",
+     "tel": "01227272023"
+    }
+   ],
+   "noPhone": "",
+   "quote": "18 Sep: £300 cash or £330 on the books for Sunday 4.30-6.30 (2×1h). We also asked for her budget.",
+   "lastWho": "Them",
+   "lastDate": "18 Sep",
+   "lastMsg": "Claire asked what Jake charges for 2 hours on a Sunday, saying they are a small members club that watches its budget.",
+   "days": "0 (10 since her message)",
+   "daysNote": "",
+   "why": "Her Sunday slot fits the free 2026 Sundays. We already asked her budget, so a call gets her number and a date.",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY 16:24"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 5,
+   "id": "old-windsor-club",
+   "venue": "Old Windsor Club",
+   "town": "Old Windsor (SL4 2QJ)",
+   "contact": "Mel",
+   "phones": [
+    {
+     "number": "01753 861068",
+     "label": "web, club site",
+     "tel": "01753861068"
+    }
+   ],
+   "noPhone": "",
+   "quote": "21 Sep: £300 cash for 2×1h or £450 cash for 3×1h (£250/£400 each if they book 4), with the full Sat/Sun free list.",
+   "lastWho": "Them",
+   "lastDate": "21 Sep",
+   "lastMsg": "Mel asked \"What is your rate please?\"",
+   "days": "0 (7 since her message)",
+   "daysNote": "",
+   "why": "Silence after a fee question usually means price hesitation. A call can offer the 4-date rate or a single Sunday and fix a date.",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY 16:22"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 6,
+   "id": "goldstone-ex-service-club",
+   "venue": "Goldstone Ex-Service Club",
+   "town": "Hove (BN3 3WJ)",
+   "contact": "No name on file",
+   "phones": [
+    {
+     "number": "01273 731572",
+     "label": "web",
+     "tel": "01273731572"
+    }
+   ],
+   "noPhone": "",
+   "quote": "17 Sep: £250 cash or £280 on the books for 2×1h, or £225 a night if they book 4. Two date lists were sent that day.",
+   "lastWho": "Them",
+   "lastDate": "17 Sep",
+   "lastMsg": "\"Ok sounds good\": they asked which Saturday evenings and Sunday afternoons are free.",
+   "days": "11",
+   "daysNote": "",
+   "why": "They accepted the fee and asked for dates, so they only need to pick one. This is the warmest quote on the list. But Jake set a HARD HOLD on 17 Sep (no further contact after two emails that day), so get Jake's OK before Natalie phones.",
+   "flags": [
+    {
+     "type": "hold",
+     "text": "HOLD: ask Jake first"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 7,
+   "id": "six-in-one-club",
+   "venue": "Six In One Club",
+   "town": "Tonbridge (TN10 3HH)",
+   "contact": "Terry Coomber (Ents Sec)",
+   "phones": [
+    {
+     "number": "01732 358883",
+     "label": "web, club line",
+     "tel": "01732358883"
+    }
+   ],
+   "noPhone": "",
+   "quote": "17 Sep: £300 cash for 2×1h as a one-off, or £250 a night if they book 4. Saturday evening or Sunday afternoon.",
+   "lastWho": "Them",
+   "lastDate": "16 Sep",
+   "lastMsg": "Terry asked the price for Saturday 8.30-9.30 and 10-11, and for Sunday 4-5 and 5.30-6.30.",
+   "days": "0 (12 since his message)",
+   "daysNote": "",
+   "why": "He gave exact set times for both days, and Sundays are free in 2026. A call finds out whether £300 versus £250×4 is the sticking point. Ask for Terry.",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY 16:27"
+    }
+   ],
+   "note": "Club line. Terry's own number is not in the files."
+  },
+  {
+   "rank": 8,
+   "id": "kessingland-uwm",
+   "venue": "Kessingland UWM",
+   "town": "Kessingland, Lowestoft (NR33 7QD)",
+   "contact": "Terry (Club Secretary)",
+   "phones": [
+    {
+     "number": "01502 740218",
+     "label": "files",
+     "tel": "01502740218"
+    }
+   ],
+   "noPhone": "",
+   "quote": "28 Sep: Saturday only, £300 for 2×1h or £400 for 3×45 as a single night; £250/£350 a night for 2 or more dates. All-in including travel, \"open to discuss\". Seven free Saturdays were listed, from 7 Nov 2026 to 27 Mar 2027.",
+   "lastWho": "Them",
+   "lastDate": "26 Sep",
+   "lastMsg": "They have a limited budget and asked Jake's charges and singing times for a Friday or Saturday evening.",
+   "days": "0",
+   "daysNote": "",
+   "why": "They came to us with a budget question and we said we're open to discuss. A call gets their figure. It is FAR, so Saturday only. Wait until Wed or Thu at the earliest (Haggle planned day 7 as ~Mon 5 Oct).",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY (quote 11:42)"
+    },
+    {
+     "type": "wait",
+     "text": "WAIT: Wed/Thu earliest"
+    },
+    {
+     "type": "far",
+     "text": "FAR"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 9,
+   "id": "sedir-restaurant",
+   "venue": "Sedir (restaurant)",
+   "town": "Dartford",
+   "contact": "Ahmet (Ozgur Efe)",
+   "phones": [
+    {
+     "number": "07867 968113",
+     "label": "mobile",
+     "tel": "07867968113"
+    },
+    {
+     "number": "01322 226421",
+     "label": "files",
+     "tel": "01322226421"
+    }
+   ],
+   "noPhone": "",
+   "quote": "9 Sep: £250 for 2×45, £375 for 3×45 or £485 for 4×40, with a £50 deposit. Oct-Nov dates were listed.",
+   "lastWho": "Them",
+   "lastDate": "8 Sep",
+   "lastMsg": "Ahmet invited Jake to the restaurant to talk and gave his mobile. Jake spoke with him on 9 Sep.",
+   "days": "19",
+   "daysNote": "",
+   "why": "The owner asked to talk and already knows Jake. It's local, so a call or visit can pick a date.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 10,
+   "id": "the-greyhound-hotel",
+   "venue": "The Greyhound Hotel",
+   "town": "Carshalton (Young's)",
+   "contact": "Annemarie McCarthy (GM)",
+   "phones": [
+    {
+     "number": "020 8647 1511",
+     "label": "files",
+     "tel": "02086471511"
+    }
+   ],
+   "noPhone": "",
+   "quote": "14 Sep: £285 for 2×1h or £385 for 3×45, Sat/Sun (£250/£350 if they book several). Chased 21 Sep.",
+   "lastWho": "Them",
+   "lastDate": "23 Sep",
+   "lastMsg": "Thanks for the information, \"we will be in touch\".",
+   "days": "5",
+   "daysNote": "",
+   "why": "The GM has engaged twice. Offer a Sunday in Nov or Dec. The board says no second email chase, so the phone is the only nudge left.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 11,
+   "id": "bardswell-social-club",
+   "venue": "Bardswell Social Club",
+   "town": "Brentwood (CM14 4TJ)",
+   "contact": "Sharon Banks (Events Manager)",
+   "phones": [
+    {
+     "number": "01277 214057",
+     "label": "files",
+     "tel": "01277214057"
+    }
+   ],
+   "noPhone": "",
+   "quote": "10 Sep: £250 cash or £280 on the books for 2×1h (8-11). Sharon accepted £250 cash and asked for 28 Aug (2027), which Jake can't do. Other August weekends were offered, and we chased on 17 Sep.",
+   "lastWho": "Them",
+   "lastDate": "10 Sep",
+   "lastMsg": "\"I will get back to you, just need to juggle some things around.\"",
+   "days": "11",
+   "daysNote": "",
+   "why": "The price is agreed and only the date is open. This is 2027 money. Do not restate the fee (NEVER_AGAIN #25).",
+   "flags": [],
+   "note": "Fee already agreed. Do not restate the fee on the call."
+  },
+  {
+   "rank": 12,
+   "id": "the-muddy-duck",
+   "venue": "The Muddy Duck",
+   "town": "Maldon",
+   "contact": "Jaela Wright (Manager)",
+   "phones": [
+    {
+     "number": "01621 336567",
+     "label": "pub line, files",
+     "tel": "01621336567"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent. Natalie moved the price conversation to the phone.",
+   "lastWho": "Them",
+   "lastDate": "9 Sep",
+   "lastMsg": "Jaela loves Jake's sound and is definitely open to booking. She is busy with events for about 2 months and asked for rates, set lengths and a contact number.",
+   "days": "19",
+   "daysNote": "",
+   "why": "She asked for a call and for prices, and her busy spell ends around early November.",
+   "flags": [],
+   "note": "The +44 7523 924644 in haggle-muddy-duck is Natalie's number that we gave Jaela, not Jaela's."
+  },
+  {
+   "rank": 13,
+   "id": "bird-in-hand",
+   "venue": "Bird in Hand",
+   "town": "Dartford",
+   "contact": "Alison",
+   "phones": [
+    {
+     "number": "01322 280139",
+     "label": "files, pub website",
+     "tel": "01322280139"
+    }
+   ],
+   "noPhone": "",
+   "quote": "8 Sep: £250 cash for 2h or £375 for 3h (2×45 or 3×45).",
+   "lastWho": "Them",
+   "lastDate": "9 Sep",
+   "lastMsg": "She was away and would check the diary on her return and send dates.",
+   "days": "19",
+   "daysNote": "",
+   "why": "She asked for fees and promised dates, and it's now 3 weeks on. However, the 28 Sep status counts say \"HOLD away (Jake HARD, no chase)\", so confirm with Jake first.",
+   "flags": [
+    {
+     "type": "hold",
+     "text": "HOLD: ask Jake first"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 14,
+   "id": "the-wheatsheaf",
+   "venue": "The Wheatsheaf",
+   "town": "Ewell (KT17 2AA)",
+   "contact": "Tanya Martin",
+   "phones": [
+    {
+     "number": "020 8393 2879",
+     "label": "files",
+     "tel": "02083932879"
+    }
+   ],
+   "noPhone": "",
+   "quote": "23 Sep, after Jake spoke to her by phone: £250 cash for 3×45, with a 2027 Sat/Sun list (Jake is not booking there in 2026).",
+   "lastWho": "Us",
+   "lastDate": "23 Sep",
+   "lastMsg": "We sent the fee and full date list as promised after the call. No reply yet.",
+   "days": "5",
+   "daysNote": "",
+   "why": "Jake already has a phone relationship with her, so a follow-up call can pick the first 2027 date. Haggle's chase unlocks ~Tue 30 Sep.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 15,
+   "id": "st-neots-conservative-club",
+   "venue": "St Neots Conservative Club",
+   "town": "St Neots",
+   "contact": "Christine (Club Sec)",
+   "phones": [
+    {
+     "number": "01480 396069",
+     "label": "files",
+     "tel": "01480396069"
+    }
+   ],
+   "noPhone": "",
+   "quote": "28 Aug: £400 for Sat 3×45. On 11 Sep we offered Dec Sundays (6/20/27) and 2027 Saturdays.",
+   "lastWho": "Them",
+   "lastDate": "11 Sep",
+   "lastMsg": "Christine will take the dates to the committee, which meets on the first Tuesday of every month.",
+   "days": "17",
+   "daysNote": "",
+   "why": "The committee meets Tue 6 Oct, so call on Wed 7 Oct for the decision. A Christmas Sunday would be 2026 money.",
+   "flags": [
+    {
+     "type": "wait",
+     "text": "WAIT: call Wed 7 Oct"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 16,
+   "id": "broomfield-rbl",
+   "venue": "Broomfield RBL",
+   "town": "Chelmsford",
+   "contact": "Siobhan Stanley",
+   "phones": [
+    {
+     "number": "07749 088690",
+     "label": "mob",
+     "tel": "07749088690"
+    },
+    {
+     "number": "01245 442757",
+     "label": "files",
+     "tel": "01245442757"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£250 for 2×1h or £350 for 3×45 (1 Sep).",
+   "lastWho": "Them",
+   "lastDate": "1 Sep",
+   "lastMsg": "She loved it, would put it to the committee and asked for Saturdays.",
+   "days": "19",
+   "daysNote": "",
+   "why": "The committee met on 7 Sep, so call for the verdict; Sat 7 Nov is the only free 2026 Saturday.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 17,
+   "id": "coulsdon-victoria-social-club",
+   "venue": "Coulsdon Victoria Social Club",
+   "town": "Coulsdon",
+   "contact": "\"Victoria Club\", no name",
+   "phones": [
+    {
+     "number": "020 8645 0600",
+     "label": "web",
+     "tel": "02086450600"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£325 cash for Sunday 2×1h or £450 for 3×1h (16 Sep).",
+   "lastWho": "Them",
+   "lastDate": "16 Sep",
+   "lastMsg": "Will review free Sundays next year and wants one Sunday only.",
+   "days": "0",
+   "daysNote": "",
+   "why": "They intend to book one, so a call gets the 2027 date.",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 18,
+   "id": "sutton-social-club",
+   "venue": "Sutton Social Club",
+   "town": "Sutton (SM1 4RS)",
+   "contact": "Julie",
+   "phones": [
+    {
+     "number": "020 8642 1929",
+     "label": "files",
+     "tel": "02086421929"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£400 for one Sat of 3 sets, or £350 each for 4 (16 Sep).",
+   "lastWho": "Them",
+   "lastDate": "",
+   "lastMsg": "Julie asked the fee for Sat 8.30-11.30, 3 sets.",
+   "days": "0",
+   "daysNote": "",
+   "why": "Test her budget; 10 Oct in that quote is now taken.",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 19,
+   "id": "winchester-club",
+   "venue": "Winchester Club",
+   "town": "Winchester",
+   "contact": "Sandra Murray",
+   "phones": [
+    {
+     "number": "01962 853496",
+     "label": "files",
+     "tel": "01962853496"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£325 cash for 2h, FAR, Sat/Sun (7 Sep).",
+   "lastWho": "Them",
+   "lastDate": "",
+   "lastMsg": "Her web form said she wants to book, asked for prices and can't give a date yet.",
+   "days": "14 (since Jake's call)",
+   "daysNote": "",
+   "why": "The outcome of the Wed 16 Sep callback was never logged, so ask Jake first, then call for a date.",
+   "flags": [
+    {
+     "type": "wait",
+     "text": "WAIT: ask Jake about the Sandra call first"
+    },
+    {
+     "type": "far",
+     "text": "FAR"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 20,
+   "id": "barrow-upon-soar-cons",
+   "venue": "Barrow upon Soar Cons",
+   "town": "Leics",
+   "contact": "Danielle Armiger",
+   "phones": [
+    {
+     "number": "01509 768600",
+     "label": "files",
+     "tel": "01509768600"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£300 cash (£330 on the books) for 2h or £450 for 3h, Sat/Sun (15 Sep).",
+   "lastWho": "Them",
+   "lastDate": "",
+   "lastMsg": "She asked \"What's the fee please?\"",
+   "days": "0",
+   "daysNote": "",
+   "why": "Silent since the quote and FAR; a call checks whether the fee is the problem.",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY"
+    },
+    {
+     "type": "far",
+     "text": "FAR"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 21,
+   "id": "imperial-bar-cheshunt-waltham-cross-cons",
+   "venue": "Imperial Bar / Cheshunt & Waltham Cross Cons",
+   "town": "",
+   "contact": "Brian T",
+   "phones": [
+    {
+     "number": "01992 718718",
+     "label": "files",
+     "tel": "01992718718"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Fri £250/£350, Sat £280/£400 (1 Sep).",
+   "lastWho": "Them",
+   "lastDate": "",
+   "lastMsg": "\"We will keep your details on file.\"",
+   "days": "20",
+   "daysNote": "",
+   "why": "Cool lead; ask about a 2027 Friday or Saturday.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 22,
+   "id": "hounslow-rbl",
+   "venue": "Hounslow RBL",
+   "town": "Hounslow",
+   "contact": "Mick New (Branch Sec)",
+   "phones": [
+    {
+     "number": "020 8572 6468",
+     "label": "files",
+     "tel": "02085726468"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£250/£350 in the cold pitch (1 Aug).",
+   "lastWho": "Them",
+   "lastDate": "",
+   "lastMsg": "He would put it to the September committee; Remembrance Sunday isn't possible.",
+   "days": "32",
+   "daysNote": "",
+   "why": "The committee has now met, so call for the outcome.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 23,
+   "id": "shepherd-dog",
+   "venue": "Shepherd & Dog",
+   "town": "Crays Hill",
+   "contact": "No name",
+   "phones": [
+    {
+     "number": "01268 521967",
+     "label": "files",
+     "tel": "01268521967"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "15 Sep",
+   "lastMsg": "\"Thank you, I will let you know\"",
+   "days": "13",
+   "daysNote": "",
+   "why": "Local pub; a call can offer dates and a price.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 24,
+   "id": "pendyffryn-club",
+   "venue": "Pendyffryn Club",
+   "town": "Prestatyn",
+   "contact": "Mags (Steward)",
+   "phones": [
+    {
+     "number": "01745 856259",
+     "label": "web",
+     "tel": "01745856259"
+    },
+    {
+     "number": "01745 854443",
+     "label": "one directory also lists this",
+     "tel": "01745854443"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£250 cash for Sat 2×1h or £300 for 3×1h, with May-Jul 2027 Saturdays (21 Sep).",
+   "lastWho": "Them",
+   "lastDate": "",
+   "lastMsg": "Mags asked the Saturday-night charge.",
+   "days": "0",
+   "daysNote": "",
+   "why": "2027 only, FAR (Wales).",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY"
+    },
+    {
+     "type": "far",
+     "text": "FAR"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 25,
+   "id": "california-social-club",
+   "venue": "California Social Club",
+   "town": "Ipswich",
+   "contact": "Peter Loweman",
+   "phones": [
+    {
+     "number": "01473 720633",
+     "label": "files",
+     "tel": "01473720633"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "9 Sep",
+   "lastMsg": "Kate said Peter books the bands. Jake spoke to Peter on 14 Sep and he was going to look at the site.",
+   "days": "14",
+   "daysNote": "",
+   "why": "Call Peter for a date and give the price.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 26,
+   "id": "honiton-cons",
+   "venue": "Honiton Cons",
+   "town": "Devon",
+   "contact": "Lesley",
+   "phones": [
+    {
+     "number": "01404 42525",
+     "label": "files; matches the club site",
+     "tel": "0140442525"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£400 cash for 2×1h, FAR, Sat/Sun (11 Sep).",
+   "lastWho": "Them",
+   "lastDate": "18 Sep",
+   "lastMsg": "She'll take it to the committee at the end of October.",
+   "days": "10",
+   "daysNote": "",
+   "why": "Call only after that committee (board says no chase before then); money is tight because of building works, so likely 2027.",
+   "flags": [
+    {
+     "type": "wait",
+     "text": "WAIT: after end-Oct committee"
+    },
+    {
+     "type": "far",
+     "text": "FAR"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 27,
+   "id": "rushden-cons",
+   "venue": "Rushden Cons",
+   "town": "Rushden",
+   "contact": "Dayn Freeman (Chair)",
+   "phones": [
+    {
+     "number": "01933 312445",
+     "label": "files",
+     "tel": "01933312445"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "31 Aug",
+   "lastMsg": "Fully booked for 2026 and will look at 2027 \"in the next couple of months\"; last reply \"Will do\".",
+   "days": "28",
+   "daysNote": "",
+   "why": "His 2027 planning window is now.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 28,
+   "id": "wraysbury-village-club",
+   "venue": "Wraysbury Village Club",
+   "town": "",
+   "contact": "Kinde Hanspal (Sec), passes to Richard Cripps (ents)",
+   "phones": [
+    {
+     "number": "07825 001883",
+     "label": "Kinde's mobile, files",
+     "tel": "07825001883"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "17 Sep",
+   "lastMsg": "Kinde forwarded our email to Richard.",
+   "days": "11",
+   "daysNote": "",
+   "why": "Ask for Richard.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 29,
+   "id": "bellegrove-social-club",
+   "venue": "Bellegrove Social Club",
+   "town": "Welling",
+   "contact": "Joanna Webb (Sec)",
+   "phones": [
+    {
+     "number": "020 8303 1054",
+     "label": "web",
+     "tel": "02083031054"
+    },
+    {
+     "number": "020 8303 1943",
+     "label": "directories also list this",
+     "tel": "02083031943"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "Today 14:42",
+   "lastMsg": "Nothing free this year; next year's diary starts soon.",
+   "days": "0",
+   "daysNote": "",
+   "why": "Local; call in about 2 weeks to be first into 2027.",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY"
+    },
+    {
+     "type": "wait",
+     "text": "WAIT: about 2 weeks"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 30,
+   "id": "lower-bourne-social-club",
+   "venue": "Lower Bourne Social Club",
+   "town": "Farnham",
+   "contact": "Kate (events), via Nick Davies",
+   "phones": [
+    {
+     "number": "01252 716683",
+     "label": "web",
+     "tel": "01252716683"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "18 Sep",
+   "lastMsg": "Nick forwarded us to Kate.",
+   "days": "10",
+   "daysNote": "",
+   "why": "Ask for Kate.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 31,
+   "id": "the-tenterden-club",
+   "venue": "The Tenterden Club",
+   "town": "Tenterden",
+   "contact": "Zoe Oliver (Events)",
+   "phones": [
+    {
+     "number": "01580 762888",
+     "label": "option 3, files",
+     "tel": "01580762888"
+    },
+    {
+     "number": "07919 339932",
+     "label": "files",
+     "tel": "07919339932"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "17 Sep",
+   "lastMsg": "\"Suitable, but not booking acts right now; will keep your details\"",
+   "days": "11",
+   "daysNote": "",
+   "why": "She works Mon/Thu 08:30-13:30 only; the board says do not chase. Low.",
+   "flags": [
+    {
+     "type": "wait",
+     "text": "WAIT: do not chase"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 32,
+   "id": "iver-heath-british-legion",
+   "venue": "Iver Heath British Legion",
+   "town": "Iver Heath",
+   "contact": "Jules James (President)",
+   "phones": [
+    {
+     "number": "01753 651344",
+     "label": "web",
+     "tel": "01753651344"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "Today 14:47",
+   "lastMsg": "He'll discuss it at the October committee (our cold went out today 14:21).",
+   "days": "0",
+   "daysNote": "",
+   "why": "Call after the October committee.",
+   "flags": [
+    {
+     "type": "emailed",
+     "text": "EMAILED TODAY (cold 14:21)"
+    },
+    {
+     "type": "wait",
+     "text": "WAIT: after Oct committee"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 33,
+   "id": "la-casa-vecchia-the-grey-lady",
+   "venue": "La Casa Vecchia & The Grey Lady",
+   "town": "Tunbridge Wells",
+   "contact": "Caio",
+   "phones": [
+    {
+     "number": "01892 544700",
+     "label": "files",
+     "tel": "01892544700"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee; they offered a ticket-keep deal (bar minimum £300 Sun-Thu).",
+   "lastWho": "Them",
+   "lastDate": "23 Sep",
+   "lastMsg": "Sundays 18/25 Oct and 15 Nov are open.",
+   "days": "5",
+   "daysNote": "",
+   "why": "Only worth calling to turn it into a flat fee (Jake rejects ticket deals), and the fee-or-walk draft is waiting for Jake. 8 Nov is blocked.",
+   "flags": [],
+   "note": "Never agree a ticket or door deal. Cash or books fee only."
+  },
+  {
+   "rank": 34,
+   "id": "iona-social-club",
+   "venue": "Iona Social Club",
+   "town": "Hornchurch",
+   "contact": "Committee",
+   "phones": [
+    {
+     "number": "01708 442453",
+     "label": "web",
+     "tel": "01708442453"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£275 for 2×1h or £250 each for 4 (10 Sep).",
+   "lastWho": "Them",
+   "lastDate": "17 Sep",
+   "lastMsg": "\"Can you email back in January\"",
+   "days": "11",
+   "daysNote": "",
+   "why": "They asked for January, so low for now.",
+   "flags": [
+    {
+     "type": "wait",
+     "text": "WAIT: January"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "rank": 35,
+   "id": "frimley-green-club",
+   "venue": "Frimley Green Club",
+   "town": "Frimley Green",
+   "contact": "Cheryl Harvey (Admin)",
+   "phones": [
+    {
+     "number": "01252 836081",
+     "label": "office",
+     "tel": "01252836081"
+    },
+    {
+     "number": "01252 835322",
+     "label": "bar",
+     "tel": "01252835322"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "11 Sep",
+   "lastMsg": "A solo act isn't right for their Saturday band nights; our Fri/Sun/function counter got no answer.",
+   "days": "17",
+   "daysNote": "",
+   "why": "Long shot.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 36,
+   "id": "greenford-rbl",
+   "venue": "Greenford RBL",
+   "town": "Greenford",
+   "contact": "G Webb",
+   "phones": [
+    {
+     "number": "020 8578 2530",
+     "label": "files",
+     "tel": "02085782530"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£250/£350 in the cold pitch.",
+   "lastWho": "Them",
+   "lastDate": "4 Aug",
+   "lastMsg": "They just had an Elvis tribute, have no short-term need and will keep Jake in mind.",
+   "days": "33",
+   "daysNote": "",
+   "why": "Low.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 37,
+   "id": "peckham-liberal-club",
+   "venue": "Peckham Liberal Club",
+   "town": "Peckham",
+   "contact": "Janice Brittain (events manager)",
+   "phones": [
+    {
+     "number": "020 7639 1093",
+     "label": "files",
+     "tel": "02076391093"
+    },
+    {
+     "number": "07527 912119",
+     "label": "files",
+     "tel": "07527912119"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "23 Sep",
+   "lastMsg": "Event bookings go through Janice.",
+   "days": "5",
+   "daysNote": "",
+   "why": "Probably the hire side; call only to ask whether they book acts.",
+   "flags": [],
+   "note": "Not Tuesdays."
+  },
+  {
+   "rank": 38,
+   "id": "great-wakering-rbl",
+   "venue": "Great Wakering RBL",
+   "town": "",
+   "contact": "Alan",
+   "phones": [
+    {
+     "number": "01702 219113",
+     "label": "files",
+     "tel": "01702219113"
+    }
+   ],
+   "noPhone": "",
+   "quote": "£280/£400 in the cold pitch.",
+   "lastWho": "Them",
+   "lastDate": "27 Aug",
+   "lastMsg": "Fully booked for 2026 and 2027; he'll say if there's a cancellation.",
+   "days": "32",
+   "daysNote": "",
+   "why": "Cancellation list only.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 39,
+   "id": "denvilles-house",
+   "venue": "Denvilles House",
+   "town": "Havant",
+   "contact": "Jayne Cundliffe (Sec)",
+   "phones": [
+    {
+     "number": "023 9249 2281",
+     "label": "files",
+     "tel": "02392492281"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "28 Aug",
+   "lastMsg": "2027 is fully booked and Jake is on file.",
+   "days": "31",
+   "daysNote": "",
+   "why": "Low.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 40,
+   "id": "brightlingsea-rbl",
+   "venue": "Brightlingsea RBL",
+   "town": "",
+   "contact": "Caron Gould (Sec), who passed it to the social secretary",
+   "phones": [
+    {
+     "number": "01206 303274",
+     "label": "files",
+     "tel": "01206303274"
+    }
+   ],
+   "noPhone": "",
+   "quote": "May pitch.",
+   "lastWho": "Them",
+   "lastDate": "15 May",
+   "lastMsg": "Forwarded to the social secretary.",
+   "days": "136",
+   "daysNote": "",
+   "why": "Stale; a call can find the social secretary.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 41,
+   "id": "berkhamsted-social-club",
+   "venue": "Berkhamsted Social Club",
+   "town": "",
+   "contact": "Keith Eggleton",
+   "phones": [
+    {
+     "number": "01442 863538",
+     "label": "web",
+     "tel": "01442863538"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "8 Sep",
+   "lastMsg": "Asked for our contact details \"for future reference\".",
+   "days": "19",
+   "daysNote": "",
+   "why": "Low.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 42,
+   "id": "ferndale-baptist-church",
+   "venue": "Ferndale Baptist Church",
+   "town": "Southend",
+   "contact": "Jennifer",
+   "phones": [
+    {
+     "number": "07376 347826",
+     "label": "web",
+     "tel": "07376347826"
+    },
+    {
+     "number": "07449 742989",
+     "label": "charity register lists this",
+     "tel": "07449742989"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent.",
+   "lastWho": "Them",
+   "lastDate": "23 Sep",
+   "lastMsg": "\"Will keep this in mind for future events\"",
+   "days": "5",
+   "daysNote": "",
+   "why": "Gospel or charity concert only. Low.",
+   "flags": [],
+   "note": ""
+  },
+  {
+   "rank": 43,
+   "id": "wilmington-private-function-barbara-morris",
+   "venue": "Wilmington private function (Barbara Morris)",
+   "town": "Wilmington DA2",
+   "contact": "Barbara Morris",
+   "phones": [],
+   "noPhone": "Phone not found (private person, email only).",
+   "quote": "£350 cash for 3h on Sat 3 Jul 2027 (7 Sep).",
+   "lastWho": "Them",
+   "lastDate": "",
+   "lastMsg": "A website enquiry with no reply since the quote.",
+   "days": "21",
+   "daysNote": "",
+   "why": "Email only, no phone found.",
+   "flags": [],
+   "note": "3 Jul 2027 now falls inside Jake's holiday with Keeley (soft hold), so the offered date would clash."
+  }
+ ]
+}

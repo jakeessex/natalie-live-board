@@ -9,7 +9,7 @@ const PROCESSED = path.join(ROOT, "processed");
 const SECRET = "natbooksjake";
 
 /** Data-only lock. Ingest must never write the board shell. */
-const UI_FILES = new Set(["index.html", "board.js"]);
+const UI_FILES = new Set(["index.html", "board.js", "board.css", "calls.js", "calls.json"]);
 
 function assertDataPath(file) {
   const base = path.basename(file);
@@ -31,10 +31,10 @@ async function warnIfUiBroken() {
     const size = (await stat(index)).size;
     const board = await readFile(js, "utf8");
     const problems = [];
-    if (!html.includes("Board v42")) problems.push("index.html missing 'Board v42'");
+    if (!html.includes("Board v43")) problems.push("index.html missing 'Board v43'");
     if (size > 40000) problems.push(`index.html is fat embed (${size} bytes) — should be ~9KB`);
     if (html.includes("venues-data") && html.length > 20000) problems.push("index.html looks like a v15 venues embed");
-    if (!board.includes('BOARD_VERSION = "v42"')) problems.push("board.js is not v42");
+    if (!board.includes('BOARD_VERSION = "v43"')) problems.push("board.js is not v43");
     if (problems.length) {
       console.error("UI LOCK WARNING (venues will still write):\n - " + problems.join("\n - "));
     }

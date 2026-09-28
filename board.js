@@ -92,7 +92,7 @@ var Board = (() => {
     telHref: () => telHref,
     webHref: () => webHref
   });
-  var BOARD_VERSION = "v42";
+  var BOARD_VERSION = "v43";
   var BOARD_STAMP = "22 Sep 2026";
   var PASSWORD = "natbooksjake";
   var CASH_TARGET = 1e4;
@@ -1591,7 +1591,7 @@ var NatNotes = (function(exports) {
   raf=requestAnimationFrame(tick);
 })();
 
-/* Natalie Live Board v42 — vanilla UI. Pipeline is window.Board from the bundled module. */
+/* Natalie Live Board v43 — vanilla UI. Calls tab lives in calls.js (data calls.json). Pipeline is window.Board from the bundled module. */
 (function () {
   var B = window.Board;
   function prospectStatusOf(venue) { return B.prospectStatusOf(venue); }
@@ -1697,7 +1697,7 @@ var NatNotes = (function(exports) {
     var ul = $("egg-lines");
     if (box) box.classList.add("on");
     if (ul && !ul.childNodes.length) {
-      ["WAKE UP, NAT", "THE BOARD HAS YOU", "FOLLOW THE WHITE RABBIT", "v42 · YOU'RE THE ONE"].forEach(function (line) {
+      ["WAKE UP, NAT", "THE BOARD HAS YOU", "FOLLOW THE WHITE RABBIT", "v43 · YOU'RE THE ONE"].forEach(function (line) {
         var li = document.createElement("li");
         li.textContent = "› " + line;
         ul.appendChild(li);
@@ -1745,7 +1745,7 @@ var NatNotes = (function(exports) {
     showErr("");
     var raw = ($("pw").value || "").replace(/^\s+|\s+$/g, "");
     var key = raw.toLowerCase();
-    if (key === "v20" || key === "v21" || key === "v25" || key === "v42" || key === "neo" || key === "whiterabbit" || key === "white rabbit") {
+    if (key === "v20" || key === "v21" || key === "v25" || key === "v42" || key === "v43" || key === "neo" || key === "whiterabbit" || key === "white rabbit") {
       fireEgg();
       return;
     }
