@@ -1,0 +1,15 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "ruislip-royal-british-legion-club",
+        "name": "Ruislip Royal British Legion Club",
+        "email": "ruisliprblc@btconnect.com",
+        "town": "Ruislip"
+      },
+      "badge": "bounce",
+      "statusNote": "DSN Failure bounce never-retry · Mon 28 ~14:12 London cold `1a0e825787b8b123` thread `1a0e8251e0d884b8` DSN `1a0e825afe988c0d` · 550 5.4.1 Recipient address rejected Access denied btconnect/Outlook · Natalie 2pm WAVE A LOCAL · MASTER/CONTACTED/NEVER_AGAIN fold · do not invent alt · no re-cold · Us cold retained · no DSN body in Conversation"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "kington-st-michael-club",
+        "name": "Kington St Michael Club",
+        "email": "ksmclub@zoho.com",
+        "town": "Kington St Michael"
+      },
+      "badge": "bounce",
+      "statusNote": "Zoho permanent Mail Delivery Failure bounce never-retry \u00b7 Mon 28 ~15:01 London cold `1a0e851a43dec971` thread `1a0e850e07894938` DSN `1a0e852303d3a6d8` \u00b7 Natalie 2pm FAR \u00b7 MASTER/CONTACTED/NEVER_AGAIN fold \u00b7 do not invent alt \u00b7 no re-cold \u00b7 Us cold retained \u00b7 no DSN body in Conversation \u00b7 reply-hunter"
+    }
+  ]
+}

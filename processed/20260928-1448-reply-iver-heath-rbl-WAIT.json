@@ -1,0 +1,27 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "batch700-iver-heath-british-legion-members-club-iver-heath",
+        "name": "Iver Heath British Legion Members Club",
+        "email": "ihrblclub@gmail.com",
+        "town": "Iver Heath",
+        "contactName": "Jules James"
+      },
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-28T14:47:21+01:00",
+          "from": "ihrblclub@gmail.com",
+          "subject": "Re: Jake Essex for Iver Heath British Legion Members Club?",
+          "body": "Hi Natalie\n\nThank you for your email.\n\nI will discuss this at our next Committee meeting in October. If required we will be in contact.\n\nKind regards\nJules James\nPresident",
+          "gmailMsgId": "1a0e845573f8748a",
+          "gmailThreadId": "1a0e82c107d8a71a"
+        }
+      ],
+      "statusNote": "Soft reply Mon 28 ~14:47 London \u00b7 Jules James President \u00b7 committee October \u00b7 will contact if required \u00b7 no fee/date ask \u2192 Wait \u00b7 do not re-cold \u00b7 do not chase before Oct \u00b7 Us cold 1a0e82d5439b45b5 \u00b7 MASTER/CONTACTED fold \u00b7 inbox-signal",
+      "notes": "Committee October. Wait. They will contact if required \u2014 no Natalie chase draft now."
+    }
+  ]
+}

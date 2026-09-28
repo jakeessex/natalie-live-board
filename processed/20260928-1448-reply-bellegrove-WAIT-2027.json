@@ -1,0 +1,27 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "bellegrove-social-club",
+        "name": "Bellegrove Social Club",
+        "email": "bellegrovesecretary@gmail.com",
+        "town": "Welling",
+        "contactName": "Joanna Webb"
+      },
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-28T14:42:04+01:00",
+          "from": "bellegrovesecretary@gmail.com",
+          "subject": "Re: Jake Essex for Bellegrove Social Club?",
+          "body": "HI\n\nNothing free for this year will start next yrs soon\n\nKind Regards\nJoanna Webb\nClub Secretary\nBellegrove Social Club Limited",
+          "gmailMsgId": "1a0e840ab565287a",
+          "gmailThreadId": "1a0b4beafc30e4f8"
+        }
+      ],
+      "statusNote": "Soft reply Mon 28 ~14:42 London \u00b7 Joanna Webb Club Secretary \u00b7 nothing free this year \u00b7 next year diary soon \u2192 Wait (2027 soft park) \u00b7 not hard No \u00b7 one FU already \u00b7 do not re-chase now \u00b7 Us cold 1a0b4bf060979cf3 FU1 1a0e7a3c17ccf2b4 \u00b7 MASTER/CONTACTED fold \u00b7 inbox-signal",
+      "notes": "2027 soft park. No draft/chase until diary opens or they reply again."
+    }
+  ]
+}

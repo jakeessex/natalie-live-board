@@ -1,0 +1,27 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "batch700-whitchurch-pensford-rbl-social-club-bristol",
+        "name": "Whitchurch & Pensford RBL Social Club",
+        "email": "whitchurchrblclub@gmail.com",
+        "town": "Bristol",
+        "contactName": "Paige Andrews"
+      },
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-28T14:27:25+01:00",
+          "from": "whitchurchrblclub@gmail.com",
+          "subject": "RBL Whitchurch New Email Address Re: Jake Essex for Whitchurch & Pensford RBL Social Club?",
+          "body": "Please note our new email address is office@whitchurchrblclub.co.uk\nYou email has been automatically forwarded.\nThank\n\nKind Regards\nPaige Andrews\nClub Manager/Secretary",
+          "gmailMsgId": "1a0e832ea1215131",
+          "gmailThreadId": "1a0e832ea1215131"
+        }
+      ],
+      "statusNote": "Soft reply Mon 28 ~14:27 London \u00b7 Paige Andrews new email office@whitchurchrblclub.co.uk \u00b7 pitch auto-forwarded \u00b7 no fee/date ask \u2192 Wait \u00b7 do not re-cold office@ \u00b7 future FU to office@ \u00b7 Us cold 1a0e832ad707e9fc \u00b7 MASTER/CONTACTED fold \u00b7 inbox-signal",
+      "notes": "New email notice only. Prefer office@whitchurchrblclub.co.uk going forward. Do not re-cold."
+    }
+  ]
+}
