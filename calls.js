@@ -68,7 +68,11 @@
     ".nd-dot{width:11px;height:11px;border-radius:50%;display:inline-block}",
     ".nd-dot.hold{background:#d62d2d}.nd-dot.wait{background:#f5a623}.nd-dot.emailed{background:#2f6fd6}.nd-dot.far{background:#8a939e}",
     ".nd-tick{color:#1f9d55;font-weight:800}",
-    "#calls{display:none}#calls.show{display:block}"
+    ".nd-mail{display:flex;gap:8px;margin:2px 0 12px}",
+    ".nd-mail a,.nd-mail button{flex:1;display:block;text-align:center;text-decoration:none;font:inherit;font-size:17px;font-weight:800;border-radius:14px;padding:12px 8px;cursor:pointer;border:2px solid #2f6fd6}",
+    ".nd-mail .emails{background:#2f6fd6;color:#fff}",
+    ".nd-mail .gmail{background:#fff;color:#2f6fd6}",
+    "#calls{display:none}#calls.show{display:block}#calls.suspended,#calls.suspended *{visibility:hidden!important;pointer-events:none!important}"
   ].join("\n");
 
   function el(tag, cls, text) {
@@ -126,7 +130,8 @@
     return c;
   }
 
-  function venueCard(v) {
+  function venueCard(v, opts) {
+    opts = opts || {};
     var c = el("div", "nd-card");
     var isHold = v.flags.some(function (f) { return f.type === "hold"; });
     if (isHold) c.classList.add("hold");
@@ -155,6 +160,24 @@
       });
     } else {
       c.appendChild(el("p", "nd-nophone", v.noPhone || "No phone found."));
+    }
+    if ((opts.openEmails && v.venueId) || v.gmailThreadId) {
+      var mail = el("div", "nd-mail");
+      if (opts.openEmails && v.venueId) {
+        var ob = el("button", "emails", "\u2709 Open emails");
+        ob.type = "button";
+        ob.setAttribute("data-venue", v.venueId);
+        ob.onclick = function () { opts.openEmails(v); };
+        mail.appendChild(ob);
+      }
+      if (v.gmailThreadId) {
+        var ga = el("a", "gmail", "Open in Gmail \u2197");
+        ga.href = "https://mail.google.com/mail/u/0/#all/" + encodeURIComponent(v.gmailThreadId);
+        ga.target = "_blank";
+        ga.rel = "noopener";
+        mail.appendChild(ga);
+      }
+      c.appendChild(mail);
     }
     if (v.note) c.appendChild(el("p", "nd-note", v.note));
     c.appendChild(sec("Quote we sent", v.quote));
@@ -218,7 +241,7 @@
     var cards = [];
     var intro = introCard(data);
     cards.push(intro);
-    data.venues.forEach(function (v) { cards.push(venueCard(v)); });
+    data.venues.forEach(function (v) { cards.push(venueCard(v, opts)); });
     cards.forEach(function (c, i) {
       var s = el("div", "nd-slide");
       s.setAttribute("data-i", String(i));
@@ -311,7 +334,7 @@
       if (i !== idx) { idx = Math.max(0, Math.min(total, i)); paintMeta(); store("last", String(idx)); }
     }, { passive: true });
     function onKey(e) {
-      if (!deck.isConnected) return;
+      if (!deck.isConnected || root.classList.contains("suspended")) return;
       var tg = e.target && e.target.tagName;
       if (tg === "TEXTAREA" || tg === "INPUT" || tg === "SELECT") return;
       if (e.key === "ArrowRight") { e.preventDefault(); go(idx + 1); }
@@ -350,8 +373,64 @@
     if (!h) { h = el("div"); h.id = "calls"; document.body.appendChild(h); }
     return h;
   }
+  var suspendedAt = -1;
+  function openEmails(v) {
+    var h = document.getElementById("calls");
+    if (!h || !deckApi || typeof window.natOpen !== "function") return;
+    var det = document.getElementById("detail");
+    if (det) det.innerHTML = "";
+    suspendedAt = deckApi.index();
+    h.classList.add("suspended");
+    document.documentElement.style.overflow = "";
+    window.natOpen(v.venueId);
+    if (!det || !det.querySelector(".back")) {
+      /* venue not on the board: undo and stay on the card */
+      suspendedAt = -1;
+      h.classList.remove("suspended");
+      document.documentElement.style.overflow = "hidden";
+      if (window.natBack && window.natBack.__orig) window.natBack.__orig();
+      alert("That venue is not on the board right now.");
+      return;
+    }
+    if (typeof window.natEmails === "function" && det.querySelector(".openbtn")) window.natEmails();
+    window.scrollTo(0, 0);
+    var panels = det.querySelectorAll(".panel .kicker");
+    for (var i = 0; i < panels.length; i++) {
+      if (/^Emails/.test(panels[i].textContent)) {
+        var head = det.querySelector("header");
+        var y = panels[i].getBoundingClientRect().top + window.pageYOffset - (head ? head.offsetHeight : 0) - 8;
+        window.scrollTo(0, Math.max(0, y));
+        break;
+      }
+    }
+  }
+  function resumeCalls() {
+    var h = document.getElementById("calls");
+    if (suspendedAt < 0 || !h || !deckApi) return;
+    var i = suspendedAt;
+    suspendedAt = -1;
+    h.classList.remove("suspended");
+    document.documentElement.style.overflow = "hidden";
+    window.scrollTo(0, 0);
+    deckApi.go(i, false);
+  }
+  (function wrapBack() {
+    var orig = window.natBack;
+    if (typeof orig !== "function" || orig.__calls) return;
+    var wrapped = function () {
+      var r = orig.apply(this, arguments);
+      resumeCalls();
+      return r;
+    };
+    wrapped.__calls = true;
+    wrapped.__orig = orig;
+    window.natBack = wrapped;
+  })();
+
   window.natCallsClose = function () {
     var h = document.getElementById("calls");
+    suspendedAt = -1;
+    if (h) h.classList.remove("suspended");
     if (deckApi) { deckApi.destroy(); deckApi = null; }
     if (h) h.classList.remove("show");
     document.documentElement.style.overflow = "";
@@ -364,7 +443,7 @@
       injectCss();
       h.classList.add("show");
       document.documentElement.style.overflow = "hidden";
-      deckApi = build(h, data, { onClose: window.natCallsClose });
+      deckApi = build(h, data, { onClose: window.natCallsClose, openEmails: openEmails });
       window.NatCallDeck.current = deckApi;
     }
     if (cache) { open(cache); return; }

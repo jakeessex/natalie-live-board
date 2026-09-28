@@ -12,7 +12,7 @@ The live board is **four UI files plus data files**:
 | `calls.json` | Calls tab data: ranked warm call list (intro free nights + rules, one entry per venue) | Call-list refreshes only (data-only). Ingest never writes it. |
 
 **Data syncs write `venues.json` only.** Never `index.html`. Never `board.js`. Never `board.css`. Never `calls.js`.
-**Call-list refreshes write `calls.json` only** (same shape: `title`, `freeNights`, `rules`, `venues[]` with `rank`, `id`, `venue`, `town`, `contact`, `phones[]` {`number`, `tel`, `label`}, `quote`, `lastWho`, `lastDate`, `lastMsg`, `days`, `why`, `flags[]` {`type`: hold|wait|emailed|far, `text`}, `note`). No UI change needed.
+**Call-list refreshes write `calls.json` only** (same shape: `title`, `freeNights`, `rules`, `venues[]` with `rank`, `id`, `venue`, `town`, `contact`, `phones[]` {`number`, `tel`, `label`}, `quote`, `lastWho`, `lastDate`, `lastMsg`, `days`, `why`, `flags[]` {`type`: hold|wait|emailed|far, `text`}, `note`, `venueId` (the `venues.json` id: Open emails opens that board detail, Back returns to the same call card), `gmailThreadId` (Open in Gmail link `https://mail.google.com/mail/u/0/#all/<id>`; empty hides the link)). No UI change needed.
 
 v43 (28 Sep 2026): Jake asked for the Calls tab. That one deliberate UI change lifted the lock once; it is locked again.
 
