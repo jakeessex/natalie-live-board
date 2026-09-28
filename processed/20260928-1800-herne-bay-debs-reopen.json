@@ -1,0 +1,35 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "herne-bay-ex-servicemen-s-club",
+    "email": "hbexservice.members@gmail.com"
+   },
+   "badge": "replied-soft / reopened",
+   "messages": [
+    {
+     "side": "them",
+     "label": "Their reply",
+     "at": "2026-09-28T15:45:17Z",
+     "from": "hbexservice.members@gmail.com",
+     "to": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Herne Bay Ex-Servicemen's Club?",
+     "body": "Hi Natalie,\nI’m afraid it’s not quite for us. We will keep you on the books incase anything changes.\nThanks\nDebs",
+     "msgId": "1a0e8b14d0eedd23"
+    },
+    {
+     "side": "us",
+     "label": "Sent",
+     "at": "2026-09-28T16:57:23Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "hbexservice.members@gmail.com",
+     "subject": "Re: Jake Essex for Herne Bay Ex-Servicemen's Club?",
+     "body": "Hi Debs,\n\nThanks for letting me know, and for keeping Jake on the books.\n\nCan I ask what didn't feel right for you? I only ask because Herne Bay is an ex-servicemen's club, and that's exactly where Jake goes down best. He's sung in loads of ex-servicemen's clubs, and the members know every song and are up on the floor by the second set.\n\nIf it was the music, the 50s to 70s classics are exactly what those nights are built on. If it was budget, let me know what your entertainment manager has in mind for a first night and I'll see what I can do.\n\nHave a look at the videos on the site and you'll see what I mean.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+     "msgId": "1a0e8f3220ab97d0"
+    }
+   ]
+  }
+ ],
+ "note": "Folded direct into venues.json by Nat Board (Action stays OFF). Both msgIds, UTC times and bodies verified against Gmail read-only. Them label normalised to 'Their reply'; badge written as JEM wording 'replied-soft / reopened' (Bookings: replied-soft). No declined/never-again marker was stored on the row. Tab not set; board derives Wait. Locks/money untouched."
+}
