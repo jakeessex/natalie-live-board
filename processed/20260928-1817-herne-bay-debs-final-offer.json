@@ -1,0 +1,35 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "herne-bay-ex-servicemen-s-club",
+    "email": "hbexservice.members@gmail.com"
+   },
+   "badge": "replied-soft / final offer out",
+   "messages": [
+    {
+     "side": "them",
+     "label": "Their reply",
+     "at": "2026-09-28T17:02:59Z",
+     "from": "hbexservice.members@gmail.com",
+     "to": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Herne Bay Ex-Servicemen's Club?",
+     "body": "Hi Natalie,\n\nI have seen his videos and Jake has a good voice but alot of our members want 80’s and up now. We have alot of acts that cover 50’s to 70’s.\n\nRegards\nDebs",
+     "msgId": "1a0e8f872138730f"
+    },
+    {
+     "side": "us",
+     "label": "Sent",
+     "at": "2026-09-28T17:13:33Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "hbexservice.members@gmail.com",
+     "subject": "Re: Jake Essex for Herne Bay Ex-Servicemen's Club?",
+     "body": "Hi Debs,\n\nThanks for watching the videos, and I'm really glad you liked his voice. It's what Jake gets told everywhere he goes. He's had outstanding reviews from the clubs he plays, and people are genuinely surprised a young singer can deliver those songs with that kind of power and feeling.\n\nI completely understand about the 80s. What I'd say is that Jake isn't like the other acts covering the 50s to 70s. It's his own voice rather than an impersonation, and he brings a freshness to those songs that rooms don't expect. He's a breath of fresh air compared with anyone else doing that era.\n\nHe's playing locally too, including Walderslade Social Club on Christmas Eve and Sidcup Social in the spring. At social clubs like yours he quickly becomes the talking point, people come in specially to see him, and the regulars end up asking when he's coming back.\n\nHis dates are going fast, but I'm happy to hold one Saturday for you at his base rate of £250 cash for 2 x 1 hour, so you can trial him with your members. If it's not for you, no problem at all, and thanks again for getting back to me.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+     "msgId": "1a0e901f0993bf71"
+    }
+   ]
+  }
+ ],
+ "note": "Folded direct into venues.json by Nat Board (Action stays OFF). Both msgIds, UTC times and bodies verified against Gmail read-only. Them label normalised to 'Their reply'; badge JEM wording 'replied-soft / final offer out' (Bookings: replied-soft); statusNote set. No lock/money change; tab not set."
+}
