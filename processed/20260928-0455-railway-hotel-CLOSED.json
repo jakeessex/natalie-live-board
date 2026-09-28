@@ -1,0 +1,23 @@
+{
+  "event": "reply",
+  "venue": {
+    "id": "railway-hotel-the",
+    "name": "Railway Hotel, The",
+    "email": "railwaybandbookings@gmail.com",
+    "town": "Southend-on-Sea"
+  },
+  "badge": "declined",
+  "messages": [
+    {
+      "side": "them",
+      "at": "2026-09-26T16:58:37Z",
+      "from": "railwaybandbookings@gmail.com",
+      "subject": "Re: Jake Essex for The Railway Hotel?",
+      "msgId": "1a0dea7bc7f8d1ac",
+      "body": "Hi thanks for the email.\nSorry we aren’t looking for any solo acts.\n\nJamie\nSent from my iPhone",
+      "label": "Their reply"
+    }
+  ],
+  "threadId": "1a0cef98834e5497",
+  "statusNote": "declined · not a fit (no solo acts) · Jamie Them Sat 26 ~17:58 London (2026-09-26T16:58:37Z) `1a0dea7bc7f8d1ac` thread `1a0cef98834e5497` · 'not looking for any solo acts' · do not re-cold · no chase"
+}

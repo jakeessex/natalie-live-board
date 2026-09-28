@@ -5212,11 +5212,11 @@
     "id": "kessingland-uwm",
     "name": "Kessingland UWM",
     "town": "",
-    "badge": "awaiting",
+    "badge": "replied-interested",
     "phone": "+441502740218",
     "needPhone": false,
     "email": "clubsecretarykuwmc@outlook.com",
-    "replied": "no",
+    "replied": "yes — 26 Sep 2026 (Terry price-ask)",
     "firstPitch": "27 Aug 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
     "followUps": "1 · last 11 Sep 2026",
@@ -5237,10 +5237,21 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex — still keen if you've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-26T21:40:19Z",
+        "from": "clubsecretarykuwmc@outlook.com",
+        "subject": "Re: Live music — Jake Essex",
+        "msgId": "1a0dfa981c1b38a9",
+        "body": "Hi Natalie,\n\nThanks for your email.\n\nWe have a limited budget for live acts, please can you let me know your charges / singing times for a Friday or Saturday evening.\n\nI look forward to hearing back from you.\n\nMany thanks\nTerry\nClub Secretary"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "contactName": "Terry",
+    "statusNote": "price-ask, awaiting Jake/Gate quote · Terry (Club Secretary) Them Sat 26 ~22:40 London (2026-09-26T21:40:19Z) `1a0dfa981c1b38a9` thread `1a043614a2841bf4` · limited budget, asks charges + singing times for a Fri or Sat evening · not locked, no cash"
   },
   {
     "id": "kings-arms-stansted",
@@ -23245,7 +23256,7 @@
     "id": "plough-and-harrow",
     "name": "Plough & Harrow",
     "town": "Welling",
-    "badge": "awaiting",
+    "badge": "bounce",
     "phone": null,
     "needPhone": true,
     "email": "info@theploughandharrowda16.com",
@@ -23265,8 +23276,8 @@
       }
     ],
     "hasThread": true,
-    "tab": "call",
-    "statusNote": "DSN Delay soft-watch · Wed 23 ~18:25 London 1a0cf4d62f636c5c + 2nd Delay Thu 24 ~20:43 London 1a0d4f202fdb7a78 (Gmail retrying ~20 more hours) · thread 1a0c9fbaac80b5e4 · not Failure · no re-cold"
+    "tab": "other",
+    "statusNote": "DSN Failure bounce never-retry · Fri 25 ~18:33 London (2026-09-25T17:33:50Z) `1a0d9a16f4411778` thread `1a0c9fbaac80b5e4` · recipient server connect timeout Status 4.4.1 · prior Delay soft-watch (1a0cf4d62f636c5c, 1a0d4f202fdb7a78) closed · MASTER+CONTACTED+NEVER_AGAIN BOUNCE ~04:55 Mon 28 · do not invent alt · no re-cold · Us cold retained · no DSN body in Conversation"
   },
   {
     "id": "roundhouse",
@@ -24286,11 +24297,11 @@
     "id": "railway-hotel-the",
     "name": "Railway Hotel, The",
     "town": "Southend-on-Sea",
-    "badge": "awaiting",
+    "badge": "declined",
     "phone": null,
     "needPhone": true,
     "email": "railwaybandbookings@gmail.com",
-    "replied": "no",
+    "replied": "yes — Jamie decline 26 Sep (no solo acts)",
     "firstPitch": "23 Sep 2026",
     "addedAt": "2026-09-23",
     "followUps": "0 · last —",
@@ -24302,10 +24313,21 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex for The Railway Hotel?",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nJake would be a great fit for The Railway Hotel — and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s — Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act — no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-26T16:58:37Z",
+        "from": "railwaybandbookings@gmail.com",
+        "subject": "Re: Jake Essex for The Railway Hotel?",
+        "msgId": "1a0dea7bc7f8d1ac",
+        "body": "Hi thanks for the email.\nSorry we aren’t looking for any solo acts.\n\nJamie\nSent from my iPhone"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "other",
+    "contactName": "Jamie",
+    "statusNote": "declined · not a fit (no solo acts) · Jamie Them Sat 26 ~17:58 London (2026-09-26T16:58:37Z) `1a0dea7bc7f8d1ac` thread `1a0cef98834e5497` · 'not looking for any solo acts' · do not re-cold · no chase"
   },
   {
     "id": "south-norwood-and-woodside-club",

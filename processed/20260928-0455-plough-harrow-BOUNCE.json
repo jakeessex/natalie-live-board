@@ -1,0 +1,18 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "plough-and-harrow",
+        "name": "Plough & Harrow",
+        "email": "info@theploughandharrowda16.com",
+        "town": "Welling"
+      },
+      "badge": "bounce",
+      "statusNote": "DSN Failure bounce never-retry · Fri 25 ~18:33 London (2026-09-25T17:33:50Z) `1a0d9a16f4411778` thread `1a0c9fbaac80b5e4` · recipient server connect timeout Status 4.4.1 · prior Delay soft-watch (1a0cf4d62f636c5c, 1a0d4f202fdb7a78) closed · MASTER+CONTACTED+NEVER_AGAIN BOUNCE ~04:55 Mon 28 · do not invent alt · no re-cold · Us cold retained · no DSN body in Conversation",
+      "dsnMsgId": "1a0d9a16f4411778",
+      "dsnAt": "2026-09-25T17:33:50Z",
+      "threadId": "1a0c9fbaac80b5e4"
+    }
+  ]
+}
