@@ -1,0 +1,35 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "old-windsor-club",
+    "email": "oldwindsorclub@gmail.com"
+   },
+   "badge": "replied-soft / final offer out",
+   "messages": [
+    {
+     "side": "them",
+     "label": "Their reply",
+     "at": "2026-09-28T17:16:12Z",
+     "from": "oldwindsorclub@gmail.com",
+     "to": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Old Windsor Club?",
+     "body": "Hi,\n\nWe have the first 6 months all booked up now but will keep you in mind for another time\n\nMel",
+     "msgId": "1a0e9049015fba02"
+    },
+    {
+     "side": "us",
+     "label": "Sent",
+     "at": "2026-09-28T17:36:24Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "oldwindsorclub@gmail.com",
+     "subject": "Re: Jake Essex for Old Windsor Club?",
+     "body": "Hi Mel,\n\nThanks for letting me know, that's completely fine. The reason I'd love to get something in the diary now is that Jake's bookings are already going in right through to Christmas 2027, so the good Saturdays are going quickly.\n\nHe's had outstanding reviews everywhere he plays. It's his own voice rather than an impersonation, he's a breath of fresh air compared with other acts covering the 50s to 70s, and at clubs like yours he quickly becomes the talking point, with regulars asking when he's coming back.\n\nAs your first six months are full, I'm happy to hold one Saturday for you from June 2027 onwards at his base rate of £250 cash for 2 x 1 hour, so you can trial him with your members. Just tell me which month suits and I'll send over the free dates and lock one in before they go.\n\nThanks again,\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+     "msgId": "1a0e916da79e92bf"
+    }
+   ]
+  }
+ ],
+ "note": "Folded direct into venues.json by Nat Board (Action stays OFF). Both msgIds, UTC times and bodies verified against Gmail read-only. Them label normalised to 'Their reply'; badge JEM wording 'replied-soft / final offer out' (Bookings: replied-soft); statusNote set. Backfilled msgId 1a0c5970ad5cce07 on the existing 21 Sep Us quote (2026-09-21T20:10:05Z) after Gmail check. No lock/money change; tab not set."
+}
