@@ -47920,8 +47920,8 @@
     "website": "theratpacklive.co.uk",
     "contactName": "David",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+447765885858",
+    "needPhone": false,
     "email": "david@davidalacey.co.uk",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -47941,7 +47941,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecad5d161f04c thread 1a0ecad31cd7064c · Touring Rat Pack show, live band or playback · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecad5d161f04c thread 1a0ecad31cd7064c · Touring Rat Pack show, live band or playback · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "hot-rock-promotions",
@@ -47972,7 +47973,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecadda1e65bb8 thread 1a0ecadd93046156 · Midlands Elvis Festival #4 (31 Jul to 1 Aug 2027, 50th Anniversary Special) plus band/DJ bookings · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecadda1e65bb8 thread 1a0ecadd93046156 · Midlands Elvis Festival #4 (31 Jul to 1 Aug 2027, 50th Anniversary Special) plus band/DJ bookings · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "hd-events-uk-king-of-the-castle",
@@ -48003,7 +48005,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecae58b1482bb thread 1a0ecae5959f28c6 · 3-day Elvis festival, 28 to 30 May 2027: contest heats plus paid headliners, a \"Legends Concert\" and an after-show party · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecae58b1482bb thread 1a0ecae5959f28c6 · 3-day Elvis festival, 28 to 30 May 2027: contest heats plus paid headliners, a \"Legends Concert\" and an after-show party · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "jmg-music-group",
@@ -48034,7 +48037,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecae879cd9ec5 thread 1a0ecae858299199 · Concert promoter/producer, 400+ shows a year incl. \"Legends of the 60s\" · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecae879cd9ec5 thread 1a0ecae858299199 · Concert promoter/producer, 400+ shows a year incl. \"Legends of the 60s\" · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "kennedy-street-enterprises",
@@ -48065,7 +48069,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecae926252b79 thread 1a0ecae92769f8bb · Heritage concert & tour promoter (original 60s names) · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecae926252b79 thread 1a0ecae92769f8bb · Heritage concert & tour promoter (original 60s names) · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "official-elvis-presley-fan-club-uk",
@@ -48096,7 +48101,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaea09dc746f thread 1a0ecaea0db30eed · Fan club events: birthday weekender, dinner dances; endorses Hemsby Elvis Week · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaea09dc746f thread 1a0ecaea0db30eed · Fan club events: birthday weekender, dinner dances; endorses Hemsby Elvis Week · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "boogaloo-promotions",
@@ -48106,8 +48112,8 @@
     "website": "boogaloopromotions.com",
     "contactName": "",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441252793430",
+    "needPhone": false,
     "email": "info@boogaloopromotions.com",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48127,7 +48133,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaed833b568a thread 1a0ecaed82ebfc03 · Rock n roll, jive and boogie weekenders: IoW Rock n Roll Extravaganza (Norton Grange, 12 to 15 Feb 2027, adults only), Jump Jive & Boogie weekends (Torquay, Bournemouth), blues gigs · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaed833b568a thread 1a0ecaed82ebfc03 · Rock n roll, jive and boogie weekenders: IoW Rock n Roll Extravaganza (Norton Grange, 12 to 15 Feb 2027, adults only), Jump Jive & Boogie weekends (Torquay, Bournemouth), blues gigs · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "venture-away-music-weekends",
@@ -48137,8 +48144,8 @@
     "website": "ventureawaymusicweekends.co.uk",
     "contactName": "Paul",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441305750797",
+    "needPhone": false,
     "email": "paul@ventureawaymusicweekends.co.uk",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48158,7 +48165,9 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaee7219c0ca thread 1a0ecaee786c7d3a · 7 rock n roll weekenders a year, 29 years running · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaee7219c0ca thread 1a0ecaee786c7d3a · 7 rock n roll weekenders a year, 29 years running · awaiting",
+    "venueType": "Promoter (support slot)",
+    "notes": "Also 07540 420303"
   },
   {
     "id": "humdinger-vintage-events",
@@ -48189,7 +48198,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaef41335450 thread 1a0ecaef224d7fe8 · Humdinger 2027, 11 to 13 Jun 2027 (vintage rock n roll weekender) · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaef41335450 thread 1a0ecaef224d7fe8 · Humdinger 2027, 11 to 13 Jun 2027 (vintage rock n roll weekender) · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "rockin-round-up",
@@ -48220,7 +48230,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf00a5b7291 thread 1a0ecaf008ca8201 · 3-day rockabilly weekender #11, 4 to 6 Jun 2027 · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf00a5b7291 thread 1a0ecaf008ca8201 · 3-day rockabilly weekender #11, 4 to 6 Jun 2027 · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "juniper-fayre",
@@ -48230,8 +48241,8 @@
     "website": "vintagetouch.org",
     "contactName": "",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+447878064039",
+    "needPhone": false,
     "email": "juniperfayre@gmail.com",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48251,7 +48262,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf0e59df8af thread 1a0ecaf0fff08e7d · Rockin' at Bomber County #5, 28 to 30 May 2027 (camping vintage/rock n roll festival) · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf0e59df8af thread 1a0ecaf0fff08e7d · Rockin' at Bomber County #5, 28 to 30 May 2027 (camping vintage/rock n roll festival) · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "ajl-theatrical-the-summer-show",
@@ -48261,8 +48273,8 @@
     "website": "thesummershow.uk / ajltheatrical.com",
     "contactName": "",
     "badge": "bounce",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441255433344",
+    "needPhone": false,
     "email": "info@thesummershow.uk",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48282,7 +48294,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "DSN Failure bounce never-retry · Tue 29 ~11:21 London support pitch `1a0ecaf4595f5ebd` thread `1a0ecaf4411119a2` DSN `1a0ecaf74bafe0e4` · 550 5.1.0 Recipient not found (secureserver) · SUPPORT-SLOT PROMOTER · NEVER_AGAIN · do not invent alt · no re-cold · Us cold retained · no DSN body in Conversation · Annual summer variety season (5 to 22 Aug 2026) and The Christmas Show (17 to 20 Dec 2026)"
+    "statusNote": "DSN Failure bounce never-retry · Tue 29 ~11:21 London support pitch `1a0ecaf4595f5ebd` thread `1a0ecaf4411119a2` DSN `1a0ecaf74bafe0e4` · 550 5.1.0 Recipient not found (secureserver) · SUPPORT-SLOT PROMOTER · NEVER_AGAIN · do not invent alt · no re-cold · Us cold retained · no DSN body in Conversation · Annual summer variety season (5 to 22 Aug 2026) and The Christmas Show (17 to 20 Dec 2026)",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "neil-sands-productions",
@@ -48313,7 +48326,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf535d6a689 thread 1a0ecaf5010e4d3f · \"Masters of Matinee Nostalgia\": Remember When (40s-70s incl. Elvis songs), AT THE HOP: Hits of the 50s & 60s, Christmas Memories · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf535d6a689 thread 1a0ecaf5010e4d3f · \"Masters of Matinee Nostalgia\": Remember When (40s-70s incl. Elvis songs), AT THE HOP: Hits of the 50s & 60s, Christmas Memories · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "prestige-productions",
@@ -48323,8 +48337,8 @@
     "website": "prestigeproductions.co.uk",
     "contactName": "Ross",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441275402093",
+    "needPhone": false,
     "email": "info@prestigeproductions.co.uk",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48344,7 +48358,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf5f0615d19 thread 1a0ecaf5e9519ffe · Touring nostalgia theatre productions incl. That'll Be The Day (50s-60s rock n roll variety) · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf5f0615d19 thread 1a0ecaf5e9519ffe · Touring nostalgia theatre productions incl. That'll Be The Day (50s-60s rock n roll variety) · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "beverley-holidays",
@@ -48354,8 +48369,8 @@
     "website": "beverley-holidays.co.uk",
     "contactName": "",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441803843887",
+    "needPhone": false,
     "email": "info@beverley-holidays.co.uk",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48375,7 +48390,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf6c0b3ed7c thread 1a0ecaf6d57847a8 · Guest cabaret acts most nights, Mar to Nov; hosts Venture Away's Paignton R&R Weekender · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf6c0b3ed7c thread 1a0ecaf6d57847a8 · Guest cabaret acts most nights, Mar to Nov; hosts Venture Away's Paignton R&R Weekender · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "parkdean-vauxhall-weekenders",
@@ -48385,8 +48401,8 @@
     "website": "vhpweekenders.co.uk",
     "contactName": "",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+443308180671",
+    "needPhone": false,
     "email": "vauxhallweekenders@parkdean-resorts.com",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48406,7 +48422,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf7a021a437 thread 1a0ecaf7938a8897 · Adult weekenders: Totally 60's 70's & 80's, Celebrity Weekender (\"live music, celebrity guests\"), Totally Christmas Party, Soul & Motown · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecaf7a021a437 thread 1a0ecaf7938a8897 · Adult weekenders: Totally 60's 70's & 80's, Celebrity Weekender (\"live music, celebrity guests\"), Totally Christmas Party, Soul & Motown · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "club-tropicana-golden-palm",
@@ -48416,8 +48433,8 @@
     "website": "theclubtropicana.co.uk",
     "contactName": "",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441754874444",
+    "needPhone": false,
     "email": "info@theclubtropicana.com",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48437,7 +48454,9 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecafae86b4fb3 thread 1a0ecafae54aa55f · Live shows, themed weekends, afternoon-tea shows; hosts Venture Away Skegness R&R weekender · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecafae86b4fb3 thread 1a0ecafae54aa55f · Live shows, themed weekends, afternoon-tea shows; hosts Venture Away Skegness R&R weekender · awaiting",
+    "venueType": "Promoter (support slot)",
+    "notes": "Also Ents Manager 01754 876128"
   },
   {
     "id": "little-groves-leisure-park",
@@ -48447,8 +48466,8 @@
     "website": "littlegroves.com",
     "contactName": "",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441795510316",
+    "needPhone": false,
     "email": "reception@littlegroves.com",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48468,7 +48487,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecafbdc6756c3 thread 1a0ecafbc150624a · Clubhouse live entertainment every bank holiday and through the summer · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecafbdc6756c3 thread 1a0ecafbc150624a · Clubhouse live entertainment every bank holiday and through the summer · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "don-amott-parks",
@@ -48478,8 +48498,8 @@
     "website": "donamottparks.com",
     "contactName": "",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441507358428",
+    "needPhone": false,
     "email": "enquiries@donamottparks.com",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48499,7 +48519,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecafca79fa7cd thread 1a0ecafcbe5bae48 · \"Top-line entertainment every Saturday night for the entire holiday season... singers, bands, musicians\" · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecafca79fa7cd thread 1a0ecafcbe5bae48 · \"Top-line entertainment every Saturday night for the entire holiday season... singers, bands, musicians\" · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "braddicks-the-pier-house",
@@ -48509,8 +48530,8 @@
     "website": "braddicksholidays.co.uk",
     "contactName": "",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441237477777",
+    "needPhone": false,
     "email": "thepierhouse@braddicks.com",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48530,7 +48551,8 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecafd9e23ab46 thread 1a0ecafd7ac58e27 · Bar/bistro live music; park hosts the Barnstaple Rock n Roll Westward Ho! Weekender #28 (6 to 8 Nov 2026) · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecafd9e23ab46 thread 1a0ecafd7ac58e27 · Bar/bistro live music; park hosts the Barnstaple Rock n Roll Westward Ho! Weekender #28 (6 to 8 Nov 2026) · awaiting",
+    "venueType": "Promoter (support slot)"
   },
   {
     "id": "richardsons-hemsby-beach",
@@ -48540,8 +48562,8 @@
     "website": "richardsonsholidayparks.co.uk",
     "contactName": "",
     "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441493809903",
+    "needPhone": false,
     "email": "marketing@richardsonsgroup.net",
     "replied": "no",
     "firstPitch": "29 Sep 2026",
@@ -48561,6 +48583,7 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecafe52aa08c0 thread 1a0ecafe5da56203 · Host park for Hemsby R&R Weekender, Don't Knock The Rock Jamboree, Fabulous Elvis Week · awaiting"
+    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecafe52aa08c0 thread 1a0ecafe5da56203 · Host park for Hemsby R&R Weekender, Don't Knock The Rock Jamboree, Fabulous Elvis Week · awaiting",
+    "venueType": "Promoter (support slot)"
   }
 ]
