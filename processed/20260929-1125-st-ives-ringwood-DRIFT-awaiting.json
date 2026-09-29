@@ -1,0 +1,26 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "st-ives-club-ringwood",
+    "email": "admin@stivesclubringwood.co.uk"
+   },
+   "badge": "awaiting",
+   "note": "Drift fix 29 Sep: 1 Sep pitch confirmed in Gmail Sent; stale queued-2pm-1sep badge corrected to awaiting. Same venue as sicinfo@mail.com, never mail that.",
+   "messages": [
+    {
+     "side": "us",
+     "label": "Sent",
+     "at": "2026-09-01T14:10:21Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "admin@stivesclubringwood.co.uk",
+     "subject": "Live music — Jake Essex",
+     "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nSt Ives Club on School Lane already hosts live music with a stage in the\nfunction room, and Saturday you're open from four through to eleven.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nBest regards,\nNatalie",
+     "msgId": "1a05d4e845b68e95"
+    }
+   ]
+  }
+ ],
+ "foldNote": "Folded direct into venues.json by Nat Board 29 Sep (Action OFF). msgId/time/body verified in Gmail Sent. Existing board Us message (2026-09-01T14:11:55Z) carries Seaford Con Club wording, not St Ives, so the St Ives pitch was appended rather than backfilled; that mis-attributed message was left in place (brief: nothing else on the row)."
+}
