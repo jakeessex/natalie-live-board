@@ -23,6 +23,9 @@
     ".nd-pill.hold{background:#d62d2d;color:#fff}",
     ".nd-pill.wait{background:#f5a623;color:#2a1a00}",
     ".nd-pill.emailed{background:#2f6fd6;color:#fff}",
+    ".nd-saverow{display:flex;align-items:center;gap:12px;margin-top:8px}",
+    ".nd-save{background:#1f9d55;color:#fff;border:0;border-radius:12px;padding:12px 20px;font-size:17px;font-weight:700}",
+    ".nd-saved{font-size:14px;color:#1f9d55;font-weight:600}",
     ".nd-pill.far{background:#8a939e;color:#fff}",
     ".nd h2{font-size:28px;line-height:1.15;margin:10px 0 2px;font-weight:800}",
     ".nd-town{font-size:19px;color:#4a5665;margin:0 0 6px}",
@@ -202,9 +205,27 @@
     ta.id = "nd-notes-" + v.id;
     lbl.htmlFor = ta.id;
     ta.value = load("notes:" + v.id);
-    ta.addEventListener("input", function () { store("notes:" + v.id, ta.value); });
+    var saveRow = el("div", "nd-saverow");
+    var saveBtn = el("button", "nd-save", "Save note");
+    saveBtn.type = "button";
+    var saved = el("span", "nd-saved", "");
+    function stamp(t) { saved.textContent = t; }
+    var st0 = load("notesAt:" + v.id);
+    if (ta.value && st0) stamp("Saved " + st0);
+    ta.addEventListener("input", function () { store("notes:" + v.id, ta.value); stamp("Not saved yet"); });
+    saveBtn.addEventListener("click", function () {
+      store("notes:" + v.id, ta.value);
+      var n = new Date();
+      var t = n.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" }) + " " + n.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+      store("notesAt:" + v.id, ta.value ? t : "");
+      stamp(ta.value ? "\u2713 Saved " + t : "Note cleared");
+      ta.blur();
+    });
+    saveRow.appendChild(saveBtn);
+    saveRow.appendChild(saved);
     c.appendChild(lbl);
     c.appendChild(ta);
+    c.appendChild(saveRow);
     function paint() {
       var on = load("called:" + v.id) === "1";
       c.classList.toggle("called", on);
