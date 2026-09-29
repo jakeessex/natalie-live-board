@@ -120,7 +120,7 @@
     c.appendChild(s2);
     var s3 = el("div", "nd-sec nd-legend");
     s3.appendChild(el("h3", null, "Flags"));
-    [["hold", "HOLD: ask Jake first"], ["wait", "WAIT: see reason"], ["emailed", "EMAILED TODAY"], ["far", "FAR"]].forEach(function (x) {
+    [["hold", "HOLD: ask Jake first"], ["wait", "WAIT: see reason"], ["emailed", "EMAILED (date on card)"], ["far", "FAR"]].forEach(function (x) {
       s3.appendChild(el("span", "nd-pill " + x[0], x[1]));
     });
     c.appendChild(s3);
@@ -183,7 +183,12 @@
     c.appendChild(sec("Quote we sent", v.quote));
     var lastTitle = (v.lastWho === "Us" ? "Last message (Us)" : "Their last message") + (v.lastDate ? ", " + v.lastDate : " (date not in list)");
     c.appendChild(sec(lastTitle, v.lastMsg));
-    var d = sec("Days since contact", v.days, "nd-days");
+    var dd = v.days;
+    var base = data.listDate ? new Date(data.listDate + "T00:00:00") : null;
+    var now0 = new Date(); now0.setHours(0, 0, 0, 0);
+    var off = base ? Math.round((now0 - base) / 86400000) : 0;
+    if (off > 0 && typeof dd === "string") dd = dd.replace(/\d+/g, function (n) { return String(Number(n) + off); });
+    var d = sec("Days since contact", dd, "nd-days");
     if (v.daysNote) d.appendChild(el("p", "nd-sub", v.daysNote));
     c.appendChild(d);
     c.appendChild(sec("Why a call closes it", v.why, "nd-why"));
