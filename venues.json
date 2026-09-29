@@ -20049,12 +20049,12 @@
   {
     "id": "walthamstow-trades-hall-club",
     "name": "Walthamstow Trades Hall Club",
-    "town": "",
-    "badge": "awaiting",
+    "town": "Walthamstow",
+    "badge": "replied-soft / park (not-now)",
     "phone": null,
     "needPhone": true,
     "email": "info@tradese17.com",
-    "replied": "no",
+    "replied": "yes",
     "firstPitch": "17 Sep 2026",
     "addedAt": "2026-09-17T07:02:12.402Z",
     "followUps": "1 · last 28 Sep 2026",
@@ -20076,11 +20076,22 @@
         "subject": "Re: Jake Essex for Walthamstow Trades Hall Club?",
         "msgId": "1a0e7a6465b2a5e5",
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex, still keen if you've got a Friday or Saturday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-28T19:11:52Z",
+        "from": "info@tradese17.com",
+        "subject": "Re: Jake Essex for Walthamstow Trades Hall Club?",
+        "body": "Hi,\n\nI have sent your enquiry to our Events Team, they will get bqack to you if\nthey can assist.\n\nthanks, Simon\n\nAdministration Officer\nWalthamstow Trades Hall & Institute Ltd",
+        "msgId": "1a0e96ed42947991"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Us FU ~11:53 Mon 28 Sep 1a0e7a6465b2a5e5 · thu-17-sep SENT_OK 1a0ae0e5b40e6602 · awaiting · LOCAL"
+    "statusNote": "Soft reply Mon 28 ~20:11 London · Simon Administration Officer · enquiry forwarded to Events Team, they will get back if they can assist · no fee/date ask → Wait · not hard No · one FU already · do not re-chase · Us cold 1a0ae0e5b40e6602 FU1 1a0e7a6465b2a5e5 · Them 1a0e96ed42947991 · overnight Bookings fold",
+    "contactName": "Simon",
+    "notes": "Events Team Wait. No draft/chase until Events Team replies or Simon follows up."
   },
   {
     "id": "halstead-conservative-club",
@@ -20977,7 +20988,7 @@
     "name": "Old Windsor Club",
     "town": "",
     "badge": "replied-soft / final offer out",
-    "phone": null,
+    "phone": "+441753861068",
     "needPhone": true,
     "email": "oldwindsorclub@gmail.com",
     "replied": "yes",

@@ -1,0 +1,30 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "walthamstow-trades-hall-club",
+        "name": "Walthamstow Trades Hall Club",
+        "email": "info@tradese17.com",
+        "town": "Walthamstow",
+        "contactName": "Simon"
+      },
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-28T19:11:52Z",
+          "from": "info@tradese17.com",
+          "subject": "Re: Jake Essex for Walthamstow Trades Hall Club?",
+          "body": "Hi,\n\nI have sent your enquiry to our Events Team, they will get bqack to you if they can assist.\n\nthanks, Simon\n\nAdministration Officer\nWalthamstow Trades Hall & Institute Ltd",
+          "gmailThreadId": "1a0ae0d76a8bade2",
+          "label": "Their reply",
+          "msgId": "1a0e96ed42947991"
+        }
+      ],
+      "statusNote": "Soft reply Mon 28 ~20:11 London · Simon Administration Officer · enquiry forwarded to Events Team · Wait · not hard No · one FU already · do not re-chase · Us cold 1a0ae0e5b40e6602 FU1 1a0e7a6465b2a5e5 · overnight Bookings fold",
+      "notes": "Events Team Wait. No draft/chase until Events Team replies or Simon follows up.",
+      "badge": "replied-soft / park (not-now)"
+    }
+  ],
+  "note": "Folded direct into venues.json by Nat Board (Action stays OFF). msgId/Z time/body verified in Gmail read-only (thread 1a0ae0d76a8bade2). Badge replied-soft / park (not-now) matching Bellegrove/Iver/Whitchurch soft Wait parks. Same commit: old-windsor-club phone +441753861068 (JEM-approved). No lock/money; tab not set."
+}
