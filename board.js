@@ -888,12 +888,12 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     const tel = hasPhone(venue);
     const who = row.who || extractWho(venue, null) || "them";
     if (!inbound.length) return { bucket: "wait", why: "", wait: true };
+    if (ON_FILE_RE.test(all) || /future reference/.test(lastBody) || /hang on to your details|for the future/.test(lastBody) || /^will do\b/.test(lastBody.trim())) {
+      return { bucket: "file", why: "On file \u2014 leave them", wait: true };
+    }
     const parkBadge = String(venue.badge || "").toLowerCase();
     if (/park \(not-now\)|final offer out/.test(parkBadge)) {
       return { bucket: "wait", why: /final offer/.test(parkBadge) ? "Final offer out \u2014 no chase" : "Soft park \u2014 don\u2019t chase", wait: true };
-    }
-    if (ON_FILE_RE.test(all) || /future reference/.test(lastBody) || /hang on to your details|for the future/.test(lastBody) || /^will do\b/.test(lastBody.trim())) {
-      return { bucket: "file", why: "On file \u2014 leave them", wait: true };
     }
     if (/email back in january|come back in january/.test(lastBody)) {
       return { bucket: "wait", why: "Told us January \u2014 don\u2019t chase", wait: true };
