@@ -184,7 +184,8 @@
     var lastTitle = (v.lastWho === "Us" ? "Last message (Us)" : "Their last message") + (v.lastDate ? ", " + v.lastDate : " (date not in list)");
     c.appendChild(sec(lastTitle, v.lastMsg));
     var dd = v.days;
-    var base = data.listDate ? new Date(data.listDate + "T00:00:00") : null;
+    var ld = window.ND_LIST_DATE;
+    var base = ld ? new Date(ld + "T00:00:00") : null;
     var now0 = new Date(); now0.setHours(0, 0, 0, 0);
     var off = base ? Math.round((now0 - base) / 86400000) : 0;
     if (off > 0 && typeof dd === "string") dd = dd.replace(/\d+/g, function (n) { return String(Number(n) + off); });
@@ -221,6 +222,7 @@
 
   /* Build a deck inside root. opts.onClose adds a Close button. Returns {go, index, destroy}. */
   function build(root, data, opts) {
+    window.ND_LIST_DATE = (data && data.listDate) || null;
     opts = opts || {};
     injectCss();
     root.innerHTML = "";
