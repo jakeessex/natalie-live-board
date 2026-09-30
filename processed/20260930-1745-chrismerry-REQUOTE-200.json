@@ -1,0 +1,38 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "club-tropicana-golden-palm",
+    "email": "chris@chrismerry.co.uk",
+    "name": "Club Tropicana, Golden Palm"
+   },
+   "badge": "quoted",
+   "statusNote": "Requote £200 for 1×60 (£150 + £50 travel), supersedes £300. Awaiting dates. Haggle day-7 chase ~7 Oct.",
+   "messages": [
+    {
+     "side": "Them",
+     "label": "1×60 only",
+     "at": "2026-09-30T16:40:14Z",
+     "from": "chris@chrismerry.co.uk",
+     "to": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex, support act for your shows?",
+     "body": "Hi\nThe way we do shows we have two acts per night, so would only need 1 x 60\nKind regards\nChris",
+     "msgId": "1a0f330530bbb434",
+     "threadId": "1a0ecafae54aa55f"
+    },
+    {
+     "side": "Us",
+     "label": "requote £200",
+     "at": "2026-09-30T16:43:42Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "chris@chrismerry.co.uk",
+     "subject": "Re: Jake Essex, support act for your shows?",
+     "body": "Hi Chris,\n\nThat makes sense, thanks for explaining.\n\nFor a single 60 minute set it would be £200, which is £150 for the set plus £50 towards the travel, as it's a long drive from Essex. Would that work for you?\n\nIf so, throw some dates at me and I'll check them against Jake's diary. Midweek needs around four weeks' notice so he can clear the day, and weekends are easier to lock in.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+     "msgId": "1a0f3335457bbcf5",
+     "threadId": "1a0ecafae54aa55f"
+    }
+   ]
+  }
+ ]
+}
