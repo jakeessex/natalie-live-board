@@ -965,7 +965,10 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     if (MEET_RE.test(all) && tel) return { bucket: "call", why: `${who} wants Jake in \u2014 call`, wait: false };
     if (tel && heat >= 48 && days >= 3) return { bucket: "call", why: `${who} gone quiet \u2014 call`, wait: false };
     if (!tel) return { bucket: "email", why: `${who} on email \u2014 no number`, wait: false };
-    if (heat < 18) return { bucket: "file", why: "Cold reply \u2014 leave for now", wait: true };
+    if (heat < 18) {
+      if (/quoted|replied-interested|interested|final offer/.test(parkBadge)) return { bucket: "wait", why: `${who} still live \u2014 waiting on them`, wait: true };
+      return { bucket: "file", why: "Cold reply \u2014 leave for now", wait: true };
+    }
     return { bucket: "call", why: `${who} \u2014 call when you\u2019re on`, wait: false };
   }
   var REPLY_BUCKET_ORDER = { call: 0, email: 1, wait: 2, file: 3 };
