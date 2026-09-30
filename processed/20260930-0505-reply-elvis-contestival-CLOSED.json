@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "name": "HD Events UK (King of the Castle)",
+        "email": "office@elviscontestival.co.uk",
+        "town": "Blackpool",
+        "contactName": "TKoTC"
+      },
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-29T21:35:47Z",
+          "from": "office@elviscontestival.co.uk",
+          "subject": "Re: Jake Essex, support act for your shows?",
+          "body": "Hi Natalie,\n\nThank you for your interest. We have already booked all of our artists through till 2029.\n\nKind regards,\nTKoTC Elvis Contest//ival",
+          "gmailThreadId": "1a0ecae5959f28c6",
+          "label": "Their reply",
+          "msgId": "1a0ef18cda572646"
+        }
+      ],
+      "statusNote": "CLOSED \u00b7 TKoTC booked artists through 2029 \u00b7 Tue 29 ~22:35 London \u00b7 no day-7 chase \u00b7 do not re-cold \u00b7 SUPPORT lane \u00b7 overnight Bookings fold Wed 30 ~05:05",
+      "notes": "Hard CLOSED until 2029. Not a venue-wave target.",
+      "badge": "declined"
+    }
+  ],
+  "note": "Overnight Bookings fold Wed 30 Sep ~05:05. inbox JSON only \u2014 no venues.json/index.html write, no build/sync."
+}

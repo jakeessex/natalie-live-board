@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "name": "New Haw Social Club",
+        "email": "info@newhawclub.uk",
+        "town": "New Haw",
+        "contactName": "Claire Cookman"
+      },
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-09-29T18:56:21Z",
+          "from": "info@newhawclub.uk",
+          "subject": "Re: Jake Essex for New Haw Social Club?",
+          "body": "Hi ya\n\nLong shot would you have availability for NYE it is a weird timing though we need 7-9?\n\nClaire Cookman\nSecretary\nThe New Haw Social Club\ninfo@newhawclub.uk",
+          "gmailThreadId": "1a0ae153cac9142f",
+          "label": "Their reply",
+          "msgId": "1a0ee869f5a4400e"
+        }
+      ],
+      "statusNote": "replied-interested \u00b7 Claire Cookman Secretary NYE 7-9 ask Tue 29 ~19:56 London \u00b7 Haggle/Closer + Jake Gate own next \u00b7 no overnight draft/send \u00b7 Us cold + FU1 already \u00b7 overnight Bookings fold Wed 30 ~05:05",
+      "notes": "NYE interest. Do not re-cold. Leave for Haggle/Closer.",
+      "badge": "replied-interested"
+    }
+  ],
+  "note": "Overnight Bookings fold Wed 30 Sep ~05:05. inbox JSON only \u2014 no venues.json/index.html write, no build/sync."
+}

@@ -20462,12 +20462,12 @@
   {
     "id": "new-haw-social-club",
     "name": "New Haw Social Club",
-    "town": "",
-    "badge": "awaiting",
+    "town": "New Haw",
+    "badge": "replied-interested",
     "phone": null,
     "needPhone": true,
     "email": "info@newhawclub.uk",
-    "replied": "no",
+    "replied": "yes — 29 Sep 2026 (Claire Cookman, Secretary: NYE 7-9 ask)",
     "firstPitch": "17 Sep 2026",
     "addedAt": "2026-09-17T07:02:12.402Z",
     "followUps": "0 · last —",
@@ -20489,11 +20489,22 @@
         "subject": "Re: Jake Essex for New Haw Social Club?",
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex, still keen if\nyou've got a Saturday or Sunday free for live music.\n\nHe's from Essex, own PA, no deposit. Happy to send dates when useful.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a0ec6bb7e828d90"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-29T18:56:21Z",
+        "from": "info@newhawclub.uk",
+        "subject": "Re: Jake Essex for New Haw Social Club?",
+        "body": "Hi ya\n\nLong shot would you have availability for NYE it is a weird timing though\nwe need 7-9?\n\n\n*Claire Cookman*\n*Secretary*\n*The New Haw Social Club*\n📧 info@newhawclub.uk",
+        "msgId": "1a0ee869f5a4400e"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "thu-17-sep SENT_OK 1a0ae16040a16a90 · awaiting · FAR"
+    "statusNote": "replied-interested · Claire Cookman Secretary NYE 7-9 ask Tue 29 ~19:56 London (1a0ee869f5a4400e) · Haggle/Closer + Jake Gate own next · not locked, no money · Us cold + FU1 (1a0ec6bb7e828d90) already",
+    "contactName": "Claire Cookman",
+    "notes": "NYE interest. Do not re-cold. Leave for Haggle/Closer."
   },
   {
     "id": "the-faraday-social-club",
@@ -48058,15 +48069,15 @@
   {
     "id": "hd-events-uk-king-of-the-castle",
     "name": "HD Events UK (King of the Castle)",
-    "town": "",
+    "town": "Blackpool",
     "postcode": "",
     "website": "tkotc.co.uk",
-    "contactName": "",
-    "badge": "awaiting",
+    "contactName": "TKoTC",
+    "badge": "declined",
     "phone": null,
     "needPhone": true,
     "email": "office@elviscontestival.co.uk",
-    "replied": "no",
+    "replied": "yes — 29 Sep 2026 (TKoTC: all artists booked through till 2029)",
     "firstPitch": "29 Sep 2026",
     "addedAt": "2026-09-29T10:30:00Z",
     "followUps": "0 · last —",
@@ -48081,11 +48092,21 @@
         "subject": "Jake Essex, support act for your shows?",
         "body": "Hi there,\n\nI look after bookings for Jake Essex, a singer covering the 50s to the\n70s, Elvis, Buddy Holly, Roy Orbison and more. He sings in his own\nvoice rather than as an impersonator, and audiences love him.\n\nI'm getting in touch to see if you ever use a support or opening act\nfor your King of the Castle festival, such as the Legends Concert or\nthe after show party. Jake would suit an era crowd perfectly and can\ndo anything from a 30 minute warm up to a full set. His fees are\nsimple and clear.\n\nYou can see and hear him at www.jakeessex.co.uk\n\nIf this sounds useful, I'd be happy to send over his available dates.\n\nThanks,\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a0ecae58b1482bb"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-09-29T21:35:47Z",
+        "from": "office@elviscontestival.co.uk",
+        "subject": "Re: Jake Essex, support act for your shows?",
+        "body": "Hi Natalie,\n\nThank you for your interest. We have already booked all of our artists\nthrough till 2029.\n\n\nKind regards,\n\n*TKoTC Elvis Contest//ival *\n\nThe KING of The Castle • Elvis Contest//ival\n*TKoTC.co.uk <http://tkotc.co.uk/>*\n@ The Norbreck Castle Hotel, Queens Promenade, Blackpool, England\nTKoTC The KING of The Castle Elvis Contest//ival is wholly owned and run by\nHD Events UK Ltd registered in England & Wales 16964089\nFor further information email office@hdeventsuk.co.uk\nThe information in this email and any attachments is confidential and may\nbe legally privileged. It is intended solely for the addressee. Access to\nthis by anyone else is unauthorised. If you are not the intended recipient\nany disclosure, copying, distribution or any action taken or omitted in\nreliance on it, is prohibited and may be unlawful.",
+        "msgId": "1a0ef18cda572646"
       }
     ],
     "hasThread": false,
-    "statusNote": "SUPPORT-SLOT PROMOTER · support pitch 1a0ecae58b1482bb thread 1a0ecae5959f28c6 · 3-day Elvis festival, 28 to 30 May 2027: contest heats plus paid headliners, a \"Legends Concert\" and an after-show party · awaiting",
-    "venueType": "Promoter (support slot)"
+    "statusNote": "CLOSED · TKoTC booked artists through 2029 (1a0ef18cda572646) · Tue 29 ~22:35 London · no day-7 chase · do not re-cold · SUPPORT lane",
+    "venueType": "Promoter (support slot)",
+    "notes": "Hard CLOSED until 2029. Not a venue-wave target."
   },
   {
     "id": "jmg-music-group",
