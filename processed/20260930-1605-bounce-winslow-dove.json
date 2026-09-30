@@ -1,0 +1,61 @@
+{
+ "events": [
+  {
+   "event": "bounce",
+   "venue": {
+    "id": "winslow-district-rbl",
+    "email": "rblwinslow@live.com",
+    "name": "Winslow & District Royal British Legion",
+    "town": "Winslow"
+   },
+   "badge": "bounce",
+   "messages": [
+    {
+     "side": "Us",
+     "label": "cold",
+     "at": "2026-09-30T13:07:00Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "rblwinslow@live.com",
+     "subject": "Jake Essex for Winslow & District Royal British Legion?",
+     "body": "",
+     "msgId": "1a0f26db1d8e620c",
+     "threadId": "1a0f26dafc75d80c"
+    },
+    {
+     "side": "Them",
+     "label": "DSN 550 address not found",
+     "at": "2026-09-30T13:34:00Z",
+     "from": "mailer-daemon@googlemail.com",
+     "to": "jakeessexenquiries@gmail.com",
+     "subject": "Delivery Status Notification (Failure)",
+     "body": "Address not found (550 5.5.0).",
+     "msgId": "1a0f2860835e8e42",
+     "threadId": "1a0f26dafc75d80c"
+    }
+   ]
+  },
+  {
+   "event": "bounce",
+   "venue": {
+    "id": "dove-chingford",
+    "email": "info@thedovechingford.co.uk",
+    "name": "Dove",
+    "town": "Chingford"
+   },
+   "badge": "bounce",
+   "messages": [
+    {
+     "side": "Us",
+     "label": "cold",
+     "at": "2026-09-30T13:08:00Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "info@thedovechingford.co.uk",
+     "subject": "Jake Essex for Dove?",
+     "body": "",
+     "msgId": "1a0f26e4a8f7a283",
+     "threadId": "1a0f26e480c8b297"
+    }
+   ]
+  }
+ ]
+}
