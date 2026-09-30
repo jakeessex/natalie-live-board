@@ -1,0 +1,50 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "new-haw-social-club",
+    "email": "info@newhawclub.uk",
+    "name": "New Haw Social Club"
+   },
+   "badge": "quoted",
+   "statusNote": "2027 quote out £250; NYE declined (booked). Haggle owns chase.",
+   "messages": [
+    {
+     "side": "Us",
+     "label": "quote 2027",
+     "at": "2026-09-30T16:30:36Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "info@newhawclub.uk",
+     "subject": "Re: Jake Essex for New Haw Social Club?",
+     "body": "Hi Claire,\n\nThanks so much for thinking of Jake. Sadly he's already booked on New Year's Eve, so I can't help with that one.\n\nHe'd love to come and do a night for you in 2027 though. It's £250 cash for two one hour sets, with his own PA and no deposit. If you let me know which month suits the club, I'll send over the Saturdays and Sundays he has free.\n\nYou can see and hear him here:\nwww.jakeessex.co.uk\n\nNatalie",
+     "msgId": "1a0f32758cebfe07",
+     "threadId": "1a0ae153cac9142f"
+    }
+   ]
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "id": "club-tropicana-skegness",
+    "email": "chris@chrismerry.co.uk",
+    "name": "Club Tropicana, Golden Palm"
+   },
+   "badge": "quoted",
+   "statusNote": "Midweek quote £300 (2×1h £150/h), earliest wk 26 Oct. RED Gate cleared. Haggle day-7 chase.",
+   "messages": [
+    {
+     "side": "Us",
+     "label": "quote midweek",
+     "at": "2026-09-30T16:32:19Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "chris@chrismerry.co.uk",
+     "subject": "Re: Jake Essex, support act for your shows?",
+     "body": "Hi Chris,\n\nThanks for coming back to me, and great that PA and lighting are already covered your end.\n\nSkegness is a long drive for Jake, so midweek he'd need to do a minimum of two one hour sets to make the trip work. That's £150 an hour, so £300 for the night, cash or invoice. He'd be happy to make the trip, and he's confident it would be well worth the booking for you and your guests.\n\nMidweek needs around four weeks' notice so Jake can clear the day, so the earliest would be the week of 26 October. If you let me know which nights you're looking at, I'll check the diary and hold one for you.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+     "msgId": "1a0f328e75e5d3b0",
+     "threadId": "1a0ecafae54aa55f"
+    }
+   ]
+  }
+ ]
+}

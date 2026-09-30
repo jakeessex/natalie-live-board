@@ -20646,7 +20646,7 @@
     "id": "new-haw-social-club",
     "name": "New Haw Social Club",
     "town": "New Haw",
-    "badge": "replied-interested",
+    "badge": "quoted",
     "phone": null,
     "needPhone": true,
     "email": "info@newhawclub.uk",
@@ -20681,11 +20681,20 @@
         "subject": "Re: Jake Essex for New Haw Social Club?",
         "body": "Hi ya\n\nLong shot would you have availability for NYE it is a weird timing though\nwe need 7-9?\n\n\n*Claire Cookman*\n*Secretary*\n*The New Haw Social Club*\n📧 info@newhawclub.uk",
         "msgId": "1a0ee869f5a4400e"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-30T16:30:36Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for New Haw Social Club?",
+        "body": "Hi Claire,\n\nThanks so much for thinking of Jake. Sadly he's already booked on New\nYear's Eve, so I can't help with that one.\n\nHe'd love to come and do a night for you in 2027 though. It's £250\ncash for two one hour sets, with his own PA and no deposit. If you let\nme know which month suits the club, I'll send over the Saturdays and\nSundays he has free.\n\nYou can see and hear him here:\nwww.jakeessex.co.uk\n\nNatalie",
+        "msgId": "1a0f32758cebfe07"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "replied-interested · Claire Cookman Secretary NYE 7-9 ask Tue 29 ~19:56 London (1a0ee869f5a4400e) · Haggle/Closer + Jake Gate own next · not locked, no money · Us cold + FU1 (1a0ec6bb7e828d90) already",
+    "statusNote": "quoted (2027 quote) · Us 1a0f32758cebfe07 ~17:30 London Wed 30 Sep: NYE declined (Jake already booked NYE) · 2027 quote £250 cash 2×1h, own PA, no deposit · asked Claire which month suits · Them Claire Cookman Secretary NYE 7-9 ask Tue 29 ~19:56 London (1a0ee869f5a4400e) · Haggle owns chase · not locked, no money",
     "contactName": "Claire Cookman",
     "notes": "NYE interest. Do not re-cold. Leave for Haggle/Closer."
   },
@@ -49040,7 +49049,7 @@
     "postcode": "",
     "website": "theclubtropicana.co.uk",
     "contactName": "Chris Merry",
-    "badge": "replied-interested",
+    "badge": "quoted",
     "phone": "+441754874444",
     "needPhone": false,
     "email": "info@theclubtropicana.com",
@@ -49068,10 +49077,19 @@
         "subject": "Re: Jake Essex, support act for your shows?",
         "body": "Hi,\nThankyou for your enquiry.\nWhat is midweek fee please?\nAll pa and lighting is provided, probably 1 x 60 min set\n\nKind regards\nChris Merry\nBlue Anchor Leisure\nEntertainments Manager\nT.01754 876128",
         "msgId": "1a0ecfbf5e4435a1"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-30T16:32:19Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex, support act for your shows?",
+        "body": "Hi Chris,\n\nThanks for coming back to me, and great that PA and lighting are already\ncovered your end.\n\nSkegness is a long drive for Jake, so midweek he'd need to do a minimum of\ntwo one hour sets to make the trip work. That's £150 an hour, so £300 for\nthe night, cash or invoice. He'd be happy to make the trip, and he's\nconfident it would be well worth the booking for you and your guests.\n\nMidweek needs around four weeks' notice so Jake can clear the day, so the\nearliest would be the week of 26 October. If you let me know which nights\nyou're looking at, I'll check the diary and hold one for you.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0f328e75e5d3b0"
       }
     ],
     "hasThread": true,
-    "statusNote": "RED · Chris Merry (Blue Anchor Leisure / Club Tropicana) midweek fee ask · 1×60 PA+lighting provided · Them 1a0ecfbf5e4435a1 ~12:41 London Tue 29 · AWAITING JAKE GATE — do not quote/send · reply-hunter/Gate owned · folded board truth only 1600 audit",
+    "statusNote": "quoted · Us 1a0f328e75e5d3b0 ~17:32 London Wed 30 Sep to chris@chrismerry.co.uk: midweek £300 (2×1h, £150/h), cash or invoice · ~4 weeks' notice, earliest week of 26 Oct · asked Chris which nights · Them Chris Merry (Blue Anchor Leisure / Club Tropicana) midweek fee ask 1a0ecfbf5e4435a1 ~12:41 London Tue 29 (PA+lighting provided) · Jake Gate cleared · Haggle day-7 chase · not locked, no money",
     "venueType": "Promoter (support slot)",
     "notes": "Also Ents Manager 01754 876128"
   },
