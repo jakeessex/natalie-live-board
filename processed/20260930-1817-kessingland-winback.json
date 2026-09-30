@@ -1,0 +1,38 @@
+{
+ "events": [
+  {
+   "event": "status_update",
+   "venue": {
+    "id": "kessingland-uwm",
+    "email": "clubsecretarykuwmc@outlook.com",
+    "name": "Kessingland UWM"
+   },
+   "badge": "replied-soft / final offer out",
+   "statusNote": "Terry declined 30 Sep (3x45 norm, over budget). Jake-approved win-back sent: any 4 Saturdays 2027, 3x45 at £300/night all-in incl travel, they pick dates. Haggle next; no chase before Wed 7 Oct.",
+   "messages": [
+    {
+     "side": "them",
+     "label": "Them — decline",
+     "at": "2026-09-30T17:03:22Z",
+     "from": "clubsecretarykuwmc@outlook.com",
+     "to": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Live music — Jake Essex",
+     "body": "Hi Natalie,\n\nThank you for getting back to me.\n\nOur music sessions are normally 3 x 45 minute sets, but unfortunately that is way above the club's budget. A 4 piece group doesn't even get £400.\n\nThank you for your time, but I will have to say no, there wouldn't be any point in putting it to the committee.\n\nRegards\nTerry\nClub Secretary",
+     "msgId": "1a0f3456b2cf53fb",
+     "threadId": "1a043614a2841bf4"
+    },
+    {
+     "side": "us",
+     "label": "Us — win-back final offer",
+     "at": "2026-09-30T17:13:22Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "clubsecretarykuwmc@outlook.com",
+     "subject": "Re: Live music — Jake Essex",
+     "body": "Hi Terry,\n\nThanks for being straight with me, I really appreciate it. Before you close the door, let me put one offer on the table.\n\nIf the club books any four Saturdays in 2027, Jake will do your normal 3 x 45 minute session for £300 a night, all in, travel included. You pick the dates that suit the club, anywhere in the year. That's a quarter off his usual rate, and it's the best price he's offered any club this year.\n\nYour members would be getting a proper night out. It's a real voice singing Darin, Dion, Holly, Orbison, Sinatra and Elvis, with no jumpsuit and no corny impersonations. He brings his own PA, there's no deposit, and he gets people up dancing from the first set. The clubs he plays keep booking him again, because he's the one the room is still talking about on the way home.\n\nJust send me the four Saturdays you'd like and I'll lock them in at £300 a night. Would that be worth putting to the committee?\n\nNatalie\nJake Essex Music\nwww.jakeessex.co.uk",
+     "msgId": "1a0f34e7c7e5b1c1",
+     "threadId": "1a043614a2841bf4"
+    }
+   ]
+  }
+ ]
+}
