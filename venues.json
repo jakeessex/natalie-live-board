@@ -52813,5 +52813,35 @@
     "firstPitch": "1 Oct 2026",
     "subject": "Live music at Freemasons Arms",
     "statusNote": "thu-1-oct cold WAVE E SENT_OK 1a0f80a09c52a8c6 ~16:16 London thread 1a0f809fcf61efdd · awaiting · folded 1 Oct (body from Gmail; inbox body truncated)"
+  },
+  {
+    "id": "cold-20261001-crocodile-cheshunt-en7",
+    "name": "Crocodile",
+    "town": "Cheshunt EN7",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "crocodile.cheshunt@mcmullens.co.uk",
+    "addedAt": "2026-10-01T15:25:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T15:19:51Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Crocodile?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Crocodile - and he'd love to come and\nperform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into\n2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f80cec144cdb1"
+      }
+    ],
+    "badge": "awaiting",
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "subject": "Jake Essex for Crocodile?",
+    "statusNote": "thu-1-oct cold WAVE E SENT_OK 1a0f80cec144cdb1 ~16:19 London thread 1a0f80cb10c33b15 · awaiting · folded 1 Oct"
   }
 ]
