@@ -9447,6 +9447,15 @@
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nAcle Social Club on Bridewell Lane already puts live music on and keeps\nweekend entertainment running — Shaun Smalls is on the live Sunday slot on\ntheir events page.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nBest regards,\nNatalie",
         "msgId": "1a05d4d491c30753"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T08:22:51Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust following up on my note about Jake Essex for Acle Social Club.\nJake is a high-energy 50s and 60s rock and roll singer, himself, not a\ntribute, with his own PA and no deposit needed.\n\nFor clubs like yours it's from £250 for two one hour sets. If you have\nany dates in the diary for the months ahead, I'd love to pencil\nsomething in, or just point me to whoever looks after entertainment.\n\nIf it's not for you, just reply \"no thanks\" and I won't email again.\n\nBest,\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0f68f272808489"
       }
     ],
     "hasThread": true,
@@ -9808,6 +9817,15 @@
         "subject": "Live music — Jake Essex",
         "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nSt Ives Club on School Lane already hosts live music with a stage in the\nfunction room, and Saturday you're open from four through to eleven.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nBest regards,\nNatalie",
         "msgId": "1a05d4e845b68e95"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T08:26:30Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nQuick bump on Jake Essex for St Ives Club Ringwood. He's a proper\n50s/60s rock and roll singer (himself, not a tribute), own PA, no\ndeposit.\n\nIndicative fee is from £250 for two one hour sets. If a Saturday or\nSunday in the months ahead could work, reply here and I'll send free\ndates, or pass me to the entertainment person.\n\nHappy to leave it if it's not a fit. Just say \"no thanks\".\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0f6927cae33427"
       }
     ],
     "hasThread": true,
@@ -45084,18 +45102,33 @@
     "name": "Littleport Ex-Servicemens Club",
     "town": "East Cambridgeshire",
     "phone": "01353-860378",
-    "email": "",
+    "email": "enquires@lportexservices.co.uk",
     "postcode": "CB6 1PZ",
     "website": "",
     "venueType": "CIU club",
     "miles": 65,
     "prospect": true,
     "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "badge": "bounce",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T10:13:59Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Littleport Ex-Services & Social Club?",
+        "body": "Hi,\n\nI'm Natalie - I look after bookings for Jake Essex.\n\nJake would go down really well at Littleport Ex-Services & Social\nClub, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6f4e6444bfcc"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 52.45895,
-    "lng": 0.30563
+    "lng": 0.30563,
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "statusNote": "DSN Failure bounce never-retry · thu-1-oct cold WAVE B FAR Us cold 1a0f6f4e6444bfcc ~11:13 London thread 1a0f6f4bb7c133fa DSN 1a0f6f5187493aca (~11:14 London, address not found; enquires@ looks like a typo of enquiries@ — not retried) · NEVER_AGAIN · do not invent alt · no re-cold · Us cold retained · no DSN body in Conversation · was prospect (Littleport Ex-Servicemens Club CB6 1PZ)",
+    "subject": "Jake Essex for Littleport Ex-Services & Social Club?"
   },
   {
     "id": "pot-headington-conservative-club-ox3-7bz",
@@ -47334,18 +47367,33 @@
     "name": "Chandlers Ford Central Club",
     "town": "Eastleigh",
     "phone": "023-80268481",
-    "email": "",
+    "email": "admin@chandlersfordcentralclub.co.uk",
     "postcode": "SO53 2FZ",
     "website": "",
     "venueType": "CIU club",
     "miles": 81,
     "prospect": true,
     "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T09:05:49Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Chandlers Ford Central Club?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nI thought of Chandlers Ford Central Club for Jake - he'd love to come\nand perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6b67ae1990a1"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 50.98202,
-    "lng": -1.38232
+    "lng": -1.38232,
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "subject": "Jake Essex for Chandlers Ford Central Club?",
+    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6b67ae1990a1 thread 1a0f6b653a96d9a2 · awaiting · folded 1 Oct · was prospect"
   },
   {
     "id": "pot-crofton-hampshire-club-po14-2jh",
@@ -47568,18 +47616,33 @@
     "name": "Bitterne Park Social Club",
     "town": "Southampton",
     "phone": "023-80554694",
-    "email": "",
+    "email": "enquiries@bpsocialclub.com",
     "postcode": "SO18 1NQ",
     "website": "",
     "venueType": "CIU club",
     "miles": 83,
     "prospect": true,
     "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T08:59:10Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Bitterne Park Social Club?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Bitterne Park Social Club - and he'd\nlove to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6b0673c76817"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 50.92624,
-    "lng": -1.37683
+    "lng": -1.37683,
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "subject": "Jake Essex for Bitterne Park Social Club?",
+    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6b0673c76817 thread 1a0f6b046b3cb75d · awaiting · folded 1 Oct · was prospect"
   },
   {
     "id": "pot-braishfield-social-club-so51-0qf",
@@ -50985,5 +51048,680 @@
     "firstPitch": "30 Sep 2026",
     "subject": "Jake Essex for Five Bells?",
     "statusNote": "wed-30-sep-2pm WAVE R LOCAL RESERVE cold SENT_OK 1a0f27054cad8f14 thread 1a0f270522275d07 · awaiting · folded 1605"
+  },
+  {
+    "id": "surbiton-rbl-club",
+    "name": "Surbiton RBL Club",
+    "town": "Surbiton",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "clubrblsurbiton@gmail.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-02T07:54:01Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Live music — Jake Essex",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nSurbiton Legion already hires a Function Suite for 200 plus the Jubilee Bar\nfor 60, and the hire page says you can help find a band.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\n2 × 1 hour is £250 cash on the night, or £280 if it goes through the books.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0611c53773ca32"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T08:32:04Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust checking you saw my earlier note about Jake Essex for Surbiton\nRBL Club. High-energy classics, not an impersonator, fully\nself-contained with his own PA.\n\nClubs usually look at from £250 for two one hour sets. If you've got\nweekends free further out, I'd love to pencil a date.\n\nIf it's not for you, reply \"no thanks\" and I won't email again.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0f697948d5c68c"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "2 Sep 2026",
+    "badge": "awaiting",
+    "subject": "Live music — Jake Essex",
+    "statusNote": "Us cold 2 Sep 1a0611c53773ca32 (thread 1a0611c4ea00354f) was not on board · Us FU 1 Oct 1a0f697948d5c68c ~9:32 London · awaiting · added 1 Oct fold"
+  },
+  {
+    "id": "gillingham-conservative-club",
+    "name": "Gillingham Conservative Club",
+    "town": "Gillingham",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "gillinghamconclub124@gmail.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-02T07:52:17Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Live music — Jake Essex",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nGillingham Cons already puts live music on plus twelve entertainment nights\na month, and there is a small function room as well.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\n2 × 1 hour is £250 cash on the night, or £280 if it goes through the books.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0611abe19bbf5c"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T08:34:38Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nFollowing up on Jake Essex for Gillingham Conservative Club. He sings\nthe 50s and 60s properly (Darin, Dion, Holly, Orbison, Sinatra, Elvis\nand more), own PA, no deposit.\n\nFrom £250 for two one hour sets. If entertainment is committee-led,\nthat figure is usually enough to take to a meeting.\n\nIf it's a no, just say so and I'll leave you alone.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0f699f0d3bb811"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "2 Sep 2026",
+    "badge": "awaiting",
+    "subject": "Live music — Jake Essex",
+    "statusNote": "Us cold 2 Sep 1a0611abe19bbf5c (thread 1a0611aba8ea9737) was not on board · Us FU 1 Oct 1a0f699f0d3bb811 ~9:34 London · awaiting · added 1 Oct fold"
+  },
+  {
+    "id": "gravesend-conservative-club",
+    "name": "Gravesend Conservative Club",
+    "town": "Gravesend",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "gravesendconclub@btconnect.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-02T07:37:43Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Live music — Jake Essex",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nGravesend Conservative Club already hires the Parrock Suite for 21sts,\nweddings and functions, and runs entertainment through the year for members.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\n2 × 1 hour is £250 cash on the night, or £280 if it goes through the books.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0610d69c0fa339"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T08:39:13Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nJust circling back on Jake Essex for Gravesend Conservative Club. Jake\nis a high-energy 50s and 60s rock and roll singer, himself, not a\ntribute, with his own PA and no deposit needed.\n\nFor clubs like yours it's from £250 for two one hour sets. If you have\nany dates in the diary for the months ahead, I'd love to pencil\nsomething in, or just point me to whoever looks after entertainment.\n\nIf it's not for you, just reply \"no thanks\" and I won't email again.\n\nBest,\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0f69e239a00425"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "2 Sep 2026",
+    "badge": "awaiting",
+    "subject": "Live music — Jake Essex",
+    "statusNote": "Us cold 2 Sep 1a0610d69c0fa339 (thread 1a0610d620034c5d) was not on board · Us FU 1 Oct 1a0f69e239a00425 ~9:39 London · awaiting · added 1 Oct fold"
+  },
+  {
+    "id": "cold-20261001-loxford-social-club-ilford",
+    "name": "Loxford Social Club",
+    "town": "Ilford",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "loxfordsc@gmail.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T08:45:11Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Loxford Social Club?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Loxford Social Club - and he'd love to\ncome and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into\n2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6a397bf3cfcb"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for Loxford Social Club?",
+    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6a397bf3cfcb thread 1a0f6a37005d199b · awaiting · folded 1 Oct"
+  },
+  {
+    "id": "cold-20261001-ponders-end-working-mens-club-enfield",
+    "name": "Ponders End Working Mens Club",
+    "town": "Enfield",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "pewmc@btconnect.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T08:48:45Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Ponders End Working Mens Club?",
+        "body": "Hi,\n\nI'm Natalie - I look after bookings for Jake Essex.\n\nJake would go down really well at Ponders End Working Mens Club, and\nhe'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into\n2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6a6dc51ea7a6"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for Ponders End Working Mens Club?",
+    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6a6dc51ea7a6 thread 1a0f6a6b46afa7d6 · awaiting · folded 1 Oct"
+  },
+  {
+    "id": "cold-20261001-baldwyn-s-freeholders-association-club-bexley-da5",
+    "name": "Baldwyn's Freeholders Association & Club",
+    "town": "Bexley DA5",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "thebar.bfa@gmail.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T08:52:31Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Baldwyn's Freeholders Association & Club?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nI thought of Baldwyn's Freeholders Association & Club for Jake - he'd\nlove to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into\n2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6aa4e47f4a46"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for Baldwyn's Freeholders Association & Club?",
+    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6aa4e47f4a46 thread 1a0f6aa2f73ed568 · awaiting · folded 1 Oct"
+  },
+  {
+    "id": "cold-20261001-postels-club-stevenage-sg1",
+    "name": "Postels Club",
+    "town": "Stevenage SG1",
+    "postcode": "",
+    "website": "",
+    "contactName": "Kim",
+    "phone": null,
+    "needPhone": true,
+    "email": "davidbarrett123@btinternet.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T08:55:45Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Postels Club?",
+        "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nJake is looking for new clubs like Postels Club - he'd love to come\nand perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into\n2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6ad45f09737e"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-01T09:01:57Z",
+        "from": "davidbarrett123@btinternet.com",
+        "subject": "Re: Jake Essex for Postels Club?",
+        "body": "Hi sounds very good but there is no price we usually do sets of 8.30 -9.30 10.00-10.45 and 11.00 till 11.45 what would the cost be we are in Stevenage \nKind regards \nKim \nSent from my iPhone",
+        "msgId": "1a0f6b31c8ede9d0"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T09:18:22Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Postels Club?",
+        "body": "Hi Kim,\n\nThanks for coming back so quickly — really helpful to know your usual set times.\n\nJake's had outstanding reviews from the clubs he plays, and people are\noften surprised a young singer can deliver those songs with that much\npower and feeling. He's a breath of fresh air, not an impersonator.\nHe's built hundreds of thousands of followers across multiple\nplatforms, and the show lands with all ages. He always becomes a major\ntalking point at social clubs, and regulars end up wanting him back.\n\nFor Postels Club in Stevenage, Jake is £250 cash for 2 x 1 hour sets,\nor £375 cash for your usual three sets (8:30–9:30, 10:00–10:45 and\n11:00–11:45). Own PA, no deposit.\n\nIf you book four dates and lock them in, we can do £250 cash for the 2\nhour show or £350 cash for the three-set night on each of those. Those\nfour-date deals tend to fill quickly as Jake is one of a kind, and his\ndiary is already filling right through to Christmas 2027, so the\nsooner you lock a date the better the choice.\n\nFriday nights work for Stevenage too — happy to check any Friday the\nclub has in mind. His free Saturdays and Sundays from now:\n\nOctober 2026: Sun 11, Sun 18, Sun 25\nNovember 2026: Sat 7, Sun 15, Sun 22\nDecember 2026: Sun 6, Sun 20, Sun 27\nJanuary 2027: Sat 2, Sun 3, Sat 9, Sun 17, Sun 24, Sun 31\nFebruary 2027: Sun 7, Sat 13, Sun 14, Sat 27, Sun 28\nMarch 2027: Sat 6, Sun 7, Sun 21, Sat 27, Sun 28\nApril 2027: Sat 3, Sun 4, Sat 10, Sun 11, Sun 18, Sat 24, Sun 25\nMay 2027: Sat 8, Sat 22, Sun 23\nJune 2027: Sat 5, Sun 6, Sun 13, Sun 20\nJuly 2027: Sun 11, Sat 24, Sun 25, Sat 31\nAugust 2027: Sun 1, Sun 8, Sun 22, Sun 29\nSeptember 2027: Sun 5, Sat 11, Sun 12, Sun 19, Sat 25, Sun 26\nOctober 2027: Sun 3, Sun 10, Sat 16, Sun 17, Sun 24, Sun 31\nNovember 2027: Sat 6, Sun 7, Sat 20, Sun 28\nDecember 2027: Sun 5, Sat 11, Sun 12, Sat 18, Sun 19, Sun 26\n\nHappy to check anything else. Reply here and I'll lock it.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0f6c1fd909b7ff"
+      }
+    ],
+    "hasThread": true,
+    "replied": "yes",
+    "firstPitch": "1 Oct 2026",
+    "badge": "quoted",
+    "subject": "Jake Essex for Postels Club?",
+    "statusNote": "quoted · Them Kim fee ask 1a0f6b31c8ede9d0 ~10:01 London Thu 1 Oct (usual sets 8.30–9.30, 10.00–10.45, 11.00–11.45) · Us LOCAL quote 1a0f6c1fd909b7ff ~10:18: £250 cash 2×1h / £375 cash usual 3 sets; 4-date £250 / £350 each; Fri OK + Sat/Sun free list · thread 1a0f6ad285f2e304 · Haggle owns · not locked, no money"
+  },
+  {
+    "id": "cold-20261001-broadstone-rbl-club-broadstone",
+    "name": "Broadstone RBL Club",
+    "town": "Broadstone",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "broadstonelegion@gmail.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T09:02:48Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Broadstone RBL Club?",
+        "body": "Hi,\n\nI'm Natalie - I look after bookings for Jake Essex.\n\nJake would go down really well at Broadstone RBL Club, and he'd love\nto come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6b3baedfe784"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for Broadstone RBL Club?",
+    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6b3baedfe784 thread 1a0f6b39c0824d45 · awaiting · folded 1 Oct"
+  },
+  {
+    "id": "cold-20261001-comrades-club-wantage-wantage",
+    "name": "Comrades Club Wantage",
+    "town": "Wantage",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "enquiries@comradeswantage.co.uk",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T09:09:01Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Comrades Club Wantage?",
+        "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nJake is looking for new clubs like Comrades Club Wantage - he'd love\nto come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6b96bed9fdd8"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for Comrades Club Wantage?",
+    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6b96bed9fdd8 thread 1a0f6b949ae7d31e · awaiting · folded 1 Oct"
+  },
+  {
+    "id": "cold-20261001-harbour-club-shoreham-beach",
+    "name": "Harbour Club",
+    "town": "Shoreham Beach",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@theharbourclub.org",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T09:12:09Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Harbour Club?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Harbour Club - and he'd love to come and\nperform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6bc493e990d8"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for Harbour Club?",
+    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6bc493e990d8 thread 1a0f6bc2620c2b09 · awaiting · folded 1 Oct"
+  },
+  {
+    "id": "cold-20261001-portsmouth-irish-club-southsea",
+    "name": "Portsmouth Irish Club",
+    "town": "Southsea",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "portsmouthirishclubcommittee@yahoo.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T09:15:39Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Portsmouth Irish Club?",
+        "body": "Hi,\n\nI'm Natalie - I look after bookings for Jake Essex.\n\nJake would go down really well at Portsmouth Irish Club, and he'd love\nto come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6bf7f3f1d9d1"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for Portsmouth Irish Club?",
+    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6bf7f3f1d9d1 thread 1a0f6bf58e5f8017 · awaiting · folded 1 Oct"
+  },
+  {
+    "id": "cold-20261001-rafa-club-gosport-gosport",
+    "name": "RAFA Club Gosport",
+    "town": "Gosport",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "rafassocgosport@gmail.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T09:58:18Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for RAFA Club Gosport?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for RAFA Club Gosport - and he'd love to\ncome and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6e6890253378"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "statusNote": "thu-1-oct cold WAVE B FAR SENT_OK 1a0f6e6890253378 thread 1a0f6e65fbde928f · awaiting · folded 1 Oct",
+    "subject": "Jake Essex for RAFA Club Gosport?"
+  },
+  {
+    "id": "cold-20261001-weymouth-melcombe-regis-wmc-weymouth",
+    "name": "Weymouth & Melcombe Regis WMC",
+    "town": "Weymouth",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "weymouthworkies@hotmail.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T10:02:37Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Weymouth & Melcombe Regis WMC?",
+        "body": "Hi,\n\nI'm Natalie - I look after bookings for Jake Essex.\n\nJake would go down really well at Weymouth & Melcombe Regis WMC, and\nhe'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6ea7f1bfc86d"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "statusNote": "thu-1-oct cold WAVE B FAR SENT_OK 1a0f6ea7f1bfc86d thread 1a0f6e91be37aaad · awaiting · folded 1 Oct",
+    "subject": "Jake Essex for Weymouth & Melcombe Regis WMC?"
+  },
+  {
+    "id": "cold-20261001-abingdon-royal-british-legion-club-abingdon",
+    "name": "Abingdon Royal British Legion Club",
+    "town": "Abingdon",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@abingdonrbl.co.uk",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T10:05:35Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Abingdon Royal British Legion Club?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nI thought of Abingdon Royal British Legion Club for Jake - he'd love\nto come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6ed335598695"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "statusNote": "thu-1-oct cold WAVE B FAR SENT_OK 1a0f6ed335598695 thread 1a0f6ecfdafd7c5b · awaiting · folded 1 Oct",
+    "subject": "Jake Essex for Abingdon Royal British Legion Club?"
+  },
+  {
+    "id": "cold-20261001-brighton-railway-club-brighton",
+    "name": "Brighton Railway Club",
+    "town": "Brighton",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "secretary@brightonrailway.club",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T10:08:24Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Brighton Railway Club?",
+        "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nJake is looking for new clubs like Brighton Railway Club - he'd love\nto come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6efc8b0b0ed4"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "statusNote": "thu-1-oct cold WAVE B FAR SENT_OK 1a0f6efc8b0b0ed4 thread 1a0f6ef9f1981f93 · awaiting · folded 1 Oct",
+    "subject": "Jake Essex for Brighton Railway Club?"
+  },
+  {
+    "id": "cold-20261001-felixstowe-trades-labour-club-felixstowe",
+    "name": "Felixstowe Trades & Labour Club",
+    "town": "Felixstowe",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "ftalc@outlook.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T10:11:12Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Felixstowe Trades & Labour Club?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Felixstowe Trades & Labour Club - and\nhe'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6f2588cfac7b"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "statusNote": "thu-1-oct cold WAVE B FAR SENT_OK 1a0f6f2588cfac7b thread 1a0f6f22c04ddc4c · awaiting · folded 1 Oct",
+    "subject": "Jake Essex for Felixstowe Trades & Labour Club?"
+  },
+  {
+    "id": "cold-20261001-old-basing-rbl-social-club-old-basing",
+    "name": "Old Basing RBL Social Club",
+    "town": "Old Basing",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "secretary@obrbl.club",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T10:16:47Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Old Basing RBL Social Club?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nI thought of Old Basing RBL Social Club for Jake - he'd love to come\nand perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6f777ad126ca"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "statusNote": "thu-1-oct cold WAVE B FAR SENT_OK 1a0f6f777ad126ca thread 1a0f6f749e9821c5 · awaiting · folded 1 Oct",
+    "subject": "Jake Essex for Old Basing RBL Social Club?"
+  },
+  {
+    "id": "cold-20261001-teston-club-teston-maidstone",
+    "name": "Teston Club",
+    "town": "Teston / Maidstone",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "thesecretary@testonclub.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T10:19:37Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Teston Club?",
+        "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nJake is looking for new clubs like Teston Club - he'd love to come and\nperform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6fa0c940df08"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "statusNote": "thu-1-oct cold WAVE B FAR SENT_OK 1a0f6fa0c940df08 thread 1a0f6f9e00914b02 · awaiting · folded 1 Oct",
+    "subject": "Jake Essex for Teston Club?"
+  },
+  {
+    "id": "cold-20261001-worcester-park-rbl-social-club-worcester-park",
+    "name": "Worcester Park RBL Social Club",
+    "town": "Worcester Park",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "rblworcesterpark@yahoo.co.uk",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T10:22:27Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Worcester Park RBL Social Club?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Worcester Park RBL Social Club - and\nhe'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6fca4cc0da03"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "statusNote": "thu-1-oct cold WAVE B FAR SENT_OK 1a0f6fca4cc0da03 thread 1a0f6fc76f4632c4 · awaiting · folded 1 Oct",
+    "subject": "Jake Essex for Worcester Park RBL Social Club?"
+  },
+  {
+    "id": "cold-20261001-kensal-rise-constitutional-club-kensal-rise-nw10",
+    "name": "Kensal Rise Constitutional Club",
+    "town": "Kensal Rise NW10",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "kensalrisecc@yahoo.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T10:25:19Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Kensal Rise Constitutional Club?",
+        "body": "Hi,\n\nI'm Natalie - I look after bookings for Jake Essex.\n\nJake would go down really well at Kensal Rise Constitutional Club, and\nhe'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f6ff4512009e1"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "statusNote": "thu-1-oct cold WAVE B FAR SENT_OK 1a0f6ff4512009e1 thread 1a0f6ff163d8dda0 · awaiting · folded 1 Oct",
+    "subject": "Jake Essex for Kensal Rise Constitutional Club?"
+  },
+  {
+    "id": "cold-20261001-high-oak-ware-sg12",
+    "name": "High Oak",
+    "town": "Ware SG12",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "thehighoakware@gmail.com",
+    "addedAt": "2026-10-01T10:30:00Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-01T10:27:56Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for High Oak?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nI thought of High Oak for Jake - he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into\n2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0f701ab08d6d43"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "1 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for High Oak?",
+    "statusNote": "thu-1-oct cold WAVE B RESERVE (Littleport bounce fill) LOCAL SENT_OK 1a0f701ab08d6d43 thread 1a0f70195c4b38f1 · awaiting · folded 1 Oct"
   }
 ]
