@@ -1811,6 +1811,7 @@ var NatNotes = (function(exports) {
       if (el) el.textContent = ok ? "Notes live with Jake" : "Board live";
     });
   }
+  window.natNotesPersist = persist;
 
   window.natUnlock = unlock;
   window.natStamp = (function () {

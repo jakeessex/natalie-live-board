@@ -62,6 +62,11 @@
     ".nd-mark{display:block;width:100%;font:inherit;font-size:16px;font-weight:800;border:1px solid #e8b84a;background:transparent;color:#e8b84a;border-radius:14px;padding:13px;margin:16px 0 0;cursor:pointer;min-height:48px}",
     ".nd-card.called .nd-mark{background:#e8b84a;color:#1a120c}",
     ".nd-lbl{display:block;margin:18px 0 6px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#a08b76}",
+    ".nd-log{display:flex;flex-direction:column;gap:8px}",
+    ".nd-log article{background:#1c1612;border:1px solid #3a2e24;border-radius:12px;padding:10px 12px}",
+    ".nd-log time{display:block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#a08b76;margin-bottom:4px}",
+    ".nd-log p{margin:0;font-size:15.5px;line-height:1.4;white-space:pre-wrap;color:#f6efe4}",
+    ".nd-none{margin:0;color:#8d7b68;font-size:14px}",
     ".nd-notes{display:block;width:100%;min-height:88px;font:inherit;font-size:16px;border:1px solid #3a2e24;border-radius:14px;padding:12px;resize:vertical;background:#0c0907;color:#f6efe4}",
     ".nd-saverow{display:flex;align-items:center;gap:12px;margin-top:8px}",
     ".nd-save{background:#e8b84a;color:#1a120c;border:0;border-radius:12px;padding:10px 16px;font:inherit;font-size:15px;font-weight:800;cursor:pointer;min-height:44px}",
@@ -197,6 +202,47 @@
     if (/^no fee/i.test(String(q || ""))) return "Price";
     return "Quote already sent";
   }
+  function notesApi() { return window.NatNotes || null; }
+  function fmtNoteWhen(iso) {
+    if (!iso) return "";
+    var d = new Date(iso);
+    if (isNaN(d.getTime())) return String(iso);
+    return d.toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  }
+  function noteEntries(store, id) {
+    var api = notesApi();
+    if (!api || !id) return [];
+    var rec = api.recordOf(store || api.readLocal(), id);
+    return (rec.entries || []).filter(function (e) { return e && String(e.text || "").trim(); });
+  }
+  function paintNoteLog(box, store, id) {
+    if (!box) return;
+    box.innerHTML = "";
+    var list = noteEntries(store, id);
+    if (!list.length) {
+      box.appendChild(el("p", "nd-none", "No notes yet."));
+      return;
+    }
+    for (var i = list.length - 1; i >= 0; i--) {
+      var entry = list[i];
+      var art = el("article");
+      var when = fmtNoteWhen(entry.at);
+      if (when) art.appendChild(el("time", null, when));
+      art.appendChild(el("p", null, String(entry.text).trim()));
+      box.appendChild(art);
+    }
+  }
+  function saveSharedNote(venueId, text) {
+    var api = notesApi();
+    if (!api || !venueId) return null;
+    var store = api.appendQuickNote(api.readLocal(), venueId, text);
+    if (typeof window.natNotesPersist === "function") window.natNotesPersist(store);
+    else {
+      api.writeLocal(store);
+      if (api.pushRemote) api.pushRemote(store);
+    }
+    return store;
+  }
   function pad2(n) { return n < 10 ? "0" + n : String(n); }
   function block(title, body, cls) {
     var d = el("div", "nd-block" + (cls ? " " + cls : ""));
@@ -316,26 +362,35 @@
     var mark = el("button", "nd-mark");
     mark.type = "button";
     c.appendChild(mark);
-    var lbl = el("label", "nd-lbl", "What they said");
+    var logLbl = el("p", "nd-lbl", "Notes");
+    var log = el("div", "nd-log");
+    c.appendChild(logLbl);
+    c.appendChild(log);
+    c._paintNotes = function (store) { paintNoteLog(log, store, v.venueId); };
+    c._paintNotes(notesApi() ? notesApi().readLocal() : {});
+    var lbl = el("label", "nd-lbl", "Add a note");
     var ta = el("textarea", "nd-notes");
-    ta.placeholder = "Name, what they said, the next step";
+    ta.placeholder = "What they said, the next step";
     ta.id = "nd-notes-" + v.id;
     lbl.htmlFor = ta.id;
-    ta.value = load("notes:" + v.id);
+    var draft = load("notes:" + v.id);
+    if (draft) ta.value = draft;
     var saveRow = el("div", "nd-saverow");
-    var saveBtn = el("button", "nd-save", "Save");
+    var saveBtn = el("button", "nd-save", "Save note");
     saveBtn.type = "button";
     var saved = el("span", "nd-saved", "");
     function stamp(t) { saved.textContent = t; }
-    var st0 = load("notesAt:" + v.id);
-    if (ta.value && st0) stamp("Saved " + st0);
-    ta.addEventListener("input", function () { store("notes:" + v.id, ta.value); stamp("Not saved"); });
+    ta.addEventListener("input", function () { store("notes:" + v.id, ta.value); stamp(ta.value.trim() ? "Not saved" : ""); });
     saveBtn.addEventListener("click", function () {
-      store("notes:" + v.id, ta.value);
-      var n = new Date();
-      var t = n.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" }) + " " + n.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
-      store("notesAt:" + v.id, ta.value ? t : "");
-      stamp(ta.value ? "Saved " + t : "Cleared");
+      var text = ta.value.trim();
+      if (!text) { stamp("Write the note first"); return; }
+      if (!v.venueId) { stamp("No venue on this card"); return; }
+      var next = saveSharedNote(v.venueId, text);
+      if (!next) { stamp("Could not save"); return; }
+      store("notes:" + v.id, "");
+      ta.value = "";
+      stamp("Saved on the board");
+      c._paintNotes(next);
       ta.blur();
     });
     saveRow.appendChild(saveBtn);
@@ -537,11 +592,26 @@
     paintMeta();
     requestAnimationFrame(function () { go(idx, false); });
 
+    function paintAllNotes(store) {
+      for (var n = 0; n < cards.length; n++) if (cards[n]._paintNotes) cards[n]._paintNotes(store);
+    }
+    function pullNotes() {
+      var api = notesApi();
+      if (!api || !api.pullRemote) return;
+      api.pullRemote().then(function (res) {
+        if (!deck.isConnected) return;
+        paintAllNotes(res && res.store ? res.store : api.readLocal());
+      }).catch(function () {});
+    }
+    pullNotes();
+    var notesTimer = setInterval(pullNotes, 15000);
+
     return {
       go: go,
       index: function () { return idx; },
-      refresh: function () { fillLists(); paintMeta(); },
+      refresh: function () { fillLists(); paintMeta(); pullNotes(); },
       destroy: function () {
+        clearInterval(notesTimer);
         document.removeEventListener("keydown", onKey);
         window.removeEventListener("resize", onResize);
         root.innerHTML = "";
