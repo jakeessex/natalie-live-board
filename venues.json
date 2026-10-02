@@ -12117,7 +12117,7 @@
     "id": "la-casa-vecchia-and-the-grey-lady",
     "name": "La Casa Vecchia & The Grey Lady",
     "town": "Tunbridge Wells",
-    "badge": "replied-interested",
+    "badge": "closed",
     "phone": "+441892544700",
     "needPhone": false,
     "email": "hello@70-72thepantiles.co.uk",
@@ -12146,9 +12146,10 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Caio Them 1a0cb9eff79fab29 Wed ~01:16 London · ticket-keep / bar min £300 Sun–Thu or £1,200 Fri–Sat · Sundays 18/25 Oct 8/15 Nov · Dec pause · Jake call before reply · Haggle/Closer",
+    "statusNote": "CLOSED 2 Oct by Jake: no fee, only ticket-keep or bar-spend minimum. Don't chase, don't email.",
     "lastContact": "2026-09-23",
-    "lastContactSrc": "them no-msgId"
+    "lastContactSrc": "them no-msgId",
+    "callExclude": "no-fee-ticket-keep"
   },
   {
     "id": "nolaki",

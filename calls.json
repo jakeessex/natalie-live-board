@@ -267,34 +267,6 @@
       "lastContactWho": "Them"
     },
     {
-      "rank": 9,
-      "id": "la-casa-vecchia-the-grey-lady",
-      "venue": "La Casa Vecchia & The Grey Lady",
-      "town": "Tunbridge Wells",
-      "contact": "Caio",
-      "phones": [
-        {
-          "number": "01892 544700",
-          "label": "files",
-          "tel": "01892544700"
-        }
-      ],
-      "noPhone": "",
-      "quote": "No fee; they offered a ticket-keep deal (bar minimum £300 Sun-Thu).",
-      "lastWho": "Them",
-      "lastDate": "23 Sep",
-      "lastMsg": "Sundays 18/25 Oct and 15 Nov are open.",
-      "days": "9",
-      "daysNote": "since last contact",
-      "why": "Only worth calling to turn it into a flat fee (Jake rejects ticket deals), and the fee-or-walk draft is waiting for Jake. 8 Nov is blocked.",
-      "flags": [],
-      "note": "Last contact: 23 Sep (Them) · Never agree a ticket or door deal. Cash or books fee only.",
-      "venueId": "la-casa-vecchia-and-the-grey-lady",
-      "gmailThreadId": "1a07d7d1336a45c7",
-      "lastContact": "2026-09-23",
-      "lastContactWho": "Them"
-    },
-    {
       "rank": 10,
       "id": "mildmay-club",
       "venue": "Mildmay Club",
