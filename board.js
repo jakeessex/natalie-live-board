@@ -807,16 +807,8 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
   }
   // callExclude: comma list (waiting-on-them, no-phone, booked, duplicate, ...).
   // callHoldUntil (YYYY-MM-DD, London): "waiting-on-them" only holds until that date.
-  // Board-side call exclusions (2 Oct 2026, Jake): kept off Call without editing venues.json data.
-  var CALL_EXCLUDE_IDS = {
-    "lower-bourne-social-club": "waiting on them",
-    "goldstone-ex-service-club": "hard hold",
-    "bird-in-hand": "hold"
-  };
   function callExcludeReasons(venue, now = /* @__PURE__ */ new Date()) {
     const raw = String(venue && venue.callExclude || "").split(",").map((x) => x.trim()).filter(Boolean);
-    const fixed = venue && CALL_EXCLUDE_IDS[venue.id];
-    if (fixed && !raw.includes(fixed)) raw.push(fixed);
     const today = now.toLocaleDateString("en-CA", { timeZone: "Europe/London" });
     const until = String(venue && venue.callHoldUntil || "");
     return raw.filter((x) => !(x === "waiting-on-them" && until && today >= until));
