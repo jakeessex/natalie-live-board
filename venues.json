@@ -12745,7 +12745,8 @@
     "hasThread": true,
     "tab": "call",
     "lastContact": "2026-09-09",
-    "lastContactSrc": "us no-msgId"
+    "lastContactSrc": "us no-msgId",
+    "callExclude": "hold-ask-jake"
   },
   {
     "id": "the-rettendon-bell",
@@ -20195,7 +20196,8 @@
     "statusNote": "HARD HOLD Jake 17 Sep · quoted/hot · two Us already (dates + hard close) · NO further outbound/chase · wait on them · NO more Us · phone +441273731572 from call deck calls.json (web)",
     "replyLane": "email",
     "lastContact": "2026-09-17",
-    "lastContactSrc": "us no-msgId"
+    "lastContactSrc": "us no-msgId",
+    "callExclude": "hard-hold"
   },
   {
     "id": "harwich-united-services-club",
@@ -21842,7 +21844,8 @@
     "tab": "call",
     "statusNote": "replied-interested · Nick Davies Sec forwarded to Kate (events) 18 Sep Them 1a0b4486c9eeefd7 · CC events@ · soft watch · do not chase · Haggle/Reply owns · phone +441252716683 from call deck calls.json (web)",
     "lastContact": "2026-09-18",
-    "lastContactSrc": "them 1a0b4486c9eeefd7"
+    "lastContactSrc": "them 1a0b4486c9eeefd7",
+    "callExclude": "waiting-on-them"
   },
   {
     "id": "whitstable-social-club",
