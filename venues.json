@@ -12236,9 +12236,11 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "lastContact": "2026-09-09",
-    "lastContactSrc": "us no-msgId",
-    "statusNote": "Nat call Fri 2 Oct: \"They'll confirm\". Price resend 16:02 BST: 2x45 £250 / 3x45 £375 / 4x40 £485, £50 deposit; offered Sat 7, Sun 15, Sun 22 Nov. Waiting on Ahmet. · Us 1a0fd236bcfb1e49"
+    "lastContact": "2026-10-02",
+    "lastContactSrc": "us 1a0fd236bcfb1e49",
+    "statusNote": "Nat call Fri 2 Oct: \"They'll confirm\". Price resend 16:02 BST: 2x45 £250 / 3x45 £375 / 4x40 £485, £50 deposit; offered Sat 7, Sun 15, Sun 22 Nov. Waiting on Ahmet. · Us 1a0fd236bcfb1e49",
+    "callExclude": "waiting-on-them",
+    "callHoldUntil": "2026-10-07"
   },
   {
     "id": "tugra",
@@ -54828,5 +54830,35 @@
     "badge": "awaiting",
     "subject": "Jake Essex for Crispin Inn Sandwich?",
     "statusNote": "fri-2-oct cold natalie-cold-waveE Us SENT_OK 1a0fd3025e17bba8 ~16:16 London thread 1a0fd300cce29ff6 · awaiting · Gmail-verified · folded 1600 audit 2 Oct"
+  },
+  {
+    "id": "cold-20261002-three-cups-bedford-mk40",
+    "name": "Three Cups",
+    "town": "Bedford MK40",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "thethreecupspub@gmail.com",
+    "addedAt": "2026-10-02T15:21:11Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-02T15:21:11Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Live music at Three Cups?",
+        "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nJake is looking for venues like the Three Cups in Bedford - he'd love\nto come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0fd347f13f23f5"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "2 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Live music at Three Cups?",
+    "statusNote": "fri-2-oct cold natalie-cold-waveE-8 Us SENT_OK 1a0fd347f13f23f5 ~16:21 London thread 1a0fd346c0ceeb31 · awaiting · Gmail-verified (file body was placeholder; Gmail body used) · folded 2 Oct"
   }
 ]
