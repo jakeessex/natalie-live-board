@@ -1,0 +1,42 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "oakdale-club-poole",
+        "name": "Oakdale Club",
+        "email": "oakdale92events@gmail.com",
+        "contactName": "Andy Hayward",
+        "town": "Poole / Oakdale",
+        "phone": "07749 395302"
+      },
+      "badge": "quoted",
+      "statusNote": "Us FAR quote ~12:51 BST Fri 2 Oct to Andy Hayward: Sat/Sun £300/£450 or 4-date £250/£400 · free Sat/Sun list Oct 2026–Jun 2027. Haggle owns. Not locked.",
+      "threadId": "1a0c353a244872e0",
+      "messages": [
+        {
+          "side": "them",
+          "label": "Them — avail + Saturday cost ask",
+          "at": "2026-10-02T11:39:35Z",
+          "from": "oakdale92events@gmail.com",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Fwd: Jake Essex for Oakdale Club?",
+          "body": "Good afternoon Natalie\nI hope you are keeping well and thanks for the e-mail regarding Jake.\nSo the important question for me is firstly, what is Jake's availability\nlike for 2027 and secondly what are his costs for a Saturday nights\nentertainment?\n\nKind regards\nAndy Hayward\nOakdale Club\n07749 395302",
+          "msgId": "1a0fc69e23d135e4",
+          "threadId": "1a0c353a244872e0"
+        },
+        {
+          "side": "us",
+          "label": "Us — FAR quote £300/£450",
+          "at": "2026-10-02T11:51:04Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "to": "oakdale92events@gmail.com",
+          "subject": "Re: Jake Essex for Oakdale Club?",
+          "body": "Hi Andy,\n\nThanks for coming back, and lovely to hear from you.\n\nJake's had outstanding reviews from the clubs he plays, and people are\noften surprised a young singer can deliver those songs with that much\npower and feeling. He's a breath of fresh air, not an impersonator.\nHe's built hundreds of thousands of followers across multiple\nplatforms, and the show lands with all ages. He goes down especially\nwell at clubs like yours, and he's already got dates locked nearby in\nDorset.\n\nFor Oakdale Club on a Saturday or Sunday, Jake is £300 cash for 2 x 1\nhour sets, or £450 cash for 3 x 1 hour. Own PA, no deposit.\n\nIf you book four dates and lock them in, we can do £250 cash for the 2\nhour show or £400 cash for the 3 hour show on each of those nights.\nThose four-date deals tend to fill quickly as Jake is one of a kind,\nand his diary is already filling right through to Christmas 2027, so\nthe sooner you lock a date the better the choice.\n\nHis free Saturdays and Sundays from now:\n\nOctober 2026: Sun 11th, Sun 18th, Sun 25th\nNovember 2026: Sat 7th, Sun 15th, Sun 22nd\nDecember 2026: Sun 6th, Sun 20th, Sun 27th\nJanuary 2027: Sat 2nd, Sun 3rd, Sat 9th, Sun 17th, Sun 24th, Sun 31st\nFebruary 2027: Sun 7th, Sat 13th, Sun 14th, Sat 27th, Sun 28th\nMarch 2027: Sat 6th, Sun 7th, Sun 21st, Sat 27th, Sun 28th\nApril 2027: Sat 3rd, Sun 4th, Sat 10th, Sun 11th, Sun 18th, Sun 25th\nMay 2027: Sat 8th, Sat 22nd, Sun 23rd\nJune 2027: Sat 5th, Sun 6th, Sun 13th, Sun 20th\n\nHappy to check anything else you've got in mind.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk\n",
+          "msgId": "1a0fc7423713b436",
+          "threadId": "1a0c353a244872e0"
+        }
+      ]
+    }
+  ]
+}

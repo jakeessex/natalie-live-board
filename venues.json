@@ -604,8 +604,8 @@
     "website": "",
     "contactName": "Jules James",
     "badge": "replied-soft / park (not-now)",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441753651344",
+    "needPhone": false,
     "email": "ihrblclub@gmail.com",
     "replied": "yes",
     "firstPitch": "",
@@ -633,9 +633,11 @@
       }
     ],
     "hasThread": true,
-    "statusNote": "Soft reply Mon 28 ~14:47 London · Jules James President · committee October · will contact if required · no fee/date ask → Wait · do not re-cold · do not chase before Oct · Us cold 1a0e82d5439b45b5 · MASTER/CONTACTED fold · inbox-signal",
+    "statusNote": "Soft reply Mon 28 ~14:47 London · Jules James President · committee October · will contact if required · no fee/date ask → Wait · do not re-cold · do not chase before Oct · Us cold 1a0e82d5439b45b5 · MASTER/CONTACTED fold · inbox-signal · phone +441753651344 from call deck calls.json (web)",
     "notes": "Committee October. Wait. They will contact if required — no Natalie chase draft now.",
-    "prospect": false
+    "prospect": false,
+    "lastContact": "2026-09-28",
+    "lastContactSrc": "them 1a0e845573f8748a"
   },
   {
     "id": "batch700-hullbridge-community-centre-social-club-hullbridge",
@@ -829,7 +831,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-09-07",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "east-barnet-rbl-club",
@@ -1241,7 +1245,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-09-09",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "corner-club-canvey",
@@ -1300,7 +1306,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Maxine back next week · £250/£375 Sunday hold · no chase this week"
+    "statusNote": "Maxine back next week · £250/£375 Sunday hold · no chase this week",
+    "lastContact": "2026-09-11",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "imperial-cheshunt-and-waltham-cross-cons",
@@ -1342,7 +1350,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-09-08",
+    "lastContactSrc": "MASTER imperialcwccc@hotmail.com"
   },
   {
     "id": "st-neots-cons",
@@ -1425,15 +1435,17 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Committee 1st Tue monthly · Jake ack SENT_OK 1a0906774c3cf434 · wait · no chase"
+    "statusNote": "Committee 1st Tue monthly · Jake ack SENT_OK 1a0906774c3cf434 · wait · no chase",
+    "lastContact": "2026-09-11",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "pendyffryn-club-prestatyn",
     "name": "Pendyffryn Club Prestatyn",
     "town": "Prestatyn, Wales",
     "badge": "quoted",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441745856259",
+    "needPhone": false,
     "email": "Mags <steward@pendyffrynclub.com>",
     "replied": "yes — 21 Sep 2026 (Mags)",
     "firstPitch": "4 Sep 2026",
@@ -1471,7 +1483,10 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Mags steward · Sat £250 cash 2×1hr / £300 cash 3×1hr · free Sats May–Jul 2027 · Haggle owns close · do not Natalie-chase"
+    "statusNote": "quoted · Mags steward · Sat £250 cash 2×1hr / £300 cash 3×1hr · free Sats May–Jul 2027 · Haggle owns close · do not Natalie-chase · phone +441745856259 from call deck calls.json (web)",
+    "notes": "Also: 01745 854443 (calls.json).",
+    "lastContact": "2026-09-28",
+    "lastContactSrc": "us 1a0e89d086e75624"
   },
   {
     "id": "brightlingsea-rbl",
@@ -1505,7 +1520,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-05-15",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "greenford-rbl",
@@ -1547,7 +1564,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-08-26",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "hounslow-rbl",
@@ -1589,7 +1608,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-08-27",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "denvilles-house-havant",
@@ -1631,7 +1652,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-08-28",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "great-wakering-rbl",
@@ -1673,7 +1696,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-08-27",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "rushden-cons",
@@ -1723,7 +1748,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-08-31",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "aldridge-social-club",
@@ -2720,7 +2747,10 @@
     "messages": [],
     "hasThread": false,
     "tab": "call",
-    "statusNote": "Live thread is Sharon Banks (bardswellweddings) — AOL do not re-cold"
+    "statusNote": "Live thread is Sharon Banks (bardswellweddings) — AOL do not re-cold · duplicate of bardswell-social-club-sharon-banks (live thread) · off Call",
+    "callExclude": "duplicate",
+    "lastContact": "2026-09-07",
+    "lastContactSrc": "MASTER thebardswellclub@aol.com"
   },
   {
     "id": "bardswell-social-club-sharon-banks",
@@ -2795,7 +2825,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "chase Us SENT_OK 1a0aeba0a56e5e34 · still hold £250c/£280b 2×1hr · Sharon juggling dates after Aug 28 clash · keep close heat"
+    "statusNote": "chase Us SENT_OK 1a0aeba0a56e5e34 · still hold £250c/£280b 2×1hr · Sharon juggling dates after Aug 28 clash · keep close heat",
+    "lastContact": "2026-09-17",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "barrow-upon-soar-cons",
@@ -2855,7 +2887,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Danielle Armiger dsarmiger1@gmail.com · Us SENT_OK 1a0a5a249c4a0d5e · FAR Sat/Sun £300 cash (£330 books) 2h / £450 3h · club info@ also on thread · Haggle owns close · 10am FU SENT_OK 15 Sep"
+    "statusNote": "quoted · Danielle Armiger dsarmiger1@gmail.com · Us SENT_OK 1a0a5a249c4a0d5e · FAR Sat/Sun £300 cash (£330 books) 2h / £450 3h · club info@ also on thread · Haggle owns close · 10am FU SENT_OK 15 Sep",
+    "lastContact": "2026-09-28",
+    "lastContactSrc": "us 1a0e8a540407db8b"
   },
   {
     "id": "basildon-post-club",
@@ -3543,7 +3577,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "replied-interested · Jake called Peter Mon 14 before 12 · Peter will look at site and get back · 01473 720633 · waiting reply · no chase yet"
+    "statusNote": "replied-interested · Jake called Peter Mon 14 before 12 · Peter will look at site and get back · 01473 720633 · waiting reply · no chase yet",
+    "lastContact": "2026-09-09",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "calverton-wmc",
@@ -5787,7 +5823,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · soft-park committee end Oct · Lesley Them 1a0b3f9672be624c · £400 cash 2×1hr FAR Sat/Sun held · private floor £350 if they counter · Haggle owns · DO NOT re-chase"
+    "statusNote": "quoted · soft-park committee end Oct · Lesley Them 1a0b3f9672be624c · £400 cash 2×1hr FAR Sat/Sun held · private floor £350 if they counter · Haggle owns · DO NOT re-chase",
+    "lastContact": "2026-09-18",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "horbury-working-members-club",
@@ -6120,7 +6158,11 @@
     "hasThread": true,
     "tab": "call",
     "contactName": "Terry",
-    "statusNote": "replied-soft / final offer out · Them Terry (Club Secretary) decline 1a0f3456b2cf53fb ~18:03 London Wed 30 Sep: 3x45 is their norm, over budget (4-piece doesn't get £400), won't put to committee · Us Jake-approved win-back 1a0f34e7c7e5b1c1 ~18:13 London thread 1a043614a2841bf4: any 4 Saturdays in 2027, 3x45 at £300/night all-in incl travel, they pick dates · Haggle next · no chase before Wed 7 Oct · not locked, no cash · supersedes Us quote 1a0e79bd150b9f3e Mon 28 Sep (£300 2x1hr / £400 3x45; £250/£350 per date 2+)"
+    "statusNote": "replied-soft / final offer out · Them Terry (Club Secretary) decline 1a0f3456b2cf53fb ~18:03 London Wed 30 Sep: 3x45 is their norm, over budget (4-piece doesn't get £400), won't put to committee · Us Jake-approved win-back 1a0f34e7c7e5b1c1 ~18:13 London thread 1a043614a2841bf4: any 4 Saturdays in 2027, 3x45 at £300/night all-in incl travel, they pick dates · Haggle next · no chase before Wed 7 Oct · not locked, no cash · supersedes Us quote 1a0e79bd150b9f3e Mon 28 Sep (£300 2x1hr / £400 3x45; £250/£350 per date 2+)",
+    "callHoldUntil": "2026-10-07",
+    "callExclude": "waiting-on-them",
+    "lastContact": "2026-09-30",
+    "lastContactSrc": "us 1a0f34e7c7e5b1c1"
   },
   {
     "id": "kings-arms-stansted",
@@ -9192,7 +9234,9 @@
     "hasThread": true,
     "tab": "call",
     "statusNote": "quoted · Call lane · Jake called Mon 14 Sep · Sandra promised callback Wed ~10:30 — window was Wed 16 Sep · still waiting / confirm if Jake connected · DO NOT email chase",
-    "replyLane": "call"
+    "replyLane": "call",
+    "lastContact": "2026-09-07",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "wisbech-ex-services",
@@ -12102,7 +12146,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Caio Them 1a0cb9eff79fab29 Wed ~01:16 London · ticket-keep / bar min £300 Sun–Thu or £1,200 Fri–Sat · Sundays 18/25 Oct 8/15 Nov · Dec pause · Jake call before reply · Haggle/Closer"
+    "statusNote": "Caio Them 1a0cb9eff79fab29 Wed ~01:16 London · ticket-keep / bar min £300 Sun–Thu or £1,200 Fri–Sat · Sundays 18/25 Oct 8/15 Nov · Dec pause · Jake call before reply · Haggle/Closer",
+    "lastContact": "2026-09-23",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "nolaki",
@@ -12178,7 +12224,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-09-09",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "tugra",
@@ -12695,7 +12743,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-09-09",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "the-rettendon-bell",
@@ -13492,7 +13542,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-09-09",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "tilbury-community-association",
@@ -13533,8 +13585,8 @@
     "name": "Berkhamsted Social Club",
     "town": "Berkhamsted",
     "badge": "replied-interested",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441442863538",
+    "needPhone": false,
     "email": "info@berkhamsted.club; Keith Eggleton <keitheggleton1@gmail.com>",
     "replied": "yes — 9 Sep 2026 (Keith Eggleton via club Fwd)",
     "firstPitch": "7 Sep 2026",
@@ -13568,7 +13620,10 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "phone +441442863538 from call deck calls.json (web)",
+    "lastContact": "2026-09-09",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "greenford-conservative-club",
@@ -13602,7 +13657,11 @@
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "statusNote": "same club as greenford-conservative-club-john-mitchell (OWN LOCK Sat 19 Jun 2027 £400) · off Call",
+    "callExclude": "booked",
+    "lastContact": "2026-09-09",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "greenford-conservative-club-john-mitchell",
@@ -13984,7 +14043,9 @@
     "hasThread": true,
     "tab": "call",
     "statusNote": "quoted · Call lane · Jake called Fri 18 Sep · Holly date expected Monday · NO email chase · wait phone · £250 Thu 22 Oct pencil still live until Mon",
-    "replyLane": "call"
+    "replyLane": "call",
+    "lastContact": "2026-09-17",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "the-hop-inn",
@@ -14356,8 +14417,8 @@
     "name": "Frimley Green Club",
     "town": "Frimley Green",
     "badge": "replied-interested",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441252836081",
+    "needPhone": false,
     "email": "Info@frimleygreenclub.co.uk; Cheryl <cheryl.h@frimleygreenclub.co.uk>",
     "replied": "yes — 11 Sep 2026 (Cheryl soft-no)",
     "firstPitch": "10 Sep 2026",
@@ -14392,7 +14453,10 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "SOFT-NO countered Us push 11 Sep ~11:43 BST — 'Different to any other solo act' · Sat change-of-pace / Fri–Sun function offer. msg 1a0901110c4f8424 thread 1a08b5f94c7cd131. Badge replied-interested (awaiting). Haggle owns close. Do not cold again."
+    "statusNote": "SOFT-NO countered Us push 11 Sep ~11:43 BST — 'Different to any other solo act' · Sat change-of-pace / Fri–Sun function offer. msg 1a0901110c4f8424 thread 1a08b5f94c7cd131. Badge replied-interested (awaiting). Haggle owns close. Do not cold again. · phone +441252836081 from call deck calls.json (office)",
+    "notes": "Also: 01252 835322 (calls.json).",
+    "lastContact": "2026-09-11",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "hythe-and-district-club",
@@ -15208,8 +15272,8 @@
     "name": "Iona Social Club",
     "town": "Hornchurch",
     "badge": "deferred",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441708442453",
+    "needPhone": false,
     "email": "ionasocialclub@gmail.com",
     "replied": "yes — 17 Sep 2026 (Iona Committee · Jan defer)",
     "firstPitch": "10 Sep 2026",
@@ -15260,7 +15324,9 @@
     ],
     "hasThread": true,
     "tab": "other",
-    "statusNote": "deferred · soft-park until Jan 2027 · Them 1a0aedc821f7a6ca ~11:14 BST 'email back in January' · chase Us 1a0aebbc14c19796 kept · was quoted £275 2×1hr / £250×4 · DO NOT chase until Jan 2027 · Haggle owns"
+    "statusNote": "deferred · soft-park until Jan 2027 · Them 1a0aedc821f7a6ca ~11:14 BST 'email back in January' · chase Us 1a0aebbc14c19796 kept · was quoted £275 2×1hr / £250×4 · DO NOT chase until Jan 2027 · Haggle owns · phone +441708442453 from call deck calls.json (web)",
+    "lastContact": "2026-09-17",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "bretons-social-club",
@@ -15895,7 +15961,10 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Lyn OOO to 21 Sep — leave; do not chase"
+    "statusNote": "Lyn OOO to 21 Sep — leave; do not chase · no phone on this row (pot row pot-birchington-utd-services-club-ct7-9re lists 01843-841434, not merged)",
+    "callExclude": "no-phone",
+    "lastContact": "2026-09-10",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "thomas-tripp",
@@ -16672,7 +16741,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Annemarie GM · Us price list + chase · Them Wed 23 ~10:19 London 1a0cd8fe4072ee45 will be in touch · soft park · Haggle owns close · do not re-cold"
+    "statusNote": "quoted · Annemarie GM · Us price list + chase · Them Wed 23 ~10:19 London 1a0cd8fe4072ee45 will be in touch · soft park · Haggle owns close · do not re-cold",
+    "lastContact": "2026-09-23",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "duke-s-head-196ec4-wallington",
@@ -18396,7 +18467,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "replied-interested · Them 1a0a5b5273eecc40 Tue 15 ~16:34 London · \"Thank you, I will let you know\" · Natalie 2pm Tue 15 SENT_OK 1a0a54dbdedf623c"
+    "statusNote": "replied-interested · Them 1a0a5b5273eecc40 Tue 15 ~16:34 London · \"Thank you, I will let you know\" · Natalie 2pm Tue 15 SENT_OK 1a0a54dbdedf623c",
+    "lastContact": "2026-09-15",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "fox-and-hounds",
@@ -19275,7 +19348,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "replied-interested · soft-park · Zoe Oliver Events Them 1a0aefd39b53c3fd ~11:50 BST suitable but not booking acts right now · hang on details for future · phone +441580762888 (opt 3) · mobile 07919 339932 in notes only · hours Mon/Thu 08:30–13:30 · DO NOT chase · FAR"
+    "statusNote": "replied-interested · soft-park · Zoe Oliver Events Them 1a0aefd39b53c3fd ~11:50 BST suitable but not booking acts right now · hang on details for future · phone +441580762888 (opt 3) · mobile 07919 339932 in notes only · hours Mon/Thu 08:30–13:30 · DO NOT chase · FAR",
+    "lastContact": "2026-09-17",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "west-st-leonard-s-club",
@@ -19498,7 +19573,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "16 Sep quoted Julie · Sat 8.30–11.30 3 sets · £400 / 4× £350 · thread 1a0aaa885e20877d"
+    "statusNote": "16 Sep quoted Julie · Sat 8.30–11.30 3 sets · £400 / 4× £350 · thread 1a0aaa885e20877d",
+    "lastContact": "2026-09-28",
+    "lastContactSrc": "us 1a0e8a39bc24c8ee"
   },
   {
     "id": "wraysbury-village-club",
@@ -19533,7 +19610,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "replied-interested · soft watch · Them FYI 1a0afff504b361bc ~16:32 BST Kinde Hanspal Secretary → Richard Cripps (ents) CC us · NOT price/date/lock · phone +447825001883 · Reply hunter owns · DO NOT draft/send · FAR"
+    "statusNote": "replied-interested · soft watch · Them FYI 1a0afff504b361bc ~16:32 BST Kinde Hanspal Secretary → Richard Cripps (ents) CC us · NOT price/date/lock · phone +447825001883 · Reply hunter owns · DO NOT draft/send · FAR",
+    "lastContact": "2026-09-17",
+    "lastContactSrc": "them no-msgId"
   },
   {
     "id": "nork-village-club",
@@ -19612,8 +19691,8 @@
     "name": "Coulsdon Victoria Social Club",
     "town": "",
     "badge": "quoted",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+442086450600",
+    "needPhone": false,
     "email": "coulsdonvictoriaclub@gmail.com",
     "replied": "yes — Victoria club Sunday fee + review",
     "firstPitch": "16 Sep 2026",
@@ -19673,7 +19752,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Sunday £325 cash 2×1hr / £450 3×1hr · Them review free Sundays · one Sunday · Us ack 1a0aa4e8e4e3d10f · Haggle owns close"
+    "statusNote": "quoted · Sunday £325 cash 2×1hr / £450 3×1hr · Them review free Sundays · one Sunday · Us ack 1a0aa4e8e4e3d10f · Haggle owns close · phone +442086450600 from call deck calls.json (web)",
+    "lastContact": "2026-09-28",
+    "lastContactSrc": "us 1a0e8a18e26c5db9"
   },
   {
     "id": "tooting-conservative-club",
@@ -19716,8 +19797,8 @@
     "name": "The Six In One Club",
     "town": "",
     "badge": "quoted",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441732358883",
+    "needPhone": false,
     "email": "sixinoneclub@gmail.com · Terry Coomber terry.coomber67@hotmail.com",
     "replied": "no",
     "firstPitch": "16 Sep 2026",
@@ -19761,8 +19842,10 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Terry Coomber · Us SENT_OK 1a0aeb136ba72e11 · Gmail quote £300 cash one-off / £250×4 · Sat 20:30–21:30+22:00–23:00 · Sun 16:00–17:00+17:30–18:30 · Bookings SYNC also had LOCAL £250 cash/£280 books — Gmail body wins · replyLane email · Haggle owns close · do not re-cold hotmail",
-    "replyLane": "email"
+    "statusNote": "quoted · Terry Coomber · Us SENT_OK 1a0aeb136ba72e11 · Gmail quote £300 cash one-off / £250×4 · Sat 20:30–21:30+22:00–23:00 · Sun 16:00–17:00+17:30–18:30 · Bookings SYNC also had LOCAL £250 cash/£280 books — Gmail body wins · replyLane email · Haggle owns close · do not re-cold hotmail · phone +441732358883 from call deck calls.json (web, club line)",
+    "replyLane": "email",
+    "lastContact": "2026-09-28",
+    "lastContactSrc": "us 1a0e8a08029e82cf"
   },
   {
     "id": "purley-social-club",
@@ -20013,7 +20096,9 @@
     "hasThread": true,
     "tab": "call",
     "statusNote": "quoted · COUNTER Us SENT_OK 1a0aeb4a9f3c3b2b · Them £250 house 3×45 NPU/BACS · Us counter £250c/£275b 2×1hr · £350c/£375 NPU 3 sets · thread 1a0adfb4ae07faf3 · replyLane email · Haggle owns close",
-    "replyLane": "email"
+    "replyLane": "email",
+    "lastContact": "2026-09-28",
+    "lastContactSrc": "us 1a0e89f20898734e"
   },
   {
     "id": "shortlands-tavern",
@@ -20047,8 +20132,8 @@
     "name": "Goldstone Ex-Service Club",
     "town": "",
     "badge": "quoted",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441273731572",
+    "needPhone": false,
     "email": "thegoldstoneclub@gmail.com",
     "replied": "no",
     "firstPitch": "17 Sep 2026",
@@ -20107,8 +20192,10 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "HARD HOLD Jake 17 Sep · quoted/hot · two Us already (dates + hard close) · NO further outbound/chase · wait on them · NO more Us",
-    "replyLane": "email"
+    "statusNote": "HARD HOLD Jake 17 Sep · quoted/hot · two Us already (dates + hard close) · NO further outbound/chase · wait on them · NO more Us · phone +441273731572 from call deck calls.json (web)",
+    "replyLane": "email",
+    "lastContact": "2026-09-17",
+    "lastContactSrc": "us no-msgId"
   },
   {
     "id": "harwich-united-services-club",
@@ -20640,7 +20727,10 @@
     "hasThread": true,
     "tab": "call",
     "statusNote": "Us FAR quote ~10:36 Tue 29 Sep: Sat/Sun £300/£450 or 4-date £250/£400 · full free Sat/Sun list. Guy Hillier will pass to entertainments team. Haggle/reply-hunter owned. Not locked. Them 1a0ec824c9bc275b · Us 1a0ec85f3774c9f9 · folded 1600 audit",
-    "contactName": "Guy Hillier"
+    "contactName": "Guy Hillier",
+    "callExclude": "no-phone",
+    "lastContact": "2026-09-29",
+    "lastContactSrc": "us 1a0ec85f3774c9f9"
   },
   {
     "id": "chertsey-social-club",
@@ -20786,7 +20876,11 @@
     "tab": "call",
     "statusNote": "quoted · waiting on Claire: choose Sun 6 or Sun 20 Dec (£250 cash 2×1h, own PA, no deposit) or give times for Sun 13 Dec · 13 Dec afternoon (members' Xmas dinner) clashes with Bellingham ESC 14:30–17:30 · Us 1a0f84ce1a99e684 ~17:29 London Thu 1 Oct asked her times (early-evening double?) · thread today: Them 16:42 1a0f822057d52a0c (Jan–Mar + 2026 Sundays ask) · Us 16:51 1a0f82980aa73ec7 (date list) · Them 16:52 1a0f82b08af9e864 (date not on list) · Us 17:09 1a0f83acd9f94401 · Them 17:11 1a0f83c06315a5b9 (Sun 13 Dec pm) · earlier: NYE declined 30 Sep 1a0f32758cebfe07 · Haggle owns · not locked, no money",
     "contactName": "Claire Cookman",
-    "notes": "NYE interest. Do not re-cold. Leave for Haggle/Closer."
+    "notes": "NYE interest. Do not re-cold. Leave for Haggle/Closer.",
+    "callHoldUntil": "2026-10-07",
+    "callExclude": "waiting-on-them",
+    "lastContact": "2026-10-01",
+    "lastContactSrc": "us 1a0f84ce1a99e684"
   },
   {
     "id": "the-faraday-social-club",
@@ -20995,7 +21089,10 @@
     "tab": "call",
     "statusNote": "Us FAR quote ~10:53 Tue 29 Sep: Sat/Sun £300/£450 or 4-date £250/£400 · full free Sat/Sun 2027 list. Julie will pass to Entertainment Team. Haggle owns. Not locked.",
     "contactName": "Julie O'Neil",
-    "postcode": "GU47 9AW"
+    "postcode": "GU47 9AW",
+    "callExclude": "no-phone",
+    "lastContact": "2026-09-29",
+    "lastContactSrc": "us 1a0ec958d874ea12"
   },
   {
     "id": "progressive-club-eastleigh",
@@ -21630,7 +21727,9 @@
     "tab": "call",
     "statusNote": "replied-soft · final offer out: one Saturday from June 2027 trial £250 cash 2×1hr (Us 1a0e916da79e92bf ~18:36 London Mon 28 Sep) · Mel: first 6 months all booked up, will keep in mind (1a0e9049015fba02) · no further chase · not locked",
     "replyLane": "email",
-    "prospect": false
+    "prospect": false,
+    "lastContact": "2026-09-28",
+    "lastContactSrc": "us 1a0e916da79e92bf"
   },
   {
     "id": "empire-club",
@@ -21711,8 +21810,8 @@
     "name": "Lower Bourne Social Club",
     "town": "",
     "badge": "replied-interested",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441252716683",
+    "needPhone": false,
     "email": "admin@lowerbournesocialclub.org.uk",
     "replied": "yes — Nick forward to Kate events ~12:30 BST",
     "firstPitch": "18 Sep 2026",
@@ -21741,15 +21840,17 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "replied-interested · Nick Davies Sec forwarded to Kate (events) 18 Sep Them 1a0b4486c9eeefd7 · CC events@ · soft watch · do not chase · Haggle/Reply owns"
+    "statusNote": "replied-interested · Nick Davies Sec forwarded to Kate (events) 18 Sep Them 1a0b4486c9eeefd7 · CC events@ · soft watch · do not chase · Haggle/Reply owns · phone +441252716683 from call deck calls.json (web)",
+    "lastContact": "2026-09-18",
+    "lastContactSrc": "them 1a0b4486c9eeefd7"
   },
   {
     "id": "whitstable-social-club",
     "name": "Whitstable Social Club",
     "town": "",
     "badge": "replied-interested",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+441227272023",
+    "needPhone": false,
     "email": "clairebaker23@yahoo.com",
     "replied": "yes — Claire fee-ask ~09:42 BST",
     "firstPitch": "18 Sep 2026",
@@ -21796,7 +21897,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Claire Sunday 2×1hr ask + Us £300c/£330b · Haggle owns wait · day-7 25 Sep"
+    "statusNote": "quoted · Claire Sunday 2×1hr ask + Us £300c/£330b · Haggle owns wait · day-7 25 Sep · phone +441227272023 from call deck calls.json (web)",
+    "lastContact": "2026-09-28",
+    "lastContactSrc": "us 1a0e89df69581a53"
   },
   {
     "id": "hailsham-club",
@@ -22591,8 +22694,8 @@
     "name": "Bellegrove Social Club",
     "town": "Welling",
     "badge": "replied-soft / park (not-now)",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+442083031054",
+    "needPhone": false,
     "email": "bellegrovesecretary@gmail.com",
     "replied": "yes",
     "firstPitch": "18 Sep 2026",
@@ -22630,10 +22733,12 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Soft reply Mon 28 ~14:42 London · Joanna Webb Club Secretary · nothing free this year · next year diary soon → Wait (2027 soft park) · not hard No · one FU already · do not re-chase now · Us cold 1a0b4bf060979cf3 FU1 1a0e7a3c17ccf2b4 · MASTER/CONTACTED fold · inbox-signal",
+    "statusNote": "Soft reply Mon 28 ~14:42 London · Joanna Webb Club Secretary · nothing free this year · next year diary soon → Wait (2027 soft park) · not hard No · one FU already · do not re-chase now · Us cold 1a0b4bf060979cf3 FU1 1a0e7a3c17ccf2b4 · MASTER/CONTACTED fold · inbox-signal · phone +442083031054 from call deck calls.json (web)",
     "contactName": "Joanna Webb",
-    "notes": "2027 soft park. No draft/chase until diary opens or they reply again.",
-    "prospect": false
+    "notes": "2027 soft park. No draft/chase until diary opens or they reply again. Also: 020 8303 1943 (calls.json).",
+    "prospect": false,
+    "lastContact": "2026-09-28",
+    "lastContactSrc": "them 1a0e840ab565287a"
   },
   {
     "id": "waltham-british-legion",
@@ -22905,8 +23010,8 @@
     "name": "Ferndale Baptist Church",
     "town": "",
     "badge": "replied-soft / park (not-now)",
-    "phone": null,
-    "needPhone": true,
+    "phone": "+447376347826",
+    "needPhone": false,
     "email": "ferndalebaptist.info@gmail.com",
     "replied": "yes — Jennifer soft park 23 Sep",
     "firstPitch": "18 Sep 2026",
@@ -22934,7 +23039,10 @@
     ],
     "hasThread": true,
     "tab": "other",
-    "statusNote": "Jennifer Them soft park Wed 23 Sep ~14:43 London · 1a0ce82362cf2ca8 · keep in mind for future · do not chase / do not re-cold · reply hunter owns any thank-you"
+    "statusNote": "Jennifer Them soft park Wed 23 Sep ~14:43 London · 1a0ce82362cf2ca8 · keep in mind for future · do not chase / do not re-cold · reply hunter owns any thank-you · phone +447376347826 from call deck calls.json (web)",
+    "notes": "Also: 07449 742989 (calls.json).",
+    "lastContact": "2026-09-23",
+    "lastContactSrc": "them 1a0ce82362cf2ca8"
   },
   {
     "id": "chelmsford-cathedral",
@@ -23574,12 +23682,12 @@
   {
     "id": "oakdale-club",
     "name": "Oakdale Club",
-    "town": "—",
-    "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "town": "Poole",
+    "badge": "quoted",
+    "phone": "+447749395302",
+    "needPhone": false,
     "email": "oakdale.con@gmail.com",
-    "replied": "no",
+    "replied": "yes",
     "firstPitch": "21 Sep 2026",
     "addedAt": "2026-09-21T12:57:52.731863Z",
     "followUps": "0 · last —",
@@ -23593,10 +23701,35 @@
         "subject": "Jake Essex for Oakdale Club?",
         "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Oakdale Club's live entertainment nights. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act: no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 — if a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a0c353ac07b5879"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-02T11:39:35Z",
+        "from": "oakdale92events@gmail.com",
+        "subject": "Fwd: Jake Essex for Oakdale Club?",
+        "body": "Good afternoon Natalie\nI hope you are keeping well and thanks for the e-mail regarding Jake.\nSo the important question for me is firstly, what is Jake’s availability\nlike for 2027 and secondly what are his costs for a Saturday nights\nentertainment?\n\nKind regards\nAndy Hayward\nOakdale Club\n07749 395302",
+        "msgId": "1a0fc69e23d135e4"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-02T11:51:04Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Oakdale Club?",
+        "body": "Hi Andy,\n\nThanks for coming back, and lovely to hear from you.\n\nJake's had outstanding reviews from the clubs he plays, and people are\noften surprised a young singer can deliver those songs with that much\npower and feeling. He's a breath of fresh air, not an impersonator.\nHe's built hundreds of thousands of followers across multiple\nplatforms, and the show lands with all ages. He goes down especially\nwell at clubs like yours, and he's already got dates locked nearby in\nDorset.\n\nFor Oakdale Club on a Saturday or Sunday, Jake is £300 cash for 2 x 1\nhour sets, or £450 cash for 3 x 1 hour. Own PA, no deposit.\n\nIf you book four dates and lock them in, we can do £250 cash for the 2\nhour show or £400 cash for the 3 hour show on each of those nights.\nThose four-date deals tend to fill quickly as Jake is one of a kind,\nand his diary is already filling right through to Christmas 2027, so\nthe sooner you lock a date the better the choice.\n\nHis free Saturdays and Sundays from now:\n\nOctober 2026: Sun 11th, Sun 18th, Sun 25th\nNovember 2026: Sat 7th, Sun 15th, Sun 22nd\nDecember 2026: Sun 6th, Sun 20th, Sun 27th\nJanuary 2027: Sat 2nd, Sun 3rd, Sat 9th, Sun 17th, Sun 24th, Sun 31st\nFebruary 2027: Sun 7th, Sat 13th, Sun 14th, Sat 27th, Sun 28th\nMarch 2027: Sat 6th, Sun 7th, Sun 21st, Sat 27th, Sun 28th\nApril 2027: Sat 3rd, Sun 4th, Sat 10th, Sun 11th, Sun 18th, Sun 25th\nMay 2027: Sat 8th, Sat 22nd, Sun 23rd\nJune 2027: Sat 5th, Sun 6th, Sun 13th, Sun 20th\n\nHappy to check anything else you've got in mind.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0fc7423713b436"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "contactName": "Andy Hayward",
+    "notes": "Andy Hayward (events) replied from oakdale92events@gmail.com — Also: oakdale92events@gmail.com (venue email oakdale.con@gmail.com kept). Also: club line 01202 380544 (from forward signature).",
+    "statusNote": "quoted · Them Andy Hayward 1a0fc69e23d135e4 ~12:39 London Fri 2 Oct (fwd of 21 Sep cold, thread 1a0c353a244872e0): 2027 availability + Saturday cost ask · Us FAR quote 1a0fc7423713b436 ~12:51: Sat/Sun £300 2×1h / £450 3×1h; 4-date £250/£400 · free Sat/Sun list Oct 2026–Jun 2027 · waiting on Andy · no chase before Wed 7 Oct · Haggle owns · not locked",
+    "callHoldUntil": "2026-10-07",
+    "callExclude": "waiting-on-them",
+    "lastContact": "2026-10-02",
+    "lastContactSrc": "us 1a0fc7423713b436"
   },
   {
     "id": "reigate-ex-service-and-social-club",
@@ -25913,7 +26046,11 @@
     "tab": "call",
     "statusNote": "quoted · Us 1a0fbab0c49e6b53 ~09:11 London Fri 2 Oct to Jennywren.76@outlook.com (thread 1a0f890bb840b946): 2027 Sat dates H1 + £250 / 2×1h cash · waiting Jenny pick · prior Them Jenny Evans Secretary 1a0f890bb840b946 · phone +447856026233 · not locked · 0900 hard audit fold",
     "contactName": "Jenny Evans (Secretary)",
-    "notes": "Contact Jenny Evans (Secretary). Also: Jennywren.76@outlook.com (Jenny's own address; venue email stedithclub@gmail.com kept)."
+    "notes": "Contact Jenny Evans (Secretary). Also: Jennywren.76@outlook.com (Jenny's own address; venue email stedithclub@gmail.com kept).",
+    "callHoldUntil": "2026-10-07",
+    "callExclude": "waiting-on-them",
+    "lastContact": "2026-10-02",
+    "lastContactSrc": "us 1a0fbab0c49e6b53"
   },
   {
     "id": "old-hall-tavern",
@@ -25997,7 +26134,9 @@
     ],
     "hasThread": true,
     "tab": "other",
-    "statusNote": "Them soft redirect Janice Brittain events path Wed 23 ~16:52 London · 1a0cef8405949ee1 · phones 020 7639 1093 / 07527 912 119 (not Tuesdays) · soft redirect not hard No · do not re-cold · reply hunter owns"
+    "statusNote": "Them soft redirect Janice Brittain events path Wed 23 ~16:52 London · 1a0cef8405949ee1 · phones 020 7639 1093 / 07527 912 119 (not Tuesdays) · soft redirect not hard No · do not re-cold · reply hunter owns",
+    "lastContact": "2026-09-23",
+    "lastContactSrc": "them 1a0cef8405949ee1"
   },
   {
     "id": "bootlegger-the",
@@ -26861,7 +27000,9 @@
       }
     ],
     "hasThread": false,
-    "tab": "call"
+    "tab": "call",
+    "lastContact": "2026-09-23",
+    "lastContactSrc": "us 1a0cf806d08affda"
   },
   {
     "id": "pot-plough-the-rm14-1xl",
@@ -49416,7 +49557,11 @@
     "hasThread": true,
     "statusNote": "quoted · CURRENT QUOTE £200 for 1×60 (£150 set + £50 travel), Jake-approved · Us requote 1a0f3335457bbcf5 ~17:43 London Wed 30 Sep to chris@chrismerry.co.uk, asked Chris for dates (midweek ~4 weeks' notice, weekends easier) · supersedes Us £300 2×1h midweek quote 1a0f328e75e5d3b0 ~17:32 · Them Chris Merry 1a0f330530bbb434 ~17:40: two acts per night, 1×60 only · earlier Them midweek fee ask 1a0ecfbf5e4435a1 ~12:41 Tue 29 (PA+lighting provided) · Jake Gate cleared · Haggle day-7 chase ~7 Oct · not locked, no money",
     "venueType": "Promoter (support slot)",
-    "notes": "Also Ents Manager 01754 876128"
+    "notes": "Also Ents Manager 01754 876128",
+    "callHoldUntil": "2026-10-07",
+    "callExclude": "waiting-on-them",
+    "lastContact": "2026-09-30",
+    "lastContactSrc": "us 1a0f3335457bbcf5"
   },
   {
     "id": "little-groves-leisure-park",
@@ -50313,7 +50458,11 @@
     ],
     "hasThread": true,
     "statusNote": "Them Alison Huggan (Ali) Sat fee-ask for committee TONIGHT ~16:09 London Wed 30 (1a0f2dd4ea19721c) · Us FAR quote SENT_OK ~16:20 London £300/£450 or 4-date £250/£400 (1a0f2e7332038345) · Haggle/reply-hunter owns · not locked · cold Us 1a0ed82beab75335 · folded 1600 audit",
-    "address": "54 Exning Road, Newmarket, Suffolk CB8 0AB"
+    "address": "54 Exning Road, Newmarket, Suffolk CB8 0AB",
+    "callHoldUntil": "2026-10-07",
+    "callExclude": "waiting-on-them",
+    "lastContact": "2026-09-30",
+    "lastContactSrc": "us 1a0f2e7332038345"
   },
   {
     "id": "batch700-liss-royal-british-legion-club-liss",
@@ -51546,7 +51695,11 @@
     "firstPitch": "1 Oct 2026",
     "badge": "quoted",
     "subject": "Jake Essex for Postels Club?",
-    "statusNote": "quoted · Them Kim fee ask 1a0f6b31c8ede9d0 ~10:01 London Thu 1 Oct (usual sets 8.30–9.30, 10.00–10.45, 11.00–11.45) · Us LOCAL quote 1a0f6c1fd909b7ff ~10:18: £250 cash 2×1h / £375 cash usual 3 sets; 4-date £250 / £350 each; Fri OK + Sat/Sun free list · thread 1a0f6ad285f2e304 · Haggle owns · not locked, no money"
+    "statusNote": "quoted · Them Kim fee ask 1a0f6b31c8ede9d0 ~10:01 London Thu 1 Oct (usual sets 8.30–9.30, 10.00–10.45, 11.00–11.45) · Us LOCAL quote 1a0f6c1fd909b7ff ~10:18: £250 cash 2×1h / £375 cash usual 3 sets; 4-date £250 / £350 each; Fri OK + Sat/Sun free list · thread 1a0f6ad285f2e304 · Haggle owns · not locked, no money",
+    "callHoldUntil": "2026-10-07",
+    "callExclude": "waiting-on-them",
+    "lastContact": "2026-10-01",
+    "lastContactSrc": "us 1a0f6c1fd909b7ff"
   },
   {
     "id": "cold-20261001-broadstone-rbl-club-broadstone",
@@ -52097,15 +52250,28 @@
         "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
         "body": "Hi Natalie\n\nCan you send me a price list please. \n\n\nThanks \n\nGary",
         "msgId": "1a0f9ca394793945"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-02T08:18:41Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
+        "body": "Hi Gary,\n\nThanks for coming back, and of course.\n\nJake's had outstanding reviews from the clubs he plays, and people are\noften surprised a young singer can deliver those songs with that much\npower and feeling. He's a breath of fresh air, not an impersonator.\nHe's built hundreds of thousands of followers across multiple\nplatforms, and the show lands with all ages.\n\nFor Scaynes Hill Social Club on a Saturday or Sunday, Jake is £300\ncash for 2 x 1 hour sets, or £450 cash for 3 x 1 hour. Own PA, no\ndeposit.\n\nIf you book four dates and lock them in, we can do £250 cash for the 2\nhour show or £400 cash for the 3 hour show on each of those nights.\nThose four-date deals tend to fill quickly as Jake is one of a kind,\nand his diary is already filling right through to Christmas 2027, so\nthe sooner you lock a date the better the choice.\n\nHis free Saturdays and Sundays from now:\n\nOctober 2026: Sun 11th, Sun 18th, Sun 25th\nNovember 2026: Sat 7th, Sun 15th, Sun 22nd\nDecember 2026: Sun 6th, Sun 20th, Sun 27th\nJanuary 2027: Sat 2nd, Sun 3rd, Sat 9th, Sun 17th, Sun 24th, Sun 31st\nFebruary 2027: Sun 7th, Sat 13th, Sun 14th, Sat 27th, Sun 28th\nMarch 2027: Sat 6th, Sun 7th, Sun 21st, Sat 27th, Sun 28th\nApril 2027: Sat 3rd, Sun 4th, Sat 10th, Sun 11th, Sun 18th, Sun 25th\nMay 2027: Sat 8th, Sat 22nd, Sun 23rd\nJune 2027: Sat 5th, Sun 6th, Sun 13th, Sun 20th\n\nHappy to check anything else you've got in mind.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a0fbb1b19bdf323"
       }
     ],
-    "badge": "replied-interested",
+    "badge": "quoted",
     "hasThread": true,
     "replied": "yes",
     "firstPitch": "1 Oct 2026",
     "subject": "Jake Essex for Scaynes Hill Social Club?",
-    "statusNote": "replied-interested · Them Gary 1a0f9ca394793945 ~00:26 London Fri 2 Oct (thread 1a0f867f947679ac, reply to re-cold 1a0f8686f9afc3fd): asks for a price list → quote owed (Bookings/Haggle) · not locked, no money · email scayneshillsocialclub@gmail.com (info@scayneshillsocialclub.co.uk unmonitored) · original Wave C cold 1a0f73d2576f36bc · Also: old address info@scayneshillsocialclub.co.uk",
-    "notes": "info@scayneshillsocialclub.co.uk is unmonitored (club auto-reply 1a0f73d5b05fcbf2). Use scayneshillsocialclub@gmail.com. Also: old address info@scayneshillsocialclub.co.uk."
+    "statusNote": "quoted · Us price list 1a0fbb1b19bdf323 ~09:18 London Fri 2 Oct to Gary: Sat/Sun £300 2×1h / £450 3×1h; 4-date £250/£400 · free Sat/Sun list Oct 2026–Jun 2027 · waiting on Gary · no chase before Wed 7 Oct · no phone on file · Haggle owns · not locked · Them Gary price-list ask 1a0f9ca394793945 ~00:26 London Fri 2 Oct · Also: old address info@scayneshillsocialclub.co.uk",
+    "notes": "info@scayneshillsocialclub.co.uk is unmonitored (club auto-reply 1a0f73d5b05fcbf2). Use scayneshillsocialclub@gmail.com. Also: old address info@scayneshillsocialclub.co.uk.",
+    "callHoldUntil": "2026-10-07",
+    "callExclude": "waiting-on-them,no-phone",
+    "lastContact": "2026-10-02",
+    "lastContactSrc": "us 1a0fbb1b19bdf323"
   },
   {
     "id": "cold-20261001-sunray-club-tolworth-kt6",
