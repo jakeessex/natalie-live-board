@@ -123,34 +123,6 @@
     },
     {
       "rank": 4,
-      "id": "shepherd-dog",
-      "venue": "Shepherd & Dog",
-      "town": "Crays Hill",
-      "contact": "No name",
-      "phones": [
-        {
-          "number": "01268 521967",
-          "label": "files",
-          "tel": "01268521967"
-        }
-      ],
-      "noPhone": "",
-      "quote": "No fee sent.",
-      "lastWho": "Them",
-      "lastDate": "15 Sep",
-      "lastMsg": "\"Thank you, I will let you know\"",
-      "days": "17",
-      "daysNote": "since last contact",
-      "why": "Local pub; a call can offer dates and a price.",
-      "flags": [],
-      "note": "Last contact: 15 Sep (Them)",
-      "venueId": "shepherd-and-dog",
-      "gmailThreadId": "1a0a54d159ee000e",
-      "lastContact": "2026-09-15",
-      "lastContactWho": "Them"
-    },
-    {
-      "rank": 5,
       "id": "the-bull",
       "venue": "The Bull",
       "town": "Corringham (SS17 9AT)",
@@ -178,7 +150,7 @@
       "lastContactWho": "Us"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "id": "bardswell-social-club",
       "venue": "Bardswell Social Club",
       "town": "Brentwood (CM14 4TJ)",
@@ -206,7 +178,7 @@
       "lastContactWho": "Us"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "id": "the-greyhound-hotel",
       "venue": "The Greyhound Hotel",
       "town": "Carshalton (Young's)",
@@ -234,7 +206,7 @@
       "lastContactWho": "Them"
     },
     {
-      "rank": 8,
+      "rank": 7,
       "id": "mildmay-club",
       "venue": "Mildmay Club",
       "town": "London N16",
@@ -267,73 +239,7 @@
       "lastContactWho": "Us"
     },
     {
-      "rank": 9,
-      "id": "whitstable-social-club",
-      "venue": "Whitstable Social Club",
-      "town": "Whitstable (CT5 1QP)",
-      "contact": "Claire (Chair)",
-      "phones": [
-        {
-          "number": "01227 272023",
-          "label": "web",
-          "tel": "01227272023"
-        }
-      ],
-      "noPhone": "",
-      "quote": "18 Sep: £300 cash or £330 on the books for Sunday 4.30-6.30 (2×1h). We also asked for her budget.",
-      "lastWho": "Them",
-      "lastDate": "18 Sep",
-      "lastMsg": "Claire asked what Jake charges for 2 hours on a Sunday, saying they are a small members club that watches its budget.",
-      "days": "4",
-      "daysNote": "since last contact",
-      "why": "Her Sunday slot fits the free 2026 Sundays. We already asked her budget, so a call gets her number and a date.",
-      "flags": [
-        {
-          "type": "emailed",
-          "text": "EMAILED MON 28 SEP 16:24"
-        }
-      ],
-      "note": "Last contact: 28 Sep (Us)",
-      "venueId": "whitstable-social-club",
-      "gmailThreadId": "1a0b3a712d982d83",
-      "lastContact": "2026-09-28",
-      "lastContactWho": "Us"
-    },
-    {
-      "rank": 10,
-      "id": "six-in-one-club",
-      "venue": "Six In One Club",
-      "town": "Tonbridge (TN10 3HH)",
-      "contact": "Terry Coomber (Ents Sec)",
-      "phones": [
-        {
-          "number": "01732 358883",
-          "label": "web, club line",
-          "tel": "01732358883"
-        }
-      ],
-      "noPhone": "",
-      "quote": "17 Sep: £300 cash for 2×1h as a one-off, or £250 a night if they book 4. Saturday evening or Sunday afternoon.",
-      "lastWho": "Them",
-      "lastDate": "16 Sep",
-      "lastMsg": "Terry asked the price for Saturday 8.30-9.30 and 10-11, and for Sunday 4-5 and 5.30-6.30.",
-      "days": "4",
-      "daysNote": "since last contact",
-      "why": "He gave exact set times for both days, and Sundays are free in 2026. A call finds out whether £300 versus £250×4 is the sticking point. Ask for Terry.",
-      "flags": [
-        {
-          "type": "emailed",
-          "text": "EMAILED MON 28 SEP 16:27"
-        }
-      ],
-      "note": "Last contact: 28 Sep (Us) · Club line. Terry's own number is not in the files.",
-      "venueId": "the-six-in-one-club",
-      "gmailThreadId": "1a0ab2c995b0410f",
-      "lastContact": "2026-09-28",
-      "lastContactWho": "Us"
-    },
-    {
-      "rank": 11,
+      "rank": 8,
       "id": "coulsdon-victoria-social-club",
       "venue": "Coulsdon Victoria Social Club",
       "town": "Coulsdon",
@@ -366,7 +272,7 @@
       "lastContactWho": "Us"
     },
     {
-      "rank": 12,
+      "rank": 9,
       "id": "sutton-social-club",
       "venue": "Sutton Social Club",
       "town": "Sutton (SM1 4RS)",
@@ -399,7 +305,7 @@
       "lastContactWho": "Us"
     },
     {
-      "rank": 13,
+      "rank": 10,
       "id": "barrow-upon-soar-cons",
       "venue": "Barrow upon Soar Cons",
       "town": "Leics",
@@ -436,7 +342,7 @@
       "lastContactWho": "Us"
     },
     {
-      "rank": 14,
+      "rank": 11,
       "id": "pendyffryn-club",
       "venue": "Pendyffryn Club",
       "town": "Prestatyn",

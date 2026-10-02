@@ -18453,7 +18453,7 @@
     "id": "shepherd-and-dog",
     "name": "Shepherd & Dog",
     "town": "Crays Hill",
-    "badge": "replied-interested",
+    "badge": "quoted",
     "phone": "+441268521967",
     "needPhone": false,
     "email": "shepherdanddogcrayshill@gmail.com",
@@ -18478,13 +18478,24 @@
         "from": "shepherdanddogcrayshill@gmail.com",
         "subject": "Re: Jake Essex for Shepherd & Dog?",
         "body": "Thank you, I will let you know.\n\nThe Shepherd and Dog Crays Hill\nT: 01268 521967\nE: shepherdanddogcrayshill@gmail.com\nW: The Shepherd And Dog"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-02T19:51:10Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Shepherd & Dog?",
+        "body": "Hi Rebecca,\n\nNatalie here, I look after bookings for Jake Essex. Just following up\nafter our chat.\n\nJake's diary is filling up fast, with bookings already going in well\ninto 2027, so the sooner you lock a date the better the choice. If\nyou'd like him at Shepherd & Dog this year, these weekends are still\nfree:\n\nOctober: Sun 11th, Sun 18th, Sun 25th\nNovember: Sat 7th, Sun 15th, Sun 22nd\nDecember: Sun 6th, Sun 20th, Sun 27th\n\nPrices:\n2 x 45 mins: £250 cash\n3 x 45 mins: £375 cash\n4 x 40 mins: £485 cash\n\nOwn PA, no deposit. Have a look at www.jakeessex.co.uk, there are\nloads of live clips on there.\n\nIf one of those dates works, reply here and I'll lock it for you.\n\nNatalie",
+        "msgId": "1a0fe2bb0c0d9864"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "replied-interested · Them 1a0a5b5273eecc40 Tue 15 ~16:34 London · \"Thank you, I will let you know\" · Natalie 2pm Tue 15 SENT_OK 1a0a54dbdedf623c",
-    "lastContact": "2026-09-15",
-    "lastContactSrc": "them no-msgId"
+    "statusNote": "quoted · waiting on Rebecca · Us post-call quote 1a0fe2bb0c0d9864 ~20:51 BST Fri 2 Oct: 2x45 £250, 3x45 £375, 4x40 £485, cash, no deposit; offered Sun 11/18/25 Oct, Sat 7 Nov, Sun 15/22 Nov, Sun 6/20/27 Dec · off Call until Fri 9 Oct · Gmail-verified · prev: replied-interested · Them 1a0a5b5273eecc40 Tue 15 ~16:34 London · \"Thank you, I will let you know\" · Natalie 2pm Tue 15 SENT_OK 1a0a54dbdedf623c",
+    "lastContact": "2026-10-02",
+    "lastContactSrc": "us 1a0fe2bb0c0d9864",
+    "callExclude": "waiting-on-them",
+    "callHoldUntil": "2026-10-09"
   },
   {
     "id": "fox-and-hounds",
@@ -19853,14 +19864,25 @@
         "subject": "Re: 6 In 1",
         "body": "Hi Terry,\n\nJust gently checking in on Jake for Six In One. Still happy to pencil\na date when you've got something free.\n\nHappy to work around your diary.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a0e8a08029e82cf"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-02T19:52:55Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: 6 In 1",
+        "body": "Hi Terry,\n\nNatalie here. I tried you at the club just now and they said you're at\nyour other job, so I'm dropping this here.\n\nI'd love to get a Saturday or Sunday booked in for Jake at Six In One.\nGive me a ring back on 07523 924644 when you're free and we can lock a\ndate.\n\nStill happy with the quote I sent: £300 cash for a one-off 2 x 1 hour,\nor £250 a night if you book four dates. Own PA, no deposit.\n\nWeekends still free this side of Christmas:\n\nOctober: Sun 11th, Sun 18th, Sun 25th\nNovember: Sat 7th, Sun 15th, Sun 22nd\nDecember: Sun 6th, Sun 20th, Sun 27th\n\nNatalie\nwww.jakeessex.co.uk",
+        "msgId": "1a0fe2d49992ac09"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Terry Coomber · Us SENT_OK 1a0aeb136ba72e11 · Gmail quote £300 cash one-off / £250×4 · Sat 20:30–21:30+22:00–23:00 · Sun 16:00–17:00+17:30–18:30 · Bookings SYNC also had LOCAL £250 cash/£280 books — Gmail body wins · replyLane email · Haggle owns close · do not re-cold hotmail · phone +441732358883 from call deck calls.json (web, club line)",
+    "statusNote": "quoted · waiting on Terry · Us post-call quote 1a0fe2d49992ac09 ~20:52 BST Fri 2 Oct: asked Terry to call Nat on 07523 924644; quote stands £300 one-off or £250 x4; offered Sun 11/18/25 Oct, Sat 7 Nov, Sun 15/22 Nov, Sun 6/20/27 Dec · off Call until Fri 9 Oct · Gmail-verified · prev: quoted · Terry Coomber · Us SENT_OK 1a0aeb136ba72e11 · Gmail quote £300 cash one-off / £250×4 · Sat 20:30–21:30+22:00–23:00 · Sun 16:00–17:00+17:30–18:30 · Bookings SYNC also had LOCAL £250 cash/£280 books — Gmail body wins · replyLane email · Haggle owns close · do not re-cold hotmail · phone +441732358883 from call deck calls.json (web, club line)",
     "replyLane": "email",
-    "lastContact": "2026-09-28",
-    "lastContactSrc": "us 1a0e8a08029e82cf"
+    "lastContact": "2026-10-02",
+    "lastContactSrc": "us 1a0fe2d49992ac09",
+    "callExclude": "waiting-on-them",
+    "callHoldUntil": "2026-10-09"
   },
   {
     "id": "purley-social-club",
@@ -21865,7 +21887,7 @@
     "id": "whitstable-social-club",
     "name": "Whitstable Social Club",
     "town": "",
-    "badge": "replied-interested",
+    "badge": "quoted",
     "phone": "+441227272023",
     "needPhone": false,
     "email": "clairebaker23@yahoo.com",
@@ -21910,13 +21932,24 @@
         "subject": "Re: Jake Essex for Whitstable Social Club?",
         "body": "Hi Claire,\n\nJust gently checking in on Jake for a Sunday afternoon at Whitstable.\nStill happy to pencil a date when you've got something free.\n\nHappy to work around your diary.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a0e89df69581a53"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-02T19:51:38Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Whitstable Social Club?",
+        "body": "Hi Claire,\n\nI just tried you and left a quick voicemail. Looking forward to\nhearing from you about Jake for a Sunday afternoon at Whitstable.\n\nDates for this year are filling up fast. Still free on our side:\n\nOctober: Sun 11th, Sun 18th, Sun 25th\nNovember: Sun 15th, Sun 22nd\nDecember: Sun 6th, Sun 20th, Sun 27th\n\nSame quote as before for your 4.30 to 6.30 slot: £300 cash, or £330\nthrough the books, for 2 x 1 hour. Own PA, no deposit.\n\nIf one of those Sundays works, reply here and I'll lock it.\n\nNatalie\nwww.jakeessex.co.uk",
+        "msgId": "1a0fe2c1ca7d9a77"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Claire Sunday 2×1hr ask + Us £300c/£330b · Haggle owns wait · day-7 25 Sep · phone +441227272023 from call deck calls.json (web)",
-    "lastContact": "2026-09-28",
-    "lastContactSrc": "us 1a0e89df69581a53"
+    "statusNote": "quoted · waiting on Claire · Us post-call quote 1a0fe2c1ca7d9a77 ~20:51 BST Fri 2 Oct: £300 cash or £330 books, 2x1hr, Sun 4.30–6.30; offered Sun 11/18/25 Oct, Sun 15/22 Nov, Sun 6/20/27 Dec. Nat WhatsApping Tracey Brown 07517499148 separately · off Call until Fri 9 Oct · Gmail-verified · prev: quoted · Claire Sunday 2×1hr ask + Us £300c/£330b · Haggle owns wait · day-7 25 Sep · phone +441227272023 from call deck calls.json (web)",
+    "lastContact": "2026-10-02",
+    "lastContactSrc": "us 1a0fe2c1ca7d9a77",
+    "callExclude": "waiting-on-them",
+    "callHoldUntil": "2026-10-09"
   },
   {
     "id": "hailsham-club",
