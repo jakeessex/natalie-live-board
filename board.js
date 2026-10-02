@@ -64,6 +64,8 @@ var Board = (() => {
     lastCalledLabel: () => lastCalledLabel,
     lastOf: () => lastOf,
     lastTouchLabel: () => lastTouchLabel,
+    lastContactLabel: () => lastContactLabel,
+    callExcludeReasons: () => callExcludeReasons,
     lockedCash: () => lockedCash,
     mailtoHref: () => mailtoHref,
     mapsHref: () => mapsHref,
@@ -803,6 +805,36 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
   function usCount(venue) {
     return cleanThread(venue).filter((m) => m.side === "us").length;
   }
+  // callExclude: comma list (waiting-on-them, no-phone, booked, duplicate, ...).
+  // callHoldUntil (YYYY-MM-DD, London): "waiting-on-them" only holds until that date.
+  // Board-side call exclusions (2 Oct 2026, Jake): kept off Call without editing venues.json data.
+  var CALL_EXCLUDE_IDS = {
+    "lower-bourne-social-club": "waiting on them",
+    "goldstone-ex-service-club": "hard hold",
+    "bird-in-hand": "hold"
+  };
+  function callExcludeReasons(venue, now = /* @__PURE__ */ new Date()) {
+    const raw = String(venue && venue.callExclude || "").split(",").map((x) => x.trim()).filter(Boolean);
+    const fixed = venue && CALL_EXCLUDE_IDS[venue.id];
+    if (fixed && !raw.includes(fixed)) raw.push(fixed);
+    const today = now.toLocaleDateString("en-CA", { timeZone: "Europe/London" });
+    const until = String(venue && venue.callHoldUntil || "");
+    return raw.filter((x) => !(x === "waiting-on-them" && until && today >= until));
+  }
+  function lastContactLabel(venue) {
+    const m = String(venue && venue.lastContact || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!m) return "";
+    const mon = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][Number(m[2]) - 1];
+    return "Last contact: " + String(Number(m[3])).padStart(2, "0") + " " + mon;
+  }
+  function applyCallExclude(row, now) {
+    const why = callExcludeReasons(row.venue, now);
+    if (!why.length) return row;
+    const hard = why.some((x) => x === "booked" || x === "duplicate" || x === "declined");
+    row.desk = hard ? "no" : "wait";
+    row.deskWhy = "Off Call \u2014 " + why.join(", ").replace(/-/g, " ") + (why.includes("waiting-on-them") && row.venue.callHoldUntil ? " until " + row.venue.callHoldUntil : "");
+    return row;
+  }
   function assignDesk(row, now = /* @__PURE__ */ new Date()) {
     const venue = row.venue;
     const inbound = realInbound(venue);
@@ -834,7 +866,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
         row.desk = "call";
         row.followState = row.called ? "done" : "none";
         row.deskWhy = "Phone on file \u2014 first contact";
-        return row;
+        return applyCallExclude(row, now);
       }
       if (!sent) {
         row.desk = "no";
@@ -868,7 +900,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     row.desk = "call";
     row.followState = row.called ? "done" : "none";
     row.deskWhy = row.replyWhy || row.reason || (hasPhone(venue) ? "Call when you\u2019re on" : "On email \u2014 no number");
-    return row;
+    return applyCallExclude(row, now);
   }
   function monthToken(text) {
     const m = String(text || "").toLowerCase().match(
@@ -1021,6 +1053,9 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     return rows.filter((r) => r.desk === "call").sort((a, b) => {
       if (a.followState === "done" && b.followState !== "done") return 1;
       if (b.followState === "done" && a.followState !== "done") return -1;
+      // Oldest last contact first; rows with no lastContact go after all dated rows.
+      const la = String(a.venue.lastContact || "9999-99-99"), lb = String(b.venue.lastContact || "9999-99-99");
+      if (la !== lb) return la < lb ? -1 : 1;
       const heat = heatScore(b.venue, b.daysSinceInbound) - heatScore(a.venue, a.daysSinceInbound);
       if (heat) return heat;
       return (a.daysSinceInbound ?? 99) - (b.daysSinceInbound ?? 99);
@@ -2779,7 +2814,7 @@ var NatNotes = (function(exports) {
   function queueHtml(title, rows, empty) {
     var body = rows.length
       ? rows.map(function (row, i) {
-          return '<button type="button" class="qrow" onclick="natOpen(\'' + esc(row.venue.id) + "')\"><span class=\"qnum\">" + String(i + 1).padStart(2, "0") + '</span><span class="job-main"><span class="job-name">' + esc(row.venue.name) + '</span><span class="job-meta">' + esc(row.deskWhy || B.lastTouchLabel(row)) + "</span></span>" + (row.who ? '<span class="row-fee">' + esc(row.who) + "</span>" : "") + '<span class="chev">›</span></button>';
+          return '<button type="button" class="qrow" onclick="natOpen(\'' + esc(row.venue.id) + "')\"><span class=\"qnum\">" + String(i + 1).padStart(2, "0") + '</span><span class="job-main"><span class="job-name">' + esc(row.venue.name) + '</span><span class="job-meta">' + esc(row.deskWhy || B.lastTouchLabel(row)) + (row.desk === "call" && B.lastContactLabel(row.venue) ? " \u00b7 " + esc(B.lastContactLabel(row.venue)) : "") + "</span></span>" + (row.who ? '<span class="row-fee">' + esc(row.who) + "</span>" : "") + '<span class="chev">›</span></button>';
         }).join("")
       : '<p class="empty">' + empty + "</p>";
     return '<div class="joblist"><p class="group">' + title + " · " + rows.length + "</p>" + body + "</div>";
@@ -3047,6 +3082,7 @@ var NatNotes = (function(exports) {
       "<h1>" + esc(v.name) + "</h1>" +
       (v.town ? '<p class="town">' + esc(v.town) + "</p>" : "") +
       (row.deskWhy ? '<p class="lead-why">' + esc(row.deskWhy) + "</p>" : "") +
+      (B.lastContactLabel(v) ? '<p class="lead-why">' + esc(B.lastContactLabel(v)) + "</p>" : "") +
       links +
       '<dl class="lead-facts">' + facts.join("") + "</dl>" +
       '<p class="say"><span>Say this</span>' + esc(row.sayThis) + "</p></div>" +
