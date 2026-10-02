@@ -25862,11 +25862,11 @@
     "id": "st-edith-club-and-institute",
     "name": "St Edith Club & Institute",
     "town": "",
-    "badge": "awaiting",
-    "phone": null,
-    "needPhone": true,
+    "badge": "replied-interested",
+    "phone": "+447856026233",
+    "needPhone": false,
     "email": "stedithclub@gmail.com",
-    "replied": "no",
+    "replied": "yes",
     "firstPitch": "23 Sep 2026 ~16:35 Europe/London",
     "addedAt": "2026-09-23",
     "followUps": "0 · last —",
@@ -25887,11 +25887,22 @@
         "subject": "Re: Jake Essex for St Edith Club & Institute?",
         "body": "Hi,\n\nJust checking you saw my earlier note about Jake Essex for St Edith\nClub & Institute. High-energy classics, not an impersonator, fully\nself-contained with his own PA.\n\nClubs usually look at from £250 for two one hour sets. If you've got\nweekends free further out, I'd love to pencil a date.\n\nIf it's not for you, reply \"no thanks\" and I won't email again.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a0f7da6745a3d35"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-01T17:43:16Z",
+        "from": "Jennywren.76@outlook.com",
+        "subject": "St Ediths",
+        "body": "Good Evening\nYes, we would definitely be interested\nWhat's your availability for next year?\nSaturdays work best for us\nThank you\nJenny Evans\nSecretary\nSt Ediths social club\n07856026233\n\nSent from Outlook for Android<https://aka.ms/AAb9ysg>",
+        "msgId": "1a0f890bb840b946"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Us FU1 Thu 1 Oct 1a0f7da6745a3d35 ~15:24 London (FU-D) · awaiting"
+    "statusNote": "replied-interested · Them Jenny Evans (Secretary) 1a0f890bb840b946 ~18:43 London Thu 1 Oct from Jennywren.76@outlook.com (new thread \"St Ediths\"): definitely interested, wants 2027 availability, Saturdays best → quote + 2027 Saturday dates owed (Bookings/Haggle) · phone +447856026233 · not locked, no money · prior Us FU1 1a0f7da6745a3d35 ~15:24 London Thu 1 Oct",
+    "contactName": "Jenny Evans (Secretary)",
+    "notes": "Contact Jenny Evans (Secretary). Also: Jennywren.76@outlook.com (Jenny's own address; venue email stedithclub@gmail.com kept)."
   },
   {
     "id": "old-hall-tavern",
@@ -52042,7 +52053,7 @@
     "town": "Scaynes Hill RH17",
     "postcode": "",
     "website": "",
-    "contactName": "",
+    "contactName": "Gary",
     "phone": null,
     "needPhone": true,
     "email": "scayneshillsocialclub@gmail.com",
@@ -52066,14 +52077,23 @@
         "subject": "Jake Essex for Scaynes Hill Social Club?",
         "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Scaynes Hill Social Club - and he'd love\nto come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a0f8686f9afc3fd"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-01T23:26:01Z",
+        "from": "scayneshillsocialclub@gmail.com",
+        "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
+        "body": "Hi Natalie\n\nCan you send me a price list please. \n\n\nThanks \n\nGary",
+        "msgId": "1a0f9ca394793945"
       }
     ],
-    "badge": "awaiting",
+    "badge": "replied-interested",
     "hasThread": true,
-    "replied": "no",
+    "replied": "yes",
     "firstPitch": "1 Oct 2026",
     "subject": "Jake Essex for Scaynes Hill Social Club?",
-    "statusNote": "awaiting · Us cold re-sent to redirect scayneshillsocialclub@gmail.com 1a0f8686f9afc3fd ~17:59 London Thu 1 Oct thread 1a0f867f947679ac · email changed from info@scayneshillsocialclub.co.uk (unmonitored per auto-reply 1a0f73d5b05fcbf2 ~12:33 London; auto-reply not in Conversation) · original Wave C cold 1a0f73d2576f36bc to info@ ~12:32 London thread 1a0f73d1d47fea69 · Also: old address info@scayneshillsocialclub.co.uk",
+    "statusNote": "replied-interested · Them Gary 1a0f9ca394793945 ~00:26 London Fri 2 Oct (thread 1a0f867f947679ac, reply to re-cold 1a0f8686f9afc3fd): asks for a price list → quote owed (Bookings/Haggle) · not locked, no money · email scayneshillsocialclub@gmail.com (info@scayneshillsocialclub.co.uk unmonitored) · original Wave C cold 1a0f73d2576f36bc · Also: old address info@scayneshillsocialclub.co.uk",
     "notes": "info@scayneshillsocialclub.co.uk is unmonitored (club auto-reply 1a0f73d5b05fcbf2). Use scayneshillsocialclub@gmail.com. Also: old address info@scayneshillsocialclub.co.uk."
   },
   {
