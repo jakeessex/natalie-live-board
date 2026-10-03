@@ -19822,11 +19822,11 @@
     "id": "the-six-in-one-club",
     "name": "The Six In One Club",
     "town": "",
-    "badge": "quoted",
+    "badge": "locked",
     "phone": "+441732358883",
     "needPhone": false,
     "email": "sixinoneclub@gmail.com · Terry Coomber terry.coomber67@hotmail.com",
-    "replied": "no",
+    "replied": "yes — locked",
     "firstPitch": "16 Sep 2026",
     "addedAt": "2026-09-16T12:15:37.718Z",
     "followUps": "0 · last —",
@@ -19891,16 +19891,35 @@
         "subject": "Re: 6 In 1",
         "body": "Hi Terry,\n\nThanks for coming back to me. Jake is already booked on 17th July and\n21st August, but Saturday 4th September 2027 is free, so I can lock\nthat in for you now.\n\nSaturday 4th September 2027, 2 x 1 hour, 8.30 to 9.30 and 10 to 11,\n£300 cash. Own PA, no deposit.\n\nIf you have any other Saturdays or Sundays you'd like to add, send\nthem over. At four dates the price drops to £250 a night.\n\nJust reply to confirm the 4th and it's in the diary.\n\nNatalie\nwww.jakeessex.co.uk",
         "msgId": "1a0ff187c8779b62"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-03T13:16:13Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: 6 In 1",
+        "body": "Hi Terry, \n\nJust need you to confirm 4th September so I can block it out in the diary, let me know as soon as you can.\n\nMany thanks \nNatalie",
+        "msgId": "1a101e8a0039e2f6"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-03T13:20:16Z",
+        "from": "terry.coomber67@hotmail.com",
+        "subject": "Re: 6 In 1",
+        "body": "Yes, confirmed.\n\nSent from Outlook for Android<https://aka.ms/AAb9ysg>",
+        "msgId": "1a101ec317eca377"
       }
     ],
     "hasThread": true,
-    "tab": "call",
-    "statusNote": "quoted · offered Sat 4 Sep 2027, waiting on Terry to confirm · NOT locked · Them Terry 1a0feb6ecba474d9 ~23:22 BST Fri 2 Oct: free Sat 17 Jul / 21 Aug / 4 Sep 2027 · Us 1a0ff187c8779b62 ~01:09 BST Sat 3 Oct: 17 Jul + 21 Aug already booked, offered Sat 4 Sep 2027 2×1h 20:30–21:30 + 22:00–23:00 £300 cash, own PA, no deposit; 4 dates → £250/night · off Call until Fri 9 Oct · Gmail-verified · prev: quoted · waiting on Terry · Us post-call quote 1a0fe2d49992ac09 ~20:52 BST Fri 2 Oct: asked Terry to call Nat on 07523 924644; quote stands £300 one-off or £250 x4; offered Sun 11/18/25 Oct, Sat 7 Nov, Sun 15/22 Nov, Sun 6/20/27 Dec · off Call until Fri 9 Oct · Gmail-verified · prev: quoted · Terry Coomber · Us SENT_OK 1a0aeb136ba72e11 · Gmail quote £300 cash one-off / £250×4 · Sat 20:30–21:30+22:00–23:00 · Sun 16:00–17:00+17:30–18:30 · Bookings SYNC also had LOCAL £250 cash/£280 books — Gmail body wins · replyLane email · Haggle owns close · do not re-cold hotmail · phone +441732358883 from call deck calls.json (web, club line)",
+    "tab": "booked",
+    "statusNote": "OWN LOCK Sat 4 Sep 2027 £300 cash · 2×1h 20:30–21:30 + 22:00–23:00 · Terry Coomber · thread 1a0ab2c995b0410f · cal 2s03lhatvu5kugd64ijib5u6e4 · Us confirm-ask 1a101e8a0039e2f6 ~14:16 BST Sat 3 Oct · Them \"Yes, confirmed.\" 1a101ec317eca377 ~14:20 BST · Gmail-verified · prev: quoted · offered Sat 4 Sep 2027, waiting on Terry to confirm · NOT locked · Them Terry 1a0feb6ecba474d9 ~23:22 BST Fri 2 Oct: free Sat 17 Jul / 21 Aug / 4 Sep 2027 · Us 1a0ff187c8779b62 ~01:09 BST Sat 3 Oct: 17 Jul + 21 Aug already booked, offered Sat 4 Sep 2027 2×1h 20:30–21:30 + 22:00–23:00 £300 cash, own PA, no deposit; 4 dates → £250/night · off Call until Fri 9 Oct · Gmail-verified · prev: quoted · waiting on Terry · Us post-call quote 1a0fe2d49992ac09 ~20:52 BST Fri 2 Oct: asked Terry to call Nat on 07523 924644; quote stands £300 one-off or £250 x4; offered Sun 11/18/25 Oct, Sat 7 Nov, Sun 15/22 Nov, Sun 6/20/27 Dec · off Call until Fri 9 Oct · Gmail-verified · prev: quoted · Terry Coomber · Us SENT_OK 1a0aeb136ba72e11 · Gmail quote £300 cash one-off / £250×4 · Sat 20:30–21:30+22:00–23:00 · Sun 16:00–17:00+17:30–18:30 · Bookings SYNC also had LOCAL £250 cash/£280 books — Gmail body wins · replyLane email · Haggle owns close · do not re-cold hotmail · phone +441732358883 from call deck calls.json (web, club line)",
     "replyLane": "email",
     "lastContact": "2026-10-03",
-    "lastContactSrc": "us 1a0ff187c8779b62",
-    "callExclude": "waiting-on-them",
-    "callHoldUntil": "2026-10-09"
+    "lastContactSrc": "them 1a101ec317eca377",
+    "lockedFee": 300,
+    "lockedNights": 1,
+    "lockedDate": "2027-09-04"
   },
   {
     "id": "purley-social-club",
