@@ -1875,7 +1875,15 @@ var NatNotes = (function(exports) {
     }
     flyDatesPin(datesPick);
     card = document.querySelector('#dates .house[data-id="' + datesPick + '"]');
-    if (card && card.scrollIntoView) card.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    var scroller = document.querySelector("#dates .dates-list");
+    if (window.matchMedia && window.matchMedia("(max-width:959px)").matches) {
+      scroller = document.querySelector("#dates .dates-body") || scroller;
+    }
+    if (card && scroller) {
+      var c = card.getBoundingClientRect();
+      var s = scroller.getBoundingClientRect();
+      scroller.scrollTo({ top: scroller.scrollTop + (c.top - s.top) - 12, behavior: "smooth" });
+    }
   };
   window.natDatesMonth = function (m) {
     datesMonth = m || "all";
@@ -2692,8 +2700,6 @@ var NatNotes = (function(exports) {
       });
     });
     var cards = shown.map(function (h) { return houseHtml(h, today, clashMap); }).join("") || '<p class="empty">Nothing in this view.</p>';
-    var facts = "<span><b>" + stats.nights + "</b> nights</span><span><b>" + houses.length + "</b> houses</span><span><b>" + B.gbp(avg) + "</b> avg</span>";
-    if (furthest) facts += "<span><b>" + furthestMi + "</b> mi furthest</span>";
     var stamp = [datesMonth, stats.cash, stats.nights, shows.length, nextShow && nextShow.id, shown.length].join("|");
     if (el.className === "show" && el.getAttribute("data-stamp") === stamp && datesMap) return;
     destroyDatesMap();
@@ -2701,17 +2707,16 @@ var NatNotes = (function(exports) {
     el.setAttribute("data-stamp", stamp);
     var goal = B.cashTarget(stats);
     el.innerHTML =
-      '<header class="dates-head"><div class="dates-top"><button class="back" type="button" onclick="natDatesClose()">Close</button><p class="dates-kicker">Booked</p></div>' +
-      "<h1>" + B.gbp(stats.cash) + "</h1>" +
-      '<p class="dates-sub">' + stats.nights + " nights locked · " + houses.length + " houses · " + B.gbp(goal.left) + " still to £10k</p>" +
+      '<header class="dates-head"><div class="dates-top"><button class="back" type="button" onclick="natDatesClose()">Close</button>' +
+      '<div class="dates-money"><b>' + B.gbp(stats.cash) + "</b><span>" + stats.nights + " nights · " + houses.length + " houses · " + B.gbp(goal.left) + " to £10k</span></div></div>" +
       '<div class="cash-bar" aria-hidden="true"><i style="width:' + goal.pct + '%"></i></div>' +
-      '<div class="dates-facts">' + facts + "</div>" +
       '<div class="dates-months">' + chips + "</div></header>" +
+      '<div class="dates-body">' +
       '<div class="dates-map-wrap"><div id="dates-map"></div><p class="dates-map-msg" id="dates-map-msg">Loading the map…</p></div>' +
       '<div class="dates-list">' + nextCard + clashHtml +
       '<div class="dates-tools"><p class="dates-kicker">' + shown.length + " house" + (shown.length === 1 ? "" : "s") + (unpinned ? " · " + unpinned + " not on the map" : "") + '</p><button type="button" id="dates-copy" onclick="natDatesCopy()">Copy list</button></div>' +
       cards +
-      '<pre id="dates-copy-src" hidden>' + esc(copyLines.join("\n")) + "</pre></div>";
+      '<pre id="dates-copy-src" hidden>' + esc(copyLines.join("\n")) + "</pre></div></div>";
     fillCoords(shows, function () {
       if (!datesOpen) return;
       houses.forEach(function (h) {
