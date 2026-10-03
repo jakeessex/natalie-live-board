@@ -2402,6 +2402,16 @@ var NatNotes = (function(exports) {
     }).catch(function () { done(); });
   }
   var leafletPromise = null;
+  function addDarkTiles(L, map) {
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
+      attribution: "Tiles &copy; Esri",
+      maxZoom: 16
+    }).addTo(map);
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {
+      maxZoom: 16,
+      pane: "shadowPane"
+    }).addTo(map);
+  }
   function loadLeaflet() {
     if (window.L) return Promise.resolve(window.L);
     if (leafletPromise) return leafletPromise;
@@ -2532,11 +2542,7 @@ var NatNotes = (function(exports) {
       if (!datesOpen || !$("dates-map")) return;
       destroyDatesMap();
       var map = L.map(hold, { scrollWheelZoom: false, attributionControl: true, zoomControl: true });
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-        attribution: "&copy; OSM &copy; CARTO",
-        subdomains: "abcd",
-        maxZoom: 18
-      }).addTo(map);
+      addDarkTiles(L, map);
       datesMarkers = {};
       pins.forEach(function (h) {
         var n = 0, dates = visibleDates(h), i;
@@ -2564,6 +2570,7 @@ var NatNotes = (function(exports) {
       };
       requestAnimationFrame(frame);
       setTimeout(frame, 180);
+      setTimeout(frame, 500);
       datesMap = map;
       if (msg) { msg.textContent = ""; msg.style.display = "none"; }
     }).catch(function () {
@@ -2583,11 +2590,11 @@ var NatNotes = (function(exports) {
     var who = bookerName(house.venue) || bookerName(dates[0] && dates[0].venue);
     var phone = rec && rec.phone ? String(rec.phone) : "";
     var bits = [];
-    bits.push(B.gbp(house.fee));
     bits.push(house.nights + (house.nights === 1 ? " night" : " nights"));
     if (nxt) bits.push("next " + shortDay(nxt.date));
     else if (pastN) bits.push("sung");
-    if (miles) bits.push(miles + " mi from home");
+    if (house.town) bits.push(house.town);
+    if (miles) bits.push(miles + " mi");
     if (!house.ll) bits.push("not on the map");
     var rows = dates.map(function (d) {
       var until = untilInfo(d, today);
@@ -2606,7 +2613,8 @@ var NatNotes = (function(exports) {
     return '<article class="house' + (datesPick === house.id ? " on" : "") + '" data-id="' + esc(house.id) + '">' +
       '<button type="button" class="house-top" onclick="natDatesPick(\'' + esc(house.id) + "')\">" +
         '<b class="house-n' + (house.nights > 1 ? " multi" : "") + '">' + badge + "</b>" +
-        '<span class="job-main"><span class="date-name">' + esc(house.venue) + "</span><span class=\"date-meta\">" + esc(bits.join(" · ")) + "</span></span>" +
+        '<span class="job-main"><span class="date-name">' + esc(house.venue) + '</span><span class="date-meta">' + esc(bits.join(" · ")) + "</span></span>" +
+        '<span class="house-fee">' + B.gbp(house.fee) + "</span>" +
       "</button>" +
       (who ? '<p class="house-who">Booked with ' + esc(who) + "</p>" : "") +
       rows +
@@ -2691,10 +2699,12 @@ var NatNotes = (function(exports) {
     destroyDatesMap();
     el.className = "show";
     el.setAttribute("data-stamp", stamp);
+    var goal = B.cashTarget(stats);
     el.innerHTML =
-      '<header class="dates-head"><button class="back" type="button" onclick="natDatesClose()">Close <span>Dates booked</span></button>' +
-      "<h1>Dates booked</h1>" +
-      '<p class="dates-sub"><b>' + B.gbp(stats.cash) + "</b> locked · " + B.gbp(B.cashTarget(stats).left) + " still open to £10k</p>" +
+      '<header class="dates-head"><div class="dates-top"><button class="back" type="button" onclick="natDatesClose()">Close</button><p class="dates-kicker">Booked</p></div>' +
+      "<h1>" + B.gbp(stats.cash) + "</h1>" +
+      '<p class="dates-sub">' + stats.nights + " nights locked · " + houses.length + " houses · " + B.gbp(goal.left) + " still to £10k</p>" +
+      '<div class="cash-bar" aria-hidden="true"><i style="width:' + goal.pct + '%"></i></div>' +
       '<div class="dates-facts">' + facts + "</div>" +
       '<div class="dates-months">' + chips + "</div></header>" +
       '<div class="dates-map-wrap"><div id="dates-map"></div><p class="dates-map-msg" id="dates-map-msg">Loading the map…</p></div>' +
@@ -2883,11 +2893,7 @@ var NatNotes = (function(exports) {
         var near = pins.filter(function (p) { return milesBetween(home, p.ll) <= 115; });
         if (!near.length) near = pins;
         var map = L.map($("pot-map"), { scrollWheelZoom: false, attributionControl: true, zoomControl: true, preferCanvas: true });
-        L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-          attribution: "&copy; OSM &copy; CARTO",
-          subdomains: "abcd",
-          maxZoom: 18
-        }).addTo(map);
+        addDarkTiles(L, map);
         near.forEach(function (p) {
           var st = prospectStatusOf(p.row.venue);
           var mk = L.circleMarker(p.ll, {
