@@ -19909,14 +19909,23 @@
         "subject": "Re: 6 In 1",
         "body": "Yes, confirmed.\n\nSent from Outlook for Android<https://aka.ms/AAb9ysg>",
         "msgId": "1a101ec317eca377"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-03T21:43:36Z",
+        "from": "terry.coomber67@hotmail.com",
+        "subject": "RE: 6 In 1",
+        "body": "Yes this is good\n\nCheers\n\nSent from my Galaxy",
+        "msgId": "1a103b9017f9b4c5"
       }
     ],
     "hasThread": true,
     "tab": "booked",
-    "statusNote": "OWN LOCK Sat 4 Sep 2027 £300 cash · 2×1h 20:30–21:30 + 22:00–23:00 · Terry Coomber · thread 1a0ab2c995b0410f · cal 2s03lhatvu5kugd64ijib5u6e4 · Us confirm-ask 1a101e8a0039e2f6 ~14:16 BST Sat 3 Oct · Them \"Yes, confirmed.\" 1a101ec317eca377 ~14:20 BST · Gmail-verified · prev: quoted · offered Sat 4 Sep 2027, waiting on Terry to confirm · NOT locked · Them Terry 1a0feb6ecba474d9 ~23:22 BST Fri 2 Oct: free Sat 17 Jul / 21 Aug / 4 Sep 2027 · Us 1a0ff187c8779b62 ~01:09 BST Sat 3 Oct: 17 Jul + 21 Aug already booked, offered Sat 4 Sep 2027 2×1h 20:30–21:30 + 22:00–23:00 £300 cash, own PA, no deposit; 4 dates → £250/night · off Call until Fri 9 Oct · Gmail-verified · prev: quoted · waiting on Terry · Us post-call quote 1a0fe2d49992ac09 ~20:52 BST Fri 2 Oct: asked Terry to call Nat on 07523 924644; quote stands £300 one-off or £250 x4; offered Sun 11/18/25 Oct, Sat 7 Nov, Sun 15/22 Nov, Sun 6/20/27 Dec · off Call until Fri 9 Oct · Gmail-verified · prev: quoted · Terry Coomber · Us SENT_OK 1a0aeb136ba72e11 · Gmail quote £300 cash one-off / £250×4 · Sat 20:30–21:30+22:00–23:00 · Sun 16:00–17:00+17:30–18:30 · Bookings SYNC also had LOCAL £250 cash/£280 books — Gmail body wins · replyLane email · Haggle owns close · do not re-cold hotmail · phone +441732358883 from call deck calls.json (web, club line)",
+    "statusNote": "OWN LOCK Sat 4 Sep 2027 £300 cash · Them 2nd confirm 'Yes this is good' 1a103b9017f9b4c5 ~22:43 BST Sat 3 Oct (folded 0900 audit 5 Oct; no Us thank-you sent yet — Closer/Gate) · 2×1h 20:30–21:30 + 22:00–23:00 · Terry Coomber · thread 1a0ab2c995b0410f · cal 2s03lhatvu5kugd64ijib5u6e4 · Us confirm-ask 1a101e8a0039e2f6 ~14:16 BST Sat 3 Oct · Them \"Yes, confirmed.\" 1a101ec317eca377 ~14:20 BST · Gmail-verified · prev: quoted · offered Sat 4 Sep 2027, waiting on Terry to confirm · NOT locked · Them Terry 1a0feb6ecba474d9 ~23:22 BST Fri 2 Oct: free Sat 17 Jul / 21 Aug / 4 Sep 2027 · Us 1a0ff187c8779b62 ~01:09 BST Sat 3 Oct: 17 Jul + 21 Aug already booked, offered Sat 4 Sep 2027 2×1h 20:30–21:30 + 22:00–23:00 £300 cash, own PA, no deposit; 4 dates → £250/night · off Call until Fri 9 Oct · Gmail-verified · prev: quoted · waiting on Terry · Us post-call quote 1a0fe2d49992ac09 ~20:52 BST Fri 2 Oct: asked Terry to call Nat on 07523 924644; quote stands £300 one-off or £250 x4; offered Sun 11/18/25 Oct, Sat 7 Nov, Sun 15/22 Nov, Sun 6/20/27 Dec · off Call until Fri 9 Oct · Gmail-verified · prev: quoted · Terry Coomber · Us SENT_OK 1a0aeb136ba72e11 · Gmail quote £300 cash one-off / £250×4 · Sat 20:30–21:30+22:00–23:00 · Sun 16:00–17:00+17:30–18:30 · Bookings SYNC also had LOCAL £250 cash/£280 books — Gmail body wins · replyLane email · Haggle owns close · do not re-cold hotmail · phone +441732358883 from call deck calls.json (web, club line)",
     "replyLane": "email",
     "lastContact": "2026-10-03",
-    "lastContactSrc": "them 1a101ec317eca377",
+    "lastContactSrc": "them 1a103b9017f9b4c5",
     "lockedFee": 300,
     "lockedNights": 1,
     "lockedDate": "2027-09-04"
@@ -51141,12 +51150,12 @@
         "msgId": "1a0f26cce4e7ab5e"
       }
     ],
-    "badge": "awaiting",
+    "badge": "bounce",
     "hasThread": true,
     "replied": "no",
     "firstPitch": "30 Sep 2026",
     "subject": "Jake Essex for Herriard Ex-Services Club?",
-    "statusNote": "wed-30-sep-2pm WAVE C FAR eve50 cold SENT_OK 1a0f26cce4e7ab5e thread 1a0f26cccbf994d7 · awaiting · folded 1605 · Herriard DSN Delay soft-watch (1 Oct + 2 Oct ~15:51 BST retry 22h) · NOT NEVER_AGAIN · not bounce badge"
+    "statusNote": "DSN Failure bounce never-retry · wed-30-sep-2pm WAVE C FAR cold 1a0f26cce4e7ab5e ~14:06 London thread 1a0f26cccbf994d7 · Delay DSNs 1a0f80b0924ab280 (1 Oct) + 1a0fd1962e388e66 (2 Oct) → final Failure DSN 1a102434cfbd89d9 Sat 3 Oct ~15:55 London (4.4.3 DNS error, MX NXDOMAIN) · NEVER_AGAIN · do not invent alt · no re-cold · Us cold retained · no DSN body in Conversation · folded Nat Board 0900 audit 5 Oct (was Delay soft-watch)"
   },
   {
     "id": "batch700-staplecross-social-club-staplecross",
@@ -54998,5 +55007,129 @@
     "badge": "awaiting",
     "subject": "Live music at Three Cups?",
     "statusNote": "fri-2-oct cold natalie-cold-waveE-8 Us SENT_OK 1a0fd347f13f23f5 ~16:21 London thread 1a0fd346c0ceeb31 · awaiting · Gmail-verified (file body was placeholder; Gmail body used) · folded 2 Oct"
+  },
+  {
+    "id": "cold-20261002-lantern-martin-ct15",
+    "name": "The Lantern",
+    "town": "Martin CT15",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@lanterninn.co.uk",
+    "addedAt": "2026-10-02T15:25:35Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-02T15:25:35Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Lantern Martin?",
+        "body": "Hi,\n\nI'm Natalie - I look after bookings for Jake Essex.\n\nJake would be a great fit for The Lantern in Martin - and he'd love to\ncome and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0fd38880df152b",
+        "threadId": "1a0fd386ea2b520a"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "2 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for The Lantern Martin?",
+    "statusNote": "fri-2-oct cold natalie-cold-waveE #9 Us SENT_OK 1a0fd38880df152b ~16:25 London thread 1a0fd386ea2b520a · FAR · awaiting · Gmail-verified (body from Gmail) · no DSN seen to Mon 5 Oct 09:15 · MASTER row stamped by Bookings overnight 5 Oct · folded Nat Board 0900 audit 5 Oct · do not re-cold"
+  },
+  {
+    "id": "cold-20261002-red-house-stanningfield-ip29",
+    "name": "Red House",
+    "town": "Stanningfield IP29",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "theredhousesuffolk@gmail.com",
+    "addedAt": "2026-10-02T15:29:22Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-02T15:29:22Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Red House Stanningfield?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would go down really well at the Red House in Stanningfield, and\nhe'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date\nworks, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0fd3bff67c0256",
+        "threadId": "1a0fd3bda02b3937"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "2 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for Red House Stanningfield?",
+    "statusNote": "fri-2-oct cold natalie-cold-waveE #10 Us SENT_OK 1a0fd3bff67c0256 ~16:29 London thread 1a0fd3bda02b3937 · FAR · awaiting · Gmail-verified (body from Gmail) · no DSN seen to Mon 5 Oct 09:15 · MASTER row stamped by Bookings overnight 5 Oct · folded Nat Board 0900 audit 5 Oct · do not re-cold"
+  },
+  {
+    "id": "cold-20261002-st-cedds-catholic-club-goodmayes-ig3",
+    "name": "St Cedd's Catholic Club",
+    "town": "Goodmayes IG3",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "goodmayes@brcdt.org",
+    "addedAt": "2026-10-02T15:32:31Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-02T15:32:31Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for St Cedds Catholic Club?",
+        "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex.\n\nI thought of St Cedd's Catholic Club for Jake - he'd love to come and\nperform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into\n2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0fd3ee137104f8",
+        "threadId": "1a0fd3ec9d8e3fea"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "2 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for St Cedds Catholic Club?",
+    "statusNote": "fri-2-oct cold natalie-cold-waveE #11 Us SENT_OK 1a0fd3ee137104f8 ~16:32 London thread 1a0fd3ec9d8e3fea · LOCAL · awaiting · Gmail-verified (body from Gmail) · no DSN seen to Mon 5 Oct 09:15 · MASTER row stamped by Bookings overnight 5 Oct · folded Nat Board 0900 audit 5 Oct · do not re-cold"
+  },
+  {
+    "id": "cold-20261002-white-rock-inn-underriver-tn15",
+    "name": "White Rock Inn",
+    "town": "Underriver TN15",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "thewhiterock@ramac-group.com",
+    "addedAt": "2026-10-02T15:35:41Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-02T15:35:41Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Live music at White Rock Inn?",
+        "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nJake is looking for venues like the White Rock Inn in Underriver -\nhe'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a\ngood reputation for singing the classics without the corny\nimpersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the\n70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the\nact - no tribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into\n2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0fd41c909a73ae",
+        "threadId": "1a0fd41b4b49280c"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "2 Oct 2026",
+    "badge": "awaiting",
+    "subject": "Live music at White Rock Inn?",
+    "statusNote": "fri-2-oct cold natalie-cold-waveE #12 Us SENT_OK 1a0fd41c909a73ae ~16:35 London thread 1a0fd41b4b49280c · LOCAL · awaiting · Gmail-verified (body from Gmail) · no DSN seen to Mon 5 Oct 09:15 · MASTER row stamped by Bookings overnight 5 Oct · folded Nat Board 0900 audit 5 Oct · do not re-cold"
   }
 ]
