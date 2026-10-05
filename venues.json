@@ -27224,7 +27224,7 @@
     "replied": "yes — Tanya phone follow-up + quote SENT_OK ~19:22 Europe/London",
     "firstPitch": "23 Sep 2026 ~19:22 Europe/London",
     "addedAt": "2026-09-24T07:44:09.192848Z",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 5 Oct 2026",
     "subject": "",
     "messages": [
       {
@@ -27234,12 +27234,24 @@
         "subject": "Jake Essex dates for The Wheatsheaf",
         "body": "Hi Tanya,\n\nLovely that you spoke with Jake earlier — he asked me to send the dates and\nfee through as promised.\n\nFor The Wheatsheaf it's £250 cash for 3 × 45-minute sets, own PA, no\ndeposit.\n\nHis free Saturdays and Sundays through 2027:\n\nJanuary 2027: Sat 2, Sun 3, Sat 9, Sun 17, Sun 24, Sun 31\nFebruary 2027: Sun 7, Sat 13, Sun 14, Sat 27, Sun 28\nMarch 2027: Sat 6, Sun 7, Sun 21, Sat 27, Sun 28\nApril 2027: Sat 3, Sun 4, Sat 10, Sun 11, Sun 18, Sun 25\nMay 2027: Sat 8, Sat 22, Sun 23\nJune 2027: Sat 5, Sun 6, Sun 13, Sun 20\nJuly 2027: Sun 11, Sat 24, Sun 25, Sat 31\nAugust 2027: Sun 1, Sun 8, Sun 22, Sun 29\nSeptember 2027: Sun 5, Sat 11, Sun 12, Sun 19, Sat 25, Sun 26\nOctober 2027: Sun 3, Sun 10, Sat 16, Sun 17, Sun 24, Sun 31\nNovember 2027: Sat 6, Sun 7, Sat 20, Sun 28\nDecember 2027: Sun 5, Sat 11, Sun 12, Sat 18, Sun 19, Sun 26\n\nHandy for nights like Halloween: Sat 16 + Sun 17 + Sun 24 + Sun 31 Oct 2027\n(Halloween night).\n\nAny of those work, just shout and I'll lock them in. Clips and more on the\nsite below if useful.\n\nNatalie\nwww.jakeessex.co.uk",
         "msgId": "1a0cf806d08affda"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-05T10:46:32Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex dates for The Wheatsheaf",
+        "body": "Hi Tanya,\n\nJust gently checking in on Jake for a Saturday or Sunday at The Wheatsheaf.\nStill happy to pencil a 2027 date when you've got something free.\n\nHappy to work around your diary.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a10bac2395bc973"
       }
     ],
     "hasThread": false,
     "tab": "call",
-    "lastContact": "2026-09-23",
-    "lastContactSrc": "us 1a0cf806d08affda"
+    "lastContact": "2026-10-05",
+    "lastContactSrc": "us 1a10bac2395bc973",
+    "callExclude": "waiting-on-them",
+    "callHoldUntil": "2026-10-12",
+    "statusNote": "quoted · day-7 chase out, waiting on Tanya · Haggle owns the close · one chase used · Us chase 1a10bac2395bc973 ~11:46 BST Mon 5 Oct (thread 1a0cf7ff840b22b6): Sat/Sun 2027 date ask · prior Us quote 1a0cf806d08affda 23 Sep after Tanya phone follow-up · off Call until Mon 12 Oct · Gmail-verified"
   },
   {
     "id": "pot-plough-the-rm14-1xl",
