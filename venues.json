@@ -3826,15 +3826,15 @@
   {
     "id": "churchills-bar",
     "name": "Churchills Bar",
-    "town": "",
+    "town": "Wednesbury",
     "badge": "awaiting",
-    "phone": "+441708740817",
+    "phone": "+441215563345",
     "needPhone": false,
     "email": "info@churchillsbar.co.uk",
     "replied": "no",
     "firstPitch": "12 May 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
-    "followUps": "1 · last 9 Sep 2026",
+    "followUps": "2 · last 5 Oct 2026",
     "subject": "Jake Essex – Professional Solo Vocalist (Elvis & Friends Show) Available for Live Music Nights",
     "messages": [
       {
@@ -3852,10 +3852,26 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Jake Essex – Professional Solo Vocalist (Elvis & Friends Show) Available for Live Music Nights",
         "body": "Hi,\n\nJust a quick bump on Jake Essex for Churchills Bar — still got Fridays, Saturdays and Sundays free this year and into 2027 if useful.\n\nNatalie\n"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-05T10:49:41Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex – Professional Solo Vocalist (Elvis & Friends Show) Available for Live Music Nights",
+        "body": "Hi,\n\nFollowing up on Jake Essex for Churchills Bar. Clubs keep telling us the\nsame thing: they are genuinely surprised a young singer can deliver those\nsongs with that much power and feeling, and he becomes a major talking\npoint wherever he plays.\n\nHe's a breath of fresh air, not an impersonator, with hundreds of thousands\nof followers online, and the show pulls every age group. Own PA, fully\nself-contained, no deposit. Diary is filling fast right through to\nChristmas 2027, so the sooner you lock a Saturday or Sunday, the better the\nchoice.\n\nWant me to pencil a date?\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a10baf027a32a05",
+        "threadId": "19e1daf599e09a27"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "postcode": "WS10 9BZ",
+    "address": "8 Walsall Street, Wednesbury WS10 9BZ",
+    "notes": "Also: 01708 740817 (old number on this row, wrong for Churchills Bar Wednesbury; replaced 5 Oct).",
+    "lastContact": "2026-10-05",
+    "lastContactSrc": "us 1a10baf027a32a05",
+    "statusNote": "awaiting · FU 2 hard-sell chase out, no further chase · Us chase 1a10baf027a32a05 ~11:49 BST Mon 5 Oct (thread 19e1daf599e09a27): Sat/Sun, sell lines, asked to pencil a date · venue facts corrected: 8 Walsall Street, Wednesbury WS10 9BZ, phone +441215563345 (old 01708 number wrong, in notes) · Gmail-verified"
   },
   {
     "id": "churchtown-cons",
