@@ -1,0 +1,50 @@
+{
+ "events": [
+  {
+   "event": "chase",
+   "venue": {
+    "id": "sandhurst-club",
+    "email": "sand0818@sandhurstsocialclub.com",
+    "name": "Sandhurst"
+   },
+   "badge": "quoted",
+   "statusNote": "Day-7 chase sent 6 Oct (chase used): \u00a3300 / \u00a3250 x4, Jan Sundays 3, 17, 24, 31.",
+   "messages": [
+    {
+     "side": "us",
+     "label": "Day-7 chase",
+     "at": "2026-10-06T19:58:50Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "sand0818@sandhurstsocialclub.com",
+     "subject": "Re: Jake Essex",
+     "body": "Day-7 chase to Julie: \u00a3300 single / \u00a3250 x4, Jan Sundays 3, 17, 24, 31.",
+     "msgId": "1a112cc259587045",
+     "threadId": "1a0ae1c8def9b63e"
+    }
+   ]
+  },
+  {
+   "event": "chase",
+   "venue": {
+    "id": "broadway-club",
+    "email": "info@thebroadwayclub.co.uk",
+    "name": "Broadway"
+   },
+   "badge": "quoted",
+   "statusNote": "Day-7 chase sent 6 Oct (chase used): \u00a3300 / \u00a3250 x4, dates Oct to Jan.",
+   "messages": [
+    {
+     "side": "us",
+     "label": "Day-7 chase",
+     "at": "2026-10-06T19:58:43Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "info@thebroadwayclub.co.uk",
+     "subject": "Re: Jake Essex",
+     "body": "Day-7 chase to Guy: \u00a3300 single / \u00a3250 x4, dates Oct to Jan.",
+     "msgId": "1a112cc07fb89c25",
+     "threadId": "1a0ae12e4fe89873"
+    }
+   ]
+  }
+ ]
+}

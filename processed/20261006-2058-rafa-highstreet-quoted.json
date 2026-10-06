@@ -1,0 +1,61 @@
+{
+ "events": [
+  {
+   "event": "quoted",
+   "venue": {
+    "id": "rafa-club-gosport",
+    "email": "rafassocgosport@gmail.com",
+    "name": "RAFA Club Gosport"
+   },
+   "badge": "quoted",
+   "statusNote": "Quoted \u2014 committee (Tracey). Clips sent; 4 months x1 night \u00a3250/night or single \u00a3300; Nov Sat 7, Sun 15, Sun 22 / Dec Sun 20, 27 / Jan Sun 3, 17, 24, 31. Chase ~Tue 13 Oct.",
+   "messages": [
+    {
+     "side": "us",
+     "label": "Reply",
+     "at": "2026-10-06T19:58:07Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "rafassocgosport@gmail.com",
+     "subject": "Re: Jake Essex for RAFA Club",
+     "body": "Clips (site + IG) for committee; one night a month for 4 months at \u00a3250/night, single night \u00a3300; dates offered.",
+     "msgId": "1a112cb7b9059e04",
+     "threadId": "1a0f6e65fbde928f"
+    }
+   ]
+  },
+  {
+   "event": "quoted",
+   "venue": {
+    "id": "high-street-club-swindon",
+    "email": "highstreetclubswindon@gmail.com",
+    "name": "High Street Club (Swindon)"
+   },
+   "badge": "quoted",
+   "statusNote": "Quoted \u2014 committee (Daphne). From \u00a3250 cash 2x1hr, own PA; Nov Sat 7, Sun 15, Sun 22 / Dec Sun 20, 27 / Jan Sun 3, 17, 24, 31. Answered \u2014 no further reply due.",
+   "messages": [
+    {
+     "side": "them",
+     "label": "Reply",
+     "at": "2026-10-06T16:08:56Z",
+     "from": "highstreetclubswindon@gmail.com",
+     "to": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for High Street Club?",
+     "body": "I passed your email onto the booking manager, so apologies you have not had a reply. We are creating a social committee, as we are not being well supported on music nights and are looking to change things etc maybe look at early evening Saturday and/or Sunday afternoon.. So I will mention Jake. No promises or guarantees. Regards Daphne",
+     "msgId": "1a111f9d506cd993",
+     "threadId": "1a0c49bc63b7db22"
+    },
+    {
+     "side": "us",
+     "label": "Quote",
+     "at": "2026-10-06T19:58:31Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "highstreetclubswindon@gmail.com",
+     "subject": "Re: Jake Essex for High Street Club?",
+     "body": "From \u00a3250 cash for 2x1hr, own PA; dates offered.",
+     "msgId": "1a112cbd9f99a15d",
+     "threadId": "1a0c49bc63b7db22"
+    }
+   ]
+  }
+ ]
+}

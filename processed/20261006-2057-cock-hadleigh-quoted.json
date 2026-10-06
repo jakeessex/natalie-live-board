@@ -1,0 +1,27 @@
+{
+ "events": [
+  {
+   "event": "quoted",
+   "venue": {
+    "id": "cold-20261005-cock-hadleigh-ip7",
+    "email": "chrisr2.cr@gmail.com",
+    "name": "The Cock (Hadleigh)"
+   },
+   "badge": "quoted",
+   "statusNote": "Quoted \u00a3425 cash Sun 3\u20136pm, own PA, no deposit; Sundays offered Oct 11/18/25, Nov 15/22, Dec 20/27, Jan 3/17/24/31. Day-7 chase Tue 13 Oct.",
+   "messages": [
+    {
+     "side": "us",
+     "label": "Quote",
+     "at": "2026-10-06T19:57:51Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "chrisr2.cr@gmail.com",
+     "subject": "RE: Jake Essex for The Cock?",
+     "body": "Hi Chris, Thanks for coming back to me. Sunday afternoons work really well for Jake, and 3pm to 6pm is no problem at all. ... (\u00a3425 cash, own PA, no deposit; free Sundays listed)",
+     "msgId": "1a112cb3bc0d0e00",
+     "threadId": "1a10c4eccce56c34"
+    }
+   ]
+  }
+ ]
+}
