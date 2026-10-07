@@ -10667,18 +10667,43 @@
     "id": "south-benfleet-social-club",
     "name": "South Benfleet Social Club",
     "town": "",
-    "badge": "bounce",
+    "badge": "awaiting",
     "phone": "+441268206159",
     "needPhone": false,
-    "email": "info@southbenfleetsocialclub.co.uk",
+    "email": "entertainment@benfleetsocial.onmicrosoft.com",
     "replied": "no",
     "firstPitch": "2 Jun 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
-    "followUps": "0 · last —",
-    "subject": "",
-    "messages": [],
-    "hasThread": false,
-    "tab": "other"
+    "followUps": "1 · last 7 Oct 2026",
+    "subject": "Live music — Jake Essex",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-02T07:40:47Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Live music — Jake Essex",
+        "msgId": "1a06110340db5d01",
+        "threadId": "1a0611032bf400ef",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nSouth Benfleet already asks performers to write the entertainment inbox\nwith fees and dates, so this is that note.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\n2 × 1 hour is £250 cash on the night, or £280 if it goes through the books.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nNatalie"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-07T08:19:59Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi,\n\nQuick bump on Jake Essex for South Benfleet Social Club. He's a proper 50s and 60s rock and roll singer (himself, not a tribute), own PA, no deposit. He performs locally and always becomes a talking point at social clubs.\n\nIndicative fee is from £250 for two one hour sets. If a Saturday in the months ahead could work (or a Friday or Sunday), reply here and I'll send free dates, or pass me to the entertainment person.\n\nIf it's not for you, reply \"no thanks\" and I won't email again.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a11572af3ddabb1",
+        "threadId": "1a0611032bf400ef"
+      }
+    ],
+    "hasThread": true,
+    "tab": "other",
+    "lastContact": "2026-10-07",
+    "lastContactSrc": "us 1a11572af3ddabb1",
+    "statusNote": "info@southbenfleetsocialclub.co.uk hard-bounced (dead); entertainment@ live, FU 7 Oct",
+    "notes": "Also (dead): info@southbenfleetsocialclub.co.uk"
   },
   {
     "id": "the-borough-hotel",
