@@ -40,898 +40,6 @@
  "venues": [
   {
    "rank": 1,
-   "id": "rayleigh-rbl",
-   "venue": "Rayleigh RBL",
-   "town": "Rayleigh, Essex",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01268 776503",
-     "label": "files",
-     "tel": "01268776503"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "27 Aug",
-   "lastMsg": "No reply ever. First email 6 May, chased 27 Aug.",
-   "days": "154",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 154 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 27 Aug (Us)",
-   "venueId": "rayleigh-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-27",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 2,
-   "id": "hayes-wmc",
-   "venue": "Hayes WMC",
-   "town": "Hayes, Middlesex",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "020 8573 1721",
-     "label": "files",
-     "tel": "02085731721"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "27 Aug",
-   "lastMsg": "No reply ever. First email 6 May, chased 27 Aug.",
-   "days": "154",
-   "daysNote": "",
-   "why": "Working men's club, a proven room type for Jake. Never answered our email in 154 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 27 Aug (Us)",
-   "venueId": "hayes-wmc",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-27",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 3,
-   "id": "hornchurch-conservative",
-   "venue": "Hornchurch Conservative",
-   "town": "Hornchurch",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01708 442213",
-     "label": "files",
-     "tel": "01708442213"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "27 Aug",
-   "lastMsg": "No reply ever. First email 8 May, chased 27 Aug.",
-   "days": "152",
-   "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 152 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 27 Aug (Us)",
-   "venueId": "hornchurch-conservative",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-27",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 4,
-   "id": "brightlingsea-rbl",
-   "venue": "Brightlingsea RBL",
-   "town": "Brightlingsea, Essex",
-   "contact": "Social Secretary (Caron Gould, Club Secretary, passed us on)",
-   "phones": [
-    {
-     "number": "01206 303274",
-     "label": "files",
-     "tel": "01206303274"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Them",
-   "lastDate": "15 May",
-   "lastMsg": "Caron Gould (Club Secretary) said she had forwarded our email to their social secretary. Nothing since.",
-   "days": "145",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best, and local. They passed us to the social secretary in May and nobody came back. Ask for the social secretary by name and offer a 2027 Saturday.",
-   "flags": [],
-   "note": "Last contact: 15 May (Them)",
-   "venueId": "brightlingsea-rbl",
-   "gmailThreadId": "19dff31fa8e82beb",
-   "lastContact": "2026-05-15",
-   "lastContactWho": "Them"
-  },
-  {
-   "rank": 5,
-   "id": "orpington-rbl",
-   "venue": "Orpington RBL",
-   "town": "Orpington",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01689 820162",
-     "label": "files",
-     "tel": "01689820162"
-    }
-   ],
-   "noPhone": "",
-   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
-   "lastWho": "Us",
-   "lastDate": "1 Aug",
-   "lastMsg": "No reply ever. First email 1 Aug.",
-   "days": "67",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 1 Aug (Us)",
-   "venueId": "orpington-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-01",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 6,
-   "id": "putney-rbl",
-   "venue": "Putney RBL",
-   "town": "Putney, London",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "020 8874 1226",
-     "label": "files",
-     "tel": "02088741226"
-    }
-   ],
-   "noPhone": "",
-   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
-   "lastWho": "Us",
-   "lastDate": "1 Aug",
-   "lastMsg": "No reply ever. First email 1 Aug.",
-   "days": "67",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 1 Aug (Us)",
-   "venueId": "putney-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-01",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 7,
-   "id": "twickenham-rbl",
-   "venue": "Twickenham RBL",
-   "town": "Twickenham",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "020 8892 6728",
-     "label": "files",
-     "tel": "02088926728"
-    }
-   ],
-   "noPhone": "",
-   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
-   "lastWho": "Us",
-   "lastDate": "28 Aug",
-   "lastMsg": "No reply ever. First email 1 Aug, chased 28 Aug.",
-   "days": "67",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 28 Aug (Us)",
-   "venueId": "twickenham-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-28",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 8,
-   "id": "upminster-and-cranham-rbl",
-   "venue": "Upminster & Cranham RBL",
-   "town": "Upminster",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01708 223157",
-     "label": "files",
-     "tel": "01708223157"
-    }
-   ],
-   "noPhone": "",
-   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
-   "lastWho": "Us",
-   "lastDate": "1 Aug",
-   "lastMsg": "No reply ever. First email 1 Aug. Also emailed upminsterrbl@aol.com on 26 Aug, same club and number.",
-   "days": "67",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 1 Aug (Us)",
-   "venueId": "upminster-and-cranham-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-01",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 9,
-   "id": "aveley-village-social-club",
-   "venue": "Aveley Village Social Club",
-   "town": "Aveley",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01708 865045",
-     "label": "files",
-     "tel": "01708865045"
-    }
-   ],
-   "noPhone": "",
-   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
-   "lastWho": "Us",
-   "lastDate": "1 Aug",
-   "lastMsg": "No reply ever. First email 1 Aug.",
-   "days": "67",
-   "daysNote": "",
-   "why": "Social club, a proven room type for Jake. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 1 Aug (Us)",
-   "venueId": "aveley-village-social-club",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-01",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 10,
-   "id": "hanwell-conservative-club",
-   "venue": "Hanwell Conservative Club",
-   "town": "Hanwell, London",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "020 8567 0517",
-     "label": "files",
-     "tel": "02085670517"
-    }
-   ],
-   "noPhone": "",
-   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
-   "lastWho": "Us",
-   "lastDate": "1 Aug",
-   "lastMsg": "No reply ever. First email 1 Aug.",
-   "days": "67",
-   "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 1 Aug (Us)",
-   "venueId": "hanwell-conservative-club",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-01",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 11,
-   "id": "stony-stratford-cons",
-   "venue": "Stony Stratford Cons",
-   "town": "Stony Stratford, Milton Keynes",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01908 567105",
-     "label": "files",
-     "tel": "01908567105"
-    }
-   ],
-   "noPhone": "",
-   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
-   "lastWho": "Us",
-   "lastDate": "10 Sep",
-   "lastMsg": "No reply ever. First email 1 Aug, chased 10 Sep.",
-   "days": "67",
-   "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 10 Sep (Us)",
-   "venueId": "stony-stratford-cons",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-10",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 12,
-   "id": "westbourne-cons",
-   "venue": "Westbourne Cons",
-   "town": "Westbourne, Bournemouth",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01202 766698",
-     "label": "files",
-     "tel": "01202766698"
-    }
-   ],
-   "noPhone": "",
-   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
-   "lastWho": "Us",
-   "lastDate": "15 Sep",
-   "lastMsg": "No reply ever. First email 1 Aug, chased 15 Sep.",
-   "days": "67",
-   "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card. FAR: Saturday or Sunday only.",
-   "flags": [
-    {
-     "type": "far",
-     "text": "FAR"
-    }
-   ],
-   "note": "Last contact: 15 Sep (Us)",
-   "venueId": "westbourne-cons",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-15",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 13,
-   "id": "hounslow-rbl",
-   "venue": "Hounslow RBL",
-   "town": "Hounslow (Whitton Road, TW3)",
-   "contact": "Mick New (Branch Secretary)",
-   "phones": [
-    {
-     "number": "020 8572 6468",
-     "label": "files",
-     "tel": "02085726468"
-    }
-   ],
-   "noPhone": "",
-   "quote": "1 Aug: £250 cash (£280 on the books) for 2 x 1 hour, or £350 cash (£380 books) for 3 x 45. That quote stands.",
-   "lastWho": "Them",
-   "lastDate": "2 Aug",
-   "lastMsg": "All bookings go through the committee; their next meeting was in September and Mick would put Jake forward. We replied 26 Aug: Remembrance Sunday is taken, happy to look at other dates.",
-   "days": "66",
-   "daysNote": "",
-   "why": "Royal British Legion club, where Jake goes down best. The September committee has been and gone, so ring Mick for the verdict and offer a 2027 Saturday.",
-   "flags": [],
-   "note": "Last contact: 26 Aug (Us)",
-   "venueId": "hounslow-rbl",
-   "gmailThreadId": "19fbd658f4b11220",
-   "lastContact": "2026-08-26",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 14,
-   "id": "bengeo-social-club",
-   "venue": "Bengeo Social Club",
-   "town": "Bengeo, Hertford",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01992 583665",
-     "label": "files",
-     "tel": "01992583665"
-    }
-   ],
-   "noPhone": "",
-   "quote": "Our 26 Aug email listed £280 for a 2 hour show and £400 for 3 sets. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
-   "lastWho": "Us",
-   "lastDate": "9 Sep",
-   "lastMsg": "No reply ever. First email 26 Aug, chased 9 Sep.",
-   "days": "42",
-   "daysNote": "",
-   "why": "Social club, a proven room type for Jake. Never answered our email in 42 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 9 Sep (Us)",
-   "venueId": "bengeo-social-club",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-09",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 15,
-   "id": "crowthorne-rbl",
-   "venue": "Crowthorne RBL",
-   "town": "Crowthorne, Berkshire",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01344 772161",
-     "label": "files",
-     "tel": "01344772161"
-    }
-   ],
-   "noPhone": "",
-   "quote": "Our 26 Aug email listed £280 for a 2 hour show and £400 for 3 sets. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
-   "lastWho": "Us",
-   "lastDate": "10 Sep",
-   "lastMsg": "No reply ever. First email 26 Aug, chased 10 Sep.",
-   "days": "42",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 42 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 10 Sep (Us)",
-   "venueId": "crowthorne-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-10",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 16,
-   "id": "felsted-rbl",
-   "venue": "Felsted RBL",
-   "town": "Felsted, Essex",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01371 820847",
-     "label": "files",
-     "tel": "01371820847"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "27 Aug",
-   "lastMsg": "No reply ever. First email 27 Aug.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 27 Aug (Us)",
-   "venueId": "felsted-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-27",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 17,
-   "id": "great-waltham-legion",
-   "venue": "Great Waltham Legion",
-   "town": "Great Waltham, Chelmsford",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01245 362380",
-     "label": "files",
-     "tel": "01245362380"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "27 Aug",
-   "lastMsg": "No reply ever. First email 27 Aug.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 27 Aug (Us)",
-   "venueId": "great-waltham-legion",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-27",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 18,
-   "id": "harold-wood-rbl",
-   "venue": "Harold Wood RBL",
-   "town": "Harold Wood",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01708 343792",
-     "label": "files",
-     "tel": "01708343792"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "7 Sep",
-   "lastMsg": "No reply ever. First email 27 Aug, chased 7 Sep.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 7 Sep (Us)",
-   "venueId": "harold-wood-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-07",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 19,
-   "id": "harrow-rbl",
-   "venue": "Harrow RBL",
-   "town": "Harrow",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "020 8422 1222",
-     "label": "files",
-     "tel": "02084221222"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "27 Aug",
-   "lastMsg": "No reply ever. First email 27 Aug. Their email auto forwards to rblharrow@gmail.com.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 27 Aug (Us)",
-   "venueId": "harrow-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-27",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 20,
-   "id": "hayes-rbl",
-   "venue": "Hayes RBL",
-   "town": "Hayes, Bromley",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "020 8462 1723",
-     "label": "files",
-     "tel": "02084621723"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "27 Aug",
-   "lastMsg": "No reply ever. First email 27 Aug.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 27 Aug (Us)",
-   "venueId": "hayes-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-27",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 21,
-   "id": "hockley-rbl",
-   "venue": "Hockley RBL",
-   "town": "Hockley, Essex",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01702 201028",
-     "label": "files",
-     "tel": "01702201028"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "27 Aug",
-   "lastMsg": "No reply ever. First email 27 Aug.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 27 Aug (Us)",
-   "venueId": "hockley-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-27",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 22,
-   "id": "cippenham-rbl",
-   "venue": "Cippenham RBL",
-   "town": "Cippenham, Slough",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01628 662409",
-     "label": "files",
-     "tel": "01628662409"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "10 Sep",
-   "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 10 Sep (Us)",
-   "venueId": "cippenham-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-10",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 23,
-   "id": "coggeshall-cons",
-   "venue": "Coggeshall Cons",
-   "town": "Coggeshall, Essex",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01376 561159",
-     "label": "files",
-     "tel": "01376561159"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "7 Sep",
-   "lastMsg": "No reply ever. First email 27 Aug, chased 7 Sep.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 7 Sep (Us)",
-   "venueId": "coggeshall-cons",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-07",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 24,
-   "id": "ferndown-rbl",
-   "venue": "Ferndown RBL",
-   "town": "Ferndown, Dorset",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01202 877706",
-     "label": "files",
-     "tel": "01202877706"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "10 Sep",
-   "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card. FAR: Saturday or Sunday only.",
-   "flags": [
-    {
-     "type": "far",
-     "text": "FAR"
-    }
-   ],
-   "note": "Last contact: 10 Sep (Us)",
-   "venueId": "ferndown-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-10",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 25,
-   "id": "histon-and-impington-rbl",
-   "venue": "Histon & Impington RBL",
-   "town": "Histon, Cambridge",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01223 233447",
-     "label": "files",
-     "tel": "01223233447"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "10 Sep",
-   "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 10 Sep (Us)",
-   "venueId": "histon-and-impington-rbl",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-10",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 26,
-   "id": "letchworth-cons",
-   "venue": "Letchworth Cons",
-   "town": "Letchworth",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01462 683302",
-     "label": "files",
-     "tel": "01462683302"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "10 Sep",
-   "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 10 Sep (Us)",
-   "venueId": "letchworth-cons",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-10",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 27,
-   "id": "shoebury-cons",
-   "venue": "Shoebury Cons",
-   "town": "Shoeburyness",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "01702 292412",
-     "label": "files",
-     "tel": "01702292412"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "7 Sep",
-   "lastMsg": "No reply ever. First email 27 Aug, chased 7 Sep.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 7 Sep (Us)",
-   "venueId": "shoebury-cons",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-07",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 28,
-   "id": "sidcup-wmc",
-   "venue": "Sidcup WMC",
-   "town": "Sidcup",
-   "contact": "Entertainment secretary (no name on file)",
-   "phones": [
-    {
-     "number": "020 8300 3416",
-     "label": "files",
-     "tel": "02083003416"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Us",
-   "lastDate": "27 Aug",
-   "lastMsg": "No reply ever. First email 27 Aug.",
-   "days": "41",
-   "daysNote": "",
-   "why": "Working men's club, a proven room type for Jake. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
-   "flags": [],
-   "note": "Last contact: 27 Aug (Us)",
-   "venueId": "sidcup-wmc",
-   "gmailThreadId": "",
-   "lastContact": "2026-08-27",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 29,
-   "id": "broomfield-rbl",
-   "venue": "Broomfield RBL",
-   "town": "Chelmsford",
-   "contact": "Siobhan Stanley",
-   "phones": [
-    {
-     "number": "07749 088690",
-     "label": "mob",
-     "tel": "07749088690"
-    },
-    {
-     "number": "01245 442757",
-     "label": "files",
-     "tel": "01245442757"
-    }
-   ],
-   "noPhone": "",
-   "quote": "1 Sep: £250 for 2 x 1 hour or £350 for 3 x 45. That quote stands.",
-   "lastWho": "Them",
-   "lastDate": "1 Sep",
-   "lastMsg": "She loved it, would put it to the committee and asked for Saturdays.",
-   "days": "36",
-   "daysNote": "",
-   "why": "Royal British Legion club, where Jake goes down best. Siobhan was taking Jake to the committee and asked for Saturdays. Natalie left a voicemail on 2 Oct. Sat 7 Nov is the only free 2026 Saturday; otherwise 2 or 9 Jan.",
-   "flags": [],
-   "note": "Last contact: 9 Sep (Us) · Natalie left a voicemail on 2 Oct, no call back yet.",
-   "venueId": "broomfield-rbl",
-   "gmailThreadId": "1a04281ab98425ce",
-   "lastContact": "2026-09-09",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 30,
-   "id": "winchester-club",
-   "venue": "The Winchester Club",
-   "town": "Winchester",
-   "contact": "Sandra (Sandie) Murray",
-   "phones": [
-    {
-     "number": "01962 853496",
-     "label": "files",
-     "tel": "01962853496"
-    }
-   ],
-   "noPhone": "",
-   "quote": "7 Sep: £325 cash for a 2 hour show (2 x 1 hour), own PA, no deposit. Saturdays or Sundays only. That quote stands.",
-   "lastWho": "Them",
-   "lastDate": "7 Sep",
-   "lastMsg": "Sandie asked for prices for a 2 hour show and said she could not give a date yet.",
-   "days": "30",
-   "daysNote": "",
-   "why": "She came to us through the website wanting to book. Jake rang on 14 Sep and Natalie left her number with Donna (bar manager) on 16 Sep. No word since. Weekends only, it is a drive.",
-   "flags": [
-    {
-     "type": "hold",
-     "text": "HOLD, ask Jake first: he rang Sandie himself"
-    },
-    {
-     "type": "far",
-     "text": "FAR"
-    }
-   ],
-   "note": "Last contact: 7 Sep (Us)",
-   "venueId": "winchester-club",
-   "gmailThreadId": "",
-   "lastContact": "2026-09-07",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 31,
-   "id": "california-social-ipswich",
-   "venue": "California Social Club",
-   "town": "Ipswich",
-   "contact": "Peter Loweman (books the bands)",
-   "phones": [
-    {
-     "number": "01473 720633",
-     "label": "files",
-     "tel": "01473720633"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Them",
-   "lastDate": "9 Sep",
-   "lastMsg": "Kate Hebden (Club Secretary) forwarded us to Peter Loweman, who books their bands. Jake then spoke to the club and Peter was going to look at the website and get back.",
-   "days": "28",
-   "daysNote": "",
-   "why": "Social club and they pointed us to the booker themselves. Peter has had over three weeks with the website, so ring and ask which Saturday he fancies.",
-   "flags": [],
-   "note": "Last contact: 9 Sep (Us)",
-   "venueId": "california-social-ipswich",
-   "gmailThreadId": "1a04281d0082448f",
-   "lastContact": "2026-09-09",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 32,
    "id": "bardswell-social-club",
    "venue": "Bardswell Social Club",
    "town": "Brentwood (CM14 4TJ)",
@@ -959,180 +67,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 33,
-   "id": "st-neots-cons",
-   "venue": "St Neots Cons",
-   "town": "St Neots",
-   "contact": "Christine (Club Secretary)",
-   "phones": [
-    {
-     "number": "01480 396069",
-     "label": "files",
-     "tel": "01480396069"
-    }
-   ],
-   "noPhone": "",
-   "quote": "28 Aug: £400 for 3 x 45 on a Saturday night, PA included, no deposit. That quote stands.",
-   "lastWho": "Them",
-   "lastDate": "11 Sep",
-   "lastMsg": "Their committee meets on the first Tuesday of every month and Christine would take our 2027 dates to it.",
-   "days": "26",
-   "daysNote": "",
-   "why": "Conservative club that asked us for dates. The committee met yesterday (Tue 6 Oct), so ring Christine for the verdict. Some dates we sent her have since gone (6 and 13 Feb, 19 Jun, Sun 6 Dec), so use the intro list.",
-   "flags": [],
-   "note": "Last contact: 11 Sep (Us)",
-   "venueId": "st-neots-cons",
-   "gmailThreadId": "1a043a342da1a896",
-   "lastContact": "2026-09-11",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 34,
-   "id": "corner-club",
-   "venue": "Corner Club",
-   "town": "Canvey Island",
-   "contact": "Maxine Topliss",
-   "phones": [
-    {
-     "number": "07830 763936",
-     "label": "mobile, files",
-     "tel": "07830763936"
-    }
-   ],
-   "noPhone": "",
-   "quote": "4 Sep: £250 for a 2 hour show or £375 for 3 hours, Sunday afternoon. That quote stands.",
-   "lastWho": "Them",
-   "lastDate": "11 Sep",
-   "lastMsg": "She hadn't forgotten; she was busy and away and would get back \"next week\".",
-   "days": "26",
-   "daysNote": "",
-   "why": "She wants a Sunday afternoon and Sundays are what Jake has free (Sun 11, 18, 25 Oct; 15, 22 Nov; 20, 27 Dec). Natalie's 2 Oct note says Maxine was back from holiday the next day. Local.",
-   "flags": [],
-   "note": "Last contact: 11 Sep (Them) · Natalie's note 2 Oct: Maxine back from holiday, ring her in the evening.",
-   "venueId": "corner-club-canvey",
-   "gmailThreadId": "1a06bd225ae629e2",
-   "lastContact": "2026-09-11",
-   "lastContactWho": "Them"
-  },
-  {
-   "rank": 35,
-   "id": "barrow-upon-soar-cons",
-   "venue": "Barrow upon Soar Cons",
-   "town": "Leics",
-   "contact": "Danielle Armiger",
-   "phones": [
-    {
-     "number": "01509 768600",
-     "label": "files",
-     "tel": "01509768600"
-    }
-   ],
-   "noPhone": "",
-   "quote": "15 Sep: £300 cash (£330 on the books) for 2 hours or £450 for 3 hours, Sat or Sun. That quote stands.",
-   "lastWho": "Them",
-   "lastDate": "15 Sep",
-   "lastMsg": "She asked \"What's the fee please?\"",
-   "days": "22",
-   "daysNote": "",
-   "why": "Conservative club that asked the fee, then silence after the quote and one chase (28 Sep, no more emails). A call checks whether the fee or the distance is the problem. FAR.",
-   "flags": [
-    {
-     "type": "far",
-     "text": "FAR"
-    }
-   ],
-   "note": "Last contact: 28 Sep (Us)",
-   "venueId": "barrow-upon-soar-cons",
-   "gmailThreadId": "1a05cc5fecedf343",
-   "lastContact": "2026-09-28",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 36,
-   "id": "sutton-social-club",
-   "venue": "Sutton Social Club",
-   "town": "Sutton (SM1 4RS)",
-   "contact": "Julie",
-   "phones": [
-    {
-     "number": "020 8642 1929",
-     "label": "files",
-     "tel": "02086421929"
-    }
-   ],
-   "noPhone": "",
-   "quote": "16 Sep: £400 for one Saturday of 3 sets, or £350 each for 4. That quote stands.",
-   "lastWho": "Them",
-   "lastDate": "16 Sep",
-   "lastMsg": "Julie asked the fee for Sat 8.30 to 11.30, 3 sets.",
-   "days": "21",
-   "daysNote": "",
-   "why": "Julie asked the fee herself and went quiet after the quote and our 28 Sep chase. Test her budget and offer Sat 7 Nov or a 2027 Saturday (10 Oct in that quote is gone).",
-   "flags": [],
-   "note": "Last contact: 28 Sep (Us)",
-   "venueId": "sutton-social-club",
-   "gmailThreadId": "1a0aaa885e20877d",
-   "lastContact": "2026-09-28",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 37,
-   "id": "mildmay-club",
-   "venue": "Mildmay Club",
-   "town": "London N16",
-   "contact": "Iona Dudley (Club Manager)",
-   "phones": [
-    {
-     "number": "020 7254 2265",
-     "label": "files, her signature",
-     "tel": "02072542265"
-    }
-   ],
-   "noPhone": "",
-   "quote": "17 Sep they offered £250 for Sat 3 x 45, 9pm to midnight, by bank transfer on invoice. We countered: £250 cash or £275 on the books for 2 x 1 hour, £350 cash or £375 on the books for 3 sets.",
-   "lastWho": "Them",
-   "lastDate": "17 Sep",
-   "lastMsg": "They always want new acts for Saturday nights in the Members Bar and pay £250 for 3 x 45 by bank transfer.",
-   "days": "20",
-   "daysNote": "",
-   "why": "They have named a budget and a slot, so only the format and fee gap is left. A call can settle it (for example 2 x 1 hour at £275 on invoice) and fix Sat 7 Nov or a 2027 Saturday. Our chase on 28 Sep got no answer.",
-   "flags": [],
-   "note": "Last contact: 28 Sep (Us)",
-   "venueId": "mildmay-club",
-   "gmailThreadId": "1a0adfb4ae07faf3",
-   "lastContact": "2026-09-28",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 38,
-   "id": "wraysbury-village-club",
-   "venue": "Wraysbury Village Club",
-   "town": "Wraysbury, near Staines",
-   "contact": "Richard Cripps (entertainment); number is Kinde Hanspal, Secretary",
-   "phones": [
-    {
-     "number": "07825 001883",
-     "label": "files",
-     "tel": "07825001883"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Them",
-   "lastDate": "17 Sep",
-   "lastMsg": "Kinde Hanspal (Secretary) forwarded our email to Richard Cripps, who does the entertainment, and copied us in.",
-   "days": "20",
-   "daysNote": "",
-   "why": "Village club that passed us straight to the entertainment man. Ring Kinde's mobile (it is on her email signature), ask for Richard's best number or a good time, and offer a Saturday.",
-   "flags": [],
-   "note": "Last contact: 17 Sep (Them)",
-   "venueId": "wraysbury-village-club",
-   "gmailThreadId": "1a0aa0df3e462eef",
-   "lastContact": "2026-09-17",
-   "lastContactWho": "Them"
-  },
-  {
-   "rank": 39,
+   "rank": 2,
    "id": "pendyffryn-club",
    "venue": "Pendyffryn Club",
    "town": "Prestatyn",
@@ -1170,7 +105,334 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 40,
+   "rank": 3,
+   "id": "mildmay-club",
+   "venue": "Mildmay Club",
+   "town": "London N16",
+   "contact": "Iona Dudley (Club Manager)",
+   "phones": [
+    {
+     "number": "020 7254 2265",
+     "label": "files, her signature",
+     "tel": "02072542265"
+    }
+   ],
+   "noPhone": "",
+   "quote": "17 Sep they offered £250 for Sat 3 x 45, 9pm to midnight, by bank transfer on invoice. We countered: £250 cash or £275 on the books for 2 x 1 hour, £350 cash or £375 on the books for 3 sets.",
+   "lastWho": "Them",
+   "lastDate": "17 Sep",
+   "lastMsg": "They always want new acts for Saturday nights in the Members Bar and pay £250 for 3 x 45 by bank transfer.",
+   "days": "20",
+   "daysNote": "",
+   "why": "They have named a budget and a slot, so only the format and fee gap is left. A call can settle it (for example 2 x 1 hour at £275 on invoice) and fix Sat 7 Nov or a 2027 Saturday. Our chase on 28 Sep got no answer.",
+   "flags": [],
+   "note": "Last contact: 28 Sep (Us)",
+   "venueId": "mildmay-club",
+   "gmailThreadId": "1a0adfb4ae07faf3",
+   "lastContact": "2026-09-28",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 4,
+   "id": "sutton-social-club",
+   "venue": "Sutton Social Club",
+   "town": "Sutton (SM1 4RS)",
+   "contact": "Julie",
+   "phones": [
+    {
+     "number": "020 8642 1929",
+     "label": "files",
+     "tel": "02086421929"
+    }
+   ],
+   "noPhone": "",
+   "quote": "16 Sep: £400 for one Saturday of 3 sets, or £350 each for 4. That quote stands.",
+   "lastWho": "Them",
+   "lastDate": "16 Sep",
+   "lastMsg": "Julie asked the fee for Sat 8.30 to 11.30, 3 sets.",
+   "days": "21",
+   "daysNote": "",
+   "why": "Julie asked the fee herself and went quiet after the quote and our 28 Sep chase. Test her budget and offer Sat 7 Nov or a 2027 Saturday (10 Oct in that quote is gone).",
+   "flags": [],
+   "note": "Last contact: 28 Sep (Us)",
+   "venueId": "sutton-social-club",
+   "gmailThreadId": "1a0aaa885e20877d",
+   "lastContact": "2026-09-28",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 5,
+   "id": "barrow-upon-soar-cons",
+   "venue": "Barrow upon Soar Cons",
+   "town": "Leics",
+   "contact": "Danielle Armiger",
+   "phones": [
+    {
+     "number": "01509 768600",
+     "label": "files",
+     "tel": "01509768600"
+    }
+   ],
+   "noPhone": "",
+   "quote": "15 Sep: £300 cash (£330 on the books) for 2 hours or £450 for 3 hours, Sat or Sun. That quote stands.",
+   "lastWho": "Them",
+   "lastDate": "15 Sep",
+   "lastMsg": "She asked \"What's the fee please?\"",
+   "days": "22",
+   "daysNote": "",
+   "why": "Conservative club that asked the fee, then silence after the quote and one chase (28 Sep, no more emails). A call checks whether the fee or the distance is the problem. FAR.",
+   "flags": [
+    {
+     "type": "far",
+     "text": "FAR"
+    }
+   ],
+   "note": "Last contact: 28 Sep (Us)",
+   "venueId": "barrow-upon-soar-cons",
+   "gmailThreadId": "1a05cc5fecedf343",
+   "lastContact": "2026-09-28",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 6,
+   "id": "st-neots-cons",
+   "venue": "St Neots Cons",
+   "town": "St Neots",
+   "contact": "Christine (Club Secretary)",
+   "phones": [
+    {
+     "number": "01480 396069",
+     "label": "files",
+     "tel": "01480396069"
+    }
+   ],
+   "noPhone": "",
+   "quote": "28 Aug: £400 for 3 x 45 on a Saturday night, PA included, no deposit. That quote stands.",
+   "lastWho": "Them",
+   "lastDate": "11 Sep",
+   "lastMsg": "Their committee meets on the first Tuesday of every month and Christine would take our 2027 dates to it.",
+   "days": "26",
+   "daysNote": "",
+   "why": "Conservative club that asked us for dates. The committee met yesterday (Tue 6 Oct), so ring Christine for the verdict. Some dates we sent her have since gone (6 and 13 Feb, 19 Jun, Sun 6 Dec), so use the intro list.",
+   "flags": [],
+   "note": "Last contact: 11 Sep (Us)",
+   "venueId": "st-neots-cons",
+   "gmailThreadId": "1a043a342da1a896",
+   "lastContact": "2026-09-11",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 7,
+   "id": "corner-club",
+   "venue": "Corner Club",
+   "town": "Canvey Island",
+   "contact": "Maxine Topliss",
+   "phones": [
+    {
+     "number": "07830 763936",
+     "label": "mobile, files",
+     "tel": "07830763936"
+    }
+   ],
+   "noPhone": "",
+   "quote": "4 Sep: £250 for a 2 hour show or £375 for 3 hours, Sunday afternoon. That quote stands.",
+   "lastWho": "Them",
+   "lastDate": "11 Sep",
+   "lastMsg": "She hadn't forgotten; she was busy and away and would get back \"next week\".",
+   "days": "26",
+   "daysNote": "",
+   "why": "She wants a Sunday afternoon and Sundays are what Jake has free (Sun 11, 18, 25 Oct; 15, 22 Nov; 20, 27 Dec). Natalie's 2 Oct note says Maxine was back from holiday the next day. Local.",
+   "flags": [],
+   "note": "Last contact: 11 Sep (Them) · Natalie's note 2 Oct: Maxine back from holiday, ring her in the evening.",
+   "venueId": "corner-club-canvey",
+   "gmailThreadId": "1a06bd225ae629e2",
+   "lastContact": "2026-09-11",
+   "lastContactWho": "Them"
+  },
+  {
+   "rank": 8,
+   "id": "winchester-club",
+   "venue": "The Winchester Club",
+   "town": "Winchester",
+   "contact": "Sandra (Sandie) Murray",
+   "phones": [
+    {
+     "number": "01962 853496",
+     "label": "files",
+     "tel": "01962853496"
+    }
+   ],
+   "noPhone": "",
+   "quote": "7 Sep: £325 cash for a 2 hour show (2 x 1 hour), own PA, no deposit. Saturdays or Sundays only. That quote stands.",
+   "lastWho": "Them",
+   "lastDate": "7 Sep",
+   "lastMsg": "Sandie asked for prices for a 2 hour show and said she could not give a date yet.",
+   "days": "30",
+   "daysNote": "",
+   "why": "She came to us through the website wanting to book. Jake rang on 14 Sep and Natalie left her number with Donna (bar manager) on 16 Sep. No word since. Weekends only, it is a drive.",
+   "flags": [
+    {
+     "type": "hold",
+     "text": "HOLD, ask Jake first: he rang Sandie himself"
+    },
+    {
+     "type": "far",
+     "text": "FAR"
+    }
+   ],
+   "note": "Last contact: 7 Sep (Us)",
+   "venueId": "winchester-club",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-07",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 9,
+   "id": "broomfield-rbl",
+   "venue": "Broomfield RBL",
+   "town": "Chelmsford",
+   "contact": "Siobhan Stanley",
+   "phones": [
+    {
+     "number": "07749 088690",
+     "label": "mob",
+     "tel": "07749088690"
+    },
+    {
+     "number": "01245 442757",
+     "label": "files",
+     "tel": "01245442757"
+    }
+   ],
+   "noPhone": "",
+   "quote": "1 Sep: £250 for 2 x 1 hour or £350 for 3 x 45. That quote stands.",
+   "lastWho": "Them",
+   "lastDate": "1 Sep",
+   "lastMsg": "She loved it, would put it to the committee and asked for Saturdays.",
+   "days": "36",
+   "daysNote": "",
+   "why": "Royal British Legion club, where Jake goes down best. Siobhan was taking Jake to the committee and asked for Saturdays. Natalie left a voicemail on 2 Oct. Sat 7 Nov is the only free 2026 Saturday; otherwise 2 or 9 Jan.",
+   "flags": [],
+   "note": "Last contact: 9 Sep (Us) · Natalie left a voicemail on 2 Oct, no call back yet.",
+   "venueId": "broomfield-rbl",
+   "gmailThreadId": "1a04281ab98425ce",
+   "lastContact": "2026-09-09",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 10,
+   "id": "wraysbury-village-club",
+   "venue": "Wraysbury Village Club",
+   "town": "Wraysbury, near Staines",
+   "contact": "Richard Cripps (entertainment); number is Kinde Hanspal, Secretary",
+   "phones": [
+    {
+     "number": "07825 001883",
+     "label": "files",
+     "tel": "07825001883"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Them",
+   "lastDate": "17 Sep",
+   "lastMsg": "Kinde Hanspal (Secretary) forwarded our email to Richard Cripps, who does the entertainment, and copied us in.",
+   "days": "20",
+   "daysNote": "",
+   "why": "Village club that passed us straight to the entertainment man. Ring Kinde's mobile (it is on her email signature), ask for Richard's best number or a good time, and offer a Saturday.",
+   "flags": [],
+   "note": "Last contact: 17 Sep (Them)",
+   "venueId": "wraysbury-village-club",
+   "gmailThreadId": "1a0aa0df3e462eef",
+   "lastContact": "2026-09-17",
+   "lastContactWho": "Them"
+  },
+  {
+   "rank": 11,
+   "id": "california-social-ipswich",
+   "venue": "California Social Club",
+   "town": "Ipswich",
+   "contact": "Peter Loweman (books the bands)",
+   "phones": [
+    {
+     "number": "01473 720633",
+     "label": "files",
+     "tel": "01473720633"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Them",
+   "lastDate": "9 Sep",
+   "lastMsg": "Kate Hebden (Club Secretary) forwarded us to Peter Loweman, who books their bands. Jake then spoke to the club and Peter was going to look at the website and get back.",
+   "days": "28",
+   "daysNote": "",
+   "why": "Social club and they pointed us to the booker themselves. Peter has had over three weeks with the website, so ring and ask which Saturday he fancies.",
+   "flags": [],
+   "note": "Last contact: 9 Sep (Us)",
+   "venueId": "california-social-ipswich",
+   "gmailThreadId": "1a04281d0082448f",
+   "lastContact": "2026-09-09",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 12,
+   "id": "hounslow-rbl",
+   "venue": "Hounslow RBL",
+   "town": "Hounslow (Whitton Road, TW3)",
+   "contact": "Mick New (Branch Secretary)",
+   "phones": [
+    {
+     "number": "020 8572 6468",
+     "label": "files",
+     "tel": "02085726468"
+    }
+   ],
+   "noPhone": "",
+   "quote": "1 Aug: £250 cash (£280 on the books) for 2 x 1 hour, or £350 cash (£380 books) for 3 x 45. That quote stands.",
+   "lastWho": "Them",
+   "lastDate": "2 Aug",
+   "lastMsg": "All bookings go through the committee; their next meeting was in September and Mick would put Jake forward. We replied 26 Aug: Remembrance Sunday is taken, happy to look at other dates.",
+   "days": "66",
+   "daysNote": "",
+   "why": "Royal British Legion club, where Jake goes down best. The September committee has been and gone, so ring Mick for the verdict and offer a 2027 Saturday.",
+   "flags": [],
+   "note": "Last contact: 26 Aug (Us)",
+   "venueId": "hounslow-rbl",
+   "gmailThreadId": "19fbd658f4b11220",
+   "lastContact": "2026-08-26",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 13,
+   "id": "brightlingsea-rbl",
+   "venue": "Brightlingsea RBL",
+   "town": "Brightlingsea, Essex",
+   "contact": "Social Secretary (Caron Gould, Club Secretary, passed us on)",
+   "phones": [
+    {
+     "number": "01206 303274",
+     "label": "files",
+     "tel": "01206303274"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Them",
+   "lastDate": "15 May",
+   "lastMsg": "Caron Gould (Club Secretary) said she had forwarded our email to their social secretary. Nothing since.",
+   "days": "145",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best, and local. They passed us to the social secretary in May and nobody came back. Ask for the social secretary by name and offer a 2027 Saturday.",
+   "flags": [],
+   "note": "Last contact: 15 May (Them)",
+   "venueId": "brightlingsea-rbl",
+   "gmailThreadId": "19dff31fa8e82beb",
+   "lastContact": "2026-05-15",
+   "lastContactWho": "Them"
+  },
+  {
+   "rank": 14,
    "id": "the-bull",
    "venue": "The Bull",
    "town": "Corringham (SS17 9AT)",
@@ -1195,6 +457,744 @@
    "venueId": "the-bull",
    "gmailThreadId": "1a085c4e33bb79e4",
    "lastContact": "2026-09-17",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 15,
+   "id": "rayleigh-rbl",
+   "venue": "Rayleigh RBL",
+   "town": "Rayleigh, Essex",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01268 776503",
+     "label": "files",
+     "tel": "01268776503"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "27 Aug",
+   "lastMsg": "No reply ever. First email 6 May, chased 27 Aug.",
+   "days": "154",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 154 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 27 Aug (Us)",
+   "venueId": "rayleigh-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-27",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 16,
+   "id": "hayes-wmc",
+   "venue": "Hayes WMC",
+   "town": "Hayes, Middlesex",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "020 8573 1721",
+     "label": "files",
+     "tel": "02085731721"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "27 Aug",
+   "lastMsg": "No reply ever. First email 6 May, chased 27 Aug.",
+   "days": "154",
+   "daysNote": "",
+   "why": "Working men's club, a proven room type for Jake. Never answered our email in 154 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 27 Aug (Us)",
+   "venueId": "hayes-wmc",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-27",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 17,
+   "id": "hornchurch-conservative",
+   "venue": "Hornchurch Conservative",
+   "town": "Hornchurch",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01708 442213",
+     "label": "files",
+     "tel": "01708442213"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "27 Aug",
+   "lastMsg": "No reply ever. First email 8 May, chased 27 Aug.",
+   "days": "152",
+   "daysNote": "",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 152 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 27 Aug (Us)",
+   "venueId": "hornchurch-conservative",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-27",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 18,
+   "id": "orpington-rbl",
+   "venue": "Orpington RBL",
+   "town": "Orpington",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01689 820162",
+     "label": "files",
+     "tel": "01689820162"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
+   "lastWho": "Us",
+   "lastDate": "1 Aug",
+   "lastMsg": "No reply ever. First email 1 Aug.",
+   "days": "67",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 1 Aug (Us)",
+   "venueId": "orpington-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-01",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 19,
+   "id": "putney-rbl",
+   "venue": "Putney RBL",
+   "town": "Putney, London",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "020 8874 1226",
+     "label": "files",
+     "tel": "02088741226"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
+   "lastWho": "Us",
+   "lastDate": "1 Aug",
+   "lastMsg": "No reply ever. First email 1 Aug.",
+   "days": "67",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 1 Aug (Us)",
+   "venueId": "putney-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-01",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 20,
+   "id": "twickenham-rbl",
+   "venue": "Twickenham RBL",
+   "town": "Twickenham",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "020 8892 6728",
+     "label": "files",
+     "tel": "02088926728"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
+   "lastWho": "Us",
+   "lastDate": "28 Aug",
+   "lastMsg": "No reply ever. First email 1 Aug, chased 28 Aug.",
+   "days": "67",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 28 Aug (Us)",
+   "venueId": "twickenham-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-28",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 21,
+   "id": "upminster-and-cranham-rbl",
+   "venue": "Upminster & Cranham RBL",
+   "town": "Upminster",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01708 223157",
+     "label": "files",
+     "tel": "01708223157"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
+   "lastWho": "Us",
+   "lastDate": "1 Aug",
+   "lastMsg": "No reply ever. First email 1 Aug. Also emailed upminsterrbl@aol.com on 26 Aug, same club and number.",
+   "days": "67",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 1 Aug (Us)",
+   "venueId": "upminster-and-cranham-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-01",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 22,
+   "id": "aveley-village-social-club",
+   "venue": "Aveley Village Social Club",
+   "town": "Aveley",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01708 865045",
+     "label": "files",
+     "tel": "01708865045"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
+   "lastWho": "Us",
+   "lastDate": "1 Aug",
+   "lastMsg": "No reply ever. First email 1 Aug.",
+   "days": "67",
+   "daysNote": "",
+   "why": "Social club, a proven room type for Jake. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 1 Aug (Us)",
+   "venueId": "aveley-village-social-club",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-01",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 23,
+   "id": "hanwell-conservative-club",
+   "venue": "Hanwell Conservative Club",
+   "town": "Hanwell, London",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "020 8567 0517",
+     "label": "files",
+     "tel": "02085670517"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
+   "lastWho": "Us",
+   "lastDate": "1 Aug",
+   "lastMsg": "No reply ever. First email 1 Aug.",
+   "days": "67",
+   "daysNote": "",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 1 Aug (Us)",
+   "venueId": "hanwell-conservative-club",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-01",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 24,
+   "id": "stony-stratford-cons",
+   "venue": "Stony Stratford Cons",
+   "town": "Stony Stratford, Milton Keynes",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01908 567105",
+     "label": "files",
+     "tel": "01908567105"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
+   "lastWho": "Us",
+   "lastDate": "10 Sep",
+   "lastMsg": "No reply ever. First email 1 Aug, chased 10 Sep.",
+   "days": "67",
+   "daysNote": "",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 10 Sep (Us)",
+   "venueId": "stony-stratford-cons",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-10",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 25,
+   "id": "westbourne-cons",
+   "venue": "Westbourne Cons",
+   "town": "Westbourne, Bournemouth",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01202 766698",
+     "label": "files",
+     "tel": "01202766698"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Our 1 Aug email listed £250 cash (£280 on the books) for 2 x 1 hour and £350 cash for 3 x 45. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
+   "lastWho": "Us",
+   "lastDate": "15 Sep",
+   "lastMsg": "No reply ever. First email 1 Aug, chased 15 Sep.",
+   "days": "67",
+   "daysNote": "",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 67 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card. FAR: Saturday or Sunday only.",
+   "flags": [
+    {
+     "type": "far",
+     "text": "FAR"
+    }
+   ],
+   "note": "Last contact: 15 Sep (Us)",
+   "venueId": "westbourne-cons",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-15",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 26,
+   "id": "bengeo-social-club",
+   "venue": "Bengeo Social Club",
+   "town": "Bengeo, Hertford",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01992 583665",
+     "label": "files",
+     "tel": "01992583665"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Our 26 Aug email listed £280 for a 2 hour show and £400 for 3 sets. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
+   "lastWho": "Us",
+   "lastDate": "9 Sep",
+   "lastMsg": "No reply ever. First email 26 Aug, chased 9 Sep.",
+   "days": "42",
+   "daysNote": "",
+   "why": "Social club, a proven room type for Jake. Never answered our email in 42 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 9 Sep (Us)",
+   "venueId": "bengeo-social-club",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-09",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 27,
+   "id": "crowthorne-rbl",
+   "venue": "Crowthorne RBL",
+   "town": "Crowthorne, Berkshire",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01344 772161",
+     "label": "files",
+     "tel": "01344772161"
+    }
+   ],
+   "noPhone": "",
+   "quote": "Our 26 Aug email listed £280 for a 2 hour show and £400 for 3 sets. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. If they hold us to the older figure, say you will check with Jake.",
+   "lastWho": "Us",
+   "lastDate": "10 Sep",
+   "lastMsg": "No reply ever. First email 26 Aug, chased 10 Sep.",
+   "days": "42",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 42 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 10 Sep (Us)",
+   "venueId": "crowthorne-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-10",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 28,
+   "id": "felsted-rbl",
+   "venue": "Felsted RBL",
+   "town": "Felsted, Essex",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01371 820847",
+     "label": "files",
+     "tel": "01371820847"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "27 Aug",
+   "lastMsg": "No reply ever. First email 27 Aug.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 27 Aug (Us)",
+   "venueId": "felsted-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-27",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 29,
+   "id": "great-waltham-legion",
+   "venue": "Great Waltham Legion",
+   "town": "Great Waltham, Chelmsford",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01245 362380",
+     "label": "files",
+     "tel": "01245362380"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "27 Aug",
+   "lastMsg": "No reply ever. First email 27 Aug.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 27 Aug (Us)",
+   "venueId": "great-waltham-legion",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-27",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 30,
+   "id": "harold-wood-rbl",
+   "venue": "Harold Wood RBL",
+   "town": "Harold Wood",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01708 343792",
+     "label": "files",
+     "tel": "01708343792"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "7 Sep",
+   "lastMsg": "No reply ever. First email 27 Aug, chased 7 Sep.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 7 Sep (Us)",
+   "venueId": "harold-wood-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-07",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 31,
+   "id": "harrow-rbl",
+   "venue": "Harrow RBL",
+   "town": "Harrow",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "020 8422 1222",
+     "label": "files",
+     "tel": "02084221222"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "27 Aug",
+   "lastMsg": "No reply ever. First email 27 Aug. Their email auto forwards to rblharrow@gmail.com.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 27 Aug (Us)",
+   "venueId": "harrow-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-27",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 32,
+   "id": "hayes-rbl",
+   "venue": "Hayes RBL",
+   "town": "Hayes, Bromley",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "020 8462 1723",
+     "label": "files",
+     "tel": "02084621723"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "27 Aug",
+   "lastMsg": "No reply ever. First email 27 Aug.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 27 Aug (Us)",
+   "venueId": "hayes-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-27",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 33,
+   "id": "hockley-rbl",
+   "venue": "Hockley RBL",
+   "town": "Hockley, Essex",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01702 201028",
+     "label": "files",
+     "tel": "01702201028"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "27 Aug",
+   "lastMsg": "No reply ever. First email 27 Aug.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 27 Aug (Us)",
+   "venueId": "hockley-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-27",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 34,
+   "id": "cippenham-rbl",
+   "venue": "Cippenham RBL",
+   "town": "Cippenham, Slough",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01628 662409",
+     "label": "files",
+     "tel": "01628662409"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "10 Sep",
+   "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 10 Sep (Us)",
+   "venueId": "cippenham-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-10",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 35,
+   "id": "coggeshall-cons",
+   "venue": "Coggeshall Cons",
+   "town": "Coggeshall, Essex",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01376 561159",
+     "label": "files",
+     "tel": "01376561159"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "7 Sep",
+   "lastMsg": "No reply ever. First email 27 Aug, chased 7 Sep.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 7 Sep (Us)",
+   "venueId": "coggeshall-cons",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-07",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 36,
+   "id": "ferndown-rbl",
+   "venue": "Ferndown RBL",
+   "town": "Ferndown, Dorset",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01202 877706",
+     "label": "files",
+     "tel": "01202877706"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "10 Sep",
+   "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card. FAR: Saturday or Sunday only.",
+   "flags": [
+    {
+     "type": "far",
+     "text": "FAR"
+    }
+   ],
+   "note": "Last contact: 10 Sep (Us)",
+   "venueId": "ferndown-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-10",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 37,
+   "id": "histon-and-impington-rbl",
+   "venue": "Histon & Impington RBL",
+   "town": "Histon, Cambridge",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01223 233447",
+     "label": "files",
+     "tel": "01223233447"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "10 Sep",
+   "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 10 Sep (Us)",
+   "venueId": "histon-and-impington-rbl",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-10",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 38,
+   "id": "letchworth-cons",
+   "venue": "Letchworth Cons",
+   "town": "Letchworth",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01462 683302",
+     "label": "files",
+     "tel": "01462683302"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "10 Sep",
+   "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 10 Sep (Us)",
+   "venueId": "letchworth-cons",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-10",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 39,
+   "id": "shoebury-cons",
+   "venue": "Shoebury Cons",
+   "town": "Shoeburyness",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01702 292412",
+     "label": "files",
+     "tel": "01702292412"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "7 Sep",
+   "lastMsg": "No reply ever. First email 27 Aug, chased 7 Sep.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 7 Sep (Us)",
+   "venueId": "shoebury-cons",
+   "gmailThreadId": "",
+   "lastContact": "2026-09-07",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 40,
+   "id": "sidcup-wmc",
+   "venue": "Sidcup WMC",
+   "town": "Sidcup",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "020 8300 3416",
+     "label": "files",
+     "tel": "02083003416"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Us",
+   "lastDate": "27 Aug",
+   "lastMsg": "No reply ever. First email 27 Aug.",
+   "days": "41",
+   "daysNote": "",
+   "why": "Working men's club, a proven room type for Jake. Never answered our email in 41 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Last contact: 27 Aug (Us)",
+   "venueId": "sidcup-wmc",
+   "gmailThreadId": "",
+   "lastContact": "2026-08-27",
    "lastContactWho": "Us"
   }
  ]
