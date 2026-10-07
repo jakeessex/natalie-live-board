@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "cold-20261006-sudbury-institute-club-sudbury-co10",
+        "email": "info@sudburyinstituteclub.co.uk",
+        "name": "Sudbury Institute Club",
+        "contactName": "Yvonne (manager); Sharon"
+      },
+      "badge": "replied-interested",
+      "statusNote": "Yvonne (manager) asked fees 11:26 BST Wed 7 Oct from yvonne.blacksmiths@gmail.com, new thread 'entertainment' 1a115e6c443b4a88. No dates/budget given. Needs quote reply to Yvonne (Gate).",
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-10-07T10:26:35Z",
+          "from": "yvonne.blacksmiths@gmail.com",
+          "subject": "entertainment",
+          "body": "Good morning my name is Yvonne i am the manager at Sudbury Institute Club .\nThank you for your email i was just wondering what your fees are please?\nlooking forward to hearing from you. Regards Yvonne",
+          "msgId": "1a115e6c443b4a88",
+          "threadId": "1a115e6c443b4a88",
+          "label": "Them — fee ask",
+          "to": "jakeessexenquiries@gmail.com"
+        }
+      ]
+    }
+  ]
+}

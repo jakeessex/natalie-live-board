@@ -1,0 +1,101 @@
+{
+  "events": [
+    {
+      "event": "new_lead",
+      "venue": {
+        "name": "South Benfleet Social Club",
+        "email": "entertainment@benfleetsocial.onmicrosoft.com",
+        "id": "south-benfleet-social-club",
+        "town": "South Benfleet"
+      },
+      "messages": [
+        {
+          "side": "us",
+          "at": "2026-10-07T08:19:59Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Live music \u2014 Jake Essex",
+          "body": "Hi,\n\nQuick bump on Jake Essex for South Benfleet Social Club. He's a proper 50s and 60s rock and roll singer (himself, not a tribute), own PA, no deposit. He performs locally and always becomes a talking point at social clubs.\n\nIndicative fee is from \u00a3250 for two one hour sets. If a Saturday in the months ahead could work (or a Friday or Sunday), reply here and I'll send free dates, or pass me to the entertainment person.\n\nIf it's not for you, reply \"no thanks\" and I won't email again.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+          "msgId": "1a11572af3ddabb1",
+          "threadId": "1a0611032bf400ef"
+        }
+      ]
+    },
+    {
+      "event": "new_lead",
+      "venue": {
+        "name": "Dunstable United Services Club",
+        "email": "unitedservicesdunstable@outlook.com",
+        "id": "dunstable-united-services-club",
+        "town": "Dunstable"
+      },
+      "messages": [
+        {
+          "side": "us",
+          "at": "2026-10-07T08:23:43Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Live music \u2014 Jake Essex",
+          "body": "Hi,\n\nFollowing up on Jake Essex for Dunstable United Services Club. He sings the 50s and 60s properly (Darin, Dion, Holly, Orbison, Sinatra, Elvis and more), own PA, no deposit. Ex-servicemen's clubs are where he goes down best.\n\nFrom \u00a3250 for two one hour sets. If entertainment is committee-led, that figure is usually enough to take to a meeting. Saturdays suit him best, and Fridays or Sundays can work too.\n\nIf it's a no, just say so and I'll leave you alone.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+          "msgId": "1a115761ce742944",
+          "threadId": "1a0611bee66193e9"
+        }
+      ]
+    },
+    {
+      "event": "reply",
+      "venue": {
+        "name": "Portchester Social Club",
+        "email": "portchestersc@gmail.com",
+        "id": "portchester-social-club"
+      },
+      "messages": [
+        {
+          "side": "us",
+          "at": "2026-10-07T08:28:36Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Jake Essex for Portchester Social Club?",
+          "body": "Hi,\n\nJust following up on my note about Jake Essex for Portchester Social Club. Jake is a high-energy 50s and 60s rock and roll singer, himself, not a tribute, with his own PA and no deposit needed.\n\nFor clubs like yours it's from \u00a3250 for two one hour sets. If you have a Saturday or Sunday free in the months ahead, I'd love to pencil something in, or just point me to whoever looks after entertainment.\n\nIf it's not for you, just reply \"no thanks\" and I won't email again.\n\nBest,\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+          "msgId": "1a1157a93ccc0f91",
+          "threadId": "1a0c34826b6886f8"
+        }
+      ]
+    },
+    {
+      "event": "reply",
+      "venue": {
+        "name": "Romsey Comrades Club",
+        "email": "romseycomrades@outlook.com",
+        "id": "romsey-comrades-club"
+      },
+      "messages": [
+        {
+          "side": "us",
+          "at": "2026-10-07T08:31:16Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Jake Essex for Romsey Comrades Club?",
+          "body": "Hi,\n\nJust checking you saw my earlier note about Jake Essex for Romsey Comrades Club. High-energy classics, not an impersonator, fully self-contained with his own PA.\n\nClubs usually look at from \u00a3250 for two one hour sets, no deposit. If you've got a Saturday or Sunday free further out, I'd love to pencil a date.\n\nIf it's not for you, reply \"no thanks\" and I won't email again.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+          "msgId": "1a1157d05654832d",
+          "threadId": "1a0c49a39b617795"
+        }
+      ]
+    },
+    {
+      "event": "reply",
+      "venue": {
+        "name": "Salisbury Club",
+        "email": "salisburyclub@hotmail.com",
+        "id": "salisbury-club"
+      },
+      "messages": [
+        {
+          "side": "us",
+          "at": "2026-10-07T08:35:32Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Jake Essex for Salisbury Club?",
+          "body": "Hi,\n\nJust circling back on Jake Essex for the Salisbury Club. He's a young singer who does the 50s and 60s classics with real power, own PA and no deposit, and he always gets the regulars talking at social clubs.\n\nIt's from \u00a3250 for two one hour sets. If a Saturday or Sunday in the coming months suits, reply here and I'll send free dates.\n\nNo worries if it's not for you, just say \"no thanks\" and I'll leave it there.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+          "msgId": "1a11580e984d04d5",
+          "threadId": "1a0c49e5ce8b7c28"
+        }
+      ]
+    }
+  ]
+}

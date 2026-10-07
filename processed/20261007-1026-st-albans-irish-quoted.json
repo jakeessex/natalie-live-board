@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "cold-20261007-st-albans-irish-club-london-colney-al2",
+        "email": "stalbansirish@gmail.com",
+        "name": "St Albans Irish Club",
+        "contactName": "Sherron"
+      },
+      "badge": "quoted",
+      "statusNote": "Quoted 10:26 BST Wed 7 Oct 1a115af71bc74320: £250 2x1hr / £375 3-set; 4 dates £250/£350 each. Them Sherron price ask 10:11 1a115a2685983c22. Waiting on them.",
+      "quotedFee": 250,
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-10-07T09:11:53Z",
+          "from": "stalbansirish@gmail.com",
+          "subject": "Re: Jake Essex for St Albans Irish Club?",
+          "body": "Hi Natalie,\ncould you give me a price please\nregards\nsherron",
+          "msgId": "1a115a2685983c22",
+          "threadId": "1a1159759239c039",
+          "label": "Them — price ask",
+          "to": "jakeessexenquiries@gmail.com"
+        },
+        {
+          "side": "us",
+          "at": "2026-10-07T09:26:19Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Re: Jake Essex for St Albans Irish Club?",
+          "body": "Hi Sherron,\n\nThanks for coming back so quickly.\n\nJake's had outstanding reviews from the clubs he plays, and people are often surprised a young singer can deliver those songs with that much power and feeling. He's a breath of fresh air, not an impersonator, and the show goes down well with all ages. Social clubs are where he really shines. He always becomes a talking point, he brings people in, and the regulars end up asking to have him back.\n\nFor St Albans Irish Club, Jake is £250 cash for two one hour sets, or £375 cash for a three set night. Own PA, no deposit.\n\nIf you book four dates, we can do £250 cash for the two set show or £350 cash for the three set night on each of those. His diary is already filling right through to Christmas 2027, so the sooner a date is locked in, the better the choice.\n\nFriday nights work for you too, so I'm happy to check any Friday the club has in mind. His free Saturdays and Sundays from now:\n\nOctober 2026: Sun 11th, Sun 18th, Sun 25th\nNovember 2026: Sat 7th, Sun 15th, Sun 22nd\nDecember 2026: Sun 20th, Sun 27th\nJanuary 2027: Sat 2nd, Sun 3rd, Sat 9th, Sun 17th, Sun 24th, Sun 31st\nFebruary 2027: Sun 7th, Sun 14th, Sat 27th, Sun 28th\nMarch 2027: Sat 6th, Sun 7th, Sun 21st, Sat 27th, Sun 28th\nApril 2027: Sat 3rd, Sun 4th, Sat 10th, Sun 11th, Sun 18th, Sun 25th\nMay 2027: Sat 8th, Sat 22nd, Sun 23rd\nJune 2027: Sat 5th, Sun 6th, Sun 13th, Sun 20th\n\nIf any of those catch your eye, just reply here and I'll hold it for you.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+          "msgId": "1a115af71bc74320",
+          "threadId": "1a1159759239c039",
+          "label": "Us — quote",
+          "to": "stalbansirish@gmail.com"
+        }
+      ]
+    }
+  ]
+}
