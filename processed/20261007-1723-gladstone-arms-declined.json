@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "cold-20261007-gladstone-arms-borough-se1",
+        "email": "info@thegladpub.co.uk",
+        "name": "Gladstone Arms",
+        "town": "Borough",
+        "contactName": "Sam Bowcher (booker, Bark)"
+      },
+      "badge": "declined",
+      "statusNote": "Declined 7 Oct 17:23 BST (Sam Bowcher, booker): Sun/Tue emerging artists, originals only. Closed — NEVER_AGAIN, no reply needed.",
+      "messages": [
+        {
+          "side": "them",
+          "label": "Them — declined",
+          "at": "2026-10-07T16:23:22Z",
+          "from": "sam_bowcher@hotmail.co.uk",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Jake Essex for Gladstone Arms?",
+          "body": "Hi Natalie,\n\nThanks for getting in touch, hope you're well. Jake sounds good but it's not quite right for The Glad. I book every Sun/Tue there an focus on emerging artists, solo and duos, playing originals. I'll let you know if ever working on anything suitable though.\n\nBest,\nSam",
+          "msgId": "1a1172d4783ead5b",
+          "threadId": "1a11635d19fbe210"
+        }
+      ]
+    }
+  ]
+}

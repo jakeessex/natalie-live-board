@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "event": "lock",
+      "venue": {
+        "id": "coulsdon-victoria-social-club",
+        "email": "coulsdonvictoriaclub@gmail.com",
+        "name": "Coulsdon Victoria Social Club",
+        "contactName": "Colin",
+        "lockedFee": 325,
+        "lockedDate": "2027-01-17",
+        "lockedNights": 1,
+        "dates": [
+          "2027-01-17"
+        ]
+      },
+      "badge": "booked",
+      "statusNote": "BOOKED BY PHONE (Natalie, 7 Oct 2026): Sun 17 Jan 2027, 2pm start, 2x1hr with short break, £325 cash, own PA, no deposit. Colin wants a poster (Jake deciding who makes it). Written confirmation drafted, not sent yet.",
+      "messages": [
+        {
+          "side": "us",
+          "label": "Us — phone booking (Natalie)",
+          "at": "2026-10-07T19:05:00Z",
+          "from": "Natalie (phone)",
+          "to": "Colin",
+          "subject": "Phone call",
+          "body": "Natalie spoke to Colin by phone. He booked Jake for Sunday 17th January 2027, 2pm, £325. He would like a poster for the club."
+        }
+      ]
+    }
+  ]
+}

@@ -19757,11 +19757,11 @@
     "id": "coulsdon-victoria-social-club",
     "name": "Coulsdon Victoria Social Club",
     "town": "",
-    "badge": "quoted",
+    "badge": "locked",
     "phone": "+442086450600",
     "needPhone": false,
     "email": "coulsdonvictoriaclub@gmail.com",
-    "replied": "yes — Victoria club Sunday fee + review",
+    "replied": "yes — 7 Oct 2026 (Colin booked by phone)",
     "firstPitch": "16 Sep 2026",
     "addedAt": "2026-09-16T12:15:37.718Z",
     "followUps": "0 · last —",
@@ -19855,16 +19855,26 @@
         "body": "Hi Colin,\n\nNo problem at all, easily done on a phone.\n\nSunday 10th January is already booked I'm afraid, but Sunday 17th January is free for a 2pm afternoon, two one hour sets with a short break in between.\n\nShall I put Sunday 17th January in the diary for you? Jake's diary is filling fast, so just say the word and I'll get it confirmed.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
         "msgId": "1a116620bbfaa28d",
         "threadId": "1a116495168c4878"
+      },
+      {
+        "side": "us",
+        "label": "Phone call (Natalie)",
+        "at": "2026-10-07T19:05:00Z",
+        "from": "Natalie (phone)",
+        "subject": "Phone call",
+        "body": "Natalie spoke to Colin by phone. He booked Jake for Sunday 17th January 2027, 2pm, £325. He would like a poster for the club."
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Them Colin 13:14 + 13:35 BST Wed 7 Oct asked Sun 10 / Sun 17 Jan 2027 afternoon (2pm) · Us 13:27 + 13:41 BST: Sun 10 Jan booked, Sun 17 Jan 2027 2pm free, 2×1h, asked to confirm (no price restated; 16 Sep quote £325 Sun 2×1h stands) · NOT locked, waiting on Colin's yes · Gmail-verified · folded 1600 audit 7 Oct · phone +442086450600 from call deck calls.json (web)",
+    "statusNote": "LOCKED by phone Sun 17 Jan 2027 2pm £325 · Colin · written confirm not sent yet",
     "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a116620bbfaa28d",
+    "lastContactSrc": "phone (Natalie) 7 Oct ~20:05 BST",
     "contactName": "Colin",
-    "callExclude": "waiting-on-them",
-    "callHoldUntil": "2026-10-14"
+    "lockedFee": 325,
+    "lockedDate": "2027-01-17",
+    "lockedNights": 1,
+    "lockedNote": "OWN LOCK BY PHONE (Natalie ~20:05 BST 7 Oct 2026) · Sun 17 Jan 2027 · 2pm start · 2×1hr short break · £325 cash · own PA · no deposit · Colin wants a poster (Jake deciding who makes it) · written confirmation drafted, not sent yet · no confirming email in Gmail (last thread msgs 13:14–13:41 BST 7 Oct)"
   },
   {
     "id": "tooting-conservative-club",
@@ -59503,17 +59513,61 @@
         "body": "Good morning my name is Yvonne i am the manager at Sudbury Institute Club .\nThank you for your email i was just wondering what your fees are please?\nlooking forward to hearing from you. Regards Yvonne",
         "msgId": "1a115e6c443b4a88",
         "threadId": "1a115e6c443b4a88"
+      },
+      {
+        "side": "us",
+        "label": "Quote",
+        "at": "2026-10-07T15:43:58Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: entertainment",
+        "body": "Hi Yvonne,\n\nThanks so much for getting in touch, and lovely to hear from you.\n\nJake's fee is £300 cash for one night of two one hour sets, or £250 a night if the club books four dates. He brings his own PA, he's fully self contained, and there's no deposit.\n\nThese are the weekend dates he still has free:\n\nOctober: Sun 11th, Sun 25th\nNovember: Sat 7th, Sun 15th, Sun 22nd\nDecember: Sun 20th, Sun 27th\nJanuary: Sat 2nd, Sun 3rd, Sat 9th, Sun 24th, Sun 31st\nFebruary: Sun 7th, Sun 14th, Sat 27th, Sun 28th\nMarch: Sat 6th, Sun 7th, Sun 21st, Sat 27th, Sun 28th\nApril: Sat 3rd, Sun 4th, Sat 10th, Sun 11th, Sun 18th, Sun 25th\nMay: Sat 8th, Sat 22nd, Sun 23rd\nJune: Sat 5th, Sun 6th, Sun 13th, Sun 20th, Sat 26th, Sun 27th\n\nAny weekend not listed is already booked, as his Saturdays are filling up fast. If any of those suit the club, just let me know and I'll get them in the diary for you.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+        "msgId": "1a1170928c971783",
+        "threadId": "1a115e6c443b4a88"
+      },
+      {
+        "side": "them",
+        "label": "Inbox",
+        "at": "2026-10-07T16:57:42Z",
+        "from": "yvonne.blacksmiths@gmail.com",
+        "subject": "Re: entertainment",
+        "body": "Hi Jake thank you for getting back to me could we please book saturday 8th\nmay ? Will it be all music ? . Regards Yvonne",
+        "msgId": "1a1174cda74a955f",
+        "threadId": "1a115e6c443b4a88"
+      },
+      {
+        "side": "us",
+        "label": "Booking confirmation",
+        "at": "2026-10-07T19:00:12Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: entertainment",
+        "body": "Hi Yvonne,\n\nThank you so much for booking Jake, that's brilliant news. I've put Saturday 8th May 2027 down for the Sudbury Institute Club, and I'll pass it on to Jake, he'll be made up.\n\nAnd yes, it's all music. Jake sings live for both one hour sets, 50s to 70s rock 'n' roll, R&B and soul, with plenty for everyone to sing and dance along to.\n\nSo that's two one hour sets for £300 cash on the night, with his own PA and no deposit. What time would you like him to start?\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+        "msgId": "1a117bcce845fb3a",
+        "threadId": "1a115e6c443b4a88"
+      },
+      {
+        "side": "them",
+        "label": "Inbox",
+        "at": "2026-10-07T19:03:58Z",
+        "from": "yvonne.blacksmiths@gmail.com",
+        "subject": "Re: entertainment",
+        "body": "That’s fantastic news. To start at 8pm please.Regards Yvonne",
+        "msgId": "1a117c06fbe48937",
+        "threadId": "1a115e6c443b4a88"
       }
     ],
     "hasThread": true,
-    "replied": "yes — 7 Oct 2026 (Yvonne, fee ask)",
+    "replied": "yes — 7 Oct 2026 (Yvonne booked Sat 8 May 2027)",
     "firstPitch": "6 Oct 2026",
-    "badge": "replied-interested",
+    "badge": "locked",
     "subject": "Jake Essex for Sudbury Institute Club?",
     "lastContact": "2026-10-07",
-    "lastContactSrc": "them 1a115e6c443b4a88",
-    "statusNote": "Yvonne (manager) asked fees ~11:26 BST Wed 7 Oct 1a115e6c443b4a88 · needs quote reply (to yvonne.blacksmiths@gmail.com) · Sharon pass-on 1a112b7e01facc59 earlier · Gmail-verified",
-    "notes": "Sharon replied from sudburyinstitute0@gmail.com; manager Yvonne wrote from yvonne.blacksmiths@gmail.com (new thread 1a115e6c443b4a88, subject \"entertainment\")."
+    "lastContactSrc": "them 1a117c06fbe48937",
+    "statusNote": "LOCKED Sat 8 May 2027 £300 · 2×1hr 8pm start · Yvonne (manager) · Gmail-verified",
+    "notes": "Sharon replied from sudburyinstitute0@gmail.com; manager Yvonne wrote from yvonne.blacksmiths@gmail.com (new thread 1a115e6c443b4a88, subject \"entertainment\").",
+    "lockedFee": 300,
+    "lockedDate": "2027-05-08",
+    "lockedNights": 1,
+    "lockedNote": "OWN LOCK Sat 8 May 2027 · £300 cash · 2×1hr · own PA · no deposit · start 8pm (Yvonne 1a117c06fbe48937 ~20:03 BST) · Yvonne yvonne.blacksmiths@gmail.com books (1a1174cda74a955f ~17:57) · Us confirm 1a117bcce845fb3a ~20:00 BST 7 Oct · not Choice"
   },
   {
     "id": "cold-20261006-brooklands-club-leighton-buzzard-lu7",
@@ -60244,7 +60298,7 @@
     "town": "Borough SE1",
     "postcode": "",
     "website": "",
-    "contactName": "",
+    "contactName": "Sam Bowcher (booker, Bark)",
     "phone": null,
     "needPhone": true,
     "email": "info@thegladpub.co.uk",
@@ -60260,16 +60314,26 @@
         "body": "Hi,\n\nI'm Natalie, I handle bookings for Jake Essex.\n\nJake would be a lovely fit for the Gladstone Arms, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a11635d2920355e",
         "threadId": "1a11635d19fbe210"
+      },
+      {
+        "side": "them",
+        "label": "Inbox",
+        "at": "2026-10-07T16:23:22Z",
+        "from": "sam_bowcher@hotmail.co.uk",
+        "subject": "Re: Jake Essex for Gladstone Arms?",
+        "body": "Hi Natalie,\n\nThanks for getting in touch, hope you're well. Jake sounds good but it's not quite right for The Glad. I book every Sun/Tue there an focus on emerging artists, solo and duos, playing originals. I'll let you know if ever working on anything suitable though.\n\nBest,\nSam",
+        "msgId": "1a1172d4783ead5b",
+        "threadId": "1a11635d19fbe210"
       }
     ],
     "hasThread": true,
-    "replied": "no",
+    "replied": "yes — 7 Oct 2026 (Sam Bowcher, declined)",
     "firstPitch": "7 Oct 2026",
-    "badge": "awaiting",
+    "badge": "declined",
     "subject": "Jake Essex for Gladstone Arms?",
     "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a11635d2920355e",
-    "statusNote": "wed-7-oct cold natalie-cold-waveC SENT_OK 1a11635d2920355e ~12:53 London thread 1a11635d19fbe210 · awaiting · Gmail-verified · folded 1600 audit 7 Oct"
+    "lastContactSrc": "them 1a1172d4783ead5b",
+    "statusNote": "Declined 7 Oct 17:23 BST (Sam Bowcher, booker): Sun/Tue emerging artists, originals only. Closed — NEVER_AGAIN, no reply needed. · Gmail-verified 1a1172d4783ead5b"
   },
   {
     "id": "cold-20261007-libertine-borough-se1",

@@ -1,0 +1,56 @@
+{
+  "events": [
+    {
+      "event": "lock",
+      "venue": {
+        "id": "cold-20261006-sudbury-institute-club-sudbury-co10",
+        "email": "info@sudburyinstituteclub.co.uk",
+        "name": "Sudbury Institute Club",
+        "contactName": "Yvonne (manager); Sharon",
+        "lockedFee": 300,
+        "lockedDate": "2027-05-08",
+        "lockedNights": 1,
+        "dates": [
+          "2027-05-08"
+        ]
+      },
+      "badge": "booked",
+      "statusNote": "BOOKED Sat 8 May 2027 £300 cash, 2x1hr, own PA, no deposit, start time TBC (asked). Yvonne yvonne.blacksmiths@gmail.com.",
+      "messages": [
+        {
+          "side": "us",
+          "label": "Us — quote",
+          "at": "2026-10-07T15:43:58Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "to": "yvonne.blacksmiths@gmail.com",
+          "subject": "Re: entertainment",
+          "body": "Hi Yvonne,\n\nThanks so much for getting in touch, and lovely to hear from you.\n\nJake's fee is £300 cash for one night of two one hour sets, or £250 a night if the club books four dates. He brings his own PA, he's fully self contained, and there's no deposit.\n\nThese are the weekend dates he still has free:\n\nOctober: Sun 11th, Sun 25th\nNovember: Sat 7th, Sun 15th, Sun 22nd\nDecember: Sun 20th, Sun 27th\nJanuary: Sat 2nd, Sun 3rd, Sat 9th, Sun 24th, Sun 31st\nFebruary: Sun 7th, Sun 14th, Sat 27th, Sun 28th\nMarch: Sat 6th, Sun 7th, Sun 21st, Sat 27th, Sun 28th\nApril: Sat 3rd, Sun 4th, Sat 10th, Sun 11th, Sun 18th, Sun 25th\nMay: Sat 8th, Sat 22nd, Sun 23rd\nJune: Sat 5th, Sun 6th, Sun 13th, Sun 20th, Sat 26th, Sun 27th\n\nAny weekend not listed is already booked, as his Saturdays are filling up fast. If any of those suit the club, just let me know and I'll get them in the diary for you.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+          "msgId": "1a1170928c971783",
+          "threadId": "1a115e6c443b4a88"
+        },
+        {
+          "side": "them",
+          "label": "Them — books 8 May",
+          "at": "2026-10-07T16:57:42Z",
+          "from": "yvonne.blacksmiths@gmail.com",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Re: entertainment",
+          "body": "Hi Jake thank you for getting back to me could we please book saturday 8th\nmay ? Will it be all music ? . Regards Yvonne",
+          "msgId": "1a1174cda74a955f",
+          "threadId": "1a115e6c443b4a88"
+        },
+        {
+          "side": "us",
+          "label": "Us — booking confirmation",
+          "at": "2026-10-07T19:00:12Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "to": "yvonne.blacksmiths@gmail.com",
+          "subject": "Re: entertainment",
+          "body": "Hi Yvonne,\n\nThank you so much for booking Jake, that's brilliant news. I've put Saturday 8th May 2027 down for the Sudbury Institute Club, and I'll pass it on to Jake, he'll be made up.\n\nAnd yes, it's all music. Jake sings live for both one hour sets, 50s to 70s rock 'n' roll, R&B and soul, with plenty for everyone to sing and dance along to.\n\nSo that's two one hour sets for £300 cash on the night, with his own PA and no deposit. What time would you like him to start?\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+          "msgId": "1a117bcce845fb3a",
+          "threadId": "1a115e6c443b4a88"
+        }
+      ]
+    }
+  ]
+}
