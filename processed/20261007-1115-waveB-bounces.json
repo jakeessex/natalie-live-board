@@ -1,0 +1,74 @@
+{
+  "events": [
+    {
+      "event": "bounce",
+      "venue": {
+        "id": "walton-on-the-naze-rbl-club",
+        "email": "alan.new@sky.com",
+        "name": "Walton-on-the-Naze RBL Club",
+        "town": "Walton-on-the-Naze"
+      },
+      "badge": "bounce",
+      "statusNote": "Cold Wave B 11:05 BST Wed 7 Oct bounced (552 Requested mail action aborted, mailbox not found). NEVER_AGAIN. No retry.",
+      "messages": [
+        {
+          "side": "us",
+          "label": "Us \u2014 cold pitch",
+          "at": "2026-10-07T10:05:12Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "to": "alan.new@sky.com",
+          "subject": "Jake Essex for Walton-on-the-Naze RBL Club?",
+          "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the Walton-on-the-Naze RBL Club, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 - if a date works, reply here and I'll lock it.\n\nNatalie\n",
+          "msgId": "1a115d300964b9fa",
+          "threadId": "1a115d2f1d67a2ed"
+        },
+        {
+          "side": "them",
+          "label": "DSN \u2014 address not found",
+          "at": "2026-10-07T10:05:25Z",
+          "from": "mailer-daemon@googlemail.com",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Delivery Status Notification (Failure)",
+          "body": "Address not found: 552 Requested mail action aborted, mailbox not found. Message bounced, undeliverable.",
+          "msgId": "1a115d3360dd0435",
+          "threadId": "1a115d2f1d67a2ed"
+        }
+      ]
+    },
+    {
+      "event": "bounce",
+      "venue": {
+        "id": "york-road-club",
+        "email": "chris.eade@hotmail.com",
+        "name": "York Road Club",
+        "town": "Farnborough"
+      },
+      "badge": "bounce",
+      "statusNote": "Cold Wave B 11:13 BST Wed 7 Oct bounced (550 5.5.0 Requested action not taken: mailbox unavailable). NEVER_AGAIN. No retry.",
+      "messages": [
+        {
+          "side": "us",
+          "label": "Us \u2014 cold pitch",
+          "at": "2026-10-07T10:13:35Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "to": "chris.eade@hotmail.com",
+          "subject": "Jake Essex for York Road Club?",
+          "body": "Hi,\n\nI'm Natalie, I handle bookings for Jake Essex.\n\nYork Road Club sounds like a great fit for Jake - he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date works, reply here and I'll lock it.\n\nNatalie\n",
+          "msgId": "1a115daafd4671b3",
+          "threadId": "1a115daad19a69cd"
+        },
+        {
+          "side": "them",
+          "label": "DSN \u2014 address not found",
+          "at": "2026-10-07T10:13:47Z",
+          "from": "mailer-daemon@googlemail.com",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Delivery Status Notification (Failure)",
+          "body": "Address not found: 550 5.5.0 Requested action not taken: mailbox unavailable. Message bounced, undeliverable.",
+          "msgId": "1a115dadc13a3436",
+          "threadId": "1a115daad19a69cd"
+        }
+      ]
+    }
+  ]
+}

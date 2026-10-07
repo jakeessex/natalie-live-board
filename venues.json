@@ -31105,18 +31105,36 @@
     "name": "Sheerness East WMC",
     "town": "Swale",
     "phone": "01795-662049",
-    "email": "",
+    "email": "d_smith65@sky.com",
     "postcode": "ME12 3BZ",
     "website": "",
     "venueType": "CIU club",
     "miles": 22,
     "prospect": true,
     "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "badge": "bounce",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-07T09:06:28Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Sheerness East WMC?",
+        "body": "Hi,\n\nI'm Natalie, I handle bookings for Jake Essex.\n\nSheerness East WMC sounds like a great fit for Jake, and he'd love to come\nand perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n- Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 -\nif a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a1159d3c968d292",
+        "threadId": "1a1159d3a3d03c11"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.4219,
-    "lng": 0.7743
+    "lng": 0.7743,
+    "hasThread": true,
+    "replied": "bounce",
+    "subject": "Jake Essex for Sheerness East WMC?",
+    "firstPitch": "7 Oct 2026",
+    "lastContact": "2026-10-07",
+    "lastContactSrc": "us 1a1159d3c968d292",
+    "statusNote": "hard bounce 7 Oct (DSN 1a1159d738fab7fb) · 552 address not found · NEVER_AGAIN · no re-cold · Us cold 1a1159d3c968d292 retained · no DSN body in Conversation · email dead; landline 01795-662049 still on row"
   },
   {
     "id": "pot-south-wimbledon-club-sw19-1ql",
@@ -43015,18 +43033,36 @@
     "name": "Walton-On-Naze R.B.L.Club",
     "town": "Tendring",
     "phone": "01255-674153",
-    "email": "",
+    "email": "alan.new@sky.com",
     "postcode": "CO14 8PA",
     "website": "",
     "venueType": "CIU club",
     "miles": 48,
     "prospect": true,
     "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "badge": "bounce",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-07T10:05:12Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Walton-on-the-Naze RBL Club?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the Walton-on-the-Naze RBL Club, and he'd\nlove to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n- Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 -\nif a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a115d300964b9fa",
+        "threadId": "1a115d2f1d67a2ed"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.84997,
-    "lng": 1.27133
+    "lng": 1.27133,
+    "hasThread": true,
+    "replied": "bounce",
+    "subject": "Jake Essex for Walton-on-the-Naze RBL Club?",
+    "firstPitch": "7 Oct 2026",
+    "lastContact": "2026-10-07",
+    "lastContactSrc": "us 1a115d300964b9fa",
+    "statusNote": "hard bounce 7 Oct (DSN 1a115d3360dd0435) · 552 mailbox not found · NEVER_AGAIN · no re-cold · Us cold 1a115d300964b9fa retained · no DSN body in Conversation · email dead; landline 01255-674153 still on row"
   },
   {
     "id": "pot-roundabout-club-the-sg19-1el",
@@ -58983,7 +59019,7 @@
     "town": "Sudbury CO10",
     "postcode": "",
     "website": "",
-    "contactName": "Sharon (manager: Yvonne)",
+    "contactName": "Yvonne (manager); Sharon",
     "phone": null,
     "needPhone": true,
     "email": "info@sudburyinstituteclub.co.uk",
@@ -59009,17 +59045,27 @@
         "body": "Thank you, we will pass this on to our Manager, Yvonne :-)\n\nAll the best\nSharon",
         "msgId": "1a112b7e01facc59",
         "threadId": "1a111d7f5f9619f3"
+      },
+      {
+        "side": "them",
+        "label": "Inbox",
+        "at": "2026-10-07T10:26:35Z",
+        "from": "yvonne.blacksmiths@gmail.com",
+        "subject": "entertainment",
+        "body": "Good morning my name is Yvonne i am the manager at Sudbury Institute Club .\nThank you for your email i was just wondering what your fees are please?\nlooking forward to hearing from you. Regards Yvonne",
+        "msgId": "1a115e6c443b4a88",
+        "threadId": "1a115e6c443b4a88"
       }
     ],
     "hasThread": true,
-    "replied": "yes — 6 Oct 2026 (Sharon)",
+    "replied": "yes — 7 Oct 2026 (Yvonne, fee ask)",
     "firstPitch": "6 Oct 2026",
-    "badge": "replied-soft / park (not-now)",
+    "badge": "replied-interested",
     "subject": "Jake Essex for Sudbury Institute Club?",
-    "lastContact": "2026-10-06",
-    "lastContactSrc": "them 1a112b7e01facc59",
-    "statusNote": "Sharon passing to manager Yvonne — wait",
-    "notes": "Reply came from sudburyinstitute0@gmail.com (Sharon); manager is Yvonne."
+    "lastContact": "2026-10-07",
+    "lastContactSrc": "them 1a115e6c443b4a88",
+    "statusNote": "Yvonne (manager) asked fees ~11:26 BST Wed 7 Oct 1a115e6c443b4a88 · needs quote reply (to yvonne.blacksmiths@gmail.com) · Sharon pass-on 1a112b7e01facc59 earlier · Gmail-verified",
+    "notes": "Sharon replied from sudburyinstitute0@gmail.com; manager Yvonne wrote from yvonne.blacksmiths@gmail.com (new thread 1a115e6c443b4a88, subject \"entertainment\")."
   },
   {
     "id": "cold-20261006-brooklands-club-leighton-buzzard-lu7",
@@ -59053,5 +59099,91 @@
     "lastContact": "2026-10-06",
     "lastContactSrc": "us 1a111dbe77108eb0",
     "statusNote": "tue-6-oct cold natalie-cold-waveE-12 SENT_OK 1a111dbe77108eb0 ~16:36 London thread 1a111dbe4db4b480 · awaiting · Gmail-verified · folded 2100 pass"
+  },
+  {
+    "id": "york-road-club",
+    "name": "York Road Club",
+    "town": "Farnborough",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "chris.eade@hotmail.com",
+    "addedAt": "2026-10-07T10:13:35Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-07T10:13:35Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for York Road Club?",
+        "body": "Hi,\n\nI'm Natalie, I handle bookings for Jake Essex.\n\nYork Road Club sounds like a great fit for Jake - he'd love to come and\nperform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n- Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturdays, Sundays and functions this year and into 2027 - if a date works,\nreply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a115daafd4671b3",
+        "threadId": "1a115daad19a69cd"
+      }
+    ],
+    "hasThread": true,
+    "badge": "bounce",
+    "replied": "bounce",
+    "subject": "Jake Essex for York Road Club?",
+    "firstPitch": "7 Oct 2026",
+    "lastContact": "2026-10-07",
+    "lastContactSrc": "us 1a115daafd4671b3",
+    "statusNote": "hard bounce 7 Oct (DSN 1a115dadc13a3436) · 550 5.5.0 mailbox unavailable · NEVER_AGAIN · no re-cold · Us cold 1a115daafd4671b3 retained · no DSN body in Conversation"
+  },
+  {
+    "id": "cold-20261007-st-albans-irish-club-london-colney-al2",
+    "name": "St Albans Irish Club",
+    "town": "London Colney AL2",
+    "postcode": "",
+    "website": "",
+    "contactName": "Sherron",
+    "phone": null,
+    "needPhone": true,
+    "email": "stalbansirish@gmail.com",
+    "addedAt": "2026-10-07T09:00:02Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-07T09:00:02Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for St Albans Irish Club?",
+        "body": "Hi,\n\nI'm Natalie - I look after bookings for Jake Essex.\n\nJake would be a great fit for St Albans Irish Club - he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics with real power and feeling. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a115975aff5ba95",
+        "threadId": "1a1159759239c039"
+      },
+      {
+        "side": "them",
+        "label": "Inbox",
+        "at": "2026-10-07T09:11:53Z",
+        "from": "stalbansirish@gmail.com",
+        "subject": "Re: Jake Essex for St Albans Irish Club?",
+        "body": "Hi Natalie,\ncould you give me a price please\nregards\nsherron",
+        "msgId": "1a115a2685983c22",
+        "threadId": "1a1159759239c039"
+      },
+      {
+        "side": "us",
+        "label": "Quote",
+        "at": "2026-10-07T09:26:19Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Re: Jake Essex for St Albans Irish Club?",
+        "body": "Hi Sherron,\n\nThanks for coming back so quickly.\n\nJake's had outstanding reviews from the clubs he plays, and people are often surprised a young singer can deliver those songs with that much power and feeling. He's a breath of fresh air, not an impersonator, and the show goes down well with all ages. Social clubs are where he really shines. He always becomes a talking point, he brings people in, and the regulars end up asking to have him back.\n\nFor St Albans Irish Club, Jake is £250 cash for two one hour sets, or £375 cash for a three set night. Own PA, no deposit.\n\nIf you book four dates, we can do £250 cash for the two set show or £350 cash for the three set night on each of those. His diary is already filling right through to Christmas 2027, so the sooner a date is locked in, the better the choice.\n\nFriday nights work for you too, so I'm happy to check any Friday the club has in mind. His free Saturdays and Sundays from now:\n\nOctober 2026: Sun 11th, Sun 18th, Sun 25th\nNovember 2026: Sat 7th, Sun 15th, Sun 22nd\nDecember 2026: Sun 20th, Sun 27th\nJanuary 2027: Sat 2nd, Sun 3rd, Sat 9th, Sun 17th, Sun 24th, Sun 31st\nFebruary 2027: Sun 7th, Sun 14th, Sat 27th, Sun 28th\nMarch 2027: Sat 6th, Sun 7th, Sun 21st, Sat 27th, Sun 28th\nApril 2027: Sat 3rd, Sun 4th, Sat 10th, Sun 11th, Sun 18th, Sun 25th\nMay 2027: Sat 8th, Sat 22nd, Sun 23rd\nJune 2027: Sat 5th, Sun 6th, Sun 13th, Sun 20th\n\nIf any of those catch your eye, just reply here and I'll hold it for you.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a115af71bc74320",
+        "threadId": "1a1159759239c039"
+      }
+    ],
+    "firstPitch": "7 Oct 2026",
+    "subject": "Jake Essex for St Albans Irish Club?",
+    "hasThread": true,
+    "badge": "quoted",
+    "replied": "yes — 7 Oct 2026 (Sherron)",
+    "lastContact": "2026-10-07",
+    "lastContactSrc": "us 1a115af71bc74320",
+    "statusNote": "quoted £250 2x1hr / £375 3-set (4-date £250/£350) ~10:26 BST Wed 7 Oct 1a115af71bc74320 · Them Sherron price ask ~10:11 1a115a2685983c22 · cold 1a115975aff5ba95 ~10:00 (natalie-cold-waveA-9) · waiting on them · Gmail-verified"
   }
 ]
