@@ -1,0 +1,51 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "rose-club-marlow",
+        "email": "therosemarlow@outlook.com",
+        "name": "Rose Club Marlow",
+        "contactName": "Josh Bostock"
+      },
+      "badge": "quoted",
+      "quotedFee": 300,
+      "statusNote": "Quoted 7 Oct 14:32 BST: £300 cash one night 2x1hr / £250 a night for four dates, own PA, no deposit; full 2027 free-Saturday list. Josh's Sat 17 Oct ask declined (ECTA). Haggle day-7 chase ~Wed 14 Oct.",
+      "messages": [
+        {
+          "side": "them",
+          "label": "Them — date ask",
+          "at": "2026-10-07T13:12:18Z",
+          "from": "therosemarlow@outlook.com",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Jake Essex for Rose Club Marlow?",
+          "body": "Good Afternoon,\n\nWe have an event in 17th October from 7pm is he available?\n\nKind regards\n\nJosh Bostock\nSent from my iPhone",
+          "msgId": "1a1167e54d2a39fb",
+          "threadId": "1a0b3bb598228833"
+        },
+        {
+          "side": "us",
+          "label": "Us — 17 Oct declined, dates",
+          "at": "2026-10-07T13:16:04Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "to": "therosemarlow@outlook.com",
+          "subject": "Re: Re: Jake Essex for Rose Club Marlow?",
+          "body": "Hi Josh,\n\nThanks for coming back to me. Jake's already booked on Saturday 17th October I'm afraid, but he'd love to come and do a night for you.\n\nHis Saturdays are pretty much taken up to Christmas, so it's mostly Sundays left this year. These are the dates he still has free:\n\nOctober: Sun 11th, Sun 18th, Sun 25th\nNovember: Sat 7th, Sun 15th, Sun 22nd\nDecember: Sun 20th, Sun 27th\nJanuary: Sat 2nd, Sun 3rd, Sun 24th, Sun 31st\n\nHis diary is filling fast, so if any of those work for you, just let me know and I'll get it in the diary.\n\nKind regards,\n\nNatalie\nBooking agent for Jake Essex",
+          "msgId": "1a11681c4ccfca65",
+          "threadId": "1a0b3bb598228833"
+        },
+        {
+          "side": "us",
+          "label": "Us — quote",
+          "at": "2026-10-07T13:32:39Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "to": "therosemarlow@outlook.com",
+          "subject": "Re: Jake Essex for Rose Club Marlow?",
+          "body": "Hi Josh,\n\nFurther to my last email, here are all of Jake's free Saturdays for next year, so you can pick whatever suits the club best.\n\nJanuary: Sat 2nd, Sat 9th\nFebruary: Sat 27th\nMarch: Sat 6th, Sat 27th\nApril: Sat 3rd, Sat 10th\nMay: Sat 8th, Sat 22nd\nJune: Sat 5th, Sat 26th\nJuly: Sat 24th, Sat 31st\nAugust: fully booked\nSeptember: Sat 11th, Sat 25th\nOctober: Sat 16th\nNovember: Sat 6th, Sat 20th\nDecember: Sat 11th, Sat 18th\n\nAny Saturday not listed is already booked, as Jake's diary is filling up fast.\n\nJust so you know, quite a few other venues have this same list of dates, so they do tend to go quickly. No rush at all, but if one jumps out at you, it's worth letting me know sooner rather than later.\n\nJake's fee is £300 cash for one night of two one hour sets, or £250 a night if you book four dates. He brings his own PA, he's fully self contained, and there's no deposit.\n\nYou can hear him at www.jakeessex.co.uk. Just let me know which dates you'd like and I'll get them in the diary for you.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+          "msgId": "1a11690f04df34e0",
+          "threadId": "1a0b3bb598228833"
+        }
+      ]
+    }
+  ]
+}

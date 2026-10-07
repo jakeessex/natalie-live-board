@@ -1,0 +1,39 @@
+{
+  "events": [
+    {
+      "event": "bounce",
+      "venue": {
+        "id": "nelson-arms-tonbridge",
+        "email": "hello@thenelsonarms.com",
+        "name": "Nelson Arms",
+        "town": "Tonbridge"
+      },
+      "badge": "bounce",
+      "statusNote": "Cold 13:00 BST Wed 7 Oct bounced (550 mailbox unavailable). NEVER_AGAIN. No retry.",
+      "messages": [
+        {
+          "side": "us",
+          "label": "Us — cold pitch",
+          "at": "2026-10-07T12:00:03Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "to": "hello@thenelsonarms.com",
+          "subject": "Jake Essex for Nelson Arms?",
+          "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the Nelson Arms - he'd love to come and\nperform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n- Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 -\nif a date works, reply here and I'll lock it.\n\nNatalie",
+          "msgId": "1a1163c28fcb7aa0",
+          "threadId": "1a1163c28f9200e2"
+        },
+        {
+          "side": "them",
+          "label": "DSN — address not found",
+          "at": "2026-10-07T12:00:18Z",
+          "from": "mailer-daemon@googlemail.com",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Delivery Status Notification (Failure)",
+          "body": "Address not found: 550 Requested action not taken: mailbox unavailable. Message bounced, undeliverable.",
+          "msgId": "1a1163c66a286a9c",
+          "threadId": "1a1163c28f9200e2"
+        }
+      ]
+    }
+  ]
+}

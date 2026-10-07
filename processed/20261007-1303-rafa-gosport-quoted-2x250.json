@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "cold-20261001-rafa-club-gosport-gosport",
+        "email": "rafassocgosport@gmail.com",
+        "name": "RAFA Club Gosport",
+        "contactName": "Tracey"
+      },
+      "badge": "quoted",
+      "quotedFee": 250,
+      "statusNote": "Quoted 7 Oct 13:03 BST: £250 cash/night if committee books 2 nights (one-off military charity exception, Jake 7 Oct), Sat 2x45 9-11pm, own PA, no deposit; 2027 Sats listed. Committee to pick 2 dates. Haggle day-7 chase ~Wed 14 Oct.",
+      "messages": [
+        {
+          "side": "them",
+          "label": "Them — £250 charity ask",
+          "at": "2026-10-07T11:34:50Z",
+          "from": "rafassocgosport@gmail.com",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Jake Essex for RAFA Club Gosport / Solent",
+          "body": "Hi\n\nThe dates won’t be until 2027 - likely not 4 dates as I don’t have 4 left!\n\nWould he still honour us with £250 as we’re a charity military club? The\nother soloists are charging £200-250 as a local favour.\n\nWe are a small venue too, so it would be Sat evening 2 sets of 45mins,\nusually 9-11pm. Non-members are welcome but £2pp temp membership. Drinks\nare cheaper than most regular pubs.\n\nThanks\n\nTracey P\nRAFA Ents Officer",
+          "msgId": "1a1162547c7c1219",
+          "threadId": "1a1162547c7c1219"
+        },
+        {
+          "side": "us",
+          "label": "Us — quote £250 ×2",
+          "at": "2026-10-07T12:03:34Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "to": "rafassocgosport@gmail.com",
+          "subject": "Re: Jake Essex for RAFA Club Gosport / Solent",
+          "body": "Hi Tracey,\n\nThanks for coming back to me. As you're a military charity club, Jake's happy to do £250 cash a night if the committee books two nights with him. That's two 45 minute sets from 9 till 11, with his own PA and no deposit. Clubs like yours are where he goes down best, so he'd love to come down to you.\n\nHis Saturdays are filling up fast, so here are the ones still free in 2027 for the committee to pick two from:\n\nJanuary: Sat 2nd, Sat 9th\nFebruary: Sat 27th\nMarch: Sat 6th, Sat 27th\nApril: Sat 3rd, Sat 10th\nMay: Sat 8th, Sat 22nd\nJune: Sat 5th, Sat 26th\nJuly: Sat 24th, Sat 31st\nAugust: fully booked\nSeptember: Sat 11th, Sat 25th\nOctober: Sat 16th\nNovember: Sat 6th, Sat 20th\nDecember: Sat 11th, Sat 18th\n\nJust reply with your two dates and I'll lock them in for you.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+          "msgId": "1a1163f619d47c33",
+          "threadId": "1a1162547c7c1219"
+        }
+      ]
+    }
+  ]
+}
