@@ -56791,7 +56791,7 @@
     "town": "Hadleigh IP7",
     "postcode": "",
     "website": "",
-    "contactName": "Chris",
+    "contactName": "Chris (Christian Reeve)",
     "phone": null,
     "needPhone": true,
     "email": "chrisr2.cr@gmail.com",
@@ -56827,18 +56827,26 @@
         "body": "Hi Chris,\n\nThanks for coming back to me. Sunday afternoons work really well for Jake, and 3pm to 6pm is no problem at all.\n\nPeople are always surprised a young singer delivers those classics with such power and feeling, and he has had some outstanding reviews from the venues he plays.\n\nFor that slot it's £425 cash, which covers his own PA and the travel up to you, with no deposit needed.\n\nHis free Sundays coming up are:\n\nOctober: Sun 11th, Sun 18th, Sun 25th\nNovember: Sun 15th, Sun 22nd\nDecember: Sun 20th, Sun 27th\nJanuary: Sun 3rd, Sun 17th, Sun 24th, Sun 31st\n\nHis diary is filling up fast, with bookings already going in right through to Christmas 2027. Just reply with the Sunday you'd like and I'll confirm it straight away and get it in the diary.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
         "msgId": "1a112cb3bc0d0e00",
         "threadId": "1a10c4eccce56c34"
+      },
+      {
+        "side": "them",
+        "label": "Inbox",
+        "at": "2026-10-06T22:48:42Z",
+        "from": "chrisr2.cr@gmail.com",
+        "subject": "Re: Jake Essex for The Cock?",
+        "body": "Sorry...out of our league..",
+        "msgId": "1a11367d33283f26",
+        "threadId": "1a10c4eccce56c34"
       }
     ],
     "hasThread": true,
-    "replied": "yes — 5 Oct 2026 (Chris)",
+    "replied": "yes — 6 Oct 2026 (Chris, declined quote)",
     "firstPitch": "5 Oct 2026",
-    "badge": "quoted",
+    "badge": "declined",
     "subject": "Jake Essex for The Cock?",
-    "statusNote": "quoted £425 Sun 3–6pm · day-7 chase Tue 13 Oct (Haggle)",
+    "statusNote": "declined £425 quote 6 Oct (out of our league)",
     "lastContact": "2026-10-06",
-    "lastContactSrc": "us 1a112cb3bc0d0e00",
-    "callExclude": "waiting-on-them",
-    "callHoldUntil": "2026-10-13"
+    "lastContactSrc": "them 1a11367d33283f26"
   },
   {
     "id": "cold-20261005-angel-woodbridge-ip12",
@@ -59006,11 +59014,11 @@
     "hasThread": true,
     "replied": "yes — 6 Oct 2026 (Sharon)",
     "firstPitch": "6 Oct 2026",
-    "badge": "awaiting",
+    "badge": "replied-soft / park (not-now)",
     "subject": "Jake Essex for Sudbury Institute Club?",
     "lastContact": "2026-10-06",
     "lastContactSrc": "them 1a112b7e01facc59",
-    "statusNote": "Them Sharon ~20:36 BST Tue 6 Oct 1a112b7e01facc59: passing to Manager Yvonne · no fee/date ask · badge awaiting (Wait for Yvonne) · Gmail-verified · folded 2100 pass",
+    "statusNote": "Sharon passing to manager Yvonne — wait",
     "notes": "Reply came from sudburyinstitute0@gmail.com (Sharon); manager is Yvonne."
   },
   {
