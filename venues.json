@@ -20622,14 +20622,6 @@
       },
       {
         "side": "us",
-        "label": "Verbal (via Jake)",
-        "at": "2026-10-08T19:09:00Z",
-        "from": "Jake (verbal)",
-        "subject": "Verbal — no email",
-        "body": "8 Oct ~20:09 — Paul declined Fri 9 / Sun 11 Oct verbally (via Jake); friendly, revisit for 2027 dates"
-      },
-      {
-        "side": "us",
         "label": "Dates",
         "at": "2026-10-08T19:11:46Z",
         "from": "jakeessexenquiries@gmail.com",
@@ -20641,7 +20633,7 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "offered 16 free 2027 Sats £300 single / £250 x4 · waiting on Paul · day-7 chase Thu 15 Oct (Haggle); declined 9/11 Oct verbally",
+    "statusNote": "offered 16 free 2027 Sats £300 single / £250 x4 · waiting on Paul · day-7 chase Thu 15 Oct (Haggle); declined 9/11 Oct by email (20:08)",
     "quotedFee": 300,
     "lastContact": "2026-10-08",
     "lastContactSrc": "us 1a11cedc2ee7fe84",
