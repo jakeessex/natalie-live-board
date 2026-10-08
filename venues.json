@@ -19863,18 +19863,28 @@
         "from": "Natalie (phone)",
         "subject": "Phone call",
         "body": "Natalie spoke to Colin by phone. He booked Jake for Sunday 17th January 2027, 2pm, £325. He would like a poster for the club."
+      },
+      {
+        "side": "us",
+        "label": "Booking confirmation (poster PDF + JPEG attached)",
+        "at": "2026-10-07T19:56:56Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Coulsdon Victoria Social Club?",
+        "body": "Hi Colin,\n\nThank you so much for booking Jake, and it was lovely to speak to you today.\n\nI've put Sunday 17th January 2027 in the diary for the Victoria Club, starting at 2pm, with two one hour sets and a short break in between. That's £325 cash on the night, he brings his own PA and there's no deposit.\n\nAs promised, I've attached a poster for the afternoon, as a PDF for printing and a JPEG for Facebook or the club noticeboard. If you'd like anything changed on it, just let me know.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+        "msgId": "1a117f0c28e46dfb",
+        "threadId": "1a116495168c4878"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "LOCKED by phone Sun 17 Jan 2027 2pm £325 · Colin · written confirm not sent yet",
+    "statusNote": "LOCKED by phone Sun 17 Jan 2027 2pm £325 · Colin · written confirm + poster sent 20:56 BST 7 Oct (1a117f0c28e46dfb)",
     "lastContact": "2026-10-07",
-    "lastContactSrc": "phone (Natalie) 7 Oct ~20:05 BST",
+    "lastContactSrc": "us 1a117f0c28e46dfb",
     "contactName": "Colin",
     "lockedFee": 325,
     "lockedDate": "2027-01-17",
     "lockedNights": 1,
-    "lockedNote": "OWN LOCK BY PHONE (Natalie ~20:05 BST 7 Oct 2026) · Sun 17 Jan 2027 · 2pm start · 2×1hr short break · £325 cash · own PA · no deposit · Colin wants a poster (Jake deciding who makes it) · written confirmation drafted, not sent yet · no confirming email in Gmail (last thread msgs 13:14–13:41 BST 7 Oct)"
+    "lockedNote": "OWN LOCK BY PHONE (Natalie ~20:05 BST 7 Oct 2026) · Sun 17 Jan 2027 · 2pm start · 2×1hr short break · £325 cash · own PA · no deposit · written confirmation SENT to Colin coulsdonvictoriaclub@gmail.com 20:56 BST 7 Oct (1a117f0c28e46dfb) · poster delivered (PDF + JPEG attached)"
   },
   {
     "id": "tooting-conservative-club",
@@ -53408,19 +53418,36 @@
         "body": "Hi Tracey,\n\nThanks for coming back to me. As you're a military charity club, Jake's happy to do £250 cash a night if the committee books two nights with him. That's two 45 minute sets from 9 till 11, with his own PA and no deposit. Clubs like yours are where he goes down best, so he'd love to come down to you.\n\nHis Saturdays are filling up fast, so here are the ones still free in 2027 for the committee to pick two from:\n\nJanuary: Sat 2nd, Sat 9th\nFebruary: Sat 27th\nMarch: Sat 6th, Sat 27th\nApril: Sat 3rd, Sat 10th\nMay: Sat 8th, Sat 22nd\nJune: Sat 5th, Sat 26th\nJuly: Sat 24th, Sat 31st\nAugust: fully booked\nSeptember: Sat 11th, Sat 25th\nOctober: Sat 16th\nNovember: Sat 6th, Sat 20th\nDecember: Sat 11th, Sat 18th\n\nJust reply with your two dates and I'll lock them in for you.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
         "msgId": "1a1163f619d47c33",
         "threadId": "1a1162547c7c1219"
+      },
+      {
+        "side": "them",
+        "label": "Inbox",
+        "at": "2026-10-07T23:04:47Z",
+        "from": "rafassocgosport@gmail.com",
+        "subject": "Re: Jake Essex for RAFA Club Gosport / Solent",
+        "body": "Hi Natalie\n\nSat 27th Feb 27\n\nSat 3 Apr 27 - RAF Founders Day Eve\n\nSat 25th Sep 27\n\nAdded an additional date. PLEASE send / email posters. RAFA SOLENT CLUB ,\nTimes 9-11pm ( with a couple of encores). Non-members welcome £2pp.\n\nThanks\n\nTracey\nRAFA Ents Offr",
+        "msgId": "1a1189cea85d2773",
+        "threadId": "1a1162547c7c1219"
       }
     ],
     "hasThread": true,
-    "replied": "yes — 6 Oct 2026 (Tracey)",
+    "replied": "yes — 8 Oct 2026 00:04 (Tracey booked 3 dates)",
     "firstPitch": "1 Oct 2026",
-    "badge": "quoted",
-    "statusNote": "Quoted 7 Oct 13:03 BST: £250 cash/night if committee books 2 nights (one-off military charity exception, Jake 7 Oct), Sat 2x45 9-11pm, own PA, no deposit; 2027 Sats listed. Committee to pick 2 dates. Haggle day-7 chase ~Wed 14 Oct. · Gmail-verified · folded 1600 audit 7 Oct",
+    "badge": "locked",
+    "statusNote": "LOCKED 3× Sat 2027: 27 Feb · 3 Apr (RAF Founders Day Eve) · 25 Sep — £250 cash each = £750 · RAFA Solent Club (Tracey, Ents Officer) picked dates 00:04 BST 8 Oct (1a1189cea85d2773) · Jake's written confirmation 1a119b4acc2c54af is still a DRAFT, not in Sent (checked 08:35 BST 8 Oct) · posters asked · not RAFA 381 · Gmail-verified",
     "subject": "Jake Essex for RAFA Club Gosport?",
-    "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a1163f619d47c33",
-    "callExclude": "waiting-on-them",
-    "callHoldUntil": "2026-10-14",
-    "quotedFee": 250
+    "lastContact": "2026-10-08",
+    "lastContactSrc": "them 1a1189cea85d2773",
+    "quotedFee": 250,
+    "lockedFee": 750,
+    "lockedDate": "2027-02-27",
+    "lockedNights": 3,
+    "dates": [
+      "2027-02-27",
+      "2027-04-03",
+      "2027-09-25"
+    ],
+    "lockedNote": "3x Sat 9–11pm £250 cash each, own PA, no deposit; posters asked"
   },
   {
     "id": "cold-20261001-weymouth-melcombe-regis-wmc-weymouth",
@@ -59553,6 +59580,16 @@
         "body": "That’s fantastic news. To start at 8pm please.Regards Yvonne",
         "msgId": "1a117c06fbe48937",
         "threadId": "1a115e6c443b4a88"
+      },
+      {
+        "side": "us",
+        "label": "Booking confirmation (poster PDF + JPEG attached)",
+        "at": "2026-10-07T20:04:12Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: entertainment",
+        "body": "Hi Yvonne,\n\nLovely, 8pm is perfect, I've got that in the diary for Saturday 8th May 2027.\n\nI've attached a poster for the night, as a PDF for printing and a JPEG for Facebook or the club noticeboard. If you'd like anything changed on it, just let me know.\n\nThank you again for booking Jake.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+        "msgId": "1a117f76a325708e",
+        "threadId": "1a115e6c443b4a88"
       }
     ],
     "hasThread": true,
@@ -59561,13 +59598,13 @@
     "badge": "locked",
     "subject": "Jake Essex for Sudbury Institute Club?",
     "lastContact": "2026-10-07",
-    "lastContactSrc": "them 1a117c06fbe48937",
+    "lastContactSrc": "us 1a117f76a325708e",
     "statusNote": "LOCKED Sat 8 May 2027 £300 · 2×1hr 8pm start · Yvonne (manager) · Gmail-verified",
     "notes": "Sharon replied from sudburyinstitute0@gmail.com; manager Yvonne wrote from yvonne.blacksmiths@gmail.com (new thread 1a115e6c443b4a88, subject \"entertainment\").",
     "lockedFee": 300,
     "lockedDate": "2027-05-08",
     "lockedNights": 1,
-    "lockedNote": "OWN LOCK Sat 8 May 2027 · £300 cash · 2×1hr · own PA · no deposit · start 8pm (Yvonne 1a117c06fbe48937 ~20:03 BST) · Yvonne yvonne.blacksmiths@gmail.com books (1a1174cda74a955f ~17:57) · Us confirm 1a117bcce845fb3a ~20:00 BST 7 Oct · not Choice"
+    "lockedNote": "OWN LOCK Sat 8 May 2027 · £300 cash · 2×1hr · own PA · no deposit · start 8pm (Yvonne 1a117c06fbe48937 ~20:03 BST) · Yvonne yvonne.blacksmiths@gmail.com books (1a1174cda74a955f ~17:57) · Us confirm 1a117bcce845fb3a ~20:00 BST 7 Oct · 8pm confirmed + poster sent 21:04 BST (1a117f76a325708e) · not Choice"
   },
   {
     "id": "cold-20261006-brooklands-club-leighton-buzzard-lu7",
