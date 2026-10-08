@@ -20561,11 +20561,11 @@
     "id": "romford-united-services-and-social-club",
     "name": "Romford United Services & Social Club",
     "town": "Romford",
-    "badge": "replied-soft / park (not-now)",
+    "badge": "quoted",
     "phone": "+447714460815",
     "needPhone": false,
     "email": "paulmccaughren@yahoo.co.uk",
-    "replied": "yes — 8 Oct 2026 (Paul; declined 9/11 Oct verbally via Jake — friendly)",
+    "replied": "yes — 8 Oct 2026 (Paul; declined 9/11 Oct, keeping details for future — email 20:08 1a11cea6ccc1f739)",
     "firstPitch": "17 Sep 2026",
     "addedAt": "2026-09-17T07:02:12.402Z",
     "followUps": "1 · last 28 Sep 2026",
@@ -20611,24 +20611,46 @@
         "threadId": "1a0ae0a9081197d9"
       },
       {
+        "side": "them",
+        "label": "Reply",
+        "at": "2026-10-08T19:08:03Z",
+        "from": "paulmccaughren@yahoo.co.uk",
+        "subject": "Re: Jake Essex for Romford United Services & Social Club?",
+        "body": "Hi Natalie,\nUnfortunately it was only the Saturday we needed help with.\nI will keep Jake's details for future use.\nKind Regards\nPaul",
+        "msgId": "1a11cea6ccc1f739",
+        "threadId": "1a0ae0a9081197d9"
+      },
+      {
         "side": "us",
         "label": "Verbal (via Jake)",
         "at": "2026-10-08T19:09:00Z",
         "from": "Jake (verbal)",
         "subject": "Verbal — no email",
         "body": "8 Oct ~20:09 — Paul declined Fri 9 / Sun 11 Oct verbally (via Jake); friendly, revisit for 2027 dates"
+      },
+      {
+        "side": "us",
+        "label": "Dates",
+        "at": "2026-10-08T19:11:46Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Romford United Services & Social Club?",
+        "body": "Hi Paul,\n\nNo problem at all, and thanks again for having Jake in mind.\n\nHere are Jake's free Saturdays for 2027:\n\nJanuary: Sat 2nd, Sat 9th\nMarch: Sat 6th, Sat 27th\nApril: Sat 10th\nMay: Sat 22nd\nJune: Sat 5th, Sat 26th\nJuly: Sat 24th, Sat 31st\nSeptember: Sat 11th\nOctober: Sat 16th\nNovember: Sat 6th, Sat 20th\nDecember: Sat 11th, Sat 18th\n\nIt's £300 cash for a single night of two one hour sets, or £250 a night when you book four dates. Lock in a date whenever you're ready, but Jake does tend to book up pretty quickly with the four date deal.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a11cedc2ee7fe84",
+        "threadId": "1a0ae0a9081197d9"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Paul said no to 9/11 Oct (verbal); friendly — pitch 2027 dates later",
+    "statusNote": "offered 16 free 2027 Sats £300 single / £250 x4 · waiting on Paul · day-7 chase Thu 15 Oct (Haggle); declined 9/11 Oct verbally",
     "quotedFee": 300,
     "lastContact": "2026-10-08",
-    "lastContactSrc": "verbal via Jake ~20:09 (no msgId)",
+    "lastContactSrc": "us 1a11cedc2ee7fe84",
     "contactName": "Paul McCaughren",
     "notes": "Also: paul@therussc.co.uk",
     "postcode": "RM7 7HB",
-    "address": "28 Mawney Road, Romford, Essex RM7 7HB"
+    "address": "28 Mawney Road, Romford, Essex RM7 7HB",
+    "callExclude": "waiting-on-them",
+    "callHoldUntil": "2026-10-15"
   },
   {
     "id": "hither-green-railwaymens-social-club",
