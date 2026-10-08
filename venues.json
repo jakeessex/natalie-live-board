@@ -20561,11 +20561,11 @@
     "id": "romford-united-services-and-social-club",
     "name": "Romford United Services & Social Club",
     "town": "Romford",
-    "badge": "quoted",
+    "badge": "replied-soft / park (not-now)",
     "phone": "+447714460815",
     "needPhone": false,
     "email": "paulmccaughren@yahoo.co.uk",
-    "replied": "yes — 8 Oct 2026 (Paul, Sat 10 Oct cancellation slot)",
+    "replied": "yes — 8 Oct 2026 (Paul; declined 9/11 Oct verbally via Jake — friendly)",
     "firstPitch": "17 Sep 2026",
     "addedAt": "2026-09-17T07:02:12.402Z",
     "followUps": "1 · last 28 Sep 2026",
@@ -20609,20 +20609,26 @@
         "body": "Hi Paul,\n\nThanks so much for thinking of Jake. It's sod law, he's already booked this Saturday, but he's free this Friday 9th and Sunday 11th October.\n\nIf you fancy putting a show on either night to make up for the cancellation, Jake will give your members a night they'll never forget. It's £300 cash for two one hour sets, and he brings his own PA, fully self-contained, no deposit.\n\nJust let me know which night suits and I'll lock it in straight away.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a11ce13b67bfb75",
         "threadId": "1a0ae0a9081197d9"
+      },
+      {
+        "side": "us",
+        "label": "Verbal (via Jake)",
+        "at": "2026-10-08T19:09:00Z",
+        "from": "Jake (verbal)",
+        "subject": "Verbal — no email",
+        "body": "8 Oct ~20:09 — Paul declined Fri 9 / Sun 11 Oct verbally (via Jake); friendly, revisit for 2027 dates"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Paul offered Sat 10 Oct (cancellation); we offered Fri 9 or Sun 11 Oct £300 — waiting on Paul (urgent, this weekend)",
+    "statusNote": "Paul said no to 9/11 Oct (verbal); friendly — pitch 2027 dates later",
     "quotedFee": 300,
     "lastContact": "2026-10-08",
-    "lastContactSrc": "us 1a11ce13b67bfb75",
+    "lastContactSrc": "verbal via Jake ~20:09 (no msgId)",
     "contactName": "Paul McCaughren",
     "notes": "Also: paul@therussc.co.uk",
     "postcode": "RM7 7HB",
-    "address": "28 Mawney Road, Romford, Essex RM7 7HB",
-    "callExclude": "waiting-on-them",
-    "callHoldUntil": "2026-10-11"
+    "address": "28 Mawney Road, Romford, Essex RM7 7HB"
   },
   {
     "id": "hither-green-railwaymens-social-club",
