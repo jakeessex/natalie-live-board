@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "woodstock-social-club",
+        "email": "woodstocksocialclub@gmail.com",
+        "name": "Woodstock Social Club",
+        "town": "Woodstock"
+      },
+      "badge": "declined",
+      "statusNote": "Replied 'Closed' Fri 9 Oct 11:05 BST. Closed venue. No chase. NEVER_AGAIN.",
+      "messages": [
+        {
+          "side": "them",
+          "label": "Them — closed",
+          "at": "2026-10-09T10:05:50Z",
+          "from": "woodstocksocialclub@gmail.com",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Jake Essex for Woodstock Social Club?",
+          "body": "Closed",
+          "msgId": "1a1202080c16f1fa",
+          "threadId": "1a0c42b4d5cb6bc4"
+        }
+      ]
+    }
+  ]
+}

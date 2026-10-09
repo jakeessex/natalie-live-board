@@ -1,0 +1,42 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "pot-penton-park-social-club-kt16-8qg",
+        "email": "pentoncsc@gmail.com",
+        "name": "Penton Park Community & Social Club",
+        "town": "Chertsey",
+        "postcode": "KT16 8QG",
+        "contactName": "Julie and Ann (julieparker476@googlemail.com)"
+      },
+      "badge": "quoted",
+      "quotedFee": 300,
+      "statusNote": "Quoted Fri 9 Oct 11:19 BST: 2x1hr £300 single / £250 a night for four; 3 sets £350 single / £300 a night for four; 16 free 2027 Saturdays. Julie & Ann wrote from julieparker476@googlemail.com. Haggle day-7 chase Fri 16 Oct.",
+      "messages": [
+        {
+          "side": "them",
+          "label": "Them — prices + 2027 Saturdays ask",
+          "at": "2026-10-09T08:40:45Z",
+          "from": "julieparker476@googlemail.com",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Penton park entertainment",
+          "body": "Hi Jake\n\nWe’re Julie and Ann from Penton park community & social club Chertsey\n Surrey, we would love to have you come and perform for us, if you could\nsend us your prices and available dates for a Saturday in 2027.\nMany thanks\nJulie and Ann",
+          "msgId": "1a11fd29a400fefe",
+          "threadId": "1a11fd29a400fefe"
+        },
+        {
+          "side": "us",
+          "label": "Us — quote",
+          "at": "2026-10-09T10:19:18Z",
+          "from": "jakeessexenquiries@gmail.com",
+          "to": "julieparker476@googlemail.com",
+          "subject": "Re: Penton park entertainment",
+          "body": "Hi Julie and Ann,\n\nThank you so much for getting in touch, Jake would love to come and perform at Penton Park.\n\nHis prices are all cash on the night:\n\nTwo 1 hour sets: £300 for a single night, or £250 a night if you book four dates.\nThree sets of 40 or 45 minutes: £350 for a single night, or £300 a night if you book four dates.\n\nHis free Saturdays in 2027 are:\n\n2 and 9 January\n6 and 27 March\n10 April\n22 May\n5 and 26 June\n24 and 31 July\n11 September\n16 October\n6 and 20 November\n11 and 18 December\n\nJust let me know which date or dates suit and I'll lock them in for you. The four date deal does tend to book up quickly. You can see and hear more of Jake at www.jakeessex.co.uk\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+          "msgId": "1a1202ca0cd755ad",
+          "threadId": "1a11fd29a400fefe"
+        }
+      ]
+    }
+  ]
+}
