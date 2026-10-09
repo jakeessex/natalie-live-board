@@ -63189,13 +63189,13 @@
   {
     "id": "the-wharf-grays",
     "name": "The Wharf",
-    "town": "Teddington TW11",
+    "town": "Grays",
     "postcode": "",
     "website": "",
     "contactName": "",
     "phone": null,
     "needPhone": true,
-    "email": "info@wharfteddington.com",
+    "email": "info@thewharfgrays.co.uk",
     "addedAt": "2026-09-04T09:38:53Z",
     "followUps": "1 · last 7 Oct 2026",
     "messages": [
@@ -63218,11 +63218,34 @@
         "body": "Hi,\n\nJust circling back on Jake Essex for The Wharf. He's a young singer from Essex who does the 50s and 60s classics with real power, own PA and no deposit, and he always gets people talking.\n\nFor venues like yours it's £300 cash for two one hour sets, or £250 a night if you book four dates. If a Friday or Saturday night in the coming months suits, reply here and I'll send over free dates.\n\nNo worries if it's not for you, just say \"no thanks\" and I'll leave it there.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a1166a3475bae1f",
         "threadId": "1a06bc7a5cd33a85"
-      },
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "4 Sep 2026",
+    "badge": "awaiting",
+    "subject": "Jake Essex for The Wharf?",
+    "lastContact": "2026-10-07",
+    "lastContactSrc": "us 1a1166a3475bae1f",
+    "statusNote": "wed-7-oct follow-up fu-waveC-5 Us 1a1166a3475bae1f ~13:50 London thread 1a06bc7a5cd33a85 · awaiting · Gmail-verified · folded 1600 audit 7 Oct"
+  },
+  {
+    "id": "the-wharf-teddington",
+    "name": "The Wharf (Teddington)",
+    "town": "Teddington TW11",
+    "postcode": "TW11 8BG",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@wharfteddington.com",
+    "addedAt": "2026-10-09T13:51:07Z",
+    "followUps": "",
+    "messages": [
       {
         "side": "us",
         "label": "Sent",
-        "at": "2026-10-09T13:51:00+00:00",
+        "at": "2026-10-09T13:51:07Z",
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex for The Wharf?",
         "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nThe Wharf in Teddington feels like a lovely fit for Jake - he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
@@ -63230,15 +63253,14 @@
         "threadId": "1a120ee73775cc21"
       }
     ],
-    "hasThread": false,
+    "hasThread": true,
     "replied": "no",
-    "firstPitch": "4 Sep 2026",
-    "badge": "awaiting",
+    "firstPitch": "9 Oct 2026",
     "subject": "Jake Essex for The Wharf?",
-    "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a1166a3475bae1f",
-    "statusNote": "wed-7-oct follow-up fu-waveC-5 Us 1a1166a3475bae1f ~13:50 London thread 1a06bc7a5cd33a85 · awaiting · Gmail-verified · folded 1600 audit 7 Oct",
-    "prospect": false
+    "badge": "awaiting",
+    "lastContact": "2026-10-09",
+    "lastContactSrc": "us 1a120ee91de7b909",
+    "statusNote": "fri-9-oct cold waveD SENT_OK 1a120ee91de7b909 ~14:51 London thread 1a120ee73775cc21 · awaiting · Gmail-verified (first and only mail to this address) · split from the-wharf-grays (16:09 audit name-only mis-merge) · NOT The Wharf, Grays · folded 1658 9 Oct"
   },
   {
     "id": "the-malt-shovel-dartford",
