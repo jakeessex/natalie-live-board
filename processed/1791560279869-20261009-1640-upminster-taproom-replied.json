@@ -1,0 +1,36 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "upminster-taproom",
+    "email": "aftervi@outlook.com",
+    "name": "Upminster TapRoom",
+    "contactName": "Jordan",
+    "badge": "replied-soft / park (not-now)"
+   },
+   "messages": [
+    {
+     "side": "them",
+     "label": "Them",
+     "at": "2026-10-09T13:18:46Z",
+     "from": "AfterVI@outlook.com",
+     "subject": "Re: Jake Essex for Upminster TapRoom?",
+     "body": "Hi,\n\nThanks for reaching out!\nIt could be considered great timing too as we look to fill our final slot for our New Years Eve 'Hootenanny'.\n\nWe have a slot from 10pm onwards on New Years eve and I feel this era would be perfect to see out the old and see in the new!\n\nLet me know if this is something you would be interested in.\n\nRegards,\nJordan\nThe Taproom",
+     "msgId": "1a120d10542399a7",
+     "threadId": "1a0ca2533e91c507"
+    },
+    {
+     "side": "us",
+     "label": "Us Sent",
+     "at": "2026-10-09T13:53:05Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Re: Jake Essex for Upminster TapRoom?",
+     "body": "Hi Jordan,\n\nThanks so much for thinking of Jake, a New Year's Eve Hootenanny sounds like a great night. Unfortunately he's already booked on New Year's Eve this year, so he can't do the 10pm slot.\n\nHe'd love to come and play the TapRoom another time though. If a Saturday in the new year works for you, just let me know and I'll send over his free dates.\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a120f05aa3accfa",
+     "threadId": "1a0ca2533e91c507"
+    }
+   ]
+  }
+ ]
+}

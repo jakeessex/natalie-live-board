@@ -1,0 +1,40 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "gurkha-fire",
+    "email": "reservations@gurkhafire.com",
+    "name": "Gurkha Fire",
+    "town": "Chatham",
+    "postcode": "ME4",
+    "badge": "replied-soft / final offer out"
+   },
+   "statusNote": "replied soft-no (fully booked); 2027 Sats offered 16:02 9 Oct; Haggle day-7 Fri 16 Oct",
+   "messages": [
+    {
+     "side": "them",
+     "label": "Them",
+     "at": "2026-10-09T14:35:16Z",
+     "from": "reservations@gurkhafire.com",
+     "to": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Gurkha Fire?",
+     "body": "Hi Natalie,\n\nThank you for reaching out. We are fully booked with our entertainment\nschedule at this time, but I will keep your details on file should anything\nchange in the future.\n\nBest regards,\n\nGurkha Fire",
+     "msgId": "1a1211721e27dc0a",
+     "threadId": "1a12102bb17259bd"
+    },
+    {
+     "side": "us",
+     "label": "Us Sent",
+     "at": "2026-10-09T15:02:36Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "reservations@gurkhafire.com",
+     "subject": "Re: Jake Essex for Gurkha Fire?",
+     "body": "Hi,\n\nThank you for getting back to me, completely understand. Would it be worth pencilling Jake in for 2027 while there's still room in your diary? His free Saturdays next year are:\n\n2 and 9 January\n6 and 27 March\n10 April\n22 May\n5 and 26 June\n24 and 31 July\n11 September\n16 October\n6 and 20 November\n11 and 18 December\n\nIf any of those suit, just reply here and I'll hold it for you.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+     "msgId": "1a1213000ae91d35",
+     "threadId": "1a12102bb17259bd"
+    }
+   ]
+  }
+ ]
+}
