@@ -75,12 +75,23 @@
         "body": "Hi,\n\nThank you for getting back to me, completely understand. Would it be worth pencilling Jake in for 2027 while there's still room in your diary? His free Saturdays next year are:\n\n2 and 9 January\n6 and 27 March\n10 April\n22 May\n5 and 26 June\n24 and 31 July\n11 September\n16 October\n6 and 20 November\n11 and 18 December\n\nIf any of those suit, just reply here and I'll hold it for you.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
         "msgId": "1a1213000ae91d35",
         "threadId": "1a12102bb17259bd"
+      },
+      {
+        "side": "them",
+        "label": "Them",
+        "at": "2026-10-09T19:55:51Z",
+        "from": "reservations@gurkhafire.com",
+        "subject": "Re: Jake Essex for Gurkha Fire?",
+        "body": "Hi Natalie,\n\nThank you for the follow-up, I will keep your details on file.\n\nBest regards,\n\nGurkha Fire",
+        "msgId": "1a1223ca69b40afe",
+        "threadId": "1a12102bb17259bd"
       }
     ],
     "hasThread": true,
     "prospect": false,
     "lastContact": "2026-10-09",
-    "lastContactSrc": "us 1a1213000ae91d35"
+    "lastContactSrc": "us 1a1213000ae91d35",
+    "statusNote": "fully booked; Natalie offered 2027 Saturdays 9 Oct 16:02 · replied 9 Oct 20:55 \"will keep your details on file\" (1a1223ca69b40afe) · on file, no chase"
   },
   {
     "id": "cold-20261009-indie-rabble-taproom-windsor-sl4",
@@ -63311,7 +63322,7 @@
     "town": "Dartford",
     "postcode": "",
     "website": "",
-    "contactName": "",
+    "contactName": "Paul Lynskey",
     "phone": null,
     "needPhone": true,
     "email": "lynskeypaul@yahoo.co.uk",
@@ -63337,16 +63348,39 @@
         "body": "Hi,\n\nFollowing up on Jake Essex for The Stage Door. He does the 50s and 60s properly (Darin, Dion, Holly, Orbison, Sinatra, Elvis and more), own PA, no deposit.\n\nIt's £300 cash for two one hour sets, or £250 a night if you book four dates. Fridays and Saturdays suit him best, so if one of those works in the coming months, reply here and I'll send over free dates.\n\nIf it's a no, just say so and I'll leave you alone.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a116bc5ad9b2485",
         "threadId": "1a06bdbd006f2c3b"
+      },
+      {
+        "side": "them",
+        "label": "Them",
+        "at": "2026-10-11T12:03:26Z",
+        "from": "lynskeypaul@yahoo.co.uk",
+        "subject": "Re: Jake Essex for The Stage Door Dartford?",
+        "body": "Hi Natalie\nIm afraid its not our style of music. We go for original singer/songwriters rather than cover singers.\nBut thank you for the contact and best of luck.\nPaul",
+        "msgId": "1a12ad8cf060b6fa",
+        "threadId": "1a06bdbd006f2c3b"
+      },
+      {
+        "side": "us",
+        "label": "Us Sent",
+        "at": "2026-10-11T13:16:27Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for The Stage Door Dartford?",
+        "body": "Hi Paul,\n\nThanks so much for coming back to me, I really appreciate it.\n\nJust so you've got the full picture, Jake isn't a covers act in the usual sense. He doesn't copy or impersonate anyone. He's a young singer from Essex with a big natural voice, and he sings every song his own way and really hits the notes. Have you had a chance to hear him sing? There are plenty of recordings at www.jakeessex.co.uk\n\nYou could even show the site to a few of your regulars and see if they'd like to see Jake at The Stage Door. He's always local to you, so it's an easy one to set up, and he puts on an unforgettable night for everyone who comes.\n\nIf you fancy giving it a go, it's £300 cash for two 1 hour sets, or £250 a night if you book four dates. Three sets are £350, or £300 a night for four. He brings his own PA and there's no deposit.\n\nThese Saturdays are free in 2027:\n\nJanuary: Sat 2nd, Sat 9th\nMarch: Sat 6th, Sat 27th\nApril: Sat 10th\nMay: Sat 22nd\nJune: Sat 5th\nJuly: Sat 24th\nSeptember: Sat 11th\nOctober: Sat 16th\nNovember: Sat 20th\nDecember: Sat 11th\n\nIf one works, just reply with the date and I'll get it booked in. And if it's not for you after a listen, no worries at all.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+        "msgId": "1a12b1b88eaa1cc0",
+        "threadId": "1a06bdbd006f2c3b"
       }
     ],
     "hasThread": true,
-    "replied": "no",
+    "replied": "yes",
     "firstPitch": "4 Sep 2026",
-    "badge": "awaiting",
+    "badge": "quoted",
     "subject": "Jake Essex for The Stage Door Dartford?",
-    "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a116bc5ad9b2485",
-    "statusNote": "wed-7-oct follow-up fu-waveD-5 Us 1a116bc5ad9b2485 ~15:20 London thread 1a06bdbd006f2c3b · awaiting · Gmail-verified · folded 1600 audit 7 Oct"
+    "lastContact": "2026-10-11",
+    "lastContactSrc": "us 1a12b1b88eaa1cc0",
+    "statusNote": "quoted £300 · day-7 chase Sun 18 Oct (Haggle)",
+    "quotedFee": 300,
+    "callExclude": "waiting-on-them",
+    "callHoldUntil": "2026-10-18"
   },
   {
     "id": "the-royal-bell-bromley",
@@ -64631,13 +64665,13 @@
       }
     ],
     "hasThread": true,
-    "replied": "no",
+    "replied": "bounce",
     "firstPitch": "7 Oct 2026",
     "subject": "Live music at The Wheatsheaf",
-    "badge": "awaiting",
+    "badge": "bounce",
     "lastContact": "2026-10-07",
     "lastContactSrc": "us 1a117185d599871a",
-    "statusNote": "wed-7-oct cold FRESH50 K2 SENT_OK 1a117185d599871a ~17:00 London thread 1a117185a081975b · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded) · DSN DELAY 4.4.3 1a11c8eec0131986 18:28 BST 8 Oct (relay01.wheatsheafph.co.uk NXDOMAIN; Gmail retrying ~46h) — not a bounce yet, recheck Sat 10 Oct"
+    "statusNote": "hard bounce — final DSN FAILURE 1a126bc30f48d14a ~17:53 BST Sat 10 Oct after ~46h retries (DELAY 1a11c8eec0131986 8 Oct + 1a121fc8ae2641fe 19:46 BST 9 Oct): wheatsheafph.co.uk MX relay01 NXDOMAIN (4.4.3, Action: failed) · sales@wheatsheafph.co.uk dead · NEVER_AGAIN this address · cold FRESH50 K2 1a117185d599871a ~17:00 7 Oct · Gmail-verified · folded 1420 11 Oct"
   },
   {
     "id": "cold-20261007-the-tollgate-chadwell-heath-rm6-6qt",

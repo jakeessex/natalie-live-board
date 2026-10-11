@@ -1,0 +1,41 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "the-stage-door-dartford",
+    "email": "lynskeypaul@yahoo.co.uk",
+    "name": "The Stage Door",
+    "town": "Dartford",
+    "contactName": "Paul"
+   },
+   "badge": "quoted",
+   "quotedFee": 300,
+   "statusNote": "Quoted 11 Oct 14:16 BST (Haggle P1 close after originals-only soft no): £300 cash 2x1hr / £250 a night for four; three sets £350 / £300 a night for four; own PA, no deposit; 12 free 2027 Saturdays. Haggle day-7 chase Mon 19 Oct.",
+   "messages": [
+    {
+     "side": "them",
+     "label": "Them — soft no (originals only)",
+     "at": "2026-10-11T12:03:26Z",
+     "from": "lynskeypaul@yahoo.co.uk",
+     "to": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Stage Door Dartford?",
+     "body": "Hi Natalie\nIm afraid its not our style of music. We go for original singer/songwriters rather than cover singers.\nBut thank you for the contact and best of luck.\nPaul",
+     "msgId": "1a12ad8cf060b6fa",
+     "threadId": "1a06bdbd006f2c3b"
+    },
+    {
+     "side": "us",
+     "label": "Us Sent — close attempt (quoted)",
+     "at": "2026-10-11T13:16:27Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "to": "lynskeypaul@yahoo.co.uk",
+     "subject": "Re: Jake Essex for The Stage Door Dartford?",
+     "body": "Hi Paul,\n\nThanks so much for coming back to me, I really appreciate it.\n\nJust so you've got the full picture, Jake isn't a covers act in the usual sense. He doesn't copy or impersonate anyone. He's a young singer from Essex with a big natural voice, and he sings every song his own way and really hits the notes. Have you had a chance to hear him sing? There are plenty of recordings at www.jakeessex.co.uk\n\nYou could even show the site to a few of your regulars and see if they'd like to see Jake at The Stage Door. He's always local to you, so it's an easy one to set up, and he puts on an unforgettable night for everyone who comes.\n\nIf you fancy giving it a go, it's £300 cash for two 1 hour sets, or £250 a night if you book four dates. Three sets are £350, or £300 a night for four. He brings his own PA and there's no deposit.\n\nThese Saturdays are free in 2027:\n\nJanuary: Sat 2nd, Sat 9th\nMarch: Sat 6th, Sat 27th\nApril: Sat 10th\nMay: Sat 22nd\nJune: Sat 5th\nJuly: Sat 24th\nSeptember: Sat 11th\nOctober: Sat 16th\nNovember: Sat 20th\nDecember: Sat 11th\n\nIf one works, just reply with the date and I'll get it booked in. And if it's not for you after a listen, no worries at all.\n\nKind regards,\nNatalie\nBookings for Jake Essex\n07523 924644",
+     "msgId": "1a12b1b88eaa1cc0",
+     "threadId": "1a06bdbd006f2c3b"
+    }
+   ]
+  }
+ ]
+}
