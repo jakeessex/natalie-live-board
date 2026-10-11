@@ -9727,7 +9727,8 @@
     "lockedFee": 300,
     "lockedNights": 1,
     "lockedDate": "2026-10-10",
-    "statusNote": "LOCKED OWN Sat 10 Oct 2026 · £300 cash · 2×1hr · 8:30 start · 4 Manor Road KT12 2PB · diary 20:30–23:00"
+    "statusNote": "LOCKED OWN Sat 10 Oct 2026 · £300 cash · 2×1hr · 8:30 start · 4 Manor Road KT12 2PB · diary 20:30–23:00 · PLAYED + PAID £300 cash 10 Oct (Jake 11 Oct 15:11)",
+    "lockedNote": "PLAYED + PAID £300 cash 10 Oct (Jake 11 Oct 15:11)"
   },
   {
     "id": "warminster-cons",
