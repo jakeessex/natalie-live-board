@@ -28688,11 +28688,11 @@
     "id": "terrace-the",
     "name": "Terrace, The",
     "town": "Southend-on-Sea",
-    "badge": "awaiting",
+    "badge": "declined",
     "phone": null,
     "needPhone": true,
     "email": "admin@theterracebarsouthend.co.uk",
-    "replied": "no",
+    "replied": "yes — declined 12 Oct 2026 18:08 BST + asked to be removed from mailing list",
     "firstPitch": "23 Sep 2026",
     "addedAt": "2026-09-23",
     "followUps": "1 · last 12 Oct 2026",
@@ -28714,13 +28714,23 @@
         "body": "Hi,\n\nFollowing up on Jake Essex for The Terrace. He does the 50s and 60s\nproperly, own PA, no deposit.\n\nIt's from £250 for two one hour sets. Saturday nights this year and into\n2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBooking agent for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a1309a521e6b944",
         "threadId": "1a0cefbb6aa47aa7"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-12T17:08:38Z",
+        "from": "admin@theterracebarsouthend.co.uk",
+        "subject": "Re: Jake Essex for The Terrace?",
+        "body": "HiNo thanks we arent looking so please take us off your mailing list.ThanksSent from my Galaxy",
+        "msgId": "1a131168c1159fc6",
+        "threadId": "1a0cefbb6aa47aa7"
       }
     ],
     "hasThread": true,
     "tab": "call",
     "lastContact": "2026-10-12",
-    "lastContactSrc": "us 1a1309a521e6b944",
-    "statusNote": "mon-12-oct follow-up fu-waveD-5 Us 1a1309a521e6b944 ~15:53 London thread 1a0cefbb6aa47aa7 · awaiting · Gmail-verified · folded 1629 12 Oct"
+    "lastContactSrc": "them 1a131168c1159fc6",
+    "statusNote": "mon-12-oct follow-up fu-waveD-5 Us 1a1309a521e6b944 ~15:53 London thread 1a0cefbb6aa47aa7 · awaiting · Gmail-verified · folded 1629 12 Oct · declined · Them ~18:08 BST Mon 12 Oct 1a131168c1159fc6: \"No thanks we arent looking so please take us off your mailing list\" · opt-out request · NEVER_AGAIN · do not chase or re-cold · Gmail-verified · folded 1815 12 Oct"
   },
   {
     "id": "good-mixer-the",
@@ -29272,11 +29282,11 @@
     "id": "king-and-queen-the",
     "name": "King & Queen, The",
     "town": "",
-    "badge": "declined",
+    "badge": "replied-soft / park (not-now)",
     "phone": null,
     "needPhone": true,
     "email": "kandq.bookings@gmail.com",
-    "replied": "yes — declined 12 Oct (not booking new acts)",
+    "replied": "yes — 12 Oct 2026 15:34 BST (Kathy) soft no \"not looking to book in new acts at this time\"",
     "firstPitch": "23 Sep 2026 ~17:26 Europe/London",
     "addedAt": "2026-09-23",
     "followUps": "1 · last 12 Oct 2026",
@@ -29314,7 +29324,7 @@
     "tab": "call",
     "lastContact": "2026-10-12",
     "lastContactSrc": "them 1a13089ccf47ebf8",
-    "statusNote": "mon-12-oct follow-up fu-waveC-5 Us 1a1302786be65732 ~13:47 London thread 1a0cf11c6e69fd99 · awaiting · Gmail-verified · folded 1401 12 Oct · declined · Them Kathy ~15:34 BST Mon 12 Oct 1a13089ccf47ebf8: \"Im not looking to book in new acts at this time\" · NEVER_AGAIN · do not chase or re-cold · Gmail-verified · folded 1629 12 Oct",
+    "statusNote": "Soft no · Them Kathy ~15:34 BST Mon 12 Oct 1a13089ccf47ebf8: \"Im not looking to book in new acts at this time\" (after FU 1a1302786be65732, cold 23 Sep) · P14 first \"at this time\" = soft no, not hard · Haggle close draft (prices + four-date deal + regulars line) pending Jake · do not re-cold · hard fold only on a second no · thread 1a0cf11c6e69fd99 · Gmail-verified · JEM correction folded 1815 12 Oct",
     "contactName": "Kathy"
   },
   {
