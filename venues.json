@@ -11024,28 +11024,47 @@
   {
     "id": "greenhithe-legion-social-club",
     "name": "Greenhithe Legion Social Club",
-    "town": "",
-    "badge": "bounce",
+    "town": "Greenhithe",
+    "badge": "awaiting",
     "phone": null,
     "needPhone": true,
-    "email": "info@greenhithelegionsocialclub.com",
+    "email": "enquiries@greenhithelegionsocialclub.com",
     "replied": "no",
     "firstPitch": "2 Jun 2026",
     "addedAt": "2 Jun 2026",
     "followUps": "0 · last —",
-    "subject": "Jake Essex – Professional Solo Vocalist (Elvis & Friends Show) Available for Live Music Nights",
+    "subject": "Live music — Jake Essex",
     "messages": [
       {
         "side": "us",
         "label": "Sent",
-        "at": "2026-06-02T07:09:09Z",
+        "at": "2026-06-02T07:09:29Z",
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Jake Essex – Professional Solo Vocalist (Elvis & Friends Show) Available for Live Music Nights",
-        "body": "Hi Team at Galleywood Social Club Chelmsford,\n\nI’m Natalie, booking agent for Jake Essex.\n\nJake is a professional solo vocalist based locally in South Ockendon who delivers a high-energy “Elvis and Friends” show — proper 50s, 60s & 70s classics that get the whole room singing along.\n\nI noticed you put on live music and I genuinely think Jake would be a perfect fit for your crowd. He’s fully self-contained (PA, lights, backing tracks), reliable, no deposit required, and used to busy pub, club and function room crowds.\n\nYou can check out recent performances and crowd reactions here: https://www.instagram.com/jakeessexmusic/\n\nHe’s available for midweek or weekend nights and his normal rate for pubs/restaurants is very competitive — happy to discuss dates, set times and pricing that work for you.\n\nLooking forward to hearing from you.\n\nBest regards,\nNatalie\nBooking Agent for Jake Essex\njakeessexenquiries@gmail.com\n@JakeEssexMusic"
+        "body": "Hi Team at Greenhithe Legion Social Club,\n\nI’m Natalie, booking agent for Jake Essex.\n\nJake is a professional solo vocalist based locally in South Ockendon who delivers a high-energy “Elvis and Friends” show — proper 50s, 60s & 70s classics that get the whole room singing along.\n\nI noticed you put on live music and I genuinely think Jake would be a perfect fit for your crowd. He’s fully self-contained (PA, lights, backing tracks), reliable, no deposit required, and used to busy pub, club and function room crowds.\n\nYou can check out recent performances and crowd reactions here: https://www.instagram.com/jakeessexmusic/\n\nHe’s available for midweek or weekend nights and his normal rate for pubs/restaurants is very competitive — happy to discuss dates, set times and pricing that work for you.\n\nLooking forward to hearing from you.\n\nBest regards,\nNatalie\nBooking Agent for Jake Essex\njakeessexenquiries@gmail.com\n@JakeEssexMusic",
+        "msgId": "19e872a7ead53dc5",
+        "threadId": "19e872a7ead53dc5",
+        "to": "info@greenhithelegionsocialclub.com"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-09-02T07:41:11Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Live music — Jake Essex",
+        "body": "Hi,\n\nI'm Natalie — I look after bookings for Jake Essex.\n\nGreenhithe Legion already has Kevin Powell as GM on the enquiries inbox,\nand the club is the live room on London Road.\n\nJake is a professional solo vocalist from Essex. High-energy 50s and 60s\nrock and roll. He is the act — no tribute, no jumpsuit. Own PA, fully\nself-contained, no deposit.\n\n2 × 1 hour is £250 cash on the night, or £280 if it goes through the books.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 —\nif a date works, reply here and I'll lock it.\n\nNatalie",
+        "msgId": "1a0611095c83fb39",
+        "threadId": "1a06110937b41d68",
+        "to": "enquiries@greenhithelegionsocialclub.com"
       }
     ],
-    "hasThread": true,
-    "tab": "other"
+    "hasThread": false,
+    "tab": "other",
+    "prospect": false,
+    "lastContact": "2026-09-02",
+    "lastContactSrc": "us 1a0611095c83fb39",
+    "notes": "Also: info@greenhithelegionsocialclub.com (Jun 2026 cold 19e872a7ead53dc5; marked bounce in MASTER — no DSN left in Gmail)",
+    "statusNote": "Mon 12 Oct 0900 audit · Gmail-verified: 2 Sep 2026 08:41 BST cold to enquiries@ (1a0611095c83fb39 thread 1a06110937b41d68) was missing from board — row only had Jun info@ cold (marked bounce) with the WRONG body (Galleywood text); thread replaced with both real Us bodies · badge bounce→awaiting (enquiries@ delivered, no DSN) · Bookings FU Wave A 12 Oct targets this thread"
   },
   {
     "id": "harlow-town-rbl",
