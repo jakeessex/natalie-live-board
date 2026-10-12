@@ -2,7 +2,7 @@
  "version": 1,
  "title": "Nat call deck, Mon 12 Oct",
  "listDate": "2026-10-12",
- "source": "JEM refresh Mon 12 Oct 2026: only venues that never replied by email or went quiet 14+ days (no live email threads). Once-interested quiet first (clubs, warmest, most recent interest), then never-replied clubs (longest silence). Real phone required. Built by /workspace/deck-refresh/build_calls.py",
+ "source": "JEM refresh Mon 12 Oct 2026: only venues that never replied by email or went quiet 14+ days (no live email threads). Once-interested quiet first (clubs, warmest, most recent interest), then never-replied clubs (longest silence). Real phone required. Built by /workspace/deck-refresh/build_calls.py · 1600 audit: dropped Mildmay (declined NEVER_AGAIN 12 Oct)",
  "freeNights": [
   {
    "month": "Oct",
@@ -106,34 +106,6 @@
   },
   {
    "rank": 3,
-   "id": "mildmay-club",
-   "venue": "Mildmay Club",
-   "town": "London N16",
-   "contact": "Iona Dudley (Club Manager)",
-   "phones": [
-    {
-     "number": "020 7254 2265",
-     "label": "files, her signature",
-     "tel": "02072542265"
-    }
-   ],
-   "noPhone": "",
-   "quote": "17 Sep they offered £250 for Sat 3 x 45, 9pm to midnight, by bank transfer on invoice. We countered: £250 cash or £275 on the books for 2 x 1 hour, £350 cash or £375 on the books for 3 sets.",
-   "lastWho": "Them",
-   "lastDate": "17 Sep",
-   "lastMsg": "They always want new acts for Saturday nights in the Members Bar and pay £250 for 3 x 45 by bank transfer.",
-   "days": "25",
-   "daysNote": "",
-   "why": "They have named a budget and a slot, so only the format and fee gap is left. A call can settle it (for example 2 x 1 hour at £275 on invoice) and fix Sat 7 Nov or a 2027 Saturday. Our chase on 28 Sep got no answer.",
-   "flags": [],
-   "note": "Last contact: 28 Sep (Us)",
-   "venueId": "mildmay-club",
-   "gmailThreadId": "1a0adfb4ae07faf3",
-   "lastContact": "2026-09-28",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 4,
    "id": "sutton-social-club",
    "venue": "Sutton Social Club",
    "town": "Sutton (SM1 4RS)",
@@ -161,7 +133,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 5,
+   "rank": 4,
    "id": "barrow-upon-soar-cons",
    "venue": "Barrow upon Soar Cons",
    "town": "Leics",
@@ -194,7 +166,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 6,
+   "rank": 5,
    "id": "st-neots-cons",
    "venue": "St Neots Cons",
    "town": "St Neots",
@@ -222,7 +194,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 7,
+   "rank": 6,
    "id": "corner-club",
    "venue": "Corner Club",
    "town": "Canvey Island",
@@ -250,7 +222,7 @@
    "lastContactWho": "Them"
   },
   {
-   "rank": 8,
+   "rank": 7,
    "id": "winchester-club",
    "venue": "The Winchester Club",
    "town": "Winchester",
@@ -287,7 +259,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 9,
+   "rank": 8,
    "id": "broomfield-rbl",
    "venue": "Broomfield RBL",
    "town": "Chelmsford",
@@ -320,7 +292,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 10,
+   "rank": 9,
    "id": "imperial-cheshunt-and-waltham-cross-cons",
    "venue": "Imperial / Cheshunt & Waltham Cross Cons",
    "town": "Waltham Cross / Cheshunt",
@@ -348,7 +320,7 @@
    "lastContactWho": "Them"
   },
   {
-   "rank": 11,
+   "rank": 10,
    "id": "wraysbury-village-club",
    "venue": "Wraysbury Village Club",
    "town": "Wraysbury, near Staines",
@@ -376,7 +348,7 @@
    "lastContactWho": "Them"
   },
   {
-   "rank": 12,
+   "rank": 11,
    "id": "california-social-ipswich",
    "venue": "California Social Club",
    "town": "Ipswich",
@@ -404,7 +376,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 13,
+   "rank": 12,
    "id": "hounslow-rbl",
    "venue": "Hounslow RBL",
    "town": "Hounslow (Whitton Road, TW3)",
@@ -432,7 +404,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 14,
+   "rank": 13,
    "id": "brightlingsea-rbl",
    "venue": "Brightlingsea RBL",
    "town": "Brightlingsea, Essex",
@@ -460,7 +432,7 @@
    "lastContactWho": "Them"
   },
   {
-   "rank": 15,
+   "rank": 14,
    "id": "the-bull",
    "venue": "The Bull",
    "town": "Corringham (SS17 9AT)",
@@ -488,7 +460,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 16,
+   "rank": 15,
    "id": "rayleigh-rbl",
    "venue": "Rayleigh RBL",
    "town": "Rayleigh, Essex",
@@ -516,7 +488,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 17,
+   "rank": 16,
    "id": "hayes-wmc",
    "venue": "Hayes WMC",
    "town": "Hayes, Middlesex",
@@ -544,7 +516,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 18,
+   "rank": 17,
    "id": "hornchurch-conservative",
    "venue": "Hornchurch Conservative",
    "town": "Hornchurch",
@@ -572,7 +544,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 19,
+   "rank": 18,
    "id": "orpington-rbl",
    "venue": "Orpington RBL",
    "town": "Orpington",
@@ -600,7 +572,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 20,
+   "rank": 19,
    "id": "putney-rbl",
    "venue": "Putney RBL",
    "town": "Putney, London",
@@ -628,7 +600,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 21,
+   "rank": 20,
    "id": "twickenham-rbl",
    "venue": "Twickenham RBL",
    "town": "Twickenham",
@@ -656,7 +628,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 22,
+   "rank": 21,
    "id": "upminster-and-cranham-rbl",
    "venue": "Upminster & Cranham RBL",
    "town": "Upminster",
@@ -684,7 +656,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 23,
+   "rank": 22,
    "id": "aveley-village-social-club",
    "venue": "Aveley Village Social Club",
    "town": "Aveley",
@@ -712,7 +684,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 24,
+   "rank": 23,
    "id": "hanwell-conservative-club",
    "venue": "Hanwell Conservative Club",
    "town": "Hanwell, London",
@@ -740,7 +712,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 25,
+   "rank": 24,
    "id": "stony-stratford-cons",
    "venue": "Stony Stratford Cons",
    "town": "Stony Stratford, Milton Keynes",
@@ -768,7 +740,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 26,
+   "rank": 25,
    "id": "westbourne-cons",
    "venue": "Westbourne Cons",
    "town": "Westbourne, Bournemouth",
@@ -801,7 +773,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 27,
+   "rank": 26,
    "id": "bengeo-social-club",
    "venue": "Bengeo Social Club",
    "town": "Bengeo, Hertford",
@@ -829,7 +801,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 28,
+   "rank": 27,
    "id": "crowthorne-rbl",
    "venue": "Crowthorne RBL",
    "town": "Crowthorne, Berkshire",
@@ -857,7 +829,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 29,
+   "rank": 28,
    "id": "felsted-rbl",
    "venue": "Felsted RBL",
    "town": "Felsted, Essex",
@@ -885,7 +857,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 30,
+   "rank": 29,
    "id": "great-waltham-legion",
    "venue": "Great Waltham Legion",
    "town": "Great Waltham, Chelmsford",
@@ -913,7 +885,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 31,
+   "rank": 30,
    "id": "harold-wood-rbl",
    "venue": "Harold Wood RBL",
    "town": "Harold Wood",
@@ -941,7 +913,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 32,
+   "rank": 31,
    "id": "harrow-rbl",
    "venue": "Harrow RBL",
    "town": "Harrow",
@@ -969,7 +941,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 33,
+   "rank": 32,
    "id": "hayes-rbl",
    "venue": "Hayes RBL",
    "town": "Hayes, Bromley",
@@ -997,7 +969,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 34,
+   "rank": 33,
    "id": "hockley-rbl",
    "venue": "Hockley RBL",
    "town": "Hockley, Essex",
@@ -1025,7 +997,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 35,
+   "rank": 34,
    "id": "cippenham-rbl",
    "venue": "Cippenham RBL",
    "town": "Cippenham, Slough",
@@ -1053,7 +1025,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 36,
+   "rank": 35,
    "id": "coggeshall-cons",
    "venue": "Coggeshall Cons",
    "town": "Coggeshall, Essex",
@@ -1081,7 +1053,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 37,
+   "rank": 36,
    "id": "ferndown-rbl",
    "venue": "Ferndown RBL",
    "town": "Ferndown, Dorset",
@@ -1114,7 +1086,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 38,
+   "rank": 37,
    "id": "histon-and-impington-rbl",
    "venue": "Histon & Impington RBL",
    "town": "Histon, Cambridge",
@@ -1142,7 +1114,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 39,
+   "rank": 38,
    "id": "letchworth-cons",
    "venue": "Letchworth Cons",
    "town": "Letchworth",
@@ -1170,7 +1142,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 40,
+   "rank": 39,
    "id": "shoebury-cons",
    "venue": "Shoebury Cons",
    "town": "Shoeburyness",
@@ -1198,7 +1170,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 41,
+   "rank": 40,
    "id": "sidcup-wmc",
    "venue": "Sidcup WMC",
    "town": "Sidcup",
