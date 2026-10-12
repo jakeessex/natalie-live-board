@@ -47497,7 +47497,7 @@
     "venueType": "Social Club",
     "miles": 53,
     "prospect": false,
-    "badge": "awaiting",
+    "badge": "quoted",
     "messages": [
       {
         "side": "us",
@@ -47508,18 +47508,42 @@
         "body": "Hi,\n\nI'm Natalie, I handle bookings for Jake Essex.\n\nJake would go down really well at Russell Park Club, and he'd love to come\nand perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n- Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 -\nif a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a11b01dbce636e8",
         "threadId": "1a11b01d87eabb09"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-12T17:51:16Z",
+        "from": "m.brant@live.co.uk",
+        "subject": "Re: Jake Essex for Russell Park Club?",
+        "body": "Hi Natalie thank you for your email we have a budget so please could you forward the fee for the evening entertainment.\n\nKind regards\n\nMalcolm",
+        "msgId": "1a1313d8ac190216",
+        "threadId": "1a11b01d87eabb09"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-12T18:37:39Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Re: Jake Essex for Russell Park Club?",
+        "body": "Hi Malcolm,\n\nThanks for coming back to me.\n\nJake is £300 cash for the evening, two one hour sets. Or you can book four dates at £250 a night. If you'd like to see how it goes first, the final three dates can be held provisionally until after the first performance. Own PA, no deposit.\n\nFree Saturdays in 2027 include 2 Jan, 9 Jan, 6 Mar, 27 Mar, 22 May and 5 Jun.\n\nYou can hear Jake at www.jakeessex.co.uk\n\nJust let me know which dates suit and I'll pencil them in.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a13167f84358e6f",
+        "threadId": "1a11b01d87eabb09"
       }
     ],
     "addedAt": "2026-09-23",
     "lat": 52.13987,
     "lng": -0.45441,
     "hasThread": true,
-    "replied": "no",
+    "replied": "yes — Malcolm 12 Oct 18:51 BST asked evening fee (has budget)",
     "firstPitch": "8 Oct 2026",
     "subject": "Jake Essex for Russell Park Club?",
-    "lastContact": "2026-10-08",
-    "lastContactSrc": "us 1a11b01dbce636e8",
-    "statusNote": "thu-8-oct cold WAVE B SENT_OK 1a11b01dbce636e8 ~11:14 London thread 1a11b01d87eabb09 · awaiting · Gmail-verified · folded 1500 8 Oct · was prospect"
+    "lastContact": "2026-10-12",
+    "lastContactSrc": "us 1a13167f84358e6f",
+    "statusNote": "quoted £300 cash 2×1hr (£250 x4, last 3 held provisionally until after first) · Them Malcolm ~18:51 BST Mon 12 Oct 1a1313d8ac190216: has a budget, asked fee for the evening · Us quote ~19:37 BST 1a13167f84358e6f · thread 1a11b01d87eabb09 · day-7 chase Mon 19 Oct (Haggle) · Gmail-verified · folded 1938 12 Oct",
+    "quotedFee": 300,
+    "contactName": "Malcolm",
+    "callExclude": "waiting-on-them",
+    "callHoldUntil": "2026-10-19"
   },
   {
     "id": "pot-weathercock-inn-the-mk17-8sh",
@@ -63523,7 +63547,7 @@
     "town": "Southfleet DA13",
     "postcode": "",
     "website": "",
-    "contactName": "",
+    "contactName": "Chris Bishop",
     "phone": null,
     "needPhone": true,
     "email": "svcsecretary@outlook.com",
@@ -63539,16 +63563,39 @@
         "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nSouthfleet Village Club is just the sort of club Jake enjoys, and he'd love to come and perform for your members.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s - Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 - if a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a116dc356bf895c",
         "threadId": "1a116dc352cb8d85"
+      },
+      {
+        "side": "them",
+        "label": "Their enquiry (website form)",
+        "at": "2026-10-12T18:31:50Z",
+        "from": "svcsecretary@outlook.com",
+        "subject": "Gig enquiry, Jake Essex",
+        "body": "Website enquiry (jakeessex.co.uk form via FormSubmit)\n\n*name: *\n\nChris Bishop\n\n------------------------------\n*email: *\n\nsvcsecretary@outlook.com\n\n------------------------------\n*message: *\n\nHi Jake,\n\nI would like to enquire about 1 January 2027 8:30pm at SOUTHFLEET VILLAGE CLUB, WARREN ROAD, SOUTHFLEET, KENT, DA13 9NN.\n\nName: Chris Bishop\nEmail / phone: svcsecretary@outlook.com\nShow: Not sure\n\nHi, we are a small social club, probably seating 40 people, we dont have a stage but there is room for a set up and we have regular live music. we normally have performers do a Saturday from 8-30 -9.30pm and then 10 -11pm. Just need to now how much you would charge and if its within our budget we will set a date in 2027 for you where you have availability\n\n------------------------------\n\nSubmitted at Mon, Oct 12, 2026 6:31 PM (UTC)",
+        "msgId": "1a13162a78a44208",
+        "threadId": "1a13162a78a44208"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-12T18:37:37Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Southfleet Village Club",
+        "body": "Hi Chris,\n\nThanks so much for getting in touch about Southfleet Village Club.\n\nJake is £300 cash for two one hour sets, so your 8:30 to 9:30 and 10 to 11pm slots are perfect. Or you can book four dates at £250 a night. Same price Friday or Saturday. Own PA, no deposit, and he only needs a bit of floor space.\n\nFriday 1 January 2027 is free, so that works. Other free Saturdays in 2027 include 2 Jan, 9 Jan, 6 Mar, 27 Mar, 22 May and 5 Jun.\n\nYou can hear Jake at www.jakeessex.co.uk\n\nJust let me know which dates suit and I'll pencil them in.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a13167f03af0cd4",
+        "threadId": "1a13167f03af0cd4"
       }
     ],
     "hasThread": true,
-    "replied": "no",
+    "replied": "yes — Chris Bishop website enquiry 12 Oct 19:31 BST (1 Jan 2027 8:30pm, asked fee)",
     "firstPitch": "7 Oct 2026",
-    "badge": "awaiting",
+    "badge": "quoted",
     "subject": "Jake Essex for Southfleet Village Club?",
-    "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a116dc356bf895c",
-    "statusNote": "wed-7-oct cold natalie-cold-waveE SENT_OK 1a116dc356bf895c ~15:54 London thread 1a116dc352cb8d85 · awaiting · Gmail-verified · folded 1600 audit 7 Oct"
+    "lastContact": "2026-10-12",
+    "lastContactSrc": "us 1a13167f03af0cd4",
+    "statusNote": "quoted £300 cash 2×1hr (£250 x4) · Them Chris Bishop website enquiry ~19:31 BST Mon 12 Oct 1a13162a78a44208 (FormSubmit): Fri 1 Jan 2027 8:30pm, ~40 seats, sets 8:30–9:30 + 10–11, asked fee · Us quote ~19:37 BST 1a13167f03af0cd4 (new thread): 1 Jan 2027 free + 2027 Sats · Warren Road, Southfleet DA13 9NN · after cold 7 Oct 1a116dc356bf895c · day-7 chase Mon 19 Oct (Haggle) · Gmail-verified · folded 1938 12 Oct",
+    "quotedFee": 300,
+    "callExclude": "waiting-on-them",
+    "callHoldUntil": "2026-10-19"
   },
   {
     "id": "cold-20261007-rose-crown-bexhill-on-sea-tn39",
