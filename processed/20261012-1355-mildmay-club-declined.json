@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "mildmay-club",
+        "email": "enquiries@mildmay.club",
+        "name": "Mildmay Club",
+        "town": "London",
+        "contactName": "Iona Dudley"
+      },
+      "badge": "declined",
+      "statusNote": "Declined Mon 12 Oct 13:55 BST on set-rate members' bar fee after Us counter 17 Sep + day-7 chase 28 Sep. No thank-you/chase/re-cold. NEVER_AGAIN.",
+      "messages": [
+        {
+          "side": "them",
+          "label": "Them \u2014 decline (set rate)",
+          "at": "2026-10-12T12:55:30Z",
+          "from": "enquiries@mildmay.club",
+          "to": "jakeessexenquiries@gmail.com",
+          "subject": "Re: Jake Essex for Mildmay Club?",
+          "body": "Thanks for the offer. We have a set rate that we pay all of the performers in our members' bar. Sorry, that doesn't work for Jake on this occasion. Best of luck with everything.",
+          "msgId": "1a1302f39360c9d1",
+          "threadId": "1a0adfb4ae07faf3"
+        }
+      ]
+    }
+  ]
+}
