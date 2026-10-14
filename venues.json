@@ -38071,7 +38071,7 @@
     "id": "pot-ye-olde-fighting-cocks-al3-4he",
     "name": "Ye Olde Fighting Cocks",
     "town": "St Albans",
-    "phone": "01727 869152",
+    "phone": "+441727869152",
     "email": "reservations@fightingcockssa.com",
     "postcode": "AL3 4HE",
     "website": "https://www.fightingcockssa.com/",
@@ -38079,7 +38079,7 @@
     "miles": 31,
     "prospect": false,
     "prospectStatus": null,
-    "badge": "awaiting",
+    "badge": "replied-interested",
     "messages": [
       {
         "side": "us",
@@ -38097,6 +38097,16 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex for Ye Olde Fighting Cocks.\n\nHe's from Essex, own PA, no deposit, from £250 for two one hour sets. Saturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a13996e59b19d84",
         "threadId": "1a0d37a1efdf651d"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-14T15:15:20Z",
+        "from": "reservations@fightingcockssa.com",
+        "subject": "Re: Jake Essex for Ye Olde Fighting Cocks?",
+        "body": "Hi Natalie,\n\nRegarding any music inquiries, please urge people to send us a DM on\nInstagram @fightingcockssa and ask for Kaspar. He is the music manager here\nat the pub who books all the gigs.\n\nBest regards,\n\nYOFC Team",
+        "msgId": "1a13afbab8cd0e08",
+        "threadId": "1a0d37a1efdf651d"
       }
     ],
     "addedAt": "2026-09-23",
@@ -38107,8 +38117,10 @@
     "subject": "Jake Essex for Ye Olde Fighting Cocks?",
     "firstPitch": "24 Sep 2026 ~14:06 Europe/London",
     "lastContact": "2026-10-14",
-    "lastContactSrc": "us 1a13996e59b19d84",
-    "statusNote": "wed-14-oct FU waveA SENT_OK 1a13996e59b19d84 ~09:45 London thread 1a0d37a1efdf651d · awaiting · Gmail-verified · folded lag-watch 10:50"
+    "lastContactSrc": "them 1a13afbab8cd0e08",
+    "statusNote": "wed-14-oct FU waveA SENT_OK 1a13996e59b19d84 ~09:45 London thread 1a0d37a1efdf651d · awaiting · Gmail-verified · folded lag-watch 10:50 · Them YOFC Team ~16:15 London 1a13afbab8cd0e08: music enquiries → Instagram DM @fightingcockssa ask for Kaspar (music manager) · badge replied-interested · Wait · no Us reply this pass (Bookings may DM) · Gmail-verified · folded 1600 audit 14 Oct",
+    "replied": "yes — redirect music to IG DM @fightingcockssa Kaspar",
+    "needPhone": false
   },
   {
     "id": "pot-boot-the-al3-5dg",
@@ -70510,6 +70522,16 @@
         "body": "Hi,\n\nNatalie here. I look after bookings for Jake Essex.\n\nJake would love to come and perform at The Hound in Chiswick, and I think he'd be a great fit.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
         "msgId": "1a139ed4ee64743e",
         "threadId": "1a139ed3a88b1c30"
+      },
+      {
+        "side": "them",
+        "label": "Automatic reply",
+        "at": "2026-10-14T10:20:35Z",
+        "from": "info@thehound.london",
+        "subject": "Automatic reply: Jake Essex for The Hound?",
+        "body": "Hi there,\n\nThank you so much for your enquiry. We'll aim to get back to you as soon as possible.\n\nIn the meantime, please see below for answers to frequently asked questions, which may help with your query.\nHow do I make a booking?\nYou can make a booking by clicking this link <https://www.sevenrooms.com/explore/thehounduk/reservations/create/search>. This includes bookings for our Pub Floor, Front Room, Private Dining Room, Green Room and Courtyard.\nHow do I make an event enquiry?\nThe majority of reservations can be made online. For semi-private or exclusive hire of The Hound, please complete our Event Enquiries Form <https://jksrestaurant.tripleseat.com/party_request/37402> and a member of the Events team will get back to you.\n...\n\nMany thanks,\n\nThe Hound team",
+        "msgId": "1a139eda7e7a7615",
+        "threadId": "1a139eda7e7a7615"
       }
     ],
     "hasThread": true,
@@ -70517,9 +70539,9 @@
     "firstPitch": "14 Oct 2026",
     "subject": "Jake Essex for The Hound?",
     "lastContact": "2026-10-14",
-    "lastContactSrc": "us 1a139ed4ee64743e",
+    "lastContactSrc": "them 1a139eda7e7a7615",
     "badge": "awaiting",
-    "statusNote": "wed-14-oct cold waveB SENT_OK 1a139ed4ee64743e ~11:20 London thread 1a139ed3a88b1c30 · awaiting · Gmail-verified · folded lag-watch 12:44"
+    "statusNote": "wed-14-oct cold waveB SENT_OK 1a139ed4ee64743e ~11:20 London thread 1a139ed3a88b1c30 · awaiting · Gmail-verified · folded lag-watch 12:44 · Them auto-reply The Hound ~11:20 London 1a139eda7e7a7615 (restaurant FAQ / SevenRooms — not music lock) · awaiting · Gmail-verified · folded 1600 audit 14 Oct"
   },
   {
     "id": "cold-20261014-the-beau-nash-tavern-tunbridge-wells-tn4",
@@ -70675,6 +70697,16 @@
         "body": "Hi,\n\nNatalie here. I look after bookings for Jake Essex.\n\nJake would love to come and perform at The Cock Inn in Sarratt, and I think he'd be a great fit.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
         "msgId": "1a13a2dea475aa3f",
         "threadId": "1a13a2db8836f0e3"
+      },
+      {
+        "side": "them",
+        "label": "Auto-ack",
+        "at": "2026-10-14T11:31:06Z",
+        "from": "thecockinnatsarratt@gmail.com",
+        "subject": "We have received your enquiry! Re: Jake Essex for The Cock Inn?",
+        "body": "Hi there!,\n\nThanks so much for your email — we've got your enquiry and everything you sent through.\nWe're looking into it now and will get back to you as quickly as we can.\nLook forward to speaking to you again soon!\n\nThe Team @ The Cock Inn",
+        "msgId": "1a13a2e2f8eb76f7",
+        "threadId": "1a13a2e2f8eb76f7"
       }
     ],
     "hasThread": true,
@@ -70682,9 +70714,9 @@
     "firstPitch": "14 Oct 2026",
     "subject": "Jake Essex for The Cock Inn?",
     "lastContact": "2026-10-14",
-    "lastContactSrc": "us 1a13a2dea475aa3f",
+    "lastContactSrc": "them 1a13a2e2f8eb76f7",
     "badge": "awaiting",
-    "statusNote": "wed-14-oct cold waveC SENT_OK 1a13a2dea475aa3f ~12:30 London thread 1a13a2db8836f0e3 · awaiting · Gmail-verified · folded lag-watch 12:44"
+    "statusNote": "wed-14-oct cold waveC SENT_OK 1a13a2dea475aa3f ~12:30 London thread 1a13a2db8836f0e3 · awaiting · Gmail-verified · folded lag-watch 12:44 · Them auto-ack Cock Inn Team ~12:31 London 1a13a2e2f8eb76f7 · awaiting · Gmail-verified · folded 1600 audit 14 Oct"
   },
   {
     "id": "cold-20261014-the-old-cross-tavern-hertford-sg14",
@@ -71477,5 +71509,170 @@
     "lastContactSrc": "us 1a13ae79ff6baed1",
     "badge": "awaiting",
     "statusNote": "wed-14-oct cold waveE SENT_OK 1a13ae79ff6baed1 ~15:53 London thread 1a13ae78b416fe3a · awaiting · Gmail-verified · folded lag-watch 1551"
+  },
+  {
+    "id": "cold-20261014-the-railway-arms-saffron-walden-cb11",
+    "name": "The Railway Arms",
+    "town": "Saffron Walden CB11",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@railwayarms.co.uk",
+    "addedAt": "2026-10-14T14:56:23Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-14T14:56:23Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Railway Arms?",
+        "body": "Hi,\n\nNatalie here. I look after bookings for Jake Essex.\n\nJake would love to come and perform at The Railway Arms in Saffron Walden, and I think he'd be a great fit.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a13aea1d3ae3ed5",
+        "threadId": "1a13aea01439f582"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "14 Oct 2026",
+    "subject": "Jake Essex for The Railway Arms?",
+    "lastContact": "2026-10-14",
+    "lastContactSrc": "us 1a13aea1d3ae3ed5",
+    "badge": "awaiting",
+    "statusNote": "wed-14-oct cold waveE SENT_OK 1a13aea1d3ae3ed5 ~15:56 London thread 1a13aea01439f582 · awaiting · Gmail-verified · folded 1600 audit 14 Oct"
+  },
+  {
+    "id": "cold-20261014-the-marquis-of-lorne-stevenage-sg1",
+    "name": "The Marquis of Lorne",
+    "town": "Stevenage SG1",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "contact@marquisoflornestevenage.co.uk",
+    "addedAt": "2026-10-14T15:00:36Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-14T15:00:36Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Marquis of Lorne?",
+        "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nThe Marquis of Lorne in Stevenage would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a13aedfa0c95ea4",
+        "threadId": "1a13aede545fbe1f"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "14 Oct 2026",
+    "subject": "Jake Essex for The Marquis of Lorne?",
+    "lastContact": "2026-10-14",
+    "lastContactSrc": "us 1a13aedfa0c95ea4",
+    "badge": "awaiting",
+    "statusNote": "wed-14-oct cold waveE SENT_OK 1a13aedfa0c95ea4 ~16:00 London thread 1a13aede545fbe1f · awaiting · Gmail-verified · folded 1600 audit 14 Oct"
+  },
+  {
+    "id": "cold-20261014-the-warwick-arms-clacton-on-sea-co15-1nj",
+    "name": "The Warwick Arms",
+    "town": "Clacton-on-Sea CO15 1NJ",
+    "postcode": "CO15 1NJ",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "wrollingson@hotmail.co.uk",
+    "addedAt": "2026-10-14T15:05:35Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-14T15:05:35Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Warwick Arms?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for The Warwick Arms in Clacton-on-Sea, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a13af28cc7c0e45",
+        "threadId": "1a13af2713315820"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "14 Oct 2026",
+    "subject": "Jake Essex for The Warwick Arms?",
+    "lastContact": "2026-10-14",
+    "lastContactSrc": "us 1a13af28cc7c0e45",
+    "badge": "awaiting",
+    "statusNote": "wed-14-oct cold waveE SENT_OK 1a13af28cc7c0e45 ~16:05 London thread 1a13af2713315820 · awaiting · Gmail-verified · folded 1600 audit 14 Oct"
+  },
+  {
+    "id": "cold-20261014-the-swan-inn-felsted-cm6",
+    "name": "The Swan Inn (Felsted)",
+    "town": "Felsted CM6",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "bookings@theswaninnfelsted.co.uk",
+    "addedAt": "2026-10-14T15:11:35Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-14T15:11:35Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Swan Inn?",
+        "body": "Hi,\n\nI'm Natalie, looking after bookings for Jake Essex.\n\nThe Swan Inn in Felsted would suit Jake well, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a13af807b2662ae",
+        "threadId": "1a13af7f08c1170d"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "14 Oct 2026",
+    "subject": "Jake Essex for The Swan Inn?",
+    "lastContact": "2026-10-14",
+    "lastContactSrc": "us 1a13af807b2662ae",
+    "badge": "awaiting",
+    "statusNote": "wed-14-oct cold waveE SENT_OK 1a13af807b2662ae ~16:11 London thread 1a13af7f08c1170d · awaiting · Gmail-verified · folded 1600 audit 14 Oct"
+  },
+  {
+    "id": "cold-20261014-three-ways-cowlinge-cb8",
+    "name": "Three Ways",
+    "town": "Cowlinge CB8",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@thethreewayspub.co.uk",
+    "addedAt": "2026-10-14T15:16:17Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-14T15:16:17Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Three Ways?",
+        "body": "Hi,\n\nNatalie here. I look after bookings for Jake Essex.\n\nJake would love to come and perform at Three Ways in Cowlinge, and I think he'd be a great fit.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a13afc54170afc9",
+        "threadId": "1a13afc395bcf31d"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "14 Oct 2026",
+    "subject": "Jake Essex for Three Ways?",
+    "lastContact": "2026-10-14",
+    "lastContactSrc": "us 1a13afc54170afc9",
+    "badge": "awaiting",
+    "statusNote": "wed-14-oct cold waveE SENT_OK 1a13afc54170afc9 ~16:16 London thread 1a13afc395bcf31d · awaiting · Gmail-verified · folded 1600 audit 14 Oct"
   }
 ]
