@@ -71674,5 +71674,38 @@
     "lastContactSrc": "us 1a13afc54170afc9",
     "badge": "awaiting",
     "statusNote": "wed-14-oct cold waveE SENT_OK 1a13afc54170afc9 ~16:16 London thread 1a13afc395bcf31d · awaiting · Gmail-verified · folded 1600 audit 14 Oct"
+  },
+  {
+    "id": "cold-20261014-legends-live-lounge-broadstairs-ct10",
+    "name": "Legends Live Lounge",
+    "town": "Broadstairs CT10",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@legendslivelounge.com",
+    "addedAt": "2026-10-14T15:21:38Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-14T15:21:38Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Legends Live Lounge?",
+        "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nLegends Live Lounge in Broadstairs would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a13b013adf14629",
+        "threadId": "1a13b0121892e8f6"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "14 Oct 2026",
+    "subject": "Jake Essex for Legends Live Lounge?",
+    "lastContact": "2026-10-14",
+    "lastContactSrc": "us 1a13b013adf14629",
+    "badge": "awaiting",
+    "statusNote": "wed-14-oct cold waveE SENT_OK 1a13b013adf14629 ~16:21 London thread 1a13b0121892e8f6 · awaiting · Gmail-verified · folded 1600 audit 14 Oct"
   }
 ]
