@@ -2459,11 +2459,11 @@
     "id": "rushden-cons",
     "name": "Rushden Cons",
     "town": "Rushden",
-    "badge": "fully-booked-on-file",
+    "badge": "replied-interested",
     "phone": "+441933312445",
     "needPhone": false,
     "email": "enquiries@rushdenconsclub.co.uk",
-    "replied": "yes — 29 Aug 2026 (Dayn)",
+    "replied": "yes — 14 Oct 2026 21:14 BST (Steve) registry form ask",
     "firstPitch": "27 Aug 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
     "followUps": "0 · last —",
@@ -2500,12 +2500,25 @@
         "from": "daynpuma@outlook.com",
         "subject": "Live music — Jake Essex",
         "body": "Will do. Have a good Day\nRegards,\nDayn"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-14T20:14:49Z",
+        "from": "enquiries@rushdenconsclub.co.uk",
+        "subject": "Re: Live music — Jake Essex",
+        "body": "Hi Natalie,\n\nThanks for getting in touch and for your interest in playing at Rushden\nCons Club.\n\nTo make sure every act is treated fairly, we ask all bands to complete our\nentertainment registry:\nhttps://rushdenconsclub.co.uk/entertainment-registry/\n\nOnce you’ve done that, we will review your response and get back to you.\n\nKind regards,\nSteve\nEmail: enquiries@rushdenconsclub.co.uk\nPhone: 01933 312445\nWebsite: www.rushdenconsclub.co.uk",
+        "msgId": "1a13c0dd3572bd57",
+        "threadId": "1a043ac500a6cb3d"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "lastContact": "2026-08-31",
-    "lastContactSrc": "them no-msgId"
+    "lastContact": "2026-10-14",
+    "lastContactSrc": "them 1a13c0dd3572bd57",
+    "contactName": "Steve",
+    "postcode": "NN10 0QX",
+    "statusNote": "replied-interested · Them Steve ~21:14 BST Wed 14 Oct 1a13c0dd3572bd57: all acts must complete entertainment registry https://rushdenconsclub.co.uk/entertainment-registry/ then club reviews and calls back · form (8 Qs incl. fee band for 2×45, mobile) = Jake Gate · Dayn (Aug) still on file 2027 · FAR Northants · no reply sent · thread 1a043ac500a6cb3d · Gmail-verified · folded 0808 15 Oct"
   },
   {
     "id": "aldridge-social-club",

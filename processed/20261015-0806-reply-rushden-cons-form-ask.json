@@ -1,0 +1,31 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "name": "Rushden Cons Club",
+        "town": "Rushden",
+        "email": "enquiries@rushdenconsclub.co.uk",
+        "phone": "01933312445",
+        "postcode": "NN10 0QX",
+        "contactName": "Steve"
+      },
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-10-14T20:14:49Z",
+          "from": "enquiries@rushdenconsclub.co.uk",
+          "subject": "Re: Live music \u2014 Jake Essex",
+          "body": "Hi Natalie,\n\nThanks for getting in touch and for your interest in playing at Rushden Cons Club.\n\nTo make sure every act is treated fairly, we ask all bands to complete our entertainment registry:\nhttps://rushdenconsclub.co.uk/entertainment-registry/\n\nOnce you\u2019ve done that, we will review your response and get back to you.\n\nKind regards,\nSteve",
+          "gmailThreadId": "1a043ac500a6cb3d",
+          "label": "Their reply",
+          "msgId": "1a13c0dd3572bd57"
+        }
+      ],
+      "statusNote": "replied-interested \u00b7 Steve registry form ask Wed 14 Oct 21:14 BST \u00b7 Jake Gate to fill form \u00b7 Dayn still on file 2027 \u00b7 FAR Northants \u00b7 no reply/send \u00b7 Bookings MASTER weekday fold Thu 15 ~08:06",
+      "notes": "Form ask only. Do not re-cold. Form = Jake Gate.",
+      "badge": "replied-interested"
+    }
+  ],
+  "note": "Weekday gig inbox watch Thu 15 Oct ~08:06. inbox JSON only \u2014 no venues.json/index.html write, no build/sync. CONTACTED already overnight; MASTER/tracker weekday fold now. Dweet door blocked this run \u2014 Nat Board please ingest inbox file."
+}
