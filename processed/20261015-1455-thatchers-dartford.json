@@ -1,0 +1,25 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "name": "Dartford Conservative Club",
+    "email": "dartfordconservativeclub@gmail.com",
+    "id": "dartford-conservative-club"
+   },
+   "badge": "replied-interested",
+   "statusNote": "CLUB CLOSED (Dartford Conservative Club, 46 Spital St DA1) · Richard John now Steward of a NEW club in Ashford, name awaited · Us Natalie 13:59 BST 1a13fa5d88f19c2c: prices + free Saturdays sent for the new club, asked club name + address · warm, not a lock · no Ashford row until name known · no chase until he replies · Gmail-verified · folded 1542 15 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-15T13:59:55+01:00",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Re: Jake Essex for Dartford Conservative Club?",
+     "body": "Hi Richard,\n\nSo you have everything in one place, here are Jake's prices and free Saturdays for the new club.\n\nPrices (cash on the night, own PA, no deposit):\nTwo 1 hour sets: £300 for a single night, or £250 a night if you book four dates.\nThree sets: £350 for a single night, or £300 a night if you book four dates.\n\nFree Saturdays:\n2026: 7 November\n2027: 2 and 9 January, 6 and 27 March, 22 May, 5 June, 24 and 31 July, 11 September, 16 October, 6 and 20 November, 11 and 18 December\n\nThey're going quickly with block bookings, so just let me know which dates you'd like and the club name and address, and I'll lock them in.\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a13fa5d88f19c2c",
+     "threadId": "1a0a62ab9ff329cb"
+    }
+   ]
+  }
+ ]
+}
