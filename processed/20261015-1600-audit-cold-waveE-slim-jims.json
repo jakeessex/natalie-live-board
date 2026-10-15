@@ -1,0 +1,27 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261015-slim-jim-s-liquor-store-islington",
+    "name": "Slim Jim's Liquor Store (Islington)",
+    "town": "Islington",
+    "email": "info@slimjimsliquorstore.com"
+   },
+   "statusNote": "cold waveE 15 Oct SENT_OK 1a14025d3bf4c179 ~16:19 London thread 1a1402329c55341b \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1600 audit 15 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-15T15:19:42Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Slim Jim's Liquor Store?",
+     "body": "Hi,\n\nNatalie here. I look after bookings for Jake Essex.\n\nJake would love to come and perform at Slim Jim's Liquor Store in Islington, and I think he'd be a great fit.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a14025d3bf4c179",
+     "gmailThreadId": "1a1402329c55341b",
+     "msgId": "1a14025d3bf4c179",
+     "threadId": "1a1402329c55341b"
+    }
+   ]
+  }
+ ]
+}
