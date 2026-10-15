@@ -1,0 +1,44 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "form-20261013-fox-burrow-grange-care-home-colchester-co2-7nl",
+    "email": "Tanja.niemi-wilkins@outlookcare.org.uk",
+    "name": "Fox Burrow Grange Care Home (Colchester)",
+    "town": "Colchester",
+    "postcode": "CO2 7NL"
+   },
+   "messages": [
+    {
+     "side": "us",
+     "label": "Sent",
+     "at": "2026-10-15T16:18:48Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex - Fox Burrow Grange, Mon 21 December",
+     "body": "Hi Tanja,\n\nThanks for the chat just now. Just confirming I'll be performing at Fox\nBurrow Grange on Monday 21 December 2026, for one hour from 3:15pm to\n4:15pm, at a fee of £150.\n\nI bring my own PA system, I have £10m public liability insurance, and all\nmy equipment is PAT tested.\n\nIf anything changes, just give me a call or drop me an email.\n\nLooking forward to it.\n\nJake Essex\n07778229958\nwww.jakeessex.co.uk"
+    }
+   ]
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "id": "pot-penton-park-social-club-kt16-8qg",
+    "email": "julieparker476@googlemail.com",
+    "name": "Penton Park Social Club",
+    "town": "Chertsey",
+    "postcode": "KT16 8QG"
+   },
+   "messages": [
+    {
+     "side": "us",
+     "label": "Sent",
+     "at": "2026-10-15T16:48:27Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Penton park entertainment",
+     "body": "Hi Julie and Ann,\n\nThank you, that's lovely. Just confirming Jake Essex is booked for Penton\nPark Community & Social Club on Saturday 10 April 2027, three 45-minute\nsets, at a fee of £350.\n\nJake brings his own PA system, has £10m public liability insurance, and all\nhis equipment is PAT tested. I'll be in touch nearer the time to confirm\nstart times and arrival.\n\nIf anything changes in the meantime, just reply here.\n\nKind regards,\nNatalie\nBooking agent for Jake Essex"
+    }
+   ]
+  }
+ ]
+}
