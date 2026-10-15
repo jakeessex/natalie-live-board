@@ -71268,12 +71268,19 @@
         "threadId": "1a13f1ed984d2f45"
       }
     ],
-    "badge": "quoted",
+    "badge": "locked",
     "lastContact": "2026-10-15",
     "lastContactSrc": "us 1a13f1ed984d2f45",
     "callExclude": true,
-    "statusNote": "Them Tanja second website form ~11:24 BST Thu 15 Oct 1a13f175ce7fa151: Mon 21 Dec 2026 3pm Colchester, 2 hour show, wants quote ASAP (Christmas week) · Us quote ~11:32 BST 1a13f1ed984d2f45 (said yesterday's reply may be in junk): 1 hour £150 / 2 hour (2x1h) £300, own PA, PAT, £10m PL; reply to lock · awaiting Tanja pick · NOT locked · Gmail-verified · folded 1145 15 Oct · Them Tanja Niemi-Wilkins website enquiry ~10:49 BST Tue 13 Oct 1a134aab32f1aa27 (FormSubmit): Mon 21 Dec 2026 3:15pm, 1-hour show, care home, limited budget, saw Jake at Warm & Toasty Shrub End · WAITING ON JAKE fee/date call (asked ~10:50 13 Oct) · no reply sent yet · off Call deck until Jake decides · Gmail-verified · folded 1600 audit 13 Oct · Us quote SENT 1a139fdf57de5ba7 ~11:38 London: Mon 21 Dec 2026 3:15pm 1-hour show £150 own PA · awaiting Tanja confirm · NOT locked · Gmail-verified · folded lag-watch 12:44",
-    "quotedFee": 150
+    "statusNote": "LOCKED Mon 21 Dec 2026 £150 · 1hr 15:15–16:15 · Jake phone confirm 15 Oct · Them Tanja second website form ~11:24 BST Thu 15 Oct 1a13f175ce7fa151: Mon 21 Dec 2026 3pm Colchester, 2 hour show, wants quote ASAP (Christmas week) · Us quote ~11:32 BST 1a13f1ed984d2f45 (said yesterday's reply may be in junk): 1 hour £150 / 2 hour (2x1h) £300, own PA, PAT, £10m PL; reply to lock · awaiting Tanja pick · NOT locked · Gmail-verified · folded 1145 15 Oct · Them Tanja Niemi-Wilkins website enquiry ~10:49 BST Tue 13 Oct 1a134aab32f1aa27 (FormSubmit): Mon 21 Dec 2026 3:15pm, 1-hour show, care home, limited budget, saw Jake at Warm & Toasty Shrub End · WAITING ON JAKE fee/date call (asked ~10:50 13 Oct) · no reply sent yet · off Call deck until Jake decides · Gmail-verified · folded 1600 audit 13 Oct · Us quote SENT 1a139fdf57de5ba7 ~11:38 London: Mon 21 Dec 2026 3:15pm 1-hour show £150 own PA · awaiting Tanja confirm · NOT locked · Gmail-verified · folded lag-watch 12:44",
+    "quotedFee": 150,
+    "lockedFee": 150,
+    "lockedNights": 1,
+    "lockedDate": "2026-12-21",
+    "dates": [
+      "2026-12-21"
+    ],
+    "lockedNote": "OWN LOCK Mon 21 Dec 2026 · £150 · 1 hour 15:15–16:15 · Fox Burrow Grange care home Colchester CO2 7NL · Tanja tanja.niemi-wilkins@outlookcare.org.uk · Jake confirmed by phone 15 Oct (no Gmail msgId) · not Choice"
   },
   {
     "id": "cold-20261014-the-wharf-crossways-dartford-da2",
