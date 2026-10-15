@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "event": "lock",
+   "supersedes": "20261015-1207-penton-lock.json",
+   "venue": {
+    "name": "Penton Park Community & Social Club",
+    "email": "julieparker476@googlemail.com",
+    "id": "pot-penton-park-social-club-kt16-8qg",
+    "town": "Chertsey KT16"
+   },
+   "lock": {
+    "date": "2027-04-10",
+    "day": "Sat",
+    "fee": 350,
+    "sets": "3x45",
+    "approvedBy": "Jake 'Lock it' via JEM 12:09 Thu 15 Oct 2026",
+    "confirmationSent": false
+   },
+   "badge": "locked",
+   "cashPending": false,
+   "money": {
+    "total": 9825,
+    "nights": 35,
+    "rows": 28
+   },
+   "statusNote": "LOCKED Sat 10 Apr 2027 £350 3x45 cash; Choice question cleared (CL TBA is Fri 9 Apr); confirmation card awaiting Jake; Fri 16 chase cancelled",
+   "messages": []
+  }
+ ]
+}
