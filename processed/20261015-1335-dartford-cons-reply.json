@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "name": "Dartford Conservative Club",
+    "email": "dartfordconservativeclub@gmail.com",
+    "id": "dartford-conservative-club"
+   },
+   "badge": "replied-interested",
+   "statusNote": "CLUB CLOSED; Richard John now Steward of new Ashford club; warm, awaiting club name; no chase until he replies",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-15T13:26:59+01:00",
+     "from": "dartfordconservativeclub@gmail.com",
+     "subject": "Re: Jake Essex for Dartford Conservative Club?",
+     "body": "Hi\nThe Dartford conservative Club has closed down. I am the instructed manager for the old club. I am now the Steward of a new club in Ashford. Does Jake travel to this area ?\nRichard John",
+     "msgId": "1a13f87e0ec92a5c",
+     "threadId": "1a0a62ab9ff329cb"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-15T13:34:37+01:00",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Dartford Conservative Club?",
+     "body": "Hi Richard,\n\nSorry to hear Dartford Conservative Club has closed. Congrats on the new steward role.\n\nYes, Jake travels to Ashford no problem. Saturdays are his best nights for that.\n\nWhat's the name of the new club, and which Ashford is it (Kent or Middlesex)? Once I know that, I can send you some free Saturdays.\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a13f8eac5101387",
+     "threadId": "1a0a62ab9ff329cb"
+    }
+   ]
+  }
+ ]
+}
