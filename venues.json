@@ -10442,6 +10442,7 @@
   },
   {
     "id": "walton-cons-thames",
+    "paid": true,
     "name": "Walton Cons (Thames)",
     "town": "",
     "badge": "locked",
@@ -18864,6 +18865,7 @@
   },
   {
     "id": "warm-and-toasty-shrub-end-social-centre",
+    "paid": true,
     "name": "Warm and Toasty / Shrub End Social Centre",
     "town": "Colchester CO3 4SA",
     "badge": "locked",

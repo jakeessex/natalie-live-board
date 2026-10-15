@@ -59,6 +59,8 @@ var Board = (() => {
     isBounceVenue: () => isBounceVenue,
     isLatestVenue: () => isLatestVenue,
     isLockedRecord: () => isLockedRecord,
+    isGigPaid: () => isGigPaid,
+    setGigPaid: () => setGigPaid,
     isRepliedRow: () => isRepliedRow,
     isStockUsCopy: () => isStockUsCopy,
     lastCalledLabel: () => lastCalledLabel,
@@ -98,8 +100,7 @@ var Board = (() => {
   var BOARD_STAMP = "22 Sep 2026";
   var PASSWORD = "natbooksjake";
   var CASH_TARGET = 1e4;
-  var COLLECTED_CASH = 500;
-  var COLLECTED_SHOWS = 2;
+  var PAID_KEY = "nat-paid-v1";
   var MONTH_IDX = {
     jan: 0,
     january: 0,
@@ -1196,37 +1197,84 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     if (filter === "potential") return "Closest first. With an email, then phone only. Already on the book means they are not here.";
     return "Said no, on file, bounce, or not in play. Leave them.";
   }
+  function isChoiceLive(venue) {
+    if (!venue) return false;
+    const src = String(venue.source || venue.bookedVia || "").toLowerCase();
+    if (src === "cl" || src === "choice" || src === "choice-live" || src === "choice live") return true;
+    return venue.choiceLive === true;
+  }
+  function paidOverrides() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(PAID_KEY) || "{}");
+      return raw && typeof raw === "object" ? raw : {};
+    } catch (e) {
+      return {};
+    }
+  }
+  function isGigPaid(venue) {
+    if (!venue) return false;
+    const over = paidOverrides();
+    if (Object.prototype.hasOwnProperty.call(over, venue.id)) return !!over[venue.id];
+    if (venue.paid === true) return true;
+    if (venue.paid === false) return false;
+    return /\bPAID\b/.test(`${venue.lockedNote || ""} ${venue.statusNote || ""}`);
+  }
+  function setGigPaid(id, paid) {
+    const over = paidOverrides();
+    over[id] = !!paid;
+    try { localStorage.setItem(PAID_KEY, JSON.stringify(over)); } catch (e) {}
+  }
   function lockedCash(venues) {
     const rows = [];
     let cash = 0;
     let nights = 0;
+    let collected = 0;
+    let collectedNights = 0;
     for (const v of venues) {
-      if (!isLockedRecord(v)) continue;
+      if (!isLockedRecord(v) || isChoiceLive(v)) continue;
       const fee = Number(v.lockedFee || 0) || displayFee(v) || 0;
       if (!fee) continue;
       const n = Number(v.lockedNights || 1) || 1;
-      cash += fee;
-      nights += n;
+      const paid = isGigPaid(v);
       rows.push({
         name: v.name,
         fee,
         nights: n,
-        id: v.id
+        id: v.id,
+        paid
       });
+      if (paid) {
+        collected += fee;
+        collectedNights += n;
+      } else {
+        cash += fee;
+        nights += n;
+      }
     }
     rows.sort((a, b) => b.fee - a.fee);
-    const pending = venues.filter((v) => Number(v.pendingLockFee || 0) > 0 && !isLockedRecord(v)).map((v) => ({
+    const pending = venues.filter((v) => Number(v.pendingLockFee || 0) > 0 && !isLockedRecord(v) && !isChoiceLive(v)).map((v) => ({
       name: v.name,
       fee: Number(v.pendingLockFee),
       note: v.pendingNote
     }));
-    return { cash, nights, rows, pending, collected: COLLECTED_CASH, collectedShows: COLLECTED_SHOWS };
+    return {
+      cash,
+      nights,
+      collected,
+      collectedNights,
+      collectedShows: collectedNights,
+      total: cash + collected,
+      totalNights: nights + collectedNights,
+      rows,
+      pending
+    };
   }
   function cashTarget(stats) {
     const target = CASH_TARGET;
-    const cash = Number(stats?.cash || 0);
+    const cash = Number(stats?.total != null ? stats.total : stats?.cash || 0);
     const pct = Math.max(0, Math.min(100, Math.round(cash / target * 1e3) / 10));
-    return { target, pct, left: Math.max(0, target - cash) };
+    const left = Math.max(0, target - cash);
+    return { target, pct, left, cash, smashed: cash >= target };
   }
   function pepLine(rows) {
     const call = sortCallDesk(rows).filter((r) => r.followState !== "done");
@@ -1263,15 +1311,20 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     const sent = rows.filter((r) => sentToday(r.venue, now)).length;
     const tooSoon = rows.filter((r) => r.desk === "silent" && r.followState === "fresh").length;
     const followedStillSilent = rows.filter((r) => r.desk === "silent" && r.followState === "done").length;
-    const decided = stats.nights > 0 || rejected.length > 0 ? counts.booked + rejected.length : 0;
+    const bookNights = stats.totalNights || stats.nights;
+    const bookCash = stats.total != null ? stats.total : stats.cash;
+    const decided = bookNights > 0 || rejected.length > 0 ? counts.booked + rejected.length : 0;
     const winRate = decided ? Math.round(counts.booked / decided * 1e3) / 10 : 0;
     const replyRate = pitched.length ? Math.round(replied.length / pitched.length * 1e3) / 10 : 0;
-    const avgFee = stats.nights ? Math.round(stats.cash / stats.nights) : 0;
+    const avgFee = bookNights ? Math.round(bookCash / bookNights) : 0;
     return {
       cash: stats.cash,
       nights: stats.nights,
       collected: stats.collected,
-      collectedShows: stats.collectedShows,
+      collectedNights: stats.collectedNights,
+      collectedShows: stats.collectedNights,
+      total: stats.total,
+      totalNights: stats.totalNights,
       target: goal.target,
       pct: goal.pct,
       left: goal.left,
@@ -1844,6 +1897,14 @@ var NatNotes = (function(exports) {
     cashOpen = false;
     render();
   };
+  window.natPaid = function (id) {
+    var i, v = null;
+    for (i = 0; i < VENUES.length; i++) if (VENUES[i].id === id) v = VENUES[i];
+    var next = !(v && B.isGigPaid(v));
+    B.setGigPaid(id, next);
+    if (v) v.paid = next;
+    render();
+  };
   window.natEmails = function () { emailsOpen = !emailsOpen; render(); };
   window.natSheet = function (on) { sheetOpen = !!on; render(); };
   window.natLock = function () {
@@ -2328,6 +2389,7 @@ var NatNotes = (function(exports) {
           if (!prev.finish && row.finish) prev.finish = row.finish;
           if (row.fee) prev.fee = row.fee;
           if (row.locked) prev.locked = true;
+          if (row.paid) prev.paid = true;
           if (row.venueId) prev.venueId = row.venueId;
           return;
         }
@@ -2343,6 +2405,7 @@ var NatNotes = (function(exports) {
         fee: row.fee || 0,
         nights: row.nights || 1,
         locked: !!row.locked,
+        paid: !!row.paid,
         venueId: row.venueId || ""
       });
     }
@@ -2379,6 +2442,7 @@ var NatNotes = (function(exports) {
           fee: feeEach,
           nights: nightsEach,
           locked: true,
+          paid: B.isGigPaid(v),
           venueId: v.id
         });
       });
@@ -2501,12 +2565,13 @@ var NatNotes = (function(exports) {
       key = s.venueId || s.venue;
       g = map[key];
       if (!g) {
-        g = map[key] = { id: key, venue: s.venue, town: s.town || "", postcode: s.postcode || "", venueId: s.venueId || "", fee: 0, nights: 0, dates: [], ll: s.ll || null };
+        g = map[key] = { id: key, venue: s.venue, town: s.town || "", postcode: s.postcode || "", venueId: s.venueId || "", fee: 0, nights: 0, paid: false, dates: [], ll: s.ll || null };
         order.push(g);
       }
       g.dates.push(s);
       g.fee += Number(s.fee) || 0;
       g.nights += Number(s.nights) || 1;
+      if (s.paid) g.paid = true;
       if (!g.ll && s.ll) g.ll = s.ll;
       if (!g.postcode && s.postcode) g.postcode = s.postcode;
       if (!g.town && s.town) g.town = s.town;
@@ -2608,6 +2673,7 @@ var NatNotes = (function(exports) {
     if (house.town) bits.push(house.town);
     if (miles) bits.push(miles + " mi");
     if (!house.ll) bits.push("not on the map");
+    if (house.paid) bits.push("paid");
     var rows = dates.map(function (d) {
       var until = untilInfo(d, today);
       var extra = [];
@@ -2620,9 +2686,10 @@ var NatNotes = (function(exports) {
     }).join("");
     var acts = '<a class="house-act" href="' + mapsHref(house) + '" target="_blank" rel="noopener">Directions</a>';
     if (phone) acts += '<a class="house-act" href="tel:' + esc(phone.replace(/\s/g, "")) + '">Call club</a>';
+    if (house.venueId) acts += '<button type="button" class="house-act' + (house.paid ? " paid" : "") + '" onclick="natPaid(\'' + esc(house.venueId) + "')\">" + (house.paid ? "Paid" : "Mark paid") + "</button>";
     if (house.venueId) acts += '<button type="button" class="house-act" onclick="natDatesVenue(\'' + esc(house.venueId) + "')\">Open lead</button>";
     var badge = house.nights > 1 ? house.nights : (upN || house.nights);
-    return '<article class="house' + (datesPick === house.id ? " on" : "") + '" data-id="' + esc(house.id) + '">' +
+    return '<article class="house' + (house.paid ? " paid" : "") + (datesPick === house.id ? " on" : "") + '" data-id="' + esc(house.id) + '">' +
       '<button type="button" class="house-top" onclick="natDatesPick(\'' + esc(house.id) + "')\">" +
         '<b class="house-n' + (house.nights > 1 ? " multi" : "") + '">' + badge + "</b>" +
         '<span class="job-main"><span class="date-name">' + esc(house.venue) + '</span><span class="date-meta">' + esc(bits.join(" · ")) + "</span></span>" +
@@ -2682,7 +2749,7 @@ var NatNotes = (function(exports) {
       if (mi2 > furthestMi) { furthestMi = mi2; furthest = h; }
     });
     var unpinned = shown.filter(function (h) { return !h.ll; }).length;
-    var chips = '<button type="button" class="mchip' + (datesMonth === "all" ? " on" : "") + '" onclick="natDatesMonth(\'all\')">All · ' + stats.nights + "</button>";
+    var chips = '<button type="button" class="mchip' + (datesMonth === "all" ? " on" : "") + '" onclick="natDatesMonth(\'all\')">All · ' + (stats.totalNights || stats.nights) + "</button>";
     if (repeats.length) chips += '<button type="button" class="mchip' + (datesMonth === "repeats" ? " on" : "") + '" onclick="natDatesMonth(\'repeats\')">Repeats · ' + repeats.length + "</button>";
     monthKeys.forEach(function (key) {
       var m = months[key];
@@ -2704,16 +2771,14 @@ var NatNotes = (function(exports) {
       });
     });
     var cards = shown.map(function (h) { return houseHtml(h, today, clashMap); }).join("") || '<p class="empty">Nothing in this view.</p>';
-    var stamp = [datesMonth, stats.cash, stats.nights, shows.length, nextShow && nextShow.id, shown.length].join("|");
+    var stamp = [datesMonth, stats.cash, stats.collected, stats.total, stats.nights, shows.length, nextShow && nextShow.id, shown.length].join("|");
     if (el.className === "show" && el.getAttribute("data-stamp") === stamp && datesMap) return;
     destroyDatesMap();
     el.className = "show";
     el.setAttribute("data-stamp", stamp);
-    var goal = B.cashTarget(stats);
     el.innerHTML =
-      '<header class="dates-head"><div class="dates-top"><button class="back" type="button" onclick="natDatesClose()">Close</button>' +
-      '<div class="dates-money"><b>' + B.gbp(stats.cash) + "</b><span>Collected already " + B.gbp(stats.collected) + " · " + stats.collectedShows + (stats.collectedShows === 1 ? " show" : " shows") + " · " + stats.nights + " nights · " + houses.length + " houses · " + B.gbp(goal.left) + " to £10k</span></div></div>" +
-      '<div class="cash-bar" aria-hidden="true"><i style="width:' + goal.pct + '%"></i></div>' +
+      '<header class="dates-head"><div class="dates-top"><button class="back" type="button" onclick="natDatesClose()">Close</button></div>' +
+      moneyFigs(stats) +
       '<div class="dates-months">' + chips + "</div></header>" +
       '<div class="dates-body">' +
       '<div class="dates-map-wrap"><div id="dates-map"></div><p class="dates-map-msg" id="dates-map-msg">Loading the map…</p></div>' +
@@ -2802,15 +2867,25 @@ var NatNotes = (function(exports) {
     return html;
   }
 
-  function cashHtml(stats) {
+  function nightLabel(n) {
+    n = Number(n) || 0;
+    return n + " night" + (n === 1 ? "" : "s");
+  }
+  function moneyFigs(stats) {
     var goal = B.cashTarget(stats);
-    return '<button class="cash-ticker" type="button" onclick="natCash()" aria-label="Dates booked">' +
-      '<span class="cash-amt">' + B.gbp(stats.cash) + "</span>" +
-      '<span class="cash-meta">' + stats.nights + " night" + (stats.nights === 1 ? "" : "s") + " · of £10k</span></button>" +
-      '<div class="cash-goal" aria-label="Ten thousand target">' +
-        '<div class="cash-bar"><i style="width:' + goal.pct + '%"></i></div>' +
-        '<div class="cash-goal-meta"><span>' + B.gbp(stats.cash) + " of £10k</span><span>" + B.gbp(goal.left) + " to go</span></div>" +
-      "</div>";
+    var cells = [
+      ["Locked", stats.cash, stats.nights, ""],
+      ["Collected", stats.collected, stats.collectedNights, ""],
+      ["Total", stats.total, stats.totalNights, "is-total"]
+    ];
+    var figs = '<span class="money-3">' + cells.map(function (c) {
+      return '<span class="' + c[3] + '"><span class="hero-k">' + c[0] + "</span><b>" + B.gbp(c[1]) + "</b><i>" + nightLabel(c[2]) + "</i></span>";
+    }).join("") + "</span>";
+    var go = goal.smashed ? "£10k smashed" : B.gbp(goal.left) + " to go";
+    return figs + '<span class="cash-goal"><span class="cash-bar" aria-hidden="true"><i style="width:' + goal.pct + '%"></i></span><span class="cash-goal-meta"><span>' + B.gbp(goal.cash) + " of £10k</span><span>" + go + "</span></span></span>";
+  }
+  function cashHtml(stats) {
+    return '<button class="money-head" type="button" onclick="natCash()" aria-label="Locked, collected and total">' + moneyFigs(stats) + "</button>";
   }
 
   function ringSvg(pct) {
@@ -2838,8 +2913,7 @@ var NatNotes = (function(exports) {
 
   function dashHtml(pulse) {
     return '<div class="dash">' +
-      '<button type="button" class="hero-cash" onclick="natCash()">' + ringSvg(pulse.pct) +
-        '<span class="job-main"><span class="hero-figs"><span class="hero-fig"><span class="hero-k">Locked</span><b>' + B.gbp(pulse.cash) + '</b></span><span class="hero-got"><span class="hero-k">Collected<br>already</span><b>' + B.gbp(pulse.collected) + '</b><i>' + pulse.collectedShows + (pulse.collectedShows === 1 ? " show" : " shows") + "</i></span></span><em>" + pulse.nights + " nights · " + B.gbp(pulse.left) + " of £10k still open</em></span><span class=\"hero-go\">Dates</span></button>" +
+      '<button type="button" class="hero-cash" onclick="natCash()" aria-label="Locked, collected and total">' + moneyFigs(pulse) + "</button>" +
       '<p class="pep">' + esc(pulse.pep) + "</p>" +
       '<div class="desk-acts">' +
         act("Call now", pulse.closeNow, "Ring these. Hottest first.", "gold", "call") +
