@@ -98,6 +98,8 @@ var Board = (() => {
   var BOARD_STAMP = "22 Sep 2026";
   var PASSWORD = "natbooksjake";
   var CASH_TARGET = 1e4;
+  var COLLECTED_CASH = 500;
+  var COLLECTED_SHOWS = 2;
   var MONTH_IDX = {
     jan: 0,
     january: 0,
@@ -1218,7 +1220,7 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
       fee: Number(v.pendingLockFee),
       note: v.pendingNote
     }));
-    return { cash, nights, rows, pending };
+    return { cash, nights, rows, pending, collected: COLLECTED_CASH, collectedShows: COLLECTED_SHOWS };
   }
   function cashTarget(stats) {
     const target = CASH_TARGET;
@@ -1268,6 +1270,8 @@ ${(venue.messages || []).filter((m) => m.side === "them").map((m) => m.body || "
     return {
       cash: stats.cash,
       nights: stats.nights,
+      collected: stats.collected,
+      collectedShows: stats.collectedShows,
       target: goal.target,
       pct: goal.pct,
       left: goal.left,
@@ -2708,7 +2712,7 @@ var NatNotes = (function(exports) {
     var goal = B.cashTarget(stats);
     el.innerHTML =
       '<header class="dates-head"><div class="dates-top"><button class="back" type="button" onclick="natDatesClose()">Close</button>' +
-      '<div class="dates-money"><b>' + B.gbp(stats.cash) + "</b><span>" + stats.nights + " nights · " + houses.length + " houses · " + B.gbp(goal.left) + " to £10k</span></div></div>" +
+      '<div class="dates-money"><b>' + B.gbp(stats.cash) + "</b><span>Collected already " + B.gbp(stats.collected) + " · " + stats.collectedShows + (stats.collectedShows === 1 ? " show" : " shows") + " · " + stats.nights + " nights · " + houses.length + " houses · " + B.gbp(goal.left) + " to £10k</span></div></div>" +
       '<div class="cash-bar" aria-hidden="true"><i style="width:' + goal.pct + '%"></i></div>' +
       '<div class="dates-months">' + chips + "</div></header>" +
       '<div class="dates-body">' +
@@ -2835,7 +2839,7 @@ var NatNotes = (function(exports) {
   function dashHtml(pulse) {
     return '<div class="dash">' +
       '<button type="button" class="hero-cash" onclick="natCash()">' + ringSvg(pulse.pct) +
-        '<span class="job-main"><span class="hero-k">Locked</span><b>' + B.gbp(pulse.cash) + "</b><em>" + pulse.nights + " nights · " + B.gbp(pulse.left) + " of £10k still open</em></span><span class=\"hero-go\">Dates</span></button>" +
+        '<span class="job-main"><span class="hero-figs"><span class="hero-fig"><span class="hero-k">Locked</span><b>' + B.gbp(pulse.cash) + '</b></span><span class="hero-got"><span class="hero-k">Collected<br>already</span><b>' + B.gbp(pulse.collected) + '</b><i>' + pulse.collectedShows + (pulse.collectedShows === 1 ? " show" : " shows") + "</i></span></span><em>" + pulse.nights + " nights · " + B.gbp(pulse.left) + " of £10k still open</em></span><span class=\"hero-go\">Dates</span></button>" +
       '<p class="pep">' + esc(pulse.pep) + "</p>" +
       '<div class="desk-acts">' +
         act("Call now", pulse.closeNow, "Ring these. Hottest first.", "gold", "call") +
