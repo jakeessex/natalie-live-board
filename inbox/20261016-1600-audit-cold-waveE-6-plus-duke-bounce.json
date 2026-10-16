@@ -1,0 +1,152 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261016-cabbage-patch-twickenham",
+    "name": "Cabbage Patch (Twickenham)",
+    "town": "Twickenham",
+    "email": "cabbagepatch@fullers.co.uk"
+   },
+   "statusNote": "cold waveE 16 Oct SENT_OK 1a1452e275bf29c4 ~15:46 London thread 1a1452df49fbfc11 \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1600 audit 16 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-16T14:46:54Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Cabbage Patch?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the Cabbage Patch in Twickenham, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a1452e275bf29c4",
+     "gmailThreadId": "1a1452df49fbfc11",
+     "msgId": "1a1452e275bf29c4",
+     "threadId": "1a1452df49fbfc11"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261016-the-fox-ickenham",
+    "name": "The Fox (Ickenham)",
+    "town": "Ickenham",
+    "email": "info@thefoxickenham.com"
+   },
+   "statusNote": "cold waveE 16 Oct SENT_OK 1a1453131b1f4f05 ~15:50 London thread 1a145311dd3a0f6e \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1600 audit 16 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-16T14:50:13Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for The Fox?",
+     "body": "Hi,\n\nI'm Natalie, looking after bookings for Jake Essex.\n\nThe Fox in Ickenham would suit Jake well, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a1453131b1f4f05",
+     "gmailThreadId": "1a145311dd3a0f6e",
+     "msgId": "1a1453131b1f4f05",
+     "threadId": "1a145311dd3a0f6e"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261016-river-garden-se",
+    "name": "River Garden (SE)",
+    "town": "SE",
+    "email": "info@therivergardenpub.com"
+   },
+   "statusNote": "cold waveE 16 Oct SENT_OK 1a1453ae3ec146b7 ~16:00 London thread 1a1453ae23b99d87 \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1600 audit 16 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-16T15:00:49Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for River Garden?",
+     "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nThe River Garden would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a1453ae3ec146b7",
+     "gmailThreadId": "1a1453ae23b99d87",
+     "msgId": "1a1453ae3ec146b7",
+     "threadId": "1a1453ae23b99d87"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261016-duke-of-york-saffron-walden",
+    "name": "Duke of York (Saffron Walden)",
+    "town": "Saffron Walden",
+    "email": "info@thedukeonline.com"
+   },
+   "statusNote": "cold waveE 16 Oct hard bounce DSN 1a1453e1bf5d94bd ~16:04 BST (5.7.1 relaying denied) \u00b7 info@thedukeonline.com NEVER_RETRY \u00b7 Us cold 1a1453de8cf601e3 ~16:04 London thread 1a1453de6ddf5e67 \u00b7 Gmail-verified \u00b7 folded 1600 audit 16 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-16T15:04:07Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Duke of York?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the Duke of York in Saffron Walden, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a1453de8cf601e3",
+     "gmailThreadId": "1a1453de6ddf5e67",
+     "msgId": "1a1453de8cf601e3",
+     "threadId": "1a1453de6ddf5e67"
+    },
+    {
+     "side": "them",
+     "at": "2026-10-16T15:04:19Z",
+     "from": "mailer-daemon@googlemail.com",
+     "subject": "Delivery Status Notification (Failure)",
+     "body": "Message not delivered. Your message to info@thedukeonline.com could not be delivered because the remote server is misconfigured. Status 5.7.1 relaying denied. Final-Recipient: info@thedukeonline.com.",
+     "msgId": "1a1453e1bf5d94bd",
+     "threadId": "1a1453de6ddf5e67"
+    }
+   ],
+   "badge": "bounce"
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261016-barrels-stopsley",
+    "name": "Barrels (Stopsley)",
+    "town": "Stopsley",
+    "email": "info@barrelsluton.co.uk"
+   },
+   "statusNote": "cold waveE 16 Oct SENT_OK 1a14540e9a134eda ~16:07 London thread 1a14540e7b16d710 \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1600 audit 16 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-16T15:07:23Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Barrels?",
+     "body": "Hi,\n\nI'm Natalie, looking after bookings for Jake Essex.\n\nBarrels in Luton would suit Jake well, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a14540e9a134eda",
+     "gmailThreadId": "1a14540e7b16d710",
+     "msgId": "1a14540e9a134eda",
+     "threadId": "1a14540e7b16d710"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261016-galley-hall-hertford",
+    "name": "Galley Hall (Hertford)",
+    "town": "Hertford",
+    "email": "info@galleyhall.co.uk"
+   },
+   "statusNote": "cold waveE 16 Oct SENT_OK 1a14543a0c50d80a ~16:10 London thread 1a145439f71bfc38 \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1600 audit 16 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-16T15:10:21Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Galley Hall?",
+     "body": "Hi,\n\nNatalie here. I look after bookings for Jake Essex.\n\nJake would love to come and perform at Galley Hall in Hertford, and I think he'd be a great fit.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a14543a0c50d80a",
+     "gmailThreadId": "1a145439f71bfc38",
+     "msgId": "1a14543a0c50d80a",
+     "threadId": "1a145439f71bfc38"
+    }
+   ]
+  }
+ ]
+}
