@@ -308,6 +308,15 @@
       "source": "cl"
     },
     {
+      "date": "2027-01-09",
+      "venue": "Postels Club (Stevenage)",
+      "town": "Stevenage",
+      "status": "booked",
+      "source": "board",
+      "start": "20:30",
+      "finish": "23:45"
+    },
+    {
       "date": "2027-01-10",
       "venue": "Bishop's Stortford Social (Jade)",
       "town": "Bishop's Stortford",
@@ -514,6 +523,14 @@
       "finish": "18:00",
       "status": "booked",
       "source": "cl"
+    },
+    {
+      "date": "2027-07-31",
+      "venue": "Penton Park Community & Social Club (Chertsey)",
+      "town": "Chertsey",
+      "status": "booked",
+      "source": "board",
+      "postcode": "KT16 8QG"
     },
     {
       "date": "2027-08-15",
