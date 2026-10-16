@@ -118,16 +118,6 @@
         "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the Duke of York in Saffron Walden, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
         "msgId": "1a1453de8cf601e3",
         "threadId": "1a1453de6ddf5e67"
-      },
-      {
-        "side": "them",
-        "label": "Their reply",
-        "at": "2026-10-16T15:04:19Z",
-        "from": "mailer-daemon@googlemail.com",
-        "subject": "Delivery Status Notification (Failure)",
-        "body": "Message not delivered. Your message to info@thedukeonline.com could not be delivered because the remote server is misconfigured. Status 5.7.1 relaying denied. Final-Recipient: info@thedukeonline.com.",
-        "msgId": "1a1453e1bf5d94bd",
-        "threadId": "1a1453de6ddf5e67"
       }
     ],
     "hasThread": true,
@@ -75966,5 +75956,104 @@
     "lastContact": "2026-10-16",
     "lastContactSrc": "us 1a145352bfcc4847",
     "statusNote": "BOUNCE NEVER_RETRY · DSN mailer-daemon 1a14535632305a35 ~15:54 BST: Address not found (550 5.1.x) · Us cold waveE 1a145352bfcc4847 ~15:54 London thread 1a1453529a3d1f1f · Gmail-verified · folded 1610 16 Oct"
+  },
+  {
+    "id": "cold-20261016-the-trooper-aldbury",
+    "name": "Trooper (Aldbury)",
+    "town": "Aldbury",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "hello@thetrooper.co.uk",
+    "addedAt": "2026-10-16T15:19:28Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-16T15:19:28Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Trooper?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the Trooper in Aldbury, and he'd love to come\nand perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s:\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here\nand I'll lock it in.\n\nNatalie",
+        "msgId": "1a1454bf75525932",
+        "threadId": "1a1454bf4e57eadd"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "16 Oct 2026",
+    "subject": "Jake Essex for The Trooper?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-16",
+    "lastContactSrc": "us 1a1454bf75525932",
+    "statusNote": "fri-16-oct cold waveE SENT_OK 1a1454bf75525932 ~16:19 London thread 1a1454bf4e57eadd · awaiting · Gmail-verified · folded 1645 16 Oct"
+  },
+  {
+    "id": "cold-20261016-captain-howey-hotel-littlestone",
+    "name": "Captain Howey Hotel (Littlestone)",
+    "town": "Littlestone",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@thecaptainhowey.com",
+    "addedAt": "2026-10-16T15:24:14Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-16T15:24:14Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Captain Howey Hotel?",
+        "body": "Hi,\n\nI'm Natalie, looking after bookings for Jake Essex.\n\nThe Captain Howey Hotel in Littlestone would suit Jake well, and he'd love\nto come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s:\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here\nand I'll lock it in.\n\nNatalie",
+        "msgId": "1a14550544e0ab4d",
+        "threadId": "1a1455052a5b1f33"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "16 Oct 2026",
+    "subject": "Jake Essex for Captain Howey Hotel?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-16",
+    "lastContactSrc": "us 1a14550544e0ab4d",
+    "statusNote": "fri-16-oct cold waveE SENT_OK 1a14550544e0ab4d ~16:24 London thread 1a1455052a5b1f33 · awaiting · Gmail-verified · folded 1645 16 Oct"
+  },
+  {
+    "id": "cold-20261016-sun-inn-dunsfold",
+    "name": "Sun Inn (Dunsfold)",
+    "town": "Dunsfold",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "suninn@dunsfold.net",
+    "addedAt": "2026-10-16T15:29:37Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-16T15:29:37Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Sun Inn?",
+        "body": "Hi,\n\nNatalie here. I look after bookings for Jake Essex.\n\nJake would love to come and perform at the Sun Inn in Dunsfold, and I think\nhe'd be a great fit.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s:\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here\nand I'll lock it in.\n\nNatalie",
+        "msgId": "1a145554548e15cb",
+        "threadId": "1a1455543f5c3b21"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "16 Oct 2026",
+    "subject": "Jake Essex for Sun Inn?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-16",
+    "lastContactSrc": "us 1a145554548e15cb",
+    "statusNote": "fri-16-oct cold waveE SENT_OK 1a145554548e15cb ~16:29 London thread 1a1455543f5c3b21 · awaiting · Gmail-verified · folded 1645 16 Oct"
   }
 ]
