@@ -1,5 +1,36 @@
 [
   {
+    "id": "cold-20261016-three-mariners-bagshot",
+    "name": "Three Mariners (Bagshot)",
+    "town": "Bagshot",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "badge": "awaiting",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@thethreemariners.co.uk",
+    "replied": "no",
+    "firstPitch": "",
+    "addedAt": "2026-10-16T15:17:25.506Z",
+    "followUps": "",
+    "subject": "Jake Essex for Three Mariners?",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-16T15:14:47Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Three Mariners?",
+        "body": "Hi,\n\nI'm Natalie. I handle bookings for Jake Essex.\n\nThe Three Mariners in Bagshot would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a14547adc698f68",
+        "threadId": "1a14547acc308846"
+      }
+    ],
+    "hasThread": false,
+    "statusNote": "cold waveE 16 Oct SENT_OK 1a14547adc698f68 ~16:14 London thread 1a14547acc308846 · awaiting · Gmail-verified · folded 1600 audit 16 Oct"
+  },
+  {
     "id": "cold-20261016-galley-hall-hertford",
     "name": "Galley Hall (Hertford)",
     "town": "Hertford",

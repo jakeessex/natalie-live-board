@@ -1,0 +1,74 @@
+{
+ "events": [
+  {
+   "event": "lock",
+   "venue": {
+    "name": "Postels Club",
+    "email": "davidbarrett123@btinternet.com",
+    "id": "cold-20261001-postels-club-stevenage-sg1"
+   },
+   "locks": [
+    {
+     "date": "2027-01-09",
+     "fee": 350,
+     "sets": "3 sets"
+    },
+    {
+     "date": "2027-05-22",
+     "fee": 350,
+     "sets": "3 sets"
+    },
+    {
+     "date": "2027-07-24",
+     "fee": 350,
+     "sets": "3 sets"
+    },
+    {
+     "date": "2027-12-18",
+     "fee": 350,
+     "sets": "3 sets"
+    }
+   ],
+   "provisional": [],
+   "badge": "locked",
+   "confirmMsgId": "1a1438758f5614a8",
+   "statusNote": "LOCKED 4-date block 9 Jan / 22 May / 24 Jul / 18 Dec 2027 £350 each; confirm 1a1438758f5614a8",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-16T08:05:05+01:00",
+     "from": "jakeessexenquiries@gmail.com",
+     "msgId": "1a1438758f5614a8",
+     "threadId": "1a0f6ad285f2e304",
+     "subject": "Re: Jake Essex for Postels Club?",
+     "body": "(confirmation: Sat 9 Jan 2027 confirmed, sets 8.30-9.30, 10-10.45, 11-11.45)"
+    }
+   ]
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "name": "Penton Park Community & Social Club",
+    "email": "julieparker476@googlemail.com",
+    "id": "pot-penton-park-social-club-kt16-8qg"
+   },
+   "confirmMsgId": "1a14387a5d1aea11",
+   "statusNote": "Sat 31 Jul 2027 £350 3x45 offered 08:05 (1a14387a5d1aea11); awaiting Julie & Ann acceptance",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-16T08:05:24+01:00",
+     "from": "jakeessexenquiries@gmail.com",
+     "msgId": "1a14387a5d1aea11",
+     "threadId": "1a11fd29a400fefe",
+     "subject": "Re: Jake Essex",
+     "body": "(offer: Saturday 31 July 2027 free, three 45 minute sets £350 cash, own PA, no deposit)"
+    }
+   ]
+  }
+ ],
+ "money": {
+  "locked": 11375,
+  "nights": 40
+ }
+}
