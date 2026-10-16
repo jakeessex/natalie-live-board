@@ -41804,7 +41804,7 @@
     "venueType": "Social Club",
     "miles": 35,
     "prospect": false,
-    "badge": "locked",
+    "badge": "declined",
     "messages": [
       {
         "side": "us",
@@ -41855,6 +41855,16 @@
         "body": "Hi Julie and Ann,\n\nThank you, that's lovely. Just confirming Jake Essex is booked for Penton\nPark Community & Social Club on Saturday 10 April 2027, three 45-minute\nsets, at a fee of £350.\n\nJake brings his own PA system, has £10m public liability insurance, and all\nhis equipment is PAT tested. I'll be in touch nearer the time to confirm\nstart times and arrival.\n\nIf anything changes in the meantime, just reply here.\n\nKind regards,\nNatalie\nBooking agent for Jake Essex",
         "msgId": "1a1407718359fdfd",
         "threadId": "1a11fd29a400fefe"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-15T20:54:46Z",
+        "from": "julieparker476@googlemail.com",
+        "subject": "Re: Penton park entertainment",
+        "body": "Hi Natalie\nSorry that date is not available now someone booked it early afternoon the\nnext dates I have when you are free are 22nd may 26 June 24 July 31 July so\nsorry\nAnn and Julie",
+        "msgId": "1a14158c40178744",
+        "threadId": "1a11fd29a400fefe"
       }
     ],
     "addedAt": "2026-09-23",
@@ -41865,14 +41875,10 @@
     "firstPitch": "8 Oct 2026",
     "subject": "Jake Essex for Penton Community & Social Club?",
     "lastContact": "2026-10-15",
-    "lastContactSrc": "us 1a1407718359fdfd",
-    "statusNote": "LOCKED Sat 10 Apr 2027 £350 cash · 3×45 · own PA · no deposit · start TBC · Them Ann & Julie ~12:00 BST Thu 15 Oct 1a13f38af8a7ecfa: book 10 Apr 3×45 £350 cash, asked us to confirm by email · Jake Lock it via JEM 12:09 · Us confirm ~17:48 BST 1a1407718359fdfd (Natalie) · cal e057lk86rmi3ck2ps1v26p0kkk · thread 1a11fd29a400fefe · not Choice · Gmail-verified · folded 1955 lag watch 15 Oct",
+    "lastContactSrc": "them 1a14158c40178744",
+    "statusNote": "date pulled 15 Oct 21:54 BST (Gmail 20:54Z) · Them Ann & Julie 1a14158c40178744: 10 Apr 2027 no longer available (someone booked it early afternoon); offered 22 May · 26 Jun · 24 Jul · 31 Jul 2027 · was LOCKED Sat 10 Apr 2027 £350 3×45 · prior Us confirm 1a1407718359fdfd · thread 1a11fd29a400fefe · not Choice · Gmail-verified · folded Fri 16 Oct",
     "notes": "Also: pentoncsc@gmail.com (club address, 8 Oct cold)",
-    "contactName": "Julie Parker & Ann",
-    "lockedFee": 350,
-    "lockedNights": 1,
-    "lockedDate": "2027-04-10",
-    "lockedNote": "Sat 10 Apr 2027 · 3×45 · £350 cash on the night · own PA · no deposit · start TBC"
+    "contactName": "Julie Parker & Ann"
   },
   {
     "id": "pot-crouch-oak-the-kt15-2be",
