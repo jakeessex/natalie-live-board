@@ -41865,6 +41865,16 @@
         "body": "Hi Natalie\nSorry that date is not available now someone booked it early afternoon the\nnext dates I have when you are free are 22nd may 26 June 24 July 31 July so\nsorry\nAnn and Julie",
         "msgId": "1a14158c40178744",
         "threadId": "1a11fd29a400fefe"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-16T07:05:24Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Penton park entertainment",
+        "body": "Hi Julie and Ann,\n\nNo problem at all, thank you for letting me know.\n\nSaturday 31 July 2027 is free for Jake. He can do three 45 minute sets at\n£350 cash on the night, with his own PA and no deposit.\n\nIf that works for you, just reply here and I'll confirm it and get it in\nthe diary.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a14387a5d1aea11",
+        "threadId": "1a11fd29a400fefe"
       }
     ],
     "addedAt": "2026-09-23",
@@ -41874,9 +41884,9 @@
     "replied": "yes",
     "firstPitch": "8 Oct 2026",
     "subject": "Jake Essex for Penton Community & Social Club?",
-    "lastContact": "2026-10-15",
-    "lastContactSrc": "them 1a14158c40178744",
-    "statusNote": "RE-LOCKED Sat 31 Jul 2027 £350 3×45 per JEM/Jake 16 Oct (Jake accepted venue-offered date from 1a14158c40178744; Us confirm email not yet in Gmail at fold 0806) · date pulled 15 Oct 21:54 BST (Gmail 20:54Z) · Them Ann & Julie 1a14158c40178744: 10 Apr 2027 no longer available (someone booked it early afternoon); offered 22 May · 26 Jun · 24 Jul · 31 Jul 2027 · was LOCKED Sat 10 Apr 2027 £350 3×45 · prior Us confirm 1a1407718359fdfd · thread 1a11fd29a400fefe · not Choice · Gmail-verified · folded Fri 16 Oct",
+    "lastContact": "2026-10-16",
+    "lastContactSrc": "us 1a14387a5d1aea11",
+    "statusNote": "RE-LOCKED Sat 31 Jul 2027 £350 3×45 per JEM/Jake 16 Oct (Jake accepted venue-offered date from 1a14158c40178744) · Us 1a14387a5d1aea11 ~08:05 BST Fri 16 Oct offers Sat 31 Jul £350 3×45 (asks them to reply to confirm), venue reply pending · date pulled 15 Oct 21:54 BST (Gmail 20:54Z) · Them Ann & Julie 1a14158c40178744: 10 Apr 2027 no longer available (someone booked it early afternoon); offered 22 May · 26 Jun · 24 Jul · 31 Jul 2027 · was LOCKED Sat 10 Apr 2027 £350 3×45 · prior Us confirm 1a1407718359fdfd · thread 1a11fd29a400fefe · not Choice · Gmail-verified · folded Fri 16 Oct",
     "notes": "Also: pentoncsc@gmail.com (club address, 8 Oct cold)",
     "contactName": "Julie Parker & Ann",
     "lockedFee": 350,
@@ -41885,7 +41895,7 @@
       "2027-07-31"
     ],
     "lockedDate": "2027-07-31",
-    "lockedNote": "LOCKED Sat 31 Jul 2027 £350 cash 3×45 · re-lock after 10 Apr date-pull · date offered by venue in 1a14158c40178744, Jake accepted (locked per JEM/Jake 16 Oct; Us confirm not yet in Gmail at 08:06) · not Choice"
+    "lockedNote": "LOCKED Sat 31 Jul 2027 £350 cash 3×45 · re-lock after 10 Apr date-pull · date offered by venue in 1a14158c40178744, Jake accepted (locked per JEM/Jake 16 Oct) · Us 1a14387a5d1aea11 16 Oct 08:05 BST offers 31 Jul, venue reply pending · not Choice"
   },
   {
     "id": "pot-crouch-oak-the-kt15-2be",
@@ -57747,16 +57757,19 @@
     "firstPitch": "1 Oct 2026",
     "badge": "locked",
     "subject": "Jake Essex for Postels Club?",
-    "statusNote": "LOCKED Sat 9 Jan 2027 £350 (3 sets) · PROVISIONAL (not locked, no money) Sat 22 May · Sat 24 Jul · Sat 18 Dec 2027 £350 each, held until after first night · Them Kim 1a1416f063c885ab ~22:19 BST Thu 15 Oct · Us confirm 1a1438758f5614a8 ~08:05 BST Fri 16 Oct · Gmail-verified · folded 0806 16 Oct · Us Natalie ~10:50 BST Thu 15 Oct 1a13ef806198647c: 4-date block offer (first confirmed, other three provisional until after first night, £250 four-date rate) + 2027 Saturday free list; awaiting Kim pick · not locked, no money · Gmail-verified · folded 1145 15 Oct · Them Kim ~10:12 BST Thu 15 Oct 1a13ed62d0da4cfb (reply to final chase): it will be next year now; would love a block but will book one first as not seen him; will check diary and let you know · chased; final chase, no further chasers · Haggle Us 1a13ebc25f43f2bb ~09:44 BST Thu 15 Oct thread 1a0f6ad285f2e304 · Gmail-verified · folded 0955 15 Oct · quoted · Them Kim fee ask 1a0f6b31c8ede9d0 ~10:01 London Thu 1 Oct (usual sets 8.30–9.30, 10.00–10.45, 11.00–11.45) · Us LOCAL quote 1a0f6c1fd909b7ff ~10:18: £250 cash 2×1h / £375 cash usual 3 sets; 4-date £250 / £350 each; Fri OK + Sat/Sun free list · thread 1a0f6ad285f2e304 · Haggle owns · not locked, no money",
+    "statusNote": "LOCKED 4 nights £1,400 (£350 each): Sat 9 Jan · Sat 22 May · Sat 24 Jul · Sat 18 Dec 2027 (last three counted locked per JEM/Jake 16 Oct 08:15) · Them Kim 1a1416f063c885ab ~22:19 BST Thu 15 Oct · Us confirm 1a1438758f5614a8 ~08:05 BST Fri 16 Oct · Gmail-verified · folded 0806 16 Oct · Us Natalie ~10:50 BST Thu 15 Oct 1a13ef806198647c: 4-date block offer (first confirmed, other three provisional until after first night, £250 four-date rate) + 2027 Saturday free list; awaiting Kim pick · not locked, no money · Gmail-verified · folded 1145 15 Oct · Them Kim ~10:12 BST Thu 15 Oct 1a13ed62d0da4cfb (reply to final chase): it will be next year now; would love a block but will book one first as not seen him; will check diary and let you know · chased; final chase, no further chasers · Haggle Us 1a13ebc25f43f2bb ~09:44 BST Thu 15 Oct thread 1a0f6ad285f2e304 · Gmail-verified · folded 0955 15 Oct · quoted · Them Kim fee ask 1a0f6b31c8ede9d0 ~10:01 London Thu 1 Oct (usual sets 8.30–9.30, 10.00–10.45, 11.00–11.45) · Us LOCAL quote 1a0f6c1fd909b7ff ~10:18: £250 cash 2×1h / £375 cash usual 3 sets; 4-date £250 / £350 each; Fri OK + Sat/Sun free list · thread 1a0f6ad285f2e304 · Haggle owns · not locked, no money",
     "lastContact": "2026-10-16",
     "lastContactSrc": "us 1a1438758f5614a8",
-    "lockedFee": 350,
-    "lockedNights": 1,
+    "lockedFee": 1400,
+    "lockedNights": 4,
     "dates": [
-      "2027-01-09"
+      "2027-01-09",
+      "2027-05-22",
+      "2027-07-24",
+      "2027-12-18"
     ],
     "lockedDate": "2027-01-09",
-    "lockedNote": "LOCKED Sat 9 Jan 2027 £350 cash · 3 sets 20:30–21:30, 22:00–22:45, 23:00–23:45 · own PA no deposit · Them Kim 1a1416f063c885ab 15 Oct 22:19 BST · Us confirm 1a1438758f5614a8 16 Oct 08:05 BST · not Choice"
+    "lockedNote": "LOCKED 4 nights £1,400 total (£350 each, four-date block) · Sat 9 Jan · Sat 22 May · Sat 24 Jul · Sat 18 Dec 2027 · 3 sets 20:30–21:30, 22:00–22:45, 23:00–23:45 · own PA no deposit · 22 May/24 Jul/18 Dec counted locked per JEM/Jake 16 Oct · Them Kim 1a1416f063c885ab · Us confirm 1a1438758f5614a8 · not Choice"
   },
   {
     "id": "cold-20261001-broadstone-rbl-club-broadstone",

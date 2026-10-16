@@ -471,6 +471,15 @@
       "note": "OWN £250 cash · 2×1hr · Jade four-date · diary tos3ohgavajcn6gk7da0q9iojs · Us 1a0c408fd0596ead · NEVER Choice without Jake OK"
     },
     {
+      "date": "2027-05-22",
+      "venue": "Postels Club (Stevenage)",
+      "town": "Stevenage",
+      "start": "20:30",
+      "finish": "23:45",
+      "status": "booked",
+      "source": "board"
+    },
+    {
       "date": "2027-05-29",
       "venue": "Dagenham RBL",
       "postcode": "RM8 3JP",
@@ -523,6 +532,15 @@
       "finish": "18:00",
       "status": "booked",
       "source": "cl"
+    },
+    {
+      "date": "2027-07-24",
+      "venue": "Postels Club (Stevenage)",
+      "town": "Stevenage",
+      "start": "20:30",
+      "finish": "23:45",
+      "status": "booked",
+      "source": "board"
     },
     {
       "date": "2027-07-31",
@@ -644,6 +662,15 @@
       "date": "2027-12-04",
       "venue": "East Barnet RBL Club",
       "town": "East Barnet",
+      "status": "booked",
+      "source": "board"
+    },
+    {
+      "date": "2027-12-18",
+      "venue": "Postels Club (Stevenage)",
+      "town": "Stevenage",
+      "start": "20:30",
+      "finish": "23:45",
       "status": "booked",
       "source": "board"
     }
