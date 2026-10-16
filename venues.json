@@ -150,7 +150,7 @@
     "postcode": "",
     "website": "",
     "contactName": "",
-    "badge": "awaiting",
+    "badge": "bounce",
     "phone": null,
     "needPhone": true,
     "email": "spotteddog@davy.co.uk",
@@ -172,7 +172,7 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "cold waveA 16 Oct SENT_OK `1a143fc1bba5a4ce` ~10:12 London thread `1a143fbf1f8a119b` \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded lag watch 10:52 16 Oct"
+    "statusNote": "BOUNCE NEVER_RETRY \u00b7 DSN postmaster@davy.co.uk 1a143fc5d96b2cdb ~10:12 BST: 5.4.1 recipient email address possibly incorrect \u00b7 folded 1610 16 Oct \u00b7 cold waveA 16 Oct SENT_OK `1a143fc1bba5a4ce` ~10:12 London thread `1a143fbf1f8a119b` \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded lag watch 10:52 16 Oct"
   },
   {
     "id": "cold-20261016-halfway-house-west-horndon",
@@ -75412,9 +75412,9 @@
   },
   {
     "id": "cold-20261016-swan-sudbury",
-    "name": "Swan (Sudbury)",
-    "town": "Sudbury",
-    "postcode": "",
+    "name": "Swan (Sudbury, Wembley)",
+    "town": "Sudbury, Wembley",
+    "postcode": "HA0 2LP",
     "website": "",
     "contactName": "",
     "phone": null,
@@ -75441,7 +75441,7 @@
     "badge": "awaiting",
     "lastContact": "2026-10-16",
     "lastContactSrc": "us 1a144e6bb9098312",
-    "statusNote": "fri-16-oct cold waveD SENT_OK 1a144e6bb9098312 ~14:28 London thread 1a144e6a5e27c843 \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1510 16 Oct"
+    "statusNote": "town fix per Bookings 16 Oct: 789 Harrow Road, Sudbury, Wembley HA0 2LP \u00b7 fri-16-oct cold waveD SENT_OK 1a144e6bb9098312 ~14:28 London thread 1a144e6a5e27c843 \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1510 16 Oct"
   },
   {
     "id": "cold-20261016-kingston-mill-kingston-upon-thames",
@@ -75577,9 +75577,9 @@
   },
   {
     "id": "cold-20261016-the-squirrel-inn-se",
-    "name": "The Squirrel Inn (SE)",
-    "town": "SE",
-    "postcode": "",
+    "name": "The Squirrel Inn (Godalming)",
+    "town": "Godalming",
+    "postcode": "GU7 2RN",
     "website": "",
     "contactName": "",
     "phone": null,
@@ -75606,7 +75606,7 @@
     "badge": "awaiting",
     "lastContact": "2026-10-16",
     "lastContactSrc": "us 1a144fa56b0c31a5",
-    "statusNote": "fri-16-oct cold waveD SENT_OK 1a144fa56b0c31a5 ~14:50 London thread 1a144fa433b27905 \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1510 16 Oct"
+    "statusNote": "town fix per Bookings 16 Oct: Hurtmore Road, Godalming GU7 2RN \u00b7 fri-16-oct cold waveD SENT_OK 1a144fa56b0c31a5 ~14:50 London thread 1a144fa433b27905 \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1510 16 Oct"
   },
   {
     "id": "cold-20261016-woodman-ruislip",
@@ -75706,5 +75706,38 @@
     "lastContact": "2026-10-16",
     "lastContactSrc": "us 1a14506458a2465b",
     "statusNote": "fri-16-oct cold waveD SENT_OK 1a14506458a2465b ~15:03 London thread 1a145062be626b87 \u00b7 awaiting \u00b7 Gmail-verified \u00b7 folded 1510 16 Oct"
+  },
+  {
+    "id": "cold-20261016-rialto-social-dorking",
+    "name": "Rialto Social (Dorking)",
+    "town": "Dorking",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@rialtosocial.co.uk",
+    "addedAt": "2026-10-16T14:54:33Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-16T14:54:33Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Rialto Social?",
+        "body": "Hi,\n\nNatalie here. I look after bookings for Jake Essex.\n\nJake would love to come and perform at Rialto Social in Dorking, and I think he'd be a great fit.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "label": "Sent",
+        "msgId": "1a145352bfcc4847",
+        "threadId": "1a1453529a3d1f1f"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "16 Oct 2026",
+    "subject": "Jake Essex for Rialto Social?",
+    "badge": "bounce",
+    "lastContact": "2026-10-16",
+    "lastContactSrc": "us 1a145352bfcc4847",
+    "statusNote": "BOUNCE NEVER_RETRY \u00b7 DSN mailer-daemon 1a14535632305a35 ~15:54 BST: Address not found (550 5.1.x) \u00b7 Us cold waveE 1a145352bfcc4847 ~15:54 London thread 1a1453529a3d1f1f \u00b7 Gmail-verified \u00b7 folded 1610 16 Oct"
   }
 ]
