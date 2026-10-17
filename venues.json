@@ -125,9 +125,9 @@
   },
   {
     "id": "cold-20261016-river-garden-se",
-    "name": "River Garden (SE)",
-    "town": "SE",
-    "postcode": "",
+    "name": "River Garden (Harefield)",
+    "town": "Harefield, Uxbridge",
+    "postcode": "UB9 6PE",
     "website": "",
     "contactName": "",
     "badge": "awaiting",
@@ -152,7 +152,7 @@
       }
     ],
     "hasThread": false,
-    "statusNote": "cold waveE 16 Oct SENT_OK 1a1453ae3ec146b7 ~16:00 London thread 1a1453ae23b99d87 · awaiting · Gmail-verified · folded 1600 audit 16 Oct"
+    "statusNote": "town fix per Bookings 17 Oct: Moorhall Road, Harefield, Uxbridge UB9 6PE · cold waveE 16 Oct SENT_OK 1a1453ae3ec146b7 ~16:00 London thread 1a1453ae23b99d87 · awaiting · Gmail-verified · folded 1600 audit 16 Oct"
   },
   {
     "id": "cold-20261016-the-fox-ickenham",
@@ -42584,6 +42584,36 @@
         "body": "Hi Julie and Ann,\n\nNo problem at all, thank you for letting me know.\n\nSaturday 31 July 2027 is free for Jake. He can do three 45 minute sets at\n£350 cash on the night, with his own PA and no deposit.\n\nIf that works for you, just reply here and I'll confirm it and get it in\nthe diary.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
         "msgId": "1a14387a5d1aea11",
         "threadId": "1a11fd29a400fefe"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-16T11:05:27Z",
+        "from": "julieparker476@googlemail.com",
+        "subject": "Re: Penton park entertainment",
+        "body": "Hi Natalie\n\nThat would be great I’ve booked Jake in for the31 July thank you\n\nJulie and Ann",
+        "msgId": "1a14463953846eeb",
+        "threadId": "1a11fd29a400fefe"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-16T11:17:06Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Re: Penton park entertainment",
+        "body": "Hi Julie and Ann,\n\nThank you so much for booking Jake, he's really looking forward to coming to Penton Park.\n\nSaturday 31 July 2027 is confirmed and in the diary, three 45 minute sets.\n\nWhat time would you like him to start?\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1446e1076a02de",
+        "threadId": "1a11fd29a400fefe"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-16T17:01:13Z",
+        "from": "julieparker476@googlemail.com",
+        "subject": "Re: Re: Penton park entertainment",
+        "body": "Hi Natalie\n\nStart 8-30 would be great\n\nJulie\n\nB",
+        "msgId": "1a145a94b40fc316",
+        "threadId": "1a11fd29a400fefe"
       }
     ],
     "addedAt": "2026-09-23",
@@ -42594,8 +42624,8 @@
     "firstPitch": "8 Oct 2026",
     "subject": "Jake Essex for Penton Community & Social Club?",
     "lastContact": "2026-10-16",
-    "lastContactSrc": "us 1a14387a5d1aea11",
-    "statusNote": "LOCKED Sat 31 Jul 2027 £350 3×45 · firm lock, date moved from 10 Apr (pulled 15 Oct), per Jake 16 Oct · Us 1a14387a5d1aea11 ~08:05 BST Fri 16 Oct (31 Jul date-move email) · date pulled 15 Oct 21:54 BST (Gmail 20:54Z) · Them Ann & Julie 1a14158c40178744: 10 Apr 2027 no longer available (someone booked it early afternoon); offered 22 May · 26 Jun · 24 Jul · 31 Jul 2027 · was LOCKED Sat 10 Apr 2027 £350 3×45 · prior Us confirm 1a1407718359fdfd · thread 1a11fd29a400fefe · not Choice · Gmail-verified · folded Fri 16 Oct",
+    "lastContactSrc": "them 1a145a94b40fc316",
+    "statusNote": "start 20:30 (Them Julie B 1a145a94b40fc316 16 Oct 18:01 BST: \"Start 8-30 would be great\") · Them Julie & Ann 1a14463953846eeb 16 Oct 12:05 BST booked 31 Jul · Us confirm 1a1446e1076a02de 12:17 BST · folded 1420 17 Oct · LOCKED Sat 31 Jul 2027 £350 3×45 · firm lock, date moved from 10 Apr (pulled 15 Oct), per Jake 16 Oct · Us 1a14387a5d1aea11 ~08:05 BST Fri 16 Oct (31 Jul date-move email) · date pulled 15 Oct 21:54 BST (Gmail 20:54Z) · Them Ann & Julie 1a14158c40178744: 10 Apr 2027 no longer available (someone booked it early afternoon); offered 22 May · 26 Jun · 24 Jul · 31 Jul 2027 · was LOCKED Sat 10 Apr 2027 £350 3×45 · prior Us confirm 1a1407718359fdfd · thread 1a11fd29a400fefe · not Choice · Gmail-verified · folded Fri 16 Oct",
     "notes": "Also: pentoncsc@gmail.com (club address, 8 Oct cold)",
     "contactName": "Julie Parker & Ann",
     "lockedFee": 350,
@@ -42604,7 +42634,7 @@
       "2027-07-31"
     ],
     "lockedDate": "2027-07-31",
-    "lockedNote": "LOCKED Sat 31 Jul 2027 £350 cash 3×45 · firm lock, date moved from 10 Apr (pulled 15 Oct), per Jake 16 Oct · venue listed 31 Jul in 1a14158c40178744 · Us 1a14387a5d1aea11 16 Oct 08:05 BST · not Choice"
+    "lockedNote": "LOCKED Sat 31 Jul 2027 £350 cash 3×45 · firm lock, date moved from 10 Apr (pulled 15 Oct), per Jake 16 Oct · venue listed 31 Jul in 1a14158c40178744 · Us 1a14387a5d1aea11 16 Oct 08:05 BST · start 20:30 · Them accept 1a14463953846eeb · Us confirm 1a1446e1076a02de · not Choice"
   },
   {
     "id": "pot-crouch-oak-the-kt15-2be",
@@ -59149,19 +59179,54 @@
         "body": "Hi Gary,\n\nHope the price list was useful. Happy to hold a Saturday for Scaynes Hill\nwhile you have a look at the diary, just let me know which one suits.\n\nNatalie\nBooking agent for Jake Essex",
         "msgId": "1a13ebee124a9f9b",
         "threadId": "1a0f867f947679ac"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-17T08:31:56Z",
+        "from": "scayneshillsocialclub@gmail.com",
+        "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
+        "body": "Hi Natalie,\n\nDo you have any Fridays available ? \n\nKind regards\nGary",
+        "msgId": "1a148fd69755678e",
+        "threadId": "1a0f867f947679ac"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-17T12:17:02Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Re: Jake Essex for Scaynes Hill Social Club?",
+        "body": "Hi Gary,\n\nYes, Jake does Fridays, and they're the same price as the list I sent: £300 for 2 x 1hr sets or £450 for three sets. If you book four dates, it's £250 a night for two sets or £400 a night for three. He brings his own PA and there's no deposit.\n\nChristmas is well worth booking him for, as he does a great Christmas show and it makes a brilliant festive night for a club.\n\nHere are the Fridays he has free:\n\n2026: 23 Oct, 6 and 20 Nov, 4 and 11 Dec\n2027:\nJanuary 15, 29\nFebruary 12, 26\nMarch 5, 12\nApril 2, 23\nMay 7, 21, 28\nJune 4, 18, 25\nJuly 16, 30\nAugust 13, 27\nSeptember 10, 17, 24\nOctober 8, 15, 22\nNovember 5, 12, 19\nDecember 3, 10, 17\n\nDates are going quickly at the moment because clubs are block booking him, so if any of these work for you, just reply with your dates and I'll get them in the diary before they go.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a149cb4bec0797a",
+        "threadId": "1a0f867f947679ac"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-17T13:05:59Z",
+        "from": "scayneshillsocialclub@gmail.com",
+        "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
+        "body": "Hi Natalie,\n\nCan I book the 11th December please. Do you create the posters ? \n\nKind regards\nGary",
+        "msgId": "1a149f84e59f3e80",
+        "threadId": "1a0f867f947679ac"
       }
     ],
-    "badge": "quoted",
+    "badge": "locked",
     "hasThread": true,
-    "replied": "yes",
+    "replied": "yes — Gary 17 Oct 14:05: book Fri 11 Dec",
     "firstPitch": "1 Oct 2026",
     "subject": "Jake Essex for Scaynes Hill Social Club?",
-    "statusNote": "chased; final chase, no further chasers · Haggle Us 1a13ebee124a9f9b ~09:47 BST Thu 15 Oct thread 1a0f867f947679ac · Gmail-verified · folded 0955 15 Oct · quoted · Us price list 1a0fbb1b19bdf323 ~09:18 London Fri 2 Oct to Gary: Sat/Sun £300 2×1h / £450 3×1h; 4-date £250/£400 · free Sat/Sun list Oct 2026–Jun 2027 · waiting on Gary · no chase before Wed 7 Oct · no phone on file · Haggle owns · not locked · Them Gary price-list ask 1a0f9ca394793945 ~00:26 London Fri 2 Oct · Also: old address info@scayneshillsocialclub.co.uk",
+    "statusNote": "LOCKED Fri 11 Dec 2026 £300 2×1hr (£450 if 3 sets), start TBC · Them Gary ~14:05 BST Sat 17 Oct 1a149f84e59f3e80: book 11 Dec + asks if we create posters · Us Friday list 1a149cb4bec0797a ~13:17 BST · Them Gary Fridays ask 1a148fd69755678e ~09:31 BST · Gmail-verified · folded 1420 17 Oct · chased; final chase, no further chasers · Haggle Us 1a13ebee124a9f9b ~09:47 BST Thu 15 Oct thread 1a0f867f947679ac · Gmail-verified · folded 0955 15 Oct · quoted · Us price list 1a0fbb1b19bdf323 ~09:18 London Fri 2 Oct to Gary: Sat/Sun £300 2×1h / £450 3×1h; 4-date £250/£400 · free Sat/Sun list Oct 2026–Jun 2027 · waiting on Gary · no chase before Wed 7 Oct · no phone on file · Haggle owns · not locked · Them Gary price-list ask 1a0f9ca394793945 ~00:26 London Fri 2 Oct · Also: old address info@scayneshillsocialclub.co.uk",
     "notes": "info@scayneshillsocialclub.co.uk is unmonitored (club auto-reply 1a0f73d5b05fcbf2). Use scayneshillsocialclub@gmail.com. Also: old address info@scayneshillsocialclub.co.uk.",
-    "callHoldUntil": "2026-10-07",
-    "callExclude": "waiting-on-them,no-phone",
-    "lastContact": "2026-10-15",
-    "lastContactSrc": "us 1a13ebee124a9f9b"
+    "lastContact": "2026-10-17",
+    "lastContactSrc": "them 1a149f84e59f3e80",
+    "lockedFee": 300,
+    "lockedNights": 1,
+    "dates": [
+      "2026-12-11"
+    ],
+    "lockedDate": "2026-12-11",
+    "lockedNote": "LOCKED Fri 11 Dec 2026 £300 cash 2×1hr (£450 if three sets) · start TBC · own PA no deposit · Them Gary 1a149f84e59f3e80 17 Oct 14:05 BST · Us Friday list 1a149cb4bec0797a · Us confirm not yet sent · Gary asks \"Do you create the posters?\" (unanswered) · not Choice"
   },
   {
     "id": "cold-20261001-sunray-club-tolworth-kt6",

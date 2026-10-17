@@ -218,6 +218,13 @@
       "source": "cl"
     },
     {
+      "date": "2026-12-11",
+      "venue": "Scaynes Hill Social Club (Scaynes Hill)",
+      "town": "Scaynes Hill",
+      "status": "booked",
+      "source": "board"
+    },
+    {
       "date": "2026-12-12",
       "venue": "Kings Park Residents Club",
       "postcode": "SS8 8QW",
@@ -548,7 +555,8 @@
       "town": "Chertsey",
       "status": "booked",
       "source": "board",
-      "postcode": "KT16 8QG"
+      "postcode": "KT16 8QG",
+      "start": "20:30"
     },
     {
       "date": "2027-08-15",
