@@ -222,7 +222,9 @@
       "venue": "Scaynes Hill Social Club (Scaynes Hill)",
       "town": "Scaynes Hill",
       "status": "booked",
-      "source": "board"
+      "source": "board",
+      "start": "20:00",
+      "finish": "22:30"
     },
     {
       "date": "2026-12-12",
