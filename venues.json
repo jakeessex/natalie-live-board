@@ -43336,13 +43336,29 @@
     "website": "https://www.roseinnkennington.co.uk",
     "venueType": "Pub",
     "miles": 36,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T11:26:16Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Rose Inn?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at the Rose Inn in Kennington, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a153e98a58b0ca1",
+        "threadId": "1a153e972dd752b4",
+        "label": "Sent"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.17071,
-    "lng": 0.88548
+    "lng": 0.88548,
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for The Rose Inn?",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a153e98a58b0ca1",
+    "statusNote": "mon-19-oct cold waveC SENT_OK 1a153e98a58b0ca1 ~12:26 London thread 1a153e972dd752b4 · awaiting · Gmail-verified · folded 1245 19 Oct · Pot row matched on email + town Kennington (Ashford)"
   },
   {
     "id": "pot-runnymede-on-thames-the-tw20-0ag",
@@ -76542,10 +76558,10 @@
     "replied": "no",
     "firstPitch": "19 Oct 2026",
     "subject": "Jake Essex for Hamstead Social Club?",
-    "badge": "awaiting",
+    "badge": "bounce",
     "lastContact": "2026-10-19",
     "lastContactSrc": "us 1a153a2d8458a536",
-    "statusNote": "mon-19-oct cold waveB SENT_OK 1a153a2d8458a536 ~11:09 London thread 1a153a2d32a8923d · awaiting · Gmail-verified · folded 1148 19 Oct"
+    "statusNote": "BOUNCE NEVER_RETRY · late hard bounce DSN mailer-daemon 1a153dea93ed62bf ~12:14 BST: message blocked, 550 5.4.1 Access denied · Gmail-verified · folded 1245 19 Oct · mon-19-oct cold waveB SENT_OK 1a153a2d8458a536 ~11:09 London thread 1a153a2d32a8923d · awaiting · Gmail-verified · folded 1148 19 Oct"
   },
   {
     "id": "cold-20261019-the-woolpack-inn-warehorne",
@@ -76777,5 +76793,104 @@
     "lastContact": "2026-10-19",
     "lastContactSrc": "us 1a153c16be319ac6",
     "statusNote": "BOUNCE NEVER_RETRY · DSN mailer-daemon 1a153c198abe21b0 ~11:42 BST: Address not found (chuckeryclubwalsall@gmail.com) · Us cold waveB 1a153c16be319ac6 ~11:42 London Mon 19 Oct thread 1a153c1655729b36 · Gmail-verified · folded 1148 19 Oct"
+  },
+  {
+    "id": "cold-20261019-ship-inn-conyer",
+    "name": "The Ship Inn (Conyer)",
+    "town": "Conyer Quay, Teynham",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "theshipinnconyer@outlook.com",
+    "addedAt": "2026-10-19T11:29:56Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T11:29:56Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Ship Inn?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Ship Inn at Conyer Quay would be a lovely fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a153ece77003525",
+        "threadId": "1a153ecd066b8790",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for The Ship Inn?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a153ece77003525",
+    "statusNote": "mon-19-oct cold waveC SENT_OK 1a153ece77003525 ~12:29 London thread 1a153ecd066b8790 · awaiting · Gmail-verified · folded 1245 19 Oct"
+  },
+  {
+    "id": "cold-20261019-alexandra-wimbledon",
+    "name": "The Alexandra (Wimbledon)",
+    "town": "Wimbledon",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "alexandra@youngs.co.uk",
+    "addedAt": "2026-10-19T11:34:38Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T11:34:38Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Alexandra?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Alexandra in Wimbledon would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a153f13513e057b",
+        "threadId": "1a153f133d23a70b",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for The Alexandra?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a153f13513e057b",
+    "statusNote": "mon-19-oct cold waveC SENT_OK 1a153f13513e057b ~12:34 London thread 1a153f133d23a70b · awaiting · Gmail-verified · folded 1245 19 Oct"
+  },
+  {
+    "id": "cold-20261019-ye-olde-beverlie-canterbury",
+    "name": "Ye Olde Beverlie (Canterbury)",
+    "town": "Canterbury",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "yeoldebeverlieltd@gmail.com",
+    "addedAt": "2026-10-19T11:38:29Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T11:38:29Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Ye Olde Beverlie?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Ye Olde Beverlie, and he'd love to come and perform for you in Canterbury.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a153f4bd709df0a",
+        "threadId": "1a153f4bccf1ce5c",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for Ye Olde Beverlie?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a153f4bd709df0a",
+    "statusNote": "mon-19-oct cold waveC SENT_OK 1a153f4bd709df0a ~12:38 London thread 1a153f4bccf1ce5c · awaiting · Gmail-verified · folded 1245 19 Oct"
   }
 ]
