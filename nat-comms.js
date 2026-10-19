@@ -38,10 +38,11 @@
     var town = String(v.town || "").trim();
     if (town) return town;
     var name = String(v.name || "");
-    var m = name.match(/^(.*)\s+(Conservative Club|Social Club|Cons|WMC|RBL Club|RBL|Club)$/i);
+    var m = name.match(/^(.*)\s+(Conservative Club|Social Club|RBL Club|Cons|WMC|RBL)$/i);
+    if (!m) m = name.match(/^(.*)\s+Club$/i);
     if (!m || !m[1]) return "";
     var place = m[1].trim();
-    if (/^the\b/i.test(place)) return "";
+    if (/^the\b/i.test(place) || /social|conservative|working|services/i.test(place)) return "";
     if (place.split(/\s+/).length > 2) return "";
     return place;
   }
