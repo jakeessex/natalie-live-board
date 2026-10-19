@@ -26,10 +26,279 @@
       "updatedAt": "2026-10-19T16:25:00Z"
     },
     "sutton-social-club|2026-10-19T12:36:36.788Z": {
-      "action": "Jake ruled the block gets re-pitched. First date at £250, three more held provisionally, no obligation until after the first gig. Haggle is redrafting.",
+      "action": "Jake ruled at 17:23 to re-pitch the block: first date, plus three provisional dates with no obligation until after the first gig. Haggle's redraft (not sent; not in Gmail Drafts) quotes £300 a night for four, including the first. That differs from Nat's £250 note, so check the price before sending.",
       "owner": "Haggle",
       "status": "waiting on Jake",
-      "updatedAt": "2026-10-19T16:25:00Z"
+      "updatedAt": "2026-10-19T19:50:00Z",
+      "link": "https://mail.google.com/mail/u/0/#all/1a0aaa885e20877d"
+    },
+    "st-neots-cons|2026-10-19T12:11:42.454Z": {
+      "action": "Same as the 12:11 note: email drafted as Haggle's card (not in Gmail Drafts, not sent). Asks them to say if they want to book.",
+      "owner": "Haggle",
+      "status": "drafted",
+      "updatedAt": "2026-10-19T19:50:00Z"
+    },
+    "east-barnet-rbl-club|2026-09-09T20:40:50.860Z": {
+      "action": "Booked: Sat 4 Dec 2027, £275, locked on the board. Nat sent the confirmation email.",
+      "owner": "Bookings",
+      "status": "done",
+      "updatedAt": "2026-10-19T19:50:00Z"
+    },
+    "sedir|2026-10-02T14:38:13.915Z": {
+      "action": "Call-back happened at 14:52 (her next note).",
+      "owner": "JEM",
+      "status": "done",
+      "updatedAt": "2026-10-19T19:50:00Z"
+    },
+    "sedir|2026-10-02T14:52:19.047Z": {
+      "action": "Prices re-sent 2 Oct 16:02 BST (2×45 £250, 3×45 £375, 4×40 £485, £50 deposit). Waiting on Ahmet.",
+      "owner": "Haggle",
+      "status": "sent",
+      "updatedAt": "2026-10-19T19:50:00Z",
+      "link": "https://mail.google.com/mail/u/0/#all/1a07d82e820b9ff7"
+    },
+    "greenford-conservative-club-john-mitchell|2026-09-11T11:54:06.495Z": {
+      "action": "Booked later: Sat 19 Jun 2027, £400, locked on the board.",
+      "owner": "Bookings",
+      "status": "done",
+      "updatedAt": "2026-10-19T19:50:00Z"
+    },
+    "california-social-ipswich|2026-09-11T11:58:57.185Z": {
+      "action": "Jake called Peter on Mon 14 Sep before 12. Peter will look at the site and get back. Waiting on his reply.",
+      "owner": "JEM",
+      "status": "done",
+      "updatedAt": "2026-10-19T19:50:00Z"
+    },
+    "the-six-in-one-club|2026-10-02T15:23:33.656Z": {
+      "action": "Emailed; it closed by email (see the 5 Oct note).",
+      "owner": "Haggle",
+      "status": "done",
+      "updatedAt": "2026-10-19T19:50:00Z"
+    },
+    "the-six-in-one-club|2026-10-05T10:47:58.154Z": {
+      "action": "Booked: Sat 4 Sep 2027, £300 cash, locked on the board.",
+      "owner": "Bookings",
+      "status": "done",
+      "updatedAt": "2026-10-19T19:50:00Z"
     }
-  }
+  },
+  "notes": {
+    "sutton-social-club|2026-10-19T12:36:36.788Z": {
+      "venueId": "sutton-social-club",
+      "at": "2026-10-19T12:36:36.788Z",
+      "atBST": "19 Oct 13:36",
+      "verbatim": "Email saying we will honour the £250 booking if you book three future dates in the diary, if however after the first performance of you are not happy you will not have to honour that commitment we understand times are hard look forward to hearing from you",
+      "outcome": "",
+      "cleaned": "Email saying we will honour the £250 booking if they book three future dates in the diary. However, if after the first performance they are not happy, they will not have to honour that commitment. We understand times are hard. Look forward to hearing from you."
+    },
+    "honiton-cons|2026-10-19T12:24:42.035Z": {
+      "venueId": "honiton-cons",
+      "at": "2026-10-19T12:24:42.035Z",
+      "atBST": "19 Oct 13:24",
+      "verbatim": "Email Lesley just asking if she is still interested in booking a date in or if she wants to leave it for now",
+      "outcome": "",
+      "cleaned": "Email Lesley, just asking if she is still interested in booking a date or if she would rather leave it for now."
+    },
+    "corner-club-canvey|2026-10-19T12:23:05.935Z": {
+      "venueId": "corner-club-canvey",
+      "at": "2026-10-19T12:23:05.935Z",
+      "atBST": "19 Oct 13:23",
+      "verbatim": "Left voicemail asking her to call me",
+      "outcome": "",
+      "cleaned": "Left a voicemail asking her to call me."
+    },
+    "the-bull|2026-10-19T12:15:02.405Z": {
+      "venueId": "the-bull",
+      "at": "2026-10-19T12:15:02.405Z",
+      "atBST": "19 Oct 13:15",
+      "verbatim": "Tang Hollie she was there but could not talk send email saying called today to see if you want to schedule a date in please let us know either way kind regards Natalie",
+      "outcome": "",
+      "cleaned": "Rang Hollie. She was there but could not talk. Send an email saying: \"Called today to see if you want to schedule a date in. Please let us know either way. Kind regards, Natalie.\""
+    },
+    "st-neots-cons|2026-10-19T12:11:42.454Z": {
+      "venueId": "st-neots-cons",
+      "at": "2026-10-19T12:11:42.454Z",
+      "atBST": "19 Oct 13:11",
+      "verbatim": "They’ll confirm",
+      "outcome": "confirm",
+      "cleaned": "They'll confirm."
+    },
+    "st-neots-cons|2026-10-19T12:11:29.957Z": {
+      "venueId": "st-neots-cons",
+      "at": "2026-10-19T12:11:29.957Z",
+      "atBST": "19 Oct 13:11",
+      "verbatim": "Tang today no answer no answerphone please send email saying tried to call to get a update please can they\nLet us know if they would like to book",
+      "outcome": "",
+      "cleaned": "Rang today: no answer and no answerphone. Please send an email saying we tried to call to get an update, and asking them to let us know if they would like to book."
+    },
+    "the-six-in-one-club|2026-10-05T10:47:58.154Z": {
+      "venueId": "the-six-in-one-club",
+      "at": "2026-10-05T10:47:58.154Z",
+      "atBST": "5 Oct 11:47",
+      "verbatim": "Rang, he was at his other job, emailed to get a date booked, and it closed via email after the call — Sat 4 Sep 2027, £300 cash, 2x1hr from 8.30.",
+      "outcome": "",
+      "cleaned": "Rang; he was at his other job. Emailed to get a date booked, and it closed by email after the call: Sat 4 Sep 2027, £300 cash, 2 × 1 hour from 8:30."
+    },
+    "the-six-in-one-club|2026-10-02T15:23:33.656Z": {
+      "venueId": "the-six-in-one-club",
+      "at": "2026-10-02T15:23:33.656Z",
+      "atBST": "2 Oct 16:23",
+      "verbatim": "Rang he is working his other job e mail saying I called to get a date booked in snd to call me back 07523924645",
+      "outcome": "",
+      "cleaned": "Rang; he is working his other job. Email saying I called to get a date booked in, and ask him to call me back on 07523924645."
+    },
+    "whitstable-social-club|2026-10-02T15:19:10.512Z": {
+      "venueId": "whitstable-social-club",
+      "at": "2026-10-02T15:19:10.512Z",
+      "atBST": "2 Oct 16:19",
+      "verbatim": "They said contact Tracey brown 07517499148 via WhatsApp I’ll do that now",
+      "outcome": "",
+      "cleaned": "They said to contact Tracey Brown on 07517499148 via WhatsApp. I'll do that now."
+    },
+    "whitstable-social-club|2026-10-02T15:11:32.131Z": {
+      "venueId": "whitstable-social-club",
+      "at": "2026-10-02T15:11:32.131Z",
+      "atBST": "2 Oct 16:11",
+      "verbatim": "Left vm but send a quick email saying we look forward to hearing from you dates for this year filling up fast",
+      "outcome": "",
+      "cleaned": "Left a voicemail, but send a quick email saying we look forward to hearing from you, as dates for this year are filling up fast."
+    },
+    "the-greyhound-hotel|2026-10-02T15:09:57.311Z": {
+      "venueId": "the-greyhound-hotel",
+      "at": "2026-10-02T15:09:57.311Z",
+      "atBST": "2 Oct 16:09",
+      "verbatim": "They deffo want to go ahead but probs dec they are waiting on head office approval ect they will contact us",
+      "outcome": "",
+      "cleaned": "They definitely want to go ahead, but probably in December. They are waiting on head office approval etc. They will contact us."
+    },
+    "shepherd-and-dog|2026-10-02T15:04:50.346Z": {
+      "venueId": "shepherd-and-dog",
+      "at": "2026-10-02T15:04:50.346Z",
+      "atBST": "2 Oct 16:04",
+      "verbatim": "Please send email to Rebecca asking if she would like to book a date in with prices ect say we are starting to get quite booked and to let us know asap if she would like a date for this year",
+      "outcome": "",
+      "cleaned": "Please send an email to Rebecca asking if she would like to book a date, with prices etc. Say we are starting to get quite booked and to let us know as soon as possible if she would like a date for this year."
+    },
+    "corner-club-canvey|2026-10-02T15:00:34.599Z": {
+      "venueId": "corner-club-canvey",
+      "at": "2026-10-02T15:00:34.599Z",
+      "atBST": "2 Oct 16:00",
+      "verbatim": "Maxine back from holiday tomorrow call tomorrow night please remember nd is",
+      "outcome": "",
+      "cleaned": "Maxine is back from holiday tomorrow. Call tomorrow night, please remember. \"nd is\" (unclear)"
+    },
+    "broomfield-rbl|2026-10-02T14:57:48.902Z": {
+      "venueId": "broomfield-rbl",
+      "at": "2026-10-02T14:57:48.902Z",
+      "atBST": "2 Oct 15:57",
+      "verbatim": "Voicemail",
+      "outcome": "voicemail",
+      "cleaned": "Voicemail."
+    },
+    "broomfield-rbl|2026-10-02T14:57:31.759Z": {
+      "venueId": "broomfield-rbl",
+      "at": "2026-10-02T14:57:31.759Z",
+      "atBST": "2 Oct 15:57",
+      "verbatim": "I rang left voicemail asking if they want to secure a date",
+      "outcome": "",
+      "cleaned": "I rang and left a voicemail asking if they want to secure a date."
+    },
+    "sedir|2026-10-02T14:55:06.482Z": {
+      "venueId": "sedir",
+      "at": "2026-10-02T14:55:06.482Z",
+      "atBST": "2 Oct 15:55",
+      "verbatim": "They’ll confirm",
+      "outcome": "confirm",
+      "cleaned": "They'll confirm."
+    },
+    "sedir|2026-10-02T14:52:19.047Z": {
+      "venueId": "sedir",
+      "at": "2026-10-02T14:52:19.047Z",
+      "atBST": "2 Oct 15:52",
+      "verbatim": "He wants email sent again with prices thinking Nov",
+      "outcome": "",
+      "cleaned": "He wants the email sent again with prices. He is thinking November."
+    },
+    "sedir|2026-10-02T14:38:13.915Z": {
+      "venueId": "sedir",
+      "at": "2026-10-02T14:38:13.915Z",
+      "atBST": "2 Oct 15:38",
+      "verbatim": "Called got to call back in five mins",
+      "outcome": "",
+      "cleaned": "Called; I have to call back in five minutes."
+    },
+    "the-muddy-duck|2026-10-02T14:36:14.599Z": {
+      "venueId": "the-muddy-duck",
+      "at": "2026-10-02T14:36:14.599Z",
+      "atBST": "2 Oct 15:36",
+      "verbatim": "They’ll confirm",
+      "outcome": "confirm",
+      "cleaned": "They'll confirm."
+    },
+    "the-muddy-duck|2026-10-02T14:35:48.164Z": {
+      "venueId": "the-muddy-duck",
+      "at": "2026-10-02T14:35:48.164Z",
+      "atBST": "2 Oct 15:35",
+      "verbatim": "Voicemail",
+      "outcome": "voicemail",
+      "cleaned": "Voicemail."
+    },
+    "the-muddy-duck|2026-10-02T14:35:40.114Z": {
+      "venueId": "the-muddy-duck",
+      "at": "2026-10-02T14:35:40.114Z",
+      "atBST": "2 Oct 15:35",
+      "verbatim": "Rang left vm",
+      "outcome": "",
+      "cleaned": "Rang and left a voicemail."
+    },
+    "winchester-club|2026-09-16T12:16:44.600Z": {
+      "venueId": "winchester-club",
+      "at": "2026-09-16T12:16:44.600Z",
+      "atBST": "16 Sep 13:16",
+      "verbatim": "Donna bar manager took my number to give to Sandie so she can give me a call as soon as she is in",
+      "outcome": "",
+      "cleaned": "Donna, the bar manager, took my number to give to Sandie so she can call me as soon as she is in."
+    },
+    "california-social-ipswich|2026-09-11T11:58:57.185Z": {
+      "venueId": "california-social-ipswich",
+      "at": "2026-09-11T11:58:57.185Z",
+      "atBST": "11 Sep 12:58",
+      "verbatim": "Called spoke to Kate, Peter will be there Monday morning before 12 for me to call 👍🏻. - Jake",
+      "outcome": "",
+      "cleaned": "Called and spoke to Kate. Peter will be there Monday morning before 12 for me to call. 👍🏻 – Jake"
+    },
+    "the-muddy-duck|2026-09-11T11:54:39.116Z": {
+      "venueId": "the-muddy-duck",
+      "at": "2026-09-11T11:54:39.116Z",
+      "atBST": "11 Sep 12:54",
+      "verbatim": "Called venue, gave bar staff my phone number to get jaela to ring me - Jake",
+      "outcome": "",
+      "cleaned": "Called the venue and gave the bar staff my phone number so Jaela can ring me. – Jake"
+    },
+    "greenford-conservative-club-john-mitchell|2026-09-11T11:54:06.495Z": {
+      "venueId": "greenford-conservative-club-john-mitchell",
+      "at": "2026-09-11T11:54:06.495Z",
+      "atBST": "11 Sep 12:54",
+      "verbatim": "Tried to call phone number given is missing a digit, didn’t answer when I rang their main number. - Jake",
+      "outcome": "",
+      "cleaned": "Tried to call, but the phone number given is missing a digit. They didn't answer when I rang their main number. – Jake"
+    },
+    "sedir|2026-09-10T19:37:55.022Z": {
+      "venueId": "sedir",
+      "at": "2026-09-10T19:37:55.022Z",
+      "atBST": "10 Sep 20:37",
+      "verbatim": "I called him and sent him some dates over but waiting response",
+      "outcome": "",
+      "cleaned": "I called him and sent him some dates, but I am waiting for a response."
+    },
+    "east-barnet-rbl-club|2026-09-09T20:40:50.860Z": {
+      "venueId": "east-barnet-rbl-club",
+      "at": "2026-09-09T20:40:50.860Z",
+      "atBST": "9 Sep 21:40",
+      "verbatim": "Booked for 4th December 2027 8:30pm see email, I have sent email confirmation- Nat",
+      "outcome": "",
+      "cleaned": "Booked for 4 December 2027 at 8:30pm (see email). I have sent the email confirmation. – Nat"
+    }
+  },
+  "notesUpdatedAt": "2026-10-19T19:43:50Z"
 }
