@@ -76611,8 +76611,7 @@
     "badge": "awaiting",
     "lastContact": "2026-10-19",
     "lastContactSrc": "us 1a153ac5ad39fbce",
-    "statusNote": "mon-19-oct cold waveB SENT_OK 1a153ac5ad39fbce ~11:19 London thread 1a153ac554e5612f · awaiting · Gmail-verified · folded 1148 19 Oct · 19 Oct: FU HOLD, contact events@pairchousehotel.co.uk looks like another venue; Bookings checking (JEM). No follow-ups until ruled.",
-    "callExclude": "hard-hold"
+    "statusNote": "mon-19-oct cold waveB SENT_OK 1a153ac5ad39fbce ~11:19 London thread 1a153ac554e5612f · awaiting · Gmail-verified · folded 1148 19 Oct · 19 Oct: FU HOLD, contact events@pairchousehotel.co.uk looks like another venue; Bookings checking (JEM). No follow-ups until ruled. · 19 Oct 11:53: hold lifted, Bookings confirmed Pairc House Hotel is inside Irish Centre (same address)."
   },
   {
     "id": "cold-20261019-bishops-finger-canterbury",
