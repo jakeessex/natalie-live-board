@@ -349,8 +349,9 @@ main{padding:14px 14px 140px}
 .nc-card{display:grid;grid-template-columns:1fr;gap:8px;padding:14px 0;border-top:1px solid var(--line)}
 .nc-note{position:relative}
 .nc-venue{margin:0;font-size:16px;font-weight:800;line-height:1.25;color:var(--fg)}
-.nc-go{display:block;width:100%;min-height:44px;padding:0;border:0;background:transparent;text-align:left;font-family:inherit;cursor:pointer}
-.nc-go span{color:var(--accent)}
+.nc-card.tap{cursor:pointer;-webkit-tap-highlight-color:rgba(232,184,74,.15)}
+.nc-card.tap:active{background:var(--raised)}
+.nc-go{color:var(--accent)}
 .nc-new{position:absolute;left:-10px;top:18px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
 .nc-when,.nc-owner,.nc-outcome{margin:3px 0 0;color:var(--muted);font-size:12px;font-weight:700}
 .nc-text,.nc-action{margin:6px 0 0;font-size:15px;line-height:1.45;white-space:pre-wrap;color:var(--fg)}

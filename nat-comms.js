@@ -186,17 +186,16 @@
       var meta = statusMeta(reply.status);
       right = chip(meta) +
         '<p class="nc-action">' + esc(reply.action || "") + "</p>" +
-        (reply.owner ? '<p class="nc-owner">' + esc(reply.owner) + "</p>" : "") +
-        (reply.link ? '<a class="nc-link" href="' + esc(reply.link) + '" target="_blank" rel="noopener">Open thread</a>' : "");
+        (reply.owner ? '<p class="nc-owner">' + esc(reply.owner) + "</p>" : "");
     }
     var own = String(card.outcomeText || "").trim();
     var outcome = own ? "\u201c" + own + "\u201d" : outcomeLabel(card.outcome);
     var cleaned = cleanFor(card);
     var isNew = seenAt() && (card.alsoAt || card.at) > seenAt();
     var title = esc(venueTitle(v, card.venueId));
-    var venue = v ? '<button type="button" class="nc-venue nc-go" onclick="natOpen(\'' + esc(card.venueId) + '\')">' + title + ' <span aria-hidden="true">\u203a</span></button>'
-      : '<p class="nc-venue">' + title + "</p>";
-    return '<article class="nc-card' + (card.open ? " open" : " closed") + '" data-key="' + esc(card.venueId + "|" + card.at) + '">' +
+    var venue = '<p class="nc-venue">' + title + (v ? ' <span class="nc-go" aria-hidden="true">\u203a</span>' : "") + "</p>";
+    var tap = v ? ' tap" role="button" tabindex="0" onclick="natOpen(\'' + esc(card.venueId) + '\')" onkeydown="if(event.key===\'Enter\')natOpen(\'' + esc(card.venueId) + '\')' : "";
+    return '<article class="nc-card' + (card.open ? " open" : " closed") + tap + '" data-key="' + esc(card.venueId + "|" + card.at) + '">' +
       '<div class="nc-note">' + (isNew ? '<span class="nc-new" title="New since you last looked"></span>' : "") + venue +
       '<p class="nc-when">' + esc(ukWhen(card.at)) + "</p>" +
       '<p class="nc-text">' + esc(cleaned || card.text) + "</p>" +
