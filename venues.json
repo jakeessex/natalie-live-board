@@ -76165,10 +76165,10 @@
     "replied": "no",
     "firstPitch": "16 Oct 2026",
     "subject": "Jake Essex for The Trooper?",
-    "badge": "awaiting",
+    "badge": "bounce",
     "lastContact": "2026-10-16",
     "lastContactSrc": "us 1a1454bf75525932",
-    "statusNote": "fri-16-oct cold waveE SENT_OK 1a1454bf75525932 ~16:19 London thread 1a1454bf4e57eadd · awaiting · Gmail-verified · folded 1645 16 Oct"
+    "statusNote": "BOUNCE NEVER_RETRY · O365 NDR 550 5.1.10 RecipientNotFound, hello@thetrooper.co.uk, 16 Oct 16:19 BST, thread 1a1454bf4e57eadd, NDR in Spam with no hex id (read by Bookings) · folded 0940 19 Oct · fri-16-oct cold waveE SENT_OK 1a1454bf75525932 ~16:19 London thread 1a1454bf4e57eadd · awaiting · Gmail-verified · folded 1645 16 Oct"
   },
   {
     "id": "cold-20261016-captain-howey-hotel-littlestone",
