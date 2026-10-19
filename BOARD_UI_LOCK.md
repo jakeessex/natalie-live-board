@@ -16,6 +16,8 @@ The live board is **four UI files plus data files**:
 
 v43 (28 Sep 2026): Jake asked for the Calls tab. That one deliberate UI change lifted the lock once; it is locked again.
 
+19 Oct 2026: Jake lifted the lock once (20:43, in chat) for the Natalie's notes panel only (`nat-comms.js`, its `.nc-*` rules in `board.css`, and its script tag cache-bust in `index.html`). Revert point: tag `nat-notes-build-original`. It is locked again.
+
 If a Bardswell / MASTER / embed job rewrites `index.html`, GitHub Pages will ship the old fat Board v15 (~631KB) again.
 
 ## Checks

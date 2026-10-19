@@ -83,11 +83,11 @@
 
   function statusMeta(status) {
     var s = String(status || "").toLowerCase();
-    if (s === "waiting on jake") return { cls: "wait", label: "Waiting on Jake", open: true };
+    if (s === "waiting on jake" || s === "waiting-on-jake") return { cls: "wait", label: "Waiting on Jake", open: true };
     if (s === "drafted") return { cls: "draft", label: "Drafted", open: true };
     if (s === "sent") return { cls: "ok", label: "Sent", open: false };
     if (s === "done") return { cls: "ok", label: "Done", open: false };
-    if (s === "no action needed" || s === "no action") return { cls: "none", label: "No action", open: false };
+    if (s === "no action needed" || s === "no action") return { cls: "none", label: "Nothing needed", open: false };
     return { cls: "wait", label: status || "Open", open: true };
   }
 
@@ -127,6 +127,7 @@
           var gap = new Date(entry.at) - new Date(pending.at);
           if (gap >= 0 && gap < 10 * 60 * 1000) {
             pending.outcome = entry.outcome || pending.outcome;
+            pending.outcomeText = entry.text || pending.outcomeText;
             pending.alsoAt = entry.at;
             return;
           }
@@ -136,7 +137,8 @@
           venueId: venueId,
           at: entry.at || "",
           text: entry.text || "",
-          outcome: entry.outcome || ""
+          outcome: entry.outcome || "",
+          outcomeText: isStock(entry) ? entry.text || "" : ""
         };
       });
       if (pending) cards.push(pending);
@@ -159,6 +161,19 @@
     return '<span class="nc-chip ' + meta.cls + '">' + esc(meta.label) + "</span>";
   }
 
+  var SEEN_KEY = "natNotesSeenAt";
+  function seenAt() { try { return localStorage.getItem(SEEN_KEY) || ""; } catch (e) { return ""; } }
+  function markSeen(cards) {
+    var top = "";
+    cards.forEach(function (c) { var t = c.alsoAt && c.alsoAt > c.at ? c.alsoAt : c.at; if (t > top) top = t; });
+    try { if (top && top > seenAt()) localStorage.setItem(SEEN_KEY, top); } catch (e) {}
+  }
+  function cleanFor(card) {
+    var bag = state.clean || {};
+    var c = bag[card.venueId + "|" + card.at];
+    return c && c.cleaned && !/\(uncleaned\)$/.test(c.cleaned) ? c.cleaned : "";
+  }
+
   function cardHtml(card, venues) {
     var v = null;
     var i;
@@ -166,25 +181,32 @@
     var reply = card.reply;
     var right;
     if (!reply) {
-      right = '<p class="nc-gap">Not actioned yet</p>';
+      right = chip({ cls: "wait", label: "Not actioned yet" });
     } else {
       var meta = statusMeta(reply.status);
-      right = '<p class="nc-action">' + esc(reply.action || "") + "</p>" +
+      right = chip(meta) +
+        '<p class="nc-action">' + esc(reply.action || "") + "</p>" +
         (reply.owner ? '<p class="nc-owner">' + esc(reply.owner) + "</p>" : "") +
-        chip(meta) +
         (reply.link ? '<a class="nc-link" href="' + esc(reply.link) + '" target="_blank" rel="noopener">Open thread</a>' : "");
     }
-    var outcome = outcomeLabel(card.outcome);
+    var own = String(card.outcomeText || "").trim();
+    var outcome = own ? "\u201c" + own + "\u201d" : outcomeLabel(card.outcome);
+    var cleaned = cleanFor(card);
+    var isNew = seenAt() && (card.alsoAt || card.at) > seenAt();
+    var title = esc(venueTitle(v, card.venueId));
+    var venue = v ? '<button type="button" class="nc-venue nc-go" onclick="natOpen(\'' + esc(card.venueId) + '\')">' + title + ' <span aria-hidden="true">\u203a</span></button>'
+      : '<p class="nc-venue">' + title + "</p>";
     return '<article class="nc-card' + (card.open ? " open" : " closed") + '" data-key="' + esc(card.venueId + "|" + card.at) + '">' +
-      '<div class="nc-note"><p class="nc-venue">' + esc(venueTitle(v, card.venueId)) + '</p>' +
+      '<div class="nc-note">' + (isNew ? '<span class="nc-new" title="New since you last looked"></span>' : "") + venue +
       '<p class="nc-when">' + esc(ukWhen(card.at)) + "</p>" +
-      '<p class="nc-text">' + esc(card.text) + "</p>" +
-      (outcome ? '<p class="nc-outcome">Outcome: ' + esc(outcome) + "</p>" : "") +
+      '<p class="nc-text">' + esc(cleaned || card.text) + "</p>" +
+      (cleaned && cleaned !== card.text ? '<p class="nc-orig">Nat wrote: ' + esc(card.text) + "</p>" : "") +
+      (outcome ? '<p class="nc-outcome">Her outcome: ' + esc(outcome) + "</p>" : "") +
       "</div><div class=\"nc-reply\">" + right + "</div></article>";
   }
 
   function bar(count) {
-    var n = count == null ? "" : '<em>' + count + " open</em>";
+    var n = count == null ? "" : '<em>Open ' + count + "</em>";
     return '<button type="button" class="nc-bar" onclick="NatComms.toggle()" aria-expanded="' + (state.opened ? "true" : "false") + '">' +
       "<b>NATALIES NOTES</b>" + n + "<i>" + (state.opened ? "−" : "+") + "</i></button>";
   }
@@ -230,6 +252,7 @@
         html + "</div>";
     }
     el.innerHTML = '<section class="nat-comms' + (state.opened ? " open" : "") + '">' + bar(openN) + body + "</section>";
+    if (state.opened) markSeen(all);
   }
 
   function takeNotes(payload) {
@@ -260,6 +283,7 @@
     ]).then(function (pair) {
       state.notes = takeNotes(pair[0]);
       state.replies = (pair[1] && pair[1].replies) || {};
+      state.clean = (pair[1] && pair[1].notes) || {};
       state.error = "";
     }).catch(function (err) {
       state.error = "Notes didn’t load. Tap refresh.";
