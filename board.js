@@ -2913,6 +2913,7 @@ var NatNotes = (function(exports) {
 
   function dashHtml(pulse) {
     return '<div class="dash">' +
+      '<div id="nat-comms"></div>' +
       '<button type="button" class="hero-cash" onclick="natCash()" aria-label="Locked, collected and total">' + moneyFigs(pulse) + "</button>" +
       '<p class="pep">' + esc(pulse.pep) + "</p>" +
       '<div class="desk-acts">' +
@@ -3081,6 +3082,7 @@ var NatNotes = (function(exports) {
     $("count").textContent = home ? "" : (list.length + " job" + (list.length === 1 ? "" : "s") + " · " + label + (filter === "call" && alarm ? " · quiet alarm" : ""));
     $("count").style.display = home ? "none" : "";
     $("list").innerHTML = cards;
+    if (home && window.NatComms) window.NatComms.paint($("nat-comms"), VENUES);
     if (filter === "potential" && !searching()) setTimeout(function () { if (filter === "potential") paintPot(list); }, 30);
     else destroyPotMap();
     var mail = $("mailcount");

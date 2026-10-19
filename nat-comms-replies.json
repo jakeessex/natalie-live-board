@@ -1,0 +1,35 @@
+{
+  "bot": "Jake reads this on Nat Comms. Notes come from https://dweet.cc/get/latest/dweet/for/jem-natalie-live-nbj-2026 under content.notes (a JSON string keyed by venueId). Each venue has entries[] with at (UTC), text and outcome. Add a reply under replies. The key is venueId|entry.at using the exact UTC timestamp. A note with no key shows as Not actioned yet on the next refresh. status is one of: drafted, sent, waiting on Jake, no action needed, done. owner is Haggle, Bookings, Diary, JEM or Jake. link is optional.",
+  "replies": {
+    "st-neots-cons|2026-10-19T12:11:29.957Z": {
+      "action": "Email drafted. Called, no answer and no answerphone. Asked them to say if they want to book.",
+      "owner": "Haggle",
+      "status": "drafted",
+      "updatedAt": "2026-10-19T16:25:00Z"
+    },
+    "the-bull|2026-10-19T12:15:02.405Z": {
+      "action": "Email drafted to Holly. She was in but could not talk. Asked if she wants a date in, and to let us know either way.",
+      "owner": "Haggle",
+      "status": "drafted",
+      "updatedAt": "2026-10-19T16:25:00Z"
+    },
+    "honiton-cons|2026-10-19T12:24:42.035Z": {
+      "action": "Email drafted to Lesley. Asked if she still wants a date, or would rather leave it for now.",
+      "owner": "Haggle",
+      "status": "drafted",
+      "updatedAt": "2026-10-19T16:25:00Z"
+    },
+    "corner-club-canvey|2026-10-19T12:23:05.935Z": {
+      "action": "Voicemail only. Asked her to call back. No email.",
+      "owner": "Haggle",
+      "status": "no action needed",
+      "updatedAt": "2026-10-19T16:25:00Z"
+    },
+    "sutton-social-club|2026-10-19T12:36:36.788Z": {
+      "action": "Jake ruled the block gets re-pitched. First date at £250, three more held provisionally, no obligation until after the first gig. Haggle is redrafting.",
+      "owner": "Haggle",
+      "status": "waiting on Jake",
+      "updatedAt": "2026-10-19T16:25:00Z"
+    }
+  }
+}

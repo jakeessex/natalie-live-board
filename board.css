@@ -334,6 +334,29 @@ main{padding:14px 14px 140px}
 .money-head{display:block;width:100%;margin-top:12px;text-align:left;border:1px solid #c9a227;background:#1a140c;padding:12px 14px;color:inherit}
 .house-act.paid{color:#ffd76a;border-color:#c9a227}
 .house.paid{box-shadow:inset 3px 0 0 #c9a227}
+.nat-comms{margin:0 0 14px;padding:12px 12px 4px;background:#140f0c;border:1px solid #c9a227}
+.nat-comms h2{margin:0;font-family:"Figtree",system-ui,sans-serif;font-size:16px;font-weight:750;letter-spacing:0;color:#ffd76a}
+.nc-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.nc-refresh{border:0;background:transparent;color:#f3d9a4;font-size:13px;font-weight:800;min-height:36px;padding:0 2px}
+.nc-filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+.nc-filters button{border:1px solid #3a2e24;background:transparent;color:#f3d9a4;font-size:12px;font-weight:800;padding:6px 10px;min-height:36px}
+.nc-filters button.on{background:#ffd76a;color:#1a120c;border-color:#ffd76a}
+.nc-card{display:grid;grid-template-columns:1.15fr .85fr;gap:10px;padding:12px 0;border-top:1px solid #2c2018}
+.nc-venue{margin:0;font-size:15px;font-weight:750;line-height:1.25}
+.nc-when,.nc-owner,.nc-outcome{margin:3px 0 0;color:#a08b76;font-size:12px;font-weight:700}
+.nc-text,.nc-action{margin:6px 0 0;font-size:14px;line-height:1.4;white-space:pre-wrap}
+.nc-chip{display:inline-block;margin-top:8px;padding:3px 8px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
+.nc-chip.wait{background:#3a1410;color:#ff7a6e}
+.nc-chip.draft{background:#3a2a10;color:#ffb45a}
+.nc-chip.ok{background:#102418;color:#7dffb2}
+.nc-chip.none{background:#2a2420;color:#a08b76}
+.nc-gap{margin:8px 0 0;color:#ff7a6e;font-size:14px;font-weight:800}
+.nc-link{display:inline-block;margin-top:8px;color:#ffd76a;font-size:13px;font-weight:750}
+.nc-split{margin:8px 0 0;padding-top:8px;color:#a08b76;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+@media (max-width:359px){
+  .nc-card{grid-template-columns:1fr}
+  .nc-reply{padding-top:8px;border-top:1px dashed #3a2e24}
+}
 @media (max-width:360px){
   .hero-cash .money-3 b,.dates-head .money-3 b,.money-head .money-3 b{font-size:18px}
 }
