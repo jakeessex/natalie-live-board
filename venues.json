@@ -47236,18 +47236,34 @@
     "name": "Christies",
     "town": "Birchington",
     "phone": "01846 847847",
-    "email": "",
+    "email": "christieswinebar@gmail.com",
     "postcode": "CT7 9RD",
     "website": "",
     "venueType": "Wine Bar",
     "miles": 45,
-    "prospect": true,
-    "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T13:31:06Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Christies Wine Bar?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at Christies Wine Bar in Birchington, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a1545bd51f06158",
+        "threadId": "1a1545bc1d8da47a",
+        "label": "Sent"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.37718,
-    "lng": 1.30229
+    "lng": 1.30229,
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for Christies Wine Bar?",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a1545bd51f06158",
+    "statusNote": "mon-19-oct cold waveD SENT_OK 1a1545bd51f06158 ~14:31 London thread 1a1545bc1d8da47a · awaiting · THANET: reply to JEM for Jake price · Gmail-verified · folded 1447 19 Oct · Pot row (Christies, Birchington CT7 9RD) per Bookings; email added (row had none)"
   },
   {
     "id": "pot-fox-finch-gu7-1hf",
@@ -76892,5 +76908,170 @@
     "lastContact": "2026-10-19",
     "lastContactSrc": "us 1a153f4bd709df0a",
     "statusNote": "mon-19-oct cold waveC SENT_OK 1a153f4bd709df0a ~12:38 London thread 1a153f4bccf1ce5c · awaiting · Gmail-verified · folded 1245 19 Oct"
+  },
+  {
+    "id": "cold-20261019-hollywood-arms-chelsea",
+    "name": "Hollywood Arms (Chelsea)",
+    "town": "Chelsea SW10",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "hollywoodarms@youngs.co.uk",
+    "addedAt": "2026-10-19T13:23:07Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T13:23:07Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Hollywood Arms?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at the Hollywood Arms in Chelsea, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a15454824c10057",
+        "threadId": "1a154545f8758488",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for Hollywood Arms?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a15454824c10057",
+    "statusNote": "mon-19-oct cold waveD SENT_OK 1a15454824c10057 ~14:23 London thread 1a154545f8758488 · awaiting · LOCAL Young's · Gmail-verified · folded 1447 19 Oct"
+  },
+  {
+    "id": "cold-20261019-tartar-frigate-broadstairs",
+    "name": "The Tartar Frigate (Broadstairs)",
+    "town": "Broadstairs CT10",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "tartarfrigate@thorleytaverns.co.uk",
+    "addedAt": "2026-10-19T13:26:45Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T13:26:45Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Tartar Frigate?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at the Tartar Frigate in Broadstairs, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a15457d8af72ce7",
+        "threadId": "1a15457c44ac51da",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for The Tartar Frigate?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a15457d8af72ce7",
+    "statusNote": "mon-19-oct cold waveD SENT_OK 1a15457d8af72ce7 ~14:26 London thread 1a15457c44ac51da · awaiting · THANET: reply to JEM for Jake price · Gmail-verified · folded 1447 19 Oct"
+  },
+  {
+    "id": "cold-20261019-mariners-bar-ramsgate",
+    "name": "Mariners Bar (Ramsgate)",
+    "town": "Ramsgate CT11",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@marinersbar.co.uk",
+    "addedAt": "2026-10-19T13:34:40Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T13:34:40Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Mariners Bar?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at Mariners Bar in Ramsgate, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a1545f18fd44b9e",
+        "threadId": "1a1545f07f787fa3",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for Mariners Bar?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a1545f18fd44b9e",
+    "statusNote": "mon-19-oct cold waveD SENT_OK 1a1545f18fd44b9e ~14:34 London thread 1a1545f07f787fa3 · awaiting · THANET: reply to JEM for Jake price · Gmail-verified · folded 1447 19 Oct"
+  },
+  {
+    "id": "cold-20261019-jolly-farmer-manston",
+    "name": "The Jolly Farmer (Manston)",
+    "town": "Manston CT12",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "thejollyfarmermanston@hotmail.com",
+    "addedAt": "2026-10-19T13:39:48Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T13:39:48Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Jolly Farmer?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at the Jolly Farmer in Manston, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a15463cbf9ffa23",
+        "threadId": "1a15463b6aa2a719",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for The Jolly Farmer?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a15463cbf9ffa23",
+    "statusNote": "mon-19-oct cold waveD SENT_OK 1a15463cbf9ffa23 ~14:39 London thread 1a15463b6aa2a719 · awaiting · THANET: reply to JEM for Jake price · Gmail-verified · folded 1447 19 Oct"
+  },
+  {
+    "id": "cold-20261019-mulberry-tree-margate",
+    "name": "The Mulberry Tree (Margate)",
+    "town": "Margate CT9",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "themulberrytreemargate@gmail.com",
+    "addedAt": "2026-10-19T13:42:26Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T13:42:26Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Mulberry Tree?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at the Mulberry Tree in Margate, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a1546633ff676ec",
+        "threadId": "1a154661e73a4e36",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for The Mulberry Tree?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a1546633ff676ec",
+    "statusNote": "mon-19-oct cold waveD SENT_OK 1a1546633ff676ec ~14:42 London thread 1a154661e73a4e36 · awaiting · THANET: reply to JEM for Jake price · Gmail-verified · folded 1447 19 Oct"
   }
 ]
