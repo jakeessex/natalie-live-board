@@ -334,9 +334,14 @@ main{padding:14px 14px 140px}
 .money-head{display:block;width:100%;margin-top:12px;text-align:left;border:1px solid #c9a227;background:#1a140c;padding:12px 14px;color:inherit}
 .house-act.paid{color:#ffd76a;border-color:#c9a227}
 .house.paid{box-shadow:inset 3px 0 0 #c9a227}
-.nat-comms{margin:0 0 14px;padding:12px 12px 4px;background:#140f0c;border:1px solid #c9a227}
-.nat-comms h2{margin:0;font-family:"Figtree",system-ui,sans-serif;font-size:16px;font-weight:750;letter-spacing:0;color:#ffd76a}
-.nc-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.nat-comms{margin:12px 0 0;padding:0;background:transparent;border:0}
+.nc-bar{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;padding:12px 14px;border:1px solid #c9a227;background:#140f0c;color:#ffd76a;text-align:left}
+.nc-bar b{font-family:"Figtree",system-ui,sans-serif;font-size:13px;font-weight:800;letter-spacing:.14em}
+.nc-bar em{margin-left:auto;font-style:normal;font-size:12px;font-weight:800;color:#f3d9a4}
+.nc-bar i{font-style:normal;font-size:18px;font-weight:700;line-height:1}
+.nat-comms.open .nc-bar{border-bottom-color:#2c2018}
+.nc-body{padding:4px 12px 8px;border:1px solid #c9a227;border-top:0;background:#140f0c}
+.nc-tools{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .nc-refresh{border:0;background:transparent;color:#f3d9a4;font-size:13px;font-weight:800;min-height:36px;padding:0 2px}
 .nc-filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
 .nc-filters button{border:1px solid #3a2e24;background:transparent;color:#f3d9a4;font-size:12px;font-weight:800;padding:6px 10px;min-height:36px}

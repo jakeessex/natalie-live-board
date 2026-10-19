@@ -2913,8 +2913,8 @@ var NatNotes = (function(exports) {
 
   function dashHtml(pulse) {
     return '<div class="dash">' +
-      '<div id="nat-comms"></div>' +
       '<button type="button" class="hero-cash" onclick="natCash()" aria-label="Locked, collected and total">' + moneyFigs(pulse) + "</button>" +
+      '<div id="nat-comms"></div>' +
       '<p class="pep">' + esc(pulse.pep) + "</p>" +
       '<div class="desk-acts">' +
         act("Call now", pulse.closeNow, "Ring these. Hottest first.", "gold", "call") +

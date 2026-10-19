@@ -6,7 +6,7 @@
   var DWEET = "https://dweet.cc/get/latest/dweet/for/jem-natalie-live-nbj-2026";
   var REPLIES = "nat-comms-replies.json";
   var CLOSED = { sent: 1, done: 1, "no action needed": 1, "no action": 1 };
-  var state = { filter: "all", notes: null, replies: null, loading: false, waiters: [], error: "" };
+  var state = { filter: "all", opened: false, notes: null, replies: null, loading: false, waiters: [], error: "" };
 
   function esc(s) {
     return String(s == null ? "" : s)
@@ -183,45 +183,53 @@
       "</div><div class=\"nc-reply\">" + right + "</div></article>";
   }
 
+  function bar(count) {
+    var n = count == null ? "" : '<em>' + count + " open</em>";
+    return '<button type="button" class="nc-bar" onclick="NatComms.toggle()" aria-expanded="' + (state.opened ? "true" : "false") + '">' +
+      "<b>NATALIES NOTES</b>" + n + "<i>" + (state.opened ? "−" : "+") + "</i></button>";
+  }
+
   function paint(el, venues) {
     if (!el) return;
     venues = venues || [];
     if (state.error && !state.notes) {
-      el.innerHTML = '<section class="nat-comms"><div class="nc-top"><h2>Nat Comms</h2>' +
-        '<button type="button" class="nc-refresh" onclick="NatComms.refresh()">Refresh</button></div>' +
-        '<p class="nc-gap">' + esc(state.error) + "</p></section>";
+      el.innerHTML = '<section class="nat-comms">' + bar(null) +
+        (state.opened ? '<div class="nc-body"><p class="nc-gap">' + esc(state.error) + "</p></div>" : "") + "</section>";
       return;
     }
     if (!state.notes) {
-      el.innerHTML = '<section class="nat-comms"><h2>Nat Comms</h2><p class="nc-when">Loading notes…</p></section>';
+      el.innerHTML = '<section class="nat-comms">' + bar(null) + "</section>";
       ensure(function () { paint(el, venues); });
       return;
     }
     var all = cardsFrom(state.notes, state.replies || {});
     var openN = all.filter(function (c) { return c.open; }).length;
-    var shown = all.filter(function (c) {
-      if (state.filter === "open") return c.open;
-      if (state.filter === "wait") return c.reply && String(c.reply.status || "").toLowerCase() === "waiting on jake";
-      return true;
-    });
-    var html = "";
-    var split = false;
-    shown.forEach(function (card) {
-      if (!card.open && !split && state.filter === "all") {
-        split = true;
-        html += '<p class="nc-split">Closed</p>';
+    var body = "";
+    if (state.opened) {
+      var shown = all.filter(function (c) {
+        if (state.filter === "open") return c.open;
+        if (state.filter === "wait") return c.reply && String(c.reply.status || "").toLowerCase() === "waiting on jake";
+        return true;
+      });
+      var html = "";
+      var split = false;
+      shown.forEach(function (card) {
+        if (!card.open && !split && state.filter === "all") {
+          split = true;
+          html += '<p class="nc-split">Closed</p>';
+        }
+        html += cardHtml(card, venues);
+      });
+      if (!shown.length) html = '<p class="nc-when">Nothing in this filter.</p>';
+      function tab(id, label) {
+        return '<button type="button" class="' + (state.filter === id ? "on" : "") + '" onclick="NatComms.filter(\'' + id + "')\">" + label + "</button>";
       }
-      html += cardHtml(card, venues);
-    });
-    if (!shown.length) html = '<p class="nc-when">Nothing in this filter.</p>';
-    function tab(id, label) {
-      return '<button type="button" class="' + (state.filter === id ? "on" : "") + '" onclick="NatComms.filter(\'' + id + "')\">" + label + "</button>";
+      body = '<div class="nc-body"><div class="nc-tools"><div class="nc-filters">' +
+        tab("all", "All") + tab("open", "Open") + tab("wait", "Waiting on Jake") +
+        '</div><button type="button" class="nc-refresh" onclick="NatComms.refresh()">Refresh</button></div>' +
+        html + "</div>";
     }
-    el.innerHTML = '<section class="nat-comms">' +
-      '<div class="nc-top"><h2>Nat Comms (' + openN + " open)</h2>" +
-      '<button type="button" class="nc-refresh" onclick="NatComms.refresh()">Refresh</button></div>' +
-      '<div class="nc-filters">' + tab("all", "All") + tab("open", "Open") + tab("wait", "Waiting on Jake") + "</div>" +
-      html + "</section>";
+    el.innerHTML = '<section class="nat-comms' + (state.opened ? " open" : "") + '">' + bar(openN) + body + "</section>";
   }
 
   function takeNotes(payload) {
@@ -268,6 +276,10 @@
       state.host = el;
       state.venues = venues || [];
       ensure(function () { paint(state.host, state.venues); });
+    },
+    toggle: function () {
+      state.opened = !state.opened;
+      paint(state.host, state.venues || []);
     },
     filter: function (id) {
       state.filter = id || "all";
