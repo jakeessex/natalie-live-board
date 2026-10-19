@@ -75604,10 +75604,10 @@
     "replied": "no",
     "firstPitch": "16 Oct 2026",
     "subject": "Jake Essex for Infinity?",
-    "badge": "awaiting",
+    "badge": "bounce",
     "lastContact": "2026-10-16",
     "lastContactSrc": "us 1a14443f1b4d9a72",
-    "statusNote": "DSN delay ×2 (temporary delivery failure; Bookings cites 451 4.4.4) Sat 17 Oct 13:37 BST 1a149de106d8d412 + Sun 18 Oct 12:04 BST 1a14eafa7dc72f2a · Gmail retry window ends ~11:31 BST Mon 19 Oct · not a bounce yet, badge unchanged · folded 0525 19 Oct · fri-16-oct cold waveB SENT_OK 1a14443f1b4d9a72 ~11:31 London thread 1a14443de51e488b · awaiting · Gmail-verified · folded 1153 16 Oct"
+    "statusNote": "BOUNCE NEVER_RETRY + CUT (venue unfit, per Bookings: Heroes Sports Bar, closed Sat, karaoke/DJ only; also CUT info@infinitysouthend.co.uk, info@pulsesouthend.co.uk) · final DSN mailer-daemon 1a1548baefc3283f ~15:23 BST Mon 19 Oct: message not delivered (after delays; Bookings cites 451 4.4.4) · Us cold 1a14443f1b4d9a72 16 Oct thread 1a14443de51e488b · Gmail-verified · folded 1606 19 Oct · DSN delay ×2 (temporary delivery failure; Bookings cites 451 4.4.4) Sat 17 Oct 13:37 BST 1a149de106d8d412 + Sun 18 Oct 12:04 BST 1a14eafa7dc72f2a · Gmail retry window ends ~11:31 BST Mon 19 Oct · not a bounce yet, badge unchanged · folded 0525 19 Oct · fri-16-oct cold waveB SENT_OK 1a14443f1b4d9a72 ~11:31 London thread 1a14443de51e488b · awaiting · Gmail-verified · folded 1153 16 Oct"
   },
   {
     "id": "cold-20261016-the-claddagh-ring-hendon",
