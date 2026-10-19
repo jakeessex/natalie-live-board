@@ -1,0 +1,26 @@
+{
+  "event": "reply",
+  "venue": {
+    "name": "Dunstable United Services Club",
+    "town": "Dunstable",
+    "email": "unitedservicesdunstable@outlook.com",
+    "phone": "+447915088302",
+    "contactName": "Yvonne Farrell",
+    "badge": "replied-soft / park (not-now)"
+  },
+  "messages": [
+    {
+      "side": "them",
+      "at": "2026-10-19T00:19:00Z",
+      "from": "buzz.yvonne@ntlworld.com",
+      "subject": "Fwd: United Services Club Dunstable",
+      "body": "Thank you for being in contact with the United Services Club Dunstable obo Jake Essex.\n\nI'm Yvonne Farrell and I've booked the bands into the club for many years. I've worked under the name of Buzz Bubblegum for the last 30 or so years and have sent acts all over the world.\n\nAt the moment we only have bands on a Saturday night but now and then we have a cabaret show on a Friday. Jake may be interested in appearing on one of these doing his own spot and compere.\n\nPerhaps you could keep me informed if he is working in our area and I'll pop along to see him.\n\nBest wishes\n\nYvonne Farrell\n\n07915088302",
+      "msgId": "1a15186c4307f1ba",
+      "threadId": "1a15186c4307f1ba"
+    }
+  ],
+  "msgId": "1a15186c4307f1ba",
+  "threadId": "1a15186c4307f1ba",
+  "status": "SENT_OK",
+  "source": "bookings"
+}

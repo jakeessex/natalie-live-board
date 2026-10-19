@@ -65335,9 +65335,9 @@
     "town": "Dunstable",
     "postcode": "",
     "website": "",
-    "contactName": "",
-    "phone": null,
-    "needPhone": true,
+    "contactName": "Yvonne Farrell",
+    "phone": "+447915088302",
+    "needPhone": false,
     "email": "unitedservicesdunstable@outlook.com",
     "addedAt": "2026-10-07T08:23:43Z",
     "followUps": "1 · last 7 Oct 2026",
@@ -65361,16 +65361,27 @@
         "body": "Hi,\n\nFollowing up on Jake Essex for Dunstable United Services Club. He sings the 50s and 60s properly (Darin, Dion, Holly, Orbison, Sinatra, Elvis and more), own PA, no deposit. Ex-servicemen's clubs are where he goes down best.\n\nFrom £250 for two one hour sets. If entertainment is committee-led, that figure is usually enough to take to a meeting. Saturdays suit him best, and Fridays or Sundays can work too.\n\nIf it's a no, just say so and I'll leave you alone.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
         "msgId": "1a115761ce742944",
         "threadId": "1a0611bee66193e9"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-19T00:19:00Z",
+        "from": "buzz.yvonne@ntlworld.com",
+        "subject": "Fwd: United Services Club Dunstable",
+        "body": "Thank you for being in contact with the United Services Club Dunstable obo Jake Essex.\n\nI'm Yvonne Farrell and I've booked the bands into the club for many years. I've worked under the name of Buzz Bubblegum for the last 30 or so years and have sent acts all over the world.\n\nAt the moment we only have bands on a Saturday night but now and then we have a cabaret show on a Friday. Jake may be interested in appearing on one of these doing his own spot and compere.\n\nPerhaps you could keep me informed if he is working in our area and I'll pop along to see him.\n\nBest wishes\n\nYvonne Farrell\n\n07915088302",
+        "msgId": "1a15186c4307f1ba",
+        "threadId": "1a15186c4307f1ba"
       }
     ],
-    "replied": "no",
+    "replied": "yes",
     "firstPitch": "2 Sep 2026",
     "subject": "Live music — Jake Essex",
     "hasThread": true,
-    "badge": "awaiting",
-    "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a115761ce742944",
-    "statusNote": "wed-7-oct follow-up fu-waveA-5 Us 1a115761ce742944 ~09:23 London thread 1a0611bee66193e9 · original cold 2 Sep 1a0611bf305b2a99 (was not on board) · awaiting · Gmail-verified"
+    "badge": "replied-soft / park (not-now)",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "them 1a15186c4307f1ba",
+    "statusNote": "replied-soft 19 Oct 01:19 BST Them Yvonne Farrell (Buzz Bubblegum, club booker) buzz.yvonne@ntlworld.com 1a15186c4307f1ba (arrived in Gmail Spam, left there): Sat bands only, occasional Friday cabaret where Jake could do own spot + compere; keep her informed when Jake works nearby and she will come and see him. No fee/date asked. Phone +447915088302 (hers) · folded Nat Board 0900 audit 19 Oct · wed-7-oct follow-up fu-waveA-5 Us 1a115761ce742944 ~09:23 London thread 1a0611bee66193e9 · original cold 2 Sep 1a0611bf305b2a99 (was not on board) · awaiting · Gmail-verified",
+    "prospect": false
   },
   {
     "id": "cold-20261007-hockley-community-centre-hockley-ss5",
