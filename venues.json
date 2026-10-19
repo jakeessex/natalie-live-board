@@ -66908,16 +66908,36 @@
         "msgId": "1a15349535f67471",
         "threadId": "1a13167f03af0cd4",
         "label": "Sent"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-19T13:52:25Z",
+        "from": "svcsecretary@outlook.com",
+        "subject": "Re: Jake Essex for Southfleet Village Club",
+        "body": "Hi Natalie,\n\nSorry, your email went straight to junk for some reason.\n\nNone of those work unfortunately, moving a bit further forward can he do the 26th of June?\n\nKind regards\nChris Bishop\nSouthfleet Village Club Secretary",
+        "msgId": "1a1546f637897292",
+        "threadId": "1a13167f03af0cd4"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-19T14:55:23Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Southfleet Village Club",
+        "body": "Hi Chris,\n\nNo problem at all, and sorry it ended up in junk.\n\nSaturday 26 June is the one weekend Jake is away, I'm afraid. The closest\nhe can do is Friday 25 June, the night before, if a Friday works for you.\nSame £300 for your two one hour sets.\n\nFrom the summer onwards, his free dates in 2027 are:\n\nSaturdays: 11 September, 16 October, 6 November, 20 November and 11\nDecember.\n\nFridays: 25 June, 16 July, 30 July, 13 August, 27 August, 10 September, 17\nSeptember, 24 September, 8 October, 15 October and 22 October.\n\nIf any of those suit, just reply with the date and I'll pencil it in\nstraight away.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a154a8fd618260f",
+        "threadId": "1a13167f03af0cd4"
       }
     ],
     "hasThread": true,
-    "replied": "yes — Chris Bishop website enquiry 12 Oct 19:31 BST (1 Jan 2027 8:30pm, asked fee)",
+    "replied": "yes — Chris 19 Oct 14:52: can he do 26 Jun 2027?",
     "firstPitch": "7 Oct 2026",
-    "badge": "quoted",
+    "badge": "replied-interested",
     "subject": "Jake Essex for Southfleet Village Club?",
     "lastContact": "2026-10-19",
-    "lastContactSrc": "us 1a15349535f67471",
-    "statusNote": "day-7 chase Us ~9:31 BST Mon 19 Oct 1a15349535f67471 thread 1a13167f03af0cd4 · still quoted · Gmail-verified · folded 0938 19 Oct · quoted £300 cash 2×1hr (£250 x4) · Them Chris Bishop website enquiry ~19:31 BST Mon 12 Oct 1a13162a78a44208 (FormSubmit): Fri 1 Jan 2027 8:30pm, ~40 seats, sets 8:30–9:30 + 10–11, asked fee · Us quote ~19:37 BST 1a13167f03af0cd4 (new thread): 1 Jan 2027 free + 2027 Sats · Warren Road, Southfleet DA13 9NN · after cold 7 Oct 1a116dc356bf895c · day-7 chase Mon 19 Oct (Haggle) · Gmail-verified · folded 1938 12 Oct · Us link-fix 1a1316c3effcc885 ~19:42 BST Mon 12 Oct folded 0900 audit 13 Oct",
+    "lastContactSrc": "us 1a154a8fd618260f",
+    "statusNote": "day-7 chase Us ~9:31 BST Mon 19 Oct 1a15349535f67471 thread 1a13167f03af0cd4 · still quoted · Gmail-verified · folded 0938 19 Oct · quoted £300 cash 2×1hr (£250 x4) · Them Chris Bishop website enquiry ~19:31 BST Mon 12 Oct 1a13162a78a44208 (FormSubmit): Fri 1 Jan 2027 8:30pm, ~40 seats, sets 8:30–9:30 + 10–11, asked fee · Us quote ~19:37 BST 1a13167f03af0cd4 (new thread): 1 Jan 2027 free + 2027 Sats · Warren Road, Southfleet DA13 9NN · after cold 7 Oct 1a116dc356bf895c · day-7 chase Mon 19 Oct (Haggle) · Gmail-verified · folded 1938 12 Oct · Us link-fix 1a1316c3effcc885 ~19:42 BST Mon 12 Oct folded 0900 audit 13 Oct · 19 Oct 15:55: offered Fri 25 Jun 2027 £300 (26 Jun unavailable); hot, Haggle closing. Them Chris 1a1546f637897292 14:52 BST asked Sat 26 Jun 2027 · Us 1a154a8fd618260f 15:55 BST · Gmail-verified · folded 1603 19 Oct",
     "quotedFee": 300,
     "callExclude": "waiting-on-them",
     "callHoldUntil": "2026-10-19"
