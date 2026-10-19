@@ -77093,5 +77093,137 @@
     "lastContact": "2026-10-19",
     "lastContactSrc": "us 1a1546633ff676ec",
     "statusNote": "mon-19-oct cold waveD SENT_OK 1a1546633ff676ec ~14:42 London thread 1a154661e73a4e36 · awaiting · THANET: reply to JEM for Jake price · Gmail-verified · folded 1447 19 Oct"
+  },
+  {
+    "id": "cold-20261019-hand-and-spear-weybridge",
+    "name": "Hand & Spear (Weybridge)",
+    "town": "Weybridge KT13",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "handandspear@youngs.co.uk",
+    "addedAt": "2026-10-19T14:43:04Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T14:43:04Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Hand & Spear?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Hand & Spear in Weybridge would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a1549db6b11482e",
+        "threadId": "1a1549d5bd8c161e",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for Hand & Spear?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a1549db6b11482e",
+    "statusNote": "mon-19-oct cold waveE SENT_OK 1a1549db6b11482e ~15:43 London thread 1a1549d5bd8c161e · awaiting · LOCAL Young's · Gmail-verified · folded 1608 19 Oct"
+  },
+  {
+    "id": "cold-20261019-the-swan-westgate",
+    "name": "The Swan (Westgate)",
+    "town": "Westgate-on-Sea CT8",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "bookings@the-swan.pub",
+    "addedAt": "2026-10-19T14:47:52Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T14:47:52Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Swan?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at the Swan in Westgate, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a154a21bfef13aa",
+        "threadId": "1a154a1f1598c0cc",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for The Swan?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a154a21bfef13aa",
+    "statusNote": "mon-19-oct cold waveE SENT_OK 1a154a21bfef13aa ~15:47 London thread 1a154a1f1598c0cc · awaiting · THANET: reply to JEM for Jake price · Gmail-verified · folded 1608 19 Oct"
+  },
+  {
+    "id": "cold-20261019-belle-vue-pegwell",
+    "name": "The Belle Vue (Pegwell)",
+    "town": "Pegwell Ramsgate CT11",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "us@thebellevuetavern.co.uk",
+    "addedAt": "2026-10-19T14:53:29Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T14:53:29Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Belle Vue?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at the Belle Vue in Pegwell, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a154a74348299cd",
+        "threadId": "1a154a71810a5c52",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for The Belle Vue?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a154a74348299cd",
+    "statusNote": "mon-19-oct cold waveE SENT_OK 1a154a74348299cd ~15:53 London thread 1a154a71810a5c52 · awaiting · THANET: reply to JEM for Jake price · Gmail-verified · folded 1608 19 Oct"
+  },
+  {
+    "id": "cold-20261019-bell-inn-st-nicholas-at-wade",
+    "name": "The Bell Inn (St Nicholas-at-Wade)",
+    "town": "St Nicholas-at-Wade CT7",
+    "postcode": "",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "info@thebellinnstnicholas.com",
+    "addedAt": "2026-10-19T14:59:29Z",
+    "followUps": "",
+    "messages": [
+      {
+        "side": "us",
+        "at": "2026-10-19T14:59:29Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Bell Inn?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at the Bell Inn in St Nicholas at Wade, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+        "msgId": "1a154acc1698bd65",
+        "threadId": "1a154ac93c74300c",
+        "label": "Sent"
+      }
+    ],
+    "hasThread": true,
+    "replied": "no",
+    "firstPitch": "19 Oct 2026",
+    "subject": "Jake Essex for The Bell Inn?",
+    "badge": "awaiting",
+    "lastContact": "2026-10-19",
+    "lastContactSrc": "us 1a154acc1698bd65",
+    "statusNote": "mon-19-oct cold waveE SENT_OK 1a154acc1698bd65 ~15:59 London thread 1a154ac93c74300c · awaiting · THANET: reply to JEM for Jake price · Gmail-verified · folded 1608 19 Oct"
   }
 ]
