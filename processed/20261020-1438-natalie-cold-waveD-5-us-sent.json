@@ -1,0 +1,124 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-anchor-the-sg4-0jh",
+    "name": "The Anchor",
+    "town": "Walsworth, Hitchin SG4 0JH",
+    "email": "contact@theanchorwalsworth.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveD 20 Oct Us cold 1a1597865aa80fa1 14:20 London thread 1a159783ff3c1075 · awaiting · HERTS ~55m (standard card on reply) · Gmail-verified · folded JEM 14:38 20 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T13:20:24Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for The Anchor?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the Anchor in Walsworth, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a1597865aa80fa1",
+     "gmailThreadId": "1a159783ff3c1075",
+     "msgId": "1a1597865aa80fa1",
+     "threadId": "1a159783ff3c1075"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261020-the-court-yard-deal-ct14",
+    "name": "The Court Yard Restaurant & Bar",
+    "town": "Deal CT14 7BW",
+    "email": "tcydeal@gmail.com"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveD 20 Oct Us cold 1a1597bba624453a 14:24 London thread 1a1597bb0a6c0a50 · awaiting · FARKENT on THANET terms (reply to Jake for price) · Gmail-verified · folded JEM 14:38 20 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T13:24:03Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for The Court Yard?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the Court Yard in Deal, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a1597bba624453a",
+     "gmailThreadId": "1a1597bb0a6c0a50",
+     "msgId": "1a1597bba624453a",
+     "threadId": "1a1597bb0a6c0a50"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-holly-bush-the-al3-7du",
+    "name": "The Holly Bush",
+    "town": "Redbourn AL3 7DU",
+    "email": "functions@hollybushredbourn.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveD 20 Oct Us cold 1a1598021acedc79 14:28 London thread 1a1598010a807551 · awaiting · HERTS ~55m, WEAK (standard card on reply) · Gmail-verified · folded JEM 14:38 20 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T13:28:51Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for The Holly Bush?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Holly Bush in Redbourn would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a1598021acedc79",
+     "gmailThreadId": "1a1598010a807551",
+     "msgId": "1a1598021acedc79",
+     "threadId": "1a1598010a807551"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261020-the-mount-vineyard-shoreham-tn14",
+    "name": "The Mount Vineyard",
+    "town": "Shoreham TN14 7SD",
+    "email": "events@themountvineyard.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveD 20 Oct Us cold 1a159829938caad0 14:31 London thread 1a15982882389a41 · awaiting · LOCAL ~45m, WEAK (standard card on reply) · Gmail-verified · folded JEM 14:38 20 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T13:31:33Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for The Mount Vineyard?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at the Mount Vineyard in Shoreham, and he'd be a great fit for your evenings.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a159829938caad0",
+     "gmailThreadId": "1a15982882389a41",
+     "msgId": "1a159829938caad0",
+     "threadId": "1a15982882389a41"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-novo-lounge-cm20-1aq",
+    "name": "Novo Lounge",
+    "town": "Harlow CM20 1AQ",
+    "email": "novo@thelounges.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveD 20 Oct Us cold 1a15986115514715 14:35 London thread 1a15985ff241e8af · awaiting · LOCAL ~40m, Saturday close (standard card on reply) · Gmail-verified · folded JEM 14:38 20 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T13:35:20Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Novo Lounge?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Novo Lounge in Harlow, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a15986115514715",
+     "gmailThreadId": "1a15985ff241e8af",
+     "msgId": "1a15986115514715",
+     "threadId": "1a15985ff241e8af"
+    }
+   ]
+  }
+ ]
+}
