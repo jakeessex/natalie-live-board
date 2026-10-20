@@ -12386,7 +12386,7 @@
     "id": "canvey-rbl",
     "name": "Canvey RBL",
     "town": "",
-    "badge": "bounce",
+    "badge": "retract-agency",
     "phone": "+441268683657",
     "needPhone": false,
     "email": "office@canveyrbl.co.uk",
@@ -12406,7 +12406,9 @@
       }
     ],
     "hasThread": true,
-    "tab": "other"
+    "tab": "other",
+    "callExclude": "choice-agency",
+    "statusNote": "Choice Live room · DO NOT CONTACT · Choice venue (CL CANVEY ROYAL BRITISH LEGION) · JEM ruling 20 Oct · no apology, no send, no chase · NEVER cold / NEVER chase · agency only · never JEM credit · folded Nat Board 13:5x 20 Oct"
   },
   {
     "id": "coda-colchester",
@@ -17683,7 +17685,7 @@
     "id": "becontree-royal-british-legion",
     "name": "Becontree Royal British Legion",
     "town": "Dagenham",
-    "badge": "awaiting",
+    "badge": "retract-agency",
     "phone": null,
     "needPhone": true,
     "email": "becontree.secretary@rbl.community",
@@ -17716,7 +17718,8 @@
     "tab": "call",
     "lastContact": "2026-10-14",
     "lastContactSrc": "us 1a13abea1dca6d0f",
-    "statusNote": "wed-14-oct FU waveD SENT_OK 1a13abea1dca6d0f ~15:08 London thread 1a08c72479f88208 · awaiting · Gmail-verified · folded lag-watch 1551"
+    "statusNote": "Choice Live room · DO NOT CONTACT · Choice venue (CL 'Dagenham RBL (RM8 3JP)' 29 May 2027) · JEM ruling 20 Oct · no apology, no send, no chase · NEVER cold / NEVER chase · agency only · never JEM credit · folded Nat Board 13:5x 20 Oct · prior: wed-14-oct FU waveD SENT_OK 1a13abea1dca6d0f ~15:08 London thread 1a08c72479f88208 · awaiting · Gmail-verified · folded lag-watch 1551",
+    "callExclude": "choice-agency"
   },
   {
     "id": "new-avenues-social-club",
@@ -24578,7 +24581,7 @@
     "id": "bellingham-ex-servicemen-s-club",
     "name": "Bellingham Ex-Servicemen's Club",
     "town": "",
-    "badge": "awaiting",
+    "badge": "retract-agency",
     "phone": null,
     "needPhone": true,
     "email": "bellinghamex@icloud.com",
@@ -24609,7 +24612,8 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Us FU ~11:49 Mon 28 Sep 1a0e7a21ea328b65 · Fri 18 Sep COLD Us SENT_OK 1a0b396defeba2f0 · awaiting · LOCAL"
+    "statusNote": "Choice Live room · DO NOT CONTACT · Choice venue (CL BELLINGHAM EX SERVICEMANS CLUB; 5 dates) · JEM ruling 20 Oct · no apology, no send, no chase · NEVER cold / NEVER chase · agency only · never JEM credit · folded Nat Board 13:5x 20 Oct · prior: Us FU ~11:49 Mon 28 Sep 1a0e7a21ea328b65 · Fri 18 Sep COLD Us SENT_OK 1a0b396defeba2f0 · awaiting · LOCAL",
+    "callExclude": "choice-agency"
   },
   {
     "id": "the-lindfield-club",
@@ -25884,7 +25888,7 @@
     "id": "bellegrove-social-club",
     "name": "Bellegrove Social Club",
     "town": "Welling",
-    "badge": "replied-soft / park (not-now)",
+    "badge": "retract-agency",
     "phone": "+442083031054",
     "needPhone": false,
     "email": "bellegrovesecretary@gmail.com",
@@ -25924,12 +25928,13 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Soft reply Mon 28 ~14:42 London · Joanna Webb Club Secretary · nothing free this year · next year diary soon → Wait (2027 soft park) · not hard No · one FU already · do not re-chase now · Us cold 1a0b4bf060979cf3 FU1 1a0e7a3c17ccf2b4 · MASTER/CONTACTED fold · inbox-signal · phone +442083031054 from call deck calls.json (web)",
+    "statusNote": "Choice Live room · DO NOT CONTACT · Choice venue (CL BELLEGROVE SOCIAL CLUB; 2027 chase cancelled) · JEM ruling 20 Oct · no apology, no send, no chase · NEVER cold / NEVER chase · agency only · never JEM credit · folded Nat Board 13:5x 20 Oct · prior: Soft reply Mon 28 ~14:42 London · Joanna Webb Club Secretary · nothing free this year · next year diary soon → Wait (2027 soft park) · not hard No · one FU already · do not re-chase now · Us cold 1a0b4bf060979cf3 FU1 1a0e7a3c17ccf2b4 · MASTER/CONTACTED fold · inbox-signal · phone +442083031054 from call deck calls.json (web)",
     "contactName": "Joanna Webb",
     "notes": "2027 soft park. No draft/chase until diary opens or they reply again. Also: 020 8303 1943 (calls.json).",
     "prospect": false,
     "lastContact": "2026-09-28",
-    "lastContactSrc": "them 1a0e840ab565287a"
+    "lastContactSrc": "them 1a0e840ab565287a",
+    "callExclude": "choice-agency"
   },
   {
     "id": "waltham-british-legion",
@@ -58724,10 +58729,11 @@
     "hasThread": false,
     "replied": "no",
     "firstPitch": "1 Oct 2026",
-    "badge": "awaiting",
+    "badge": "retract-agency",
     "subject": "Jake Essex for Ponders End Working Mens Club?",
-    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6a6dc51ea7a6 thread 1a0f6a6b46afa7d6 · awaiting · folded 1 Oct · thu-15-oct follow-up fu-waveD Us 1a13ffc8209cee17 ~15:34 London thread 1a0f6a6b46afa7d6 · awaiting · Gmail-verified · folded 1542 15 Oct",
-    "prospect": false
+    "statusNote": "Choice Live room · DO NOT CONTACT · Choice venue (CL PONDERS END WMC) · JEM ruling 20 Oct · no apology, no send, no chase · NEVER cold / NEVER chase · agency only · never JEM credit · folded Nat Board 13:5x 20 Oct · prior: thu-1-oct cold WAVE A SENT_OK 1a0f6a6dc51ea7a6 thread 1a0f6a6b46afa7d6 · awaiting · folded 1 Oct · thu-15-oct follow-up fu-waveD Us 1a13ffc8209cee17 ~15:34 London thread 1a0f6a6b46afa7d6 · awaiting · Gmail-verified · folded 1542 15 Oct",
+    "prospect": false,
+    "callExclude": "choice-agency"
   },
   {
     "id": "cold-20261001-baldwyn-s-freeholders-association-club-bexley-da5",
