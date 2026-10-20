@@ -52380,7 +52380,7 @@
     "venueType": "Club",
     "miles": 66,
     "prospect": false,
-    "badge": "closed",
+    "badge": "replied-soft / awaiting budget",
     "messages": [
       {
         "side": "us",
@@ -52441,6 +52441,16 @@
         "body": "Hi Nigel,\n\nNo problem at all, thank you for letting me know. If you ever change your mind, please don't hesitate to reach out. Hitting the notes does cost money I'm afraid!\n\nKind regards,\nNatalie\nBookings for Jake Essex",
         "msgId": "1a15948e61c0e1e1",
         "threadId": "1a11bb1c36b7903f"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-20T12:34:10Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Headington Conservative Club?",
+        "body": "Hi Nigel,\n\nJust to add to my last email, so you know where the price comes from: three hours of live performance would normally be around £125 an hour, so the night is already heavily discounted, and that's before Jake's travel over to Oxford. He also brings his own PA and there's no deposit.\n\nWhat budget range does the club usually work to for a Saturday night? If it's anywhere close, I'll see what we can do.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1594e11fb1920f",
+        "threadId": "1a11bb1c36b7903f"
       }
     ],
     "addedAt": "2026-09-23",
@@ -52451,8 +52461,8 @@
     "firstPitch": "8 Oct 2026",
     "subject": "Jake Essex for Headington Conservative Club?",
     "lastContact": "2026-10-20",
-    "lastContactSrc": "us 1a15948e61c0e1e1",
-    "statusNote": "CLOSED declined · Us v4 chase 12:32 BST 1a15915770eb19ae · Them Nigel 12:34 BST 1a159177c9ecc202 \"well out of our budget range for a solo artist\" · Us close-out 13:28 BST 1a15948e61c0e1e1 · no chase · Gmail-verified · folded Nat Board 13:3x 20 Oct",
+    "lastContactSrc": "us 1a1594e11fb1920f",
+    "statusNote": "replied-soft (awaiting budget) · REOPENED · Us 13:34 BST 20 Oct 1a1594e11fb1920f explains price (~£125/hr, travel to Oxford, own PA, no deposit) + asks club budget range · supersedes 13:28 closed (Us close-out 1a15948e61c0e1e1; Nigel declined 12:34 1a159177c9ecc202 \"well out of our budget range\") · Gmail-verified · folded Nat Board 13:4x 20 Oct",
     "quotedFee": 350,
     "contactName": "Nigel"
   },
