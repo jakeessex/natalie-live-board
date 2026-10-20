@@ -52426,6 +52426,16 @@
         "body": "Hi Natalie\n\nUnfortunately it is well out of our budget range for a solo artist, we wish Jake the best for the future.\n\nKind regards\n\nNigel",
         "msgId": "1a159177c9ecc202",
         "threadId": "1a11bb1c36b7903f"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-20T12:28:32Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Re: Jake Essex for Headington Conservative Club?",
+        "body": "Hi Nigel,\n\nNo problem at all, thank you for letting me know. If you ever change your mind, please don't hesitate to reach out. Hitting the notes does cost money I'm afraid!\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a15948e61c0e1e1",
+        "threadId": "1a11bb1c36b7903f"
       }
     ],
     "addedAt": "2026-09-23",
@@ -52436,11 +52446,10 @@
     "firstPitch": "8 Oct 2026",
     "subject": "Jake Essex for Headington Conservative Club?",
     "lastContact": "2026-10-20",
-    "lastContactSrc": "them 1a159177c9ecc202",
-    "statusNote": "CLOSED declined · Us v4 chase 12:32 BST 20 Oct 1a15915770eb19ae · Them Nigel 12:34 BST 1a159177c9ecc202 \"well out of our budget range for a solo artist\" · no further chase · Gmail-verified · folded Nat Board 12:4x 20 Oct",
+    "lastContactSrc": "us 1a15948e61c0e1e1",
+    "statusNote": "CLOSED declined · Us v4 chase 12:32 BST 1a15915770eb19ae · Them Nigel 12:34 BST 1a159177c9ecc202 \"well out of our budget range for a solo artist\" · Us close-out 13:28 BST 1a15948e61c0e1e1 · no chase · Gmail-verified · folded Nat Board 13:3x 20 Oct",
     "quotedFee": 350,
-    "contactName": "Nigel",
-    "callHoldUntil": "2026-10-15"
+    "contactName": "Nigel"
   },
   {
     "id": "pot-green-dragon-hotel-nn10-8dz",
@@ -58621,7 +58630,7 @@
     "town": "Ilford",
     "postcode": "",
     "website": "",
-    "contactName": "",
+    "contactName": "Olivia Rudge (Office Administrator)",
     "phone": null,
     "needPhone": true,
     "email": "loxfordsc@gmail.com",
@@ -58646,15 +58655,38 @@
         "body": "Hi,\n\nQuick bump on Jake Essex for Loxford Social Club. He's a proper 50s and 60s singer from Essex (himself, not a tribute), own PA, no deposit.\n\nFee is from £250 for two one hour sets. Saturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a13ff91ed66a8b5",
         "threadId": "1a0f6a37005d199b"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-20T12:09:47Z",
+        "from": "loxfordsc@gmail.com",
+        "subject": "RE: Jake Essex for Loxford Social Club?",
+        "body": "Hi Natalie,\n\nThank you for your email.\n\nWe had Jake perform here over the summer, and it was lovely to have him with us.\n\nWe've always arranged our entertainment through Choice, as our entertainment secretary has built a brilliant relationship with both Darren and Laura over the years.\n\nAs Choice looks after all our entertainment bookings, any future bookings for Jake would naturally be arranged through them as well.\n\nThanks again for getting in touch. We really appreciate you thinking of us, and I hope you understand.\n\nKind regards,\n\nOlivia Rudge\nOffice Administrator\nLoxford Social Club",
+        "msgId": "1a159381433eb25d",
+        "threadId": "1a0f6a37005d199b"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-20T12:26:20Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: RE: Jake Essex for Loxford Social Club?",
+        "body": "Hi Olivia,\n\nThank you for your kind reply, and please accept my apologies. My emails to Loxford were sent in error. Loxford is a Choice venue and should never have been on my list, and Jake will be quite frustrated with me for reaching out.\n\nJake would never look to take work away from Choice. Darren and Laura are great and he really values working with them, so please carry on booking him through Choice exactly as you do now.\n\nI'm so glad the club enjoyed having him over the summer, and sorry again for the mix up.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a15946e51cf9598",
+        "threadId": "1a0f6a37005d199b"
       }
     ],
-    "hasThread": false,
-    "replied": "no",
+    "hasThread": true,
+    "replied": "yes — Olivia 20 Oct 13:09 BST: Choice books all entertainment (Darren & Laura)",
     "firstPitch": "1 Oct 2026",
-    "badge": "awaiting",
+    "badge": "retract-agency",
     "subject": "Jake Essex for Loxford Social Club?",
-    "statusNote": "thu-1-oct cold WAVE A SENT_OK 1a0f6a397bf3cfcb thread 1a0f6a37005d199b · awaiting · folded 1 Oct · thu-15-oct follow-up fu-waveD Us 1a13ff91ed66a8b5 ~15:30 London thread 1a0f6a37005d199b · awaiting · Gmail-verified · folded 1542 15 Oct",
-    "prospect": false
+    "statusNote": "Choice Live room · DO NOT CONTACT · CHOICE-OWNED (Darren & Laura), pitched in error · Them Olivia 13:09 BST 20 Oct 1a159381433eb25d (Jake played there via Choice over summer) · Us apology 13:26 BST 1a15946e51cf9598 · NEVER cold / NEVER chase · agency only · never JEM credit · Gmail-verified · folded Nat Board 13:3x 20 Oct",
+    "prospect": false,
+    "lastContact": "2026-10-20",
+    "lastContactSrc": "us 1a15946e51cf9598",
+    "callExclude": "choice-agency"
   },
   {
     "id": "cold-20261001-ponders-end-working-mens-club-enfield",
