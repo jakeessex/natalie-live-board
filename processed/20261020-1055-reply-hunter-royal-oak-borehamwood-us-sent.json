@@ -1,0 +1,74 @@
+{
+ "events": [
+  {
+   "event": "reply_thread",
+   "venue": {
+    "id": "pot-the-royal-oak-ig8-9ln",
+    "name": "The Royal Oak",
+    "town": "Highams Park IG8 9LN",
+    "email": "info@royaloakhighamspark.co.uk"
+   },
+   "badge": "quoted",
+   "status": "replied-quoted",
+   "statusNote": "Rhonda asked Jan-Mar 2027 Sats + price 09:47; Us quote 10:53 BST (both cards + 2 Jan / 6 Mar / 27 Mar 2027, both cals checked) · Haggle owns · reply hunter 10:55",
+   "threadId": "1a134878c16fcc15",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-20T08:47:30Z",
+     "from": "info@royaloakhighamspark.co.uk",
+     "subject": "Re: Jake Essex for The Royal Oak?",
+     "msgId": "1a1587eb73c1e2ce",
+     "gmailMsgId": "1a1587eb73c1e2ce",
+     "gmailThreadId": "1a134878c16fcc15",
+     "body": "Hi Natalie,\n\nThank you for reaching out.\nI am currently taking booking for Jan-March\nCan you let me know availability (Saturdays) and price.\n\nThanks Rhonda"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-20T09:53:04Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Royal Oak?",
+     "msgId": "1a158ba92b6bc761",
+     "gmailMsgId": "1a158ba92b6bc761",
+     "gmailThreadId": "1a134878c16fcc15",
+     "body": "Hi Rhonda,\n\nThanks for coming back to me, lovely to hear from you.\n\nJake's rate is £300 for two 1 hour sets, or £250 a night if you book four. If you'd prefer three 45 minute sets, it's £350, or £300 a night for four.\n\nHe's own PA, fully self contained, no deposit.\n\nSaturdays he has free in January to March 2027:\n\nSaturday 2nd January 2027\nSaturday 6th March 2027\nSaturday 27th March 2027\n\nThese do go quickly, so just reply with whichever suits and I'll get it confirmed and in the diary.\n\nNatalie\nBookings for Jake Essex"
+    }
+   ]
+  },
+  {
+   "event": "reply_thread",
+   "venue": {
+    "id": "pot-borehamwood-rbl-services-club-wd6-1tg",
+    "name": "Borehamwood RBL Services Club",
+    "town": "Borehamwood WD6 1TG",
+    "email": "borehamwoodrbl@yahoo.co.uk"
+   },
+   "badge": "quoted",
+   "status": "replied-quoted",
+   "statusNote": "Dianne Hall: fully booked 2026, opens 2027 bookings early Nov after holiday; asked cost Sat 8.15-11.15pm two breaks. Us quote 10:52 BST (3 sets £350 / £300 x4, 2x1hr £300 / £250 x4, 10 free 2027 Sats) · HERTS ~45m · Haggle owns; chase after early Nov · reply hunter 10:55",
+   "threadId": "1a158832080c9980",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-20T09:07:30Z",
+     "from": "borehamwoodrbl@yahoo.co.uk",
+     "subject": "Re: Jake Essex for Borehamwood RBL?",
+     "msgId": "1a158914852ca529",
+     "gmailMsgId": "1a158914852ca529",
+     "gmailThreadId": "1a158832080c9980",
+     "body": "Hi Natalie\nWe are fully booked for this year but we will commence bookings for next year at the beginning of November once I am back from holiday.\nCould you please send over some costs of a performance for a Saturday evening from 8.15pm to 11.15pm with two breaks.\nIf this is of interest I look forward to hearing from you.\nMany thanks\nDianne Hall\nCompany Club Secretary\nBorehamwood RBL"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-20T09:52:57Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Borehamwood RBL?",
+     "msgId": "1a158ba781efd213",
+     "gmailMsgId": "1a158ba781efd213",
+     "gmailThreadId": "1a158832080c9980",
+     "body": "Hi Dianne,\n\nThanks for coming back to me, and I hope you have a lovely holiday.\n\nFor a Saturday evening from 8.15pm to 11.15pm with two breaks, that's three sets, and Jake's rate is £350, or £300 a night if you book four dates. If you'd ever prefer two 1 hour sets, it's £300, or £250 a night for four.\n\nHe's own PA, fully self contained, no deposit.\n\nSaturdays he has free in 2027:\n\nSaturday 2nd January 2027\nSaturday 6th March 2027\nSaturday 27th March 2027\nSaturday 10th April 2027\nSaturday 5th June 2027\nSaturday 11th September 2027\nSaturday 16th October 2027\nSaturday 6th November 2027\nSaturday 20th November 2027\nSaturday 11th December 2027\n\nThese do go quickly, so just reply with whichever suits and I'll get it confirmed and in the diary.\n\nNatalie\nBookings for Jake Essex"
+    }
+   ]
+  }
+ ]
+}
