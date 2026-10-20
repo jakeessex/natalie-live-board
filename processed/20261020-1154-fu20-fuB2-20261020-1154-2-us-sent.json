@@ -1,0 +1,52 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "cold-20261006-abbots-langley-social-club-abbots-langley-wd5",
+    "name": "Abbots Langley Social Club",
+    "town": "Abbots Langley WD5",
+    "email": "hello@abbotslangleyclub.com"
+   },
+   "status": "awaiting",
+   "statusNote": "FU1 Tue 20 Oct Us 1a158efc087900a0 11:51 London thread 1a111c7c33b50400 · awaiting · FU-20 FU05 Haggle held set · Gmail-verified · folded JEM 11:54 20 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T10:51:09Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Abbots Langley Social Club?",
+     "body": "Hi,\n\nJust a quick follow up on my note about Jake Essex for Abbots Langley Social Club.\n\nJake is from £300 for two one hour sets, or £250 a night when you book four. Three 45 minute sets are £350, or £300 a night for four. He brings his own PA and there's no deposit.\n\nDates are going quickly at the moment because clubs are block booking him. A few free Saturdays:\nSaturday 2 January 2027\nSaturday 6 March 2027\nSaturday 27 March 2027\nSaturday 10 April 2027\nSaturday 5 June 2027\nSaturday 11 September 2027\n\nHe also does a great Christmas show. Saturday 11 December 2027 is still free if you'd like him for next Christmas.\n\nJust reply with the date that suits and I'll get it pencilled in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a158efc087900a0",
+     "gmailThreadId": "1a111c7c33b50400",
+     "msgId": "1a158efc087900a0",
+     "threadId": "1a111c7c33b50400"
+    }
+   ]
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "id": "cold-20261006-boxmoor-social-club-hemel-hempstead-hp1",
+    "name": "Boxmoor Social Club",
+    "town": "Hemel Hempstead HP1",
+    "email": "web@boxmoorsocialclub.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "FU1 Tue 20 Oct Us 1a158f301ffe60aa 11:54 London thread 1a111d055db8f4e5 · awaiting · FU-20 FU06 Haggle held set · Gmail-verified · folded JEM 11:54 20 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T10:54:42Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Boxmoor Social Club?",
+     "body": "Hi,\n\nJust gently following up my note on Jake Essex for Boxmoor Social Club.\n\nJake is from £300 for two one hour sets, or £250 a night when you book four. Three 45 minute sets are £350, or £300 a night for four. He brings his own PA and there's no deposit.\n\nDates are going quickly at the moment because clubs are block booking him. A few free Saturdays:\nSaturday 2 January 2027\nSaturday 6 March 2027\nSaturday 27 March 2027\nSaturday 10 April 2027\nSaturday 5 June 2027\nSaturday 11 September 2027\n\nHe also does a great Christmas show. Saturday 11 December 2027 is still free if you'd like him for next Christmas.\n\nJust reply with the date that suits and I'll get it pencilled in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a158f301ffe60aa",
+     "gmailThreadId": "1a111d055db8f4e5",
+     "msgId": "1a158f301ffe60aa",
+     "threadId": "1a111d055db8f4e5"
+    }
+   ]
+  }
+ ]
+}

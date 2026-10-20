@@ -1,0 +1,76 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261020-rocksalt-folkestone-ct19",
+    "name": "Rocksalt Restaurant & Bar",
+    "town": "Folkestone CT19 6AA",
+    "email": "info@rocksaltfolkestone.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveC 20 Oct Us cold 1a1590a755527c14 12:20 London thread 1a1590a7199c630f · awaiting · FARKENT on THANET terms, Friday-led (reply to Jake for price; Friday dates via both calendars) · Gmail-verified · folded JEM 12:31 20 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T11:20:14Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Rocksalt?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at Rocksalt in Folkestone, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights this year and into 2027. If a Friday works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a1590a755527c14",
+     "gmailThreadId": "1a1590a7199c630f",
+     "msgId": "1a1590a755527c14",
+     "threadId": "1a1590a7199c630f"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261020-papa-bianco-faversham-me13",
+    "name": "Papà Bianco",
+    "town": "Faversham ME13 7BS",
+    "email": "pizza@papabianco.com"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveC 20 Oct Us cold 1a1590daacea116e 12:23 London thread 1a1590d9c6423235 · awaiting · THANET-terms, Friday-led (reply to Jake for price; Friday dates via both calendars) · Gmail-verified · folded JEM 12:31 20 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T11:23:50Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Papà Bianco?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would love to come and perform at Papà Bianco in Faversham, and he'd be a great fit for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights this year and into 2027. If a Friday works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a1590daacea116e",
+     "gmailThreadId": "1a1590d9c6423235",
+     "msgId": "1a1590daacea116e",
+     "threadId": "1a1590d9c6423235"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261020-imperial-bar-meze-margate-ct9",
+    "name": "Imperial Bar Meze",
+    "town": "Margate CT9 1AT",
+    "email": "imperialbarandmeze@gmail.com"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveC 20 Oct Us cold 1a15911fd44b8e79 12:28 London thread 1a15911eb0a630b1 · awaiting · THANET (reply to Jake for price) · Gmail-verified · folded JEM 12:31 20 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T11:28:33Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Imperial Bar Meze?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nImperial Bar Meze in Margate would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a15911fd44b8e79",
+     "gmailThreadId": "1a15911eb0a630b1",
+     "msgId": "1a15911fd44b8e79",
+     "threadId": "1a15911eb0a630b1"
+    }
+   ]
+  }
+ ]
+}
