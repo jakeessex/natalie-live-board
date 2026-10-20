@@ -1,0 +1,28 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261013-the-royal-oak-highams-park-ig8-9ln",
+    "name": "The Royal Oak (Highams Park)",
+    "town": "Highams Park",
+    "email": "info@royaloakhighamspark.co.uk",
+    "badge": "replied"
+   },
+   "statusNote": "replied-interested \u00b7 Them Rhonda Tue 20 Oct 09:47 BST 1a1587eb73c1e2ce (Sats Jan-Mar 2027 + price) \u00b7 Us reply DRAFT (standard card + Sats 2 Jan / 6 Mar / 27 Mar 2027) NOT SENT \u00b7 folded Bookings ~10:00 BST",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-20T08:47:30Z",
+     "from": "info@royaloakhighamspark.co.uk",
+     "subject": "Re: Jake Essex for The Royal Oak?",
+     "body": "Hi Natalie,\n\nThank you for reaching out.\nI am currently taking booking for Jan-March\nCan you let me know availability (Saturdays) and price.\n\nThanks Rhonda",
+     "gmailMsgId": "1a1587eb73c1e2ce",
+     "gmailThreadId": "1a134878c16fcc15",
+     "msgId": "1a1587eb73c1e2ce",
+     "threadId": "1a134878c16fcc15"
+    }
+   ]
+  }
+ ]
+}
