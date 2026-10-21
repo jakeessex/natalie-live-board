@@ -197,7 +197,7 @@
       "note": "charity tea"
     },
     {
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "venue": "Magpie Events Lot 14 Theydon",
       "town": "Theydon Bois",
       "postcode": "CM16 7EY",
@@ -372,8 +372,8 @@
       "venue": "Kinson Conservative Club",
       "town": "Bournemouth",
       "postcode": "BH10 7AR",
-      "start": "",
-      "finish": "",
+      "start": "20:00",
+      "finish": "23:00",
       "status": "booked",
       "source": "board",
       "note": "OWN £325 cash · 2×1hr · Steve Cole · 1394-1396 Wimborne Road · start TBD · Us 1a0a68876f788f8d · NEVER free · never Choice without Jake OK"
@@ -594,8 +594,8 @@
       "venue": "Kinson Conservative Club",
       "town": "Bournemouth",
       "postcode": "BH10 7AR",
-      "start": "",
-      "finish": "",
+      "start": "20:00",
+      "finish": "23:00",
       "status": "booked",
       "source": "board",
       "note": "OWN £325 cash · 2×1hr · Steve Cole · 1394-1396 Wimborne Road · start TBD · Us 1a0a68876f788f8d · NEVER free · never Choice without Jake OK"
@@ -646,8 +646,8 @@
       "date": "2027-10-09",
       "venue": "Bromley Services Club",
       "town": "Bromley",
-      "start": "20:45",
-      "finish": "23:30",
+      "start": "20:00",
+      "finish": "23:00",
       "status": "booked",
       "source": "board",
       "note": "OWN £200 cash · Steve · Oct 9 unchanged · NEVER Choice without Jake OK"

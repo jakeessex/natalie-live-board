@@ -5437,7 +5437,13 @@
     "lockedFee": 1000,
     "lockedNights": 4,
     "lockedDate": "2027-01-10",
-    "statusNote": "OWN LOCK 4× Sun £250 cash (=£1,000) · 10 Jan / 14 Mar / 16 May / 15 Aug 2027 · 15:15–17:45 2×1hr · 104 South Street CM23 3BG · Jade entertainment@ · Them 1a0c40066a07f769 · Us 1a0c408fd0596ead · NEVER Choice without Jake OK · Also Jade mobile 07538589190"
+    "statusNote": "OWN LOCK 4× Sun £250 cash (=£1,000) · 10 Jan / 14 Mar / 16 May / 15 Aug 2027 · 15:15–17:45 2×1hr · 104 South Street CM23 3BG · Jade entertainment@ · Them 1a0c40066a07f769 · Us 1a0c408fd0596ead · NEVER Choice without Jake OK · Also Jade mobile 07538589190",
+    "dates": [
+      "2027-01-10",
+      "2027-03-14",
+      "2027-05-16",
+      "2027-08-15"
+    ]
   },
   {
     "id": "bishopsworth-rbl",
@@ -8553,7 +8559,11 @@
     "lockedFee": 650,
     "lockedNights": 2,
     "lockedDate": "2027-02-06",
-    "statusNote": "OWN LOCK Sat 6 Feb 2027 + Sat 21 Aug 2027 · 2×1hr each · £650 cash (£325×2) · 1394-1396 Wimborne Road BH10 7AR (awaiting address + start times) · Them 1a0a6731f346a31e · Us 1a0a68876f788f8d · never Choice-mail without Jake OK"
+    "statusNote": "OWN LOCK Sat 6 Feb 2027 + Sat 21 Aug 2027 · 2×1hr each · £650 cash (£325×2) · 1394-1396 Wimborne Road BH10 7AR (awaiting address + start times) · Them 1a0a6731f346a31e · Us 1a0a68876f788f8d · never Choice-mail without Jake OK",
+    "dates": [
+      "2027-02-06",
+      "2027-08-21"
+    ]
   },
   {
     "id": "la-quinta",
@@ -15549,7 +15559,11 @@
     "lockedFee": 400,
     "lockedNights": 2,
     "lockedDate": "2027-05-15",
-    "statusNote": "OWN LOCK Sat 15 May 2027 + Sat 9 Oct 2027 £200 each (£400) · Steve phone Jake 21 Sep · 24 Apr CANCELLED → 15 May · diary g40sp1vvu48qkl9pto95cjcl0g 20:45–23:30 · NEVER Choice without Jake OK"
+    "statusNote": "OWN LOCK Sat 15 May 2027 + Sat 9 Oct 2027 £200 each (£400) · Steve phone Jake 21 Sep · 24 Apr CANCELLED → 15 May · diary g40sp1vvu48qkl9pto95cjcl0g 20:45–23:30 · NEVER Choice without Jake OK",
+    "dates": [
+      "2027-05-15",
+      "2027-10-09"
+    ]
   },
   {
     "id": "the-lion-inn-hotel",
@@ -24530,8 +24544,11 @@
     "tab": "booked",
     "lockedFee": 325,
     "lockedNights": 1,
-    "lockedDate": "2026-11-27",
-    "statusNote": "OWN LOCK Thu 27 Nov 2026 Magpie Events Lot 14 Theydon £325 · 14 Forest Drive Theydon Bois CM16 7EY · Ricky Magpie WhatsApp · arrive ~19:00 show 19:30 · same day after Dartford Mayor afternoon · enquiry 8tmib11bmuvs66atst27ibg0vo · NEVER Choice without Jake OK"
+    "lockedDate": "2026-11-28",
+    "statusNote": "OWN LOCK Sat 28 Nov 2026 (MOVED from Fri 27 Nov at Magpie request 16 Oct, per calendar + LOCKED_CASH) Magpie Events Lot 14 Theydon £325 · 14 Forest Drive Theydon Bois CM16 7EY · Ricky Magpie WhatsApp · arrive ~19:00 show 19:30 · enquiry 8tmib11bmuvs66atst27ibg0vo · NEVER Choice without Jake OK",
+    "dates": [
+      "2026-11-28"
+    ]
   },
   {
     "id": "bickley-and-widmore-social-club",
@@ -65991,7 +66008,7 @@
     "subject": "Jake Essex for Mill Hill Services Club?",
     "lastContact": "2026-10-08",
     "lastContactSrc": "us 1a11c16900f96e0e",
-    "statusNote": "LOCKED Sat 17 Oct 2026 £300 cash · 2×1hr · own PA · no deposit · arrive 7:30pm, show 8:30pm (poster says from 8pm) · music after sets one-off · 11 Hartley Avenue, Mill Hill, London NW7 2HX · Dawn Young (via Louise) · cal gqgfc62btrk0nucugnd8s65p2k · thread 1a11b583244874b8 · poster SENT 16:17 BST 1a11c16900f96e0e (jpg+pdf) · Jake gave Dawn his mobile 16:08 1a11c0f1dcca0f77 · replaces ECTA Grand Final (withdrawn 8 Oct) · not Choice · Gmail-verified",
+    "statusNote": "LOCKED Sat 17 Oct 2026 £300 cash · 2×1hr · own PA · no deposit · arrive 7:30pm, show 8:30pm (poster says from 8pm) · music after sets one-off · 11 Hartley Avenue, Mill Hill, London NW7 2HX · Dawn Young (via Louise) · cal gqgfc62btrk0nucugnd8s65p2k · thread 1a11b583244874b8 · poster SENT 16:17 BST 1a11c16900f96e0e (jpg+pdf) · Jake gave Dawn his mobile 16:08 1a11c0f1dcca0f77 · replaces ECTA Grand Final (withdrawn 8 Oct) · not Choice · Gmail-verified · PLAYED + PAID £300 cash 17 Oct (tin 18 Oct 00:40, CASH_TIN)",
     "lockedFee": 300,
     "lockedDate": "2026-10-17",
     "lockedNights": 1,
@@ -66000,7 +66017,8 @@
     "notes": "Also: club tel 020 8959 3667 · club email mhsc.l@btinternet.com (6 Oct cold)",
     "lat": 51.61499,
     "lng": -0.24357,
-    "venueType": "CIU club"
+    "venueType": "CIU club",
+    "paid": true
   },
   {
     "id": "cold-20261006-boxmoor-social-club-hemel-hempstead-hp1",
