@@ -78391,5 +78391,39 @@
     "statusNote": "cold waveC 21 Oct Us cold 1a15e371d12cc6c3 12:27 London thread 1a15e371de43fb8a · awaiting · FARKENT (reply to Jake for price) · Gmail-verified · folded Nat Board lag watch 12:4x (door file JEM 12:30 21 Oct)",
     "lastContact": "2026-10-21",
     "lastContactSrc": "us 1a15e371d12cc6c3"
+  },
+  {
+    "id": "cold-20261021-cat-and-fiddle-folkestone-ct20",
+    "name": "Cat & Fiddle (L&B), Folkestone",
+    "town": "Folkestone CT20 1EY",
+    "postcode": "CT20 1EY",
+    "website": "",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "hello@landb-restaurants.co.uk",
+    "addedAt": "2026-10-21T13:18:51Z",
+    "followUps": "",
+    "prospect": false,
+    "badge": "awaiting",
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "21 Oct 2026",
+    "subject": "Jake Essex for The Cat & Fiddle?",
+    "statusNote": "cold waveD 21 Oct Us cold 1a15e9d55cba2080 14:18 London thread 1a15e9d30ccec465 · awaiting · FARKENT on THANET terms (reply to Jake for price), Saturday close · Gmail-verified · folded Nat Board 14:2x (door file JEM 14:20 21 Oct)",
+    "lastContact": "2026-10-21",
+    "lastContactSrc": "us 1a15e9d55cba2080",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-21T13:18:51Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Cat & Fiddle?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for the Cat & Fiddle in Folkestone, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a15e9d55cba2080",
+        "threadId": "1a15e9d30ccec465"
+      }
+    ]
   }
 ]
