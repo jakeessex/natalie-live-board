@@ -80,6 +80,18 @@
       "owner": "Bookings",
       "status": "done",
       "updatedAt": "2026-10-19T19:50:00Z"
+    },
+    "winchester-club|2026-09-16T12:16:44.600Z": {
+      "action": "Chased Sandie by email 21 Oct 09:45: £325 for 2 x 1hr still stands, Sats/Suns offered (not held). Waiting on her.",
+      "owner": "Bookings",
+      "status": "waiting",
+      "updatedAt": "2026-10-21T08:50:00Z"
+    },
+    "shepherd-and-dog|2026-10-02T15:04:50.346Z": {
+      "action": "Chased Rebecca by email 21 Oct 09:46: £250 / £375 still stands, weekends offered (not held). Waiting on her.",
+      "owner": "Bookings",
+      "status": "waiting",
+      "updatedAt": "2026-10-21T08:50:00Z"
     }
   },
   "notes": {
