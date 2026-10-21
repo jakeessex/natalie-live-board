@@ -610,6 +610,14 @@
       "source": "cl"
     },
     {
+      "date": "2027-09-11",
+      "venue": "The Railway Tavern (Longfield)",
+      "town": "Longfield",
+      "postcode": "DA3 7QD",
+      "status": "booked",
+      "source": "board"
+    },
+    {
       "date": "2027-09-18",
       "venue": "West Beckenham Conservative Social Club",
       "postcode": "BR3 4PX",
