@@ -92,6 +92,90 @@
       "owner": "Bookings",
       "status": "waiting",
       "updatedAt": "2026-10-21T09:55:00Z"
+    },
+    "whitstable-social-club|2026-10-02T15:19:10.512Z": {
+      "action": "No WhatsApp to Tracey Brown (07517499148) is on record; the last contact is our 2 Oct 20:51 email to Claire, and there has been no reply since.",
+      "owner": "Bookings",
+      "status": "waiting",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "whitstable-social-club|2026-10-02T15:11:32.131Z": {
+      "action": "Done: email sent to Claire on 2 Oct at 20:51 BST (1a0fe2c1ca7d9a77) after the voicemail. No reply since.",
+      "owner": "Bookings",
+      "status": "waiting",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "the-greyhound-hotel|2026-10-02T15:09:57.311Z": {
+      "action": "Nothing sent since the note; Annemarie last emailed on 23 Sep saying they would be in touch, and they are waiting on head office approval.",
+      "owner": "Haggle",
+      "status": "waiting",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "corner-club-canvey|2026-10-02T15:00:34.599Z": {
+      "action": "Not actioned: no call-back to Maxine and no email is on record after the note. The last contact is her 11 Sep email, and the 19 Oct call reached voicemail.",
+      "owner": "Bookings",
+      "status": "not actioned",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "broomfield-rbl|2026-10-02T14:57:48.902Z": {
+      "action": "Voicemail only. No email or call is on record after it; our last email to Siobhan was on 9 Sep.",
+      "owner": "Bookings",
+      "status": "not actioned",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "broomfield-rbl|2026-10-02T14:57:31.759Z": {
+      "action": "Voicemail left asking if they want to secure a date. Nothing has been sent since, and there has been no reply.",
+      "owner": "Bookings",
+      "status": "not actioned",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "sedir|2026-10-02T14:55:06.482Z": {
+      "action": "Prices re-sent to Ahmet on 2 Oct at 16:02 BST (1a0fd236bcfb1e49). No reply since.",
+      "owner": "Bookings",
+      "status": "waiting",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "the-muddy-duck|2026-10-02T14:36:14.599Z": {
+      "action": "Nothing sent after the call; the last email was ours to Jaela on 9 Sep. No reply since.",
+      "owner": "Bookings",
+      "status": "not actioned",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "the-muddy-duck|2026-10-02T14:35:48.164Z": {
+      "action": "Voicemail only. Superseded by the 14:36 note ('They'll confirm').",
+      "owner": "Nat",
+      "status": "nothing needed",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "the-muddy-duck|2026-10-02T14:35:40.114Z": {
+      "action": "Voicemail left. Superseded by the 14:36 note.",
+      "owner": "Nat",
+      "status": "nothing needed",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "the-muddy-duck|2026-09-11T11:54:39.116Z": {
+      "action": "No call-back from Jaela is recorded; Nat called again on 2 Oct (see the later notes).",
+      "owner": "Nat",
+      "status": "done",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "sedir|2026-09-10T19:37:55.022Z": {
+      "action": "Dates and prices went out 9 Sep at 17:27 BST; Nat followed up by phone on 2 Oct (see the later notes).",
+      "owner": "Nat",
+      "status": "done",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "reddish-connie-club|2026-09-08T12:25:47.091Z": {
+      "action": "Test entry, not a real call. Nothing to do.",
+      "owner": "Nat",
+      "status": "nothing needed",
+      "updatedAt": "2026-10-21T13:34:24Z"
+    },
+    "reddish-connie-club|2026-09-08T12:26:38.792Z": {
+      "action": "Test entry, not a real call. Nothing to do.",
+      "owner": "Nat",
+      "status": "nothing needed",
+      "updatedAt": "2026-10-21T13:34:24Z"
     }
   },
   "notes": {
@@ -310,7 +394,23 @@
       "verbatim": "Booked for 4th December 2027 8:30pm see email, I have sent email confirmation- Nat",
       "outcome": "",
       "cleaned": "Booked for 4 December 2027 at 8:30pm (see email). I have sent the email confirmation. – Nat"
+    },
+    "reddish-connie-club|2026-09-08T12:25:47.091Z": {
+      "venueId": "reddish-connie-club",
+      "at": "2026-09-08T12:25:47.091Z",
+      "atBST": "Tue 08 Sep 2026 13:25 BST",
+      "verbatim": "test",
+      "outcome": "",
+      "cleaned": "Test note (\"test\"); not a call."
+    },
+    "reddish-connie-club|2026-09-08T12:26:38.792Z": {
+      "venueId": "reddish-connie-club",
+      "at": "2026-09-08T12:26:38.792Z",
+      "atBST": "Tue 08 Sep 2026 13:26 BST",
+      "verbatim": "hey there",
+      "outcome": "",
+      "cleaned": "Test note (\"hey there\"); not a call."
     }
   },
-  "notesUpdatedAt": "2026-10-19T19:43:50Z"
+  "notesUpdatedAt": "2026-10-21T13:34:24Z"
 }
