@@ -1,0 +1,52 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261021-the-cider-works-waldershare-ct15",
+    "name": "The Cider Works",
+    "town": "Waldershare, Dover CT15 5AU",
+    "email": "info@theciderworks.com"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveC 21 Oct Us cold 1a15e371d12cc6c3 12:27 London thread 1a15e371de43fb8a \u00b7 awaiting \u00b7 FARKENT (reply to Jake for price) \u00b7 Gmail-verified \u00b7 folded JEM 12:30 21 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-21T11:27:11Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for The Cider Works?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Cider Works at Waldershare would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a15e371d12cc6c3",
+     "gmailThreadId": "1a15e371de43fb8a",
+     "msgId": "1a15e371d12cc6c3",
+     "threadId": "1a15e371de43fb8a"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-granero-lounge-ha4-8jb",
+    "name": "Granero Lounge",
+    "town": "Ruislip HA4 8JB",
+    "email": "granero@thelounges.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveC 21 Oct Us cold 1a15e37dd06f9d60 12:28 London thread 1a15e37db3a76aa6 \u00b7 awaiting \u00b7 LOCAL Friday-led (standard card on reply) \u00b7 Gmail-verified \u00b7 folded JEM 12:30 21 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-21T11:28:00Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Granero Lounge?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for Granero Lounge in Ruislip, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights this year and into 2027. If a Friday works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a15e37dd06f9d60",
+     "gmailThreadId": "1a15e37db3a76aa6",
+     "msgId": "1a15e37dd06f9d60",
+     "threadId": "1a15e37db3a76aa6"
+    }
+   ]
+  }
+ ]
+}
