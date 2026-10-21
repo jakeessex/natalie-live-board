@@ -1580,6 +1580,62 @@
    "lastContact": "",
    "lastContactWho": "",
    "rank": 54
+  },
+  {
+   "id": "pot-bexleyheath-w-m-club-ltd-da6-7hg",
+   "venue": "Bexleyheath WMC",
+   "town": "Bexleyheath (DA6 7HG)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "020 8303 2163",
+     "label": "directory, unverified",
+     "tel": "+442083032163"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Pot phone-only lead (Hunter POT calls, 22 Oct). Live act: Simply Retro, Sat 5 Sep 2026 (happeningnext). Ask who books the Saturday entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter Pot calls; CAMRA/council directory, matches the CIU number on the Pot row). Hunter wrote DA7; the board row is DA6 7HG.",
+   "venueId": "pot-bexleyheath-w-m-club-ltd-da6-7hg",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 55
+  },
+  {
+   "id": "pot-vange-pitsea-working-men-s-club-ss16-4tg",
+   "venue": "Vange & Pitsea WMC",
+   "town": "Vange, Basildon (SS16 4TG)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01268 551020",
+     "label": "CIU directory, unverified",
+     "tel": "+441268551020"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Pot phone-only lead (Hunter POT calls, 22 Oct). Live act: Scooby, Sat 14 Nov 2026 (Lemonrock). Ask who books the Saturday entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter Pot calls; CIU directory on the Pot row, no own site).",
+   "venueId": "pot-vange-pitsea-working-men-s-club-ss16-4tg",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 56
   }
  ]
 }
