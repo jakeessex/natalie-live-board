@@ -32,6 +32,95 @@
  "venues": [
   {
    "rank": 1,
+   "id": "the-muddy-duck",
+   "venue": "The Muddy Duck",
+   "town": "Maldon, Essex",
+   "contact": "Jaela Wright (Manager)",
+   "phones": [
+    {
+     "number": "01621 336567",
+     "label": "pub line, files",
+     "tel": "01621336567"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "Them",
+   "lastDate": "9 Sep",
+   "lastMsg": "Jaela loved Jake's sound and was open to booking, but busy with events for about two months. Natalie rang on 2 Oct and they said they would confirm.",
+   "days": "42",
+   "daysNote": "since their last email",
+   "why": "She asked for a call and for prices, and her busy spell ends around early November. Over two weeks since they said they would confirm, so ring Jaela, ask which date suits, and offer a Sunday (15, 22 Nov; 27 Dec) or a 2027 Saturday (Sat 7 Nov has gone). Local.",
+   "flags": [],
+   "note": "PHONE CHASE: Nat's 2 Oct note says Jaela will confirm. Nothing has come in since. Ask Jaela if she has a date and the rates/set length to agree. · Last contact: 9 Sep (email) · Natalie's call 2 Oct: they will confirm.",
+   "venueId": "the-muddy-duck",
+   "gmailThreadId": "1a081a0311f36b07",
+   "lastContact": "2026-09-09",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 2,
+   "id": "broomfield-rbl",
+   "venue": "Broomfield RBL",
+   "town": "Chelmsford",
+   "contact": "Siobhan Stanley",
+   "phones": [
+    {
+     "number": "07749 088690",
+     "label": "mob",
+     "tel": "07749088690"
+    },
+    {
+     "number": "01245 442757",
+     "label": "files",
+     "tel": "01245442757"
+    }
+   ],
+   "noPhone": "",
+   "quote": "1 Sep: £250 for 2 x 1 hour or £350 for 3 x 45. That quote stands.",
+   "lastWho": "Them",
+   "lastDate": "1 Sep",
+   "lastMsg": "She loved it, would put it to the committee and asked for Saturdays.",
+   "days": "50",
+   "daysNote": "",
+   "why": "Royal British Legion club, where Jake goes down best. Siobhan was taking Jake to the committee and asked for Saturdays. Natalie left a voicemail on 2 Oct. No 2026 Saturday is free now (Sat 7 Nov has gone), so offer Sat 2 Jan or a 2027 Saturday from the intro card.",
+   "flags": [],
+   "note": "PHONE CHASE: two voicemails on 2 Oct asking if they want to secure a date. Siobhan was taking it to committee (1 Sep). Ask what the committee decided and offer a date. · Last contact: 9 Sep (Us) · Natalie left a voicemail on 2 Oct, no call back yet.",
+   "venueId": "broomfield-rbl",
+   "gmailThreadId": "1a04281ab98425ce",
+   "lastContact": "2026-09-09",
+   "lastContactWho": "Us"
+  },
+  {
+   "rank": 3,
+   "id": "corner-club",
+   "venue": "Corner Club",
+   "town": "Canvey Island",
+   "contact": "Maxine Topliss",
+   "phones": [
+    {
+     "number": "07830 763936",
+     "label": "mobile, files",
+     "tel": "07830763936"
+    }
+   ],
+   "noPhone": "",
+   "quote": "4 Sep: £250 for a 2 hour show or £375 for 3 hours, Sunday afternoon. That quote stands.",
+   "lastWho": "Them",
+   "lastDate": "11 Sep",
+   "lastMsg": "She hadn't forgotten; she was busy and away and would get back \"next week\".",
+   "days": "40",
+   "daysNote": "",
+   "why": "She wants a Sunday afternoon and Sundays are what Jake has free (Sun 25 Oct; 15, 22 Nov; 27 Dec). Natalie left Maxine a voicemail on 19 Oct asking her to call back, so if she has not rung, try her again in the evening. Local.",
+   "flags": [],
+   "note": "PHONE CHASE: Maxine was back from holiday 3 Oct and Nat was to call her that night. No call-back is recorded, and the 19 Oct call got voicemail. Ask about the Sunday (£250 / £375) and pin a date. · Last contact: 11 Sep (Them) · Natalie left a voicemail on 19 Oct, no call back yet.",
+   "venueId": "corner-club-canvey",
+   "gmailThreadId": "1a06bd225ae629e2",
+   "lastContact": "2026-09-11",
+   "lastContactWho": "Them"
+  },
+  {
+   "rank": 4,
    "id": "bardswell-social-club",
    "venue": "Bardswell Social Club",
    "town": "Brentwood (CM14 4TJ)",
@@ -59,7 +148,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 2,
+   "rank": 5,
    "id": "pendyffryn-club",
    "venue": "Pendyffryn Club",
    "town": "Prestatyn",
@@ -97,7 +186,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 3,
+   "rank": 6,
    "id": "whitstable-social-club",
    "venue": "Whitstable Social Club",
    "town": "Whitstable, Kent",
@@ -118,14 +207,14 @@
    "daysNote": "since their last email",
    "why": "Social club that asked the Sunday fee itself. Over two weeks since the call and the WhatsApp, so ring Claire (or check Tracey's WhatsApp first) and offer a Sunday that is still free: Sun 25 Oct, Sun 15 or 22 Nov, Sun 27 Dec. Sun 6 and 20 Dec from our email have gone. Do not restate the fee unless asked.",
    "flags": [],
-   "note": "Last contact: 2 Oct (Us)",
+   "note": "Nat to WhatsApp Tracey Brown +447517499148 herself (not yet sent). · Last contact: 2 Oct (Us)",
    "venueId": "whitstable-social-club",
    "gmailThreadId": "",
    "lastContact": "2026-10-02",
    "lastContactWho": "Us"
   },
   {
-   "rank": 4,
+   "rank": 7,
    "id": "barrow-upon-soar-cons",
    "venue": "Barrow upon Soar Cons",
    "town": "Leics",
@@ -158,35 +247,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 5,
-   "id": "corner-club",
-   "venue": "Corner Club",
-   "town": "Canvey Island",
-   "contact": "Maxine Topliss",
-   "phones": [
-    {
-     "number": "07830 763936",
-     "label": "mobile, files",
-     "tel": "07830763936"
-    }
-   ],
-   "noPhone": "",
-   "quote": "4 Sep: £250 for a 2 hour show or £375 for 3 hours, Sunday afternoon. That quote stands.",
-   "lastWho": "Them",
-   "lastDate": "11 Sep",
-   "lastMsg": "She hadn't forgotten; she was busy and away and would get back \"next week\".",
-   "days": "40",
-   "daysNote": "",
-   "why": "She wants a Sunday afternoon and Sundays are what Jake has free (Sun 25 Oct; 15, 22 Nov; 27 Dec). Natalie left Maxine a voicemail on 19 Oct asking her to call back, so if she has not rung, try her again in the evening. Local.",
-   "flags": [],
-   "note": "Last contact: 11 Sep (Them) · Natalie left a voicemail on 19 Oct, no call back yet.",
-   "venueId": "corner-club-canvey",
-   "gmailThreadId": "1a06bd225ae629e2",
-   "lastContact": "2026-09-11",
-   "lastContactWho": "Them"
-  },
-  {
-   "rank": 6,
+   "rank": 8,
    "id": "winchester-club",
    "venue": "The Winchester Club",
    "town": "Winchester",
@@ -223,40 +284,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 7,
-   "id": "broomfield-rbl",
-   "venue": "Broomfield RBL",
-   "town": "Chelmsford",
-   "contact": "Siobhan Stanley",
-   "phones": [
-    {
-     "number": "07749 088690",
-     "label": "mob",
-     "tel": "07749088690"
-    },
-    {
-     "number": "01245 442757",
-     "label": "files",
-     "tel": "01245442757"
-    }
-   ],
-   "noPhone": "",
-   "quote": "1 Sep: £250 for 2 x 1 hour or £350 for 3 x 45. That quote stands.",
-   "lastWho": "Them",
-   "lastDate": "1 Sep",
-   "lastMsg": "She loved it, would put it to the committee and asked for Saturdays.",
-   "days": "50",
-   "daysNote": "",
-   "why": "Royal British Legion club, where Jake goes down best. Siobhan was taking Jake to the committee and asked for Saturdays. Natalie left a voicemail on 2 Oct. No 2026 Saturday is free now (Sat 7 Nov has gone), so offer Sat 2 Jan or a 2027 Saturday from the intro card.",
-   "flags": [],
-   "note": "Last contact: 9 Sep (Us) · Natalie left a voicemail on 2 Oct, no call back yet.",
-   "venueId": "broomfield-rbl",
-   "gmailThreadId": "1a04281ab98425ce",
-   "lastContact": "2026-09-09",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 8,
+   "rank": 9,
    "id": "imperial-cheshunt-and-waltham-cross-cons",
    "venue": "Imperial / Cheshunt & Waltham Cross Cons",
    "town": "Waltham Cross / Cheshunt",
@@ -284,7 +312,7 @@
    "lastContactWho": "Them"
   },
   {
-   "rank": 9,
+   "rank": 10,
    "id": "wraysbury-village-club",
    "venue": "Wraysbury Village Club",
    "town": "Wraysbury, near Staines",
@@ -312,7 +340,7 @@
    "lastContactWho": "Them"
   },
   {
-   "rank": 10,
+   "rank": 11,
    "id": "california-social-ipswich",
    "venue": "California Social Club",
    "town": "Ipswich",
@@ -340,7 +368,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 11,
+   "rank": 12,
    "id": "hounslow-rbl",
    "venue": "Hounslow RBL",
    "town": "Hounslow (Whitton Road, TW3)",
@@ -368,7 +396,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 12,
+   "rank": 13,
    "id": "brightlingsea-rbl",
    "venue": "Brightlingsea RBL",
    "town": "Brightlingsea, Essex",
@@ -396,7 +424,7 @@
    "lastContactWho": "Them"
   },
   {
-   "rank": 13,
+   "rank": 14,
    "id": "the-greyhound-hotel",
    "venue": "The Greyhound Hotel",
    "town": "Carshalton (Young's)",
@@ -424,7 +452,7 @@
    "lastContactWho": "Them"
   },
   {
-   "rank": 14,
+   "rank": 15,
    "id": "shepherd-and-dog",
    "venue": "Shepherd & Dog",
    "town": "Crays Hill, Billericay",
@@ -449,34 +477,6 @@
    "venueId": "shepherd-and-dog",
    "gmailThreadId": "",
    "lastContact": "2026-10-02",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 15,
-   "id": "the-muddy-duck",
-   "venue": "The Muddy Duck",
-   "town": "Maldon, Essex",
-   "contact": "Jaela Wright (Manager)",
-   "phones": [
-    {
-     "number": "01621 336567",
-     "label": "pub line, files",
-     "tel": "01621336567"
-    }
-   ],
-   "noPhone": "",
-   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
-   "lastWho": "Them",
-   "lastDate": "9 Sep",
-   "lastMsg": "Jaela loved Jake's sound and was open to booking, but busy with events for about two months. Natalie rang on 2 Oct and they said they would confirm.",
-   "days": "42",
-   "daysNote": "since their last email",
-   "why": "She asked for a call and for prices, and her busy spell ends around early November. Over two weeks since they said they would confirm, so ring Jaela, ask which date suits, and offer a Sunday (15, 22 Nov; 27 Dec) or a 2027 Saturday (Sat 7 Nov has gone). Local.",
-   "flags": [],
-   "note": "Last contact: 9 Sep (email) · Natalie's call 2 Oct: they will confirm.",
-   "venueId": "the-muddy-duck",
-   "gmailThreadId": "1a081a0311f36b07",
-   "lastContact": "2026-09-09",
    "lastContactWho": "Us"
   },
   {
@@ -1244,6 +1244,342 @@
    "gmailThreadId": "",
    "lastContact": "2026-08-27",
    "lastContactWho": "Us"
+  },
+  {
+   "id": "pot-northwood-club-restaurant-ramsgate",
+   "venue": "Northwood Club & Restaurant",
+   "town": "Ramsgate (CT12 6RS)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01843 592902",
+     "label": "directory, unverified",
+     "tel": "+441843592902"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. Sat 17 Oct \"Ed Elvis\", Sat 24 Oct Steve Huckle, Sat 31 Oct Nikki Red. Saturday solo singers, including an Elvis act. Best fit. Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB).",
+   "venueId": "pot-northwood-club-restaurant-ramsgate",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 43
+  },
+  {
+   "id": "pot-kelvedon-labour-club-co5-9ae",
+   "venue": "Kelvedon Labour Club",
+   "town": "Kelvedon (CO5 9AE)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01376 570589",
+     "label": "directory, unverified",
+     "tel": "+441376570589"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. Sat 24 Oct Fishing For Robots, Sat 31 Oct Afterlife (Lemonrock). Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB). kellabclub@gmail.com is directory-only, not verified; do not email.",
+   "venueId": "pot-kelvedon-labour-club-co5-9ae",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 44
+  },
+  {
+   "id": "pot-blackheath-liberal-club-rowley-regis",
+   "venue": "Blackheath Liberal Club",
+   "town": "Rowley Regis (B65 0EP)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "0121 561 3290",
+     "label": "directory, unverified",
+     "tel": "+441215613290"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. CAMRA \"Live Music Saturdays\" (undated). Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB).",
+   "venueId": "pot-blackheath-liberal-club-rowley-regis",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 45
+  },
+  {
+   "id": "pot-dover-road-social-club-folkestone",
+   "venue": "Dover Road Social Club",
+   "town": "Folkestone (CT20 1LA)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01303 255822",
+     "label": "directory, unverified",
+     "tel": "+441303255822"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. Fri 30 Oct Jason Leigh Band (folkestonemusic.co.uk). Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB).",
+   "venueId": "pot-dover-road-social-club-folkestone",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 46
+  },
+  {
+   "id": "pot-folkestone-railway-social-club-folkestone",
+   "venue": "Folkestone Railway Social Club",
+   "town": "Folkestone (CT19 5NG)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01303 251997",
+     "label": "directory, unverified",
+     "tel": "+441303251997"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. \"Live music most Saturdays\" (undated). Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB).",
+   "venueId": "pot-folkestone-railway-social-club-folkestone",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 47
+  },
+  {
+   "id": "pot-hythe-saltwood-rbl-club-hythe",
+   "venue": "Hythe & Saltwood RBL Club",
+   "town": "Hythe (CT21 6EN)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01303 267688",
+     "label": "directory, unverified",
+     "tel": "+441303267688"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. Live bands (undated). Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB). Number is from the RBL Kent clubs directory. The branch now meets at Hythe Sports and Social Club, same address, so check the name when they answer.",
+   "venueId": "pot-hythe-saltwood-rbl-club-hythe",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 48
+  },
+  {
+   "id": "pot-oddfellows-social-club-cheriton-folkestone",
+   "venue": "Oddfellows Social Club (Cheriton)",
+   "town": "Folkestone (CT19 4DH)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01303 470652",
+     "label": "directory, unverified",
+     "tel": "+441303470652"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. Live music (BandBase/CAMRA, undated). Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB).",
+   "venueId": "pot-oddfellows-social-club-cheriton-folkestone",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 49
+  },
+  {
+   "id": "pot-broadstairs-st-peters-comrades-club-broadstairs",
+   "venue": "Broadstairs & St Peters Comrades Club",
+   "town": "Broadstairs (CT10 2AG)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01843 862243",
+     "label": "directory, unverified",
+     "tel": "+441843862243"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. No dated acts found. Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB). comrades.fb@btconnect.com is directory-only; do not email.",
+   "venueId": "pot-broadstairs-st-peters-comrades-club-broadstairs",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 50
+  },
+  {
+   "id": "pot-egham-and-hythe-social-club-tw20-8ap",
+   "venue": "Egham and Hythe Social Club",
+   "town": "Egham (TW20 8AP)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01784 451917",
+     "label": "directory, unverified",
+     "tel": "+441784451917"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. \"Loud at the Legion\" 12 Sep (past). Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB).",
+   "venueId": "pot-egham-and-hythe-social-club-tw20-8ap",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 51
+  },
+  {
+   "id": "pot-hawkhurst-r-b-l-club-tn18-4ag",
+   "venue": "Hawkhurst R.B.L. Club",
+   "town": "Hawkhurst (TN18 4AG)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01580 752351",
+     "label": "directory, unverified",
+     "tel": "+441580752351"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. No dated acts found. Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB). Number is from the RBL Kent clubs directory.",
+   "venueId": "pot-hawkhurst-r-b-l-club-tn18-4ag",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 52
+  },
+  {
+   "id": "pot-greenstead-social-club-colchester",
+   "venue": "Greenstead Social Club",
+   "town": "Colchester (CO4 3QD)",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01206 791929",
+     "label": "directory, unverified",
+     "tel": "+441206791929"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. Live acts in Aug 2026 only (past). Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number unverified (Hunter phone/FB).",
+   "venueId": "pot-greenstead-social-club-colchester",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 53
+  },
+  {
+   "id": "pot-wrotham-arms-broadstairs",
+   "venue": "Wrotham Arms",
+   "town": "Broadstairs",
+   "contact": "Entertainment secretary (no name on file)",
+   "phones": [
+    {
+     "number": "01843 861788",
+     "label": "own site",
+     "tel": "+441843861788"
+    }
+   ],
+   "noPhone": "",
+   "quote": "No fee sent yet. If they ask the fee: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates.",
+   "lastWho": "",
+   "lastDate": "",
+   "lastMsg": "Never contacted. No email on file.",
+   "days": "",
+   "daysNote": "",
+   "why": "Phone-only lead from Hunter phone/FB top 20, 20 Oct. Blues & Roots club room: Fri 23 Oct Doozles Trio, Sat 24 Oct The Camden Shades (BandBase). Ask who books the entertainment, get a name and a direct number or email, and offer a date from the intro card.",
+   "flags": [],
+   "note": "Number verified on own site (Hunter phone/FB). Also 07814 344969 (own site).",
+   "venueId": "pot-wrotham-arms-broadstairs",
+   "gmailThreadId": "",
+   "lastContact": "",
+   "lastContactWho": "",
+   "rank": 54
   }
  ]
 }
