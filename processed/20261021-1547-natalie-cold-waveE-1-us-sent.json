@@ -1,0 +1,28 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-postino-lounge-al8-6aa",
+    "name": "Postino Lounge (Loungers)",
+    "town": "Welwyn Garden City AL8 6AL",
+    "email": "postino@thelounges.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveE 21 Oct Us cold 1a15eec5c8648ddc 15:45 London thread 1a15eebf9fe79e37 · awaiting · HERTS ~45m, Friday-led (standard card on reply) · Loungers 3/3 · Gmail-verified · folded Bookings 15:48 21 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-21T14:45:10Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Postino Lounge?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nPostino Lounge in Welwyn Garden City would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights this year and into 2027. If a Friday works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a15eec5c8648ddc",
+     "gmailThreadId": "1a15eebf9fe79e37",
+     "msgId": "1a15eec5c8648ddc",
+     "threadId": "1a15eebf9fe79e37"
+    }
+   ]
+  }
+ ]
+}
