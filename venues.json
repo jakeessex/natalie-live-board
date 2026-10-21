@@ -69079,7 +69079,7 @@
     "needPhone": true,
     "email": "office@hcacommunity.org.uk",
     "addedAt": "2026-10-08T10:07:11Z",
-    "followUps": "",
+    "followUps": "FU1 21 Oct 2026",
     "messages": [
       {
         "side": "us",
@@ -69090,6 +69090,16 @@
         "body": "Hi,\n\nI'm Natalie - I look after bookings for Jake Essex.\n\nJake would be a great fit for Hazlemere Community Centre, and he'd love to\ncome and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s\n- Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act - no\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027 -\nif a date works, reply here and I'll lock it.\n\nNatalie",
         "msgId": "1a11afb2f5060cbe",
         "threadId": "1a11afb2c37cf443"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-21T12:47:21Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Hazlemere Community Centre?",
+        "body": "Hi,\n\nJust checking my earlier email about Jake Essex reached you.\n\nHe's from Essex, has his own PA and needs no deposit. Prices are from £300 for two one hour sets, or £250 a night when you book four. Saturday nights are open this year and through 2027, so if you'd like a date, just reply and I'll hold it for you.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a15e80805f744a4",
+        "threadId": "1a11afb2c37cf443"
       }
     ],
     "hasThread": true,
@@ -69097,9 +69107,9 @@
     "firstPitch": "8 Oct 2026",
     "subject": "Jake Essex for Hazlemere Community Centre?",
     "badge": "awaiting",
-    "lastContact": "2026-10-08",
-    "lastContactSrc": "us 1a11afb2f5060cbe",
-    "statusNote": "thu-8-oct cold WAVE B SENT_OK 1a11afb2f5060cbe ~11:07 London thread 1a11afb2c37cf443 · awaiting · Gmail-verified · folded 1500 8 Oct"
+    "lastContact": "2026-10-21",
+    "lastContactSrc": "us 1a15e80805f744a4",
+    "statusNote": "awaiting · FU1 Us Wed 21 Oct 13:47 BST 1a15e80805f744a4 thread 1a11afb2c37cf443 · Gmail-verified · folded Nat Board lag watch 14:5x (door file JEM 13:49) · prior: thu-8-oct cold WAVE B SENT_OK 1a11afb2f5060cbe ~11:07 London thread 1a11afb2c37cf443 · awaiting · Gmail-verified · folded 1500 8 Oct"
   },
   {
     "id": "cold-20261008-royal-british-legion-club-hemel-hempstead-hemel-hempstead-hp2",
