@@ -1,8 +1,8 @@
 {
  "version": 1,
- "title": "Nat call deck, Wed 21 Oct",
- "listDate": "2026-10-21",
- "source": "JEM refresh Wed 21 Oct 2026: only venues that never replied by email or went quiet 14+ days (no live email threads). Once-interested quiet first (clubs, warmest, most recent interest), then never-replied clubs (longest silence). Real phone required. Built by /workspace/deck-refresh/build_calls.py",
+ "title": "Nat call deck, Thu 22 Oct",
+ "listDate": "2026-10-22",
+ "source": "JEM refresh Thu 22 Oct 2026: only venues that never replied by email or went quiet 14+ days (no live email threads). Once-interested quiet first (clubs, warmest, most recent interest), then never-replied clubs (longest silence). Real phone required. Built by /workspace/deck-refresh/build_calls.py",
  "freeNights": [
   {
    "month": "Oct",
@@ -18,7 +18,7 @@
   },
   {
    "month": "2027",
-   "nights": "Saturdays: 2 Jan · 10 Apr · 11 Sep · 16 Oct · 6, 20 Nov (6 Mar is booked for Royal Oak; 27 Mar, 5 Jun and 11 Dec are pencilled for Sutton Social; May, Jul and Aug fully booked)"
+   "nights": "Saturdays: 2 Jan · 10 Apr · 16 Oct · 6, 20 Nov (6 Mar is booked for Royal Oak; 11 Sep is booked for Railway Tavern; 27 Mar, 5 Jun and 11 Dec are pencilled for Sutton Social; May, Jul and Aug fully booked)"
   }
  ],
  "rules": [
@@ -48,7 +48,7 @@
    "lastWho": "Them",
    "lastDate": "9 Sep",
    "lastMsg": "Jaela loved Jake's sound and was open to booking, but busy with events for about two months. Natalie rang on 2 Oct and they said they would confirm.",
-   "days": "42",
+   "days": "43",
    "daysNote": "since their last email",
    "why": "She asked for a call and for prices, and her busy spell ends around early November. Over two weeks since they said they would confirm, so ring Jaela, ask which date suits, and offer a Sunday (15, 22 Nov; 27 Dec) or a 2027 Saturday (Sat 7 Nov has gone). Local.",
    "flags": [],
@@ -81,7 +81,7 @@
    "lastWho": "Them",
    "lastDate": "1 Sep",
    "lastMsg": "She loved it, would put it to the committee and asked for Saturdays.",
-   "days": "50",
+   "days": "51",
    "daysNote": "",
    "why": "Royal British Legion club, where Jake goes down best. Siobhan was taking Jake to the committee and asked for Saturdays. Natalie left a voicemail on 2 Oct. No 2026 Saturday is free now (Sat 7 Nov has gone), so offer Sat 2 Jan or a 2027 Saturday from the intro card.",
    "flags": [],
@@ -109,7 +109,7 @@
    "lastWho": "Them",
    "lastDate": "11 Sep",
    "lastMsg": "She hadn't forgotten; she was busy and away and would get back \"next week\".",
-   "days": "40",
+   "days": "41",
    "daysNote": "",
    "why": "She wants a Sunday afternoon and Sundays are what Jake has free (Sun 25 Oct; 15, 22 Nov; 27 Dec). Natalie left Maxine a voicemail on 19 Oct asking her to call back, so if she has not rung, try her again in the evening. Local.",
    "flags": [],
@@ -137,7 +137,7 @@
    "lastWho": "Them",
    "lastDate": "10 Sep",
    "lastMsg": "\"I will get back to you, just need to juggle some things around.\"",
-   "days": "41",
+   "days": "42",
    "daysNote": "",
    "why": "The price is agreed and only the date is open. She wanted 28 Aug 2027 and August 2027 is fully booked, so offer the other 2027 Saturdays on the intro card. Do not restate the fee.",
    "flags": [],
@@ -170,7 +170,7 @@
    "lastWho": "Them",
    "lastDate": "21 Sep",
    "lastMsg": "Mags asked the Saturday night charge.",
-   "days": "30",
+   "days": "31",
    "daysNote": "",
    "why": "Mags asked the Saturday charge, then silence after the quote and our 28 Sep chase. 2027 only, FAR (North Wales), so it needs a weekend run.",
    "flags": [
@@ -203,7 +203,7 @@
    "lastWho": "Them",
    "lastDate": "18 Sep",
    "lastMsg": "Claire asked what Jake charges for 2 hours on a Sunday. We quoted, chased on 28 Sep, and Natalie rang on 2 Oct (voicemail; told to WhatsApp Tracey Brown) and sent the post call email. Nothing since.",
-   "days": "33",
+   "days": "34",
    "daysNote": "since their last email",
    "why": "Social club that asked the Sunday fee itself. Over two weeks since the call and the WhatsApp, so ring Claire (or check Tracey's WhatsApp first) and offer a Sunday that is still free: Sun 25 Oct, Sun 15 or 22 Nov, Sun 27 Dec. Sun 6 and 20 Dec from our email have gone. Do not restate the fee unless asked.",
    "flags": [],
@@ -231,7 +231,7 @@
    "lastWho": "Them",
    "lastDate": "15 Sep",
    "lastMsg": "She asked \"What's the fee please?\"",
-   "days": "36",
+   "days": "37",
    "daysNote": "",
    "why": "Conservative club that asked the fee, then silence after the quote and one chase (28 Sep, no more emails). A call checks whether the fee or the distance is the problem. FAR.",
    "flags": [
@@ -264,7 +264,7 @@
    "lastWho": "Them",
    "lastDate": "7 Sep",
    "lastMsg": "Sandie asked for prices for a 2 hour show and said she could not give a date yet.",
-   "days": "44",
+   "days": "45",
    "daysNote": "",
    "why": "She came to us through the website wanting to book. Jake rang on 14 Sep and Natalie left her number with Donna (bar manager) on 16 Sep. No word since. Weekends only, it is a drive.",
    "flags": [
@@ -277,10 +277,10 @@
      "text": "FAR"
     }
    ],
-   "note": "Last contact: 7 Sep (Us)",
+   "note": "Last contact: 21 Oct (Us)",
    "venueId": "winchester-club",
    "gmailThreadId": "",
-   "lastContact": "2026-09-07",
+   "lastContact": "2026-10-21",
    "lastContactWho": "Us"
   },
   {
@@ -301,7 +301,7 @@
    "lastWho": "Them",
    "lastDate": "1 Sep",
    "lastMsg": "Brian thanked us for the prices and said they would keep our details on file.",
-   "days": "50",
+   "days": "51",
    "daysNote": "",
    "why": "Conservative club that asked the Friday and Saturday fee, then went quiet after saying they would keep us on file. Ring Brian, test whether a 2027 Saturday still works, and do not restate the fee unless he asks.",
    "flags": [],
@@ -329,7 +329,7 @@
    "lastWho": "Them",
    "lastDate": "17 Sep",
    "lastMsg": "Kinde Hanspal (Secretary) forwarded our email to Richard Cripps, who does the entertainment, and copied us in.",
-   "days": "34",
+   "days": "35",
    "daysNote": "",
    "why": "Village club that passed us straight to the entertainment man. Ring Kinde's mobile (it is on her email signature), ask for Richard's best number or a good time, and offer a Saturday.",
    "flags": [],
@@ -357,7 +357,7 @@
    "lastWho": "Them",
    "lastDate": "9 Sep",
    "lastMsg": "Kate Hebden (Club Secretary) forwarded us to Peter Loweman, who books their bands. Jake then spoke to the club and Peter was going to look at the website and get back.",
-   "days": "42",
+   "days": "43",
    "daysNote": "",
    "why": "Social club and they pointed us to the booker themselves. Peter has had over three weeks with the website, so ring and ask which Saturday he fancies.",
    "flags": [],
@@ -385,7 +385,7 @@
    "lastWho": "Them",
    "lastDate": "2 Aug",
    "lastMsg": "All bookings go through the committee; their next meeting was in September and Mick would put Jake forward. We replied 26 Aug: Remembrance Sunday is taken, happy to look at other dates.",
-   "days": "80",
+   "days": "81",
    "daysNote": "",
    "why": "Royal British Legion club, where Jake goes down best. The September committee has been and gone, so ring Mick for the verdict and offer a 2027 Saturday.",
    "flags": [],
@@ -413,7 +413,7 @@
    "lastWho": "Them",
    "lastDate": "15 May",
    "lastMsg": "Caron Gould (Club Secretary) said she had forwarded our email to their social secretary. Nothing since.",
-   "days": "159",
+   "days": "160",
    "daysNote": "",
    "why": "Royal British Legion club, the kind of room where Jake goes down best, and local. They passed us to the social secretary in May and nobody came back. Ask for the social secretary by name and offer a 2027 Saturday.",
    "flags": [],
@@ -441,7 +441,7 @@
    "lastWho": "Them",
    "lastDate": "23 Sep",
    "lastMsg": "Annemarie thanked us for the prices and said they would be in touch. Natalie rang on 2 Oct: they definitely want to go ahead, probably December, waiting on head office approval, and would contact us.",
-   "days": "28",
+   "days": "29",
    "daysNote": "since their last email",
    "why": "The GM has engaged twice and told Natalie they want to go ahead once head office signs off. Over two weeks on with no word, so ring Annemarie, ask if head office has approved, and offer Sun 27 Dec, or a 2027 Saturday from the intro card. Phone only, no email chase.",
    "flags": [],
@@ -453,34 +453,6 @@
   },
   {
    "rank": 15,
-   "id": "shepherd-and-dog",
-   "venue": "Shepherd & Dog",
-   "town": "Crays Hill, Billericay",
-   "contact": "Rebecca",
-   "phones": [
-    {
-     "number": "01268 521967",
-     "label": "files",
-     "tel": "01268521967"
-    }
-   ],
-   "noPhone": "",
-   "quote": "2 Oct: 2 x 45 £250, 3 x 45 £375, 4 x 40 £485, cash, no deposit. That quote stands.",
-   "lastWho": "Us",
-   "lastDate": "2 Oct",
-   "lastMsg": "Rebecca said in September she would let us know. Natalie rang on 2 Oct and we sent the prices and dates straight after. Nothing since.",
-   "days": "36",
-   "daysNote": "since their last email",
-   "why": "Local pub that took a call and got the full price list. Over two weeks since the quote, so ring Rebecca, ask if she wants a date this year, and offer one still free from our email: Sun 25 Oct, Sun 15 or 22 Nov, Sun 27 Dec (Sat 7 Nov, Sun 6 and Sun 20 Dec have gone). Phone only, no email chase.",
-   "flags": [],
-   "note": "Last contact: 2 Oct (Us)",
-   "venueId": "shepherd-and-dog",
-   "gmailThreadId": "",
-   "lastContact": "2026-10-02",
-   "lastContactWho": "Us"
-  },
-  {
-   "rank": 16,
    "id": "sedir",
    "venue": "Sedir",
    "town": "Dartford",
@@ -497,7 +469,7 @@
    "lastWho": "Us",
    "lastDate": "2 Oct",
    "lastMsg": "Ahmet asked Jake to come in and talk in September. Natalie rang on 2 Oct, they said they would confirm, and we resent the prices with Sat 7, Sun 15 and Sun 22 Nov. Nothing since.",
-   "days": "43",
+   "days": "44",
    "daysNote": "since their last email",
    "why": "Restaurant that met Jake and has the price list twice. Over two weeks since they said they would confirm, so ring and ask for Ahmet, and offer Sun 15 or Sun 22 Nov (both still free; Sat 7 Nov has gone). Phone only, no email chase.",
    "flags": [],
@@ -508,7 +480,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 17,
+   "rank": 16,
    "id": "rayleigh-rbl",
    "venue": "Rayleigh RBL",
    "town": "Rayleigh, Essex",
@@ -525,9 +497,9 @@
    "lastWho": "Us",
    "lastDate": "27 Aug",
    "lastMsg": "No reply ever. First email 6 May, chased 27 Aug.",
-   "days": "168",
+   "days": "169",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 168 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 169 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 27 Aug (Us)",
    "venueId": "rayleigh-rbl",
@@ -536,7 +508,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 18,
+   "rank": 17,
    "id": "hayes-wmc",
    "venue": "Hayes WMC",
    "town": "Hayes, Middlesex",
@@ -553,9 +525,9 @@
    "lastWho": "Us",
    "lastDate": "27 Aug",
    "lastMsg": "No reply ever. First email 6 May, chased 27 Aug.",
-   "days": "168",
+   "days": "169",
    "daysNote": "",
-   "why": "Working men's club, a proven room type for Jake. Never answered our email in 168 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Working men's club, a proven room type for Jake. Never answered our email in 169 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 27 Aug (Us)",
    "venueId": "hayes-wmc",
@@ -564,7 +536,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 19,
+   "rank": 18,
    "id": "hornchurch-conservative",
    "venue": "Hornchurch Conservative",
    "town": "Hornchurch",
@@ -581,9 +553,9 @@
    "lastWho": "Us",
    "lastDate": "27 Aug",
    "lastMsg": "No reply ever. First email 8 May, chased 27 Aug.",
-   "days": "166",
+   "days": "167",
    "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 166 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 167 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 27 Aug (Us)",
    "venueId": "hornchurch-conservative",
@@ -592,7 +564,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 20,
+   "rank": 19,
    "id": "orpington-rbl",
    "venue": "Orpington RBL",
    "town": "Orpington",
@@ -609,9 +581,9 @@
    "lastWho": "Us",
    "lastDate": "1 Aug",
    "lastMsg": "No reply ever. First email 1 Aug.",
-   "days": "81",
+   "days": "82",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 81 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 82 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 1 Aug (Us)",
    "venueId": "orpington-rbl",
@@ -620,7 +592,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 21,
+   "rank": 20,
    "id": "putney-rbl",
    "venue": "Putney RBL",
    "town": "Putney, London",
@@ -637,9 +609,9 @@
    "lastWho": "Us",
    "lastDate": "1 Aug",
    "lastMsg": "No reply ever. First email 1 Aug.",
-   "days": "81",
+   "days": "82",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 81 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 82 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 1 Aug (Us)",
    "venueId": "putney-rbl",
@@ -648,7 +620,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 22,
+   "rank": 21,
    "id": "twickenham-rbl",
    "venue": "Twickenham RBL",
    "town": "Twickenham",
@@ -665,9 +637,9 @@
    "lastWho": "Us",
    "lastDate": "28 Aug",
    "lastMsg": "No reply ever. First email 1 Aug, chased 28 Aug.",
-   "days": "81",
+   "days": "82",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 81 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 82 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 28 Aug (Us)",
    "venueId": "twickenham-rbl",
@@ -676,7 +648,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 23,
+   "rank": 22,
    "id": "upminster-and-cranham-rbl",
    "venue": "Upminster & Cranham RBL",
    "town": "Upminster",
@@ -693,9 +665,9 @@
    "lastWho": "Us",
    "lastDate": "1 Aug",
    "lastMsg": "No reply ever. First email 1 Aug. Also emailed upminsterrbl@aol.com on 26 Aug, same club and number.",
-   "days": "81",
+   "days": "82",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 81 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 82 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 1 Aug (Us)",
    "venueId": "upminster-and-cranham-rbl",
@@ -704,7 +676,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 24,
+   "rank": 23,
    "id": "aveley-village-social-club",
    "venue": "Aveley Village Social Club",
    "town": "Aveley",
@@ -721,9 +693,9 @@
    "lastWho": "Us",
    "lastDate": "1 Aug",
    "lastMsg": "No reply ever. First email 1 Aug.",
-   "days": "81",
+   "days": "82",
    "daysNote": "",
-   "why": "Social club, a proven room type for Jake. Never answered our email in 81 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Social club, a proven room type for Jake. Never answered our email in 82 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 1 Aug (Us)",
    "venueId": "aveley-village-social-club",
@@ -732,7 +704,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 25,
+   "rank": 24,
    "id": "hanwell-conservative-club",
    "venue": "Hanwell Conservative Club",
    "town": "Hanwell, London",
@@ -749,9 +721,9 @@
    "lastWho": "Us",
    "lastDate": "1 Aug",
    "lastMsg": "No reply ever. First email 1 Aug.",
-   "days": "81",
+   "days": "82",
    "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 81 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 82 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 1 Aug (Us)",
    "venueId": "hanwell-conservative-club",
@@ -760,7 +732,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 26,
+   "rank": 25,
    "id": "stony-stratford-cons",
    "venue": "Stony Stratford Cons",
    "town": "Stony Stratford, Milton Keynes",
@@ -777,9 +749,9 @@
    "lastWho": "Us",
    "lastDate": "10 Sep",
    "lastMsg": "No reply ever. First email 1 Aug, chased 10 Sep.",
-   "days": "81",
+   "days": "82",
    "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 81 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 82 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 10 Sep (Us)",
    "venueId": "stony-stratford-cons",
@@ -788,7 +760,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 27,
+   "rank": 26,
    "id": "westbourne-cons",
    "venue": "Westbourne Cons",
    "town": "Westbourne, Bournemouth",
@@ -805,9 +777,9 @@
    "lastWho": "Us",
    "lastDate": "15 Sep",
    "lastMsg": "No reply ever. First email 1 Aug, chased 15 Sep.",
-   "days": "81",
+   "days": "82",
    "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 81 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card. FAR: Saturday or Sunday only.",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 82 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card. FAR: Saturday or Sunday only.",
    "flags": [
     {
      "type": "far",
@@ -821,7 +793,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 28,
+   "rank": 27,
    "id": "bengeo-social-club",
    "venue": "Bengeo Social Club",
    "town": "Bengeo, Hertford",
@@ -838,9 +810,9 @@
    "lastWho": "Us",
    "lastDate": "9 Sep",
    "lastMsg": "No reply ever. First email 26 Aug, chased 9 Sep.",
-   "days": "56",
+   "days": "57",
    "daysNote": "",
-   "why": "Social club, a proven room type for Jake. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Social club, a proven room type for Jake. Never answered our email in 57 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 9 Sep (Us)",
    "venueId": "bengeo-social-club",
@@ -849,7 +821,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 29,
+   "rank": 28,
    "id": "crowthorne-rbl",
    "venue": "Crowthorne RBL",
    "town": "Crowthorne, Berkshire",
@@ -866,9 +838,9 @@
    "lastWho": "Us",
    "lastDate": "10 Sep",
    "lastMsg": "No reply ever. First email 26 Aug, chased 10 Sep.",
-   "days": "56",
+   "days": "57",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 57 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 10 Sep (Us)",
    "venueId": "crowthorne-rbl",
@@ -877,7 +849,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 30,
+   "rank": 29,
    "id": "felsted-rbl",
    "venue": "Felsted RBL",
    "town": "Felsted, Essex",
@@ -894,9 +866,9 @@
    "lastWho": "Us",
    "lastDate": "27 Aug",
    "lastMsg": "No reply ever. First email 27 Aug.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 27 Aug (Us)",
    "venueId": "felsted-rbl",
@@ -905,7 +877,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 31,
+   "rank": 30,
    "id": "great-waltham-legion",
    "venue": "Great Waltham Legion",
    "town": "Great Waltham, Chelmsford",
@@ -922,9 +894,9 @@
    "lastWho": "Us",
    "lastDate": "27 Aug",
    "lastMsg": "No reply ever. First email 27 Aug.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 27 Aug (Us)",
    "venueId": "great-waltham-legion",
@@ -933,7 +905,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 32,
+   "rank": 31,
    "id": "harold-wood-rbl",
    "venue": "Harold Wood RBL",
    "town": "Harold Wood",
@@ -950,9 +922,9 @@
    "lastWho": "Us",
    "lastDate": "7 Sep",
    "lastMsg": "No reply ever. First email 27 Aug, chased 7 Sep.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 7 Sep (Us)",
    "venueId": "harold-wood-rbl",
@@ -961,7 +933,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 33,
+   "rank": 32,
    "id": "harrow-rbl",
    "venue": "Harrow RBL",
    "town": "Harrow",
@@ -978,9 +950,9 @@
    "lastWho": "Us",
    "lastDate": "27 Aug",
    "lastMsg": "No reply ever. First email 27 Aug. Their email auto forwards to rblharrow@gmail.com.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 27 Aug (Us)",
    "venueId": "harrow-rbl",
@@ -989,7 +961,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 34,
+   "rank": 33,
    "id": "hayes-rbl",
    "venue": "Hayes RBL",
    "town": "Hayes, Bromley",
@@ -1006,9 +978,9 @@
    "lastWho": "Us",
    "lastDate": "27 Aug",
    "lastMsg": "No reply ever. First email 27 Aug.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 27 Aug (Us)",
    "venueId": "hayes-rbl",
@@ -1017,7 +989,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 35,
+   "rank": 34,
    "id": "hockley-rbl",
    "venue": "Hockley RBL",
    "town": "Hockley, Essex",
@@ -1034,9 +1006,9 @@
    "lastWho": "Us",
    "lastDate": "27 Aug",
    "lastMsg": "No reply ever. First email 27 Aug.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 27 Aug (Us)",
    "venueId": "hockley-rbl",
@@ -1045,7 +1017,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 36,
+   "rank": 35,
    "id": "cippenham-rbl",
    "venue": "Cippenham RBL",
    "town": "Cippenham, Slough",
@@ -1062,9 +1034,9 @@
    "lastWho": "Us",
    "lastDate": "10 Sep",
    "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 10 Sep (Us)",
    "venueId": "cippenham-rbl",
@@ -1073,7 +1045,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 37,
+   "rank": 36,
    "id": "coggeshall-cons",
    "venue": "Coggeshall Cons",
    "town": "Coggeshall, Essex",
@@ -1090,9 +1062,9 @@
    "lastWho": "Us",
    "lastDate": "7 Sep",
    "lastMsg": "No reply ever. First email 27 Aug, chased 7 Sep.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 7 Sep (Us)",
    "venueId": "coggeshall-cons",
@@ -1101,7 +1073,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 38,
+   "rank": 37,
    "id": "ferndown-rbl",
    "venue": "Ferndown RBL",
    "town": "Ferndown, Dorset",
@@ -1118,9 +1090,9 @@
    "lastWho": "Us",
    "lastDate": "10 Sep",
    "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card. FAR: Saturday or Sunday only.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card. FAR: Saturday or Sunday only.",
    "flags": [
     {
      "type": "far",
@@ -1134,7 +1106,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 39,
+   "rank": 38,
    "id": "histon-and-impington-rbl",
    "venue": "Histon & Impington RBL",
    "town": "Histon, Cambridge",
@@ -1151,9 +1123,9 @@
    "lastWho": "Us",
    "lastDate": "10 Sep",
    "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Royal British Legion club, the kind of room where Jake goes down best. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 10 Sep (Us)",
    "venueId": "histon-and-impington-rbl",
@@ -1162,7 +1134,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 40,
+   "rank": 39,
    "id": "letchworth-cons",
    "venue": "Letchworth Cons",
    "town": "Letchworth",
@@ -1179,9 +1151,9 @@
    "lastWho": "Us",
    "lastDate": "10 Sep",
    "lastMsg": "No reply ever. First email 27 Aug, chased 10 Sep.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 10 Sep (Us)",
    "venueId": "letchworth-cons",
@@ -1190,7 +1162,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 41,
+   "rank": 40,
    "id": "shoebury-cons",
    "venue": "Shoebury Cons",
    "town": "Shoeburyness",
@@ -1207,9 +1179,9 @@
    "lastWho": "Us",
    "lastDate": "7 Sep",
    "lastMsg": "No reply ever. First email 27 Aug, chased 7 Sep.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Conservative club, our best converting type of room. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Conservative club, our best converting type of room. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 7 Sep (Us)",
    "venueId": "shoebury-cons",
@@ -1218,7 +1190,7 @@
    "lastContactWho": "Us"
   },
   {
-   "rank": 42,
+   "rank": 41,
    "id": "sidcup-wmc",
    "venue": "Sidcup WMC",
    "town": "Sidcup",
@@ -1235,9 +1207,9 @@
    "lastWho": "Us",
    "lastDate": "27 Aug",
    "lastMsg": "No reply ever. First email 27 Aug.",
-   "days": "55",
+   "days": "56",
    "daysNote": "",
-   "why": "Working men's club, a proven room type for Jake. Never answered our email in 55 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
+   "why": "Working men's club, a proven room type for Jake. Never answered our email in 56 days. Ask who books the Saturday entertainment, get a name and a direct number, and offer a date from the intro card.",
    "flags": [],
    "note": "Last contact: 27 Aug (Us)",
    "venueId": "sidcup-wmc",
@@ -1271,7 +1243,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 43
+   "rank": 42
   },
   {
    "id": "pot-kelvedon-labour-club-co5-9ae",
@@ -1299,7 +1271,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 44
+   "rank": 43
   },
   {
    "id": "pot-blackheath-liberal-club-rowley-regis",
@@ -1327,7 +1299,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 45
+   "rank": 44
   },
   {
    "id": "pot-dover-road-social-club-folkestone",
@@ -1355,7 +1327,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 46
+   "rank": 45
   },
   {
    "id": "pot-folkestone-railway-social-club-folkestone",
@@ -1383,7 +1355,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 47
+   "rank": 46
   },
   {
    "id": "pot-hythe-saltwood-rbl-club-hythe",
@@ -1411,7 +1383,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 48
+   "rank": 47
   },
   {
    "id": "pot-oddfellows-social-club-cheriton-folkestone",
@@ -1439,7 +1411,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 49
+   "rank": 48
   },
   {
    "id": "pot-broadstairs-st-peters-comrades-club-broadstairs",
@@ -1467,7 +1439,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 50
+   "rank": 49
   },
   {
    "id": "pot-egham-and-hythe-social-club-tw20-8ap",
@@ -1495,7 +1467,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 51
+   "rank": 50
   },
   {
    "id": "pot-hawkhurst-r-b-l-club-tn18-4ag",
@@ -1523,7 +1495,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 52
+   "rank": 51
   },
   {
    "id": "pot-greenstead-social-club-colchester",
@@ -1551,7 +1523,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 53
+   "rank": 52
   },
   {
    "id": "pot-wrotham-arms-broadstairs",
@@ -1579,7 +1551,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 54
+   "rank": 53
   },
   {
    "id": "pot-bexleyheath-w-m-club-ltd-da6-7hg",
@@ -1607,7 +1579,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 55
+   "rank": 54
   },
   {
    "id": "pot-vange-pitsea-working-men-s-club-ss16-4tg",
@@ -1635,7 +1607,7 @@
    "gmailThreadId": "",
    "lastContact": "",
    "lastContactWho": "",
-   "rank": 56
+   "rank": 55
   }
  ]
 }
