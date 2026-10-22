@@ -1,0 +1,52 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-red-lion-the-tw17-9hx",
+    "name": "The Red Lion",
+    "town": "Shepperton TW17 9HX",
+    "email": "info@redlionshepperton.com"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveE 22 Oct Us cold 1a1641068e1ccbf6 15:42 London thread 1a16410556121cf2 \u00b7 awaiting \u00b7 SURREY ~55m (standard card on reply) \u00b7 Gmail-verified \u00b7 folded JEM 15:46 22 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-22T14:42:39Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for The Red Lion?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Red Lion in Shepperton would be a great fit for Jake, and he'd love to come and perform for you on a Saturday night.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a1641068e1ccbf6",
+     "gmailThreadId": "1a16410556121cf2",
+     "msgId": "1a1641068e1ccbf6",
+     "threadId": "1a16410556121cf2"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-taphouse-the-rh3-7jj",
+    "name": "The Taphouse",
+    "town": "Brockham RH3 7JJ",
+    "email": "grafhamsophie@aol.com"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveE 22 Oct Us cold 1a164118c41d8c20 15:43 London thread 1a164117b8b8ea68 \u00b7 awaiting \u00b7 SURREY ~58m WEAK AOL (standard card on reply) \u00b7 Gmail-verified \u00b7 folded JEM 15:46 22 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-22T14:43:53Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for The Taphouse?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Taphouse in Brockham sounds like a lovely fit for Jake, and he'd really love to come and sing for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a164118c41d8c20",
+     "gmailThreadId": "1a164117b8b8ea68",
+     "msgId": "1a164118c41d8c20",
+     "threadId": "1a164117b8b8ea68"
+    }
+   ]
+  }
+ ]
+}

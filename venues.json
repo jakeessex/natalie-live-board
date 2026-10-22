@@ -41314,18 +41314,35 @@
     "name": "Taphouse, The",
     "town": "Brockham",
     "phone": "",
-    "email": "",
+    "email": "grafhamsophie@aol.com",
     "postcode": "RH3 7JJ",
     "website": "",
     "venueType": "Live Music Venue",
     "miles": 32,
-    "prospect": true,
-    "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T14:43:53Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Taphouse?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Taphouse in Brockham sounds like a lovely fit for Jake, and he'd really love to come and sing for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a164118c41d8c20",
+        "threadId": "1a164117b8b8ea68"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.23187,
-    "lng": -0.287
+    "lng": -0.287,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for The Taphouse?",
+    "statusNote": "cold waveE 22 Oct Us cold 1a164118c41d8c20 15:43 London thread 1a164117b8b8ea68 · awaiting · SURREY ~58m WEAK AOL (standard card on reply) · Gmail-verified · folded JEM 15:46 22 Oct · door file JEM 15:46 · folded Nat Board 1600 audit 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a164118c41d8c20"
   },
   {
     "id": "pot-lytton-arms-the-sg3-6qb",
@@ -42055,13 +42072,30 @@
     "website": "https://www.redlionshepperton.com",
     "venueType": "Pub & Food Bar",
     "miles": 33,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T14:42:39Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Red Lion?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Red Lion in Shepperton would be a great fit for Jake, and he'd love to come and perform for you on a Saturday night.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1641068e1ccbf6",
+        "threadId": "1a16410556121cf2"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.39019,
-    "lng": -0.44401
+    "lng": -0.44401,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for The Red Lion?",
+    "statusNote": "cold waveE 22 Oct Us cold 1a1641068e1ccbf6 15:42 London thread 1a16410556121cf2 · awaiting · SURREY ~55m (standard card on reply) · Gmail-verified · folded JEM 15:46 22 Oct · door file JEM 15:46 · folded Nat Board 1600 audit 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a1641068e1ccbf6"
   },
   {
     "id": "pot-rising-sun-the-tw19-7lb",
