@@ -1,0 +1,52 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-running-mare-the-kt11-3ez",
+    "name": "The Running Mare",
+    "town": "Cobham KT11 3EZ",
+    "email": "info@therunningmare.com"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveD 22 Oct Us cold 1a163c06e06a152a 14:15 London thread 1a163c06c62c9105 \u00b7 awaiting \u00b7 SURREY ~55m (standard card on reply) \u00b7 Gmail-verified \u00b7 folded JEM 14:22 22 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-22T13:15:17Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for The Running Mare?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Running Mare in Cobham would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a163c06e06a152a",
+     "gmailThreadId": "1a163c06c62c9105",
+     "msgId": "1a163c06e06a152a",
+     "threadId": "1a163c06c62c9105"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-mad-squirrel-hp4-2bl",
+    "name": "Mad Squirrel",
+    "town": "Berkhamsted HP4 2BL",
+    "email": "berkhamsted@madsquirrelbrew.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveD 22 Oct Us cold 1a163c513ffd8246 14:20 London thread 1a163c5129a11d89 \u00b7 awaiting \u00b7 HERTS ~1h (standard card on reply) \u00b7 Gmail-verified \u00b7 folded JEM 14:22 22 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-22T13:20:21Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for Mad Squirrel?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nMad Squirrel in Berkhamsted would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a163c513ffd8246",
+     "gmailThreadId": "1a163c5129a11d89",
+     "msgId": "1a163c513ffd8246",
+     "threadId": "1a163c5129a11d89"
+    }
+   ]
+  }
+ ]
+}

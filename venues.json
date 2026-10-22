@@ -41725,13 +41725,30 @@
     "website": "https://therunningmare.com",
     "venueType": "Pub / Restaurant",
     "miles": 33,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T13:15:17Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Running Mare?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Running Mare in Cobham would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a163c06e06a152a",
+        "threadId": "1a163c06c62c9105"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.32431,
-    "lng": -0.40126
+    "lng": -0.40126,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for The Running Mare?",
+    "statusNote": "cold waveD 22 Oct Us cold 1a163c06e06a152a 14:15 London thread 1a163c06c62c9105 · awaiting · SURREY ~55m (standard card on reply) · Gmail-verified · folded JEM 14:22 22 Oct · door file JEM 14:22 · folded Nat Board lag watch 14:4x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a163c06e06a152a"
   },
   {
     "id": "pot-harefield-social-club-ub9-6bx",
@@ -42553,13 +42570,31 @@
     "website": "https://pourmerickmansworth.com",
     "venueType": "Bar",
     "miles": 34,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "bounce",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T13:13:56Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Pour Me?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nPour Me in Rickmansworth would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a163bf31b6d0052",
+        "threadId": "1a163bf16d05550c"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.63614,
-    "lng": -0.48437
+    "lng": -0.48437,
+    "bounced": true,
+    "replied": "no",
+    "hasThread": true,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for Pour Me?",
+    "statusNote": "BOUNCE NEVER_RETRY · DSN mailer-daemon 1a163bf671b2fc1e 14:14 BST: Address not found 550 5.2.1 (info@pourmeltd.co.uk) · Us cold waveD 1a163bf31b6d0052 14:13 London Thu 22 Oct thread 1a163bf16d05550c · Gmail-verified · no door file · folded Nat Board lag watch 14:4x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a163bf31b6d0052"
   },
   {
     "id": "pot-rickmansworth-conservative-club-wd3-1dt",
@@ -45826,13 +45861,30 @@
     "website": "https://www.madsquirrelberkhamsted.co.uk/",
     "venueType": "Bar",
     "miles": 40,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T13:20:21Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Mad Squirrel?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nMad Squirrel in Berkhamsted would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a163c513ffd8246",
+        "threadId": "1a163c5129a11d89"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.75917,
-    "lng": -0.56019
+    "lng": -0.56019,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for Mad Squirrel?",
+    "statusNote": "cold waveD 22 Oct Us cold 1a163c513ffd8246 14:20 London thread 1a163c5129a11d89 · awaiting · HERTS ~1h (standard card on reply) · Gmail-verified · folded JEM 14:22 22 Oct · door file JEM 14:22 · folded Nat Board lag watch 14:4x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a163c513ffd8246"
   },
   {
     "id": "pot-star-the-rh12-4dt",
