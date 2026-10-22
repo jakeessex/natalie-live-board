@@ -34354,18 +34354,35 @@
     "name": "Duke of Edinburgh",
     "town": "Barming Heath",
     "phone": "",
-    "email": "",
+    "email": "info@dukeofedinburghbarming.co.uk",
     "postcode": "ME16 9LQ",
     "website": "",
     "venueType": "Pub",
     "miles": 19,
-    "prospect": true,
-    "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T09:57:25Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Duke of Edinburgh?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Duke of Edinburgh in Barming would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1630b44b029812",
+        "threadId": "1a1630b3152c268f"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.26757,
-    "lng": 0.48214
+    "lng": 0.48214,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for The Duke of Edinburgh?",
+    "statusNote": "cold waveB 22 Oct Us cold 1a1630b44b029812 10:57 London thread 1a1630b3152c268f · awaiting · LOCAL Kent ~41m (standard card on reply) · Gmail-verified · folded JEM 11:07 22 Oct · door file JEM 11:07 · folded Nat Board 11:1x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a1630b44b029812"
   },
   {
     "id": "pot-guildford-the-ss2-5pb",
@@ -35524,13 +35541,30 @@
     "website": "https://www.georgeiv.co.uk",
     "venueType": "Pub / Restaurant",
     "miles": 23,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T10:01:10Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for George IV?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nGeorge IV in Chiswick would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1630eb55029ce5",
+        "threadId": "1a1630ea0046ae84"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.49229,
-    "lng": -0.25718
+    "lng": -0.25718,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for George IV?",
+    "statusNote": "cold waveB 22 Oct Us cold 1a1630eb55029ce5 11:01 London thread 1a1630ea0046ae84 · awaiting · LOCAL London ~55m (standard card on reply) · Gmail-verified · folded JEM 11:07 22 Oct · door file JEM 11:07 · folded Nat Board 11:1x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a1630eb55029ce5"
   },
   {
     "id": "pot-admiral-drake-the-po2-8dh",
@@ -40228,13 +40262,30 @@
     "website": "https://www.greenmansandridge.co.uk",
     "venueType": "Pub",
     "miles": 31,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T10:06:02Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Green Man?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Green Man in Sandridge would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1631328ef22a80",
+        "threadId": "1a1631312949c750"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.78047,
-    "lng": -0.3062
+    "lng": -0.3062,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for The Green Man?",
+    "statusNote": "cold waveB 22 Oct Us cold 1a1631328ef22a80 11:06 London thread 1a1631312949c750 · awaiting · HERTS ~50m (standard card on reply) · Gmail-verified · folded JEM 11:07 22 Oct · door file JEM 11:07 · folded Nat Board 11:1x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a1631328ef22a80"
   },
   {
     "id": "pot-lower-red-lion-al3-4rx",
