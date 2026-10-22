@@ -1,0 +1,124 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "cold-20261012-the-jovial-sailor-ripley-gu23-6ez",
+    "name": "The Jovial Sailor",
+    "town": "Ripley GU23 6EZ",
+    "email": "manager.jovialsailor@baronspubs.com"
+   },
+   "status": "awaiting",
+   "statusNote": "FU1 Thu 22 Oct Us 1a16396a045c2d23 13:29 London thread 1a12fa0d36a26bab · awaiting · FU-20 FU11 Bookings 22 Oct pack · Gmail-verified · folded JEM 13:44 22 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-22T12:29:37Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Live music at The Jovial Sailor",
+     "body": "Hi,\n\nJust checking my earlier email about Jake Essex reached you.\n\nHe's from Essex, has his own PA and needs no deposit. Prices are from £300 for two one hour sets, or £250 a night when you book four. Saturday nights are open in 2027, so if you'd like a date, just reply and I'll hold it for you.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a16396a045c2d23",
+     "gmailThreadId": "1a12fa0d36a26bab",
+     "msgId": "1a16396a045c2d23",
+     "threadId": "1a12fa0d36a26bab"
+    }
+   ]
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "id": "cold-20261012-the-plough-harrow-harpenden-al5-1pr",
+    "name": "The Plough & Harrow",
+    "town": "Harpenden AL5 1PR",
+    "email": "info@ploughandharrow.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "FU1 Thu 22 Oct Us 1a163999118978ad 13:32 London thread 1a12fa68461398ec · awaiting · FU-20 FU12 Bookings 22 Oct pack · Gmail-verified · folded JEM 13:44 22 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-22T12:32:50Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Plough & Harrow?",
+     "body": "Hi,\n\nFollowing up on my note about Jake Essex in case it got buried.\n\nOwn PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. He has Saturday nights free in 2027. Happy to send dates over, just reply here.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a163999118978ad",
+     "gmailThreadId": "1a12fa68461398ec",
+     "msgId": "1a163999118978ad",
+     "threadId": "1a12fa68461398ec"
+    }
+   ]
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "id": "cold-20261012-the-mitre-richmond-tw9",
+    "name": "The Mitre",
+    "town": "Richmond TW9",
+    "email": "hello@themitretw9.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "FU1 Thu 22 Oct Us 1a1639cc019831af 13:36 London thread 1a12fa91fedd9a48 · awaiting · FU-20 FU13 Bookings 22 Oct pack · Gmail-verified · folded JEM 13:44 22 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-22T12:36:19Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Live music at The Mitre",
+     "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a1639cc019831af",
+     "gmailThreadId": "1a12fa91fedd9a48",
+     "msgId": "1a1639cc019831af",
+     "threadId": "1a12fa91fedd9a48"
+    }
+   ]
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "id": "pot-barley-mow-the-tw20-0nx",
+    "name": "The Barley Mow",
+    "town": "Englefield Green TW20 0NX",
+    "email": "englefieldgreen@heartwoodinns.com"
+   },
+   "status": "awaiting",
+   "statusNote": "FU1 Thu 22 Oct Us 1a1639fc6083a2b9 13:39 London thread 1a12fb14fac71114 · awaiting · FU-20 FU14 Bookings 22 Oct pack · Gmail-verified · folded JEM 13:44 22 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-22T12:39:37Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Barley Mow?",
+     "body": "Hi,\n\nJust a quick follow up on my note about Jake Essex.\n\nHe brings his own PA, there's no deposit, and it's from £300 for two one hour sets, or £250 a night when you book four. He's taking Saturday nights in 2027. If one suits, just reply here and I'll pencil it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a1639fc6083a2b9",
+     "gmailThreadId": "1a12fb14fac71114",
+     "msgId": "1a1639fc6083a2b9",
+     "threadId": "1a12fb14fac71114"
+    }
+   ]
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "id": "cold-20261012-the-red-lion-old-hatfield-al9",
+    "name": "The Red Lion",
+    "town": "Old Hatfield AL9",
+    "email": "redlion.hatfield@mcmullens.co.uk"
+   },
+   "status": "awaiting",
+   "statusNote": "FU1 Thu 22 Oct Us 1a163a28438fabf6 13:42 London thread 1a12ff7eed3d5d18 · awaiting · FU-20 FU15 Bookings 22 Oct pack · Gmail-verified · folded JEM 13:44 22 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-22T12:42:37Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Red Lion, Old Hatfield?",
+     "body": "Hi,\n\nJust checking my earlier email about Jake Essex reached you.\n\nHe's from Essex, has his own PA and needs no deposit. Prices are from £300 for two one hour sets, or £250 a night when you book four. Saturday nights are open in 2027, so if you'd like a date, just reply and I'll hold it for you.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a163a28438fabf6",
+     "gmailThreadId": "1a12ff7eed3d5d18",
+     "msgId": "1a163a28438fabf6",
+     "threadId": "1a12ff7eed3d5d18"
+    }
+   ]
+  }
+ ]
+}
