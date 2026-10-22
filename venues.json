@@ -21254,7 +21254,7 @@
     "id": "shepherd-and-dog",
     "name": "Shepherd & Dog",
     "town": "Crays Hill",
-    "badge": "quoted",
+    "badge": "replied-soft / call Natalie",
     "phone": "+441268521967",
     "needPhone": false,
     "email": "shepherdanddogcrayshill@gmail.com",
@@ -21312,11 +21312,9 @@
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Them 10:14 BST Wed 21 Oct 1a15dbead9710fe5 \"Thank you, I will let you know.\" (reply to 09:45 chase; no date picked, nothing held) · Gmail-verified · folded Nat Board lag watch 10:5x · prior: quoted · Us 09:45 BST Wed 21 Oct 1a15da3837c8b569 thread 1a0a54d159ee000e · Chased 21 Oct 09:46 (£250/£375; weekends OFFERED not held). Awaiting Rebecca. · Gmail-verified · folded Nat Board 09:5x 21 Oct · prior: quoted · waiting on Rebecca · Us post-call quote 1a0fe2bb0c0d9864 ~20:51 BST Fri 2 Oct: 2x45 £250, 3x45 £375, 4x40 £485, cash, no deposit; offered Sun 11/18/25 Oct, Sat 7 Nov, Sun 15/22 Nov, Sun 6/20/27 Dec · off Call until Fri 9 Oct · Gmail-verified · prev: replied-interested · Them 1a0a5b5273eecc40 Tue 15 ~16:34 London · \"Thank you, I will let you know\" · Natalie 2pm Tue 15 SENT_OK 1a0a54dbdedf623c",
+    "statusNote": "replied-soft / call Natalie · 2nd \"I will let you know\" 21 Oct 10:14 BST (1a15dbead9710fe5) · on Natalie's CALL list · quote held 2x45 £250 / 3x45 £375 · no more email (Haggle P18) · door file 05:10 22 Oct · folded Nat Board 10:1x 22 Oct · prior: quoted · Them 10:14 BST Wed 21 Oct 1a15dbead9710fe5 \"Thank you, I will let you know.\" (reply to 09:45 chase; no date picked, nothing held) · Gmail-verified · folded Nat Board lag watch 10:5x · prior: quoted · Us 09:45 BST Wed 21 Oct 1a15da3837c8b569 thread 1a0a54d159ee000e · Chased 21 Oct 09:46 (£250/£375; weekends OFFERED not held). Awaiting Rebecca. · Gmail-verified · folded Nat Board 09:5x 21 Oct · prior: quoted · waiting on Rebecca · Us post-call quote 1a0fe2bb0c0d9864 ~20:51 BST Fri 2 Oct: 2x45 £250, 3x45 £375, 4x40 £485, cash, no deposit; offered Sun 11/18/25 Oct, Sat 7 Nov, Sun 15/22 Nov, Sun 6/20/27 Dec · off Call until Fri 9 Oct · Gmail-verified · prev: replied-interested · Them 1a0a5b5273eecc40 Tue 15 ~16:34 London · \"Thank you, I will let you know\" · Natalie 2pm Tue 15 SENT_OK 1a0a54dbdedf623c",
     "lastContact": "2026-10-21",
-    "lastContactSrc": "them 1a15dbead9710fe5",
-    "callExclude": "waiting-on-them",
-    "callHoldUntil": "2026-10-09"
+    "lastContactSrc": "them 1a15dbead9710fe5"
   },
   {
     "id": "fox-and-hounds",
@@ -21491,7 +21489,7 @@
     "replied": "yes",
     "firstPitch": "15 Sep 2026",
     "addedAt": "2026-09-15T18:02:16Z",
-    "followUps": "1 · last 15 Oct 2026",
+    "followUps": "2 · last 22 Oct 2026",
     "subject": "Jake Essex for Dartford Conservative Club?",
     "messages": [
       {
@@ -21541,13 +21539,23 @@
         "body": "Hi Richard,\n\nSo you have everything in one place, here are Jake's prices and free Saturdays for the new club.\n\nPrices (cash on the night, own PA, no deposit):\nTwo 1 hour sets: £300 for a single night, or £250 a night if you book four dates.\nThree sets: £350 for a single night, or £300 a night if you book four dates.\n\nFree Saturdays:\n2026: 7 November\n2027: 2 and 9 January, 6 and 27 March, 22 May, 5 June, 24 and 31 July, 11 September, 16 October, 6 and 20 November, 11 and 18 December\n\nThey're going quickly with block bookings, so just let me know which dates you'd like and the club name and address, and I'll lock them in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a13fa5d88f19c2c",
         "threadId": "1a0a62ab9ff329cb"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T08:41:13Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Re: Jake Essex for Dartford Conservative Club?",
+        "body": "Hi Richard,\n\nJust checking in on Jake for your new club in Ashford. Dates are going quickly at the moment with clubs block booking him, and a few of the Saturdays I sent have gone since. These are still free:\nSaturday 2 January 2027\nSaturday 16 October 2027\nSaturday 6 November 2027\nSaturday 20 November 2027\n\nJake is £300 for two one hour sets, or £250 a night if you book four dates, so it's worth picking a few. Three sets are £350, or £300 a night for four. He brings his own PA and there's no deposit.\n\nHe also does a great Christmas show, so if you're planning a festive night just say and I'll check the diary for you.\n\nJust reply with the club name and the date that suits and I'll pencil it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a162c57c19f2373",
+        "threadId": "1a0a62ab9ff329cb"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "CLUB CLOSED (Dartford Conservative Club, 46 Spital St DA1) · Richard John now Steward of a NEW club in Ashford, name awaited · Us Natalie 13:59 BST 1a13fa5d88f19c2c: prices + free Saturdays sent for the new club, asked club name + address · warm, not a lock · no Ashford row until name known · no chase until he replies · Gmail-verified · folded 1542 15 Oct",
-    "lastContact": "2026-10-15",
-    "lastContactSrc": "us 1a13f8eac5101387",
+    "statusNote": "replied-interested · Us 09:41 BST 22 Oct 1a162c57c19f2373 · Day-7 chase 22 Oct 09:41 BST to Richard (Ashford new club): Sat 2 Jan, 16 Oct, 6 Nov, 20 Nov 2027, £300 / £250x4 (3 sets £350 / £300x4). · Gmail-verified · folded Nat Board 10:1x 22 Oct · prior: CLUB CLOSED (Dartford Conservative Club, 46 Spital St DA1) · Richard John now Steward of a NEW club in Ashford, name awaited · Us Natalie 13:59 BST 1a13fa5d88f19c2c: prices + free Saturdays sent for the new club, asked club name + address · warm, not a lock · no Ashford row until name known · no chase until he replies · Gmail-verified · folded 1542 15 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a162c57c19f2373",
     "prospect": false
   },
   {
@@ -22482,7 +22490,7 @@
     "replied": "no",
     "firstPitch": "16 Sep 2026",
     "addedAt": "2026-09-16T12:15:37.718Z",
-    "followUps": "0 · last —",
+    "followUps": "1 · last 22 Oct 2026",
     "subject": "Re: Jake Essex for Sutton Social Club?",
     "messages": [
       {
@@ -22527,13 +22535,23 @@
         "body": "Hi Julie,\n\nI know money is a bit tight for clubs at the moment, so I've had a word with Jake and we can take the risk out of it for Sutton Social Club.\n\nBook four Saturdays and every night is £250 cash for two one hour sets, and that includes the very first one. Only the first date is confirmed. The other three sit in the diary as provisional, with no obligation to confirm them until Jake has played for you at least once. If the members love him, you keep all four at £250 a night. If not, you simply let them go.\n\nOwn PA, music on in the breaks, no deposit, cash on the night.\n\nA nice spread across the year would be:\n\nSaturday 7 November 2026, confirmed\nSaturday 27 March 2027, provisional\nSaturday 5 June 2027, provisional\nSaturday 11 December 2027, provisional\n\nHe does a great Christmas show, so the December night would be a real treat for the members.\n\nDates are going quickly because clubs are block booking him, so these are the Saturdays he has left:\n\nSaturday 7 November 2026\nSaturday 2 January 2027\nSaturday 27 March 2027\nSaturday 10 April 2027\nSaturday 5 June 2027\nSaturday 11 September 2027\nSaturday 16 October 2027\nSaturday 6 November 2027\nSaturday 20 November 2027\nSaturday 11 December 2027\n\nJust reply with the date that suits and I'll get the first one in the diary.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
         "msgId": "1a1591270ecc8906",
         "threadId": "1a0aaa885e20877d"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T08:41:00Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Sutton Social Club?",
+        "body": "Hi Julie,\n\nJust a quick one to check you got my last email about Jake for Sutton Social Club.\n\nI'm keeping Saturday 7 November 2026 in the diary for you as the first night, at £250 cash a night for two one hour sets when you book four. The other three, Saturday 27 March 2027, Saturday 5 June 2027 and Saturday 11 December 2027, stay provisional with no obligation until Jake has played for you once.\n\nDates are going quickly with clubs block booking him, so I'd love to keep these for you. He also does a great Christmas show, so the December night would be a real treat for the members.\n\nJust reply to confirm Saturday 7 November 2026 and it's yours.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a162c54a7be6be0",
+        "threadId": "1a0aaa885e20877d"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "quoted · Us v3 risk-free re-quote to Julie jwren7412@gmail.com 12:29 BST 20 Oct 1a1591270ecc8906: £250 cash ×4 Sats, 2×1hr, first confirmed Sat 7 Nov 2026 + provisional 27 Mar, 5 Jun, 11 Dec 2027, no obligation after first gig · awaiting Julie · Haggle day-7 ~27 Oct · Gmail-verified · folded Nat Board 12:4x 20 Oct",
-    "lastContact": "2026-10-20",
-    "lastContactSrc": "us 1a1591270ecc8906"
+    "statusNote": "quoted · Us 09:41 BST 22 Oct 1a162c54a7be6be0 · v3 nudge 22 Oct 09:41 BST: 7 Nov 2026 £250 first night + 27 Mar/5 Jun/11 Dec 2027 provisional. Body sent in a grey quote block; Jake decides any resend. · Gmail-verified · folded Nat Board 10:1x 22 Oct · prior: quoted · Us v3 risk-free re-quote to Julie jwren7412@gmail.com 12:29 BST 20 Oct 1a1591270ecc8906: £250 cash ×4 Sats, 2×1hr, first confirmed Sat 7 Nov 2026 + provisional 27 Mar, 5 Jun, 11 Dec 2027, no obligation after first gig · awaiting Julie · Haggle day-7 ~27 Oct · Gmail-verified · folded Nat Board 12:4x 20 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a162c54a7be6be0"
   },
   {
     "id": "wraysbury-village-club",
@@ -33239,18 +33257,35 @@
     "name": "Swan, The",
     "town": "West Wickham",
     "phone": "020 8777 2083",
-    "email": "",
+    "email": "theswan.westwickham@stonegategroup.co.uk",
     "postcode": "BR4 0NJ",
     "website": "",
     "venueType": "Pub / Restaurant",
     "miles": 17,
-    "prospect": true,
-    "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T08:58:06Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Swan?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Swan in West Wickham would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a162d4f34f2cc2a",
+        "threadId": "1a162d4e2f4608c9"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.37614,
-    "lng": -0.01619
+    "lng": -0.01619,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for The Swan?",
+    "statusNote": "cold waveA 22 Oct Us cold 1a162d4f34f2cc2a 09:58 London thread 1a162d4e2f4608c9 · awaiting · LOCAL London ~40m (standard card on reply) · Gmail-verified · door file JEM 10:07 · folded Nat Board 10:1x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a162d4f34f2cc2a"
   },
   {
     "id": "pot-edmonton-working-men-s-conservative-club-n9-7ey",
@@ -33310,18 +33345,35 @@
     "name": "Oddfellows Arms",
     "town": "Chelmsford",
     "phone": "01245 77721",
-    "email": "",
+    "email": "theoddfellows24@gmail.com",
     "postcode": "CM2 6JP",
     "website": "",
     "venueType": "Pub",
     "miles": 17,
-    "prospect": true,
-    "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T08:49:55Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Oddfellows Arms?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Oddfellows Arms in Chelmsford would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a162cd74f3dc818",
+        "threadId": "1a162cd65c4203b1"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.736,
-    "lng": 0.48212
+    "lng": 0.48212,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for The Oddfellows Arms?",
+    "statusNote": "cold waveA 22 Oct Us cold 1a162cd74f3dc818 09:49 London thread 1a162cd65c4203b1 · awaiting · LOCAL Essex ~32m (standard card on reply) · Gmail-verified · door file JEM 10:07 · folded Nat Board 10:1x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a162cd74f3dc818"
   },
   {
     "id": "pot-queens-arms-the-en9-1dp",
@@ -33735,18 +33787,35 @@
     "name": "Trading Room, The",
     "town": "Westcliff-on-Sea",
     "phone": "01702 350444",
-    "email": "reservations@eastangliapubs.com",
+    "email": "thetradingrooms@eastangliapubs.com",
     "postcode": "SS0 9HS",
     "website": "https://the-trading-room.eastangliapubs.com/",
     "venueType": "Pub",
     "miles": 18,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T08:54:25Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Trading Room?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nYour bar in Westcliff-on-Sea would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a162d1959acf002",
+        "threadId": "1a162d115c0c7f3c"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.54492,
-    "lng": 0.68688
+    "lng": 0.68688,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for The Trading Room?",
+    "statusNote": "cold waveA 22 Oct Us cold 1a162d1959acf002 09:54 London thread 1a162d115c0c7f3c · awaiting · LOCAL Essex ~35m (standard card on reply) · Gmail-verified · door file JEM 10:07 · folded Nat Board 10:1x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a162d1959acf002"
   },
   {
     "id": "pot-wheatsheaf-the-en1-3jt",
@@ -34849,18 +34918,35 @@
     "name": "Gate, The",
     "town": "Sawbridgeworth",
     "phone": "01279 493018",
-    "email": "",
+    "email": "hello@thegatesbw.com",
     "postcode": "CM21 9JJ",
     "website": "",
     "venueType": "Pub",
     "miles": 21,
-    "prospect": true,
-    "prospectStatus": "NEED_PUBLIC",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T09:05:08Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for The Gate?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe Gate in Sawbridgeworth would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a162db63b4c03ca",
+        "threadId": "1a162db5154f21dd"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.81489,
-    "lng": 0.14797
+    "lng": 0.14797,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for The Gate?",
+    "statusNote": "cold waveA 22 Oct Us cold 1a162db63b4c03ca 10:05 London thread 1a162db5154f21dd · awaiting · HERTS ~38m (standard card on reply) · Gmail-verified · door file JEM 10:07 · folded Nat Board 10:1x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a162db63b4c03ca"
   },
   {
     "id": "pot-goose-the-sw6-1nl",
@@ -39381,13 +39467,30 @@
     "website": "https://marneys.co.uk",
     "venueType": "Pub",
     "miles": 30,
-    "prospect": true,
-    "prospectStatus": "NEW_EMAIL",
-    "badge": "prospect",
-    "messages": [],
+    "prospect": false,
+    "badge": "awaiting",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-22T09:00:57Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Jake Essex for Marney's Village Inn?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nMarney's Village Inn in Esher would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a162d78f79110a5",
+        "threadId": "1a162d7766ff9dc6"
+      }
+    ],
     "addedAt": "2026-09-23",
     "lat": 51.38376,
-    "lng": -0.34808
+    "lng": -0.34808,
+    "replied": "no",
+    "hasThread": false,
+    "firstPitch": "22 Oct 2026",
+    "subject": "Jake Essex for Marney's Village Inn?",
+    "statusNote": "cold waveA 22 Oct Us cold 1a162d78f79110a5 10:00 London thread 1a162d7766ff9dc6 · awaiting · SURREY ~55m (standard card on reply) · Gmail-verified · door file JEM 10:07 · folded Nat Board 10:1x 22 Oct",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "us 1a162d78f79110a5"
   },
   {
     "id": "pot-molesey-football-club-kt8-2jg",

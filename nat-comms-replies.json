@@ -26,10 +26,10 @@
       "updatedAt": "2026-10-19T16:25:00Z"
     },
     "sutton-social-club|2026-10-19T12:36:36.788Z": {
-      "action": "Jake ruled at 20:52 on 19 Oct: £250 a night for all four dates, two one-hour sets. Us v3 re-quote SENT to Julie 12:29 BST 20 Oct (1a1591270ecc8906): Sat 7 Nov 2026 confirmed, provisional Sat 27 Mar, 5 Jun, 11 Dec 2027, no obligation until after the first gig. Awaiting Julie; Haggle day-7 ~27 Oct.",
+      "action": "Jake ruled at 20:52 on 19 Oct: £250 a night for all four dates, two one-hour sets. Us v3 re-quote SENT to Julie 12:29 BST 20 Oct (1a1591270ecc8906): Sat 7 Nov 2026 confirmed, provisional Sat 27 Mar, 5 Jun, 11 Dec 2027, no obligation until after the first gig. Awaiting Julie; Haggle day-7 ~27 Oct. Nudge SENT to Julie 09:41 BST 22 Oct (1a162c54a7be6be0) holding Sat 7 Nov 2026 at £250. Still awaiting Julie.",
       "owner": "Haggle",
       "status": "awaiting",
-      "updatedAt": "2026-10-20T11:45:00Z",
+      "updatedAt": "2026-10-22T09:15:00Z",
       "link": "https://mail.google.com/mail/u/0/#all/1a0aaa885e20877d"
     },
     "st-neots-cons|2026-10-19T12:11:42.454Z": {
@@ -88,10 +88,11 @@
       "updatedAt": "2026-10-21T08:50:00Z"
     },
     "shepherd-and-dog|2026-10-02T15:04:50.346Z": {
-      "action": "Chased Rebecca by email 21 Oct 09:46 (£250 / £375, weekends offered, not held). She replied 10:14: \"Thank you, I will let you know.\" Waiting on her date.",
-      "owner": "Bookings",
-      "status": "waiting",
-      "updatedAt": "2026-10-21T09:55:00Z"
+      "action": "Rebecca replied a second \"I will let you know\" on 21 Oct 10:14 with no date. No more email: on Natalie's call list to phone her. Quote held: 2x45 £250 / 3x45 £375.",
+      "owner": "Nat",
+      "status": "to call",
+      "updatedAt": "2026-10-22T09:15:00Z",
+      "link": "https://mail.google.com/mail/u/0/#all/1a0a54d159ee000e"
     },
     "whitstable-social-club|2026-10-02T15:19:10.512Z": {
       "action": "Nat to send the WhatsApp to Tracey Brown (+447517499148) herself; not yet sent. It is on the Whitstable call card.",
@@ -412,5 +413,5 @@
       "cleaned": "Test note (\"hey there\"); not a call."
     }
   },
-  "notesUpdatedAt": "2026-10-21T13:34:24Z"
+  "notesUpdatedAt": "2026-10-22T09:15:00Z"
 }
