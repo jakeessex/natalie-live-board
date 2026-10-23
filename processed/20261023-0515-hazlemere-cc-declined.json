@@ -1,0 +1,32 @@
+{
+ "events": [
+  {
+   "event": "reply_thread",
+   "type": "reply_thread",
+   "venue": {
+    "id": "cold-20261008-hazlemere-community-centre-hazlemere-hp15",
+    "name": "Hazlemere Community Centre",
+    "town": "Hazlemere HP15",
+    "email": "office@hcacommunity.org.uk"
+   },
+   "status": "declined",
+   "replied": "yes — J Pritchard (Centre Manager) decline 22 Oct 18:48 BST",
+   "statusNote": "Cold 8 Oct Us 1a11afb2f5060cbe · FU1 21 Oct Us 1a15e80805f744a4 · Them 1a164ba35845c5a9 22 Oct 18:48 BST 'No thank you'. Hard decline, never chase or re-cold. Folded Bookings overnight 23 Oct 05:15.",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-22T17:48:02Z",
+     "from": "office@hcacommunity.org.uk",
+     "subject": "Re: Jake Essex for Hazlemere Community Centre?",
+     "body": "No thank you\n\nCentre Manager\nHazlemere Community Centre\nRose Avenue\nHazlemere\nHigh Wycombe\nBucks\nHP15 7UB\nTel: 01494 815180\nwww.hcacommunity.org.uk",
+     "msgId": "1a164ba35845c5a9",
+     "threadId": "1a11afb2c37cf443",
+     "gmailMsgId": "1a164ba35845c5a9",
+     "gmailThreadId": "1a11afb2c37cf443"
+    }
+   ]
+  }
+ ],
+ "source": "bookings-overnight",
+ "ts": "2026-10-23T04:15:00Z"
+}

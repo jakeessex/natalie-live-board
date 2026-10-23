@@ -69494,9 +69494,9 @@
     "town": "Hazlemere HP15",
     "postcode": "",
     "website": "",
-    "contactName": "",
-    "phone": null,
-    "needPhone": true,
+    "contactName": "J Pritchard",
+    "phone": "01494 815180",
+    "needPhone": false,
     "email": "office@hcacommunity.org.uk",
     "addedAt": "2026-10-08T10:07:11Z",
     "followUps": "FU1 21 Oct 2026",
@@ -69520,16 +69520,26 @@
         "body": "Hi,\n\nJust checking my earlier email about Jake Essex reached you.\n\nHe's from Essex, has his own PA and needs no deposit. Prices are from £300 for two one hour sets, or £250 a night when you book four. Saturday nights are open this year and through 2027, so if you'd like a date, just reply and I'll hold it for you.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a15e80805f744a4",
         "threadId": "1a11afb2c37cf443"
+      },
+      {
+        "side": "them",
+        "label": "Reply",
+        "at": "2026-10-22T17:48:02Z",
+        "from": "office@hcacommunity.org.uk",
+        "subject": "Re: Jake Essex for Hazlemere Community Centre?",
+        "body": "No thank you\n\nCentre Manager\nHazlemere Community Centre\nRose Avenue\nHazlemere\nHigh Wycombe\nBucks\nHP15 7UB\nTel: 01494 815180\nwww.hcacommunity.org.uk",
+        "msgId": "1a164ba35845c5a9",
+        "threadId": "1a11afb2c37cf443"
       }
     ],
     "hasThread": true,
-    "replied": "no",
+    "replied": "yes — 22 Oct 18:48 BST J Pritchard (Centre Manager): \"No thank you\"",
     "firstPitch": "8 Oct 2026",
     "subject": "Jake Essex for Hazlemere Community Centre?",
-    "badge": "awaiting",
-    "lastContact": "2026-10-21",
-    "lastContactSrc": "us 1a15e80805f744a4",
-    "statusNote": "awaiting · FU1 Us Wed 21 Oct 13:47 BST 1a15e80805f744a4 thread 1a11afb2c37cf443 · Gmail-verified · folded Nat Board lag watch 14:5x (door file JEM 13:49) · prior: thu-8-oct cold WAVE B SENT_OK 1a11afb2f5060cbe ~11:07 London thread 1a11afb2c37cf443 · awaiting · Gmail-verified · folded 1500 8 Oct"
+    "badge": "declined",
+    "lastContact": "2026-10-22",
+    "lastContactSrc": "them 1a164ba35845c5a9",
+    "statusNote": "CLOSED / declined · Them J Pritchard Thu 22 Oct 18:48 BST 1a164ba35845c5a9 \"No thank you\" · hard decline, never chase or re-cold · Gmail-verified · door file Bookings overnight 05:15 · folded Nat Board 0900 audit 23 Oct · prior: awaiting · FU1 Us Wed 21 Oct 13:47 BST 1a15e80805f744a4 thread 1a11afb2c37cf443 · Gmail-verified · folded Nat Board lag watch 14:5x (door file JEM 13:49) · prior: thu-8-oct cold WAVE B SENT_OK 1a11afb2f5060cbe ~11:07 London thread 1a11afb2c37cf443 · awaiting · Gmail-verified · folded 1500 8 Oct"
   },
   {
     "id": "cold-20261008-royal-british-legion-club-hemel-hempstead-hemel-hempstead-hp2",
