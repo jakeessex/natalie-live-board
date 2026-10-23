@@ -1,0 +1,91 @@
+{
+ "events": [
+  {
+   "event": "reply_thread",
+   "type": "reply_thread",
+   "venue": {
+    "id": "cold-20261012-peckham-arches-peckham-se15-4qn",
+    "name": "Peckham Arches",
+    "town": "Peckham SE15 4QN",
+    "email": "reservations@peckhamarches.com"
+   },
+   "status": "declined",
+   "statusNote": "Jess 23 Oct 14:48 BST: all live music acts booked for the next few months, no availability for Jake. Do not chase.",
+   "badge": "declined / booked next few months",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-23T13:48:09Z",
+     "from": "reservations@peckhamarches.com",
+     "subject": "Re: Jake Essex for Peckham Arches?",
+     "body": "Hi Natalie, Thanks for following up on this. We have all of our live music acts booked for the next few months, so we won't have availability for Jake at this time. All the best, Jess",
+     "msgId": "1a169050ef778c3a",
+     "threadId": "1a12f54ce0f03fcb",
+     "gmailMsgId": "1a169050ef778c3a",
+     "gmailThreadId": "1a12f54ce0f03fcb"
+    }
+   ]
+  },
+  {
+   "event": "reply_thread",
+   "type": "reply_thread",
+   "venue": {
+    "id": "sutton-social-club",
+    "name": "Sutton Social Club",
+    "town": "Sutton",
+    "email": "jwren7412@gmail.com"
+   },
+   "status": "replied-soft",
+   "statusNote": "Julie 23 Oct: 2026 full, wants 2027; then over budget, leave for now (misread £250x4). Us 15:52 clarified £250 cash x4 for 2h show, holding 27 Mar/5 Jun/11 Dec 2027. Haggle owns.",
+   "badge": "replied-soft / budget",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-23T13:46:12Z",
+     "from": "jwren7412@gmail.com",
+     "subject": "Re: Jake Essex for Sutton Social Club?",
+     "body": "Hi\nI would be looking for dates in 2027 as the diary is already done for 2026 and some for 2027.\nIf Jake does a 2hour set what time would he start and finish.\nWe have our singers usually 8.30 - 11.30 (3sets)\nRegards\nJulie",
+     "msgId": "1a16903433d453b0",
+     "threadId": "1a0aaa885e20877d",
+     "gmailMsgId": "1a16903433d453b0",
+     "gmailThreadId": "1a0aaa885e20877d"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-23T13:52:48Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Sutton Social Club?",
+     "body": "Hi Julie,\n\nThanks for coming back to me. No problem at all on 2026, I'll release Saturday 7 November.\n\nFor a two hour show Jake would normally start at 9pm and finish at 11.30pm, with a half hour break in the middle. If you'd rather keep your usual 8.30 to 11.30 format with three sets, he's happy to do that too. Three sets is £350, or £300 a night if you book four.\n\nFor 2027 I'm still holding Saturday 27 March, Saturday 5 June and Saturday 11 December for you. Would any of those work?\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a16909236b044d2",
+     "threadId": "1a0aaa885e20877d",
+     "gmailMsgId": "1a16909236b044d2",
+     "gmailThreadId": "1a0aaa885e20877d"
+    },
+    {
+     "side": "them",
+     "at": "2026-10-23T14:05:08Z",
+     "from": "jwren7412@gmail.com",
+     "subject": "Re: Jake Essex for Sutton Social Club?",
+     "body": "My apologies, afraid I misread and thought it was four bookings for £250 each\nWill have to leave for now as afraid I've gone to our budget with more expensive acts than our usual rafe\n\nKind Regards\nJulie",
+     "msgId": "1a16914987b5d422",
+     "threadId": "1a0aaa885e20877d",
+     "gmailMsgId": "1a16914987b5d422",
+     "gmailThreadId": "1a0aaa885e20877d"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-23T14:52:16Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Sutton Social Club?",
+     "body": "Hi Julie,\n\nNo apology needed, you read it right the first time. It's £250 cash a night when you book four, for Jake's two hour show, 9pm to 11.30pm with a half hour break. Same price every night.\n\nFor 2027 I can hold Saturday 27 March, Saturday 5 June and Saturday 11 December, plus one more that suits you. Just say which dates and I'll pop them in the diary.\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a1693f944bcc8fe",
+     "threadId": "1a0aaa885e20877d",
+     "gmailMsgId": "1a1693f944bcc8fe",
+     "gmailThreadId": "1a0aaa885e20877d"
+    }
+   ]
+  }
+ ],
+ "source": "bookings-inbox-tidy",
+ "ts": "2026-10-23T15:02:00Z"
+}

@@ -22534,7 +22534,7 @@
     "id": "sutton-social-club",
     "name": "Sutton Social Club",
     "town": "",
-    "badge": "replied-soft / park (not-now)",
+    "badge": "replied-soft / budget",
     "phone": "+442086421929",
     "needPhone": false,
     "email": "info@suttonsocialclub.co.uk",
@@ -22626,13 +22626,23 @@
         "body": "My apologies, afraid I misread and thought it was four bookings for £250\neach\nWill have to leave for now as afraid I've gone to our budget with more\nexpensive acts than our usual rafe\n\nKind Regards\nJulie",
         "msgId": "1a16914987b5d422",
         "threadId": "1a0aaa885e20877d"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-23T14:52:16Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Sutton Social Club?",
+        "body": "Hi Julie,\n\nNo apology needed, you read it right the first time. It's £250 cash a night when you book four, for Jake's two hour show, 9pm to 11.30pm with a half hour break. Same price every night.\n\nFor 2027 I can hold Saturday 27 March, Saturday 5 June and Saturday 11 December, plus one more that suits you. Just say which dates and I'll pop them in the diary.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1693f944bcc8fe",
+        "threadId": "1a0aaa885e20877d"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "replied-soft · Them 15:05 BST 23 Oct 1a16914987b5d422 (Julie: misread £250 x4, budget gone on pricier acts, 'will have to leave for now') · Us 14:52 BST 1a16909236b044d2 released Sat 7 Nov 2026, offered 2027 27 Mar/5 Jun/11 Dec · Them 14:46 BST 1a16903433d453b0 wants 2027 only · thread 1a0aaa885e20877d · Gmail-verified · folded Nat Board lag watch 15:4x · prior: quoted · Us 09:41 BST 22 Oct 1a162c54a7be6be0 · v3 nudge 22 Oct 09:41 BST: 7 Nov 2026 £250 first night + 27 Mar/5 Jun/11 Dec 2027 provisional. Body sent in a grey quote block; Jake decides any resend. · Gmail-verified · folded Nat Board 10:1x 22 Oct · prior: quoted · Us v3 risk-free re-quote to Julie jwren7412@gmail.com 12:29 BST 20 Oct 1a1591270ecc8906: £250 cash ×4 Sats, 2×1hr, first confirmed Sat 7 Nov 2026 + provisional 27 Mar, 5 Jun, 11 Dec 2027, no obligation after first gig · awaiting Julie · Haggle day-7 ~27 Oct · Gmail-verified · folded Nat Board 12:4x 20 Oct",
+    "statusNote": "replied-soft · Us 15:52 BST 23 Oct 1a1693f944bcc8fe clarified £250 cash a night x4 for 2h show 9-11.30pm, holding 2027 27 Mar/5 Jun/11 Dec + one more · Haggle owns · Gmail-verified · folded Nat Board 1600 audit · prior: replied-soft · Them 15:05 BST 23 Oct 1a16914987b5d422 (Julie: misread £250 x4, budget gone on pricier acts, 'will have to leave for now') · Us 14:52 BST 1a16909236b044d2 released Sat 7 Nov 2026, offered 2027 27 Mar/5 Jun/11 Dec · Them 14:46 BST 1a16903433d453b0 wants 2027 only · thread 1a0aaa885e20877d · Gmail-verified · folded Nat Board lag watch 15:4x · prior: quoted · Us 09:41 BST 22 Oct 1a162c54a7be6be0 · v3 nudge 22 Oct 09:41 BST: 7 Nov 2026 £250 first night + 27 Mar/5 Jun/11 Dec 2027 provisional. Body sent in a grey quote block; Jake decides any resend. · Gmail-verified · folded Nat Board 10:1x 22 Oct · prior: quoted · Us v3 risk-free re-quote to Julie jwren7412@gmail.com 12:29 BST 20 Oct 1a1591270ecc8906: £250 cash ×4 Sats, 2×1hr, first confirmed Sat 7 Nov 2026 + provisional 27 Mar, 5 Jun, 11 Dec 2027, no obligation after first gig · awaiting Julie · Haggle day-7 ~27 Oct · Gmail-verified · folded Nat Board 12:4x 20 Oct",
     "lastContact": "2026-10-23",
-    "lastContactSrc": "them 1a16914987b5d422"
+    "lastContactSrc": "us 1a1693f944bcc8fe"
   },
   {
     "id": "wraysbury-village-club",
@@ -71981,7 +71991,7 @@
     "town": "Peckham SE15 4QN",
     "postcode": "SE15 4QN",
     "website": "",
-    "contactName": "",
+    "contactName": "Jess",
     "phone": null,
     "needPhone": true,
     "email": "reservations@peckhamarches.com",
@@ -72007,16 +72017,26 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a167e0f201f450c",
         "threadId": "1a12f54ce0f03fcb"
+      },
+      {
+        "side": "them",
+        "label": "Reply",
+        "at": "2026-10-23T13:48:09Z",
+        "from": "reservations@peckhamarches.com",
+        "subject": "Re: Jake Essex for Peckham Arches?",
+        "body": "Hi Natalie, Thanks for following up on this. We have all of our live music acts booked for the next few months, so we won't have availability for Jake at this time. All the best, Jess",
+        "msgId": "1a169050ef778c3a",
+        "threadId": "1a12f54ce0f03fcb"
       }
     ],
     "hasThread": true,
-    "replied": "no",
+    "replied": "yes — 23 Oct 14:48 BST Jess: live music acts booked for the next few months, no availability",
     "firstPitch": "12 Oct 2026",
     "subject": "Jake Essex for Peckham Arches?",
     "lastContact": "2026-10-23",
-    "lastContactSrc": "us 1a167e0f201f450c",
-    "badge": "awaiting",
-    "statusNote": "awaiting · FU1 Us Fri 23 Oct 09:29 BST 1a167e0f201f450c thread 1a12f54ce0f03fcb · Gmail-verified · folded Nat Board lag watch 10:4x (door file JEM 09:59) · prior: mon-12-oct cold waveA SENT_OK 1a12f54e717d30a2 ~09:57 London thread 1a12f54ce0f03fcb · awaiting · Gmail-verified · folded 1027 12 Oct"
+    "lastContactSrc": "them 1a169050ef778c3a",
+    "badge": "declined",
+    "statusNote": "CLOSED / declined · Them Jess Fri 23 Oct 14:48 BST 1a169050ef778c3a \"all of our live music acts booked for the next few months\" · do not chase · Gmail-verified · door file Bookings 16:02 · folded Nat Board 1600 audit 23 Oct · prior: awaiting · FU1 Us Fri 23 Oct 09:29 BST 1a167e0f201f450c thread 1a12f54ce0f03fcb · Gmail-verified · folded Nat Board lag watch 10:4x (door file JEM 09:59) · prior: mon-12-oct cold waveA SENT_OK 1a12f54e717d30a2 ~09:57 London thread 1a12f54ce0f03fcb · awaiting · Gmail-verified · folded 1027 12 Oct"
   },
   {
     "id": "cold-20261012-antwerp-arms-tottenham-n17-8as",
