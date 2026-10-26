@@ -1,0 +1,20 @@
+{
+  "event": "reply",
+  "venue": {
+    "id": "cold-20261009-the-poyntz-arms-east-molesey-kt8",
+    "email": "hello@thepoyntzarms.co.uk",
+    "contactName": "Verity Carter (General Manager)"
+  },
+  "messages": [
+    {
+      "side": "them",
+      "label": "Reply",
+      "at": "2026-10-26T19:03:44Z",
+      "from": "hello@thepoyntzarms.co.uk",
+      "subject": "Re: Jake Essex for The Poyntz Arms?",
+      "body": "Hi Natalie\n\nI really like what I have seen/heard of Jake on your website.\n\nPlease can you let me know some upcoming dates he is available and I will see where we can fit him in in in our music line up.\n\n\nMany thanks,\n\nVerity Carter\nGeneral Manager\nPoyntz Arms",
+      "msgId": "1a17998ef55748da",
+      "threadId": "1a120f27916e75a4"
+    }
+  ]
+}
