@@ -1,0 +1,50 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261013-the-royal-oak-highams-park-ig8-9ln",
+    "name": "The Royal Oak (Highams Park)",
+    "town": "Highams Park",
+    "email": "info@royaloakhighamspark.co.uk",
+    "badge": "locked"
+   },
+   "statusNote": "LOCKED Sat 6 Mar 2027 \u00b7 2x1hr \u00b7 \u00a3300 cash on the night \u00b7 start TBC from Rhonda \u00b7 Us confirm 12:40 BST 1a1591cdefa6dc4f \u00b7 cal a4tlpuv59vs8ahqrlvbp8pn2hk",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T09:53:04Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Royal Oak?",
+     "body": "Hi Rhonda,\n\nThanks for coming back to me, lovely to hear from you.\n\nJake's rate is \u00a3300 for two 1 hour sets, or \u00a3250 a night if you book four. If you'd prefer three 45 minute sets, it's \u00a3350, or \u00a3300 a night for four.\n\nHe's own PA, fully self contained, no deposit.\n\nSaturdays he has free in January to March 2027:\n\nSaturday 2nd January 2027\nSaturday 6th March 2027\nSaturday 27th March 2027\n\nThese do go quickly, so just reply with whichever suits and I'll get it confirmed and in the diary.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a158ba92b6bc761",
+     "gmailThreadId": "1a134878c16fcc15",
+     "msgId": "1a158ba92b6bc761",
+     "threadId": "1a134878c16fcc15"
+    },
+    {
+     "side": "them",
+     "at": "2026-10-20T11:10:41Z",
+     "from": "info@royaloakhighamspark.co.uk",
+     "subject": "Re: Jake Essex for The Royal Oak?",
+     "body": "Hi Natalie,\n\nThank you for getting back to me. Let book in Saturday 6th March. 2 hours. \u00a3300.\nIs this paid cash on the day?\n\nThanks Rhonda",
+     "gmailMsgId": "1a15901ce2895c09",
+     "gmailThreadId": "1a134878c16fcc15",
+     "msgId": "1a15901ce2895c09",
+     "threadId": "1a134878c16fcc15"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-20T11:40:26Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Royal Oak?",
+     "body": "Hi Rhonda,\n\nLovely, that's Saturday 6th March 2027 booked in for Jake: two 1 hour sets, \u00a3300. And yes, it's cash on the night, paid to Jake on the day.\n\nCould you let me know what time you'd like him to start, and a good contact number for the night? Then I'll get it in the diary.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a1591cdefa6dc4f",
+     "gmailThreadId": "1a134878c16fcc15",
+     "msgId": "1a1591cdefa6dc4f",
+     "threadId": "1a134878c16fcc15"
+    }
+   ]
+  }
+ ]
+}

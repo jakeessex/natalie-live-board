@@ -1,0 +1,114 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "name": "The Red Lion, Bletchingley",
+    "email": "info@redlionbletchingley.co.uk"
+   },
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-19T08:30:43Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Red Lion, Bletchingley?",
+     "body": "Hi Tracey,\n\nJust gently checking in on Jake for The Red Lion. Dates are going quickly\nat the moment with clubs block booking him, so if a Friday or Saturday in\n2027 works, reply with the date and I'll check it straight away.\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a15348d3290f690",
+     "threadId": "1a12f648ef90239e"
+    }
+   ],
+   "msgId": "1a15348d3290f690",
+   "threadId": "1a12f648ef90239e",
+   "status": "SENT_OK",
+   "source": "bookings"
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "name": "Russell Park Club",
+    "email": "m.brant@live.co.uk"
+   },
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-19T08:30:58Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Re: Re: Jake Essex for Russell Park Club?",
+     "body": "Hi Malcolm,\n\nJust gently checking in on Jake for Russell Park. Dates are going quickly\nat the moment with clubs block booking him, so if one of those Saturdays\nstill works, reply with the date and I'll pencil it in.\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a153490dcbae808",
+     "threadId": "1a11b01d87eabb09"
+    }
+   ],
+   "msgId": "1a153490dcbae808",
+   "threadId": "1a11b01d87eabb09",
+   "status": "SENT_OK",
+   "source": "bookings"
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "name": "Southfleet Village Club",
+    "email": "svcsecretary@outlook.com"
+   },
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-19T08:31:16Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Southfleet Village Club",
+     "body": "Hi Chris,\n\nJust gently checking in on Jake for Southfleet Village Club. Dates are\ngoing quickly at the moment with clubs block booking him, so if one of\nthose dates still works, reply with which one and I'll get it pencilled in.\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a15349535f67471",
+     "threadId": "1a13167f03af0cd4"
+    }
+   ],
+   "msgId": "1a15349535f67471",
+   "threadId": "1a13167f03af0cd4",
+   "status": "SENT_OK",
+   "source": "bookings"
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "name": "The Stage Door Dartford",
+    "email": "lynskeypaul@yahoo.co.uk"
+   },
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-19T08:31:29Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Stage Door Dartford?",
+     "body": "Hi Paul,\n\nJust gently checking in after my last note on Jake. If it ever feels like a\nfit for The Stage Door, I'm happy to pencil a Saturday whenever it suits.\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a15349864ba5fd4",
+     "threadId": "1a06bdbd006f2c3b"
+    }
+   ],
+   "msgId": "1a15349864ba5fd4",
+   "threadId": "1a06bdbd006f2c3b",
+   "status": "SENT_OK",
+   "source": "bookings"
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "name": "Winnersh Royal British Legion",
+    "email": "wrbl41@outlook.com"
+   },
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-19T08:31:49Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Winnersh Royal British Legion?",
+     "body": "Hi,\n\nJust gently checking in on Jake for Winnersh RBL. Dates are going quickly\nat the moment with clubs block booking him, so if a Saturday looks good,\nreply with a date and I'll get it pencilled in.\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a15349d3e392caf",
+     "threadId": "1a11b0dcafe7e7b9"
+    }
+   ],
+   "msgId": "1a15349d3e392caf",
+   "threadId": "1a11b0dcafe7e7b9",
+   "status": "SENT_OK",
+   "source": "bookings"
+  }
+ ]
+}

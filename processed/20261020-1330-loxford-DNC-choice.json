@@ -1,0 +1,39 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261001-loxford-social-club-ilford",
+    "name": "Loxford Social Club",
+    "town": "Ilford",
+    "email": "loxfordsc@gmail.com",
+    "badge": "closed"
+   },
+   "statusNote": "closed/DNC-Choice \u00b7 CHOICE-OWNED (Darren & Laura), pitched in error \u00b7 Them Olivia 13:09 BST 1a159381433eb25d \u00b7 Us apology 13:26 BST 1a15946e51cf9598 \u00b7 DO NOT CONTACT",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-20T12:09:47Z",
+     "from": "loxfordsc@gmail.com",
+     "subject": "RE: Jake Essex for Loxford Social Club?",
+     "body": "Hi Natalie,\n\nThank you for your email.\n\nWe had Jake perform here over the summer, and it was lovely to have him with us.\n\nWe've always arranged our entertainment through Choice, as our entertainment secretary has built a brilliant relationship with both Darren and Laura over the years.\n\nAs Choice looks after all our entertainment bookings, any future bookings for Jake would naturally be arranged through them as well.\n\nThanks again for getting in touch. We really appreciate you thinking of us, and I hope you understand.\n\nKind regards,\n\nOlivia Rudge\nOffice Administrator\nLoxford Social Club",
+     "gmailMsgId": "1a159381433eb25d",
+     "gmailThreadId": "1a0f6a37005d199b",
+     "msgId": "1a159381433eb25d",
+     "threadId": "1a0f6a37005d199b"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-20T12:26:20Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: RE: Jake Essex for Loxford Social Club?",
+     "body": "Hi Olivia,\n\nThank you for your kind reply, and please accept my apologies. My emails to Loxford were sent in error. Loxford is a Choice venue and should never have been on my list, and Jake will be quite frustrated with me for reaching out.\n\nJake would never look to take work away from Choice. Darren and Laura are great and he really values working with them, so please carry on booking him through Choice exactly as you do now.\n\nI'm so glad the club enjoyed having him over the summer, and sorry again for the mix up.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a15946e51cf9598",
+     "gmailThreadId": "1a0f6a37005d199b",
+     "msgId": "1a15946e51cf9598",
+     "threadId": "1a0f6a37005d199b"
+    }
+   ]
+  }
+ ]
+}

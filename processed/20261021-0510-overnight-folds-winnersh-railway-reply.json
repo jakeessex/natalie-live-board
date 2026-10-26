@@ -1,0 +1,87 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "cold-20261008-winnersh-royal-british-legion-winnersh-rg41",
+    "name": "Winnersh Royal British Legion",
+    "town": "Winnersh RG41",
+    "email": "wrbl41@outlook.com",
+    "badge": "replied-interested"
+   },
+   "status": "quoted",
+   "statusNote": "Them 14:47 BST 20 Oct asked Apr/May 2027 dates \u00b7 Us 14:49 BST 1a15992bdb480dd3 offered Sat 10 Apr 2027 (+ Sat 11 Sep, Sat 16 Oct 2027), card restated \u00b7 awaiting pick \u00b7 WATCH Sat 10 Apr also offered to Dunstable USC + Railway Tavern \u00b7 Gmail-verified \u00b7 folded Bookings overnight 21 Oct (Apex 1449 JSON had no venue id, never reached board)",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-20T13:47:15Z",
+     "from": "WRBL41@outlook.com",
+     "subject": "Re: Jake Essex for Winnersh Royal British Legion?",
+     "body": "What dates do you have in April May?",
+     "gmailMsgId": "1a159910645b8d4c",
+     "gmailThreadId": "1a11b0dcafe7e7b9",
+     "msgId": "1a159910645b8d4c",
+     "threadId": "1a11b0dcafe7e7b9"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-20T13:49:10Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Winnersh Royal British Legion?",
+     "body": "Hi,\n\nThanks for coming back to me.\n\nApril and May are filling up quickly, so the only Saturday Jake has left across those two months is Saturday 10th April 2027.\n\nIf that doesn't suit, his next free Saturdays after that are Saturday 11th September 2027 and Saturday 16th October 2027.\n\nJust as a reminder, Jake is \u00a3300 cash for two one hour sets, or \u00a3250 a night if you book four dates. Three sets is \u00a3350, or \u00a3300 a night when you book four. Own PA, no deposit.\n\nIf a date works, just reply here and I'll get it pencilled in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a15992bdb480dd3",
+     "gmailThreadId": "1a11b0dcafe7e7b9",
+     "msgId": "1a15992bdb480dd3",
+     "threadId": "1a11b0dcafe7e7b9"
+    }
+   ]
+  },
+  {
+   "event": "reply",
+   "venue": {
+    "id": "cold-20261007-railway-tavern-longfield-da3",
+    "name": "The Railway Tavern",
+    "town": "Longfield DA3",
+    "email": "info@railwaytavernlongfield.co.uk",
+    "badge": "replied-interested"
+   },
+   "status": "quoted",
+   "statusNote": "Them 14:52 BST asked Sat 6 Mar 2027 (taken) \u00b7 Us 15:22 BST 1a159b116bf5ebb3 offered Sat 2 Jan / Sat 10 Apr 2027 \u00b7 Them 16:09 BST 1a159dbddaf6aaa7 asked Saturdays in June/July or November 2027 \u00b7 UNANSWERED: reply hunter/Haggle to answer from 09:30 Wed from both calendars (Keeley holiday 26 Jun to 9 Jul 2027 blocks) \u00b7 Gmail-verified \u00b7 folded Bookings overnight 21 Oct",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-20T13:52:27Z",
+     "from": "info@railwaytavernlongfield.co.uk",
+     "subject": "Re: Jake Essex for The Railway Tavern?",
+     "body": "Hi Natalie\n\nCan he do saturday 6th March? 7.30 pm start?",
+     "gmailMsgId": "1a15995bc52dfaa2",
+     "gmailThreadId": "1a1172a9f8ed09c5",
+     "msgId": "1a15995bc52dfaa2",
+     "threadId": "1a1172a9f8ed09c5"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-20T14:22:20Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Railway Tavern?",
+     "body": "Hi,\n\nThanks for coming back to me. I'm so sorry, that Saturday went earlier today, another venue booked it just before your email came in.\n\nThe nearest Saturdays Jake still has free are:\n\nSaturday 2 January 2027\nSaturday 10 April 2027\n\nA 7.30pm start is fine for either. If one of those suits, just reply and I'll get it in the diary for you.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a159b116bf5ebb3",
+     "gmailThreadId": "1a1172a9f8ed09c5",
+     "msgId": "1a159b116bf5ebb3",
+     "threadId": "1a1172a9f8ed09c5"
+    },
+    {
+     "side": "them",
+     "at": "2026-10-20T15:09:02Z",
+     "from": "info@railwaytavernlongfield.co.uk",
+     "subject": "Re: Jake Essex for The Railway Tavern?",
+     "body": "Hi There,\n\nwhat dates have you for June/ July or November 2027 on Saturdays",
+     "gmailMsgId": "1a159dbddaf6aaa7",
+     "gmailThreadId": "1a1172a9f8ed09c5",
+     "msgId": "1a159dbddaf6aaa7",
+     "threadId": "1a1172a9f8ed09c5"
+    }
+   ]
+  }
+ ]
+}

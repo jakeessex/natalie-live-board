@@ -1,0 +1,41 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "cold-20261007-southfleet-village-club-southfleet-da13",
+    "name": "Southfleet Village Club",
+    "email": "svcsecretary@outlook.com",
+    "badge": "replied-interested",
+    "contactName": "Chris Bishop"
+   },
+   "badge": "replied-interested",
+   "statusNote": "replied-interested · Chris asked Sat 26 Jun 2027 (BLOCKED Keeley) · Us 15:55 offered Fri 25 Jun £300 + 2027 free Sats 11 Sep/16 Oct/6 Nov/20 Nov/11 Dec + Fridays · closing with Haggle",
+   "messages": [
+    {
+     "side": "them",
+     "label": "Inbox",
+     "at": "2026-10-19T13:52:25Z",
+     "from": "svcsecretary@outlook.com",
+     "subject": "Re: Jake Essex for Southfleet Village Club",
+     "body": "Hi Natalie,\n\nSorry, your email went straight to junk for some reason.\n\nNone of those work unfortunately, moving a bit further forward can he do the 26th of June?\n\nKind regards\nChris Bishop\nSouthfleet Village Club Secretary",
+     "msgId": "1a1546f637897292",
+     "threadId": "1a13167f03af0cd4"
+    },
+    {
+     "side": "us",
+     "label": "Sent",
+     "at": "2026-10-19T14:55:23Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Southfleet Village Club",
+     "body": "Hi Chris,\n\nNo problem at all, and sorry it ended up in junk.\n\nSaturday 26 June is the one weekend Jake is away, I'm afraid. The closest\nhe can do is Friday 25 June, the night before, if a Friday works for you.\nSame £300 for your two one hour sets.\n\nFrom the summer onwards, his free dates in 2027 are:\n\nSaturdays: 11 September, 16 October, 6 November, 20 November and 11\nDecember.\n\nFridays: 25 June, 16 July, 30 July, 13 August, 27 August, 10 September, 17\nSeptember, 24 September, 8 October, 15 October and 22 October.\n\nIf any of those suit, just reply with the date and I'll pencil it in\nstraight away.\n\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a154a8fd618260f",
+     "threadId": "1a13167f03af0cd4"
+    }
+   ],
+   "msgId": "1a154a8fd618260f",
+   "threadId": "1a13167f03af0cd4",
+   "source": "bookings"
+  }
+ ]
+}

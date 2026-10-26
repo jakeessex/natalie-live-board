@@ -1,0 +1,22 @@
+{
+ "event": "reply",
+ "venue": {
+  "name": "Trooper (Aldbury)",
+  "email": "hello@thetrooper.co.uk",
+  "badge": "bounce"
+ },
+ "messages": [
+  {
+   "side": "them",
+   "at": "2026-10-16T15:19:30Z",
+   "from": "postmaster@netorgft13195549.onmicrosoft.com",
+   "subject": "Undeliverable: Jake Essex for The Trooper?",
+   "body": "Bounced: Office 365 delivery failure, 550 5.1.10 RecipientNotFound for hello@thetrooper.co.uk (address not found). NDR is in Gmail Spam; message id not retrievable, ref thread 1a1454bf4e57eadd.",
+   "threadId": "1a1454bf4e57eadd"
+  }
+ ],
+ "msgId": "1a1454bf75525932",
+ "threadId": "1a1454bf4e57eadd",
+ "status": "BOUNCE",
+ "source": "bookings"
+}

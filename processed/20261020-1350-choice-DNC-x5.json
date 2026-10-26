@@ -1,0 +1,64 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261001-ponders-end-working-mens-club-enfield",
+    "name": "Ponders End Working Mens Club",
+    "town": "Enfield",
+    "email": "pewmc@btconnect.com",
+    "badge": "closed"
+   },
+   "statusNote": "closed/DNC-Choice \u00b7 Choice venue (CL PONDERS END WMC) \u00b7 JEM ruling 20 Oct \u00b7 no apology, no send, no chase",
+   "messages": []
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "bellingham-ex-servicemen-s-club",
+    "name": "Bellingham Ex-Servicemen's Club",
+    "town": "Bellingham",
+    "email": "bellinghamex@icloud.com",
+    "badge": "closed"
+   },
+   "statusNote": "closed/DNC-Choice \u00b7 Choice venue (CL BELLINGHAM EX SERVICEMANS CLUB; 5 dates) \u00b7 JEM ruling 20 Oct \u00b7 no apology, no send, no chase",
+   "messages": []
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "bellegrove-social-club",
+    "name": "Bellegrove Social Club",
+    "town": "Welling",
+    "email": "bellegrovesecretary@gmail.com",
+    "badge": "closed"
+   },
+   "statusNote": "closed/DNC-Choice \u00b7 Choice venue (CL BELLEGROVE SOCIAL CLUB; 2027 chase cancelled) \u00b7 JEM ruling 20 Oct \u00b7 no apology, no send, no chase",
+   "messages": []
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "canvey-rbl",
+    "name": "Canvey RBL",
+    "town": "Canvey Island",
+    "email": "office@canveyrbl.co.uk",
+    "badge": "closed"
+   },
+   "statusNote": "closed/DNC-Choice \u00b7 Choice venue (CL CANVEY ROYAL BRITISH LEGION) \u00b7 JEM ruling 20 Oct \u00b7 no apology, no send, no chase",
+   "messages": []
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "becontree-royal-british-legion",
+    "name": "Becontree Royal British Legion",
+    "town": "Dagenham",
+    "email": "becontree.secretary@rbl.community",
+    "badge": "closed"
+   },
+   "statusNote": "closed/DNC-Choice \u00b7 Choice venue (CL 'Dagenham RBL (RM8 3JP)' 29 May 2027) \u00b7 JEM ruling 20 Oct \u00b7 no apology, no send, no chase",
+   "messages": []
+  }
+ ]
+}

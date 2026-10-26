@@ -1,0 +1,28 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261021-the-new-inn-minster-ct12",
+    "name": "The New Inn",
+    "town": "Minster (Thanet) CT12 4AG",
+    "email": "newinnminster@gmail.com"
+   },
+   "status": "awaiting",
+   "statusNote": "cold waveA 21 Oct Us cold 1a15da5f574bbfe5 09:48 London thread 1a15da5e6d1c88ea \u00b7 awaiting \u00b7 THANET-terms (reply to Jake for price) \u00b7 Gmail-verified \u00b7 folded JEM 09:49 21 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-21T08:48:39Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Jake Essex for The New Inn?",
+     "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nThe New Inn in Minster would be a great fit for Jake, and he'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good reputation for singing the classics without the corny impersonation. He's branching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No tribute, no jumpsuit, no corny impersonations. Own PA, fully self-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights this year and into 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie",
+     "gmailMsgId": "1a15da5f574bbfe5",
+     "gmailThreadId": "1a15da5e6d1c88ea",
+     "msgId": "1a15da5f574bbfe5",
+     "threadId": "1a15da5e6d1c88ea"
+    }
+   ]
+  }
+ ]
+}

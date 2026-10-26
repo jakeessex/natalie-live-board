@@ -1,0 +1,18 @@
+{
+ "event": "new_lead",
+ "venue": {
+  "id": "cold-20261007-railway-tavern-longfield-da3",
+  "email": "info@railwaytavernlongfield.co.uk",
+  "status": "replied",
+  "badge": "replied",
+  "statusNote": "Us replied 21 Oct 09:44: OFFERED (not held) Sat 6 Nov, Sat 20 Nov, alt Sat 11 Sep, Sat 16 Oct 2027. Awaiting pick."
+ },
+ "message": {
+  "from": "us",
+  "msgKey": "1a15da28e73b81c2",
+  "gmailId": "1a15da28e73b81c2",
+  "threadId": "1a1172a9f8ed09c5",
+  "date": "2026-10-21T09:44:56+01:00",
+  "body": "Hi,\n\nThanks for coming back to me. I'm afraid June and July 2027 are already fully booked for Jake, but he does still have two Saturdays free in November 2027: Saturday 6 November 2027, Saturday 20 November 2027. Alternatives: Saturday 11 September 2027, Saturday 16 October 2027. \u00a3300/\u00a3250x4 (2x1hr) or \u00a3350/\u00a3300x4 (3 sets), own PA, no deposit, 7.30pm fine.\n\nNatalie\nBookings for Jake Essex"
+ }
+}

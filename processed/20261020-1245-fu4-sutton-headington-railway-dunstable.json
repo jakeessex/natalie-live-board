@@ -1,0 +1,108 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "sutton-social-club",
+    "name": "Sutton Social Club",
+    "town": "Sutton",
+    "email": "info@suttonsocialclub.co.uk"
+   },
+   "statusNote": "replied-quoted \u00b7 Us v3 \u00a3250x4 risk-free re-quote to Julie jwren7412@gmail.com 12:29 BST 20 Oct 1a1591270ecc8906 \u00b7 awaiting \u00b7 Haggle day-7 ~27 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T11:29:03Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Sutton Social Club?",
+     "body": "Hi Julie,\n\nI know money is a bit tight for clubs at the moment, so I've had a word with Jake and we can take the risk out of it for Sutton Social Club.\n\nBook four Saturdays and every night is \u00a3250 cash for two one hour sets, and that includes the very first one. Only the first date is confirmed. The other three sit in the diary as provisional, with no obligation to confirm them until Jake has played for you at least once. If the members love him, you keep all four at \u00a3250 a night. If not, you simply let them go.\n\nOwn PA, music on in the breaks, no deposit, cash on the night.\n\nA nice spread across the year would be:\n\nSaturday 7 November 2026, confirmed\nSaturday 27 March 2027, provisional\nSaturday 5 June 2027, provisional\nSaturday 11 December 2027, provisional\n\nHe does a great Christmas show, so the December night would be a real treat for the members.\n\nDates are going quickly because clubs are block booking him, so these are the Saturdays he has left:\n\nSaturday 7 November 2026\nSaturday 2 January 2027\nSaturday 27 March 2027\nSaturday 10 April 2027\nSaturday 5 June 2027\nSaturday 11 September 2027\nSaturday 16 October 2027\nSaturday 6 November 2027\nSaturday 20 November 2027\nSaturday 11 December 2027\n\nJust reply with the date that suits and I'll get the first one in the diary.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a1591270ecc8906",
+     "gmailThreadId": "1a0aaa885e20877d",
+     "msgId": "1a1591270ecc8906",
+     "threadId": "1a0aaa885e20877d"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-headington-conservative-club-ox3-7bz",
+    "name": "Headington Conservative Club",
+    "town": "Oxford",
+    "email": "headingtoncc@gmail.com",
+    "badge": "closed"
+   },
+   "statusNote": "replied-declined CLOSED \u00b7 Us v4 chase 12:32 BST 1a15915770eb19ae \u00b7 Them Nigel 12:34 BST 1a159177c9ecc202 'well out of our budget range' \u00b7 no further chase",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T11:32:21Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Headington Conservative Club?",
+     "body": "Hi Nigel,\n\nJust checking in on Jake for Headington. Dates are going quickly at the moment with clubs block booking him. Saturday 2 January 2027 and Saturday 27 March 2027 are both still free, and he also does a great Christmas show. Saturday 11 December 2027 is free if you'd like him for next Christmas.\n\nJust reply with the date that suits and I'll check it for you straight away.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a15915770eb19ae",
+     "gmailThreadId": "1a11bb1c36b7903f",
+     "msgId": "1a15915770eb19ae",
+     "threadId": "1a11bb1c36b7903f"
+    },
+    {
+     "side": "them",
+     "at": "2026-10-20T11:34:21Z",
+     "from": "headingtoncc@gmail.com",
+     "subject": "Re: Jake Essex for Headington Conservative Club?",
+     "body": "Hi Natalie\n\nUnfortunately it is well out of our budget range for a solo artist, we wish Jake the best for the future.\n\nKind regards\n\nNigel",
+     "gmailMsgId": "1a159177c9ecc202",
+     "gmailThreadId": "1a11bb1c36b7903f",
+     "msgId": "1a159177c9ecc202",
+     "threadId": "1a11bb1c36b7903f"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "cold-20261007-railway-tavern-longfield-da3",
+    "name": "The Railway Tavern",
+    "town": "Longfield",
+    "email": "info@railwaytavernlongfield.co.uk"
+   },
+   "statusNote": "quoted \u00b7 Us v4 chase 12:35 BST 20 Oct 1a159180a76bba8c (2 Jan, 27 Mar, 11 Dec 2027) \u00b7 awaiting \u00b7 no further chase",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T11:35:09Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Re: Jake Essex for The Railway Tavern?",
+     "body": "Hi,\n\nJust gently checking in on Jake for the Railway Tavern. Dates are going quickly at the moment with clubs block booking him, and a couple of the dates I sent have gone since I wrote. Saturday 2 January 2027 and Saturday 27 March 2027 are still free. He also does a great Christmas show, and Saturday 11 December 2027 is free if you'd like him for next Christmas.\n\nJust reply with the date that suits and I'll pencil it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a159180a76bba8c",
+     "gmailThreadId": "1a1172a9f8ed09c5",
+     "msgId": "1a159180a76bba8c",
+     "threadId": "1a1172a9f8ed09c5"
+    }
+   ]
+  },
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "dunstable-united-services-club",
+    "name": "Dunstable United Services Club",
+    "town": "Dunstable",
+    "email": "unitedservicesdunstable@outlook.com"
+   },
+   "statusNote": "replied-quoted \u00b7 Us reply to Yvonne buzz.yvonne@ntlworld.com 12:36 BST 20 Oct 1a1591947f29434a (Sats 2 Jan, 27 Mar, 10 Apr 2027; both rate cards; Fri cabaret same fee) \u00b7 awaiting \u00b7 Haggle day-7 ~27 Oct",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T11:36:31Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: United Services Club Dunstable",
+     "body": "Hi Yvonne,\n\nThank you so much for coming back to me, and it's lovely to hear from someone who has booked the club for so many years.\n\nSaturdays suit Jake perfectly. His free Saturdays coming up are:\n\nSaturday 2nd January 2027\nSaturday 27th March 2027\nSaturday 10th April 2027\n\nIt's \u00a3300 for two one hour sets, or \u00a3250 a night when you book four. If you'd like three sets, it's \u00a3350, or \u00a3300 a night when you book four. Own PA, fully self contained, no deposit.\n\nJake would also be very happy to do one of your Friday cabaret nights, doing his own spot and compering, at the same fee.\n\nAnd I'll certainly let you know whenever he's playing near Dunstable, so you can pop along and see him.\n\nIf a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a1591947f29434a",
+     "gmailThreadId": "1a15186c4307f1ba",
+     "msgId": "1a1591947f29434a",
+     "threadId": "1a15186c4307f1ba"
+    }
+   ]
+  }
+ ]
+}

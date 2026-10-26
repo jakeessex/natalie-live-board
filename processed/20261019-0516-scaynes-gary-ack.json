@@ -1,0 +1,22 @@
+{
+  "event": "reply",
+  "venue": {
+    "name": "Scaynes Hill Social Club",
+    "email": "scayneshillsocialclub@gmail.com"
+  },
+  "messages": [
+    {
+      "side": "them",
+      "at": "2026-10-18T10:47:02Z",
+      "from": "scayneshillsocialclub@gmail.com",
+      "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
+      "body": "Great thanks",
+      "msgId": "1a14e9f708194095",
+      "threadId": "1a0f867f947679ac"
+    }
+  ],
+  "msgId": "1a14e9f708194095",
+  "threadId": "1a0f867f947679ac",
+  "status": "SENT_OK",
+  "source": "bookings"
+}

@@ -1,0 +1,28 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-headington-conservative-club-ox3-7bz",
+    "name": "Headington Conservative Club",
+    "town": "Oxford",
+    "email": "headingtoncc@gmail.com",
+    "badge": "replied"
+   },
+   "statusNote": "replied-soft (awaiting budget) \u00b7 REOPENED \u00b7 Us 13:34 BST 1a1594e11fb1920f explains price + asks budget range \u00b7 supersedes 13:28 closed",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T12:34:10Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Headington Conservative Club?",
+     "body": "Hi Nigel,\n\nJust to add to my last email, so you know where the price comes from: three hours of live performance would normally be around \u00a3125 an hour, so the night is already heavily discounted, and that's before Jake's travel over to Oxford. He also brings his own PA and there's no deposit.\n\nWhat budget range does the club usually work to for a Saturday night? If it's anywhere close, I'll see what we can do.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a1594e11fb1920f",
+     "gmailThreadId": "1a11bb1c36b7903f",
+     "msgId": "1a1594e11fb1920f",
+     "threadId": "1a11bb1c36b7903f"
+    }
+   ]
+  }
+ ]
+}

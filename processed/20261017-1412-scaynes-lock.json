@@ -1,0 +1,38 @@
+{
+ "events": [
+  {
+   "event": "lock",
+   "venue": {
+    "name": "Scaynes Hill Social Club",
+    "email": "scayneshillsocialclub@gmail.com",
+    "id": "cold-20261001-scaynes-hill-social-club-scaynes-hill-rh17"
+   },
+   "lock": {
+    "date": "2026-12-11",
+    "day": "Fri",
+    "fee": 300,
+    "feeIfThreeSets": 450,
+    "start": "TBC"
+   },
+   "badge": "locked",
+   "confirmMsgId": null,
+   "confirmPending": true,
+   "statusNote": "LOCKED Fri 11 Dec 2026 £300 (2x1hr) or £450 (3 sets), start TBC; Gary booked 1a149f84e59f3e80",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-17T14:05:59+01:00",
+     "from": "scayneshillsocialclub@gmail.com",
+     "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
+     "body": "Hi Natalie,\n\nCan I book the 11th December please. Do you create the posters ?\n\nKind regards\nGary",
+     "msgId": "1a149f84e59f3e80",
+     "threadId": "1a0f867f947679ac"
+    }
+   ]
+  }
+ ],
+ "money": {
+  "locked": 11675,
+  "nights": 41
+ }
+}

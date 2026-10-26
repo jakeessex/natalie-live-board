@@ -1,0 +1,59 @@
+{
+ "events": [
+  {
+   "event": "lock",
+   "venue": {
+    "name": "Scaynes Hill Social Club",
+    "email": "scayneshillsocialclub@gmail.com",
+    "id": "cold-20261001-scaynes-hill-social-club-scaynes-hill-rh17"
+   },
+   "lock": {
+    "date": "2026-12-11",
+    "day": "Fri",
+    "fee": 300,
+    "feeIfThreeSets": null,
+    "sets": "2x1hr 20:00-21:00, 21:30-22:30"
+   },
+   "badge": "locked",
+   "closed": true,
+   "confirmMsgId": "1a14e4a9cab99174",
+   "statusNote": "BOOKED/CLOSED Fri 11 Dec 2026 £300 cash 2x1hr 8-9pm + 9:30-10:30pm; poster sent",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-17T17:11:11+01:00",
+     "from": "scayneshillsocialclub@gmail.com",
+     "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
+     "body": "Hi Natalie\n\nCan we please book the three hour slot, start at 8pm until 9pm then 9.30 until 10.30 please.\n\nThank you.\n\nGary",
+     "msgId": "1a14aa1dd1b6966a",
+     "threadId": "1a0f867f947679ac"
+    },
+    {
+     "side": "them",
+     "at": "2026-10-17T17:11:54+01:00",
+     "from": "scayneshillsocialclub@gmail.com",
+     "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
+     "body": "Sorry I mean 2 hours.",
+     "msgId": "1a14aa2817b0ce64",
+     "threadId": "1a0f867f947679ac"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-18T10:14:34+01:00",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
+     "body": "Hi Gary,\n\nPerfect, thank you. That's all confirmed for Friday 11 December 2026 at Scaynes Hill Social Club: two 1 hour sets, 8pm to 9pm and 9:30pm to 10:30pm, £300 cash on the night. Jake brings his own PA.\n\nI've attached your poster, ready to print or share. Jake's really looking forward to it.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a14e4a9cab99174",
+     "threadId": "1a0f867f947679ac",
+     "attachments": [
+      "jake-essex-scaynes-hill-11dec2026.jpg"
+     ]
+    }
+   ]
+  }
+ ],
+ "money": {
+  "locked": 11675,
+  "nights": 41
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "events": [
+  {
+   "event": "us_sent",
+   "venue": {
+    "name": "Winnersh Royal British Legion",
+    "town": "Winnersh RG41",
+    "email": "wrbl41@outlook.com"
+   },
+   "status": "quoted",
+   "statusNote": "Them 14:47 asked Apr/May dates; Us 14:49 London offered Sat 10 Apr 2027 (+11 Sep, 16 Oct 2027), rate card restated \u00b7 browser Gmail \u00b7 Gmail-verified \u00b7 reply hunter 20 Oct",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-20T13:47:15Z",
+     "from": "WRBL41@outlook.com",
+     "subject": "Re: Jake Essex for Winnersh Royal British Legion?",
+     "body": "What dates do you have in April May?",
+     "gmailMsgId": "1a159910645b8d4c",
+     "gmailThreadId": "1a11b0dcafe7e7b9",
+     "msgId": "1a159910645b8d4c",
+     "threadId": "1a11b0dcafe7e7b9"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-20T13:49:10Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Winnersh Royal British Legion?",
+     "body": "Hi,\n\nThanks for coming back to me.\n\nApril and May are filling up quickly, so the only Saturday Jake has left across those two months is Saturday 10th April 2027.\n\nIf that doesn't suit, his next free Saturdays after that are Saturday 11th September 2027 and Saturday 16th October 2027.\n\nJust as a reminder, Jake is \u00a3300 cash for two one hour sets, or \u00a3250 a night if you book four dates. Three sets is \u00a3350, or \u00a3300 a night when you book four. Own PA, no deposit.\n\nIf a date works, just reply here and I'll get it pencilled in.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a15992bdb480dd3",
+     "gmailThreadId": "1a11b0dcafe7e7b9",
+     "msgId": "1a15992bdb480dd3",
+     "threadId": "1a11b0dcafe7e7b9"
+    }
+   ]
+  }
+ ]
+}

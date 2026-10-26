@@ -1,0 +1,27 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "name": "Scaynes Hill Social Club",
+    "email": "scayneshillsocialclub@gmail.com",
+    "id": "cold-20261001-scaynes-hill-social-club-scaynes-hill-rh17"
+   },
+   "badge": "locked",
+   "confirmMsgId": "1a14a03f2cc3da25",
+   "confirmPending": false,
+   "statusNote": "LOCKED Fri 11 Dec 2026; confirm sent 14:18 1a14a03f2cc3da25; awaiting Gary's start time, 2 or 3 sets, poster",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-17T14:18:55+01:00",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Scaynes Hill Social Club?",
+     "body": "Hi Gary,\n\nBrilliant, thank you. Friday 11 December 2026 is confirmed and in the diary for Jake at Scaynes Hill Social Club. It'll make a great Christmas night for the club.\n\nTo finish off the details, could you let me know:\n\n1. What time you'd like Jake to start\n2. Whether you'd like the 2 hour show (2 x 1hr sets, £300) or the three set show (£450)\n\nAnd yes, we do posters. As soon as I have those details, I'll send one over to you straight away.\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+     "msgId": "1a14a03f2cc3da25",
+     "threadId": "1a0f867f947679ac"
+    }
+   ]
+  }
+ ]
+}

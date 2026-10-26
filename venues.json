@@ -1628,12 +1628,12 @@
     "town": "East Molesey KT8",
     "postcode": "",
     "website": "",
-    "contactName": "",
+    "contactName": "Verity Carter (General Manager)",
     "badge": "awaiting",
     "phone": null,
     "needPhone": true,
     "email": "hello@thepoyntzarms.co.uk",
-    "replied": "no",
+    "replied": "yes",
     "firstPitch": "",
     "addedAt": "2026-10-09T15:37:59.859Z",
     "followUps": "FU1 23 Oct 2026",
@@ -1658,12 +1658,22 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a1692c71c22a153",
         "threadId": "1a120f27916e75a4"
+      },
+      {
+        "side": "them",
+        "label": "Reply",
+        "at": "2026-10-26T19:03:44Z",
+        "from": "hello@thepoyntzarms.co.uk",
+        "subject": "Re: Jake Essex for The Poyntz Arms?",
+        "body": "Hi Natalie\n\nI really like what I have seen/heard of Jake on your website.\n\nPlease can you let me know some upcoming dates he is available and I will see where we can fit him in in in our music line up.\n\n\nMany thanks,\n\nVerity Carter\nGeneral Manager\nPoyntz Arms",
+        "msgId": "1a17998ef55748da",
+        "threadId": "1a120f27916e75a4"
       }
     ],
     "hasThread": true,
-    "statusNote": "awaiting · FU1 Us Fri 23 Oct 15:31 BST 1a1692c71c22a153 thread 1a120f27916e75a4 · Gmail-verified · folded Nat Board lag watch 15:4x (door file JEM 15:32) · prior: ",
-    "lastContact": "2026-10-23",
-    "lastContactSrc": "us 1a1692c71c22a153"
+    "statusNote": "replied-warm · Them Mon 26 Oct 19:03 GMT 1a17998ef55748da (Verity Carter GM: likes Jake, asks upcoming available dates to fit into music line-up) · SURREY (East Molesey KT8): check drive time from RM15 before quote · needs dates reply · folded Nat Board lag watch 19:4x · prior: awaiting · FU1 Us Fri 23 Oct 15:31 BST 1a1692c71c22a153 thread 1a120f27916e75a4 · Gmail-verified · folded Nat Board lag watch 15:4x (door file JEM 15:32) · prior: ",
+    "lastContact": "2026-10-26",
+    "lastContactSrc": "them 1a17998ef55748da"
   },
   {
     "id": "cold-20261009-the-old-hat-west-ealing-w13",

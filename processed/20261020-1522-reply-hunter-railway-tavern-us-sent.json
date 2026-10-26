@@ -1,0 +1,38 @@
+{
+ "events": [
+  {
+   "event": "us_sent",
+   "venue": {
+    "name": "The Railway Tavern",
+    "town": "Longfield DA3",
+    "email": "info@railwaytavernlongfield.co.uk"
+   },
+   "status": "quoted",
+   "statusNote": "Them 14:52 asked Sat 6 Mar 2027 7.30pm; 6 Mar taken (Royal Oak lock); Us 15:22 London offered Sat 2 Jan / Sat 10 Apr 2027, 7.30pm fine \u00b7 browser Gmail \u00b7 Gmail-verified \u00b7 reply hunter 20 Oct",
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-20T13:52:27Z",
+     "from": "info@railwaytavernlongfield.co.uk",
+     "subject": "Re: Jake Essex for The Railway Tavern?",
+     "body": "Hi Natalie\n\nCan he do saturday 6th March? 7.30 pm start?",
+     "gmailMsgId": "1a15995bc52dfaa2",
+     "gmailThreadId": "1a1172a9f8ed09c5",
+     "msgId": "1a15995bc52dfaa2",
+     "threadId": "1a1172a9f8ed09c5"
+    },
+    {
+     "side": "us",
+     "at": "2026-10-20T14:22:20Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for The Railway Tavern?",
+     "body": "Hi,\n\nThanks for coming back to me. I'm so sorry, that Saturday went earlier today, another venue booked it just before your email came in.\n\nThe nearest Saturdays Jake still has free are:\n\nSaturday 2 January 2027\nSaturday 10 April 2027\n\nA 7.30pm start is fine for either. If one of those suits, just reply and I'll get it in the diary for you.\n\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a159b116bf5ebb3",
+     "gmailThreadId": "1a1172a9f8ed09c5",
+     "msgId": "1a159b116bf5ebb3",
+     "threadId": "1a1172a9f8ed09c5"
+    }
+   ]
+  }
+ ]
+}

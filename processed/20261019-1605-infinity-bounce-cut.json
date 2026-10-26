@@ -1,0 +1,19 @@
+{
+ "events": [
+  {
+   "event": "note_patch",
+   "venue": {
+    "id": "cold-20261016-infinity-southend",
+    "name": "Infinity (Southend)",
+    "email": "info@infinitybars.uk",
+    "badge": "bounce"
+   },
+   "badge": "bounce",
+   "statusNote": "BOUNCE NEVER_RETRY · final DSN 1a1548baefc3283f 15:23 BST Mon 19 Oct (451 4.4.4 no mail-enabled subscriptions) · Us cold 1a14443f1b4d9a72 16 Oct · CUT venue unfit (Heroes Sports Bar, closed Sat, karaoke/DJ only; maybe Pulse Bar) · also CUT info@infinitysouthend.co.uk, info@pulsesouthend.co.uk",
+   "msgId": "1a14443f1b4d9a72",
+   "threadId": "1a14443de51e488b",
+   "dsnMsgId": "1a1548baefc3283f",
+   "source": "bookings"
+  }
+ ]
+}

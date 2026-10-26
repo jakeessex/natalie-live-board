@@ -1,0 +1,18 @@
+{
+ "event": "new_lead",
+ "venue": {
+  "id": "shepherd-and-dog",
+  "email": "shepherdanddogcrayshill@gmail.com",
+  "status": "quoted",
+  "badge": "quoted",
+  "statusNote": "Chased 21 Oct 09:46 (\u00a3250/\u00a3375; weekends OFFERED not held). Awaiting Rebecca."
+ },
+ "message": {
+  "from": "us",
+  "msgKey": "1a15da3837c8b569",
+  "gmailId": "1a15da3837c8b569",
+  "threadId": "1a0a54d159ee000e",
+  "date": "2026-10-21T09:45:59+01:00",
+  "body": "Hi Rebecca,\n\nJust a light check in on Jake for Shepherd & Dog. Prices still stand: 2 x 45 mins \u00a3250 cash, 3 x 45 mins \u00a3375 cash, own PA, no deposit. Weekends still free: Sun 25 Oct, Sun 15 Nov, Sun 22 Nov, Sun 27 Dec 2026, Sat 2 Jan 2027.\n\nNatalie\nBookings for Jake Essex"
+ }
+}

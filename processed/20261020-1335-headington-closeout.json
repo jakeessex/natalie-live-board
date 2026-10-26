@@ -1,0 +1,28 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "venue": {
+    "id": "pot-headington-conservative-club-ox3-7bz",
+    "name": "Headington Conservative Club",
+    "town": "Oxford",
+    "email": "headingtoncc@gmail.com",
+    "badge": "closed"
+   },
+   "statusNote": "replied-declined CLOSED \u00b7 budget decline 12:34 BST 1a159177c9ecc202 \u00b7 Us close-out 13:28 BST 1a15948e61c0e1e1 \u00b7 no chase",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-20T12:28:32Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Re: Jake Essex for Headington Conservative Club?",
+     "body": "Hi Nigel,\n\nNo problem at all, thank you for letting me know. If you ever change your mind, please don't hesitate to reach out. Hitting the notes does cost money I'm afraid!\n\nKind regards,\nNatalie\nBookings for Jake Essex",
+     "gmailMsgId": "1a15948e61c0e1e1",
+     "gmailThreadId": "1a11bb1c36b7903f",
+     "msgId": "1a15948e61c0e1e1",
+     "threadId": "1a11bb1c36b7903f"
+    }
+   ]
+  }
+ ]
+}

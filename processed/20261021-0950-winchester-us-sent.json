@@ -1,0 +1,18 @@
+{
+ "event": "new_lead",
+ "venue": {
+  "id": "winchester-club",
+  "email": "SMArundell@aol.com",
+  "status": "quoted",
+  "badge": "quoted",
+  "statusNote": "Chased 21 Oct 09:45 (\u00a3325; Sats/Suns OFFERED not held). Awaiting Sandie."
+ },
+ "message": {
+  "from": "us",
+  "msgKey": "1a15da2dd50337b1",
+  "gmailId": "1a15da2dd50337b1",
+  "threadId": "1a07cf20817f3a22",
+  "date": "2026-10-21T09:45:16+01:00",
+  "body": "Hi Sandie,\n\nJust a light check in on Jake for The Winchester Club. The rate still stands at \u00a3325 cash for 2 x 1 hour sets, own PA, no deposit. Saturdays free: Sat 2 Jan, 11 Sep, 16 Oct, 6 Nov, 20 Nov 2027. Sundays free: Sun 15 Nov, 22 Nov 2026.\n\nNatalie\nBookings for Jake Essex"
+ }
+}
