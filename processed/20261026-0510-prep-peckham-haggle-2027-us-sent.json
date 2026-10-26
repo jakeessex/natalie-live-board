@@ -1,0 +1,32 @@
+{
+ "events": [
+  {
+   "event": "reply_thread",
+   "type": "reply_thread",
+   "venue": {
+    "id": "cold-20261012-peckham-arches-peckham-se15-4qn",
+    "name": "Peckham Arches",
+    "town": "Peckham SE15 4QN",
+    "email": "reservations@peckhamarches.com"
+   },
+   "status": "declined-soft",
+   "statusNote": "Haggle's one allowed 2027 reply sent Sat 24 Oct 11:01 BST (Sat 2 Jan, 10 Apr, 6 Nov, 20 Nov 2027, £300). Final: no chase, no re-cold; reply only if Jess writes back.",
+   "badge": "soft no / final 2027 offer sent",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-24T10:01:55Z",
+     "from": "jakeessexenquiries@gmail.com",
+     "subject": "Re: Jake Essex for Peckham Arches?",
+     "body": "Hi Jess, Thanks for getting back to me, totally understand you're full for the next few months. Funny thing is, Jake's in the same boat. He's booked solid for the rest of this year and most of 2027 has gone too. He's only got 5 Saturdays left for the whole of 2027, so it's turned into a bit of a race for dates, first come first served. The ones still open are Sat 2 Jan 2027, Sat 10 Apr 2027, Sat 6 Nov 2027 and Sat 20 Nov 2027. A couple of other venues are looking at them as well, so whoever says yes first gets the date. It's still £300 for two one hour sets. Own PA, no deposit. If one of those works for Peckham Arches, just reply here and I'll lock it in for you. Natalie, Bookings for Jake Essex",
+     "msgId": "1a16d5c1d596f995",
+     "threadId": "1a12f54ce0f03fcb",
+     "gmailMsgId": "1a16d5c1d596f995",
+     "gmailThreadId": "1a12f54ce0f03fcb"
+    }
+   ]
+  }
+ ],
+ "source": "bookings-overnight-prep",
+ "ts": "2026-10-26T05:10:00Z"
+}
