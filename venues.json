@@ -71127,7 +71127,7 @@
     "town": "Rayleigh SS6",
     "postcode": "SS6 7QA",
     "website": "",
-    "contactName": "",
+    "contactName": "Gemma Hovey (Events Manager)",
     "phone": null,
     "needPhone": true,
     "email": "info@thereddoors.co.uk",
@@ -71153,16 +71153,26 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a17d36371612b0e",
         "threadId": "1a1178421c5f4f2a"
+      },
+      {
+        "side": "them",
+        "label": "Reply",
+        "at": "2026-10-27T13:48:53Z",
+        "from": "events@thereddoors.co.uk",
+        "subject": "RE: Jake Essex for The Red Door?",
+        "body": "Thank you for the email Natalie.\n\nI will keep these details on file for 2027 when this may be something that would be of interest.\n\nCan you send me some costs please?\n\nKind Regards\nGemma Hovey\nEvents Manager\nThe Red Door - Rayleigh\n131 High Street, Rayleigh, Essex SS6 7QA",
+        "msgId": "1a17d9f169b5f42a",
+        "threadId": "1a1178421c5f4f2a"
       }
     ],
     "hasThread": true,
-    "replied": "no",
+    "replied": "yes",
     "firstPitch": "7 Oct 2026",
     "subject": "Jake Essex for The Red Door?",
     "badge": "awaiting",
     "lastContact": "2026-10-27",
-    "lastContactSrc": "us 1a17d36371612b0e",
-    "statusNote": "awaiting · FU1 Us Tue 27 Oct 11:54 GMT 1a17d36371612b0e thread 1a1178421c5f4f2a · Gmail-verified · door file JEM 12:00 · folded Nat Board 12:0x 27 Oct · prior: wed-7-oct cold FRESH50 K19 SENT_OK 1a11784204b1276b ~18:58 London thread 1a1178421c5f4f2a · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
+    "lastContactSrc": "them 1a17d9f169b5f42a",
+    "statusNote": "replied-warm · Them Tue 27 Oct 13:48 GMT 1a17d9f169b5f42a from events@thereddoors.co.uk (Gemma Hovey, Events Manager): keeping details on file for 2027, asks for costs · needs costs reply (reply-to events@) · folded Nat Board lag watch 13:5x · prior: awaiting · FU1 Us Tue 27 Oct 11:54 GMT 1a17d36371612b0e thread 1a1178421c5f4f2a · Gmail-verified · door file JEM 12:00 · folded Nat Board 12:0x 27 Oct · prior: wed-7-oct cold FRESH50 K19 SENT_OK 1a11784204b1276b ~18:58 London thread 1a1178421c5f4f2a · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
   },
   {
     "id": "cold-20261007-orpington-gpo-orpington-br6-0ls",
@@ -71284,7 +71294,7 @@
     "needPhone": true,
     "email": "info@harrowknockholt.co.uk",
     "addedAt": "2026-10-07T18:10:21Z",
-    "followUps": "",
+    "followUps": "FU1 27 Oct 2026",
     "messages": [
       {
         "side": "us",
@@ -71295,6 +71305,17 @@
         "body": "Hi,\n\nNatalie here, I look after Jake Essex's bookings. Jake is a professional\nsolo singer from Essex with a proper classic crooner's voice, and the\nHarrow Inn feels like just the place for him. He'd love to come and perform\nfor you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\n50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis &\nmore. He is the act, no tribute, no jumpsuit, no corny impersonations. Own\nPA, fully self contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nNatalie\nBookings for Jake Essex\n07523 924644",
         "msgId": "1a1178f2e3df7643",
         "threadId": "1a1178f2dd87da7d"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-27T13:33:47Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "to": "info@harrowknockholt.co.uk",
+        "subject": "Re: Jake Essex for The Harrow Inn?",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets,\nor £250 a night when you book four. Saturday nights in 2027. If a date\nworks, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a17d9127266278e",
+        "threadId": "1a1178f2dd87da7d"
       }
     ],
     "hasThread": true,
@@ -71302,9 +71323,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Jake Essex for The Harrow Inn?",
     "badge": "awaiting",
-    "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a1178f2e3df7643",
-    "statusNote": "wed-7-oct cold FRESH50 K23 SENT_OK 1a1178f2e3df7643 ~19:10 London thread 1a1178f2dd87da7d · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
+    "lastContact": "2026-10-27",
+    "lastContactSrc": "us 1a17d9127266278e",
+    "statusNote": "awaiting · FU1 Us Tue 27 Oct 13:33 GMT 1a17d9127266278e thread 1a1178f2dd87da7d · Gmail-verified · folded Nat Board lag watch 13:5x (no door file yet) · prior: wed-7-oct cold FRESH50 K23 SENT_OK 1a1178f2e3df7643 ~19:10 London thread 1a1178f2dd87da7d · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
   },
   {
     "id": "cold-20261007-the-theydon-oak-coopersale-cm16-7qj",
@@ -71317,7 +71338,7 @@
     "needPhone": true,
     "email": "info@thetheydonoak.co.uk",
     "addedAt": "2026-10-07T18:14:45Z",
-    "followUps": "",
+    "followUps": "FU1 27 Oct 2026",
     "messages": [
       {
         "side": "us",
@@ -71328,6 +71349,17 @@
         "body": "Hi,\n\nMy name's Natalie and I book Jake Essex. He's a professional solo vocalist\nfrom Essex with a rich, warm voice made for the classics, and he'd be a\nlovely fit for the Theydon Oak. He'd love to come and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\n50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis &\nmore. He is the act, no tribute, no jumpsuit, no corny impersonations. Own\nPA, fully self contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nNatalie\nBookings for Jake Essex\n07523 924644",
         "msgId": "1a117933635ba33b",
         "threadId": "1a11793345fc0f46"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-27T13:45:15Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "to": "info@thetheydonoak.co.uk",
+        "subject": "Re: Live music at The Theydon Oak",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets,\nor £250 a night when you book four. Saturday nights in 2027. If a date\nworks, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a17d9ba88cff181",
+        "threadId": "1a11793345fc0f46"
       }
     ],
     "hasThread": true,
@@ -71335,9 +71367,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Live music at The Theydon Oak",
     "badge": "awaiting",
-    "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a117933635ba33b",
-    "statusNote": "wed-7-oct cold FRESH50 K24 SENT_OK 1a117933635ba33b ~19:14 London thread 1a11793345fc0f46 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
+    "lastContact": "2026-10-27",
+    "lastContactSrc": "us 1a17d9ba88cff181",
+    "statusNote": "awaiting · FU1 Us Tue 27 Oct 13:45 GMT 1a17d9ba88cff181 thread 1a11793345fc0f46 · Gmail-verified · folded Nat Board lag watch 13:5x (no door file yet) · prior: wed-7-oct cold FRESH50 K24 SENT_OK 1a117933635ba33b ~19:14 London thread 1a11793345fc0f46 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
   },
   {
     "id": "cold-20261007-the-woodman-farnborough-br6-7ba",
@@ -71350,7 +71382,7 @@
     "needPhone": true,
     "email": "hk@the-woodman.co.uk",
     "addedAt": "2026-10-07T18:20:05Z",
-    "followUps": "",
+    "followUps": "FU1 27 Oct 2026",
     "messages": [
       {
         "side": "us",
@@ -71361,6 +71393,17 @@
         "body": "Hi,\n\nI'm Natalie, I look after bookings for Jake Essex. He's a professional solo\nvocalist from Essex, and his voice was made for the great songs of the 50s\nand 60s, and I thought of the Woodman for him straight away. He'd love to\ncome and perform for you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\n50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis &\nmore. He is the act, no tribute, no jumpsuit, no corny impersonations. Own\nPA, fully self contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nNatalie\nBookings for Jake Essex\n07523 924644",
         "msgId": "1a1179818e5c9ed7",
         "threadId": "1a11797f267f4213"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-27T13:49:26Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "to": "hk@the-woodman.co.uk",
+        "subject": "Re: Jake Essex for The Woodman?",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets,\nor £250 a night when you book four. Saturday nights in 2027. If a date\nworks, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a17d9f7cafbf7a5",
+        "threadId": "1a11797f267f4213"
       }
     ],
     "hasThread": true,
@@ -71368,9 +71411,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Jake Essex for The Woodman?",
     "badge": "awaiting",
-    "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a1179818e5c9ed7",
-    "statusNote": "wed-7-oct cold FRESH50 K25 SENT_OK 1a1179818e5c9ed7 ~19:20 London thread 1a11797f267f4213 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
+    "lastContact": "2026-10-27",
+    "lastContactSrc": "us 1a17d9f7cafbf7a5",
+    "statusNote": "awaiting · FU1 Us Tue 27 Oct 13:49 GMT 1a17d9f7cafbf7a5 thread 1a11797f267f4213 · Gmail-verified · folded Nat Board lag watch 13:5x (no door file yet) · prior: wed-7-oct cold FRESH50 K25 SENT_OK 1a1179818e5c9ed7 ~19:20 London thread 1a11797f267f4213 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
   },
   {
     "id": "cold-20261007-the-kings-oak-high-beach-ig10-4ae",
@@ -71383,7 +71426,7 @@
     "needPhone": true,
     "email": "info@kingsoakhotel.com",
     "addedAt": "2026-10-07T18:22:27Z",
-    "followUps": "",
+    "followUps": "FU1 27 Oct 2026",
     "messages": [
       {
         "side": "us",
@@ -71394,6 +71437,17 @@
         "body": "Hi,\n\nI'm Natalie and I handle bookings for Jake Essex. Jake is a professional\nsolo singer from Essex with a proper classic crooner's voice, and he's\nlooking for new venues like the Kings Oak. He'd love to come and perform\nfor you.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\n50s, 60s and into the 70s: Darin, Dion, Holly, Orbison, Sinatra, Elvis &\nmore. He is the act, no tribute, no jumpsuit, no corny impersonations. Own\nPA, fully self contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nFriday nights, Saturdays, Sundays and functions this year and into 2027. If\na date works, reply here and I'll lock it.\n\nNatalie\nBookings for Jake Essex\n07523 924644",
         "msgId": "1a1179a431ce8a04",
         "threadId": "1a1179a415363fd6"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-27T13:39:05Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "to": "info@kingsoakhotel.com",
+        "subject": "Re: Live music at The Kings Oak",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets,\nor £250 a night when you book four. Saturday nights in 2027. If a date\nworks, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a17d96030767a64",
+        "threadId": "1a1179a415363fd6"
       }
     ],
     "hasThread": true,
@@ -71401,9 +71455,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Live music at The Kings Oak",
     "badge": "awaiting",
-    "lastContact": "2026-10-07",
-    "lastContactSrc": "us 1a1179a431ce8a04",
-    "statusNote": "wed-7-oct cold FRESH50 K26 SENT_OK 1a1179a431ce8a04 ~19:22 London thread 1a1179a415363fd6 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
+    "lastContact": "2026-10-27",
+    "lastContactSrc": "us 1a17d96030767a64",
+    "statusNote": "awaiting · FU1 Us Tue 27 Oct 13:39 GMT 1a17d96030767a64 thread 1a1179a415363fd6 · Gmail-verified · folded Nat Board lag watch 13:5x (no door file yet) · prior: wed-7-oct cold FRESH50 K26 SENT_OK 1a1179a431ce8a04 ~19:22 London thread 1a1179a415363fd6 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
   },
   {
     "id": "cold-20261009-st-crispin-social-club-duston-northampton-nn5",
@@ -79885,5 +79939,40 @@
     ],
     "lastContact": "2026-10-26",
     "lastContactSrc": "us 1a1779c14c790333"
+  },
+  {
+    "id": "cold-20261027-the-black-horse-bean-dartford-da2-8as",
+    "name": "The Black Horse",
+    "town": "Bean DA2",
+    "postcode": "DA2 8AS",
+    "website": "",
+    "contactName": "",
+    "phone": "01474 709379",
+    "needPhone": false,
+    "email": "demi_pitt@hotmail.co.uk",
+    "addedAt": "2026-10-27T13:24:15Z",
+    "followUps": "",
+    "prospect": false,
+    "badge": "awaiting",
+    "replied": "no",
+    "hasThread": true,
+    "firstPitch": "27 Oct 2026",
+    "subject": "Jake Essex for The Black Horse?",
+    "statusNote": "cold 27 Oct Us cold 1a17d886f1a9ccf8 13:24 GMT thread 1a17d886f81c2663 · awaiting · bands Fri/Sat 8:30pm · Gmail-verified · door file Bookings 13:30 · folded Nat Board lag watch 13:5x",
+    "messages": [
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-10-27T13:24:15Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "to": "demi_pitt@hotmail.co.uk",
+        "subject": "Jake Essex for The Black Horse?",
+        "body": "Hi,\n\nI'm Natalie. I look after bookings for Jake Essex.\n\nJake would be a great fit for The Black Horse, and he'd love to come and\nperform for you. A friendly village pub on a Saturday night is exactly\nwhere he's at his best.\n\nHe's performed in over 500 venues over the past 10 years and built a good\nreputation for singing the classics without the corny impersonation. He's\nbranching out to new venues now.\n\nJake is a professional solo vocalist from Essex. 50s, 60s and into the 70s:\nDarin, Dion, Holly, Orbison, Sinatra, Elvis & more. He is the act. No\ntribute, no jumpsuit, no corny impersonations. Own PA, fully\nself-contained, no deposit.\n\nHave a look: www.jakeessex.co.uk\n\nSaturday nights in 2027. If a date works, just reply here and I'll lock it\nin.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a17d886f1a9ccf8",
+        "threadId": "1a17d886f81c2663"
+      }
+    ],
+    "lastContact": "2026-10-27",
+    "lastContactSrc": "us 1a17d886f1a9ccf8"
   }
 ]

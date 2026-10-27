@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "event": "new_lead",
+   "type": "new_lead",
+   "venue": {
+    "id": "cold-20261027-the-black-horse-bean-dartford-da2-8as",
+    "name": "The Black Horse",
+    "town": "Bean, Dartford DA2 8AS",
+    "email": "demi_pitt@hotmail.co.uk",
+    "phone": "01474 709379"
+   },
+   "status": "awaiting",
+   "replied": "no",
+   "statusNote": "Cold SENT_OK 27 Oct 13:24 GMT; bands Fri/Sat 8:30pm.",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-27T13:24:15Z",
+     "subject": "Jake Essex for The Black Horse?",
+     "body": "Natalie cold (Saturday nights in 2027).",
+     "msgId": "1a17d886f1a9ccf8",
+     "threadId": "1a17d886f81c2663",
+     "gmailMsgId": "1a17d886f1a9ccf8",
+     "gmailThreadId": "1a17d886f81c2663",
+     "from": "jakeessexenquiries@gmail.com"
+    }
+   ]
+  }
+ ],
+ "source": "bookings-cold-fold",
+ "ts": "2026-10-27T13:30:00Z"
+}
