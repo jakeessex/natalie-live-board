@@ -1,0 +1,54 @@
+{
+ "events": [
+  {
+   "event": "reply_thread",
+   "type": "reply_thread",
+   "venue": {
+    "id": "dunstable-united-services-club",
+    "name": "Dunstable United Services Club",
+    "town": "Dunstable",
+    "email": "unitedservicesdunstable@outlook.com"
+   },
+   "statusNote": "Haggle day-7 chase 27 Oct 09:46 GMT to Yvonne Farrell (buzz.yvonne@ntlworld.com). Sat 10 Apr + 16 Oct 2027; price held. No further chase scheduled.",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-27T09:46:30Z",
+     "subject": "Re: United Services Club Dunstable",
+     "body": "Day-7 chase: Sat 10 Apr and Sat 16 Oct 2027 free; £300 2x1hr / £250 x4; 3 sets £350 / £300 x4.",
+     "msgId": "1a17cc11412baf67",
+     "threadId": "1a15186c4307f1ba",
+     "gmailMsgId": "1a17cc11412baf67",
+     "gmailThreadId": "1a15186c4307f1ba",
+     "from": "jakeessexenquiries@gmail.com"
+    }
+   ]
+  },
+  {
+   "event": "reply_thread",
+   "type": "reply_thread",
+   "venue": {
+    "id": "cold-20261008-winnersh-royal-british-legion-winnersh-rg41",
+    "name": "Winnersh Royal British Legion",
+    "town": "Winnersh RG41",
+    "email": "WRBL41@outlook.com"
+   },
+   "statusNote": "Haggle day-7 chase 27 Oct 09:47 GMT. Sat 10 Apr + 16 Oct 2027; price held. No further chase scheduled. Pacing breach 34 s vs Dunstable (logged).",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-27T09:47:04Z",
+     "subject": "Re: Jake Essex for Winnersh Royal British Legion?",
+     "body": "Day-7 chase: Sat 10 Apr and Sat 16 Oct 2027 free; £300 2x1hr / £250 x4; 3 sets £350 / £300 x4.",
+     "msgId": "1a17cc196de2946f",
+     "threadId": "1a11b0dcafe7e7b9",
+     "gmailMsgId": "1a17cc196de2946f",
+     "gmailThreadId": "1a11b0dcafe7e7b9",
+     "from": "jakeessexenquiries@gmail.com"
+    }
+   ]
+  }
+ ],
+ "source": "bookings-day7-fold",
+ "ts": "2026-10-27T09:52:00Z"
+}
