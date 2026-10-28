@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "event": "reply_thread",
+   "type": "reply_thread",
+   "venue": {
+    "id": "cold-20261007-the-red-door-rayleigh-ss6-7qa",
+    "name": "The Red Door",
+    "town": "Rayleigh SS6 7QA",
+    "email": "info@thereddoors.co.uk"
+   },
+   "status": "quoted",
+   "statusNote": "Quoted 28 Oct: £300 2x1hr invoiced via JAKE ESSEX MUSIC LTD after event, bank transfer, same Sun/Thu; Thursdays need notice. Awaiting dates.",
+   "messages": [
+    {
+     "side": "us",
+     "at": "2026-10-28T12:58:19Z",
+     "subject": "Re: Jake Essex for The Red Door?",
+     "body": "Hi Gemma, Yes, that's no problem at all. Jake invoices from JAKE ESSEX MUSIC LTD after the event, payable by bank transfer. The fee is £300 for two one hour sets, and that's the same for a Sunday or a Thursday. Jake has a day job as an RAC mobile mechanic, so for Thursdays he just needs a few months' notice to book the day off. If you let me know which dates you're thinking of, I'll check his diary and hold them for you. Natalie, Bookings for Jake Essex",
+     "msgId": "1a182970e7f8befc",
+     "threadId": "1a1178421c5f4f2a",
+     "gmailMsgId": "1a182970e7f8befc",
+     "gmailThreadId": "1a1178421c5f4f2a",
+     "from": "jakeessexenquiries@gmail.com"
+    }
+   ]
+  }
+ ],
+ "source": "bookings-reddoor-fold",
+ "ts": "2026-10-28T13:02:00Z"
+}
