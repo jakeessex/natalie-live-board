@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "event": "reply",
+   "venue": {
+    "id": "cold-20261007-hemingford-arms-islington-n1",
+    "name": "Hemingford Arms",
+    "town": "Islington N1",
+    "email": "enquiries@hemingfordarms.com",
+    "badge": "declined",
+    "replied": "yes \u2014 Ben (Hemingford Arms) decline 27 Oct 21:01 GMT",
+    "statusNote": "Cold 7 Oct Us 1a1168f6c10ad998 \u00b7 FU1 26 Oct Us 1a1787548f4a4730 \u00b7 Them 1a17f2aea90ebf5a 27 Oct 21:01 GMT: house band every Saturday; payments via approved agency GigRealm. Hard decline, never chase or re-cold. Folded Bookings overnight 28 Oct 04:55. \u00b7 board-folded Nat Board 0900 audit 28 Oct",
+    "lastContact": "2026-10-27",
+    "lastContactSrc": "them 1a17f2aea90ebf5a"
+   },
+   "messages": [
+    {
+     "side": "them",
+     "at": "2026-10-27T21:01:14Z",
+     "from": "enquiries@hemingfordarms.com",
+     "subject": "Re: [EXTERNAL] Re: Live music at Hemingford Arms",
+     "body": "Hi Natalie,\nThank you for following up and for sending over the details.\nWe already have a band that performs every Saturday night, so unfortunately, we wouldn't be looking to book any additional entertainment at the moment.\nAs far as I'm aware, any payments for entertainment bookings would need to be processed through our approved company, GigRealm.\nThank you again for reaching out.\nKind regards,\nBen\nHemingford Arms",
+     "msgId": "1a17f2aea90ebf5a",
+     "threadId": "1a1168f6b533d334",
+     "gmailMsgId": "1a17f2aea90ebf5a",
+     "gmailThreadId": "1a1168f6b533d334"
+    }
+   ]
+  }
+ ],
+ "source": "nat-board-0900-audit",
+ "ts": "2026-10-28T09:25:00Z"
+}

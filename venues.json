@@ -67999,16 +67999,25 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a1787548f4a4730",
         "threadId": "1a1168f6b533d334"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-10-27T21:01:14Z",
+        "from": "enquiries@hemingfordarms.com",
+        "subject": "Re: [EXTERNAL] Re: Live music at Hemingford Arms",
+        "body": "Hi Natalie,\nThank you for following up and for sending over the details.\nWe already have a band that performs every Saturday night, so unfortunately, we wouldn't be looking to book any additional entertainment at the moment.\nAs far as I'm aware, any payments for entertainment bookings would need to be processed through our approved company, GigRealm.\nThank you again for reaching out.\nKind regards,\nBen\nHemingford Arms"
       }
     ],
     "hasThread": true,
-    "replied": "no",
+    "replied": "yes",
     "firstPitch": "7 Oct 2026",
-    "badge": "awaiting",
+    "badge": "declined",
     "subject": "Live music at Hemingford Arms",
-    "lastContact": "2026-10-26",
-    "lastContactSrc": "us 1a1787548f4a4730",
-    "statusNote": "awaiting · FU1 Us Mon 26 Oct 13:45 GMT 1a1787548f4a4730 thread 1a1168f6b533d334 · Gmail-verified · folded Nat Board lag watch 14:5x (door file JEM 13:56) · prior: wed-7-oct cold natalie-cold-waveD SENT_OK 1a1168f6c10ad998 ~14:31 London thread 1a1168f6b533d334 · awaiting · Gmail-verified · folded 1600 audit 7 Oct"
+    "lastContact": "2026-10-27",
+    "lastContactSrc": "them 1a17f2aea90ebf5a",
+    "statusNote": "declined · Them Tue 27 Oct 21:01 GMT 1a17f2aea90ebf5a (Ben): house band every Saturday; payments via approved agency GigRealm. Hard decline, never chase or re-cold · folded Nat Board 0900 audit 28 Oct (Bookings MASTER fold 04:55) · prior: awaiting · FU1 Us Mon 26 Oct 13:45 GMT 1a1787548f4a4730 thread 1a1168f6b533d334 · Gmail-verified · folded Nat Board lag watch 14:5x (door file JEM 13:56) · prior: wed-7-oct cold natalie-cold-waveD SENT_OK 1a1168f6c10ad998 ~14:31 London thread 1a1168f6b533d334 · awaiting · Gmail-verified · folded 1600 audit 7 Oct",
+    "prospect": false
   },
   {
     "id": "cold-20261007-westow-house-crystal-palace-se19",
