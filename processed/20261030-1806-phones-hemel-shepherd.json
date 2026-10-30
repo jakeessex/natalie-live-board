@@ -1,0 +1,32 @@
+{
+ "events": [
+  {
+   "event": "note_patch",
+   "type": "note_patch",
+   "venue": {
+    "id": "cold-20261008-royal-british-legion-club-hemel-hempstead-hemel-hempstead-hp2",
+    "name": "Royal British Legion Club Hemel Hempstead",
+    "town": "Hemel Hempstead HP2",
+    "email": "hhrbl@uwclub.net"
+   },
+   "phone": "01442 242389",
+   "statusNote": "Phone 01442 242389 (RBL branch page). CALL lane, Haggle P19.",
+   "messages": []
+  },
+  {
+   "event": "note_patch",
+   "type": "note_patch",
+   "venue": {
+    "id": "shepherd-and-dog",
+    "name": "Shepherd & Dog",
+    "town": "Crays Hill",
+    "email": "shepherdanddogcrayshill@gmail.com"
+   },
+   "phone": "01268 521967",
+   "statusNote": "Phone 01268 521967 confirmed (theshepherd.pub). CALL lane, Haggle P18.",
+   "messages": []
+  }
+ ],
+ "source": "bookings-phones-30oct",
+ "ts": "2026-10-30T18:05:00Z"
+}

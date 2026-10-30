@@ -1,0 +1,19 @@
+{
+ "events": [
+  {
+   "event": "note_patch",
+   "type": "note_patch",
+   "venue": {
+    "id": "cold-20261008-royal-british-legion-club-hemel-hempstead-hemel-hempstead-hp2",
+    "name": "Royal British Legion Club Hemel Hempstead",
+    "town": "Hemel Hempstead HP2",
+    "email": "hhrbl@uwclub.net"
+   },
+   "status": "awaiting",
+   "statusNote": "awaiting VC contact (quiet since 23 Oct). CALL Natalie, Sat 16 Oct 2027 offered (4-way, first to confirm). No more email (Haggle P19). NEED_PHONE.",
+   "messages": []
+  }
+ ],
+ "source": "bookings-status-30oct",
+ "ts": "2026-10-30T18:05:00Z"
+}
