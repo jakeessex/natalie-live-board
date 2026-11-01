@@ -5,20 +5,17 @@
  "source": "JEM refresh Fri 30 Oct 2026: only venues that never replied by email or went quiet 14+ days (no live email threads). Once-interested quiet first (clubs, warmest, most recent interest), then never-replied clubs (longest silence). Real phone required. Built by /workspace/deck-refresh/build_calls.py",
  "freeNights": [
   {
-   "month": "Nov",
-   "nights": "Sat 7 Nov (Sutton Social released it) · Sun 15, 22 Nov"
-  },
-  {
-   "month": "Dec",
-   "nights": "Sun 27 Dec (Sun 20 Dec now taken; NYE is booked)"
+   "month": "2026",
+   "nights": "No more 2026 bookings (Jake, 1 Nov). Do not offer Sat 7 Nov, Sun 15/22 Nov or Sun 27 Dec."
   },
   {
    "month": "2027",
-   "nights": "Saturdays: 2 Jan · 10 Apr · 16 Oct · 6, 20 Nov (6 Mar is booked for Royal Oak; 11 Sep is booked for Railway Tavern; 27 Mar, 5 Jun and 11 Dec are pencilled for Sutton Social; May, Jul and Aug fully booked)"
+   "nights": "Saturdays: 20 Nov (6 Mar is booked for Royal Oak; 11 Sep is booked for Railway Tavern; 27 Mar, 5 Jun and 11 Dec are pencilled for Sutton Social; May, Jul and Aug fully booked). NOT FREE, Jake blocked Fri-Sun: 1-3 Jan, 9-11 Apr, 23-25 Apr, 25-27 Jun, 15-17 Oct, 5-7 Nov 2027."
   }
  ],
  "rules": [
   "Check both calendars before offering any date.",
+  "Never offer Jake's blocked 2027 weekends (Fri-Sun 1-3 Jan, 9-11 Apr, 23-25 Apr, 25-27 Jun, 15-17 Oct, 5-7 Nov) and take no more 2026 bookings.",
   "New price: £300 cash for one night of 2 x 1 hour, or £250 a night if they book four dates. Never £250 for a single night and never below £250.",
   "A quote already given stands as quoted. Never restate a fee already agreed.",
   "Cash or books fee only. Never ticket or door deals.",
@@ -46,7 +43,7 @@
    "lastMsg": "Rebecca replied 21 Oct 10:14: \"Thank you, I will let you know.\" (second soft reply, no date picked).",
    "days": 9,
    "daysNote": "since their last email",
-   "why": "Replied soft twice with no date. No more email, so Nat to call Rebecca and ask which date suits: Sat 7 Nov, Sun 15 or 22 Nov, Sun 27 Dec, or a 2027 Saturday from the intro card.",
+   "why": "Replied soft twice with no date. No more email, so Nat to call Rebecca and ask which 2027 Saturday suits (check both calendars; Sat 20 Nov 2027 is free). 2 Jan, 10 Apr, 16 Oct and 6 Nov 2027 are NOT FREE (Jake blocked weekend); no more 2026 bookings.",
    "flags": [],
    "note": "Replied soft on 21 Oct ('will let you know'), quote held at £250 / £375, Nat to call.",
    "venueId": "shepherd-and-dog",
@@ -71,10 +68,10 @@
    "quote": "23 Oct: £300 / £250 a night for four (3 sets £350 / £300 for four). That quote stands.",
    "lastWho": "Us",
    "lastDate": "23 Oct",
-   "lastMsg": "Melissa said on 22 Oct she had passed us to the Vice Chairman, who does entertainment bookings. We replied 23 Oct asking for his name and email or number, with rates and Sat 16 Oct 2027. Nothing since.",
+   "lastMsg": "Melissa said on 22 Oct she had passed us to the Vice Chairman, who does entertainment bookings. We replied 23 Oct asking for his name and email or number, with rates and Sat 16 Oct 2027 (now NOT FREE, Jake blocked weekend). Nothing since.",
    "days": "7",
    "daysNote": "since our last email",
-   "why": "Royal British Legion club, where Jake goes down best. Ring and ask for the Vice Chairman by name, then offer a Saturday. Sat 16 Oct 2027 was offered on 23 Oct but check both calendars before confirming any date. No more email (Haggle P19).",
+   "why": "Royal British Legion club, where Jake goes down best. Ring and ask for the Vice Chairman by name, then offer a Saturday. Sat 16 Oct 2027 was offered on 23 Oct but is now NOT FREE (Jake blocked weekend): withdraw it and offer another 2027 Saturday after checking both calendars. No more email (Haggle P19).",
    "flags": [],
    "note": "PHONE CHASE: get the Vice Chairman's name and number, offer a Saturday. · Last contact: 23 Oct (Us)",
    "venueId": "cold-20261008-royal-british-legion-club-hemel-hempstead-hemel-hempstead-hp2",
@@ -102,7 +99,7 @@
    "lastMsg": "Jaela loved Jake's sound and was open to booking, but busy with events for about two months. Natalie rang on 2 Oct and they said they would confirm.",
    "days": "51",
    "daysNote": "since their last email",
-   "why": "She asked for a call and for prices, and her busy spell ends around early November. Over two weeks since they said they would confirm, so ring Jaela, ask which date suits, and offer a Sunday (15, 22 Nov; 27 Dec) or Sat 7 Nov (free again) or a 2027 Saturday. Local.",
+   "why": "She asked for a call and for prices, and her busy spell ends around early November. Over two weeks since they said they would confirm, so ring Jaela, ask which date suits, and offer a 2027 Saturday (Sat 20 Nov 2027 is free; check both calendars). 2 Jan, 10 Apr, 16 Oct and 6 Nov 2027 are NOT FREE (Jake blocked weekend); no more 2026 bookings. Local.",
    "flags": [],
    "note": "PHONE CHASE: Nat's 2 Oct note says Jaela will confirm. Nothing has come in since. Ask Jaela if she has a date and the rates/set length to agree. · Last contact: 9 Sep (email) · Natalie's call 2 Oct: they will confirm.",
    "venueId": "the-muddy-duck",
@@ -135,7 +132,7 @@
    "lastMsg": "She loved it, would put it to the committee and asked for Saturdays.",
    "days": "59",
    "daysNote": "",
-   "why": "Royal British Legion club, where Jake goes down best. Siobhan was taking Jake to the committee and asked for Saturdays. Natalie left a voicemail on 2 Oct. Sat 7 Nov is free again, otherwise offer Sat 2 Jan or a 2027 Saturday from the intro card.",
+   "why": "Royal British Legion club, where Jake goes down best. Siobhan was taking Jake to the committee and asked for Saturdays. Natalie left a voicemail on 2 Oct. Offer a 2027 Saturday (Sat 20 Nov 2027 is free; check both calendars). 2 Jan, 10 Apr, 16 Oct and 6 Nov 2027 are NOT FREE (Jake blocked weekend); no more 2026 bookings.",
    "flags": [],
    "note": "PHONE CHASE: two voicemails on 2 Oct asking if they want to secure a date. Siobhan was taking it to committee (1 Sep). Ask what the committee decided and offer a date. · Last contact: 9 Sep (Us) · Natalie left a voicemail on 2 Oct, no call back yet.",
    "venueId": "broomfield-rbl",
@@ -219,7 +216,7 @@
    "lastMsg": "Ali asked for a Saturday night price for the committee on 30 Sep and we quoted the same day. We chased on 15 Oct and Ali said they had a separate entertainment meeting on Fri 16 Oct and would come back after. Nothing since.",
    "days": "15",
    "daysNote": "",
-   "why": "Working men's club that asked the Saturday fee for its committee. Their entertainment meeting was on Fri 16 Oct and two weeks on nobody has come back, so ring Ali for the verdict and offer a Saturday from the intro card (Sat 7 Nov is free, or 2 Jan, 10 Apr, 16 Oct, 6 or 20 Nov 2027). Do not restate the fee unless she asks.",
+   "why": "Working men's club that asked the Saturday fee for its committee. Their entertainment meeting was on Fri 16 Oct and two weeks on nobody has come back, so ring Ali for the verdict and offer a Saturday from the intro card (Sat 20 Nov 2027 is free; 2 Jan, 10 Apr, 16 Oct and 6 Nov 2027 are NOT FREE (Jake blocked weekend); no more 2026 bookings). Do not restate the fee unless she asks.",
    "flags": [],
    "note": "Last contact: 15 Oct (Them)",
    "venueId": "batch700-exning-road-working-men-s-club-newmarket",
