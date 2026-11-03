@@ -1622,8 +1622,8 @@ var NatNotes = (function(exports) {
   try{ reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches; }catch(e){}
   function pal(){
     if(mode==="denied") return {fill:"#ff5a4e",head:"#ffe8e4",dim:"#7a2a24"};
-    if(mode==="granted"||mode==="egg") return {fill:"#ffd76a",head:"#fff6d0",dim:"#8a6a28"};
-    return {fill:"#3dff6a",head:"#f4fff6",dim:"#146632"};
+    if(mode==="granted"||mode==="egg") return {fill:"#5eead4",head:"#e7fffb",dim:"#0f6e66"};
+    return {fill:"#2ee6c8",head:"#e7fffb",dim:"#0f6e66"};
   }
   function resize(){
     var dpr=Math.min(window.devicePixelRatio||1,2);
@@ -1639,7 +1639,7 @@ var NatNotes = (function(exports) {
       speeds.push(0.55+Math.random()*1.35);
       words.push(i%7===0?WORDS[i%WORDS.length]:"");
     }
-    g.fillStyle="#070806"; g.fillRect(0,0,w,h);
+    g.fillStyle="#070b16"; g.fillRect(0,0,w,h);
   }
   function tick(now){
     if(!running) return;
@@ -2891,7 +2891,7 @@ var NatNotes = (function(exports) {
   function ringSvg(pct) {
     var r = 34, c = 2 * Math.PI * r;
     var dash = (Math.max(0, Math.min(100, pct)) / 100) * c;
-    return '<svg viewBox="0 0 80 80" width="72" height="72" aria-hidden="true"><circle cx="40" cy="40" r="34" fill="none" stroke="#5a3d20" stroke-width="6"/><circle cx="40" cy="40" r="34" fill="none" stroke="#ffd76a" stroke-width="6" stroke-linecap="round" stroke-dasharray="' + dash.toFixed(1) + " " + c.toFixed(1) + '" transform="rotate(-90 40 40)"/><text x="40" y="44" text-anchor="middle" fill="#ffd76a" font-size="13" font-weight="700">' + Math.round(pct) + "%</text></svg>";
+    return '<svg viewBox="0 0 80 80" width="72" height="72" aria-hidden="true"><circle cx="40" cy="40" r="34" fill="none" stroke="#14645e" stroke-width="6"/><circle cx="40" cy="40" r="34" fill="none" stroke="#5eead4" stroke-width="6" stroke-linecap="round" stroke-dasharray="' + dash.toFixed(1) + " " + c.toFixed(1) + '" transform="rotate(-90 40 40)"/><text x="40" y="44" text-anchor="middle" fill="#5eead4" font-size="13" font-weight="700">' + Math.round(pct) + "%</text></svg>";
   }
 
   function statHtml(label, value, hint, tone, nav) {
@@ -2983,15 +2983,15 @@ var NatNotes = (function(exports) {
           var mk = L.circleMarker(p.ll, {
             radius: 6,
             weight: 1,
-            color: "#14110e",
-            fillColor: st === "NEW_EMAIL" ? "#b6f2c4" : "#ffd76a",
+            color: "#10192e",
+            fillColor: st === "NEW_EMAIL" ? "#b6f2c4" : "#5eead4",
             fillOpacity: 0.95
           });
           mk.bindTooltip(p.row.venue.name + (p.row.venue.town ? " · " + p.row.venue.town : ""), { direction: "top", opacity: 1 });
           mk.on("click", function () { window.natOpen(p.row.venue.id); });
           mk.addTo(map);
         });
-        L.circleMarker(home, { radius: 7, weight: 2, color: "#fff", fillColor: "#e8b84a", fillOpacity: 1 })
+        L.circleMarker(home, { radius: 7, weight: 2, color: "#fff", fillColor: "#2dd4bf", fillOpacity: 1 })
           .bindTooltip("South Ockendon", { direction: "top", opacity: 1 })
           .addTo(map);
         var bounds = L.latLngBounds(near.map(function (p) { return p.ll; }).concat([home]));
