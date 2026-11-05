@@ -2106,7 +2106,7 @@
     "replied": "no",
     "firstPitch": "",
     "addedAt": "2026-10-09T15:37:59.844Z",
-    "followUps": "FU1 29 Oct 2026",
+    "followUps": "FU2 5 Nov 2026",
     "subject": "Jake Essex for The Cork Dork?",
     "messages": [
       {
@@ -2129,12 +2129,22 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a187f064b3012f4",
         "threadId": "1a12075e97c9fab2"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T15:25:08Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for The Cork Dork?",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1ac5054286c64f",
+        "threadId": "1a12075e97c9fab2"
       }
     ],
     "hasThread": true,
-    "lastContact": "2026-10-29",
-    "lastContactSrc": "us 1a187f064b3012f4",
-    "statusNote": "awaiting · FU1 Us Thu 29 Oct 13:54 GMT 1a187f064b3012f4 thread 1a12075e97c9fab2 · Gmail-verified · door 20261029-1400-fuC · folded Nat Board lag watch 14:4x · prior: "
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1ac5054286c64f",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 15:25 GMT 1a1ac5054286c64f thread 1a12075e97c9fab2 · Wave 4 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 15:4x 5 Nov · prior: awaiting · FU1 Us Thu 29 Oct 13:54 GMT 1a187f064b3012f4 thread 1a12075e97c9fab2 · Gmail-verified · door 20261029-1400-fuC · folded Nat Board lag watch 14:4x · prior: "
   },
   {
     "id": "cold-20261009-the-restoration-sevenoaks-tn13",
@@ -32833,6 +32843,16 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Jake Essex for Nevendon Centre?",
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets,\nor £250 a night when you book four. Saturday nights in 2027. He's free\nSat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a\ndate works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T11:39:08Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Nevendon Centre?",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1ab816d8074ee0",
+        "threadId": "1a11ab1612da5e4c"
       }
     ],
     "addedAt": "2026-09-23",
@@ -32842,10 +32862,10 @@
     "replied": "no",
     "firstPitch": "8 Oct 2026",
     "subject": "Jake Essex for Nevendon Centre?",
-    "lastContact": "2026-10-21",
-    "lastContactSrc": "us 1a15e1552f0d1e61",
-    "statusNote": "awaiting · FU1 Us Wed 21 Oct 11:50 BST 1a15e1552f0d1e61 thread 1a11ab1612da5e4c · Gmail-verified · folded Nat Board lag watch 12:4x · prior: thu-8-oct cold WAVE A SENT_OK 1a11ab17ffe4e31e ~09:46 London thread 1a11ab1612da5e4c · awaiting · Gmail-verified · folded 1500 8 Oct · was prospect",
-    "followUps": "FU1 21 Oct 2026"
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1ab816d8074ee0",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 11:39 GMT 1a1ab816d8074ee0 thread 1a11ab1612da5e4c · Wave 2 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 15:4x 5 Nov · prior: awaiting · FU1 Us Wed 21 Oct 11:50 BST 1a15e1552f0d1e61 thread 1a11ab1612da5e4c · Gmail-verified · folded Nat Board lag watch 12:4x · prior: thu-8-oct cold WAVE A SENT_OK 1a11ab17ffe4e31e ~09:46 London thread 1a11ab1612da5e4c · awaiting · Gmail-verified · folded 1500 8 Oct · was prospect",
+    "followUps": "FU2 5 Nov 2026"
   },
   {
     "id": "pot-greenwich-town-social-club-inst-se10-0an",
@@ -71288,7 +71308,7 @@
     "needPhone": true,
     "email": "info@thatchedhousepub.co.uk",
     "addedAt": "2026-10-07T16:08:03Z",
-    "followUps": "FU1 26 Oct 2026",
+    "followUps": "FU2 5 Nov 2026",
     "messages": [
       {
         "side": "us",
@@ -71317,6 +71337,16 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Live music at The Thatched House",
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets,\nor £250 a night when you book four. Saturday nights in 2027. He's free\nSat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a\ndate works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T11:53:32Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music at The Thatched House",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1ab8e9dac2338a",
+        "threadId": "1a1171f37ce5c09a"
       }
     ],
     "hasThread": false,
@@ -71324,9 +71354,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Live music at The Thatched House",
     "badge": "awaiting",
-    "lastContact": "2026-10-26",
-    "lastContactSrc": "us 1a178d67cac61620",
-    "statusNote": "awaiting · FU1 Us Mon 26 Oct 15:31 GMT 1a178d67cac61620 thread 1a1171f37ce5c09a · Gmail-verified · folded Nat Board 1600 audit (door file JEM 16:00 fuD) · prior: wed-7-oct cold FRESH50 K4 SENT_OK 1a1171f3f185f23e ~17:08 London thread 1a1171f37ce5c09a · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)",
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1ab8e9dac2338a",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 11:53 GMT 1a1ab8e9dac2338a thread 1a1171f37ce5c09a · Wave 2 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 15:4x 5 Nov · prior: awaiting · FU1 Us Mon 26 Oct 15:31 GMT 1a178d67cac61620 thread 1a1171f37ce5c09a · Gmail-verified · folded Nat Board 1600 audit (door file JEM 16:00 fuD) · prior: wed-7-oct cold FRESH50 K4 SENT_OK 1a1171f3f185f23e ~17:08 London thread 1a1171f37ce5c09a · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)",
     "prospect": false
   },
   {
@@ -71425,7 +71455,7 @@
     "needPhone": true,
     "email": "enquiries@thetopoak.co.uk",
     "addedAt": "2026-10-07T16:23:59Z",
-    "followUps": "FU1 26 Oct 2026",
+    "followUps": "FU2 5 Nov 2026",
     "messages": [
       {
         "side": "us",
@@ -71454,6 +71484,16 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Live music at The Top Oak",
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets,\nor £250 a night when you book four. Saturday nights in 2027. He's free\nSat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a\ndate works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T11:42:49Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music at The Top Oak",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1ab84cd9875624",
+        "threadId": "1a1172dca26c9072"
       }
     ],
     "hasThread": false,
@@ -71461,9 +71501,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Live music at The Top Oak",
     "badge": "awaiting",
-    "lastContact": "2026-10-26",
-    "lastContactSrc": "us 1a178df19d655c93",
-    "statusNote": "awaiting · FU1 Us Mon 26 Oct 15:40 GMT 1a178df19d655c93 thread 1a1172dca26c9072 · Gmail-verified · folded Nat Board 1600 audit (door file JEM 16:00 fuD) · prior: wed-7-oct cold FRESH50 K8 SENT_OK 1a1172dcb3978998 ~17:23 London thread 1a1172dca26c9072 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)",
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1ab84cd9875624",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 11:42 GMT 1a1ab84cd9875624 thread 1a1172dca26c9072 · Wave 2 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 15:4x 5 Nov · prior: awaiting · FU1 Us Mon 26 Oct 15:40 GMT 1a178df19d655c93 thread 1a1172dca26c9072 · Gmail-verified · folded Nat Board 1600 audit (door file JEM 16:00 fuD) · prior: wed-7-oct cold FRESH50 K8 SENT_OK 1a1172dcb3978998 ~17:23 London thread 1a1172dca26c9072 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)",
     "prospect": false
   },
   {
@@ -71529,7 +71569,7 @@
     "needPhone": true,
     "email": "therabbits@outlook.com",
     "addedAt": "2026-10-07T16:30:16Z",
-    "followUps": "FU1 27 Oct 2026",
+    "followUps": "FU2 5 Nov 2026",
     "messages": [
       {
         "side": "us",
@@ -71559,6 +71599,16 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Live music at The Rabbits",
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets,\nor £250 a night when you book four. Saturday nights in 2027. He's free\nSat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a\ndate works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T11:46:16Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Live music at The Rabbits",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1ab87f73631ee1",
+        "threadId": "1a117338bcd61f53"
       }
     ],
     "hasThread": false,
@@ -71566,9 +71616,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Live music at The Rabbits",
     "badge": "awaiting",
-    "lastContact": "2026-10-27",
-    "lastContactSrc": "us 1a17df6564e8903e",
-    "statusNote": "awaiting · FU1 Us Tue 27 Oct 15:24 GMT 1a17df6564e8903e thread 1a117338bcd61f53 · Gmail-verified · folded Nat Board lag watch 15:4x (door file JEM 1600 fuD) · prior: wed-7-oct cold FRESH50 K10 SENT_OK 1a117338df81c93a ~17:30 London thread 1a117338bcd61f53 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)",
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1ab87f73631ee1",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 11:46 GMT 1a1ab87f73631ee1 thread 1a117338bcd61f53 · Wave 2 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 15:4x 5 Nov · prior: awaiting · FU1 Us Tue 27 Oct 15:24 GMT 1a17df6564e8903e thread 1a117338bcd61f53 · Gmail-verified · folded Nat Board lag watch 15:4x (door file JEM 1600 fuD) · prior: wed-7-oct cold FRESH50 K10 SENT_OK 1a117338df81c93a ~17:30 London thread 1a117338bcd61f53 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)",
     "prospect": false
   },
   {
@@ -71582,7 +71632,7 @@
     "needPhone": true,
     "email": "hello@boylesbar.com",
     "addedAt": "2026-10-07T16:32:45Z",
-    "followUps": "FU1 27 Oct 2026",
+    "followUps": "FU2 5 Nov 2026",
     "messages": [
       {
         "side": "us",
@@ -71603,6 +71653,16 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a17cbe20cbc7ee9",
         "threadId": "1a11735b2a0bf9dc"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T15:31:33Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Boyles?",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1ac5639275dbfa",
+        "threadId": "1a11735b2a0bf9dc"
       }
     ],
     "hasThread": true,
@@ -71610,9 +71670,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Jake Essex for Boyles?",
     "badge": "awaiting",
-    "lastContact": "2026-10-27",
-    "lastContactSrc": "us 1a17cbe20cbc7ee9",
-    "statusNote": "awaiting · FU1 Us Tue 27 Oct 09:43 GMT 1a17cbe20cbc7ee9 thread 1a11735b2a0bf9dc · Gmail-verified · folded Nat Board lag watch 10:5x (door file JEM 10:00) · prior: wed-7-oct cold FRESH50 K11 SENT_OK 1a11735d4d4908dd ~17:32 London thread 1a11735b2a0bf9dc · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1ac5639275dbfa",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 15:31 GMT 1a1ac5639275dbfa thread 1a11735b2a0bf9dc · Wave 4 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 15:4x 5 Nov · prior: awaiting · FU1 Us Tue 27 Oct 09:43 GMT 1a17cbe20cbc7ee9 thread 1a11735b2a0bf9dc · Gmail-verified · folded Nat Board lag watch 10:5x (door file JEM 10:00) · prior: wed-7-oct cold FRESH50 K11 SENT_OK 1a11735d4d4908dd ~17:32 London thread 1a11735b2a0bf9dc · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
   },
   {
     "id": "cold-20261007-the-viper-mill-green-cm4-0pt",
@@ -71668,7 +71728,7 @@
     "needPhone": true,
     "email": "info@thestarsidcup.co.uk",
     "addedAt": "2026-10-07T16:41:26Z",
-    "followUps": "FU1 27 Oct 2026",
+    "followUps": "FU2 5 Nov 2026",
     "messages": [
       {
         "side": "us",
@@ -71689,6 +71749,16 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a17cc26cdf22c63",
         "threadId": "1a1173daecd5270a"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T15:28:20Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for The Star at Sidcup Place?",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1ac534720d6444",
+        "threadId": "1a1173daecd5270a"
       }
     ],
     "hasThread": true,
@@ -71696,9 +71766,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Jake Essex for The Star at Sidcup Place?",
     "badge": "awaiting",
-    "lastContact": "2026-10-27",
-    "lastContactSrc": "us 1a17cc26cdf22c63",
-    "statusNote": "awaiting · FU1 Us Tue 27 Oct 09:47 GMT 1a17cc26cdf22c63 thread 1a1173daecd5270a · Gmail-verified · folded Nat Board lag watch 10:5x (door file JEM 10:00) · prior: wed-7-oct cold FRESH50 K13 SENT_OK 1a1173dc616a2527 ~17:41 London thread 1a1173daecd5270a · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1ac534720d6444",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 15:28 GMT 1a1ac534720d6444 thread 1a1173daecd5270a · Wave 4 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 15:4x 5 Nov · prior: awaiting · FU1 Us Tue 27 Oct 09:47 GMT 1a17cc26cdf22c63 thread 1a1173daecd5270a · Gmail-verified · folded Nat Board lag watch 10:5x (door file JEM 10:00) · prior: wed-7-oct cold FRESH50 K13 SENT_OK 1a1173dc616a2527 ~17:41 London thread 1a1173daecd5270a · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
   },
   {
     "id": "cold-20261007-the-cock-tavern-chipping-ongar-cm5-9ab",
@@ -71754,7 +71824,7 @@
     "needPhone": true,
     "email": "enquiries@thehawkbattlesbridge.co.uk",
     "addedAt": "2026-10-07T17:40:51Z",
-    "followUps": "FU1 27 Oct 2026",
+    "followUps": "FU2 5 Nov 2026",
     "messages": [
       {
         "side": "us",
@@ -71775,6 +71845,16 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a17cca4bda7f014",
         "threadId": "1a117742b49d8b0e"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T15:20:59Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for The Hawk?",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1ac4c89b12e2e0",
+        "threadId": "1a117742b49d8b0e"
       }
     ],
     "hasThread": true,
@@ -71782,9 +71862,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Jake Essex for The Hawk?",
     "badge": "awaiting",
-    "lastContact": "2026-10-27",
-    "lastContactSrc": "us 1a17cca4bda7f014",
-    "statusNote": "awaiting · FU1 Us Tue 27 Oct 09:56 GMT 1a17cca4bda7f014 thread 1a117742b49d8b0e · Gmail-verified · folded Nat Board lag watch 10:5x (door file JEM 10:00) · prior: wed-7-oct cold FRESH50 K15 SENT_OK 1a117742bed42476 ~18:40 London thread 1a117742b49d8b0e · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1ac4c89b12e2e0",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 15:20 GMT 1a1ac4c89b12e2e0 thread 1a117742b49d8b0e · Wave 4 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 15:4x 5 Nov · prior: awaiting · FU1 Us Tue 27 Oct 09:56 GMT 1a17cca4bda7f014 thread 1a117742b49d8b0e · Gmail-verified · folded Nat Board lag watch 10:5x (door file JEM 10:00) · prior: wed-7-oct cold FRESH50 K15 SENT_OK 1a117742bed42476 ~18:40 London thread 1a117742b49d8b0e · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
   },
   {
     "id": "cold-20261007-the-chequers-barkingside-ig6-2dd",
@@ -72438,7 +72518,7 @@
     "needPhone": true,
     "email": "info@marleysbenfleet.co.uk",
     "addedAt": "2026-10-09T09:03:08Z",
-    "followUps": "FU1 29 Oct 2026",
+    "followUps": "FU2 5 Nov 2026",
     "messages": [
       {
         "side": "us",
@@ -72468,6 +72548,16 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Jake Essex for Marley's?",
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets,\nor £250 a night when you book four. Saturday nights in 2027. He's free\nSat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a\ndate works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T11:50:17Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Marley's?",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1ab8ba33738bbc",
+        "threadId": "1a11fe6d5ee7d04d"
       }
     ],
     "hasThread": false,
@@ -72475,9 +72565,9 @@
     "firstPitch": "9 Oct 2026",
     "subject": "Jake Essex for Marley's?",
     "badge": "awaiting",
-    "lastContact": "2026-10-29",
-    "lastContactSrc": "us 1a1870882fd36495",
-    "statusNote": "awaiting · FU1 Us Thu 29 Oct 09:40 GMT 1a1870882fd36495 thread 1a11fe6d5ee7d04d · Gmail-verified · door 20261029-1000-fuA · folded Nat Board lag watch 10:5x · prior: fri-9-oct cold SENT_OK 1a11fe6e9bbabec9 ~10:03 London thread 1a11fe6d5ee7d04d · awaiting · Gmail-verified · folded 1121 9 Oct",
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1ab8ba33738bbc",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 11:50 GMT 1a1ab8ba33738bbc thread 1a11fe6d5ee7d04d · Wave 2 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 15:4x 5 Nov · prior: awaiting · FU1 Us Thu 29 Oct 09:40 GMT 1a1870882fd36495 thread 1a11fe6d5ee7d04d · Gmail-verified · door 20261029-1000-fuA · folded Nat Board lag watch 10:5x · prior: fri-9-oct cold SENT_OK 1a11fe6e9bbabec9 ~10:03 London thread 1a11fe6d5ee7d04d · awaiting · Gmail-verified · folded 1121 9 Oct",
     "prospect": false
   },
   {
@@ -72622,7 +72712,7 @@
     "needPhone": true,
     "email": "info@theleatherbottle.pub",
     "addedAt": "2026-10-09T09:23:37Z",
-    "followUps": "FU1 23 Oct 2026",
+    "followUps": "FU2 5 Nov 2026",
     "messages": [
       {
         "side": "us",
@@ -72643,6 +72733,16 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a168c4bb7da463c",
         "threadId": "1a11ff96499f76e2"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T15:34:37Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for The Leather Bottle?",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1ac5907b2fe87e",
+        "threadId": "1a11ff96499f76e2"
       }
     ],
     "hasThread": true,
@@ -72650,9 +72750,9 @@
     "firstPitch": "9 Oct 2026",
     "subject": "Jake Essex for The Leather Bottle?",
     "badge": "awaiting",
-    "lastContact": "2026-10-23",
-    "lastContactSrc": "us 1a168c4bb7da463c",
-    "statusNote": "awaiting · FU1 Us Fri 23 Oct 13:38 BST 1a168c4bb7da463c thread 1a11ff96499f76e2 · Gmail-verified · folded Nat Board lag watch 14:4x (door file JEM 13:50) · prior: fri-9-oct cold SENT_OK 1a11ff9a7c84c296 ~10:23 London thread 1a11ff96499f76e2 · awaiting · Gmail-verified · folded 1121 9 Oct"
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1ac5907b2fe87e",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 15:34 GMT 1a1ac5907b2fe87e thread 1a11ff96499f76e2 · Wave 4 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 15:4x 5 Nov · prior: awaiting · FU1 Us Fri 23 Oct 13:38 BST 1a168c4bb7da463c thread 1a11ff96499f76e2 · Gmail-verified · folded Nat Board lag watch 14:4x (door file JEM 13:50) · prior: fri-9-oct cold SENT_OK 1a11ff9a7c84c296 ~10:23 London thread 1a11ff96499f76e2 · awaiting · Gmail-verified · folded 1121 9 Oct"
   },
   {
     "id": "cold-20261009-stuzzichini-bexleyheath-da6",
