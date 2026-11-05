@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T09:23:46+01:00",
+  "updatedAt": "2026-11-05T08:56:00Z",
   "source": "JAKE ESSEX GIGS @ CL",
   "gigs": [
     {
@@ -377,6 +377,15 @@
       "status": "booked",
       "source": "board",
       "note": "OWN £325 cash · 2×1hr · Steve Cole · 1394-1396 Wimborne Road · start TBD · Us 1a0a68876f788f8d · NEVER free · never Choice without Jake OK"
+    },
+    {
+      "date": "2027-02-14",
+      "venue": "Corner Club Canvey",
+      "town": "Canvey Island",
+      "start": "16:00",
+      "status": "booked",
+      "source": "board",
+      "note": "£250 2h · 4pm start vs doors TBC"
     },
     {
       "date": "2027-02-21",

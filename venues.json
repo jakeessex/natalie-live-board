@@ -3848,11 +3848,11 @@
     "id": "corner-club-canvey",
     "name": "Corner Club Canvey",
     "town": "Canvey Island",
-    "badge": "quoted",
+    "badge": "locked",
     "phone": "+447830763936",
     "needPhone": false,
     "email": "maxinetopliss@gmail.com",
-    "replied": "yes — Maxine 4 Sep + 11 Sep (back next week)",
+    "replied": "yes — 4 Nov 19:07 GMT Maxine booked Sun 14 Feb 2027 4pm 2h £250; Us confirm 5 Nov 08:39",
     "firstPitch": "4 Sep 2026",
     "addedAt": "2026-09-08T15:12:45.692390Z",
     "followUps": "1 · last 11 Sep 2026",
@@ -3897,13 +3897,41 @@
         "from": "maxinetopliss@gmail.com",
         "subject": "Re: Re: Jake Essex for Corner Club?",
         "body": "HI I’ve not forgot will get back to you next week if okay has a couple of very busy weeks and we away next week so can catch up x"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-11-04T19:07:55Z",
+        "from": "maxinetopliss@gmail.com",
+        "subject": "Re: Jake Essex for Corner Club?",
+        "body": "Hi Natalie\n\nSorry for taking so long to get back to you,\n\nWould you Jake be available for Sunday 14th February at 4pm for a 2 hour gig. Also need to check price would be same as quoted.\n\nBest wishes\nMaxine",
+        "msgId": "1a1a7f61390c1998",
+        "threadId": "1a06bd225ae629e2"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T08:39:11Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Corner Club?",
+        "body": "Hi Maxine,\n\nNo problem at all, and thank you for booking Jake.\n\nSunday 14th February 2027 at 4pm for a 2 hour show is confirmed and in the diary, at the same price as quoted, £250.\n\nOne quick check: would you like Jake to start at 4pm, or is that when the doors open? Just so he knows when to be ready to sing.\n\nLooking forward to it.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1aadcac7370ca0",
+        "threadId": "1a06bd225ae629e2"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Maxine back next week · £250/£375 Sunday hold · no chase this week",
-    "lastContact": "2026-09-11",
-    "lastContactSrc": "them no-msgId"
+    "statusNote": "LOCKED Sun 14 Feb 2027 £250 · 2h · 4pm (start vs doors TBC) · Them Maxine 1a1a7f61390c1998 19:07 GMT 4 Nov · Us confirm 1a1aadcac7370ca0 08:39 GMT 5 Nov thread 1a06bd225ae629e2 · money NOT confirmed until Maxine answers whether 4pm is start or doors · not Choice · Gmail-verified · door files 0815 Them + 08:39 Us · folded Nat Board 08:5x 5 Nov · prior: Maxine back next week · £250/£375 Sunday hold · no chase this week",
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1aadcac7370ca0",
+    "lockedFee": 250,
+    "lockedDate": "2027-02-14",
+    "lockedNights": 1,
+    "dates": [
+      "2027-02-14"
+    ],
+    "lockedNote": "OWN LOCK Sun 14 Feb 2027 · £250 cash · 2h · 4pm (start vs doors TBC — Maxine not yet answered) · own PA · no deposit · Them Maxine 1a1a7f61390c1998 19:07 GMT 4 Nov · Us confirm 1a1aadcac7370ca0 08:39 GMT 5 Nov · money not confirmed until 4pm start-vs-doors answered · not Choice",
+    "contactName": "Maxine Topliss"
   },
   {
     "id": "imperial-cheshunt-and-waltham-cross-cons",
