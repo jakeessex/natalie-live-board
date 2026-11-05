@@ -71920,7 +71920,7 @@
     "needPhone": true,
     "email": "info@thenewboar.com",
     "addedAt": "2026-10-07T17:48:35Z",
-    "followUps": "FU1 27 Oct 2026",
+    "followUps": "FU2 5 Nov 2026",
     "messages": [
       {
         "side": "us",
@@ -71941,6 +71941,16 @@
         "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a17d328dce23e52",
         "threadId": "1a1177b3f7f48d57"
+      },
+      {
+        "side": "us",
+        "label": "Sent",
+        "at": "2026-11-05T13:51:01Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for The New Boar?",
+        "body": "Hi,\n\nJust gently chasing my earlier note on Jake Essex.\n\nHe's from Essex, own PA, no deposit, from £300 for two one hour sets, or £250 a night when you book four. Saturday nights in 2027. He's free Sat 12 June, Sat 2 October and Sat 27 November 2027, from 8pm. If a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1abfa2d29c3040",
+        "threadId": "1a1177b3f7f48d57"
       }
     ],
     "hasThread": true,
@@ -71948,9 +71958,9 @@
     "firstPitch": "7 Oct 2026",
     "subject": "Jake Essex for The New Boar?",
     "badge": "awaiting",
-    "lastContact": "2026-10-27",
-    "lastContactSrc": "us 1a17d328dce23e52",
-    "statusNote": "awaiting · FU1 Us Tue 27 Oct 11:50 GMT 1a17d328dce23e52 thread 1a1177b3f7f48d57 · Gmail-verified · door file JEM 12:00 · folded Nat Board 12:0x 27 Oct · prior: wed-7-oct cold FRESH50 K17 SENT_OK 1a1177b3f2a62d80 ~18:48 London thread 1a1177b3f7f48d57 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
+    "lastContact": "2026-11-05",
+    "lastContactSrc": "us 1a1abfa2d29c3040",
+    "statusNote": "awaiting · FU2 Us Wed 5 Nov 13:51 GMT 1a1abfa2d29c3040 thread 1a1177b3f7f48d57 · Wave 3 · offered Sat 12 Jun / 2 Oct / 27 Nov 2027 from 8pm · £300/£250x4 · Gmail-verified · folded Nat Board 17:5x 5 Nov · prior: awaiting · FU1 Us Tue 27 Oct 11:50 GMT 1a17d328dce23e52 thread 1a1177b3f7f48d57 · Gmail-verified · door file JEM 12:00 · folded Nat Board 12:0x 27 Oct · prior: wed-7-oct cold FRESH50 K17 SENT_OK 1a1177b3f2a62d80 ~18:48 London thread 1a1177b3f7f48d57 · awaiting · Gmail-verified · folded 1958 8 Oct (Bookings inbox file never folded)"
   },
   {
     "id": "cold-20261007-the-crown-chislehurst-br7-5pq",
