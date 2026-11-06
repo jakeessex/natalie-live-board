@@ -1,0 +1,37 @@
+{
+  "event": "reply",
+  "venue": {
+    "id": "the-greyhound-hotel",
+    "name": "The Greyhound Hotel",
+    "town": "Carshalton",
+    "email": "greyhound@youngs.co.uk",
+    "phone": "02086471511",
+    "postcode": "SM5 3PE",
+    "contactName": "Mea Faust"
+  },
+  "statusNote": "Mea Faust DM Them 6 Nov 16:44 GMT 1a1b1bf4da6441f2 ask Thu 26 Nov 2026 + fee · Us quote 18:59 GMT 1a1b23aac483c0ab £300 cash 2x1hr arrive 8 start 8:30/9 · Jake Gate exception keep Thu · Annemarie thread stays parked · awaiting start time · Gmail-verified · folded Nat Board lag watch 19:44 London",
+  "messages": [
+    {
+      "side": "them",
+      "at": "2026-11-06T16:44:21Z",
+      "from": "greyhound@youngs.co.uk",
+      "subject": "Live music",
+      "body": "Good evening\n\nAre you available to perform on the Thursday 26th of November? How much do you charge?\n\nKind regards,\n\nMea Faust\nDeputy Manager\n\nT. 02086471511\nE. greyhound@youngs.co.uk\nHigh Street, Carshalton\nSurrey, SM5 3PE\nhttps://linktr.ee/greyhoundcarshalton\nwww.thegreyhoundhotel.com/\nwww.youngshotels.co.uk",
+      "msgId": "1a1b1bf4da6441f2",
+      "threadId": "1a1b1bf4da6441f2",
+      "gmailMsgId": "1a1b1bf4da6441f2",
+      "gmailThreadId": "1a1b1bf4da6441f2"
+    },
+    {
+      "side": "us",
+      "at": "2026-11-06T18:59:12Z",
+      "from": "jakeessexenquiries@gmail.com",
+      "subject": "Re: Live music",
+      "body": "Hi Mea,\n\nThanks for getting in touch.\n\nJake can do that Thursday. What time would you like him to start? He can get there for 8 and start at half 8 or 9.\n\nHis fee is £300 cash for two one hour sets. He brings his own PA and there is no deposit.\n\nNatalie\nBookings for Jake Essex",
+      "msgId": "1a1b23aac483c0ab",
+      "threadId": "1a1b1bf4da6441f2",
+      "gmailMsgId": "1a1b23aac483c0ab",
+      "gmailThreadId": "1a1b1bf4da6441f2"
+    }
+  ]
+}
