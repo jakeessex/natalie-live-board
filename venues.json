@@ -19883,11 +19883,11 @@
     "id": "the-greyhound-hotel",
     "name": "The Greyhound Hotel",
     "town": "Carshalton",
-    "badge": "quoted",
+    "badge": "replied-interested",
     "phone": "02086471511",
     "needPhone": false,
     "email": "greyhound@youngs.co.uk",
-    "replied": "yes — Mea Faust DM Thu 26 Nov ask + Us £300 quote 6 Nov",
+    "replied": "yes — Mea Faust DM 8 Nov 19:38 GMT asks 19:00–21:00 on Thu 26 Nov 2026",
     "firstPitch": "11 Sep 2026",
     "addedAt": "2026-09-11T14:44:27Z",
     "followUps": "0 · last —",
@@ -19950,15 +19950,25 @@
         "body": "Hi Mea,\n\nThanks for getting in touch.\n\nJake can do that Thursday. What time would you like him to start? He can get there for 8 and start at half 8 or 9.\n\nHis fee is £300 cash for two one hour sets. He brings his own PA and there is no deposit.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a1b23aac483c0ab",
         "threadId": "1a1b1bf4da6441f2"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-11-08T19:38:05Z",
+        "from": "greyhound@youngs.co.uk",
+        "subject": "RE: Live music",
+        "body": "Good afternoon\n\nAre we able to adjust the time to be earlier? We are a hotel so live music ending at 22:00 would be too late. We can do 19:00-21:00?\n\nKind regards,\n\nMea Faust\nDeputy Manager\nT. 02086471511\nE. greyhound@youngs.co.uk\nHigh Street, Carshalton\nSurrey, SM5 3PE",
+        "msgId": "1a1bcab0ead8071f",
+        "threadId": "1a1b1bf4da6441f2"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "statusNote": "Mea Faust DM Them 6 Nov 16:44 GMT 1a1b1bf4da6441f2 ask Thu 26 Nov 2026 + fee · Us quote 18:59 GMT 1a1b23aac483c0ab £300 cash 2x1hr arrive 8 start 8:30/9 · Jake Gate exception keep Thu · awaiting start time · Gmail-verified · folded Nat Board lag watch 19:44 London · Annemarie GM soft park stays (thread 1a090d23c4118142) · Haggle owns · do not re-cold",
-    "lastContact": "2026-11-06",
-    "lastContactSrc": "us 1a1b23aac483c0ab",
+    "statusNote": "replied-interested · Them Mea Faust 19:38 GMT Sun 8 Nov 1a1bcab0ead8071f thread 1a1b1bf4da6441f2 · asks Thu 26 Nov 2026 19:00–21:00 (earlier than 22:00 close; hotel) · £300 cash 2x1hr already quoted Us 1a1b23aac483c0ab · start time pending Jake via JEM · NOT locked · no money · Bookings says 26 Nov is a one-off exception to the 2026 close for this enquiry (agent-reported, not yet confirmed by Jake to Nat Board) · Gmail-verified · door file 0808 9 Nov · folded Nat Board 08:5x 9 Nov · prior: Mea Faust DM Them 6 Nov 16:44 GMT 1a1b1bf4da6441f2 ask Thu 26 Nov 2026 + fee · Us quote 18:59 GMT 1a1b23aac483c0ab £300 cash 2x1hr arrive 8 start 8:30/9 · Jake Gate exception keep Thu · awaiting start time · Gmail-verified · folded Nat Board lag watch 19:44 London · Annemarie GM soft park stays (thread 1a090d23c4118142) · Haggle owns · do not re-cold",
+    "lastContact": "2026-11-08",
+    "lastContactSrc": "them 1a1bcab0ead8071f",
     "postcode": "SM5 3PE",
-    "contactName": "Mea Faust",
+    "contactName": "Mea Faust (Deputy Manager)",
     "prospect": false
   },
   {
