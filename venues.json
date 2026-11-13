@@ -81411,5 +81411,39 @@
     "lastContact": "2026-11-11",
     "lastContactSrc": "us 1a1ca3a392537284",
     "statusNote": "awaiting · Us cold 10:49 GMT Wed 11 Nov 1a1ca3a392537284 thread 1a1ca393a1e03c0e · The Orange Tree, Havering-atte-Bower RM4 1PJ · info@orangetreeromford.co.uk · Bookings reports Jake lifted the cold pause for this one send only (agent-reported, not confirmed by Jake to Nat Board) · Gmail-verified · door file 1052 11 Nov · folded Nat Board 10:5x 11 Nov"
+  },
+  {
+    "id": "enq-20261112-ra-monster-events",
+    "name": "RA Monster Events",
+    "town": "Orsett Showground, Essex",
+    "postcode": "",
+    "website": "https://www.ramonsterevents.com",
+    "contactName": "",
+    "phone": null,
+    "needPhone": true,
+    "email": "perform@ramonsterevents.com",
+    "addedAt": "2026-11-12T17:51:23Z",
+    "firstPitch": "",
+    "replied": "yes — inbound enquiry 12 Nov 17:51 GMT, prices and 2027 availability",
+    "badge": "replied-interested",
+    "subject": "Motorfest 2027 - prices and availability",
+    "hasThread": true,
+    "followUps": "0 · last —",
+    "lastContact": "2026-11-12",
+    "lastContactSrc": "them 1a1d0e2c52d9b8a0",
+    "prospect": false,
+    "messages": [
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-11-12T17:51:23Z",
+        "from": "perform@ramonsterevents.com",
+        "subject": "Motorfest 2027 - prices and availability",
+        "body": "Hi Jake,\n\nI'm getting in touch from RA Monster Events. We run big family monster truck, stunt and funfair events across the UK, and we're putting together the entertainment line-up for Motorfest 2027, including an event at Orsett Showground in Essex. Your rock 'n' roll and soul show would be a great fit for our crowds.\n\nCould you let us know your prices and your availability for the 2027 season? Once we have those we can talk through the details.\n\nKind regards,\n\nRA Monster Events\nperform@ramonsterevents.com\nwww.ramonsterevents.com",
+        "msgId": "1a1d0e2c52d9b8a0",
+        "threadId": "1a1d0e2c52d9b8a0"
+      }
+    ],
+    "statusNote": "replied-interested · Them inbound 17:51 GMT Thu 12 Nov 1a1d0e2c52d9b8a0 thread 1a1d0e2c52d9b8a0 · RA Monster Events (perform@ramonsterevents.com) asking prices and availability for Motorfest 2027, including Orsett Showground, Essex · no specific dates named · no personal contact name or phone in the signature · no fee quoted · NOT locked · no money · Gmail-verified · door file 0813 13 Nov · folded Nat Board 08:1x 13 Nov"
   }
 ]
