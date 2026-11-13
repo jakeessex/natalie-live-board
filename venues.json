@@ -17195,11 +17195,11 @@
     "id": "sunbury-conservative-club",
     "name": "Sunbury Conservative Club",
     "town": "Sunbury-on-Thames",
-    "badge": "awaiting",
+    "badge": "replied-interested",
     "phone": null,
     "needPhone": true,
     "email": "sunburyconclub@gmail.com",
-    "replied": "no",
+    "replied": "yes — Sian Cooper (Entertainment) 13 Nov 09:18 GMT",
     "firstPitch": "10 Sep 2026",
     "addedAt": "2026-09-10T13:01:05.009164Z",
     "followUps": "1 · last 15 Oct 2026",
@@ -17222,13 +17222,24 @@
         "body": "Hi,\n\nCircling back on Jake Essex for Sunbury Conservative Club. He sings the\nclassics with real energy, not an impersonator, own PA and no deposit.\n\nFrom £250 for two one hour sets. Saturday nights this year and into 2027.\nIf a date works, just reply here and I'll lock it in.\n\nNatalie\nBookings for Jake Essex",
         "msgId": "1a13eb354de37390",
         "threadId": "1a08b33e22c2354c"
+      },
+      {
+        "side": "them",
+        "label": "Reply",
+        "at": "2026-11-13T09:18:43Z",
+        "from": "siajones@googlemail.com",
+        "subject": "Re: Jake Essex for Sunbury Conservative Club?",
+        "body": "Hello,\nThank you for your email.\nWould Jake be free on 6th March 2027, 4th September 2027 or 25th September 2027?\nThanks\nSian - Entertainment @ Sunbury Conservative Club\nSent from my iPhone",
+        "msgId": "1a1d433f45bcec2d",
+        "threadId": "1a1d433f45bcec2d"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "lastContact": "2026-10-15",
-    "lastContactSrc": "us 1a13eb354de37390",
-    "statusNote": "thu-15-oct follow-up fu-waveA-3 Us 1a13eb354de37390 ~09:35 London thread 1a08b33e22c2354c · awaiting · Gmail-verified · folded 0955 15 Oct"
+    "lastContact": "2026-11-13",
+    "lastContactSrc": "them 1a1d433f45bcec2d",
+    "statusNote": "replied-interested · Them 09:18 GMT Fri 13 Nov 1a1d433f45bcec2d thread 1a1d433f45bcec2d from siajones@googlemail.com · Sian Cooper (Entertainment) asks if Jake is free Sat 6 Mar 2027, Sat 4 Sep 2027 or Sat 25 Sep 2027 · club inbox sunburyconclub@gmail.com kept · no Us reply yet · NOT locked · no money · folded Nat Board 11:4x 13 Nov from Bookings door file",
+    "contactName": "Sian Cooper"
   },
   {
     "id": "shoreham-conservative-club",
