@@ -17199,7 +17199,7 @@
     "phone": null,
     "needPhone": true,
     "email": "sunburyconclub@gmail.com",
-    "replied": "yes — Sian Cooper (Entertainment) 13 Nov 09:18 GMT",
+    "replied": "yes — Sian Cooper (Entertainment) 13 Nov 09:18 GMT; Us reply 13 Nov 11:50 GMT offered Sat 12 Jun or Sat 2 Oct 2027",
     "firstPitch": "10 Sep 2026",
     "addedAt": "2026-09-10T13:01:05.009164Z",
     "followUps": "1 · last 15 Oct 2026",
@@ -17232,13 +17232,23 @@
         "body": "Hello,\nThank you for your email.\nWould Jake be free on 6th March 2027, 4th September 2027 or 25th September 2027?\nThanks\nSian - Entertainment @ Sunbury Conservative Club\nSent from my iPhone",
         "msgId": "1a1d433f45bcec2d",
         "threadId": "1a1d433f45bcec2d"
+      },
+      {
+        "side": "us",
+        "label": "Us sent",
+        "at": "2026-11-13T11:50:33Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Sunbury Conservative Club?",
+        "body": "Hi Sian,\n\nThanks for coming back to me. Sadly Jake is already booked on all three of those Saturdays, and nearly every Saturday in 2027 is now taken. The only two left are Saturday 12 June and Saturday 2 October 2027, with Jake on stage from 8pm. As Sunbury is a little further for Jake, he would just need plenty of notice on either of those so he can make the necessary arrangements. He does have plenty of Fridays and Sundays free if those would work better for you. Would any of those suit?\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1d4bec3e3fc282",
+        "threadId": "1a1d433f45bcec2d"
       }
     ],
     "hasThread": true,
     "tab": "call",
     "lastContact": "2026-11-13",
-    "lastContactSrc": "them 1a1d433f45bcec2d",
-    "statusNote": "replied-interested · Them 09:18 GMT Fri 13 Nov 1a1d433f45bcec2d thread 1a1d433f45bcec2d from siajones@googlemail.com · Sian Cooper (Entertainment) asks if Jake is free Sat 6 Mar 2027, Sat 4 Sep 2027 or Sat 25 Sep 2027 · club inbox sunburyconclub@gmail.com kept · no Us reply yet · NOT locked · no money · folded Nat Board 11:4x 13 Nov from Bookings door file · 13 Nov later: Bookings reports Sat 6 Mar, Sat 4 Sep and Sat 25 Sep 2027 already booked elsewhere (Royal Oak, Six In One, RAFA Solent) · a reply offering Sat 12 Jun or Sat 2 Oct 2027 from 8pm is drafted but not sent — not an Us message yet · not waiting on Jake's date pick",
+    "lastContactSrc": "us 1a1d4bec3e3fc282",
+    "statusNote": "replied-interested · Us reply SENT_OK 11:50 GMT Fri 13 Nov 1a1d4bec3e3fc282 thread 1a1d433f45bcec2d to siajones@googlemail.com · Sian's Sat 6 Mar, 4 Sep and 25 Sep 2027 already booked (Royal Oak, Six In One, RAFA Solent) · offered Sat 12 Jun or Sat 2 Oct 2027 from 8pm, plus Fridays and Sundays; needs plenty of notice · awaiting Sian's pick of 12 Jun or 2 Oct 2027 · club inbox sunburyconclub@gmail.com kept · NOT locked · no money · Gmail-verified · door file 1153 13 Nov · folded Nat Board 11:5x 13 Nov",
     "contactName": "Sian Cooper"
   },
   {
@@ -18320,7 +18330,7 @@
     "phone": null,
     "needPhone": true,
     "email": "info@bretons.org.uk",
-    "replied": "yes",
+    "replied": "yes — Nigel Blythe 5 Nov 12:33 GMT; Us day-7 chase 13 Nov 11:50 GMT",
     "firstPitch": "10 Sep 2026",
     "addedAt": "2026-09-10T19:26:00.000000Z",
     "followUps": "0 · last —",
@@ -18359,13 +18369,23 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Re: Jake Essex for Bretons Social Club?",
         "body": "Hi Nigel,\n\nThanks for coming back to me. Jake is fully booked for the rest of this year, and his Saturdays up to March are mostly taken already, but he does have two Saturday evenings free:\n\nSaturday 20 February 2027, from 8pm\nSaturday 20 March 2027, from 8pm\n\nIt's two one-hour sets, own PA, no deposit, £250 cash on the night. If either suits, just let me know and I'll pencil it in for you. Happy to look at April onwards too if those don't work.\n\nKind regards,\nNatalie\nBookings for Jake Essex"
+      },
+      {
+        "side": "us",
+        "label": "Us sent",
+        "at": "2026-11-13T11:50:30Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Jake Essex for Bretons Social Club?",
+        "body": "Hi Nigel,\n\nJust checking in on Saturday 20th February or Saturday 20th March 2027 for Jake at Bretons, from 8pm. It is still £250 cash for two one hour sets, with his own PA and no deposit.\n\nAnother club has asked about the same two Saturdays, so whichever comes back first gets the date. If one suits, just reply here and I will put Bretons in the diary straight away.\n\nNatalie\nBookings for Jake Essex",
+        "msgId": "1a1d4beb74d36006",
+        "threadId": "1a08c77996e86512"
       }
     ],
     "hasThread": true,
     "tab": "call",
-    "lastContact": "2026-10-14",
-    "lastContactSrc": "us 1a13a13fe72ef313",
-    "statusNote": "wed-14-oct FU waveB SENT_OK 1a13a13fe72ef313 ~12:02 London thread 1a08c77996e86512 · awaiting · Gmail-verified · folded lag-watch 12:44",
+    "lastContact": "2026-11-13",
+    "lastContactSrc": "us 1a1d4beb74d36006",
+    "statusNote": "Us day-7 chase SENT_OK 11:50 GMT Fri 13 Nov 1a1d4beb74d36006 thread 1a08c77996e86512 to nigel.blythe1@outlook.com · checking in on Sat 20 Feb or Sat 20 Mar 2027 from 8pm, still £250 cash 2x1hr, own PA, no deposit · Bookings notes a race with Dunton Park (Mick Hilton) on the same two Saturdays — first yes wins · awaiting Nigel · club inbox info@bretons.org.uk kept · NOT locked · Gmail-verified · door file 1153 13 Nov · folded Nat Board 11:5x 13 Nov · prior: wed-14-oct FU waveB SENT_OK 1a13a13fe72ef313 ~12:02 London thread 1a08c77996e86512 · awaiting · Gmail-verified · folded lag-watch 12:44",
     "contactName": "Nigel Blythe",
     "prospect": false
   },
