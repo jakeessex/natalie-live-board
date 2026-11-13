@@ -1,7 +1,7 @@
 {
  "version": 1,
  "title": "Nat call deck, Fri 6 Nov",
- "listDate": "2026-11-06",
+ "listDate": "2026-11-13",
  "source": "JEM refresh Thu 5 Nov 2026: only venues that never replied by email or went quiet 14+ days (no live email threads). Once-interested quiet first (clubs, warmest, most recent interest), then never-replied clubs (longest silence). Real phone required. Built by /workspace/deck-refresh/build_calls.py",
  "freeNights": [
   {
@@ -28,11 +28,11 @@
    "id": "enq-20261028-dunton-park-club-dunton-essex",
    "venue": "Dunton Park",
    "town": "Dunton, Essex",
-   "contact": "Mick Hilton (direct number unknown — use the relay, not his own line)",
+   "contact": "Mick Hilton (direct number unknown, use the relay, not his own line)",
    "phones": [
     {
      "number": "01268 833684",
-     "label": "UNVERIFIED relay (Hunter): Regency Living site office, staffed Wed/Thu 09:30–16:30. Ask them to pass a message to Mick. Not Mick's own line.",
+     "label": "UNVERIFIED relay (Hunter): Regency Living site office, staffed Wed/Thu 09:30 to 16:30. Ask them to pass a message to Mick. Not Mick's own line.",
      "tel": "01268833684"
     },
     {
@@ -48,9 +48,9 @@
    "lastMsg": "Mick replied 2 Nov 16:24: \"Thank you, I will let you know.\" (second soft reply, no date picked).",
    "days": 10,
    "daysNote": "since their last email",
-   "why": "Quote held for Sat 20 Feb or Sat 20 Mar 2027 from 8pm at £350 for 3 x 45, cash. Waiting on Mick's date pick since 2 Nov. No more email. Phone the site office relay (Wed/Thu 09:30–16:30), ask them to pass a message to Mick Hilton. Do not treat 01268 833684 as Mick's own line. Backup: Ryan Arnold 07502 511942. Avoid 01268 417040 (likely dead). Mick's direct number is still needed.",
+   "why": "Quote held for Sat 20 Feb or Sat 20 Mar 2027 from 8pm at £350 for 3 x 45, cash. Waiting on Mick's date pick since 2 Nov. No more email. Phone the site office relay (Wed/Thu 09:30 to 16:30), ask them to pass a message to Mick Hilton. Do not treat 01268 833684 as Mick's own line. Backup: Ryan Arnold 07502 511942. Avoid 01268 417040 (likely dead). Mick's direct number is still needed.",
    "flags": [],
-   "note": "PRIORITY CHASE: Nat to call the unverified Regency Living site-office relay (Wed/Thu 09:30–16:30) and ask them to pass a message to Mick. Quote held Sat 20 Feb or Sat 20 Mar 2027, £350 3x45 cash, waiting on his date pick since 2 Nov. · Last contact: 2 Nov (Them)",
+   "note": "PRIORITY CHASE: Nat to call the unverified Regency Living site-office relay (Wed/Thu 09:30 to 16:30) and ask them to pass a message to Mick. Quote held Sat 20 Feb or Sat 20 Mar 2027, £350 3x45 cash, waiting on his date pick since 2 Nov. · Last contact: 2 Nov (Them)",
    "venueId": "enq-20261028-dunton-park-club-dunton-essex",
    "gmailThreadId": "1a1825cf89da9948",
    "lastContact": "2026-11-02",
