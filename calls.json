@@ -1,7 +1,7 @@
 {
  "version": 1,
  "title": "Nat call deck, Fri 6 Nov",
- "listDate": "2026-11-17",
+ "listDate": "2026-11-18",
  "source": "JEM refresh Thu 5 Nov 2026: only venues that never replied by email or went quiet 14+ days (no live email threads). Once-interested quiet first (clubs, warmest, most recent interest), then never-replied clubs (longest silence). Real phone required. Built by /workspace/deck-refresh/build_calls.py",
  "freeNights": [
   {
