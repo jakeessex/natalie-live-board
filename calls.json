@@ -6,11 +6,11 @@
  "freeNights": [
   {
    "month": "2026",
-   "nights": "No more 2026 bookings (Jake, 1 Nov). Do not offer Sat 7 Nov, Sun 15/22 Nov or Sun 27 Dec."
+   "nights": "No more 2026 bookings (Jake, 1 Nov). Do not offer Sun 27 Dec."
   },
   {
    "month": "2027",
-   "nights": "Saturdays: 20 Nov (6 Mar is booked for Royal Oak; 11 Sep is booked for Railway Tavern; 27 Mar, 5 Jun and 11 Dec are pencilled for Sutton Social; May, Jul and Aug fully booked). NOT FREE, Jake blocked Fri-Sun: 1-3 Jan, 9-11 Apr, 23-25 Apr, 25-27 Jun, 15-17 Oct, 5-7 Nov 2027."
+   "nights": "Saturdays: 20 Nov 2027 only (confirm Jake first; 6 Mar is booked for Royal Oak; 11 Sep is booked for Railway Tavern; 27 Mar, 5 Jun and 11 Dec are blocked, Sutton pencil dead; May, Jul and Aug fully booked). NOT FREE, Jake blocked Fri-Sun: 1-3 Jan, 9-11 Apr, 23-25 Apr, 25-27 Jun, 15-17 Oct, 5-7 Nov 2027."
   }
  ],
  "rules": [
