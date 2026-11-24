@@ -3526,7 +3526,7 @@
     "phone": null,
     "needPhone": true,
     "email": "Eija Burrell <burrellea47@gmail.com>",
-    "replied": "yes — 7 Sep 2026 (Eija)",
+    "replied": "yes — Eija Burrell; Gary Daley (Josh’s father) form 24 Nov 07:43 GMT asked about Johnny B. Goode backing / practice",
     "firstPitch": "7 Sep 2026",
     "addedAt": "7 Sep 2026",
     "followUps": "0 · last —",
@@ -3583,6 +3583,16 @@
         "body": "Hi Eija,\n\nYes, all good from my side for Friday 27 November. I'll arrive from around 13:30 at the Claire Tiltman Centre to set up and test everything, as we said.\n\nJust so you know, I have another show that evening in Theydon Bois, so I'll need to pack down and leave by about 17:30. If you could let me know roughly what time you'd like me to start singing, I'll plan my two sets around that: soft background music while everyone eats, then more upbeat after the speeches and raffle.\n\nI'd be happy to sing Johnny B. Goode with Joshua. Congratulations to him on the award! I can't promise it'll sound perfect with no rehearsal, but it's in my repertoire and I'll give it my best shot. With him arriving around 4pm, that should fit in nicely before I leave.\n\nAs before, it's £100 cash on the day.\n\nLooking forward to it.\n\nThanks,\nJake",
         "msgId": "1a1d098cae17412e",
         "threadId": "1a1d012d70b4720e"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-11-24T07:43:16Z",
+        "from": "Garywdaley@hotmail.com",
+        "subject": "Gig enquiry, Jake Essex",
+        "body": "Hi Jake,\n\nI would like to enquire about 27 November 2026 3:30pm at Dartford.\n\nName: Gary Daley\nEmail / phone: Garywdaley@hotmail.com\nShow: Not sure\n\nHi Jake, my son was invited to play at Fridays event in Dartford - he’s 13 plays electric guitar and won a recent competition that the Mayor attended.  Josh played Johnny Begoode. Eija from the Mayors office said it was in your repitoire and we thought Josh could play as backing to you.  Wanted your thoughts and whether any chance you could practice or at least advise as will be new to Josh playing with a professional singer. He plays this one to an arrangement from the internet based on the Trinity music grading that he recently passed. See link. Would be good to discuss so can be a good performance for you both if you are happy with this.  Look forward to hearing from you. https://youtu.be/nOTc8KVDk6k",
+        "msgId": "1a20c8252eff13fe",
+        "threadId": "1a20c8252eff13fe"
       }
     ],
     "hasThread": true,
@@ -3590,9 +3600,10 @@
     "lockedFee": 100,
     "lockedNights": 1,
     "lockedDate": "2026-11-27",
-    "lastContact": "2026-11-12",
-    "lastContactSrc": "us 1a1d098cae17412e",
-    "statusNote": "LOCKED Fri 27 Nov 2026 £100 · Us Jake 16:30 GMT 12 Nov 1a1d098cae17412e thread 1a1d012d70b4720e · Jake confirmed all good, arriving 13:30, must leave by 17:30 for the evening Theydon Bois show, will sing Johnny B. Goode with Joshua, and is waiting on Eija for the start time · Gmail-verified · folded Nat Board 16:3x 12 Nov · prior: LOCKED Fri 27 Nov 2026 £100 · Them Eija Burrell 14:04 GMT 12 Nov 1a1d012d70b4720e thread 1a1d012d70b4720e · check-in: is all still ok? Student Joshua may arrive ~4pm to play Johnny B. Goode on guitar; asks if Jake will sing along (optional, on the day) · awaiting Jake · no reply sent · Gmail-verified · door file 1558 12 Nov · folded Nat Board 16:0x 12 Nov"
+    "lastContact": "2026-11-24",
+    "lastContactSrc": "them 1a20c8252eff13fe",
+    "statusNote": "LOCKED Fri 27 Nov 2026 £100 · Them Gary Daley (Josh’s father) 07:43 GMT Tue 24 Nov 1a20c8252eff13fe thread 1a20c8252eff13fe via FormSubmit on jakeessex.co.uk (Gmail Spam; reply-to Garywdaley@hotmail.com) · website enquiry: “27 November 2026 3:30pm at Dartford” · Josh, 13, electric guitar, wants to play Johnny B. Goode as backing; asks if Jake can practice or advise; Trinity-grade arrangement; YouTube https://youtu.be/nOTc8KVDk6k · no phone or parking in the form · no reply sent, needs Jake · this is NOT Eija confirming the start time (still outstanding) · Bookings door file said start 14:30, but Gary’s form says 3:30pm — 14:30 not recorded as confirmed · lock/money unchanged · Gmail-verified · door file 0850 24 Nov · folded Nat Board 09:0x 24 Nov · prior: LOCKED Fri 27 Nov 2026 £100 · Us Jake 16:30 GMT 12 Nov 1a1d098cae17412e thread 1a1d012d70b4720e · Jake confirmed all good, arriving 13:30, must leave by 17:30 for the evening Theydon Bois show, will sing Johnny B. Goode with Joshua, and is waiting on Eija for the start time · Gmail-verified · folded Nat Board 16:3x 12 Nov · prior: LOCKED Fri 27 Nov 2026 £100 · Them Eija Burrell 14:04 GMT 12 Nov 1a1d012d70b4720e thread 1a1d012d70b4720e · check-in: is all still ok? Student Joshua may arrive ~4pm to play Johnny B. Goode on guitar; asks if Jake will sing along (optional, on the day) · awaiting Jake · no reply sent · Gmail-verified · door file 1558 12 Nov · folded Nat Board 16:0x 12 Nov",
+    "lockedNote": "OWN LOCK Fri 27 Nov 2026 · £100 cash charity · Claire Tiltman Centre, Gantry Place, Cotton Lane, Stone, Greenhithe DA9 9FA · Jake arrives ~13:30, must leave by 17:30 for Theydon Bois · singing start still waiting on Eija · Gary Daley form 24 Nov 07:43 GMT mentioned 3:30pm — not Eija’s start confirmation · not Choice"
   },
   {
     "id": "hadleigh-cons",
