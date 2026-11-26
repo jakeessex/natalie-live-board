@@ -6638,12 +6638,12 @@
   {
     "id": "churchill-house",
     "name": "Churchill House",
-    "town": "",
-    "badge": "replied-interested",
+    "town": "Romford",
+    "badge": "quoted",
     "phone": "+441708740817",
     "needPhone": false,
     "email": "romfordconservativeclub@hotmail.com",
-    "replied": "yes — Rhianna, Romford Conservative Club, 13:51 GMT Thu 26 Nov",
+    "replied": "yes — Rhianna 26 Nov 13:51 GMT; Us quote 17:06 GMT",
     "firstPitch": "27 Aug 2026",
     "addedAt": "1 Aug 2026",
     "followUps": "1 · last 7 Sep 2026",
@@ -6666,6 +6666,16 @@
         "body": "Good afternoon Jake,\n\nI hope you're well?\n\nI have just come across your email.\n\nCould I ask for a quote for either Friday night, Saturday nights and Sundays.\n\nAlso, are you free any time in December (i know its short notice)\n\nI look forward to hearing from you soon.\n\nMany thanks\nRhianna",
         "msgId": "1a218202f097c9bb",
         "threadId": "1a218202f097c9bb"
+      },
+      {
+        "side": "us",
+        "label": "Us sent",
+        "at": "2026-11-26T17:06:30Z",
+        "from": "jakeessexenquiries@gmail.com",
+        "subject": "Re: Enquiry -",
+        "body": "Hi Rhianna,\n\nThanks for getting in touch, lovely to hear from you.\n\nDecember is very busy, but he can still do these at £350 cash for two\none hour sets:\nFriday 4th December\nSunday 13th December (from 8pm)\nSunday 20th December (from 8pm)\nSunday 27th December\n\nFor 2027 his fee is £300 cash for two one hour sets, or £350 for three\nsets, the same price Friday, Saturday or Sunday. He has Saturday 12th\nJune, Saturday 2nd October and Saturday 27th November (from 8pm), plus\nplenty of Fridays and Sundays if you'd like me to send some over.\n\nHe brings his own PA and there's no deposit.\n\nIf any of these work, just reply here and I'll get it in the diary.\n\nNatalie\nBookings for Jake Essex\nwww.jakeessex.co.uk",
+        "msgId": "1a218d2b07bfd340",
+        "threadId": "1a218202f097c9bb"
       }
     ],
     "hasThread": true,
@@ -6673,8 +6683,8 @@
     "prospect": false,
     "contactName": "Rhianna",
     "lastContact": "2026-11-26",
-    "lastContactSrc": "them 1a218202f097c9bb",
-    "statusNote": "replied-interested · Them Rhianna 13:51 GMT Thu 26 Nov 1a218202f097c9bb thread 1a218202f097c9bb from romfordconservativeclub@hotmail.com (Churchill House is this club: email + 01708 phone agree) · asks quote for Fri/Sat/Sun nights and any December dates · 2026 is closed so December cannot be offered · no Us reply yet · NOT locked · no money · Gmail-verified · msgIds backfilled Nat Board 15:5x 26 Nov after 16:00 audit fold omitted them"
+    "lastContactSrc": "us 1a218d2b07bfd340",
+    "statusNote": "quoted · Us quote SENT_OK 17:06 GMT Thu 26 Nov 1a218d2b07bfd340 thread 1a218202f097c9bb to romfordconservativeclub@hotmail.com · Dec 2026 at £350 cash 2x1hr: Fri 4 Dec, Sun 13 Dec (from 8pm), Sun 20 Dec (from 8pm), Sun 27 Dec · 2027 at £300 cash 2x1hr or £350 for three sets, same price Fri/Sat/Sun: Sat 12 Jun, Sat 2 Oct, Sat 27 Nov 2027 (from 8pm), plus Fridays and Sundays · own PA, no deposit · awaiting Rhianna · NOT locked · no money · Bookings notes the three 2027 Saturdays were also offered on the 5 Nov FU-20 (first yes wins) · Gmail-verified · door file 1710 26 Nov · folded Nat Board 17:5x 26 Nov · prior: replied-interested · Them Rhianna 13:51 GMT Thu 26 Nov 1a218202f097c9bb thread 1a218202f097c9bb from romfordconservativeclub@hotmail.com (Churchill House is this club: email + 01708 phone agree) · asks quote for Fri/Sat/Sun nights and any December dates · 2026 is closed so December cannot be offered · no Us reply yet · NOT locked · no money · Gmail-verified · msgIds backfilled Nat Board 15:5x 26 Nov after 16:00 audit fold omitted them"
   },
   {
     "id": "churchills-bar",
