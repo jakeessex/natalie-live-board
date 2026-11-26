@@ -1,5 +1,33 @@
 [
   {
+    "id": "enq-20261126-station-hotel-hither-green",
+    "name": "Station Hotel",
+    "town": "Hither Green",
+    "postcode": "SE13 5NB",
+    "website": "",
+    "contactName": "Andrew Eaton",
+    "badge": "replied-interested",
+    "phone": "07886445886",
+    "needPhone": false,
+    "email": "stationhotel@youngs.co.uk",
+    "replied": "yes",
+    "firstPitch": "",
+    "addedAt": "2026-11-26T15:50:22.942Z",
+    "followUps": "",
+    "subject": "DJ enquiry - NYE - Station Hotel Hither Green SE13",
+    "messages": [
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-11-26T13:30:04Z",
+        "from": "stationhotel@youngs.co.uk",
+        "subject": "DJ enquiry - NYE - Station Hotel Hither Green SE13",
+        "body": "Hi there\n\nPassed on your details from Anne-Marie at the Greyhound.\n\nDo you have a DJ available for the 31st Dec. Our crowd will likely be 30 to 55 years old and we will need a set playing from 9pm to 1am we would need equipment provided\n\nThis is me if you would like to discuss 07886445886\n\nMy Best\n\nAndrew Eaton\nGeneral Manager\nStation Hotel\n\n14 Staplehurst Rd, London SE13 5NB\n020 8463 0367"
+      }
+    ],
+    "hasThread": true
+  },
+  {
     "id": "cold-20261020-the-yarrow-hotel-broadstairs-ct10",
     "name": "The Yarrow Hotel",
     "town": "Broadstairs CT10 1PN",
@@ -6610,7 +6638,7 @@
     "phone": "+441708740817",
     "needPhone": false,
     "email": "romfordconservativeclub@hotmail.com",
-    "replied": "no",
+    "replied": "yes",
     "firstPitch": "27 Aug 2026",
     "addedAt": "1 Aug 2026",
     "followUps": "1 · last 7 Sep 2026",
@@ -6623,10 +6651,19 @@
         "from": "jakeessexenquiries@gmail.com",
         "subject": "Live entertainment – Jake Essex (Elvis & Rock ’n’ Roll)",
         "body": "Hi,\n\nMy name is Natalie and I look after bookings for Jake Essex.\n\nJake performs a high-energy classic Rock ’n’ Roll show with a strong Elvis element – he’s not a typical Elvis impersonator. The first half covers Bobby Darin, Sinatra, Johnny Cash, Buddy Holly, Roy Orbison and more, before moving into a full Elvis set that takes the audience through the years.\n\nHe already works regularly across Essex, East & South London and Kent, and is now expanding into West London. He has some availability left this year and is also taking bookings for 2027.\n\nFully self-contained with his own PA.\n\nPricing:\n• 2 × 1 hour – £250 cash / £280 through the books\n• 3 × 45 mins – £350 cash / £380 through the books\n\nFootage here: www.instagram.com/jakeessexmusic\n\nIf you have any suitable dates or would like more information, just let me know.\n\nBest regards,\nNatalie\non behalf of Jake Essex Music"
+      },
+      {
+        "side": "them",
+        "label": "Their reply",
+        "at": "2026-11-26T13:51:28Z",
+        "from": "romfordconservativeclub@hotmail.com",
+        "subject": "Enquiry",
+        "body": "Good afternoon Jake,\n\nI hope you're well?\n\nI have just come across your email.\n\nCould I ask for a quote for either Friday night, Saturday nights and Sundays.\n\nAlso, are you free any time in December (i know its short notice)\n\nI look forward to hearing from you soon.\n\nMany thanks\nRhianna"
       }
     ],
     "hasThread": true,
-    "tab": "call"
+    "tab": "call",
+    "prospect": false
   },
   {
     "id": "churchills-bar",
