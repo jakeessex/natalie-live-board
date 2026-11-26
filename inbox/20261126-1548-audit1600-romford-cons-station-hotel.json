@@ -1,0 +1,50 @@
+{
+  "events": [
+    {
+      "event": "reply",
+      "venue": {
+        "id": "churchill-house",
+        "email": "romfordconservativeclub@hotmail.com",
+        "name": "Churchill House"
+      },
+      "badge": "replied-interested",
+      "replyLane": "email",
+      "note": "audit1600: Them 1a218202f097c9bb 13:51 GMT Thu 26 Nov from Rhianna (Romford Conservative Club): asks quote for Fri/Sat/Sun nights + any free December dates. Not locked, no Us reply yet.",
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-11-26T13:51:28Z",
+          "from": "romfordconservativeclub@hotmail.com",
+          "subject": "Enquiry",
+          "msgId": "1a218202f097c9bb",
+          "body": "Good afternoon Jake,\n\nI hope you're well?\n\nI have just come across your email.\n\nCould I ask for a quote for either Friday night, Saturday nights and Sundays.\n\nAlso, are you free any time in December (i know its short notice)\n\nI look forward to hearing from you soon.\n\nMany thanks\nRhianna"
+        }
+      ]
+    },
+    {
+      "event": "new_lead",
+      "venue": {
+        "id": "enq-20261126-station-hotel-hither-green",
+        "name": "Station Hotel",
+        "town": "Hither Green",
+        "postcode": "SE13 5NB",
+        "email": "stationhotel@youngs.co.uk",
+        "phone": "07886445886",
+        "contactName": "Andrew Eaton"
+      },
+      "badge": "replied-interested",
+      "replyLane": "email",
+      "note": "audit1600: inbound enquiry (referred by Anne-Marie at the Greyhound) 1a2180c9ef864bfc 13:30 GMT Thu 26 Nov: wants a DJ 31 Dec 9pm-1am with equipment. 31 Dec is Hartley NYE (locked) so not available; not locked, we haven't replied.",
+      "messages": [
+        {
+          "side": "them",
+          "at": "2026-11-26T13:30:04Z",
+          "from": "stationhotel@youngs.co.uk",
+          "subject": "DJ enquiry - NYE - Station Hotel Hither Green SE13",
+          "msgId": "1a2180c9ef864bfc",
+          "body": "Hi there\n\nPassed on your details from Anne-Marie at the Greyhound.\n\nDo you have a DJ available for the 31st Dec. Our crowd will likely be 30 to 55 years old and we will need a set playing from 9pm to 1am we would need equipment provided\n\nThis is me if you would like to discuss 07886445886\n\nMy Best\n\nAndrew Eaton\nGeneral Manager\nStation Hotel\n\n14 Staplehurst Rd, London SE13 5NB\n020 8463 0367"
+        }
+      ]
+    }
+  ]
+}
